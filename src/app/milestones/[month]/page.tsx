@@ -4,6 +4,7 @@ import { useParams, useRouter } from "next/navigation";
 import { useMemo, useEffect } from "react";
 import { Header } from "@/components/shared/header";
 import { MonthNavigator } from "@/components/shared/month-navigator";
+import { MonthlyNote } from "@/components/shared/monthly-note";
 import { MilestoneProgress } from "@/components/milestones/milestone-progress";
 import { CategorySection } from "@/components/milestones/category-section";
 import { useMilestones } from "@/hooks/use-milestones";
@@ -39,6 +40,7 @@ export default function MilestonesPage() {
       <div className="flex-1 overflow-y-auto">
         <div className="p-4 space-y-6 max-w-2xl mx-auto">
           <MonthNavigator basePath="/milestones" selectedMonth={month} />
+          <MonthlyNote month={month} variant="milestones" />
 
           {milestones.length === 0 ? (
             <div className="text-center py-12 space-y-2">

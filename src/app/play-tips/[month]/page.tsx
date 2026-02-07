@@ -6,6 +6,7 @@ import { getCurrentMonth } from "@/lib/age-calculator";
 import { getPlayTips } from "@/lib/content-loader";
 import { Header } from "@/components/shared/header";
 import { MonthNavigator } from "@/components/shared/month-navigator";
+import { MonthlyNote } from "@/components/shared/monthly-note";
 import { TipList } from "@/components/play-tips/tip-list";
 
 export default function PlayTipsPage() {
@@ -35,6 +36,7 @@ export default function PlayTipsPage() {
       <div className="flex-1 overflow-y-auto">
         <div className="p-4 space-y-4">
           <MonthNavigator basePath="/play-tips" selectedMonth={month} />
+          <MonthlyNote month={month} variant="play-tips" />
           <TipList tips={tips} />
         </div>
       </div>

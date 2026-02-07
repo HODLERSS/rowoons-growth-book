@@ -40,6 +40,12 @@ export interface WatchOut extends SourceInfo {
   action?: string;
 }
 
+export interface MonthlyNote {
+  milestone: string;
+  watchout: string;
+  cheerup: string;
+}
+
 export interface Memo {
   id: string;
   title: string;

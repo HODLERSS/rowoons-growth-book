@@ -1,7 +1,8 @@
-import { Milestone, PlayTip, WatchOut } from "./types";
+import { Milestone, PlayTip, WatchOut, MonthlyNote } from "./types";
 import milestonesData from "@/content/milestones.json";
 import playTipsData from "@/content/play-tips.json";
 import watchOutsData from "@/content/watch-outs.json";
+import monthlyNotesData from "@/content/monthly-notes.json";
 
 export function getMilestones(month: number): Milestone[] {
   return (milestonesData as Milestone[]).filter((m) => m.month === month);
@@ -27,6 +28,11 @@ export function getPlayTips(month: number): PlayTip[] {
 
 export function getWatchOuts(month: number): WatchOut[] {
   return (watchOutsData as WatchOut[]).filter((w) => w.month === month);
+}
+
+export function getMonthlyNote(month: number): MonthlyNote | null {
+  const notes = monthlyNotesData as Record<string, MonthlyNote>;
+  return notes[String(month)] ?? null;
 }
 
 export function getAvailableMonths(

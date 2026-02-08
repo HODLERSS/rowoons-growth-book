@@ -29,7 +29,7 @@
     "severity": "info",
     "action": "Give baby time to warm up to new people. Don't force interactions. Let baby observe from your arms before approaching others.",
     "source": "Zero to Three",
-    "sourceUrl": "https://www.zerotothree.org/resource/your-childs-development-age-based-tips-from-birth-to-36-months/",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
     "sourceQuote": "Stranger anxiety is a sign that your baby understands the difference between familiar and unfamiliar people, reflecting healthy emotional and social development."
   },
   {
@@ -62,7 +62,7 @@
     "severity": "info",
     "action": "Create consistent goodbye rituals. Keep separations brief at first and gradually extend. Always say goodbye rather than sneaking away.",
     "source": "Zero to Three",
-    "sourceUrl": "https://www.zerotothree.org/resource/your-childs-development-age-based-tips-from-birth-to-36-months/",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
     "sourceQuote": "Separation anxiety shows that your child has formed a strong, healthy attachment. Consistent and reassuring goodbye routines help children learn that you always come back."
   },
   {
@@ -84,7 +84,7 @@
     "severity": "info",
     "action": "Avoid walkers (they can delay walking and cause injuries). Let baby cruise, stand, and step at their own pace. Consult your pediatrician if baby isn't walking by 18 months.",
     "source": "AAP",
-    "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/Developmental-Milestones.aspx",
+    "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
     "sourceQuote": "The AAP advises against infant walkers, as they can cause injuries and may delay motor development. Children develop walking skills on their own timeline."
   },
   {
@@ -106,7 +106,7 @@
     "severity": "caution",
     "action": "Start offering milk in a sippy cup or open cup. Gradually reduce bottle feedings, eliminating the bedtime bottle last.",
     "source": "AAP",
-    "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/Developmental-Milestones.aspx",
+    "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
     "sourceQuote": "Pediatricians recommend weaning from the bottle by 12 to 15 months of age, as prolonged bottle use is associated with dental cavities and excess calorie intake."
   },
   {
@@ -117,7 +117,7 @@
     "severity": "caution",
     "action": "Limit whole milk to 16-24 oz per day. Ensure baby is eating a variety of iron-rich foods. Continue offering water throughout the day.",
     "source": "AAP",
-    "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/Developmental-Milestones.aspx",
+    "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
     "sourceQuote": "After 12 months, children can begin drinking whole cow's milk, but intake should be limited to 16-24 ounces per day to ensure adequate iron and nutrient intake from solid foods."
   },
   {
@@ -139,7 +139,7 @@
     "severity": "info",
     "action": "Continue offering a variety of foods without pressure. It can take 10-15 exposures before a child accepts a new food. Don't make separate meals.",
     "source": "Zero to Three",
-    "sourceUrl": "https://www.zerotothree.org/resource/your-childs-development-age-based-tips-from-birth-to-36-months/",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
     "sourceQuote": "Picky eating is a normal part of toddler development as children assert independence. Repeated, pressure-free exposure to new foods is the best approach to expanding their diet."
   },
   {
@@ -172,7 +172,7 @@
     "severity": "caution",
     "action": "Talk and read to baby frequently. If baby uses no words and doesn't seem to understand simple phrases, discuss with your pediatrician at the next visit.",
     "source": "CDC Act Early",
-    "sourceUrl": "https://www.cdc.gov/act-early/milestones/index.html",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/",
     "sourceQuote": "Monitoring your child's developmental milestones helps catch concerns early. If your child is not meeting communication milestones, early intervention can make a meaningful difference."
   },
   {
@@ -183,7 +183,7 @@
     "severity": "caution",
     "action": "Schedule the 15-month well-child visit. Prepare a list of developmental concerns or questions. Bring your baby's health records.",
     "source": "AAP",
-    "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/Developmental-Milestones.aspx",
+    "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
     "sourceQuote": "Well-child visits are essential for tracking growth, development, and administering recommended vaccinations on schedule to protect your child's health."
   },
   {
@@ -194,7 +194,7 @@
     "severity": "info",
     "action": "Stay calm during tantrums. Acknowledge feelings: 'I know you're frustrated.' Offer simple choices to give some control. Ensure safety during the tantrum.",
     "source": "Zero to Three",
-    "sourceUrl": "https://www.zerotothree.org/resource/your-childs-development-age-based-tips-from-birth-to-36-months/",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
     "sourceQuote": "Tantrums are a normal part of development when toddlers' desire to do things outpaces their ability to communicate. Staying calm and validating feelings helps children learn to manage emotions."
   },
   {
@@ -205,7 +205,7 @@
     "severity": "caution",
     "action": "Schedule a dental visit if not done yet. Brush teeth twice daily with a rice-grain-sized amount of fluoride toothpaste. Avoid juice and sugary drinks.",
     "source": "AAP",
-    "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/Developmental-Milestones.aspx",
+    "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
     "sourceQuote": "The AAP recommends a child's first dental visit by age 1 or within 6 months of the first tooth. Early preventive dental care reduces the risk of cavities and future dental problems."
   },
   {
@@ -227,7 +227,7 @@
     "severity": "caution",
     "action": "Limit or avoid screen time. If using screens, watch together and talk about what you see. Prioritize interactive play, reading, and outdoor time.",
     "source": "AAP",
-    "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/Developmental-Milestones.aspx",
+    "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
     "sourceQuote": "The AAP recommends avoiding digital media use, except video chatting, for children younger than 18 months, as interactive play better supports language and cognitive development."
   },
   {
@@ -249,7 +249,7 @@
     "severity": "info",
     "action": "Provide safe throwing opportunities with soft balls. Redirect throwing of hard or dangerous objects. Say 'Balls are for throwing, blocks are not.'",
     "source": "Zero to Three",
-    "sourceUrl": "https://www.zerotothree.org/resource/your-childs-development-age-based-tips-from-birth-to-36-months/",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
     "sourceQuote": "Throwing is how toddlers explore cause and effect and develop motor skills. Providing appropriate outlets for throwing helps channel this behavior constructively."
   },
   {
@@ -260,7 +260,7 @@
     "severity": "caution",
     "action": "Attend the 18-month well-child visit. Complete any screening questionnaires your pediatrician provides. Discuss any concerns about social interaction, communication, or repetitive behaviors.",
     "source": "CDC Act Early",
-    "sourceUrl": "https://www.cdc.gov/act-early/milestones/index.html",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/",
     "sourceQuote": "The AAP recommends developmental screening at 9, 18, and 30 months, and autism-specific screening at 18 months. Early identification leads to earlier access to services that improve outcomes."
   },
   {
@@ -271,7 +271,7 @@
     "severity": "info",
     "action": "Stay calm. Say 'No biting. Biting hurts.' Comfort the other child first. Help toddler use words for feelings. Never bite back as punishment.",
     "source": "Zero to Three",
-    "sourceUrl": "https://www.zerotothree.org/resource/your-childs-development-age-based-tips-from-birth-to-36-months/",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
     "sourceQuote": "Biting and hitting are common in toddlers who lack the language to express strong feelings. Responding calmly and consistently helps children gradually develop self-control."
   },
   {
@@ -304,7 +304,7 @@
     "severity": "info",
     "action": "Maintain a consistent bedtime routine. Keep the same sleep schedule. Be patient; most regressions pass in 2-6 weeks. Avoid introducing new sleep crutches.",
     "source": "Zero to Three",
-    "sourceUrl": "https://www.zerotothree.org/resource/your-childs-development-age-based-tips-from-birth-to-36-months/",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
     "sourceQuote": "Sleep disruptions are common during periods of rapid development. Maintaining a consistent, calming bedtime routine helps toddlers settle back into healthy sleep patterns."
   },
   {
@@ -326,7 +326,7 @@
     "severity": "info",
     "action": "Offer limited choices instead of yes/no questions. Pick your battles. Stay calm and consistent with important boundaries. Praise cooperation when it happens.",
     "source": "Zero to Three",
-    "sourceUrl": "https://www.zerotothree.org/resource/your-childs-development-age-based-tips-from-birth-to-36-months/",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
     "sourceQuote": "Toddlers say 'no' as a way of asserting their growing sense of self. Offering limited choices gives them a healthy sense of control while keeping them safe."
   },
   {
@@ -348,7 +348,7 @@
     "severity": "caution",
     "action": "Make brushing fun with songs or games. Let toddler hold their own brush while you do the actual brushing. Use a timer or fun app. Brush twice daily.",
     "source": "AAP",
-    "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/Developmental-Milestones.aspx",
+    "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
     "sourceQuote": "Parents should brush their child's teeth twice daily using a smear of fluoride toothpaste. Good oral hygiene habits established early help prevent cavities throughout childhood."
   },
   {
@@ -359,7 +359,7 @@
     "severity": "info",
     "action": "Validate emotions: 'You're really angry right now.' Stay nearby but calm. Don't give in to demands made during tantrums. Teach simple emotion words.",
     "source": "Zero to Three",
-    "sourceUrl": "https://www.zerotothree.org/resource/your-childs-development-age-based-tips-from-birth-to-36-months/",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
     "sourceQuote": "Toddlers experience intense emotions but are still developing the brain pathways needed for self-regulation. Naming feelings and staying calm teaches them to manage emotions over time."
   },
   {
@@ -381,7 +381,7 @@
     "severity": "info",
     "action": "Look for readiness signs: staying dry for 2+ hours, interest in the toilet, telling you about wet/dirty diapers. Don't force it; follow child's lead.",
     "source": "AAP",
-    "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/Developmental-Milestones.aspx",
+    "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
     "sourceQuote": "Most children show signs of readiness for toilet training between 18 and 24 months. Following the child's cues rather than a strict timeline leads to more successful outcomes."
   },
   {
@@ -403,7 +403,7 @@
     "severity": "caution",
     "action": "Schedule the 2-year well-child visit. Note developmental milestones reached and any concerns. Bring questions about behavior, sleep, eating, and development.",
     "source": "CDC Act Early",
-    "sourceUrl": "https://www.cdc.gov/act-early/milestones/index.html",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/",
     "sourceQuote": "The CDC recommends developmental screening at the 2-year well-child visit, including a second autism-specific screening. Tracking milestones helps identify concerns when early intervention is most effective."
   },
   {
@@ -425,7 +425,7 @@
     "severity": "info",
     "action": "Supervise play closely. Intervene calmly and quickly. Model gentle behavior. Use simple words: 'Gentle hands.' Remove child briefly if behavior continues.",
     "source": "Zero to Three",
-    "sourceUrl": "https://www.zerotothree.org/resource/your-childs-development-age-based-tips-from-birth-to-36-months/",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
     "sourceQuote": "Aggressive behavior in toddlers reflects their still-developing impulse control and limited social skills. Calm, consistent guidance helps children gradually learn to interact with peers."
   },
   {
@@ -458,7 +458,7 @@
     "severity": "info",
     "action": "Comfort and reassure your child. Use a nightlight if darkness is scary. Avoid scary content before bed. Maintain a calming bedtime routine.",
     "source": "Zero to Three",
-    "sourceUrl": "https://www.zerotothree.org/resource/your-childs-development-age-based-tips-from-birth-to-36-months/",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
     "sourceQuote": "Nightmares can begin as a child's imagination develops. Comforting your child and maintaining a predictable bedtime routine helps them feel safe and secure at night."
   },
   {
@@ -491,7 +491,7 @@
     "severity": "info",
     "action": "Keep offering vegetables without pressure. Serve them alongside accepted foods. Try different preparations (roasted, pureed, raw with dip). Model eating vegetables yourself.",
     "source": "Zero to Three",
-    "sourceUrl": "https://www.zerotothree.org/resource/your-childs-development-age-based-tips-from-birth-to-36-months/",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
     "sourceQuote": "Toddlers are naturally cautious about new and bitter-tasting foods as a protective instinct. Research shows that repeated, no-pressure exposure is the most effective way to broaden food acceptance."
   },
   {
@@ -513,7 +513,7 @@
     "severity": "info",
     "action": "Don't draw attention to the stuttering. Maintain eye contact and wait patiently. Don't finish their sentences. Speak slowly yourself. If it persists past 6 months, consult a speech-language pathologist.",
     "source": "AAP",
-    "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/Developmental-Milestones.aspx",
+    "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
     "sourceQuote": "Developmental stuttering is common between ages 2 and 5 as children's language skills are rapidly expanding. Most children outgrow it naturally without intervention."
   },
   {
@@ -535,7 +535,7 @@
     "severity": "info",
     "action": "Take fears seriously even if they seem irrational. Use a nightlight. Read books about overcoming fears. Avoid forcing child into scary situations. Offer comfort and reassurance.",
     "source": "Zero to Three",
-    "sourceUrl": "https://www.zerotothree.org/resource/your-childs-development-age-based-tips-from-birth-to-36-months/",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
     "sourceQuote": "Emerging fears are a sign of a growing imagination and developing cognitive abilities. Taking a child's fears seriously and offering comfort helps build their sense of security."
   },
   {
@@ -546,7 +546,7 @@
     "severity": "caution",
     "action": "Review CDC developmental milestones for 30 months. Contact your pediatrician if toddler doesn't use 2-word phrases, doesn't know what to do with familiar objects, or doesn't copy actions and words.",
     "source": "CDC Act Early",
-    "sourceUrl": "https://www.cdc.gov/act-early/milestones/index.html",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/",
     "sourceQuote": "Developmental monitoring at 30 months helps identify children who may benefit from early intervention services. Tracking milestones at home between visits is an important part of your child's care."
   },
   {
@@ -568,7 +568,7 @@
     "severity": "info",
     "action": "Celebrate successes without over-praising. Don't punish accidents. Be patient with regression. Avoid asking 'Do you need to go potty?' constantly.",
     "source": "Zero to Three",
-    "sourceUrl": "https://www.zerotothree.org/resource/your-childs-development-age-based-tips-from-birth-to-36-months/",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
     "sourceQuote": "Toilet learning works best when children feel in control of the process. Pressure and punishment can create anxiety and lead to resistance, prolonging the process."
   },
   {
@@ -590,7 +590,7 @@
     "severity": "info",
     "action": "Give toddler special one-on-one time daily. Let them 'help' with the baby. Avoid major changes (new bed, potty training) right around the birth. Be patient with regression.",
     "source": "Zero to Three",
-    "sourceUrl": "https://www.zerotothree.org/resource/your-childs-development-age-based-tips-from-birth-to-36-months/",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
     "sourceQuote": "Regression and jealousy when a new sibling arrives are normal reactions to a big life change. One-on-one time and involvement in baby care help toddlers adjust."
   },
   {
@@ -612,7 +612,7 @@
     "severity": "info",
     "action": "Visit potential preschools together. Start with short trial visits. Read books about school. Create a consistent drop-off routine. Give it 2-4 weeks for adjustment.",
     "source": "Zero to Three",
-    "sourceUrl": "https://www.zerotothree.org/resource/your-childs-development-age-based-tips-from-birth-to-36-months/",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
     "sourceQuote": "Transitions to new settings can be challenging for young children. Gradual introductions, consistent routines, and reading about the experience beforehand help ease the adjustment."
   },
   {
@@ -623,7 +623,7 @@
     "severity": "info",
     "action": "Teach hand washing. Keep child home when running a fever. Ensure vaccinations are up to date. Consult your doctor about concerning symptoms, not just frequency of colds.",
     "source": "AAP",
-    "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/Developmental-Milestones.aspx",
+    "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
     "sourceQuote": "It is normal for young children in group settings to get 6 to 8 colds per year. Frequent handwashing and staying current on vaccinations are the best ways to reduce illness."
   },
   {
@@ -645,7 +645,7 @@
     "severity": "caution",
     "action": "If strangers can't understand most of what your child says, or if child is very frustrated trying to communicate, ask your pediatrician about a speech evaluation.",
     "source": "CDC Act Early",
-    "sourceUrl": "https://www.cdc.gov/act-early/milestones/index.html",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/",
     "sourceQuote": "By age 3, most of what a child says should be understandable to people outside the family. If speech is very difficult to understand, a speech-language evaluation may be helpful."
   },
   {
@@ -656,7 +656,7 @@
     "severity": "caution",
     "action": "Schedule the 3-year checkup. Track developmental milestones. Prepare questions about behavior, sleep, diet, and social development.",
     "source": "AAP",
-    "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/Developmental-Milestones.aspx",
+    "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
     "sourceQuote": "The 3-year well-child visit is a key checkpoint that includes vision and hearing screening, developmental assessment, and a review of your child's overall health and growth."
   },
   {
@@ -678,7 +678,7 @@
     "severity": "caution",
     "action": "Review CDC milestones for 3 years. Discuss any concerns with your pediatrician. Early intervention services are most effective when started early.",
     "source": "CDC Act Early",
-    "sourceUrl": "https://www.cdc.gov/act-early/milestones/index.html",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/",
     "sourceQuote": "Research shows that early identification and intervention for developmental delays lead to better outcomes. If your child is not meeting key milestones by age 3, talk to your pediatrician."
   },
   {
@@ -700,7 +700,7 @@
     "severity": "info",
     "action": "Agree on rules with all caregivers. Be consistent in enforcement. Use natural consequences when possible. Explain rules simply: 'We hold hands in the parking lot because cars can hurt us.'",
     "source": "Zero to Three",
-    "sourceUrl": "https://www.zerotothree.org/resource/your-childs-development-age-based-tips-from-birth-to-36-months/",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
     "sourceQuote": "Consistent, clear boundaries help children feel safe and learn self-discipline. When all caregivers follow the same rules, children are less confused and more cooperative."
   }
 ]

@@ -50,8 +50,8 @@ export default function AdminPage() {
         return;
       }
 
-      if (data.error) {
-        setResult(data.error);
+      if (data.message === "No subscribers") {
+        setResult("No devices subscribed yet. Open the app and tap Enable first.");
       } else {
         setResult(`Sent to ${data.sent} device(s)${data.failed ? `, ${data.failed} failed` : ""}`);
         setTitle("");
@@ -132,7 +132,7 @@ export default function AdminPage() {
                     {sending ? "Sending..." : "Send Notification"}
                   </Button>
                   {result && (
-                    <p className={`text-sm ${result.startsWith("Sent") ? "text-green-600" : "text-destructive"}`}>
+                    <p className={`text-sm ${result.startsWith("Sent") ? "text-green-600" : result.startsWith("No devices") ? "text-muted-foreground" : "text-destructive"}`}>
                       {result}
                     </p>
                   )}

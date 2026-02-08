@@ -14,11 +14,6 @@ interface PushSubscriptionJSON {
 
 export async function POST(request: Request) {
   try {
-    webpush.setVapidDetails(
-      process.env.VAPID_SUBJECT!,
-      process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY!,
-      process.env.VAPID_PRIVATE_KEY!
-    );
     const { password, title, body } = await request.json();
 
     if (password !== process.env.ADMIN_PASSWORD) {
@@ -29,6 +24,12 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Message body is required" }, { status: 400 });
     }
 
+    webpush.setVapidDetails(
+      process.env.VAPID_SUBJECT!,
+      process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY!,
+      process.env.VAPID_PRIVATE_KEY!
+    );
+
     const kv = createClient({
       url: process.env.KV_REST_API_URL!,
       token: process.env.KV_REST_API_TOKEN!,
@@ -37,7 +38,7 @@ export async function POST(request: Request) {
     const subscriptions: PushSubscriptionJSON[] = (await kv.get(KV_KEY)) || [];
 
     if (subscriptions.length === 0) {
-      return NextResponse.json({ sent: 0, failed: 0, error: "No subscribers" });
+      return NextResponse.json({ sent: 0, failed: 0, message: "No subscribers" });
     }
 
     let sent = 0;
@@ -63,11 +64,13 @@ export async function POST(request: Request) {
 
     if (expired.length > 0) {
       const cleaned = subscriptions.filter((s) => !expired.includes(s.endpoint));
-            await kv.set(KV_KEY, cleaned);
+      await kv.set(KV_KEY, cleaned);
     }
 
     return NextResponse.json({ sent, failed });
-  } catch {
-    return NextResponse.json({ error: "Failed to send" }, { status: 500 });
+  } catch (err) {
+    console.error("Push send error:", err);
+    const message = err instanceof Error ? err.message : "Failed to send";
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }

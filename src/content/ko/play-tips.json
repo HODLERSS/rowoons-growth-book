@@ -2,1073 +2,1297 @@
   {
     "id": "pt-9-1",
     "month": 9,
-    "title": "까꿍 놀이 변형",
-    "description": "담요, 책, 손 등 다양한 물건 뒤에 숨어서 까꿍 놀이를 해보세요. 다른 방향에서 나타나면서 아기가 예측해볼 수 있게 해주세요.",
-    "materials": ["담요", "책"],
+    "title": "까꿍! 어디 숨었지~",
+    "description": "담요, 책, 손 등 여기저기 뒤에 숨었다가 '까꿍!' 해주세요. 왼쪽에서 나타났다가 오른쪽에서 나타나면 아기가 어디서 나올지 두리번두리번 거려요. 너무 귀엽거든요!",
+    "materials": [
+      "담요",
+      "책"
+    ],
     "difficulty": "easy",
     "category": "social",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "까꿍 놀이는 아기가 대상 영속성, 즉 사람과 물건이 눈에 보이지 않아도 여전히 존재한다는 것을 이해하도록 도와주며, 이는 첫해의 중요한 인지 발달 이정표예요."
+    "sourceQuote": "까꿍 놀이를 하면 '안 보여도 있다'는 걸 아기가 알게 돼요. 이게 대상 영속성인데, 첫해에 정말 중요한 발달 포인트예요."
   },
   {
     "id": "pt-9-2",
     "month": 9,
-    "title": "그릇 놀이",
-    "description": "안전한 그릇과 작은 물건을 주고 넣었다 빼는 놀이를 해보세요. 플라스틱 그릇과 큰 블록이 좋아요. 대상 영속성과 소근육 발달에 도움이 돼요.",
-    "materials": ["플라스틱 그릇", "큰 블록", "나무 숟가락"],
+    "title": "넣었다 빼기 놀이",
+    "description": "플라스틱 그릇이랑 큰 블록을 주면 넣었다 빼는 걸 엄청 좋아해요. 단순해 보이지만, 이 놀이 하면서 손 조절력이 쑥쑥 자라고 '물건이 사라지지 않는다'는 개념도 배우거든요.",
+    "materials": [
+      "플라스틱 그릇",
+      "큰 블록",
+      "나무 숟가락"
+    ],
     "difficulty": "easy",
     "category": "cognitive",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "채우고 비우는 활동은 아기가 원인과 결과를 탐구하면서 나중에 더 복잡한 과제에 필요한 소근육 협응력을 발달시키는 데 도움이 돼요."
+    "sourceQuote": "넣고 쏟는 놀이를 하면서 '내가 하면 이렇게 되는구나' 하는 원인과 결과를 배워요. 그러면서 손가락 힘도 같이 길러지죠."
   },
   {
     "id": "pt-9-3",
     "month": 9,
-    "title": "기어가기 장애물 코스",
-    "description": "베개와 쿠션으로 간단한 장애물 코스를 만들어서 아기가 넘고, 돌아가고, 통과하며 기어갈 수 있게 해주세요. 안전을 위해 가까이서 지켜봐 주세요.",
-    "materials": ["베개", "쿠션", "담요"],
+    "title": "베개 산 넘기 대모험",
+    "description": "베개랑 쿠션으로 장애물을 만들어주면, 아기가 넘고 돌아가고 통과하면서 기어다녀요. 진지하게 도전하는 모습이 얼마나 귀여운지 몰라요. 가까이서 지켜봐 주세요!",
+    "materials": [
+      "베개",
+      "쿠션",
+      "담요"
+    ],
     "difficulty": "medium",
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "다양한 표면 위를 기어가는 것은 코어 근육을 강화하고, 협응력을 키우며, 걷기와 다른 대근육 기술에 필요한 신체 인식 능력을 길러줘요."
+    "sourceQuote": "여러 가지 위를 기어다니면 코어 근육이 튼튼해지고, 나중에 걷기에 필요한 몸 감각도 길러져요."
   },
   {
     "id": "pt-9-4",
     "month": 9,
-    "title": "음악 셰이커",
-    "description": "밀봉된 작은 용기에 쌀, 콩, 방울을 넣어주세요. 아기가 흔들면서 다른 소리를 발견하게 해주세요. 함께 흔들고 노래하면서 리듬 감각을 키워주세요.",
-    "materials": ["밀봉 용기", "쌀", "마른 콩"],
+    "title": "딸랑딸랑 소리 통 만들기",
+    "description": "뚜껑 있는 작은 통에 쌀이나 콩, 방울을 넣어서 만들어주세요. 아기가 흔들면 소리가 달라서 신기해해요. 같이 흔들면서 노래도 불러주면 리듬 감각이 생겨요!",
+    "materials": [
+      "뚜껑 있는 작은 통",
+      "쌀",
+      "마른 콩"
+    ],
     "difficulty": "easy",
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "놀이를 통한 소리와 리듬 탐구는 초기 인지 발달을 촉진하며, 아이가 패턴과 원인-결과 관계를 이해하도록 도와줘요."
+    "sourceQuote": "소리를 탐색하면서 '이렇게 하면 이런 소리가 나는구나' 하고 패턴이랑 원인-결과를 자연스럽게 배워요."
   },
   {
     "id": "pt-10-1",
     "month": 10,
-    "title": "쌓고 무너뜨리기",
-    "description": "부드러운 블록이나 컵을 쌓고 아기가 무너뜨리게 해주세요. 번갈아 쌓으면서 원인과 결과를 배워요. 와르르 무너지는 순간을 함께 즐겨주세요!",
-    "materials": ["부드러운 블록", "쌓기 컵"],
+    "title": "쌓고 와르르! 무너뜨리기",
+    "description": "부드러운 블록이나 컵을 높이높이 쌓아주면, 아기가 손으로 와르르 무너뜨려요. 그 순간 얼마나 좋아하는지! 번갈아 쌓으면서 '내가 하면 이렇게 되는구나'를 배워가요.",
+    "materials": [
+      "부드러운 블록",
+      "쌓기 컵"
+    ],
     "difficulty": "easy",
     "category": "cognitive",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "쌓고 무너뜨리는 놀이는 아기에게 원인과 결과, 공간 관계, 중력에 대해 가르쳐주며 손과 눈의 협응력을 키워줘요."
+    "sourceQuote": "쌓고 무너뜨리면서 원인과 결과, 공간 감각을 배우고 손과 눈의 협응력도 자라요."
   },
   {
     "id": "pt-10-2",
     "month": 10,
-    "title": "짝짜꿍",
-    "description": "짝짜꿍 노래를 부르며 아기가 따라 박수치도록 도와주세요. 이 전통 놀이는 리듬감, 손 협응력, 유대감 형성에 좋아요. 아기가 혼자 해보려고 할 수도 있어요.",
+    "title": "짝짜꿍 놀이",
+    "description": "짝짜꿍 노래 부르면서 아기 손을 잡고 박수를 쳐보세요. 리듬도 생기고, 손 움직임도 좋아지고, 무엇보다 아기랑 눈 맞추면서 하면 유대감이 쑥 올라가요. 혼자 해보려는 모습도 곧 볼 수 있을 거예요!",
     "difficulty": "easy",
     "category": "social",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "짝짜꿍 같은 상호작용 놀이는 의사소통의 기초가 되는 주고받기 교류를 형성하고 부모-아이 유대감을 강화해요."
+    "sourceQuote": "짝짜꿍 같은 놀이는 주고받기의 기초가 돼요. 이게 나중에 대화하고 소통하는 능력으로 이어지거든요."
   },
   {
     "id": "pt-10-3",
     "month": 10,
-    "title": "핑거푸드 탐색",
-    "description": "다양한 질감과 색상의 안전한 핑거푸드를 제공해주세요. 아기가 새로운 맛과 질감을 탐색하면서 집게 잡기를 연습할 수 있어요.",
-    "materials": ["부드러운 과일", "뻥과자", "작은 파스타"],
+    "title": "손가락으로 집어먹기 도전!",
+    "description": "부드러운 과일, 뻥과자, 작은 파스타 같은 걸 접시에 놓아주세요. 아기가 엄지랑 검지로 집어 먹으면서 소근육이 발달해요. 다양한 질감을 만져보는 것도 좋은 자극이 되죠!",
+    "materials": [
+      "부드러운 과일",
+      "뻥과자",
+      "작은 파스타"
+    ],
     "difficulty": "easy",
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "스스로 먹기를 통한 집게 잡기 연습은 앞으로 그리기, 단추 끼우기, 글씨 쓰기 같은 기술에 필요한 소근육 정밀성을 발달시켜요."
+    "sourceQuote": "직접 집어 먹으면서 손가락 힘이 세지고, 나중에 그리기나 글쓰기할 때 필요한 정밀한 손 움직임이 길러져요."
   },
   {
     "id": "pt-10-4",
     "month": 10,
-    "title": "공 굴리기",
-    "description": "아기와 마주 앉아 공을 앞뒤로 굴려주세요. 차례 지키기와 원인-결과를 배울 수 있어요. 방울이 들어있는 공을 사용하면 더 재미있어요.",
-    "materials": ["부드러운 공"],
+    "title": "마주앉아 공 굴리기",
+    "description": "아기랑 마주 앉아서 공을 데굴데굴 굴려주세요. '받아~' 하고 보내면 아기도 밀어보려고 해요. 방울 소리 나는 공이면 더 재미있어 하거든요!",
+    "materials": [
+      "부드러운 공"
+    ],
     "difficulty": "easy",
     "category": "social",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "간단한 차례 지키기 놀이는 가장 초기 형태의 협동 놀이이며, 나누기와 의사소통 같은 사회적 기술의 토대를 마련해요."
+    "sourceQuote": "이렇게 번갈아 하는 놀이가 나중에 나누기, 대화하기 같은 사회성의 시작이 돼요."
   },
   {
     "id": "pt-11-1",
     "month": 11,
-    "title": "잡고 걷기 연습",
-    "description": "아기가 가구를 잡고 이동할 수 있도록 가구를 배치해주세요. 좋아하는 장난감을 손이 닿지 않는 곳에 놓아 움직임을 유도하세요. 항상 지켜보고 모서리에 보호대를 붙여주세요.",
-    "materials": ["좋아하는 장난감"],
+    "title": "가구 잡고 걸어보자!",
+    "description": "가구 사이사이로 이동할 수 있게 배치해주고, 좋아하는 장난감을 살짝 멀리 놓아두세요. '저기 있다~!' 하면 가구 잡고 이동하려고 해요. 모서리에 보호대 붙이는 거 잊지 마세요!",
+    "materials": [
+      "좋아하는 장난감"
+    ],
     "difficulty": "medium",
     "category": "physical",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "가구를 잡고 이동하기는 아기가 첫 독립 걸음을 떼는 데 필요한 다리 힘, 균형감, 자신감을 발달시키는 데 도움이 돼요."
+    "sourceQuote": "가구 잡고 이동하기를 하면서 다리 힘이랑 균형 감각이 생기고, 첫 걸음을 뗄 자신감도 커져요."
   },
   {
     "id": "pt-11-2",
     "month": 11,
-    "title": "가리키며 이름 말하기",
-    "description": "방 안의 물건들을 가리키며 이름을 분명하게 말해주세요. '저건 램프야! 저건 창문이야!' 아기도 가리키기 시작하고 단어와 사물을 연결하는 법을 배워요.",
+    "title": "이건 뭘까? 가리키며 말해주기",
+    "description": "방 안 이것저것을 가리키면서 또박또박 이름을 말해주세요. '이건 시계! 저건 창문!' 아기도 따라서 가리키기 시작하면서 단어랑 사물을 연결해가요.",
     "difficulty": "easy",
     "category": "language",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "일상에서 물건을 가리키며 이름을 말해주는 것은 아기의 어휘력과 언어 이해력을 키우는 가장 강력한 방법 중 하나예요."
+    "sourceQuote": "이렇게 가리키면서 이름을 말해주는 게 어휘력 키우는 데 가장 효과적인 방법이에요."
   },
   {
     "id": "pt-11-3",
     "month": 11,
-    "title": "촉감 탐색 보드",
-    "description": "매끄러운 것, 거친 것, 부드러운 것, 울퉁불퉁한 것 등 다양한 촉감의 보드를 만들어주세요. 아기의 손을 각각 위로 안내하며 느낌을 설명해주세요.",
-    "materials": ["골판지", "천 조각", "사포", "솜", "뽁뽁이"],
+    "title": "이건 보들보들~ 촉감 놀이판",
+    "description": "택배 상자에 천 조각, 사포, 솜, 뽁뽁이 같은 걸 붙여서 촉감판을 만들어주세요. 아기 손을 잡고 만져보면서 '이건 보들보들~' '이건 까칠까칠~' 이렇게 말해주면 돼요.",
+    "materials": [
+      "택배 상자",
+      "천 조각",
+      "사포",
+      "솜",
+      "뽁뽁이"
+    ],
     "difficulty": "medium",
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "감각이 풍부한 놀이 경험은 아이가 느끼는 것과 그것을 설명하는 단어 사이의 연결을 만들어, 인지와 언어 능력을 함께 키워줘요."
+    "sourceQuote": "다양한 촉감을 경험하면서 느끼는 것과 말하는 것이 연결돼요. 머리랑 말 실력이 동시에 자라는 거예요."
   },
   {
     "id": "pt-12-1",
     "month": 12,
-    "title": "첫 단어 그림책",
-    "description": "한 페이지에 그림 하나인 간단한 보드북을 읽어주세요. 각 그림을 가리키며 이름을 말하고, 아기가 따라 말할 수 있도록 잠시 멈춰주세요. 반복이 핵심이에요!",
-    "materials": ["보드북"],
+    "title": "그림책 보면서 첫 단어 배우기",
+    "description": "한 페이지에 그림 하나인 보드북이 좋아요. 그림을 가리키면서 '이건 사과!' 하고 천천히 말해주고, 아기가 따라 말할 수 있게 살짝 기다려주세요. 반복이 진짜 중요하거든요!",
+    "materials": [
+      "보드북"
+    ],
     "difficulty": "easy",
     "category": "language",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "영아기부터 소리 내어 읽어주는 것은 아기가 첫 단어를 말하기 전에도 언어 발달을 촉진하고 부모-아이 관계를 강화해요."
+    "sourceQuote": "아기한테 소리 내서 책 읽어주면, 아직 말을 못 해도 언어 발달이 쭉쭉 돼요. 그리고 부모랑 사이도 더 좋아지죠."
   },
   {
     "id": "pt-12-2",
     "month": 12,
-    "title": "밀고 당기는 장난감",
-    "description": "밀기 장난감과 함께 걸으면 독립 보행에 대한 자신감이 생겨요. 당기기 장난감은 움직이면서 뒤를 돌아보게 해서 협응력과 공간 인식을 키워줘요.",
-    "materials": ["밀기 장난감 또는 걸음마 보조기", "끈 달린 당기기 장난감"],
+    "title": "밀고 당기는 장난감 놀이",
+    "description": "밀기 장난감을 밀면서 걸으면 혼자 걷는 데 자신감이 생겨요. 끈 달린 장난감을 끌면서 뒤를 돌아보게 되니까 균형 감각도 좋아지고요. 이 시기에 딱이에요!",
+    "materials": [
+      "밀기 장난감이나 걸음마 보조기",
+      "끈 달린 당기기 장난감"
+    ],
     "difficulty": "easy",
     "category": "physical",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "밀고 당기는 장난감은 걸음마를 시작한 아이가 균형감과 협응력을 연습하면서 독립적으로 움직이는 자신감을 키우도록 도와줘요."
+    "sourceQuote": "밀고 당기는 장난감으로 놀면서 균형이랑 협응력을 연습하고, 스스로 움직이는 자신감도 생겨요."
   },
   {
     "id": "pt-12-3",
     "month": 12,
-    "title": "도형 맞추기 소개",
-    "description": "간단한 2-3개 도형 맞추기 장난감으로 시작하세요. 아기에게 도형을 구멍에 맞추는 방법을 보여주세요. 넣었다 빼는 것만 즐겨도 괜찮아요!",
-    "materials": ["도형 맞추기 장난감"],
+    "title": "도형 맞추기 첫 도전!",
+    "description": "구멍이 2~3개인 도형 맞추기 장난감으로 시작해보세요. '이 동그라미는 여기!' 하고 보여주면 돼요. 아직은 넣었다 빼는 것만 해도 완전 잘하는 거예요!",
+    "materials": [
+      "도형 맞추기 장난감"
+    ],
     "difficulty": "medium",
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "도형 맞추기 놀이는 아이가 관찰하고, 비교하고, 짝짓는 법을 배우면서 초기 문제 해결 능력을 키워요. 이는 수학적 사고의 핵심 기초예요."
+    "sourceQuote": "도형을 보고 비교해서 맞추는 과정에서 문제 해결 능력이 생겨요. 수학적 사고의 기초가 되는 거죠."
   },
   {
     "id": "pt-12-4",
     "month": 12,
-    "title": "댄스 파티",
-    "description": "음악을 틀고 함께 춤을 춰보세요. 아기 손을 잡고 흔들고, 튕기고, 살살 돌려주세요. 아기가 리듬에 맞춰 자유롭게 움직이게 해주세요. 균형감과 즐거움에 최고예요!",
-    "materials": ["음악 재생기"],
+    "title": "신나는 댄스 파티!",
+    "description": "신나는 노래 틀고 같이 춤춰요! 아기 손 잡고 흔들흔들, 통통 튀기고, 살살 돌려주면 깔깔 웃어요. 자유롭게 몸을 흔들게 해주면 균형 감각에도 좋고 기분도 최고!",
+    "materials": [
+      "음악 재생기"
+    ],
     "difficulty": "easy",
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "음악에 맞춰 움직이기는 균형감, 협응력, 신체 인식을 발달시키면서 아기가 새로 발달하는 운동 능력을 즐겁게 연습하는 방법이에요."
+    "sourceQuote": "음악에 맞춰 몸을 움직이면 균형감이랑 몸 감각이 자라요. 새로 배우는 동작을 즐겁게 연습하는 셈이죠."
   },
   {
     "id": "pt-13-1",
     "month": 13,
-    "title": "장난감 전화 대화",
-    "description": "장난감 전화로 아기와 전화 놀이를 해보세요. '여보세요! 안녕?' 하고 말하면서 아기 귀에 전화를 대주세요. 언어 발달과 역할 놀이를 촉진해요.",
-    "materials": ["장난감 전화"],
+    "title": "여보세요~ 전화 놀이",
+    "description": "장난감 전화로 '여보세요! 밥 먹었어?' 하고 말해보세요. 아기 귀에 대주면 옹알이로 대답하는 게 너무 귀여워요. 말하기 연습도 되고 역할 놀이의 시작이에요!",
+    "materials": [
+      "장난감 전화"
+    ],
     "difficulty": "easy",
     "category": "language",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "전화 같은 일상 물건으로 하는 역할 놀이는 아이에게 실제 사물을 상징으로 사용하는 법을 보여주며, 이는 언어와 인지 발달의 핵심 단계예요."
+    "sourceQuote": "전화기로 하는 역할 놀이는 물건을 상징으로 쓰는 법을 배우는 거예요. 말과 생각이 자라는 중요한 단계죠."
   },
   {
     "id": "pt-13-2",
     "month": 13,
-    "title": "물놀이",
-    "description": "얕은 용기에 따뜻한 물을 채우고 컵, 숟가락, 작은 장난감을 넣어주세요. 아기가 붓고, 튀기고, 퍼올리게 해주세요. 물 근처에서는 항상 가까이서 지켜봐 주세요.",
-    "materials": ["얕은 용기", "컵", "숟가락", "작은 방수 장난감"],
+    "title": "첨벙첨벙 물놀이",
+    "description": "넓적한 통에 따뜻한 물 담고 컵, 숟가락, 장난감을 넣어주세요. 쏟고 튀기고 퍼올리면서 정말 좋아해요. 물 근처에서는 꼭 바로 옆에서 지켜봐 주세요!",
+    "materials": [
+      "넓적한 통",
+      "컵",
+      "숟가락",
+      "작은 목욕 장난감"
+    ],
     "difficulty": "medium",
     "category": "cognitive",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "물놀이는 아이에게 부피, 원인과 결과, 물질의 특성에 대해 직접 탐구하며 배우는 강력한 감각 경험이에요."
+    "sourceQuote": "물놀이하면서 부피, 원인과 결과 같은 걸 온몸으로 경험해요. 감각 자극이 풍부한 놀이죠."
   },
   {
     "id": "pt-13-3",
     "month": 13,
-    "title": "끼우기 컵",
-    "description": "컵이 서로 안에 들어가거나 위에 쌓이는 것을 보여주세요. 크기 관계와 순서를 가르쳐주면서 소근육 발달에도 도움이 돼요.",
-    "materials": ["끼우기 컵"],
+    "title": "컵 끼우기 놀이",
+    "description": "컵이 쏙쏙 들어가는 것도, 위로 탑처럼 쌓는 것도 보여주세요. '큰 거 안에 작은 거!' 하면서 크기 개념을 알려줄 수 있고, 손가락 힘도 길러져요.",
+    "materials": [
+      "끼우기 컵"
+    ],
     "difficulty": "easy",
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "끼우기와 쌓기 활동은 아이에게 크기 비교와 순서 개념을 소개하며, 직접 놀이를 통해 초기 수학적 사고력을 키워줘요."
+    "sourceQuote": "끼우고 쌓으면서 크다 작다를 비교하게 되고, 놀이하면서 수학적 사고가 시작돼요."
   },
   {
     "id": "pt-14-1",
     "month": 14,
-    "title": "간단한 숨바꼭질",
-    "description": "아기가 일부를 볼 수 있는 가구 뒤에 숨어보세요. 이름을 불러서 아기가 '찾게' 해주세요. 점점 덜 눈에 띄는 곳에 숨으면서 난이도를 높여가세요.",
+    "title": "나 여기 있다~ 숨바꼭질",
+    "description": "가구 뒤에 살짝 보이게 숨어서 이름을 불러주세요. 뒤뚱뒤뚱 찾아오는 모습이 너무 귀여워요! 점점 더 안 보이는 데 숨으면서 난이도를 올려보세요.",
     "difficulty": "easy",
     "category": "social",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "숨바꼭질 같은 놀이는 아이의 대상 영속성 이해를 강화하고, 사랑하는 사람이 돌아온다는 신뢰를 쌓아 안정 애착을 형성해요."
+    "sourceQuote": "숨바꼭질을 하면 '안 보여도 엄마아빠는 여기 있다'는 신뢰가 쌓여요. 안정 애착 형성에 좋죠."
   },
   {
     "id": "pt-14-2",
     "month": 14,
-    "title": "크레용 낙서",
-    "description": "큰 종이를 탁자나 바닥에 테이프로 붙이고 아기에게 굵은 크레용을 주세요. 자유롭게 그리게 해주고, 낙서하면서 색깔 이름을 말해주세요.",
-    "materials": ["큰 종이", "굵은 크레용", "테이프"],
+    "title": "끼적끼적 크레용 낙서",
+    "description": "큰 종이를 바닥이나 탁자에 테이프로 고정하고 굵은 크레용을 쥐여주세요. 맘대로 끼적이게 두면서 '이거 빨간색이네~' 하고 색깔도 알려주면 돼요.",
+    "materials": [
+      "큰 종이",
+      "굵은 크레용",
+      "테이프"
+    ],
     "difficulty": "easy",
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "초기 낙서 활동은 아이가 글씨 쓰기에 사용할 손과 손가락 근육을 강화하면서, 그리기를 통한 창의성과 자기표현을 키워줘요."
+    "sourceQuote": "낙서하면서 손가락 근육이 튼튼해져요. 나중에 글씨 쓸 때 필요한 힘이 여기서 시작되는 거예요."
   },
   {
     "id": "pt-14-3",
     "month": 14,
-    "title": "따라하기 놀이",
-    "description": "간단한 동작과 소리를 만들어 아기가 따라하게 해보세요. 손뼉치기, 발 구르기, 머리 두드리기, 동물 소리 내기 등. 그런 다음 아기가 주도하고 부모가 따라해 보세요!",
+    "title": "엄마 따라해봐~ 따라쟁이 놀이",
+    "description": "손뼉을 짝! 발을 쿵쿵! 머리를 톡톡! 동물 소리도 내보세요. 아기가 따라하면 이번엔 역할을 바꿔서 아기가 하는 걸 따라해 주세요. 깔깔 웃을 거예요!",
     "difficulty": "easy",
     "category": "social",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "모방 놀이는 아이가 인정받고 소중히 여겨진다고 느끼게 하면서 학습에 필수적인 관찰 능력을 키워 사회-정서적 성장을 지원해요."
+    "sourceQuote": "따라하기 놀이를 하면 아기가 '나를 봐주는구나' 하고 느끼면서 관찰하는 힘도 커져요."
   },
   {
     "id": "pt-15-1",
     "month": 15,
-    "title": "동물 소리 맞추기",
-    "description": "동물 그림을 보면서 소리를 내보세요. '소는 뭐라고 해? 음메~!' 아기가 동물과 소리를 연결하고 따라 하려고 할 거예요.",
-    "materials": ["동물 그림책 또는 동물 장난감"],
+    "title": "멍멍! 야옹! 동물 소리 놀이",
+    "description": "동물 그림을 보면서 같이 소리를 내보세요. '소는 뭐라고 해? 음매~!' 아기가 동물이랑 소리를 연결하기 시작하면서 따라 하려고 해요. 너무 사랑스러워요!",
+    "materials": [
+      "동물 그림책이나 동물 인형"
+    ],
     "difficulty": "easy",
     "category": "language",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "그림과 소리, 단어를 연결하는 것은 아이의 어휘력을 키우고 말 발달에 중요한 소리 모방을 연습하도록 도와줘요."
+    "sourceQuote": "그림이랑 소리, 단어를 연결하면서 어휘력이 늘고 소리 모방 연습도 돼요."
   },
   {
     "id": "pt-15-2",
     "month": 15,
-    "title": "볼풀 놀이",
-    "description": "작은 풀장이나 큰 상자에 플라스틱 공을 채워주세요. 아기가 들어가 앉고 공을 던지게 해주세요. 놀면서 색깔 이름을 말해주세요. 감각과 운동 발달에 좋아요.",
-    "materials": ["작은 풀장 또는 큰 상자", "플라스틱 공"],
+    "title": "볼풀에서 신나게 놀기",
+    "description": "작은 풀장이나 큰 택배 상자에 플라스틱 공을 잔뜩 넣어주세요. 들어가 앉아서 던지고 뒹굴면서 놀아요. '빨간 공!' '파란 공!' 색깔도 알려주면 일석이조!",
+    "materials": [
+      "작은 풀장이나 큰 상자",
+      "플라스틱 공"
+    ],
     "difficulty": "medium",
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "볼풀 놀이는 아이의 신체 인식, 균형감, 오르기와 다른 대근육 기술에 필요한 협응력을 발달시키는 깊은 감각 자극을 제공해요."
+    "sourceQuote": "볼풀에서 놀면 온몸으로 감각을 느끼면서 균형감이랑 몸 감각이 좋아져요."
   },
   {
     "id": "pt-15-3",
     "month": 15,
-    "title": "스티커 놀이",
-    "description": "아기에게 큰 스티커를 주고 종이에 떼서 붙이게 해주세요. 소근육 발달과 손-눈 협응에 아주 좋아요. 쉽게 떼어지는 스티커로 시작하세요.",
-    "materials": ["큰 스티커", "종이"],
+    "title": "떼었다 붙였다 스티커 놀이",
+    "description": "큰 스티커를 주면 떼서 종이에 붙이는 걸 좋아해요. 손가락 힘이 필요해서 소근육 발달에 딱이에요. 쉽게 떼어지는 스티커로 시작해주세요!",
+    "materials": [
+      "큰 스티커",
+      "종이"
+    ],
     "difficulty": "medium",
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "스티커를 떼고 붙이는 것은 아이가 옷 입기, 먹기, 그리고 결국 글쓰기에 필요한 집게 잡기와 양손 협응력을 발달시켜요."
+    "sourceQuote": "스티커 떼고 붙이면서 손가락 힘이랑 양손 쓰는 능력이 자라요. 옷 입기나 글쓰기의 기초가 돼요."
   },
   {
     "id": "pt-16-1",
     "month": 16,
-    "title": "신체 부위 노래",
-    "description": "'머리 어깨 무릎 발' 노래를 부르면서 각 신체 부위를 가리켜보세요. 아기가 신체 부위 이름을 배우고 함께 가리키려고 할 거예요.",
+    "title": "머리 어깨 무릎 발~ 신체 노래",
+    "description": "'머리 어깨 무릎 발' 노래 부르면서 몸 여기저기를 짚어주세요. 따라서 가리키려고 하는 모습이 너무 귀여워요! 반복하면 신체 부위 이름을 금방 외워요.",
     "difficulty": "easy",
     "category": "language",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "동작과 단어를 결합한 노래는 아이가 언어와 의미를 연결하도록 도와, 새로운 어휘를 더 쉽게 기억하고 사용할 수 있게 해줘요."
+    "sourceQuote": "동작이랑 노래를 같이 하면 단어 뜻이 머리에 쏙 들어와요. 새 어휘를 외우기도 훨씬 쉬워지고요."
   },
   {
     "id": "pt-16-2",
     "month": 16,
-    "title": "블록 탑 쌓기",
-    "description": "함께 탑을 쌓으면서 얼마나 높이 쌓을 수 있는지 도전해보세요. 쌓으면서 블록 수를 세어주세요. 아기는 쌓고 무너뜨리는 걸 좋아할 거예요!",
-    "materials": ["블록"],
+    "title": "블록 탑 높이높이!",
+    "description": "같이 블록을 쌓으면서 '하나, 둘, 셋!' 세어보세요. 얼마나 높이 쌓을 수 있는지 도전! 무너뜨리는 것도 이 놀이의 하이라이트예요.",
+    "materials": [
+      "블록"
+    ],
     "difficulty": "easy",
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "블록 놀이는 가장 가치 있는 초기 학습 활동 중 하나로, 공간 인식, 문제 해결, 숫자 세기와 균형 같은 초기 수학 개념을 형성해요."
+    "sourceQuote": "블록 놀이 하면서 공간 감각, 문제 해결력, 숫자 세기 같은 게 자연스럽게 길러져요. 정말 좋은 놀이예요."
   },
   {
     "id": "pt-16-3",
     "month": 16,
-    "title": "바깥 산책 탐험",
-    "description": "산책하면서 함께 멈춰서 주변을 탐험하세요. 나뭇잎을 만지고, 꽃 냄새를 맡고, 새 소리를 들어보세요. 만나는 모든 것의 이름을 말해서 어휘력을 키워주세요.",
+    "title": "산책하며 세상 구경하기",
+    "description": "산책하다가 멈춰서 이것저것 구경해요. 나뭇잎 만져보고, 꽃 냄새 맡고, 새 소리도 들어보세요. 만나는 것마다 이름을 말해주면 어휘력이 쭉쭉 늘어요!",
     "difficulty": "easy",
     "category": "cognitive",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "사랑하는 어른과 함께 자연을 탐험하면 호기심과 어휘력이 자라나며, 아이가 관찰하고, 질문하고, 주변 세계를 이해하는 법을 배워요."
+    "sourceQuote": "같이 자연을 탐험하면 호기심이 자라고, 보고 듣고 만지면서 세상을 이해하는 법을 배워요."
   },
   {
     "id": "pt-17-1",
     "month": 17,
-    "title": "주방 놀이",
-    "description": "냄비, 프라이팬, 나무 숟가락, 플라스틱 음식을 주세요. 요리하고 음식을 나누는 척하게 해주세요. 함께 놀면서 '뭐 만들고 있어?'라고 물어보세요.",
-    "materials": ["냄비", "프라이팬", "나무 숟가락", "플라스틱 음식"],
+    "title": "맛있는 거 만들자~ 주방 놀이",
+    "description": "냄비, 프라이팬, 나무 숟가락, 플라스틱 음식을 주면 요리하는 척 놀이를 해요. '뭐 만들어?' 하고 물어보면 진지하게 대답하는 게 너무 웃겨요!",
+    "materials": [
+      "냄비",
+      "프라이팬",
+      "나무 숟가락",
+      "플라스틱 음식"
+    ],
     "difficulty": "easy",
     "category": "social",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "역할 놀이는 아이가 실제 역할과 사회적 상호작용을 연습하면서 안전한 환경에서 언어, 공감, 창의적 사고를 키울 수 있게 해줘요."
+    "sourceQuote": "역할 놀이 하면서 말도 늘고 공감 능력도 자라요. 안전한 상상 속에서 사회성을 배우는 거예요."
   },
   {
     "id": "pt-17-2",
     "month": 17,
-    "title": "오르기 연습",
-    "description": "안전하고 낮은 곳에서 오르기를 연습하게 해주세요. 발판, 낮은 놀이기구, 단단한 쿠션 더미 등이 좋아요. 조심히 잡아주세요.",
-    "materials": ["발판", "단단한 쿠션"],
+    "title": "올라가 보자! 오르기 연습",
+    "description": "발판이나 낮은 쿠션 더미 같은 안전한 곳에서 오르기를 연습시켜주세요. 꼭 바로 옆에서 잡아주면서요. 올라갔을 때 뿌듯해하는 표정이 정말 좋아요!",
+    "materials": [
+      "발판",
+      "단단한 쿠션"
+    ],
     "difficulty": "medium",
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "안전한 오르기 기회는 아이가 자신감 있는 신체 탐험에 필요한 상하체 힘, 협응력, 공간 계획 능력을 키워줘요."
+    "sourceQuote": "안전하게 올라가 보는 경험을 하면서 팔다리 힘이랑 균형 감각이 자라요."
   },
   {
     "id": "pt-17-3",
     "month": 17,
-    "title": "간단한 퍼즐",
-    "description": "3-4개 큰 조각이 있는 꼭지 퍼즐을 소개해주세요. 아기에게 꺼내고 다시 끼워 넣는 방법을 보여주세요. 성공할 때마다 축하해주세요!",
-    "materials": ["꼭지 퍼즐"],
+    "title": "조각 맞추기! 첫 퍼즐",
+    "description": "꼭지 달린 퍼즐 3~4조각짜리로 시작해보세요. 꺼내고 다시 맞춰 넣는 걸 보여주면 따라해요. 맞출 때마다 '와~!' 하고 같이 기뻐해 주세요!",
+    "materials": [
+      "꼭지 퍼즐"
+    ],
     "difficulty": "medium",
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "퍼즐은 아이가 돌리고, 뒤집고, 모양을 맞추는 과정에서 시행착오와 의도적 탐구를 통해 문제 해결 능력과 공간 추론력을 발달시켜요."
+    "sourceQuote": "퍼즐을 돌려보고 맞춰보면서 문제 해결 능력이랑 공간 감각이 자라요."
   },
   {
     "id": "pt-18-1",
     "month": 18,
-    "title": "인형 돌보기 놀이",
-    "description": "아기에게 인형이나 봉제 동물을 주고 돌보는 척 놀이를 해보세요: 먹이기, 재우기, 목욕시키기. 동작을 설명해주면서 공감 능력과 언어를 키워줘요.",
-    "materials": ["인형 또는 봉제 동물", "장난감 젖병", "작은 담요"],
+    "title": "아기 인형 돌봐주기",
+    "description": "인형이나 봉제 동물한테 밥 먹이고, 이불 덮어주고, 목욕시키는 놀이를 해보세요. '인형이 졸리대~' 하면서 하면 공감 능력이랑 말도 같이 늘어요.",
+    "materials": [
+      "인형이나 봉제 동물",
+      "장난감 젖병",
+      "작은 담요"
+    ],
     "difficulty": "easy",
     "category": "social",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "인형과 봉제 동물을 돌보는 것은 아이가 공감과 양육 행동을 연습하도록 도와주며, 보호자에게서 받는 사랑스러운 돌봄을 반영해요."
+    "sourceQuote": "인형을 돌보면서 공감이랑 사랑을 주는 연습을 해요. 평소에 받는 사랑을 따라하는 거예요."
   },
   {
     "id": "pt-18-2",
     "month": 18,
-    "title": "감각 놀이통",
-    "description": "용기에 쌀, 파스타, 모래를 채우고 작은 장난감을 숨겨주세요. 아기가 파고 찾게 해주세요. 감각 탐색과 소근육 발달에 좋아요.",
-    "materials": ["용기", "쌀 또는 파스타", "작은 장난감", "삽"],
+    "title": "보물이 숨어있는 감각 놀이통",
+    "description": "큰 통에 쌀이나 파스타를 채우고 작은 장난감을 숨겨두세요. 손으로 파헤치면서 찾는 걸 정말 좋아해요! 다양한 감촉을 느끼면서 손가락 힘도 세져요.",
+    "materials": [
+      "큰 통",
+      "쌀이나 파스타",
+      "작은 장난감",
+      "삽"
+    ],
     "difficulty": "medium",
     "category": "cognitive",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "감각 놀이는 아이가 질감을 탐구하고, 소근육을 발달시키며, 촉각과 시각을 사용해 숨겨진 물체를 찾으면서 문제 해결을 연습하게 해줘요."
+    "sourceQuote": "감각 놀이를 하면서 촉감도 익히고 손가락도 발달하고, 숨긴 걸 찾으면서 문제 해결도 연습돼요."
   },
   {
     "id": "pt-18-3",
     "month": 18,
-    "title": "따라해봐요",
-    "description": "간단한 동작을 하면서 아기가 따라하도록 유도하세요: 점프, 돌기, 박수, 발 구르기. 그런 다음 역할을 바꿔 아기가 리더가 되게 해주세요. 모방 능력과 대근육 발달에 좋아요.",
+    "title": "나를 따라해! 몸 놀이",
+    "description": "점프! 빙글! 짝짝! 쿵쿵! 하고 동작을 보여주면 따라해요. 그다음엔 아기가 리더! 아기가 하는 걸 따라해 주면 너무 좋아하거든요.",
     "difficulty": "easy",
     "category": "physical",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "지시를 따르고 움직임을 모방하는 활동적 놀이는 아이의 대근육 기술, 신체 조절력, 집중력을 키우는 데 도움이 돼요."
+    "sourceQuote": "동작을 보고 따라하는 활동적인 놀이를 하면 대근육이랑 몸 조절력, 집중력이 같이 자라요."
   },
   {
     "id": "pt-18-4",
     "month": 18,
-    "title": "신체 부위 이름 맞추기",
-    "description": "다양한 신체 부위를 만지면서 '코는 어디? 발가락은 어디?' 하고 물어보세요. 신체 부위에 대한 노래를 불러주세요. 아기가 아는 것을 보여주는 걸 좋아할 거예요.",
+    "title": "코는 어디? 발가락은?",
+    "description": "몸 여기저기를 만지면서 '코는 어디?' '배는 어디?' 하고 물어보세요. 자기가 아는 거 보여줄 때 얼마나 뿌듯해하는지 몰라요! 신체 노래 불러줘도 좋아요.",
     "difficulty": "easy",
     "category": "language",
     "source": "CDC Act Early",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/",
-    "sourceQuote": "18개월이 되면 아이는 보통 이름을 들으면 여러 신체 부위를 가리킬 수 있으며, 이는 성장하는 수용 언어와 신체 인식을 반영하는 이정표예요."
+    "sourceQuote": "18개월쯤 되면 몸 부위 이름을 듣고 가리킬 수 있어요. 듣고 이해하는 힘이 자라고 있다는 뜻이에요."
   },
   {
     "id": "pt-19-1",
     "month": 19,
-    "title": "색깔 분류하기",
-    "description": "색깔별 블록, 폼폼, 공을 같은 색 그릇에 분류해주세요. 분류하면서 각 색깔 이름을 말해주세요. 2가지 색으로 시작하세요.",
-    "materials": ["색깔 블록 또는 폼폼", "색깔 그릇"],
+    "title": "같은 색끼리 모아보자!",
+    "description": "색깔별 블록이나 폼폼을 같은 색 그릇에 쏙쏙 넣어보세요. '빨간 건 빨간 그릇!' 하면서요. 처음엔 2가지 색으로 시작하면 돼요.",
+    "materials": [
+      "색깔 블록이나 폼폼",
+      "색깔 그릇"
+    ],
     "difficulty": "medium",
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "분류 활동은 아이에게 분류와 논리적 사고를 소개하며, 나중에 수학과 과학 학습의 기초가 되는 핵심 능력을 형성해요."
+    "sourceQuote": "분류하기를 하면서 '같은 것끼리 모으기'라는 논리적 사고가 시작돼요. 수학과 과학의 기초가 되죠."
   },
   {
     "id": "pt-19-2",
     "month": 19,
-    "title": "놀이터 모험",
-    "description": "놀이터에 가서 미끄럼틀, 그네, 낮은 오르기 구조물을 시도해보세요. 가까이서 지켜보면서 동작을 설명해주세요: '올라가고 있네!'",
+    "title": "놀이터 가서 신나게!",
+    "description": "놀이터에서 미끄럼틀, 그네, 낮은 오르기 기구를 시도해보세요. 바로 옆에서 지켜보면서 '위로 올라간다~!' 이렇게 말해주면 말도 늘고 몸도 튼튼해져요.",
     "difficulty": "medium",
     "category": "physical",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "놀이터 놀이는 아이가 성장하는 신체 능력에 도전하는 환경에서 힘, 균형, 협응력을 키울 기회를 제공해요."
+    "sourceQuote": "놀이터에서 놀면 자라나는 신체 능력에 맞는 도전을 하면서 힘, 균형, 협응력이 커져요."
   },
   {
     "id": "pt-19-3",
     "month": 19,
-    "title": "질문하며 책 읽기",
-    "description": "책을 읽으면서 간단한 질문을 해보세요: '고양이가 어디 있어?' '공이 무슨 색이야?' 아기가 가리키거나 대답할 시간을 주세요. 어떤 대답이든 이어서 말해주세요.",
-    "materials": ["그림책"],
+    "title": "이건 뭐지? 질문하며 책 읽기",
+    "description": "책을 읽다가 '고양이 어디 있어?' '이거 무슨 색이야?' 하고 물어보세요. 대답할 시간을 넉넉히 주고, 뭐라고 하든 이어서 말해주면 돼요!",
+    "materials": [
+      "그림책"
+    ],
     "difficulty": "easy",
     "category": "language",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "질문하고 반응을 기다리는 상호작용 읽기는 이해력, 어휘력, 그리고 평생 이어지는 책에 대한 사랑을 키워줘요."
+    "sourceQuote": "질문하고 기다려주는 식으로 책을 읽으면 이해력이랑 어휘력이 자라고, 책을 좋아하는 아이로 자라요."
   },
   {
     "id": "pt-20-1",
     "month": 20,
-    "title": "점토 놀이 탐험",
-    "description": "아기에게 점토를 주고 주무르고, 찌르고, 굴리고, 납작하게 만들게 해주세요. 공이나 뱀 같은 간단한 모양 만드는 법을 보여주세요. 손 힘과 창의력에 좋아요.",
-    "materials": ["점토", "쿠키 틀", "밀대"],
+    "title": "주물주물 점토 놀이",
+    "description": "점토를 주고 주물럭, 콕콕, 데굴데굴, 쭈욱 늘리게 해주세요. 동그라미랑 뱀 만드는 거 보여주면 따라해요. 손 힘도 세지고 창의력도 쑥쑥!",
+    "materials": [
+      "점토",
+      "쿠키 틀",
+      "밀대"
+    ],
     "difficulty": "easy",
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "점토를 주무르고 성형하는 것은 아이가 연필 잡기 같은 소근육 과제에 필요한 손과 손가락의 작은 근육을 강화시켜요."
+    "sourceQuote": "점토를 주물럭거리면 손가락 근육이 튼튼해져요. 나중에 연필 잡을 때 필요한 힘이에요."
   },
   {
     "id": "pt-20-2",
     "month": 20,
-    "title": "짝 맞추기 놀이",
-    "description": "집안의 쌍이 되는 물건(양말 2짝, 숟가락 2개, 컵 2개)을 사용해 아기에게 짝을 찾게 해보세요. 시각 변별력과 인지 능력을 키워줘요.",
-    "materials": ["쌍이 되는 생활 용품"],
+    "title": "짝이 어디 있지? 짝 맞추기",
+    "description": "양말 2짝, 숟가락 2개, 컵 2개 같은 쌍을 섞어놓고 '짝 찾아볼까?' 해보세요. 같은 거 찾았을 때 '맞아~!' 하고 같이 기뻐해 주세요.",
+    "materials": [
+      "쌍이 되는 집안 물건들"
+    ],
     "difficulty": "medium",
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "짝 맞추기 놀이는 시각 변별력과 분류 능력을 키워, 아이가 초기 문해력과 수학을 뒷받침하는 유사점과 차이점을 발견하도록 도와줘요."
+    "sourceQuote": "짝 맞추기를 하면서 같은 점과 다른 점을 발견하는 눈이 생겨요. 읽기랑 수학의 기초가 되죠."
   },
   {
     "id": "pt-20-3",
     "month": 20,
-    "title": "집안일 도우미",
-    "description": "아기에게 간단한 '일'을 맡겨보세요. 냅킨 놓기, 장난감 통에 장난감 넣기, 천으로 닦기 등. 유용하다는 느낌을 정말 좋아할 거예요!",
-    "materials": ["작은 천", "장난감 통"],
+    "title": "나도 도울래! 집안일 놀이",
+    "description": "냅킨 놓기, 장난감 상자에 넣기, 작은 천으로 닦기 같은 간단한 '일'을 시켜보세요. '고마워! 잘했어!' 하면 엄청 뿌듯해하면서 또 하겠다고 해요!",
+    "materials": [
+      "작은 천",
+      "장난감 상자"
+    ],
     "difficulty": "easy",
     "category": "social",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "간단한 집안일에 아이를 참여시키면 능력감과 소속감을 키우면서 책임감과 협력을 가르쳐요."
+    "sourceQuote": "간단한 집안일을 같이 하면 '나도 할 수 있어!'라는 자신감이 생기고, 책임감이랑 협동심도 배워요."
   },
   {
     "id": "pt-21-1",
     "month": 21,
-    "title": "두 단계 지시 놀이",
-    "description": "간단한 두 단계 지시를 해보세요: '공을 집어서 상자에 넣어봐.' 두 단계를 모두 완수하면 축하해주세요. 듣기와 기억력을 키워요.",
-    "materials": ["공", "상자"],
+    "title": "두 가지 부탁! 지시 따르기 놀이",
+    "description": "'공 집어서~ 상자에 넣어봐!' 이렇게 두 단계를 한 번에 말해보세요. 두 가지 다 하면 '와~! 다 했네!' 하고 크게 칭찬해주세요. 듣기랑 기억력이 쑥쑥!",
+    "materials": [
+      "공",
+      "상자"
+    ],
     "difficulty": "medium",
     "category": "language",
     "source": "CDC Act Early",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/",
-    "sourceQuote": "두 단계 지시 따르기는 아이의 언어 처리, 순서 기억, 지시에 따른 행동 능력의 성장을 보여주는 중요한 이정표예요."
+    "sourceQuote": "두 단계 지시를 따를 수 있다는 건 말을 듣고 이해하고 순서대로 행동하는 힘이 자라고 있다는 뜻이에요."
   },
   {
     "id": "pt-21-2",
     "month": 21,
-    "title": "비눗방울 쫓기",
-    "description": "비눗방울을 불고 아기가 쫓아가서 터뜨리게 해주세요. 높이 손을 뻗고, 몸을 숙이고, 뛰어가도록 격려하세요. 대근육 기술과 협응력에 아주 좋아요.",
-    "materials": ["비눗방울 용액", "비눗방울 막대"],
+    "title": "비눗방울 잡아라!",
+    "description": "비눗방울 후~ 불어주면 쫓아가서 톡톡 터뜨려요. 높이 손 뻗고, 쭈그려 앉고, 뛰어가면서 온몸을 써요. 까르르 웃으면서 운동도 되는 최고의 놀이!",
+    "materials": [
+      "비눗방울 물",
+      "비눗방울 막대"
+    ],
     "difficulty": "easy",
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "비눗방울을 쫓고 터뜨리는 것은 아이가 다양한 방향으로 추적하고, 뻗고, 몸을 움직이면서 손-눈 협응력, 균형, 운동 계획 능력을 키워줘요."
+    "sourceQuote": "비눗방울 쫓으면서 손과 눈의 협응, 균형감, 방향 감각이 자연스럽게 좋아져요."
   },
   {
     "id": "pt-21-3",
     "month": 21,
-    "title": "도형 보물찾기",
-    "description": "집 안에서 기본 도형을 찾아보세요: '동그란 거 찾을 수 있어? 네모난 거는?' 추상적인 도형을 실제 사물과 연결해줘요.",
+    "title": "동그라미 찾아라! 도형 보물찾기",
+    "description": "집 안에서 동그라미, 네모, 세모를 찾아보세요. '동그란 거 어디 있지?' 하면 시계나 접시를 가리켜요. 도형이 실제 물건에 있다는 걸 알게 돼요!",
     "difficulty": "medium",
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "추상적인 도형을 실제 물건과 연결하면 수학적 이해가 깊어지고, 학습이 일상생활에 녹아 있다는 것을 아이가 알게 돼요."
+    "sourceQuote": "실제 물건에서 도형을 찾으면 수학이 일상 속에 있다는 걸 알게 돼요. 수학적 이해가 깊어지죠."
   },
   {
     "id": "pt-22-1",
     "month": 22,
-    "title": "다과회 놀이",
-    "description": "컵, 접시, 장난감 음식으로 다과회를 열어보세요. 따르기, 나눠주기를 연습하고 '주세요', '고마워요' 같은 예의바른 표현을 사용해보세요.",
-    "materials": ["장난감 다기 세트", "장난감 음식", "작은 탁자"],
+    "title": "차 한잔 하실래요? 다과회 놀이",
+    "description": "컵, 접시, 장난감 음식으로 다과회를 열어보세요. '따라드릴게요~' '맛있게 드세요~' 하면서 예의바른 말 연습도 하고 사회성도 길러져요!",
+    "materials": [
+      "장난감 차 세트",
+      "장난감 음식",
+      "작은 탁자"
+    ],
     "difficulty": "easy",
     "category": "social",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "다과회 같은 역할 놀이는 아이가 사회적 규범을 연습하고, 맥락에 맞게 언어를 사용하며, 단체 생활에 필요한 자기 조절력을 키우는 데 도움이 돼요."
+    "sourceQuote": "다과회 놀이 하면서 예절 연습도 하고 말도 늘어요. 나중에 단체 생활에 필요한 자기 조절도 배우게 되죠."
   },
   {
     "id": "pt-22-2",
     "month": 22,
-    "title": "손가락 그림 그리기",
-    "description": "종이에 물감을 펴고 아기가 손가락으로 그리게 해주세요. 색깔 이름을 말하고 뭘 만들고 있는지 이야기하세요. 종이를 벽에 테이프로 붙이면 세로 놀이도 돼요.",
-    "materials": ["수성 핑거페인트", "큰 종이", "테이프"],
+    "title": "손가락 물감 그림 그리기",
+    "description": "큰 종이에 물감을 짜주고 손가락으로 쓱쓱 그리게 해주세요. '이거 무슨 색이야?' '뭐 만들어?' 하면서 대화도 해요. 벽에 종이를 붙이면 세로로 그리는 재미도 있어요!",
+    "materials": [
+      "수성 핑거페인트",
+      "큰 종이",
+      "테이프"
+    ],
     "difficulty": "medium",
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "손가락 그림은 손 힘과 촉각 인식을 발달시키면서, 아이가 말로 표현하기 전에 창의적으로 자신을 표현할 수 있는 방법을 제공해요."
+    "sourceQuote": "손가락으로 그리면서 손 힘이 세지고, 아직 말로 다 못 하는 걸 그림으로 표현할 수 있어요."
   },
   {
     "id": "pt-22-3",
     "month": 22,
-    "title": "일상 속 숫자 세기",
-    "description": "모든 것을 세어보세요: 계단을 오르면서, 접시 위 과자, 손가락. 숫자 세기를 일상에 녹여서 자연스럽게 수 감각을 키워주세요.",
+    "title": "하나, 둘, 셋! 일상 속 숫자 세기",
+    "description": "계단 올라가면서, 과자 먹으면서, 손가락 펴면서 하나둘셋 세어보세요. 특별히 시간 내서 가르치는 게 아니라 생활 속에서 자연스럽게 수 감각이 생겨요!",
     "difficulty": "easy",
     "category": "cognitive",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "일상 속에서 수 세기를 자연스럽게 해주면 아이가 수 개념을 자연스럽게 흡수하고 수학이 일상의 유용한 일부라는 것을 이해하게 돼요."
+    "sourceQuote": "매일매일 세는 걸 반복하면 숫자가 뭔지 자연스럽게 알게 돼요. 수학이 특별한 게 아니라 일상이라는 걸 배우는 거예요."
   },
   {
     "id": "pt-23-1",
     "month": 23,
-    "title": "사이먼 가라사대 (간단 버전)",
-    "description": "간단한 버전으로 놀아보세요: '사이먼이 말했어, 머리 만져! 사이먼이 말했어, 점프!' 속이는 부분은 빼고 재미있는 지시 따르기에 집중하세요.",
+    "title": "사이먼이 말했어~ 따라하기 놀이",
+    "description": "'사이먼이 말했어, 머리 만져!' '사이먼이 말했어, 점프!' 이렇게 재미있는 지시만 해주세요. 속이는 건 빼고 신나게 따라하는 데 집중하면 돼요!",
     "difficulty": "easy",
     "category": "language",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "듣기와 신체 동작을 결합한 놀이는 언어 이해력과 운동 반응 사이의 연결을 강화해서 두 가지 능력을 동시에 키워줘요."
+    "sourceQuote": "듣고 바로 몸으로 움직이는 놀이를 하면 귀로 듣는 힘이랑 몸 쓰는 힘이 동시에 자라요."
   },
   {
     "id": "pt-23-2",
     "month": 23,
-    "title": "경사로 만들기",
-    "description": "판자나 큰 책을 기울여서 경사로를 만들어보세요. 자동차, 공, 원통을 굴려보세요. 경사를 조절하며 실험하세요. 물리를 배우기에 좋아요!",
-    "materials": ["판자 또는 큰 책", "장난감 자동차", "공"],
+    "title": "데굴데굴 경사로 만들기",
+    "description": "판자나 큰 책을 기울여서 비탈길을 만들어요. 자동차, 공, 둥근 통을 굴려보면서 '와 빨라!' '이번엔 천천히!' 경사를 조절하면서 실험하는 게 재미있어요!",
+    "materials": [
+      "판자나 큰 책",
+      "장난감 자동차",
+      "공"
+    ],
     "difficulty": "medium",
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "경사로와 움직임을 실험할 때 아이는 예측을 테스트하고 원인-결과 관계를 관찰하면서 초기 과학적 사고를 하게 돼요."
+    "sourceQuote": "경사로에서 이것저것 굴려보면서 '이렇게 하면 이렇게 되겠다' 예측하고 확인하는 과학적 사고를 하게 돼요."
   },
   {
     "id": "pt-23-3",
     "month": 23,
-    "title": "변장 놀이",
-    "description": "모자, 스카프, 큰 셔츠, 신발을 변장 놀이용으로 제공하세요. 상상력을 키우고 단추, 지퍼 같은 옷 입기 기술도 연습할 수 있어요.",
-    "materials": ["모자", "스카프", "큰 셔츠", "신발"],
+    "title": "모자 쓰고 변신! 변장 놀이",
+    "description": "모자, 스카프, 큰 셔츠, 신발을 늘어놓으면 골라 입으면서 놀아요. 상상력이 쑥쑥 자라고, 단추 끼우기나 지퍼 올리기 같은 옷 입기 연습도 자연스럽게 돼요!",
+    "materials": [
+      "모자",
+      "스카프",
+      "큰 셔츠",
+      "신발"
+    ],
     "difficulty": "easy",
     "category": "social",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "변장 놀이는 상상력과 자기 표현을 키우면서, 자라나는 독립심에 필요한 옷 입기 기술을 실제로 연습할 기회를 줘요."
+    "sourceQuote": "변장 놀이 하면서 상상력도 키우고, 혼자 옷 입는 연습도 돼요. 독립심이 자라는 거예요."
   },
   {
     "id": "pt-24-1",
     "month": 24,
-    "title": "색깔 맞추기 탐험",
-    "description": "아이에게 색깔 카드를 주고 방 안에서 같은 색을 찾게 해보세요. '파란색 찾을 수 있어?' 색깔 인식과 관찰력을 키워요.",
-    "materials": ["색깔 카드 또는 종이"],
+    "title": "파란색 찾기! 색깔 맞추기 탐험",
+    "description": "색깔 카드를 하나 들고 방 안에서 같은 색을 찾아보세요. '파란 거 어디 있지~?' 하면 여기저기 두리번거리면서 찾아요. 색깔도 배우고 관찰력도 길러져요!",
+    "materials": [
+      "색깔 카드나 색종이"
+    ],
     "difficulty": "medium",
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "색깔 맞추기 활동은 관찰력과 분류 능력을 날카롭게 해서, 아이가 의미 있는 놀이를 통해 세상을 이해하고 정리하도록 도와줘요."
+    "sourceQuote": "색깔 맞추기를 하면서 눈으로 잘 관찰하고 분류하는 힘이 생겨요. 놀이하면서 세상을 정리하는 법을 배우는 거예요."
   },
   {
     "id": "pt-24-2",
     "month": 24,
-    "title": "점프 놀이",
-    "description": "함께 점프를 연습해보세요! 바닥의 선을 넘고, 낮은 계단에서 뛰어내리고, 원에서 원으로 점프하세요. 처음에는 손을 잡고 균형을 잡아주세요.",
+    "title": "점프점프! 뛰기 놀이",
+    "description": "같이 점프해요! 바닥에 선을 넘어보고, 낮은 데서 뛰어내려보고, 동그라미에서 동그라미로 점프! 처음엔 손 잡아주면서 하면 돼요. 성공하면 둘 다 기분 좋아져요!",
     "difficulty": "medium",
     "category": "physical",
     "source": "CDC Act Early",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/",
-    "sourceQuote": "두 발을 모아 땅에서 뛰기는 만 2세 무렵의 주요 대근육 이정표로, 성장하는 힘, 균형, 협응력을 보여줘요."
+    "sourceQuote": "두 발 모아 뛰기는 만 2세쯤의 중요한 발달 포인트예요. 힘이랑 균형감이 자라고 있다는 뜻이에요."
   },
   {
     "id": "pt-24-3",
     "month": 24,
-    "title": "이야기 다시 말하기",
-    "description": "익숙한 이야기를 읽은 후 아이에게 다시 말해보라고 해주세요. '먼저 무슨 일이 있었어? 그다음엔?' 어떤 버전이든 괜찮아요. 이야기하기 연습이 목표예요.",
-    "materials": ["좋아하는 그림책"],
+    "title": "그다음엔? 이야기 다시 말해보기",
+    "description": "좋아하는 책을 읽고 나서 '처음에 뭐가 있었지? 그다음엔?' 하고 물어보세요. 뒤죽박죽이어도 괜찮아요! 아이 나름대로 이야기하는 연습이 중요한 거예요.",
+    "materials": [
+      "좋아하는 그림책"
+    ],
     "difficulty": "medium",
     "category": "language",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "이야기를 다시 말하기는 아이의 이야기 구성 능력, 순서 파악 능력, 언어로 자기 생각과 경험을 나누는 자신감을 키워줘요."
+    "sourceQuote": "이야기를 다시 말하면서 순서대로 정리하는 힘이랑 말로 표현하는 자신감이 커져요."
   },
   {
     "id": "pt-24-4",
     "month": 24,
-    "title": "씻기 놀이 스테이션",
-    "description": "작은 대야에 물, 비누, 플라스틱 장난감이나 그릇을 준비해서 씻기 놀이를 해보세요. 아이가 붓기, 문지르기, 닦기를 연습해요.",
-    "materials": ["작은 대야", "물", "주방 세제", "플라스틱 장난감", "수건"],
+    "title": "뽀드득뽀드득 설거지 놀이",
+    "description": "작은 대야에 물 받고 비누 조금 넣어서 장난감이나 그릇을 씻게 해주세요. 쏟기, 문지르기, 닦기를 하면서 양손 쓰는 능력이 좋아져요. 물놀이라 신나하기도 하고요!",
+    "materials": [
+      "작은 대야",
+      "물",
+      "주방 세제",
+      "플라스틱 장난감",
+      "수건"
+    ],
     "difficulty": "medium",
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "씻기 같은 실생활 활동은 양손 협응력, 손 힘, 아이가 모든 학습 영역에서 사용하는 순서 능력을 발달시켜요."
+    "sourceQuote": "설거지 같은 실생활 놀이를 하면서 양손 협응력이랑 순서대로 하는 힘이 자라요."
   },
   {
     "id": "pt-25-1",
     "month": 25,
-    "title": "기억력 카드 게임",
-    "description": "3쌍의 짝 카드를 뒤집어 놓고 시작하세요. 번갈아 2장씩 뒤집어 짝을 찾아보세요. 기억력, 차례 지키기, 집중력을 키워요.",
-    "materials": ["짝 그림 카드"],
+    "title": "어디 있었지? 기억력 카드 게임",
+    "description": "같은 그림 카드 3쌍을 뒤집어 놓고 번갈아 2장씩 뒤집어요. 같은 거 나오면 '짝이다!' 아직 못 맞춰도 괜찮아요, 하다 보면 기억력이 쑥쑥 자라거든요.",
+    "materials": [
+      "짝 그림 카드"
+    ],
     "difficulty": "medium",
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "기억력 게임은 작업 기억과 집중력을 강화하며, 이는 나중에 모든 학업 영역의 학습을 뒷받침하는 필수 인지 능력이에요."
+    "sourceQuote": "기억력 게임을 하면서 머릿속으로 기억하고 집중하는 힘이 길러져요. 나중에 공부할 때 큰 도움이 돼요."
   },
   {
     "id": "pt-25-2",
     "month": 25,
-    "title": "율동 노래",
-    "description": "'곰 세 마리', '작은 별', '산토끼' 같은 율동이 있는 노래를 불러보세요. 아이가 가사에 맞춰 동작을 따라해요.",
+    "title": "곰 세 마리~ 율동 노래",
+    "description": "'곰 세 마리', '작은 별', '산토끼' 같은 율동 노래를 불러보세요. 가사에 맞춰 동작 따라하면서 노래도 외우고 몸도 움직여요!",
     "difficulty": "easy",
     "category": "language",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "율동 노래는 언어, 리듬, 움직임을 결합해서 몸과 두뇌의 강력한 연결을 통해 아이가 새로운 단어와 표현을 기억하도록 도와줘요."
+    "sourceQuote": "율동 노래는 말, 리듬, 움직임이 합쳐져서 새 단어가 머리에 쏙쏙 들어와요."
   },
   {
     "id": "pt-25-3",
     "month": 25,
-    "title": "실 꿰기와 엮기",
-    "description": "큰 나무 구슬과 굵은 실이나 신발끈을 주고 꿰게 해보세요. 2-3개 구슬로 시작해서 점점 늘려가세요. 인내심과 소근육 조절력을 키워요.",
-    "materials": ["큰 나무 구슬", "굵은 실 또는 신발끈"],
+    "title": "구슬 꿰기 도전!",
+    "description": "큰 나무 구슬이랑 굵은 끈을 주면 하나씩 꿰려고 해요. 2~3개부터 시작해서 점점 늘려가세요. 집중하는 모습이 진지하고 귀여워요! 소근육에 아주 좋은 놀이예요.",
+    "materials": [
+      "큰 나무 구슬",
+      "굵은 끈이나 신발끈"
+    ],
     "difficulty": "advanced",
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "실 꿰기와 엮기 활동은 아이가 자기 관리와 글쓰기 준비 기술에 필요한 손-눈 협응력과 양손 사용을 정교하게 다듬어줘요."
+    "sourceQuote": "구슬 꿰기를 하면서 눈이랑 손의 협응이 정교해져요. 혼자 옷 입고 글씨 쓰는 기초가 돼요."
   },
   {
     "id": "pt-26-1",
     "month": 26,
-    "title": "자연물 수집 산책",
-    "description": "산책하면서 흥미로운 것들을 모아보세요: 나뭇잎, 나뭇가지, 돌, 솔방울. 집에서 크기, 색깔, 종류별로 분류하고 발견한 것에 대해 이야기하세요.",
-    "materials": ["수집용 가방"],
+    "title": "나뭇잎이랑 돌멩이 모으기 산책",
+    "description": "산책하면서 나뭇잎, 나뭇가지, 돌멩이, 솔방울 같은 걸 주워요. 집에 와서 크기별, 색깔별로 나눠보면서 '이건 큰 거, 이건 작은 거' 하고 이야기해요.",
+    "materials": [
+      "주머니나 작은 가방"
+    ],
     "difficulty": "easy",
     "category": "cognitive",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "자연물을 수집하고 분류하면 관찰력, 분류 능력, 초기 과학 기술을 키우면서 세상에 대한 아이의 호기심을 길러줘요."
+    "sourceQuote": "자연에서 모은 걸 분류하면서 관찰력이랑 분류 능력이 생기고, 세상에 대한 호기심도 커져요."
   },
   {
     "id": "pt-26-2",
     "month": 26,
-    "title": "세발자전거 또는 밸런스 바이크",
-    "description": "세발자전거나 밸런스 바이크를 소개해주세요. 평평하고 매끄러운 곳에서 시작하세요. 다리 힘, 협응력, 공간 인식을 키워요.",
-    "materials": ["세발자전거 또는 밸런스 바이크", "헬멧"],
+    "title": "세발자전거 타볼까?",
+    "description": "세발자전거나 밸런스 바이크를 시작해보세요. 평평하고 매끄러운 곳에서 천천히요. 다리 힘도 세지고 균형 감각도 좋아져요. 헬멧은 꼭 써주세요!",
+    "materials": [
+      "세발자전거나 밸런스 바이크",
+      "헬멧"
+    ],
     "difficulty": "medium",
     "category": "physical",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "세발자전거와 밸런스 바이크 타기는 다리 힘, 협응력, 균형을 발달시키면서 아이에게 독립감과 성취감을 줘요."
+    "sourceQuote": "자전거를 타면서 다리 힘이랑 균형이 좋아지고, '나 혼자 할 수 있다!'는 성취감도 느껴요."
   },
   {
     "id": "pt-26-3",
     "month": 26,
-    "title": "인형극",
-    "description": "양말이나 종이봉투로 손 인형을 만들어 간단한 이야기를 만들어보세요. 아이도 자기 인형으로 말하게 해주세요. 언어, 창의력, 사회성에 좋아요.",
-    "materials": ["양말 또는 종이봉투", "마커"],
+    "title": "양말 인형극 해볼까?",
+    "description": "양말이나 종이봉투에 눈 코 입 그려서 인형을 만들어보세요. 간단한 이야기를 만들면서 아이 인형도 말하게 해주세요. 상상력이랑 말하기 능력이 쑥쑥 자라요!",
+    "materials": [
+      "양말이나 종이봉투",
+      "매직"
+    ],
     "difficulty": "easy",
     "category": "language",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "인형극 놀이는 아이에게 감정을 표현하고, 대화를 연습하고, 이야기 만들기와 다양한 목소리를 실험할 수 있는 안전한 방법을 제공해요."
+    "sourceQuote": "인형극을 하면서 감정 표현도 하고, 대화 연습도 하고, 이야기 만드는 재미도 느껴요."
   },
   {
     "id": "pt-27-1",
     "month": 27,
-    "title": "음악 멈추기 놀이",
-    "description": "음악을 틀고 함께 춤추다가 음악이 멈추면 모두 멈춰요! 듣기 능력, 신체 조절력을 키우고 정말 재미있어요.",
-    "materials": ["음악 재생기"],
+    "title": "음악 멈추면 나도 멈춰! 프리즈 댄스",
+    "description": "신나는 음악 틀고 같이 춤추다가, 음악이 딱 멈추면 모두 얼음! 귀 기울이는 힘도 생기고 몸 조절하는 능력도 커져요. 무엇보다 엄청 재미있어요!",
+    "materials": [
+      "음악 재생기"
+    ],
     "difficulty": "easy",
     "category": "physical",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "신호에 맞춰 움직이고 멈추는 놀이는 자기 조절력, 듣기 능력, 더 체계적인 활동에 필요한 신체 조절력을 키워줘요."
+    "sourceQuote": "신호에 맞춰 움직이고 멈추는 놀이를 하면 자기 조절력이랑 듣기 능력이 좋아져요."
   },
   {
     "id": "pt-27-2",
     "month": 27,
-    "title": "장난감 세기",
-    "description": "놀면서 장난감을 세어보세요: '블록이 1, 2, 3개!' 특정 숫자만큼 달라고 해보세요: '자동차 2개 줄 수 있어?' 수 감각을 키워요.",
-    "materials": ["작은 장난감"],
+    "title": "블록이 몇 개? 장난감 세기",
+    "description": "놀이하면서 '블록이 하나, 둘, 셋!' 하고 세어보세요. '자동차 2개만 줄래?' 하면서 숫자를 직접 써보게 해요. 숫자가 진짜 양이라는 걸 알게 돼요!",
+    "materials": [
+      "작은 장난감들"
+    ],
     "difficulty": "medium",
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "놀이 중에 실제 물건을 세는 것은 숫자가 실제 양을 나타낸다는 것, 즉 일대일 대응이라는 기초적 수학 개념을 아이가 이해하도록 도와줘요."
+    "sourceQuote": "실제 물건을 세면서 숫자가 양을 나타낸다는 걸 배워요. 이게 수학의 기초인 일대일 대응이에요."
   },
   {
     "id": "pt-27-3",
     "month": 27,
-    "title": "장애물 코스 2.0",
-    "description": "더 복잡한 장애물 코스를 만들어보세요: 탁자 밑으로 기어가기, 베개 넘기, 바닥 테이프 위 걷기, 바구니에 공 넣기. 여러 단계 지시를 따라해요.",
-    "materials": ["베개", "테이프", "바구니", "공"],
+    "title": "업그레이드! 장애물 코스 2.0",
+    "description": "탁자 밑으로 지나가고, 베개를 넘고, 바닥 테이프 위를 걷고, 바구니에 공을 넣어보세요. 여러 가지를 순서대로 하면서 머리랑 몸이 같이 자라요!",
+    "materials": [
+      "베개",
+      "테이프",
+      "바구니",
+      "공"
+    ],
     "difficulty": "medium",
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "여러 단계의 장애물 코스는 아이가 움직임을 계획하고, 순서를 따르고, 전신을 사용하면서 운동과 인지 능력을 함께 키우도록 도전해요."
+    "sourceQuote": "여러 단계로 된 장애물 코스는 움직임을 미리 계획하면서 운동이랑 생각하는 힘을 동시에 키워줘요."
   },
   {
     "id": "pt-28-1",
     "month": 28,
-    "title": "레스토랑 놀이",
-    "description": "가게 놀이를 해보세요. 아이가 요리사나 종업원이 될 수 있어요. 그림이 있는 간단한 메뉴를 만들고 주문하기, 서빙하기, 감사 인사를 연습하세요.",
-    "materials": ["장난감 음식", "접시", "메뉴용 종이", "크레용"],
+    "title": "주문이요~ 식당 놀이",
+    "description": "장난감 음식으로 식당을 차려보세요. 아이가 요리사나 점원이 돼요\\! 그림 메뉴를 만들고 주문하기, 서빙하기, '고마워요~' 하는 것까지 연습해요.",
+    "materials": [
+      "장난감 음식",
+      "접시",
+      "메뉴판 만들 종이",
+      "크레용"
+    ],
     "difficulty": "medium",
     "category": "social",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "레스토랑 같은 실제 상황을 역할극하면 아이의 사회성, 어휘력, 다른 사람의 관점을 이해하는 능력이 발달해요."
+    "sourceQuote": "식당 놀이 같은 역할극을 하면서 말도 늘고, 상대방 입장에서 생각하는 연습도 돼요."
   },
   {
     "id": "pt-28-2",
     "month": 28,
-    "title": "가위질 소개",
-    "description": "아이용 안전 가위와 종이를 주고 자르기를 연습하게 해주세요. 가장자리를 조금씩 자르는 것부터 시작하세요. 손 힘과 협응력을 키워요.",
-    "materials": ["아이용 안전 가위", "종이"],
+    "title": "싹둑싹둑! 첫 가위질",
+    "description": "아이용 안전 가위를 주고 종이 가장자리를 조금씩 잘라보게 해주세요. 처음엔 삐뚤삐뚤해도 괜찮아요! 가위질하면서 손 힘이랑 양손 협응력이 자라거든요.",
+    "materials": [
+      "아이용 안전 가위",
+      "종이"
+    ],
     "difficulty": "advanced",
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "가위 사용법을 배우면 많은 학교 준비 기술에 필수적인 손 근육, 양손 협응력, 시각-운동 통합을 발달시켜요."
+    "sourceQuote": "가위질을 배우면서 손 근육이랑 눈-손 협응이 좋아져요. 나중에 학교 갈 준비가 되는 거예요."
   },
   {
     "id": "pt-28-3",
     "month": 28,
-    "title": "없어진 물건 찾기",
-    "description": "쟁반에 물건 3개를 놓으세요. 덮개로 가린 후 하나를 빼고 '뭐가 없어졌을까?' 물어보세요. 익숙한 물건으로 시작하고 난이도를 높여가세요. 기억력과 주의력을 키워요.",
-    "materials": ["쟁반", "익숙한 물건 3개", "덮을 천"],
+    "title": "뭐가 없어졌지? 기억력 놀이",
+    "description": "접시 위에 물건 3개를 놓고 보여준 다음, 천으로 가리고 하나를 빼요. '뭐가 없어졌을까?' 익숙한 물건으로 시작하고 점점 어렵게 해보세요!",
+    "materials": [
+      "접시",
+      "잘 아는 물건 3개",
+      "덮을 천"
+    ],
     "difficulty": "medium",
     "category": "cognitive",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "'뭐가 없어졌을까' 같은 기억력 게임은 학습과 문제 해결에 중요한 아이의 작업 기억과 주의력을 강화해요."
+    "sourceQuote": "'뭐가 없어졌지?' 놀이를 하면서 기억하고 집중하는 힘이 커져요. 생각하는 힘의 기초가 돼요."
   },
   {
     "id": "pt-29-1",
     "month": 29,
-    "title": "장난감으로 이야기 만들기",
-    "description": "장난감 인형으로 간단한 이야기를 함께 만들어보세요. '곰돌이가 가게에 갔어. 뭘 샀을까?' 이야기 구성 능력과 상상력을 키워요.",
-    "materials": ["장난감 인형", "장난감 소품"],
+    "title": "인형으로 이야기 만들기",
+    "description": "장난감 인형으로 간단한 이야기를 만들어요. '곰돌이가 마트에 갔어~ 뭘 샀을까?' 하면 아이가 상상해서 대답해요. 이야기 만드는 힘이랑 상상력이 쑥쑥!",
+    "materials": [
+      "장난감 인형",
+      "장난감 소품"
+    ],
     "difficulty": "easy",
     "category": "language",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "장난감으로 이야기를 만드는 것은 이야기 구성 사고, 어휘력, 사건 순서 파악 능력을 키우며, 이 모두가 나중에 읽기와 쓰기의 기초가 돼요."
+    "sourceQuote": "장난감으로 이야기를 만들면서 순서대로 정리하는 힘이랑 어휘가 늘어요. 읽기 쓰기의 기초가 돼요."
   },
   {
     "id": "pt-29-2",
     "month": 29,
-    "title": "평균대 걷기",
-    "description": "바닥에 테이프를 붙이고 발끝에서 발뒤꿈치까지 맞춰 걷기를 연습하세요. 바닥에 놓은 낮은 평균대나 판자로 발전시켜보세요.",
-    "materials": ["테이프", "낮은 판자"],
+    "title": "줄 위를 걸어봐~ 평균대 놀이",
+    "description": "바닥에 테이프를 길게 붙이고 그 위를 발끝에서 발꿈치까지 맞춰 걸어보세요. 잘하면 바닥에 놓은 낮은 판자 위로 도전! 균형 잡는 게 재미있어요.",
+    "materials": [
+      "테이프",
+      "낮은 판자"
+    ],
     "difficulty": "medium",
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "평균대 활동은 아이의 균형 감각과 신체 조절력을 다듬어, 더 어려운 신체 활동에 필요한 코어 안정성을 키우도록 도전해요."
+    "sourceQuote": "평균대 걷기를 하면서 균형 감각이랑 몸 중심 잡는 힘이 자라요."
   },
   {
     "id": "pt-29-3",
     "month": 29,
-    "title": "크기 분류하기",
-    "description": "크기가 다른 물건을 모아 작은 것부터 큰 것 순서로 분류하세요. 끼우기 컵, 다양한 공, 장난감 동물을 사용하세요. 크기 비교 개념을 소개해요.",
-    "materials": ["크기가 다른 물건들"],
+    "title": "큰 거 작은 거! 크기 분류하기",
+    "description": "크기가 다른 물건을 모아서 작은 것부터 큰 것 순서로 줄 세워보세요. 컵, 공, 인형 뭐든 좋아요! '이건 제일 작아!' '이건 제일 커!' 하면서 비교하는 말도 배워요.",
+    "materials": [
+      "크기가 다른 물건들"
+    ],
     "difficulty": "medium",
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "크기별 분류는 아이에게 비교와 순서 매기기를 소개하며, 논리적으로 사고하고 주변 세계를 설명하는 초기 수학 능력을 키워줘요."
+    "sourceQuote": "크기별로 줄 세우면서 비교하고 순서 매기는 법을 배워요. 수학적 사고가 시작되는 거죠."
   },
   {
     "id": "pt-30-1",
     "month": 30,
-    "title": "의사 놀이",
-    "description": "장난감 의사 도구로 의사 놀이를 해보세요. 환자와 의사 역할을 번갈아 하세요. 신체 부위 이름을 말하고 각 도구가 뭘 하는지 이야기해주세요. 어휘력을 키우고 병원 방문 불안을 줄여줘요.",
-    "materials": ["장난감 의사 도구", "봉제 동물 환자"],
+    "title": "아~ 해보세요~ 의사 놀이",
+    "description": "장난감 청진기 대고 '심장 소리 들어볼게~' 하면서 의사 놀이를 해보세요. 아이도 의사가 되고, 인형도 환자가 돼요. 병원 갈 때 무서움이 줄어드는 효과도 있어요!",
+    "materials": [
+      "장난감 의사 도구 세트",
+      "봉제 동물 환자"
+    ],
     "difficulty": "easy",
     "category": "social",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "병원 방문 같은 실생활 경험에 대한 역할 놀이는 아이가 감정을 처리하고, 불안을 줄이며, 새로운 상황을 더 잘 다룰 수 있게 도와줘요."
+    "sourceQuote": "병원 놀이를 미리 해보면 실제로 병원 갈 때 덜 무서워해요. 감정을 다루는 연습이 되거든요."
   },
   {
     "id": "pt-30-2",
     "month": 30,
-    "title": "간단한 보드게임",
-    "description": "색깔 맞추기나 회전판 기반의 간단한 보드게임을 소개하세요. 이기는 것보다 차례 지키기와 간단한 규칙 따르기에 집중하세요.",
-    "materials": ["간단한 유아용 보드게임"],
+    "title": "보드게임 처음 해보기",
+    "description": "색깔 맞추기나 돌림판이 있는 아주 쉬운 보드게임으로 시작하세요. 이기고 지는 것보다 '네 차례야~' '내 차례야~' 번갈아 하는 게 포인트예요.",
+    "materials": [
+      "간단한 유아용 보드게임"
+    ],
     "difficulty": "medium",
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "보드게임은 아이에게 규칙 따르기, 차례 지키기, 결과 받아들이기를 가르쳐, 단체 학습에 필수적인 자기 조절과 사회적 기술을 키워줘요."
+    "sourceQuote": "보드게임 하면서 규칙 따르기, 차례 지키기, 결과를 받아들이는 법을 배워요. 자기 조절이 자라는 거예요."
   },
   {
     "id": "pt-30-3",
     "month": 30,
-    "title": "글자 찾기",
-    "description": "글자 하나를 정하고 어디서든 찾아보세요: 간판, 책, 시리얼 상자, 옷. 함께 글자 소리를 말해보세요. 아이 이름의 글자부터 시작하세요.",
+    "title": "이 글자 찾아라! 글자 탐정 놀이",
+    "description": "글자 하나를 정해서 간판, 책, 과자 상자, 옷 어디서든 찾아보세요. 아이 이름 첫 글자부터 시작하면 관심이 확 올라가요! '여기 있다!' 할 때마다 신나해요.",
     "difficulty": "medium",
     "category": "language",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "일상 속에서 글자를 일찍 접하면 인쇄 인식이 발달해, 아이가 글자가 의미를 담고 있으며 주변 어디에나 있다는 것을 이해하게 돼요."
+    "sourceQuote": "일상에서 글자를 찾다 보면 '글자에는 뜻이 있구나' 하는 걸 자연스럽게 알게 돼요."
   },
   {
     "id": "pt-30-4",
     "month": 30,
-    "title": "공 차기 연습",
-    "description": "물건 2개로 간단한 골대를 만들고 그 사이로 공을 차는 연습을 하세요. 번갈아 하면서 골을 넣으면 축하해주세요. 다리 힘과 협응력을 키워요.",
-    "materials": ["공", "골대용 물건 2개"],
+    "title": "골인! 공 차기 연습",
+    "description": "물건 2개로 골대를 만들고 그 사이로 공을 차보세요. 번갈아 하면서 '골!' 하고 같이 환호해주세요. 다리 힘도 세지고 방향 조절하는 감각도 생겨요!",
+    "materials": [
+      "공",
+      "골대용 물건 2개"
+    ],
     "difficulty": "easy",
     "category": "physical",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "목표를 향해 공을 차는 것은 다리 힘, 균형, 협응력을 발달시키면서 연습을 통해 움직임을 조준하고 조절하는 법을 가르쳐요."
+    "sourceQuote": "목표를 향해 공을 차면서 다리 힘이랑 균형이 좋아지고, 조준하는 감각도 생겨요."
   },
   {
     "id": "pt-31-1",
     "month": 31,
-    "title": "보물 지도 모험",
-    "description": "방의 간단한 지도를 그리고 '보물'(좋아하는 장난감이나 간식)이 숨겨진 곳을 표시하세요. 아이가 지도를 따라 찾게 도와주세요. 공간 사고력을 키워요.",
-    "materials": ["종이", "크레용", "작은 보물"],
+    "title": "보물을 찾아라! 보물 지도 모험",
+    "description": "방 그림을 간단하게 그리고 보물(좋아하는 장난감이나 간식)이 숨겨진 곳에 X 표시를 해주세요. '지도를 따라가면 보물이 있대~!' 공간 감각이 자라는 놀이예요.",
+    "materials": [
+      "종이",
+      "크레용",
+      "작은 보물"
+    ],
     "difficulty": "advanced",
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "지도 기반 활동은 공간 추론과 상징적 사고를 소개해, 그림이 실제 장소와 물건을 나타낼 수 있다는 것을 아이가 이해하도록 도와줘요."
+    "sourceQuote": "지도를 따라가면서 그림이 실제 장소를 나타낸다는 걸 알게 돼요. 공간 감각이랑 상징적 사고가 자라는 거예요."
   },
   {
     "id": "pt-31-2",
     "month": 31,
-    "title": "운율 놀이",
-    "description": "단어를 말하고 운율이 맞는 단어를 찾아보세요: '고양이, 망아지, 장아찌!' 재미있게 해주세요. 만들어낸 단어도 괜찮아요. 아이는 소리를 좋아하고 음운 인식이 발달해요.",
+    "title": "같은 소리 찾기! 끝말 놀이",
+    "description": "비슷한 소리가 나는 말을 찾아보세요. '고양이, 강아지, 멍멍이!' 우스꽝스러운 말을 지어내도 돼요! 아이는 재미있는 소리를 좋아하고 말소리 감각이 자라요.",
     "difficulty": "easy",
     "category": "language",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "운율 놀이는 단어 속 소리를 듣고 조작하는 음운 인식을 발달시키며, 이는 읽기 성공의 가장 강력한 예측 인자 중 하나예요."
+    "sourceQuote": "소리 놀이를 하면서 말소리를 듣고 구분하는 힘이 생겨요. 나중에 읽기를 잘하는 데 큰 도움이 돼요."
   },
   {
     "id": "pt-31-3",
     "month": 31,
-    "title": "공 받기 연습",
-    "description": "가까이 서서 크고 부드러운 공을 아이에게 던져주세요. 두 팔로 받도록 격려하세요. 실력이 늘면 점점 거리를 늘려가세요.",
-    "materials": ["크고 부드러운 공"],
+    "title": "받아라! 공 받기 연습",
+    "description": "가까이 서서 크고 부드러운 공을 천천히 던져주세요. 양팔로 꼭 안듯이 받게 해주세요. 잘되면 조금씩 거리를 늘려보세요. '잘 받았어!'라고 칭찬해주면 더 열심히 해요!",
+    "materials": [
+      "크고 부드러운 공"
+    ],
     "difficulty": "medium",
     "category": "physical",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "공 받기는 손-눈 협응력, 타이밍, 움직이는 물체를 추적하는 능력을 발달시키며, 이 모두가 더 넓은 신체 발달을 지원해요."
+    "sourceQuote": "공 받기를 하면서 눈으로 따라보고 타이밍에 맞춰 받는 협응력이 자라요."
   },
   {
     "id": "pt-32-1",
     "month": 32,
-    "title": "콜라주 만들기",
-    "description": "잡지에서 그림을 오려내서 종이에 붙여 콜라주를 만들게 해주세요. 아이가 뭘 선택하고 만든 작품의 이야기에 대해 이야기하세요.",
-    "materials": ["잡지", "아이용 안전 가위", "풀 스틱", "종이"],
+    "title": "오리고 붙이고! 콜라주 만들기",
+    "description": "잡지에서 마음에 드는 그림을 오려서 큰 종이에 풀로 붙여보세요. '이건 왜 골랐어?' 하고 물어보면 나름의 이야기를 해줘요. 가위질 연습도 되고 창의력도 쑥쑥!",
+    "materials": [
+      "잡지",
+      "아이용 안전 가위",
+      "풀",
+      "종이"
+    ],
     "difficulty": "medium",
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "자르기, 붙이기, 배치하기는 소근육 조절력과 손-눈 협응력을 발달시키면서 아이에게 선택하고 아이디어를 표현하는 창의적 방법을 제공해요."
+    "sourceQuote": "오리고 붙이고 배치하면서 소근육이랑 눈-손 협응이 좋아지고 자기 생각을 표현하는 힘도 자라요."
   },
   {
     "id": "pt-32-2",
     "month": 32,
-    "title": "감정 표현 놀이",
-    "description": "다양한 표정(기쁨, 슬픔, 놀람, 화남)을 짓고 아이에게 어떤 감정인지 맞추게 해보세요. 번갈아 표정을 지어보세요. 감정 어휘를 키워요.",
+    "title": "지금 기분이 어때? 감정 표현 놀이",
+    "description": "기쁜 얼굴, 슬픈 얼굴, 놀란 얼굴, 화난 얼굴을 번갈아 지으면서 '이건 무슨 기분일까?' 물어보세요. 아이도 따라 짓게 해주세요. 감정 단어를 배우면 말로 표현할 수 있게 돼요!",
     "difficulty": "easy",
     "category": "social",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "감정에 이름 붙이기는 아이의 정서적 문해력을 발달시켜, 행동으로 표출하는 대신 감정을 표현할 수 있는 어휘를 제공해요."
+    "sourceQuote": "감정에 이름을 붙여주면 기분을 말로 표현하는 힘이 생겨요. 울거나 떼쓰는 대신 '슬퍼' '화나' 하고 말할 수 있게 돼요."
   },
   {
     "id": "pt-32-3",
     "month": 32,
-    "title": "패턴 만들기",
-    "description": "색깔 블록이나 과자로 간단한 패턴을 만들어보세요: 빨강, 파랑, 빨강, 파랑. 아이에게 '다음엔 뭘까?' 물어보세요. 2가지 색 패턴부터 시작하세요.",
-    "materials": ["색깔 블록 또는 과자"],
+    "title": "다음은 뭘까? 패턴 만들기",
+    "description": "색깔 블록이나 과자로 '빨강, 파랑, 빨강, 파랑' 순서를 만들고 '다음엔 뭘까?' 물어보세요. 2가지 색부터 시작하면 돼요. 맞추면 엄청 뿌듯해해요!",
+    "materials": [
+      "색깔 블록이나 과자"
+    ],
     "difficulty": "advanced",
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "패턴을 인식하고 만드는 것은 수학적 사고의 기초로, 아이가 예측하고, 논리적으로 추론하고, 세상의 질서를 이해하도록 도와줘요."
+    "sourceQuote": "패턴을 만들고 알아맞히면서 논리적으로 생각하는 힘이 생겨요. 수학적 사고의 기초가 되는 거예요."
   },
   {
     "id": "pt-33-1",
     "month": 33,
-    "title": "알파벳 노래와 놀이",
-    "description": "알파벳 노래를 부르면서 글자를 가리켜보세요. 냉장고에 자석 글자로 놀아보세요. 아이 이름의 글자부터 시작하세요.",
-    "materials": ["자석 글자"],
+    "title": "가나다라~ 글자 놀이",
+    "description": "글자 노래 부르면서 글자를 가리켜보세요. 냉장고에 자석 글자를 붙여놓고 같이 놀아요. 아이 이름에 있는 글자부터 시작하면 관심이 확 올라가요!",
+    "materials": [
+      "자석 글자"
+    ],
     "difficulty": "easy",
     "category": "language",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "노래와 직접 만지는 활동을 통한 즐겁고 부담 없는 글자 노출은 아이가 나중에 읽기를 배우는 데 필요한 알파벳 지식을 키워줘요."
+    "sourceQuote": "노래랑 만지기를 통해 부담 없이 글자를 접하면 나중에 읽기를 배울 때 훨씬 수월해요."
   },
   {
     "id": "pt-33-2",
     "month": 33,
-    "title": "다리 만들기",
-    "description": "블록으로 다리와 터널을 만들어보세요. 장난감 자동차를 다리 위로, 터널을 통과시켜 보세요. 놀이를 통해 기초적인 공학 개념을 소개해요.",
-    "materials": ["블록", "장난감 자동차"],
+    "title": "다리 만들고 자동차 슝~",
+    "description": "블록으로 다리랑 터널을 만들어요. 장난감 자동차를 다리 위로, 터널 안으로 슝~! 만들다 무너져도 다시 하면서 재미있게 건축 놀이를 즐겨요.",
+    "materials": [
+      "블록",
+      "장난감 자동차"
+    ],
     "difficulty": "medium",
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "다리 같은 구조물을 만드는 것은 균형과 안정성 같은 공학 개념을 소개하며, 아이가 창의적으로 사고하고 문제를 해결하도록 격려해요."
+    "sourceQuote": "다리를 만들면서 균형 잡기 같은 원리를 자연스럽게 배우고, 창의적으로 문제를 풀어보는 경험을 해요."
   },
   {
     "id": "pt-33-3",
     "month": 33,
-    "title": "깡충깡충 뛰기",
-    "description": "한 발로 깡충깡충 뛰기를 연습하세요. 토끼나 개구리처럼 뛰면서 재미있게 하세요. 바닥에 테이프 원을 붙이고 그 사이를 뛰어보세요.",
-    "materials": ["테이프"],
+    "title": "토끼처럼 깡충! 한 발 뛰기",
+    "description": "한 발로 깡충깡충 뛰어보세요. '토끼처럼!' '개구리처럼!' 하면 더 신나해요. 바닥에 테이프로 동그라미를 만들고 사이사이를 뛰어다녀도 재미있어요!",
+    "materials": [
+      "테이프"
+    ],
     "difficulty": "medium",
     "category": "physical",
     "source": "CDC Act Early",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/",
-    "sourceQuote": "한 발로 뛰기는 이 나이의 발달 중인 대근육 이정표로, 성장하는 균형감, 다리 힘, 신체 협응력을 보여줘요."
+    "sourceQuote": "한 발 뛰기는 이 시기에 자라는 균형감이랑 다리 힘을 보여주는 발달 포인트예요."
   },
   {
     "id": "pt-34-1",
     "month": 34,
-    "title": "색깔 섞기 실험",
-    "description": "수성 물감으로 기본 색을 섞어보세요: 빨강 + 파랑 = 보라, 빨강 + 노랑 = 주황. 아이가 놀랄 거예요! 무슨 일이 일어나는지 이야기해주세요.",
-    "materials": ["수성 물감", "종이", "붓", "물컵"],
+    "title": "빨강+파랑은 무슨 색? 색깔 섞기 실험",
+    "description": "수성 물감으로 색 섞기를 해보세요. 빨강+파랑=보라, 빨강+노랑=주황! '우와 보라색 됐어!' 하면 아이 눈이 동그래져요. 마법 같은 과학 놀이예요!",
+    "materials": [
+      "수성 물감",
+      "종이",
+      "붓",
+      "물컵"
+    ],
     "difficulty": "medium",
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "색깔 섞기 같은 직접 하는 실험은 아이가 예측하고, 결과를 관찰하고, 놀이를 통해 새로운 개념을 발견하면서 과학적 사고를 키워줘요."
+    "sourceQuote": "색 섞기 실험을 하면서 '이렇게 하면 이렇게 될까?' 예측하고 확인하는 과학적 사고가 자라요."
   },
   {
     "id": "pt-34-2",
     "month": 34,
-    "title": "만약에 질문하기",
-    "description": "재미있는 질문을 해보세요: '강아지가 날 수 있으면 어떨까? 사탕 비가 오면?' 창의적인 답변을 격려하세요. 상상력과 언어 능력을 키워요.",
+    "title": "만약에~ 상상 질문 놀이",
+    "description": "엉뚱한 질문을 던져보세요. '강아지가 날 수 있으면 어떨까?' '사탕 비가 오면?' 무슨 대답을 하든 '오~ 재밌다!' 하면서 받아주면 상상력이랑 말이 쑥쑥!",
     "difficulty": "easy",
     "category": "language",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "열린 '만약에' 질문은 아이의 상상력을 자극하고 언어의 창의적 사용을 격려하며, 사고력과 의사소통 능력을 함께 키워줘요."
+    "sourceQuote": "'만약에~' 질문을 하면 상상력이 활활 타올라요. 말로 표현하는 힘도 같이 자라고요."
   },
   {
     "id": "pt-34-3",
     "month": 34,
-    "title": "마트 놀이",
-    "description": "장난감 음식, 가방, 장난감 금전등록기로 마트를 차려보세요. 물건 세기, 음식 이름 말하기, 손님과 점원 역할을 번갈아 연습하세요.",
-    "materials": ["장난감 음식", "가방", "장난감 금전등록기"],
+    "title": "어서오세요~ 마트 놀이",
+    "description": "장난감 음식, 봉지, 장난감 계산기로 마트를 차려요. '이거 주세요!' '3000원이에요~' 하면서 물건도 세고, 이름도 말하고, 손님이랑 점원 역할도 바꿔가면서 놀아요.",
+    "materials": [
+      "장난감 음식",
+      "봉지",
+      "장난감 계산기"
+    ],
     "difficulty": "medium",
     "category": "social",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "마트 운영 같은 복잡한 역할 놀이는 언어, 수학, 사회성을 통합하며, 아이가 상상 속에서 실제 상호작용을 연습하도록 도와줘요."
+    "sourceQuote": "마트 놀이를 하면서 말, 숫자, 사회성이 한꺼번에 자라요. 실제 상황을 상상으로 연습하는 거예요."
   },
   {
     "id": "pt-35-1",
     "month": 35,
-    "title": "사람 그리기",
-    "description": "함께 간단한 사람을 그려보세요. 동그란 얼굴, 막대 몸, 눈과 입. 아이에게 가족을 그려보라고 하세요. 정확도보다 노력을 칭찬해주세요!",
-    "materials": ["종이", "크레용 또는 마커"],
+    "title": "우리 가족 그려볼까?",
+    "description": "동그란 얼굴에 눈, 코, 입 그리고 막대 팔다리! 같이 그려보세요. '가족을 그려볼까?' 하면 나름대로 그려요. 삐뚤삐뚤해도 '잘 그렸네!' 하고 칭찬해주세요!",
+    "materials": [
+      "종이",
+      "크레용이나 매직"
+    ],
     "difficulty": "medium",
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "사람 그리기는 소근육과 인지 발달의 주요 이정표로, 아이가 세상에 대한 이해를 종이 위에 표현할 수 있음을 보여줘요."
+    "sourceQuote": "사람을 그린다는 건 큰 발달 이정표예요. 아이가 세상을 이해한 걸 종이에 표현하는 거거든요."
   },
   {
     "id": "pt-35-2",
     "month": 35,
-    "title": "같은 점 다른 점 놀이",
-    "description": "물건 두 개를 보여주고 같은 점과 다른 점을 이야기해보세요. '둘 다 공이야, 근데 이건 크고 빨갛고, 이건 작고 파란색이야.'",
-    "materials": ["비슷하지만 다른 물건 쌍"],
+    "title": "뭐가 같고 뭐가 다를까?",
+    "description": "물건 두 개를 놓고 같은 점이랑 다른 점을 이야기해보세요. '둘 다 공이야! 근데 이건 크고 빨갛고, 이건 작고 파래~' 비교하는 말을 배우면서 생각하는 힘이 커져요.",
+    "materials": [
+      "비슷하지만 다른 물건 2개"
+    ],
     "difficulty": "medium",
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "물건을 비교하고 대조하는 것은 분석적 사고와 묘사 언어를 키워, 아이가 세부 사항을 파악하고 관찰을 정리하도록 도와줘요."
+    "sourceQuote": "비교하면서 '어디가 같고 어디가 다르지?' 따져보는 힘이 생겨요. 세상을 분석하는 눈이 자라는 거죠."
   },
   {
     "id": "pt-35-3",
     "month": 35,
-    "title": "함께 노래하기",
-    "description": "새로운 노래를 함께 배우고 좋아하는 노래를 반복해서 불러보세요. 노래 중간에 멈추고 아이가 빠진 단어를 채우게 해주세요. 기억력과 언어를 키워요.",
+    "title": "같이 노래 부르자!",
+    "description": "새 노래도 같이 배우고, 좋아하는 노래는 계속 불러요. 노래 부르다 슬쩍 멈추면 아이가 빠진 부분을 채워요. '나비야 나비야 이리 날아...' '오라~!' 이렇게요!",
     "difficulty": "easy",
     "category": "language",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "함께 노래하기는 기억력, 어휘력, 언어의 리듬 패턴을 강화하면서 부모와 아이 사이에 즐거운 유대의 순간을 만들어줘요."
+    "sourceQuote": "같이 노래 부르면서 기억력이랑 어휘가 자라요. 그리고 함께 부르는 그 순간이 행복한 추억이 돼요."
   },
   {
     "id": "pt-36-1",
     "month": 36,
-    "title": "모든 것 세기",
-    "description": "하루 종일 물건을 세어보세요: '그릇에 사과가 몇 개지? 세어보자!' 실물로 10까지 세기를 연습하세요. 숫자와 양을 연결해주세요.",
+    "title": "사과가 몇 개? 뭐든지 세기!",
+    "description": "하루 종일 기회가 될 때마다 세어보세요. '그릇에 사과가 몇 개지? 하나, 둘, 셋!' 실물로 세면 숫자가 진짜 양이라는 걸 알게 돼요. 10까지 도전!",
     "difficulty": "easy",
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "실물로 세기는 일대일 대응과 수 감각을 키워, 아이에게 숫자가 진정으로 무엇을 의미하는지 구체적으로 이해하게 해줘요."
+    "sourceQuote": "실제 물건을 세면서 '하나에 하나씩' 대응하는 법을 배워요. 숫자가 무엇인지 진짜로 이해하게 돼요."
   },
   {
     "id": "pt-36-2",
     "month": 36,
-    "title": "이야기 만들기",
-    "description": "번갈아 이야기를 이어가세요: '옛날에 토끼가 있었는데...' 한 문장씩 번갈아 추가하세요. 함께 이야기를 쓰거나 그려보세요.",
-    "materials": ["종이", "크레용"],
+    "title": "그다음엔~ 이야기 같이 만들기",
+    "description": "'옛날에 토끼가 살았는데~' 한 문장 하고 아이도 한 문장! 번갈아 이어가면서 세상에 하나뿐인 이야기를 만들어요. 같이 그림으로 그려봐도 좋아요!",
+    "materials": [
+      "종이",
+      "크레용"
+    ],
     "difficulty": "medium",
     "category": "language",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "함께 이야기 만들기는 이야기 구성 능력, 창의력, 차례 지키기를 키우면서 아이의 생각이 소중하고 나눌 가치가 있다는 것을 보여줘요."
+    "sourceQuote": "같이 이야기를 만들면서 이야기 구성력, 창의력, 번갈아 하기를 배워요. '내 생각도 소중해'라는 걸 느끼게 되죠."
   },
   {
     "id": "pt-36-3",
     "month": 36,
-    "title": "이불 요새 만들기",
-    "description": "의자, 담요, 베개로 함께 이불 요새를 만들어보세요. 안에 책과 봉제 동물을 가져와서 아늑한 상상 놀이를 해보세요.",
-    "materials": ["담요", "의자", "베개", "빨래집게"],
+    "title": "이불 요새 만들자!",
+    "description": "의자에 담요를 덮고 베개를 넣어서 비밀 아지트를 만들어요! 안에 책이랑 인형을 가져와서 아늑하게 놀아요. 같이 만드는 과정에서 협동심도 자라요.",
+    "materials": [
+      "담요",
+      "의자",
+      "베개",
+      "빨래집게"
+    ],
     "difficulty": "medium",
     "category": "social",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "요새 만들기 같은 협력 건축 프로젝트는 아이들이 함께 계획하고, 만들고, 놀면서 팀워크, 공간 추론, 창의적 문제 해결을 발달시켜요."
+    "sourceQuote": "같이 무언가를 만들면서 팀워크랑 공간 감각, 창의적으로 문제 풀기를 배워요."
   },
   {
     "id": "pt-36-4",
     "month": 36,
-    "title": "공 주고받기 변형",
-    "description": "다양한 크기의 공으로 받고 던지기를 연습하세요. 아래로 던지기, 위로 던지기, 바운스 주고받기를 해보세요. 성공적으로 받은 횟수를 함께 세어보세요.",
-    "materials": ["다양한 크기의 공"],
+    "title": "공 던지고 받기 여러 가지!",
+    "description": "여러 크기의 공으로 던지고 받기를 해보세요. 아래로, 위로, 바운스도! '잘 받았어!' '이번엔 큰 공으로!' 성공 횟수를 같이 세면서 하면 더 재미있어요.",
+    "materials": [
+      "여러 크기의 공"
+    ],
     "difficulty": "medium",
     "category": "physical",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "다양한 크기의 공으로 던지고 받기를 연습하면 손-눈 협응력, 운동 계획, 다양한 도전에 맞게 움직임을 조절하는 능력이 발달해요."
+    "sourceQuote": "여러 크기의 공으로 연습하면서 눈-손 협응이랑 상황에 맞게 움직임을 조절하는 능력이 자라요."
   }
 ]

@@ -1,9 +1,10 @@
-const CACHE_NAME = "growth-book-v1";
-const PRECACHE_URLS = ["/", "/milestones", "/play-tips", "/watch-outs", "/memos"];
+const CACHE_NAME = "growth-book-v2";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(PRECACHE_URLS))
+    caches.open(CACHE_NAME).then((cache) =>
+      cache.addAll(["/", "/memo"]).catch(() => {})
+    )
   );
   self.skipWaiting();
 });

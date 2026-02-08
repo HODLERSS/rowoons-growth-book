@@ -5,6 +5,7 @@ import "./globals.css";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/shared/app-sidebar";
 import { MobileNav } from "@/components/shared/mobile-nav";
+import { LanguageProvider } from "@/contexts/language-context";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -48,15 +49,17 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <SidebarProvider>
-          <AppSidebar />
-          <SidebarInset>
-            <main className="flex-1 pb-20 md:pb-0">
-              {children}
-            </main>
-          </SidebarInset>
-        </SidebarProvider>
-        <MobileNav />
+        <LanguageProvider>
+          <SidebarProvider>
+            <AppSidebar />
+            <SidebarInset>
+              <main className="flex-1 pb-20 md:pb-0">
+                {children}
+              </main>
+            </SidebarInset>
+          </SidebarProvider>
+          <MobileNav />
+        </LanguageProvider>
         <Script id="sw-register" strategy="afterInteractive">{`
           if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/sw.js');

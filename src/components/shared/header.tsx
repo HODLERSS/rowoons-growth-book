@@ -2,6 +2,7 @@
 
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Separator } from "@/components/ui/separator";
+import { LanguageToggle } from "@/components/shared/language-toggle";
 
 interface HeaderProps {
   title: string;
@@ -20,7 +21,10 @@ export function Header({ title, subtitle, actions }: HeaderProps) {
           <p className="text-xs md:text-sm text-muted-foreground truncate">{subtitle}</p>
         )}
       </div>
-      {actions && <div className="flex items-center gap-2">{actions}</div>}
+      <div className="flex items-center gap-2">
+        {actions}
+        <LanguageToggle />
+      </div>
     </header>
   );
 }

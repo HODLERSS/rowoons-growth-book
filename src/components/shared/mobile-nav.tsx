@@ -5,18 +5,20 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Home, Star, Sparkles, AlertTriangle, BookOpen } from "lucide-react";
 import { useAge } from "@/hooks/use-age";
+import { useLanguage } from "@/contexts/language-context";
 
 const navItems = [
-  { href: "/", label: "Home", icon: Home },
-  { href: "/milestones", label: "Milestones", icon: Star },
-  { href: "/play-tips", label: "Play", icon: Sparkles },
-  { href: "/watch-outs", label: "Watch", icon: AlertTriangle },
-  { href: "/memo", label: "Memo", icon: BookOpen },
+  { href: "/", labelKey: "nav.home", icon: Home },
+  { href: "/milestones", labelKey: "nav.milestones", icon: Star },
+  { href: "/play-tips", labelKey: "nav.play", icon: Sparkles },
+  { href: "/watch-outs", labelKey: "nav.watch", icon: AlertTriangle },
+  { href: "/memo", labelKey: "nav.memo", icon: BookOpen },
 ];
 
 export function MobileNav() {
   const pathname = usePathname();
   const { currentMonth } = useAge();
+  const { t } = useLanguage();
 
   const getHref = (href: string) => {
     if (href === "/" || href === "/memo") return href;
@@ -47,7 +49,7 @@ export function MobileNav() {
               )}
             >
               <Icon className={cn("h-5 w-5", active && "fill-primary/20")} />
-              <span className="text-[10px] font-medium">{item.label}</span>
+              <span className="text-[10px] font-medium">{t(item.labelKey)}</span>
             </Link>
           );
         })}

@@ -8,6 +8,7 @@ import { MonthlyNote } from "@/components/shared/monthly-note";
 import { MilestoneProgress } from "@/components/milestones/milestone-progress";
 import { CategorySection } from "@/components/milestones/category-section";
 import { useMilestones } from "@/hooks/use-milestones";
+import { useLanguage } from "@/contexts/language-context";
 import { getMilestones, getMilestonesByCategory } from "@/lib/content-loader";
 import { getCurrentMonth } from "@/lib/age-calculator";
 import { MILESTONE_CATEGORIES } from "@/lib/constants";
@@ -15,6 +16,7 @@ import { MILESTONE_CATEGORIES } from "@/lib/constants";
 export default function MilestonesPage() {
   const params = useParams<{ month: string }>();
   const router = useRouter();
+  const { lang, t } = useLanguage();
 
   useEffect(() => {
     if (params.month === "current") {
@@ -25,16 +27,16 @@ export default function MilestonesPage() {
   const month = params.month === "current" ? getCurrentMonth() : Number(params.month);
   const { toggle, isCompleted, stats } = useMilestones();
 
-  const milestones = useMemo(() => getMilestones(month), [month]);
-  const byCategory = useMemo(() => getMilestonesByCategory(month), [month]);
+  const milestones = useMemo(() => getMilestones(month, lang), [month, lang]);
+  const byCategory = useMemo(() => getMilestonesByCategory(month, lang), [month, lang]);
   const milestoneIds = useMemo(() => milestones.map((m) => m.id), [milestones]);
   const completionStats = stats(milestoneIds);
 
   return (
     <div className="flex flex-col h-full">
       <Header
-        title={`Milestones - Month ${month}`}
-        subtitle={`${milestones.length} developmental milestones`}
+        title={t("milestones.title").replace("{month}", String(month))}
+        subtitle={t("milestones.subtitle").replace("{count}", String(milestones.length))}
       />
 
       <div className="flex-1 overflow-y-auto">
@@ -46,7 +48,7 @@ export default function MilestonesPage() {
             <div className="text-center py-12 space-y-2">
               <p className="text-4xl">🌱</p>
               <p className="text-muted-foreground text-sm">
-                No milestones for month {month} yet.
+                {t("milestones.empty").replace("{month}", String(month))}
               </p>
             </div>
           ) : (

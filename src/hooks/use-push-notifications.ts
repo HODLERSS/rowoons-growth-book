@@ -4,15 +4,24 @@ import { useState, useCallback, useEffect } from "react";
 
 type PermissionState = "default" | "granted" | "denied" | "unsupported";
 
+function urlBase64ToUint8Array(base64String: string): ArrayBuffer {
+  const padding = "=".repeat((4 - (base64String.length % 4)) % 4);
+  const base64 = (base64String + padding).replace(/-/g, "+").replace(/_/g, "/");
+  const rawData = atob(base64);
+  const outputArray = new Uint8Array(rawData.length);
+  for (let i = 0; i < rawData.length; i++) {
+    outputArray[i] = rawData.charCodeAt(i);
+  }
+  return outputArray.buffer as ArrayBuffer;
+}
+
 function waitForServiceWorker(timeoutMs = 3000): Promise<ServiceWorkerRegistration | null> {
   return new Promise((resolve) => {
-    // If already active, resolve immediately
     navigator.serviceWorker.getRegistration().then((reg) => {
       if (reg?.active) {
         resolve(reg);
         return;
       }
-      // Otherwise wait for ready with a timeout
       const timer = setTimeout(() => resolve(null), timeoutMs);
       navigator.serviceWorker.ready.then((r) => {
         clearTimeout(timer);
@@ -43,8 +52,6 @@ export function usePushNotifications() {
           setLoading(false);
         });
       } else {
-        // SW not ready yet, but still allow the button to work -
-        // subscribe() will trigger SW ready on its own
         setLoading(false);
       }
     });
@@ -64,9 +71,16 @@ export function usePushNotifications() {
       }
 
       const registration = await navigator.serviceWorker.ready;
+      const vapidKey = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY;
+      if (!vapidKey) {
+        console.error("VAPID public key not configured");
+        setLoading(false);
+        return;
+      }
+
       const subscription = await registration.pushManager.subscribe({
         userVisibleOnly: true,
-        applicationServerKey: process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY,
+        applicationServerKey: urlBase64ToUint8Array(vapidKey),
       });
 
       const res = await fetch("/api/push/subscribe", {
@@ -91,7 +105,14 @@ export function usePushNotifications() {
       const registration = await navigator.serviceWorker.ready;
       const subscription = await registration.pushManager.getSubscription();
       if (subscription) {
+        const endpoint = subscription.endpoint;
         await subscription.unsubscribe();
+        // Remove from server
+        await fetch("/api/push/unsubscribe", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ endpoint }),
+        });
       }
       setIsSubscribed(false);
     } catch (err) {

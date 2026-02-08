@@ -1,14 +1,39 @@
 "use client";
 
-import { Bell, BellOff, BellRing } from "lucide-react";
+import { Bell, BellOff, BellRing, AlertCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { usePushNotifications } from "@/hooks/use-push-notifications";
 
 export function NotificationBanner() {
-  const { permission, isSubscribed, loading, subscribe, unsubscribe } = usePushNotifications();
+  const { permission, isSubscribed, loading, error, subscribe, unsubscribe } = usePushNotifications();
 
-  if (permission === "unsupported") return null;
+  if (permission === "unsupported" && !error) return null;
+
+  if (error) {
+    return (
+      <Card className="border-amber-200 bg-amber-50 dark:border-amber-800 dark:bg-amber-950/30">
+        <CardContent className="flex items-center gap-3">
+          <AlertCircle className="size-5 text-amber-600 shrink-0" />
+          <div className="flex-1 min-w-0">
+            <p className="text-sm font-medium text-amber-700 dark:text-amber-300">
+              {error}
+            </p>
+          </div>
+          {permission !== "unsupported" && permission !== "denied" && (
+            <Button
+              size="sm"
+              variant="outline"
+              onClick={subscribe}
+              disabled={loading}
+            >
+              Retry
+            </Button>
+          )}
+        </CardContent>
+      </Card>
+    );
+  }
 
   if (permission === "denied") {
     return (
@@ -64,7 +89,7 @@ export function NotificationBanner() {
           onClick={subscribe}
           disabled={loading}
         >
-          Enable
+          {loading ? "..." : "Enable"}
         </Button>
       </CardContent>
     </Card>

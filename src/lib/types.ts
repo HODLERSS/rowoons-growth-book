@@ -58,6 +58,7 @@ export interface Memo {
 
 export interface BabyInfo {
   name: string;
+  nameKo?: string;
   birthDate: string;
   gender: "boy" | "girl";
 }

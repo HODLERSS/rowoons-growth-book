@@ -78,7 +78,7 @@ export default function MemoDetailPage() {
   return (
     <div className="flex flex-col h-full">
       <Header
-        title={editing ? t("memo.edit") + " " + t("memo.title") : memo.title || t("memo.title")}
+        title={editing ? t("memo.edit_title") : memo.title || t("memo.title")}
         actions={
           editing ? (
             <div className="flex items-center gap-2">
@@ -121,7 +121,7 @@ export default function MemoDetailPage() {
         open={showDelete}
         onOpenChange={setShowDelete}
         onConfirm={handleDelete}
-        title={memo.title || "this memo"}
+        title={memo.title || t("memo.this_memo")}
       />
     </div>
   );

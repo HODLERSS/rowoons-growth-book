@@ -12,9 +12,9 @@ import { Badge } from "@/components/ui/badge";
 export function UpcomingMilestones() {
   const { currentMonth } = useAge();
   const { isCompleted } = useMilestones();
-  const { t } = useLanguage();
+  const { lang, t } = useLanguage();
 
-  const milestones = getMilestones(currentMonth);
+  const milestones = getMilestones(currentMonth, lang);
   const upcoming = milestones
     .filter((m) => !isCompleted(m.id))
     .slice(0, 5);

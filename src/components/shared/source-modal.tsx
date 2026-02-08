@@ -38,7 +38,7 @@ export function SourceBadge({ sourceInfo, itemTitle }: SourceModalProps) {
             {itemTitle}
           </DialogTitle>
           <DialogDescription className="sr-only">
-            Source information for {itemTitle}
+            {t("source.info_for").replace("{title}", itemTitle)}
           </DialogDescription>
         </DialogHeader>
         <div className="space-y-4">

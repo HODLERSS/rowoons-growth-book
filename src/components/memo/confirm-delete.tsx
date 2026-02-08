@@ -22,9 +22,10 @@ export function ConfirmDelete({
   open,
   onOpenChange,
   onConfirm,
-  title = "this memo",
+  title,
 }: ConfirmDeleteProps) {
   const { t } = useLanguage();
+  const displayTitle = title || t("memo.this_memo");
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -32,7 +33,7 @@ export function ConfirmDelete({
         <DialogHeader>
           <DialogTitle>{t("memo.delete_title")}</DialogTitle>
           <DialogDescription>
-            {t("memo.delete_confirm").replace("{title}", title)}
+            {t("memo.delete_confirm").replace("{title}", displayTitle)}
           </DialogDescription>
         </DialogHeader>
         <DialogFooter>

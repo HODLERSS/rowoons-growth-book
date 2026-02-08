@@ -16,7 +16,11 @@ export default function MemoListPage() {
     <div className="flex flex-col h-full">
       <Header
         title={t("memo.title")}
-        subtitle={`${memos.length} memo${memos.length !== 1 ? "s" : ""}`}
+        subtitle={
+          memos.length === 1
+            ? t("memo.count_one").replace("{count}", String(memos.length))
+            : t("memo.count").replace("{count}", String(memos.length))
+        }
         actions={
           <Button asChild size="sm">
             <Link href="/memo/new">

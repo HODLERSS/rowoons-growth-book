@@ -35,7 +35,11 @@ export function MilestoneCard({ milestone, completed, onToggle }: MilestoneCardP
         checked={completed}
         onCheckedChange={() => onToggle(milestone.id)}
         className="mt-0.5"
-        aria-label={`Mark "${milestone.title}" as ${completed ? "incomplete" : "complete"}`}
+        aria-label={
+          completed
+            ? t("milestones.mark_incomplete").replace("{title}", milestone.title)
+            : t("milestones.mark_complete").replace("{title}", milestone.title)
+        }
       />
       <div className="flex-1 min-w-0 space-y-1">
         <div className="flex items-center gap-2 flex-wrap">

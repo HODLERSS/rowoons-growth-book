@@ -2,6 +2,7 @@ import { BabyInfo, MilestoneCategory } from "./types";
 
 export const BABY: BabyInfo = {
   name: "Rowoon",
+  nameKo: "로운",
   birthDate: "2025-04-17",
   gender: "girl",
 };

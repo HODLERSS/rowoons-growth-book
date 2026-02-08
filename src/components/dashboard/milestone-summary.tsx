@@ -12,9 +12,9 @@ import Link from "next/link";
 export function MilestoneSummary() {
   const { currentMonth } = useAge();
   const { stats } = useMilestones();
-  const { t } = useLanguage();
+  const { lang, t } = useLanguage();
 
-  const milestones = getMilestones(currentMonth);
+  const milestones = getMilestones(currentMonth, lang);
   const milestoneIds = milestones.map((m) => m.id);
   const { completed, total, percentage } = stats(milestoneIds);
 

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { ALL_MONTHS } from "@/lib/constants";
 import { useAge } from "@/hooks/use-age";
+import { useLanguage } from "@/contexts/language-context";
 
 interface MonthNavigatorProps {
   basePath: string;
@@ -13,6 +14,7 @@ interface MonthNavigatorProps {
 
 export function MonthNavigator({ basePath, selectedMonth }: MonthNavigatorProps) {
   const { currentMonth } = useAge();
+  const { lang } = useLanguage();
   const scrollRef = useRef<HTMLDivElement>(null);
   const selectedRef = useRef<HTMLAnchorElement>(null);
 
@@ -52,7 +54,7 @@ export function MonthNavigator({ basePath, selectedMonth }: MonthNavigatorProps)
                     : "bg-muted text-muted-foreground hover:bg-muted/80 active:bg-muted/60"
               )}
             >
-              {month}m
+              {lang === "ko" ? `${month}개월` : `${month}m`}
             </Link>
           );
         })}

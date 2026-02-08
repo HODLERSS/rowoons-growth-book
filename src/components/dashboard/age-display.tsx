@@ -21,11 +21,19 @@ export function AgeDisplay() {
         </Avatar>
         <div className="flex-1 min-w-0">
           <h2 className="text-xl font-bold text-foreground">
-            {BABY.name}
+            {lang === "ko" ? BABY.nameKo : BABY.name}
           </h2>
           {mounted && (
             <p className="text-base text-muted-foreground">
-              {age.label} {t("age.old")}
+              {(() => {
+                if (lang === "ko") {
+                  const parts = [];
+                  if (age.months > 0) parts.push(`${age.months}개월`);
+                  if (age.days > 0) parts.push(`${age.days}일`);
+                  return parts.join(" ");
+                }
+                return `${age.label} ${t("age.old")}`;
+              })()}
             </p>
           )}
           <div className="flex gap-2 mt-2">
@@ -43,7 +51,7 @@ export function AgeDisplay() {
               })()}
             </Badge>
             <Badge className="bg-primary text-primary-foreground">
-              {t("age.month")} {currentMonth}
+              {lang === "ko" ? `${currentMonth}${t("age.month")}` : `${t("age.month")} ${currentMonth}`}
             </Badge>
           </div>
         </div>

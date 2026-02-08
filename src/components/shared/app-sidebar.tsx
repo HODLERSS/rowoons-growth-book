@@ -22,7 +22,7 @@ import { Home, Star, Sparkles, AlertTriangle, BookOpen } from "lucide-react";
 export function AppSidebar() {
   const pathname = usePathname();
   const { age, currentMonth, mounted } = useAge();
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
 
   const navItems = [
     { href: "/", label: t("sidebar.dashboard"), icon: Home },
@@ -52,8 +52,20 @@ export function AppSidebar() {
             </AvatarFallback>
           </Avatar>
           <div>
-            <h2 className="font-semibold text-base">{BABY.name}{t("app.growth_book")}</h2>
-            {mounted && <p className="text-xs text-muted-foreground">{age.label} {t("age.old")}</p>}
+            <h2 className="font-semibold text-base">{lang === "ko" ? BABY.nameKo : BABY.name}{t("app.growth_book")}</h2>
+            {mounted && (
+              <p className="text-xs text-muted-foreground">
+                {(() => {
+                  if (lang === "ko") {
+                    const parts = [];
+                    if (age.months > 0) parts.push(`${age.months}개월`);
+                    if (age.days > 0) parts.push(`${age.days}일`);
+                    return parts.join(" ");
+                  }
+                  return `${age.label} ${t("age.old")}`;
+                })()}
+              </p>
+            )}
           </div>
         </div>
       </SidebarHeader>

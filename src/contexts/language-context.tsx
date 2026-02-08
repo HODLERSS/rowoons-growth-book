@@ -60,7 +60,7 @@ const translations: Record<Language, Record<string, string>> = {
     "age.and": "and",
   },
   ko: {
-    "app.title": "루운이의 성장 일기",
+    "app.title": "로운이의 성장 일기",
     "app.subtitle": "발달, 놀이, 안전, 그리고 추억 기록",
     "nav.home": "홈",
     "nav.milestones": "발달",

@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { kv } from "@vercel/kv";
+import { createClient } from "@vercel/kv";
 
 const KV_KEY = "push:subscriptions";
 
@@ -18,6 +18,11 @@ export async function POST(request: Request) {
     if (!subscription.endpoint || !subscription.keys?.p256dh || !subscription.keys?.auth) {
       return NextResponse.json({ error: "Invalid subscription" }, { status: 400 });
     }
+
+    const kv = createClient({
+      url: process.env.KV_REST_API_URL!,
+      token: process.env.KV_REST_API_TOKEN!,
+    });
 
     const existing: PushSubscriptionJSON[] = (await kv.get(KV_KEY)) || [];
     const deduped = existing.filter((s) => s.endpoint !== subscription.endpoint);

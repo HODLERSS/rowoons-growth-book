@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { kv } from "@vercel/kv";
+import { createClient } from "@vercel/kv";
 import webpush from "web-push";
 
 const KV_KEY = "push:subscriptions";
@@ -12,14 +12,13 @@ interface PushSubscriptionJSON {
   };
 }
 
-webpush.setVapidDetails(
-  process.env.VAPID_SUBJECT!,
-  process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY!,
-  process.env.VAPID_PRIVATE_KEY!
-);
-
 export async function POST(request: Request) {
   try {
+    webpush.setVapidDetails(
+      process.env.VAPID_SUBJECT!,
+      process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY!,
+      process.env.VAPID_PRIVATE_KEY!
+    );
     const { password, title, body } = await request.json();
 
     if (password !== process.env.ADMIN_PASSWORD) {
@@ -29,6 +28,11 @@ export async function POST(request: Request) {
     if (!body) {
       return NextResponse.json({ error: "Message body is required" }, { status: 400 });
     }
+
+    const kv = createClient({
+      url: process.env.KV_REST_API_URL!,
+      token: process.env.KV_REST_API_TOKEN!,
+    });
 
     const subscriptions: PushSubscriptionJSON[] = (await kv.get(KV_KEY)) || [];
 
@@ -59,7 +63,7 @@ export async function POST(request: Request) {
 
     if (expired.length > 0) {
       const cleaned = subscriptions.filter((s) => !expired.includes(s.endpoint));
-      await kv.set(KV_KEY, cleaned);
+            await kv.set(KV_KEY, cleaned);
     }
 
     return NextResponse.json({ sent, failed });

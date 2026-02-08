@@ -2,18 +2,21 @@
 
 import { PlayTip } from "@/lib/types";
 import { TipCard } from "./tip-card";
+import { useLanguage } from "@/contexts/language-context";
 
 interface TipListProps {
   tips: PlayTip[];
 }
 
 export function TipList({ tips }: TipListProps) {
+  const { t } = useLanguage();
+
   if (tips.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center py-16 text-center">
         <span className="text-4xl mb-3">🎨</span>
         <p className="text-muted-foreground text-sm">
-          No play tips for this month yet.
+          {t("playtips.empty")}
         </p>
       </div>
     );

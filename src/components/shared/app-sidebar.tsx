@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { BABY } from "@/lib/constants";
 import { useAge } from "@/hooks/use-age";
+import { useLanguage } from "@/contexts/language-context";
 import {
   Sidebar,
   SidebarContent,
@@ -18,17 +19,18 @@ import {
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Home, Star, Sparkles, AlertTriangle, BookOpen } from "lucide-react";
 
-const navItems = [
-  { href: "/", label: "Dashboard", icon: Home },
-  { href: "/milestones", label: "Milestones", icon: Star },
-  { href: "/play-tips", label: "Play Tips", icon: Sparkles },
-  { href: "/watch-outs", label: "Watch-Outs", icon: AlertTriangle },
-  { href: "/memo", label: "Memo Journal", icon: BookOpen },
-];
-
 export function AppSidebar() {
   const pathname = usePathname();
   const { age, currentMonth, mounted } = useAge();
+  const { t } = useLanguage();
+
+  const navItems = [
+    { href: "/", label: t("sidebar.dashboard"), icon: Home },
+    { href: "/milestones", label: t("sidebar.milestones"), icon: Star },
+    { href: "/play-tips", label: t("sidebar.playtips"), icon: Sparkles },
+    { href: "/watch-outs", label: t("sidebar.watchouts"), icon: AlertTriangle },
+    { href: "/memo", label: t("sidebar.memo"), icon: BookOpen },
+  ];
 
   const getHref = (href: string) => {
     if (href === "/" || href === "/memo") return href;
@@ -50,8 +52,8 @@ export function AppSidebar() {
             </AvatarFallback>
           </Avatar>
           <div>
-            <h2 className="font-semibold text-base">{BABY.name}&apos;s Growth Book</h2>
-            {mounted && <p className="text-xs text-muted-foreground">{age.label} old</p>}
+            <h2 className="font-semibold text-base">{BABY.name}{t("app.growth_book")}</h2>
+            {mounted && <p className="text-xs text-muted-foreground">{age.label} {t("age.old")}</p>}
           </div>
         </div>
       </SidebarHeader>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useAge } from "@/hooks/use-age";
+import { useLanguage } from "@/contexts/language-context";
 import { BABY } from "@/lib/constants";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
@@ -8,6 +9,7 @@ import { Badge } from "@/components/ui/badge";
 
 export function AgeDisplay() {
   const { age, currentMonth, mounted } = useAge();
+  const { lang, t } = useLanguage();
 
   return (
     <Card className="bg-gradient-to-br from-warm-50 to-warm-100 border-warm-200">
@@ -23,22 +25,25 @@ export function AgeDisplay() {
           </h2>
           {mounted && (
             <p className="text-base text-muted-foreground">
-              {age.label} old
+              {age.label} {t("age.old")}
             </p>
           )}
           <div className="flex gap-2 mt-2">
             <Badge variant="secondary" className="bg-warm-100 text-warm-700">
-              Born {(() => {
+              {t("age.born")} {(() => {
                 const [y, m, d] = BABY.birthDate.split("-").map(Number);
-                return new Date(y, m - 1, d).toLocaleDateString("en-US", {
-                  month: "long",
-                  day: "numeric",
-                  year: "numeric",
-                });
+                return new Date(y, m - 1, d).toLocaleDateString(
+                  lang === "ko" ? "ko-KR" : "en-US",
+                  {
+                    month: "long",
+                    day: "numeric",
+                    year: "numeric",
+                  }
+                );
               })()}
             </Badge>
             <Badge className="bg-primary text-primary-foreground">
-              Month {currentMonth}
+              {t("age.month")} {currentMonth}
             </Badge>
           </div>
         </div>

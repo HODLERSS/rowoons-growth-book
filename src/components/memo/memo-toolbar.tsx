@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/language-context";
 import { ArrowLeft, Edit, Trash2 } from "lucide-react";
 
 interface MemoToolbarProps {
@@ -18,6 +19,7 @@ export function MemoToolbar({
   showDelete = true,
 }: MemoToolbarProps) {
   const router = useRouter();
+  const { t } = useLanguage();
 
   return (
     <div className="flex items-center justify-between">
@@ -28,20 +30,20 @@ export function MemoToolbar({
         className="text-muted-foreground"
       >
         <ArrowLeft className="size-4" />
-        Back
+        {t("memo.back")}
       </Button>
 
       <div className="flex items-center gap-2">
         {showEdit && onEdit && (
           <Button variant="outline" size="sm" onClick={onEdit}>
             <Edit className="size-4" />
-            Edit
+            {t("memo.edit")}
           </Button>
         )}
         {showDelete && onDelete && (
           <Button variant="outline" size="sm" onClick={onDelete} className="text-destructive hover:text-destructive">
             <Trash2 className="size-4" />
-            Delete
+            {t("memo.delete")}
           </Button>
         )}
       </div>

@@ -9,6 +9,7 @@ import { MemoEditor } from "@/components/memo/memo-editor";
 import { MemoToolbar } from "@/components/memo/memo-toolbar";
 import { ConfirmDelete } from "@/components/memo/confirm-delete";
 import { useMemos } from "@/hooks/use-memos";
+import { useLanguage } from "@/contexts/language-context";
 import { Memo } from "@/lib/types";
 import { Save, X } from "lucide-react";
 
@@ -16,6 +17,7 @@ export default function MemoDetailPage() {
   const params = useParams<{ id: string }>();
   const router = useRouter();
   const { get, update, remove } = useMemos();
+  const { t } = useLanguage();
 
   const [memo, setMemo] = useState<Memo | undefined>();
   const [editing, setEditing] = useState(false);
@@ -37,9 +39,9 @@ export default function MemoDetailPage() {
   if (!memo) {
     return (
       <div className="flex flex-col h-full">
-        <Header title="Memo" />
+        <Header title={t("memo.title")} />
         <div className="flex-1 flex items-center justify-center">
-          <p className="text-muted-foreground text-sm">Loading...</p>
+          <p className="text-muted-foreground text-sm">{t("memo.loading")}</p>
         </div>
       </div>
     );
@@ -76,17 +78,17 @@ export default function MemoDetailPage() {
   return (
     <div className="flex flex-col h-full">
       <Header
-        title={editing ? "Edit Memo" : memo.title || "Memo"}
+        title={editing ? t("memo.edit") + " " + t("memo.title") : memo.title || t("memo.title")}
         actions={
           editing ? (
             <div className="flex items-center gap-2">
               <Button variant="ghost" size="sm" onClick={handleCancelEdit}>
                 <X className="size-4" />
-                Cancel
+                {t("memo.cancel")}
               </Button>
               <Button size="sm" onClick={handleSave}>
                 <Save className="size-4" />
-                Save
+                {t("memo.save")}
               </Button>
             </div>
           ) : undefined

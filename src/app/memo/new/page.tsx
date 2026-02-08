@@ -6,11 +6,13 @@ import { Header } from "@/components/shared/header";
 import { Button } from "@/components/ui/button";
 import { MemoEditor } from "@/components/memo/memo-editor";
 import { useMemos } from "@/hooks/use-memos";
+import { useLanguage } from "@/contexts/language-context";
 import { ArrowLeft, Save } from "lucide-react";
 
 export default function NewMemoPage() {
   const router = useRouter();
   const { create } = useMemos();
+  const { t } = useLanguage();
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [saving, setSaving] = useState(false);
@@ -31,12 +33,12 @@ export default function NewMemoPage() {
   return (
     <div className="flex flex-col h-full">
       <Header
-        title="New Memo"
+        title={t("memo.new")}
         actions={
           <div className="flex items-center gap-2">
             <Button variant="ghost" size="sm" onClick={handleCancel}>
               <ArrowLeft className="size-4" />
-              Cancel
+              {t("memo.cancel")}
             </Button>
             <Button
               size="sm"
@@ -44,7 +46,7 @@ export default function NewMemoPage() {
               disabled={!canSave || saving}
             >
               <Save className="size-4" />
-              Save
+              {t("memo.save")}
             </Button>
           </div>
         }

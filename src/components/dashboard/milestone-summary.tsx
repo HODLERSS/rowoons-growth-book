@@ -2,6 +2,7 @@
 
 import { useAge } from "@/hooks/use-age";
 import { useMilestones } from "@/hooks/use-milestones";
+import { useLanguage } from "@/contexts/language-context";
 import { getMilestones } from "@/lib/content-loader";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
@@ -11,6 +12,7 @@ import Link from "next/link";
 export function MilestoneSummary() {
   const { currentMonth } = useAge();
   const { stats } = useMilestones();
+  const { t } = useLanguage();
 
   const milestones = getMilestones(currentMonth);
   const milestoneIds = milestones.map((m) => m.id);
@@ -20,12 +22,12 @@ export function MilestoneSummary() {
     <Card>
       <CardHeader>
         <CardTitle className="flex items-center justify-between">
-          <span>Milestone Progress</span>
+          <span>{t("dashboard.milestone_progress")}</span>
           <Link
             href={`/milestones/${currentMonth}`}
             className="text-sm font-normal text-primary hover:underline"
           >
-            View all
+            {t("dashboard.view_all")}
           </Link>
         </CardTitle>
       </CardHeader>
@@ -33,7 +35,9 @@ export function MilestoneSummary() {
         <div className="space-y-2">
           <div className="flex justify-between text-sm">
             <span className="text-muted-foreground">
-              {completed} of {total} milestones completed
+              {t("dashboard.milestones_completed")
+                .replace("{completed}", String(completed))
+                .replace("{total}", String(total))}
             </span>
             <span className="font-medium text-primary">{percentage}%</span>
           </div>
@@ -42,7 +46,7 @@ export function MilestoneSummary() {
 
         {total === 0 && (
           <p className="text-sm text-muted-foreground">
-            No milestones available for month {currentMonth} yet.
+            {t("dashboard.no_milestones").replace("{month}", String(currentMonth))}
           </p>
         )}
 
@@ -61,7 +65,7 @@ export function MilestoneSummary() {
                 >
                   <span>{cat.emoji}</span>
                   <span className="truncate text-muted-foreground">
-                    {cat.label}
+                    {t(`category.${cat.value}`)}
                   </span>
                   <span className="ml-auto font-medium">
                     {catStats.completed}/{catStats.total}

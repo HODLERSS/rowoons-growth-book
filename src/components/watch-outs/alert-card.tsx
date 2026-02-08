@@ -5,12 +5,14 @@ import { SEVERITY_CONFIG } from "@/lib/constants";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { SourceBadge } from "@/components/shared/source-modal";
+import { useLanguage } from "@/contexts/language-context";
 
 interface AlertCardProps {
   watchOut: WatchOut;
 }
 
 export function AlertCard({ watchOut }: AlertCardProps) {
+  const { t } = useLanguage();
   const severity = SEVERITY_CONFIG[watchOut.severity];
 
   const borderColor =
@@ -28,7 +30,7 @@ export function AlertCard({ watchOut }: AlertCardProps) {
             <span className="text-lg">{severity.icon}</span>
             <CardTitle className="text-base">{watchOut.title}</CardTitle>
           </div>
-          <Badge className={severity.color}>{severity.label}</Badge>
+          <Badge className={severity.color}>{t(`severity.${watchOut.severity}`)}</Badge>
         </div>
       </CardHeader>
       <CardContent className="space-y-3">
@@ -37,7 +39,7 @@ export function AlertCard({ watchOut }: AlertCardProps) {
         </p>
         {watchOut.action && (
           <div className="bg-muted/50 rounded-lg p-3">
-            <p className="text-xs font-medium mb-1">What to do:</p>
+            <p className="text-xs font-medium mb-1">{t("action.label")}</p>
             <p className="text-sm text-muted-foreground">{watchOut.action}</p>
           </div>
         )}

@@ -3,13 +3,14 @@
 import ReactMarkdown from "react-markdown";
 import { Memo } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
+import { useLanguage } from "@/contexts/language-context";
 
 interface MemoViewerProps {
   memo: Memo;
 }
 
-function formatDate(dateStr: string) {
-  return new Date(dateStr).toLocaleDateString("en-US", {
+function formatDate(dateStr: string, locale: string) {
+  return new Date(dateStr).toLocaleDateString(locale, {
     weekday: "short",
     month: "short",
     day: "numeric",
@@ -18,17 +19,20 @@ function formatDate(dateStr: string) {
 }
 
 export function MemoViewer({ memo }: MemoViewerProps) {
+  const { lang, t } = useLanguage();
+  const locale = lang === "ko" ? "ko-KR" : "en-US";
+
   return (
     <div className="space-y-4">
       <div className="space-y-2">
         <h1 className="text-xl font-bold leading-tight">
-          {memo.title || "Untitled"}
+          {memo.title || t("memo.untitled")}
         </h1>
 
         <p className="text-xs text-muted-foreground">
-          {formatDate(memo.createdAt)}
+          {formatDate(memo.createdAt, locale)}
           {memo.updatedAt !== memo.createdAt && (
-            <span> (edited {formatDate(memo.updatedAt)})</span>
+            <span> ({t("memo.edited")} {formatDate(memo.updatedAt, locale)})</span>
           )}
         </p>
 
@@ -48,7 +52,7 @@ export function MemoViewer({ memo }: MemoViewerProps) {
           {memo.content ? (
             <ReactMarkdown>{memo.content}</ReactMarkdown>
           ) : (
-            <p className="text-muted-foreground italic">No content</p>
+            <p className="text-muted-foreground italic">{t("memo.no_content")}</p>
           )}
         </div>
       </div>

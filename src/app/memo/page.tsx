@@ -5,21 +5,23 @@ import { Header } from "@/components/shared/header";
 import { Button } from "@/components/ui/button";
 import { MemoCard } from "@/components/memo/memo-card";
 import { useMemos } from "@/hooks/use-memos";
+import { useLanguage } from "@/contexts/language-context";
 import { Plus } from "lucide-react";
 
 export default function MemoListPage() {
   const { memos } = useMemos();
+  const { t } = useLanguage();
 
   return (
     <div className="flex flex-col h-full">
       <Header
-        title="Memo Journal"
+        title={t("memo.title")}
         subtitle={`${memos.length} memo${memos.length !== 1 ? "s" : ""}`}
         actions={
           <Button asChild size="sm">
             <Link href="/memo/new">
               <Plus className="size-4" />
-              New Memo
+              {t("memo.new")}
             </Link>
           </Button>
         }
@@ -31,12 +33,12 @@ export default function MemoListPage() {
             <div className="text-center py-16 space-y-3">
               <p className="text-4xl">📝</p>
               <p className="text-muted-foreground text-sm">
-                No memos yet. Start your first memo!
+                {t("memo.empty")}. {t("memo.write")}!
               </p>
               <Button asChild size="sm" className="mt-2">
                 <Link href="/memo/new">
                   <Plus className="size-4" />
-                  Write a Memo
+                  {t("memo.new")}
                 </Link>
               </Button>
             </div>

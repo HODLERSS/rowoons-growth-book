@@ -5,6 +5,7 @@ import ReactMarkdown from "react-markdown";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/language-context";
 import { Eye, Pencil } from "lucide-react";
 
 interface MemoEditorProps {
@@ -21,11 +22,12 @@ export function MemoEditor({
   onContentChange,
 }: MemoEditorProps) {
   const [preview, setPreview] = useState(false);
+  const { t } = useLanguage();
 
   return (
     <div className="space-y-3">
       <Input
-        placeholder="Memo title..."
+        placeholder={t("memo.placeholder.title")}
         value={title}
         onChange={(e) => onTitleChange(e.target.value)}
         className="text-base font-semibold border-warm-200 focus-visible:border-warm-400"
@@ -41,12 +43,12 @@ export function MemoEditor({
           {preview ? (
             <>
               <Pencil className="size-3.5" />
-              Edit
+              {t("memo.edit")}
             </>
           ) : (
             <>
               <Eye className="size-3.5" />
-              Preview
+              {t("memo.preview")}
             </>
           )}
         </Button>
@@ -57,12 +59,12 @@ export function MemoEditor({
           {content ? (
             <ReactMarkdown>{content}</ReactMarkdown>
           ) : (
-            <p className="text-muted-foreground italic">Nothing to preview</p>
+            <p className="text-muted-foreground italic">{t("memo.nothing_preview")}</p>
           )}
         </div>
       ) : (
         <Textarea
-          placeholder="Write your memo here... (supports markdown)"
+          placeholder={t("memo.placeholder.content")}
           value={content}
           onChange={(e) => onContentChange(e.target.value)}
           className="min-h-[300px] md:min-h-[200px] resize-y border-warm-200 focus-visible:border-warm-400"

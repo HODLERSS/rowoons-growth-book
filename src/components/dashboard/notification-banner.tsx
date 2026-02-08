@@ -4,9 +4,11 @@ import { Bell, BellOff, BellRing, AlertCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { usePushNotifications } from "@/hooks/use-push-notifications";
+import { useLanguage } from "@/contexts/language-context";
 
 export function NotificationBanner() {
   const { permission, isSubscribed, loading, error, subscribe, unsubscribe } = usePushNotifications();
+  const { t } = useLanguage();
 
   if (permission === "unsupported" && !error) return null;
 
@@ -27,7 +29,7 @@ export function NotificationBanner() {
               onClick={subscribe}
               disabled={loading}
             >
-              Retry
+              {t("notify.retry")}
             </Button>
           )}
         </CardContent>
@@ -41,9 +43,9 @@ export function NotificationBanner() {
         <CardContent className="flex items-center gap-3">
           <BellOff className="size-5 text-destructive shrink-0" />
           <div className="flex-1 min-w-0">
-            <p className="text-sm font-medium">Notifications blocked</p>
+            <p className="text-sm font-medium">{t("notify.blocked")}</p>
             <p className="text-xs text-muted-foreground">
-              Enable in your browser settings to receive updates
+              {t("notify.blocked_desc")}
             </p>
           </div>
         </CardContent>
@@ -58,7 +60,7 @@ export function NotificationBanner() {
           <BellRing className="size-5 text-green-600 dark:text-green-400 shrink-0" />
           <div className="flex-1 min-w-0">
             <p className="text-sm font-medium text-green-700 dark:text-green-300">
-              Notifications enabled
+              {t("notify.enabled")}
             </p>
           </div>
           <Button
@@ -67,7 +69,7 @@ export function NotificationBanner() {
             onClick={unsubscribe}
             disabled={loading}
           >
-            Turn off
+            {t("notify.off")}
           </Button>
         </CardContent>
       </Card>
@@ -79,9 +81,9 @@ export function NotificationBanner() {
       <CardContent className="flex items-center gap-3">
         <Bell className="size-5 text-muted-foreground shrink-0" />
         <div className="flex-1 min-w-0">
-          <p className="text-sm font-medium">Get milestone reminders</p>
+          <p className="text-sm font-medium">{t("notify.get_reminders")}</p>
           <p className="text-xs text-muted-foreground">
-            Stay updated on Rowoon&apos;s growth
+            {t("notify.stay_updated")}
           </p>
         </div>
         <Button
@@ -89,7 +91,7 @@ export function NotificationBanner() {
           onClick={subscribe}
           disabled={loading}
         >
-          {loading ? "..." : "Enable"}
+          {loading ? "..." : t("notify.enable")}
         </Button>
       </CardContent>
     </Card>

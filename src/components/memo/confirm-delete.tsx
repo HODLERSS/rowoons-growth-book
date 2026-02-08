@@ -9,6 +9,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/language-context";
 
 interface ConfirmDeleteProps {
   open: boolean;
@@ -23,22 +24,23 @@ export function ConfirmDelete({
   onConfirm,
   title = "this memo",
 }: ConfirmDeleteProps) {
+  const { t } = useLanguage();
+
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Delete Memo</DialogTitle>
+          <DialogTitle>{t("memo.delete_title")}</DialogTitle>
           <DialogDescription>
-            Are you sure you want to delete &ldquo;{title}&rdquo;? This action
-            cannot be undone.
+            {t("memo.delete_confirm").replace("{title}", title)}
           </DialogDescription>
         </DialogHeader>
         <DialogFooter>
           <Button variant="outline" onClick={() => onOpenChange(false)}>
-            Cancel
+            {t("memo.cancel")}
           </Button>
           <Button variant="destructive" onClick={onConfirm}>
-            Delete
+            {t("memo.delete")}
           </Button>
         </DialogFooter>
       </DialogContent>

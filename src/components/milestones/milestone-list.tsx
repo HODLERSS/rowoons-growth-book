@@ -2,6 +2,7 @@
 
 import { Milestone } from "@/lib/types";
 import { MilestoneCard } from "./milestone-card";
+import { useLanguage } from "@/contexts/language-context";
 
 interface MilestoneListProps {
   milestones: Milestone[];
@@ -10,10 +11,12 @@ interface MilestoneListProps {
 }
 
 export function MilestoneList({ milestones, isCompleted, onToggle }: MilestoneListProps) {
+  const { t } = useLanguage();
+
   if (milestones.length === 0) {
     return (
       <p className="text-sm text-muted-foreground text-center py-4">
-        No milestones in this section.
+        {t("milestones.no_section")}
       </p>
     );
   }

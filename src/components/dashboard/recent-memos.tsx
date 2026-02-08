@@ -2,11 +2,13 @@
 
 import Link from "next/link";
 import { useMemos } from "@/hooks/use-memos";
+import { useLanguage } from "@/contexts/language-context";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 export function RecentMemos() {
   const { memos } = useMemos();
+  const { lang, t } = useLanguage();
 
   const recentMemos = memos.slice(0, 3);
 
@@ -14,16 +16,16 @@ export function RecentMemos() {
     return (
       <Card>
         <CardHeader>
-          <CardTitle>Recent Memos</CardTitle>
+          <CardTitle>{t("dashboard.recent_memos")}</CardTitle>
         </CardHeader>
         <CardContent>
           <div className="text-center py-6">
-            <p className="text-muted-foreground text-sm">No memos yet</p>
+            <p className="text-muted-foreground text-sm">{t("memo.empty")}</p>
             <Link
               href="/memo/new"
               className="text-sm text-primary hover:underline mt-1 inline-block"
             >
-              Write your first memo
+              {t("memo.write")}
             </Link>
           </div>
         </CardContent>
@@ -35,12 +37,12 @@ export function RecentMemos() {
     <Card>
       <CardHeader>
         <CardTitle className="flex items-center justify-between">
-          <span>Recent Memos</span>
+          <span>{t("dashboard.recent_memos")}</span>
           <Link
             href="/memo"
             className="text-sm font-normal text-primary hover:underline"
           >
-            View all
+            {t("dashboard.view_all")}
           </Link>
         </CardTitle>
       </CardHeader>
@@ -56,10 +58,13 @@ export function RecentMemos() {
                 {memo.title}
               </h4>
               <span className="text-xs text-muted-foreground whitespace-nowrap">
-                {new Date(memo.createdAt).toLocaleDateString("en-US", {
-                  month: "short",
-                  day: "numeric",
-                })}
+                {new Date(memo.createdAt).toLocaleDateString(
+                  lang === "ko" ? "ko-KR" : "en-US",
+                  {
+                    month: "short",
+                    day: "numeric",
+                  }
+                )}
               </span>
             </div>
             <p className="text-xs text-muted-foreground mt-1 line-clamp-2">

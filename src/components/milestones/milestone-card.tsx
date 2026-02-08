@@ -6,6 +6,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Badge } from "@/components/ui/badge";
 import { SourceBadge } from "@/components/shared/source-modal";
 import { cn } from "@/lib/utils";
+import { useLanguage } from "@/contexts/language-context";
 
 interface MilestoneCardProps {
   milestone: Milestone;
@@ -18,6 +19,7 @@ function getCategoryConfig(category: MilestoneCategory) {
 }
 
 export function MilestoneCard({ milestone, completed, onToggle }: MilestoneCardProps) {
+  const { t } = useLanguage();
   const category = getCategoryConfig(milestone.category);
 
   return (
@@ -49,7 +51,7 @@ export function MilestoneCard({ milestone, completed, onToggle }: MilestoneCardP
             variant="secondary"
             className={cn("text-[10px] px-1.5 py-0 hidden sm:inline-flex", category.color)}
           >
-            {category.emoji} {category.label}
+            {category.emoji} {t(`category.${milestone.category}`)}
           </Badge>
         </div>
         <p

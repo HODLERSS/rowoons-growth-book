@@ -12,6 +12,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, BookOpen } from "lucide-react";
+import { useLanguage } from "@/contexts/language-context";
 
 interface SourceModalProps {
   sourceInfo: SourceInfo;
@@ -19,6 +20,8 @@ interface SourceModalProps {
 }
 
 export function SourceBadge({ sourceInfo, itemTitle }: SourceModalProps) {
+  const { t } = useLanguage();
+
   if (!sourceInfo.source) return null;
 
   return (
@@ -62,14 +65,13 @@ export function SourceBadge({ sourceInfo, itemTitle }: SourceModalProps) {
                 className="flex items-center gap-2"
               >
                 <ExternalLink className="h-3.5 w-3.5" />
-                View original guideline
+                {t("source.view_original")}
               </a>
             </Button>
           )}
 
           <p className="text-[11px] text-muted-foreground/60 leading-relaxed">
-            This information is based on published guidelines from {sourceInfo.source}.
-            Always consult your pediatrician for personalized advice.
+            {t("source.disclaimer").replace("{source}", sourceInfo.source)}
           </p>
         </div>
       </DialogContent>

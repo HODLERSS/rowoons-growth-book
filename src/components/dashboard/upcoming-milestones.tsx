@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useAge } from "@/hooks/use-age";
 import { useMilestones } from "@/hooks/use-milestones";
+import { useLanguage } from "@/contexts/language-context";
 import { getMilestones } from "@/lib/content-loader";
 import { MILESTONE_CATEGORIES } from "@/lib/constants";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
@@ -11,6 +12,7 @@ import { Badge } from "@/components/ui/badge";
 export function UpcomingMilestones() {
   const { currentMonth } = useAge();
   const { isCompleted } = useMilestones();
+  const { t } = useLanguage();
 
   const milestones = getMilestones(currentMonth);
   const upcoming = milestones
@@ -21,12 +23,12 @@ export function UpcomingMilestones() {
     return (
       <Card>
         <CardHeader>
-          <CardTitle>Upcoming Milestones</CardTitle>
+          <CardTitle>{t("dashboard.upcoming")}</CardTitle>
         </CardHeader>
         <CardContent>
           <div className="text-center py-4">
             <p className="text-sm text-muted-foreground">
-              All milestones for month {currentMonth} are completed!
+              {t("dashboard.all_completed").replace("{month}", String(currentMonth))}
             </p>
           </div>
         </CardContent>
@@ -38,11 +40,11 @@ export function UpcomingMilestones() {
     return (
       <Card>
         <CardHeader>
-          <CardTitle>Upcoming Milestones</CardTitle>
+          <CardTitle>{t("dashboard.upcoming")}</CardTitle>
         </CardHeader>
         <CardContent>
           <p className="text-sm text-muted-foreground">
-            No milestones available for month {currentMonth} yet.
+            {t("dashboard.no_milestones").replace("{month}", String(currentMonth))}
           </p>
         </CardContent>
       </Card>
@@ -53,12 +55,12 @@ export function UpcomingMilestones() {
     <Card>
       <CardHeader>
         <CardTitle className="flex items-center justify-between">
-          <span>Upcoming Milestones</span>
+          <span>{t("dashboard.upcoming")}</span>
           <Link
             href={`/milestones/${currentMonth}`}
             className="text-sm font-normal text-primary hover:underline"
           >
-            View all
+            {t("dashboard.view_all")}
           </Link>
         </CardTitle>
       </CardHeader>
@@ -83,7 +85,7 @@ export function UpcomingMilestones() {
                 variant="secondary"
                 className={`text-[10px] shrink-0 ${category?.color}`}
               >
-                {category?.label}
+                {t(`category.${milestone.category}`)}
               </Badge>
             </div>
           );

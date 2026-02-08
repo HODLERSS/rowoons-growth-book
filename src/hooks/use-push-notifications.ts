@@ -15,12 +15,28 @@ function urlBase64ToUint8Array(base64String: string): ArrayBuffer {
   return outputArray.buffer as ArrayBuffer;
 }
 
-async function ensureServiceWorker(): Promise<ServiceWorkerRegistration> {
-  // Always register - browser dedupes if already registered
+async function ensureServiceWorker(timeoutMs = 5000): Promise<ServiceWorkerRegistration> {
   const registration = await navigator.serviceWorker.register("/sw.js");
-  // Wait until active
   if (registration.active) return registration;
-  return navigator.serviceWorker.ready;
+
+  return new Promise((resolve, reject) => {
+    const timer = setTimeout(() => reject(new Error("SW activation timeout")), timeoutMs);
+
+    if (registration.installing || registration.waiting) {
+      const sw = registration.installing || registration.waiting;
+      sw!.addEventListener("statechange", () => {
+        if (sw!.state === "activated") {
+          clearTimeout(timer);
+          resolve(registration);
+        }
+      });
+    }
+
+    navigator.serviceWorker.ready.then((reg) => {
+      clearTimeout(timer);
+      resolve(reg);
+    });
+  });
 }
 
 export function usePushNotifications() {
@@ -56,15 +72,12 @@ export function usePushNotifications() {
 
     setPermission(Notification.permission as PermissionState);
 
-    ensureServiceWorker()
+    // Check existing subscription but don't block on SW readiness
+    ensureServiceWorker(3000)
       .then((reg) => reg.pushManager.getSubscription())
-      .then((sub) => {
-        setIsSubscribed(!!sub);
-        setLoading(false);
-      })
-      .catch(() => {
-        setLoading(false);
-      });
+      .then((sub) => setIsSubscribed(!!sub))
+      .catch(() => {})
+      .finally(() => setLoading(false));
   }, []);
 
   const subscribe = useCallback(async () => {

@@ -14,7 +14,7 @@ interface PushSubscriptionJSON {
 
 export async function POST(request: Request) {
   try {
-    const { password, title, body } = await request.json();
+    const { password, title, body, endpoints } = await request.json();
 
     if (password !== process.env.ADMIN_PASSWORD) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
@@ -35,9 +35,14 @@ export async function POST(request: Request) {
       token: process.env.KV_REST_API_TOKEN!,
     });
 
-    const subscriptions: PushSubscriptionJSON[] = (await kv.get(KV_KEY)) || [];
+    const allSubscriptions: PushSubscriptionJSON[] = (await kv.get(KV_KEY)) || [];
 
-    if (subscriptions.length === 0) {
+    // If specific endpoints provided, filter to only those
+    const targets = endpoints?.length
+      ? allSubscriptions.filter((s) => (endpoints as string[]).includes(s.endpoint))
+      : allSubscriptions;
+
+    if (targets.length === 0) {
       return NextResponse.json({ sent: 0, failed: 0, message: "No subscribers" });
     }
 
@@ -48,7 +53,7 @@ export async function POST(request: Request) {
     const payload = JSON.stringify({ title: title || "Rowoon's Growth Book", body });
 
     await Promise.all(
-      subscriptions.map(async (sub) => {
+      targets.map(async (sub) => {
         try {
           await webpush.sendNotification(sub, payload);
           sent++;
@@ -63,7 +68,7 @@ export async function POST(request: Request) {
     );
 
     if (expired.length > 0) {
-      const cleaned = subscriptions.filter((s) => !expired.includes(s.endpoint));
+      const cleaned = allSubscriptions.filter((s) => !expired.includes(s.endpoint));
       await kv.set(KV_KEY, cleaned);
     }
 

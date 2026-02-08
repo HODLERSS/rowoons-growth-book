@@ -4,6 +4,24 @@ import { useState, useCallback, useEffect } from "react";
 
 type PermissionState = "default" | "granted" | "denied" | "unsupported";
 
+function waitForServiceWorker(timeoutMs = 3000): Promise<ServiceWorkerRegistration | null> {
+  return new Promise((resolve) => {
+    // If already active, resolve immediately
+    navigator.serviceWorker.getRegistration().then((reg) => {
+      if (reg?.active) {
+        resolve(reg);
+        return;
+      }
+      // Otherwise wait for ready with a timeout
+      const timer = setTimeout(() => resolve(null), timeoutMs);
+      navigator.serviceWorker.ready.then((r) => {
+        clearTimeout(timer);
+        resolve(r);
+      });
+    });
+  });
+}
+
 export function usePushNotifications() {
   const [permission, setPermission] = useState<PermissionState>("default");
   const [isSubscribed, setIsSubscribed] = useState(false);
@@ -18,11 +36,17 @@ export function usePushNotifications() {
 
     setPermission(Notification.permission as PermissionState);
 
-    navigator.serviceWorker.ready.then((registration) => {
-      registration.pushManager.getSubscription().then((sub) => {
-        setIsSubscribed(!!sub);
+    waitForServiceWorker().then((registration) => {
+      if (registration) {
+        registration.pushManager.getSubscription().then((sub) => {
+          setIsSubscribed(!!sub);
+          setLoading(false);
+        });
+      } else {
+        // SW not ready yet, but still allow the button to work -
+        // subscribe() will trigger SW ready on its own
         setLoading(false);
-      });
+      }
     });
   }, []);
 

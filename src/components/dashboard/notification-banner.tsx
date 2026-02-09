@@ -1,15 +1,34 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { Bell, BellOff, BellRing, AlertCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { usePushNotifications } from "@/hooks/use-push-notifications";
 import { useLanguage } from "@/contexts/language-context";
 
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const check = () => {
+      const isStandalone = window.matchMedia("(display-mode: standalone)").matches;
+      const isNarrow = window.matchMedia("(max-width: 768px)").matches;
+      setIsMobile(isStandalone || isNarrow);
+    };
+    check();
+    const mq = window.matchMedia("(max-width: 768px)");
+    mq.addEventListener("change", check);
+    return () => mq.removeEventListener("change", check);
+  }, []);
+  return isMobile;
+}
+
 export function NotificationBanner() {
   const { permission, isSubscribed, loading, error, subscribe, unsubscribe } = usePushNotifications();
   const { t } = useLanguage();
+  const isMobile = useIsMobile();
 
+  if (!isMobile) return null;
   if (permission === "unsupported" && !error) return null;
 
   if (error) {

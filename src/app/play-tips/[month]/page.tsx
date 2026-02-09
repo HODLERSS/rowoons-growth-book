@@ -2,7 +2,7 @@
 
 import { useParams, useRouter } from "next/navigation";
 import { useEffect } from "react";
-import { getCurrentMonth } from "@/lib/age-calculator";
+import { useAge } from "@/hooks/use-age";
 import { getPlayTips } from "@/lib/content-loader";
 import { useLanguage } from "@/contexts/language-context";
 import { Header } from "@/components/shared/header";
@@ -15,12 +15,13 @@ export default function PlayTipsPage() {
   const router = useRouter();
   const monthParam = params.month as string;
   const { lang, t } = useLanguage();
+  const { currentMonth } = useAge();
 
   useEffect(() => {
     if (monthParam === "current") {
-      router.replace(`/play-tips/${getCurrentMonth()}`);
+      router.replace(`/play-tips/${currentMonth}`);
     }
-  }, [monthParam, router]);
+  }, [monthParam, router, currentMonth]);
 
   if (monthParam === "current") {
     return null;

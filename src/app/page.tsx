@@ -8,14 +8,18 @@ import { QuickActions } from "@/components/dashboard/quick-actions";
 import { RecentMemos } from "@/components/dashboard/recent-memos";
 import { UpcomingMilestones } from "@/components/dashboard/upcoming-milestones";
 import { useLanguage } from "@/contexts/language-context";
+import { useBaby } from "@/contexts/baby-context";
+import { BabySetupModal } from "@/components/onboarding/baby-setup-modal";
 
 export default function DashboardPage() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
+  const { baby } = useBaby();
 
   return (
     <div className="flex flex-col h-full">
+      <BabySetupModal />
       <Header
-        title={t("app.title")}
+        title={baby ? `${lang === "ko" ? baby.nameKo || baby.name : baby.name}${t("app.growth_book")}` : t("app.title")}
         subtitle={t("app.subtitle")}
       />
       <div className="flex-1 overflow-auto">

@@ -9,22 +9,23 @@ import { MilestoneProgress } from "@/components/milestones/milestone-progress";
 import { CategorySection } from "@/components/milestones/category-section";
 import { useMilestones } from "@/hooks/use-milestones";
 import { useLanguage } from "@/contexts/language-context";
+import { useAge } from "@/hooks/use-age";
 import { getMilestones, getMilestonesByCategory } from "@/lib/content-loader";
-import { getCurrentMonth } from "@/lib/age-calculator";
 import { MILESTONE_CATEGORIES } from "@/lib/constants";
 
 export default function MilestonesPage() {
   const params = useParams<{ month: string }>();
   const router = useRouter();
   const { lang, t } = useLanguage();
+  const { currentMonth } = useAge();
 
   useEffect(() => {
     if (params.month === "current") {
-      router.replace(`/milestones/${getCurrentMonth()}`);
+      router.replace(`/milestones/${currentMonth}`);
     }
-  }, [params.month, router]);
+  }, [params.month, router, currentMonth]);
 
-  const month = params.month === "current" ? getCurrentMonth() : Number(params.month);
+  const month = params.month === "current" ? currentMonth : Number(params.month);
   const { toggle, isCompleted, stats } = useMilestones();
 
   const milestones = useMemo(() => getMilestones(month, lang), [month, lang]);

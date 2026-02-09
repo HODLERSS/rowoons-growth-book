@@ -1,9 +1,19 @@
 import { Memo } from "./types";
 
-const STORAGE_KEY = "rowoon-memos";
+const STORAGE_KEY = "growth-memos";
+
+function migrateStorageKey() {
+  if (typeof window === "undefined") return;
+  const old = localStorage.getItem("rowoon-memos");
+  if (old && !localStorage.getItem("growth-memos")) {
+    localStorage.setItem("growth-memos", old);
+    localStorage.removeItem("rowoon-memos");
+  }
+}
 
 function getStorageData(): Memo[] {
   if (typeof window === "undefined") return [];
+  migrateStorageKey();
   try {
     const data = localStorage.getItem(STORAGE_KEY);
     return data ? JSON.parse(data) : [];

@@ -1,9 +1,19 @@
 import { MilestoneCompletion } from "./types";
 
-const STORAGE_KEY = "rowoon-milestones";
+const STORAGE_KEY = "growth-milestones";
+
+function migrateStorageKey() {
+  if (typeof window === "undefined") return;
+  const old = localStorage.getItem("rowoon-milestones");
+  if (old && !localStorage.getItem("growth-milestones")) {
+    localStorage.setItem("growth-milestones", old);
+    localStorage.removeItem("rowoon-milestones");
+  }
+}
 
 function getStorageData(): MilestoneCompletion {
   if (typeof window === "undefined") return {};
+  migrateStorageKey();
   try {
     const data = localStorage.getItem(STORAGE_KEY);
     return data ? JSON.parse(data) : {};

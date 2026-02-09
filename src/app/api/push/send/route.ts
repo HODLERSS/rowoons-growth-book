@@ -50,7 +50,7 @@ export async function POST(request: Request) {
     let failed = 0;
     const expired: string[] = [];
 
-    const payload = JSON.stringify({ title: title || "Rowoon's Growth Book", body });
+    const payload = JSON.stringify({ title: title || "Baby Growth Book", body });
 
     await Promise.all(
       targets.map(async (sub) => {

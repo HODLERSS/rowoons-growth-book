@@ -1,15 +1,16 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import { useEffect } from "react";
-import { getCurrentMonth } from "@/lib/age-calculator";
+import { useRouter } from "next/navigation";
+import { useAge } from "@/hooks/use-age";
 
 export default function WatchOutsRedirect() {
   const router = useRouter();
+  const { currentMonth } = useAge();
 
   useEffect(() => {
-    router.replace(`/watch-outs/${getCurrentMonth()}`);
-  }, [router]);
+    router.replace(`/watch-outs/${currentMonth}`);
+  }, [currentMonth, router]);
 
   return null;
 }

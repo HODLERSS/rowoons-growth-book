@@ -2,26 +2,44 @@
 
 import { useAge } from "@/hooks/use-age";
 import { useLanguage } from "@/contexts/language-context";
-import { BABY } from "@/lib/constants";
+import { useBaby } from "@/contexts/baby-context";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 
 export function AgeDisplay() {
+  const { baby } = useBaby();
   const { age, currentMonth, mounted } = useAge();
   const { lang, t } = useLanguage();
+
+  if (!baby) {
+    return (
+      <Card className="bg-gradient-to-br from-warm-50 to-warm-100 border-warm-200">
+        <CardContent className="flex items-center gap-4 py-6">
+          <Avatar size="lg" className="size-16 bg-muted">
+            <AvatarFallback className="bg-muted text-2xl">👶</AvatarFallback>
+          </Avatar>
+          <div className="flex-1 min-w-0">
+            <h2 className="text-xl font-bold text-foreground">
+              {lang === "ko" ? "아기 정보를 설정해 주세요" : "Set up your baby's profile"}
+            </h2>
+          </div>
+        </CardContent>
+      </Card>
+    );
+  }
 
   return (
     <Card className="bg-gradient-to-br from-warm-50 to-warm-100 border-warm-200">
       <CardContent className="flex items-center gap-4">
         <Avatar size="lg" className="size-16 bg-primary/10">
           <AvatarFallback className="bg-primary/10 text-2xl">
-            {BABY.gender === "girl" ? "\uD83D\uDC76" : "\uD83D\uDC76"}
+            {baby.gender === "girl" ? "👶" : "👶"}
           </AvatarFallback>
         </Avatar>
         <div className="flex-1 min-w-0">
           <h2 className="text-xl font-bold text-foreground">
-            {lang === "ko" ? BABY.nameKo : BABY.name}
+            {lang === "ko" ? (baby.nameKo || baby.name) : baby.name}
           </h2>
           {mounted && (
             <p className="text-base text-muted-foreground">
@@ -39,7 +57,7 @@ export function AgeDisplay() {
           <div className="flex gap-2 mt-2">
             <Badge variant="secondary" className="bg-warm-100 text-warm-700">
               {t("age.born")} {(() => {
-                const [y, m, d] = BABY.birthDate.split("-").map(Number);
+                const [y, m, d] = baby.birthDate.split("-").map(Number);
                 return new Date(y, m - 1, d).toLocaleDateString(
                   lang === "ko" ? "ko-KR" : "en-US",
                   {

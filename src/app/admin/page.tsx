@@ -247,7 +247,7 @@ export default function AdminPage() {
                       </label>
                       <Input
                         id="title"
-                        placeholder="Rowoon's Growth Book"
+                        placeholder="Baby Growth Book"
                         value={title}
                         onChange={(e) => setTitle(e.target.value)}
                       />

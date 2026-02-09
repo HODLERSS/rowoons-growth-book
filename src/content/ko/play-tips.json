@@ -1,5 +1,342 @@
 [
   {
+    "id": "pt-1-1",
+    "month": 1,
+    "title": "얼굴 마주보고 이야기하기",
+    "description": "아기 얼굴 앞 20~30cm 거리에서 눈을 맞추고 천천히 이야기해 주세요. 표정도 크게 지어주세요. 아기가 가만히 쳐다보면서 엄마 아빠 얼굴을 익히고, 소리와 표정의 관계를 배우거든요.",
+    "materials": [],
+    "difficulty": "easy",
+    "category": "social",
+    "source": "Zero to Three",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
+    "sourceQuote": "신생아와 가까이서 눈을 맞추고 말을 걸면, 아기의 시각 발달과 사회적 유대감이 함께 성장해요."
+  },
+  {
+    "id": "pt-1-2",
+    "month": 1,
+    "title": "터미타임 시작하기",
+    "description": "하루에 여러 번, 짧게 1~2분씩 아기를 엎드려 놓아주세요. 엄마 아빠 가슴 위에 엎드려 놓는 것도 좋아요. 목 근육이 자라고, 나중에 기기와 뒤집기의 기초가 돼요.",
+    "materials": [
+      "부드러운 매트"
+    ],
+    "difficulty": "easy",
+    "category": "physical",
+    "source": "AAP (HealthyChildren.org)",
+    "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
+    "sourceQuote": "터미타임은 신생아 때부터 시작해야 해요. 짧게 자주 하면서 목과 상체 근력을 키우는 거예요."
+  },
+  {
+    "id": "pt-1-3",
+    "month": 1,
+    "title": "흑백 그림 보여주기",
+    "description": "흑백 대비가 강한 그림이나 카드를 20~30cm 거리에서 보여주세요. 신생아는 아직 색을 잘 구분 못하지만, 흑백 대비는 잘 봐요. 눈이 집중하는 걸 볼 수 있을 거예요!",
+    "materials": [
+      "흑백 그림 카드"
+    ],
+    "difficulty": "easy",
+    "category": "cognitive",
+    "source": "Zero to Three",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
+    "sourceQuote": "흑백 고대비 이미지는 신생아의 시각 발달을 자극하고, 눈의 초점 맞추기 능력을 길러줘요."
+  },
+  {
+    "id": "pt-2-1",
+    "month": 2,
+    "title": "따라 해보기 놀이",
+    "description": "아기가 내는 소리를 그대로 따라 해보세요. \"아~\" 하면 \"아~\" 하고 따라 하면, 아기가 신기해하면서 또 소리를 내요. 이게 대화의 첫걸음이에요! 서로 주고받는 게 언어 발달의 핵심이거든요.",
+    "materials": [],
+    "difficulty": "easy",
+    "category": "language",
+    "source": "Zero to Three",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
+    "sourceQuote": "아기의 소리를 따라 하면 주고받는 대화 패턴을 배우게 되고, 이것이 언어 발달의 기초가 돼요."
+  },
+  {
+    "id": "pt-2-2",
+    "month": 2,
+    "title": "천천히 움직이는 장난감 따라보기",
+    "description": "밝은 색 장난감이나 딸랑이를 아기 눈앞에서 천천히 좌우로 움직여 주세요. 아기가 눈으로 따라가면서 시각 추적 능력이 발달해요. 위아래로도 해보세요!",
+    "materials": [
+      "밝은 색 딸랑이"
+    ],
+    "difficulty": "easy",
+    "category": "cognitive",
+    "source": "Pathways.org",
+    "sourceUrl": "https://pathways.org/topics-of-development/play",
+    "sourceQuote": "천천히 움직이는 물체를 따라보는 놀이는 시각 추적 능력과 눈 근육 발달에 도움이 돼요."
+  },
+  {
+    "id": "pt-2-3",
+    "month": 2,
+    "title": "가슴 위 터미타임",
+    "description": "엄마 아빠가 비스듬히 기대앉고, 그 가슴 위에 아기를 엎드려 놓아보세요. 아기가 고개를 들어 엄마 아빠 얼굴을 보려 할 거예요. 스킨십도 되고 목 운동도 되고 일석이조예요!",
+    "materials": [],
+    "difficulty": "easy",
+    "category": "physical",
+    "source": "Pathways.org",
+    "sourceUrl": "https://pathways.org/topics-of-development/play",
+    "sourceQuote": "가슴 위 터미타임은 아기에게 목 근육 강화와 양육자와의 유대감을 동시에 제공해요."
+  },
+  {
+    "id": "pt-3-1",
+    "month": 3,
+    "title": "손 잡고 놀기",
+    "description": "아기 손에 손가락을 대면 꽉 잡아요. 부드럽게 손가락을 흔들어주면 아기가 좋아해요. 다양한 질감의 천이나 장난감을 손에 쥐여주면 감각 자극도 돼요.",
+    "materials": [
+      "다양한 질감의 천"
+    ],
+    "difficulty": "easy",
+    "category": "physical",
+    "source": "Zero to Three",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
+    "sourceQuote": "다양한 질감을 만져보게 하면 촉각 발달과 손의 감각 인식이 향상돼요."
+  },
+  {
+    "id": "pt-3-2",
+    "month": 3,
+    "title": "노래 불러주기",
+    "description": "아기를 안고 부드러운 노래를 불러주세요. 음치여도 괜찮아요! 아기는 엄마 아빠 목소리가 세상에서 제일 좋은 음악이거든요. 리듬감이랑 언어 감각이 같이 자라요.",
+    "materials": [],
+    "difficulty": "easy",
+    "category": "language",
+    "source": "NAEYC",
+    "sourceUrl": "https://www.naeyc.org/resources/topics/play",
+    "sourceQuote": "노래 부르기는 언어의 리듬과 패턴을 자연스럽게 익히게 해주는 최고의 활동이에요."
+  },
+  {
+    "id": "pt-3-3",
+    "month": 3,
+    "title": "모빌 구경하기",
+    "description": "아기 침대 위에 모빌을 달아주세요. 천천히 돌아가는 모빌을 보면서 눈으로 따라가고, 손을 뻗으려 해요. 시각 발달이랑 손 뻗기 연습이 동시에 돼요!",
+    "materials": [
+      "아기 모빌"
+    ],
+    "difficulty": "easy",
+    "category": "cognitive",
+    "source": "Zero to Three",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
+    "sourceQuote": "모빌은 시각적 추적 능력과 손 뻗기 동기를 자극하는 좋은 도구예요."
+  },
+  {
+    "id": "pt-4-1",
+    "month": 4,
+    "title": "거울놀이",
+    "description": "깨지지 않는 안전 거울을 아기 앞에 놓아주세요. 거울 속 아기를 보면서 웃고, 소리 내고, 손을 뻗어요. 아직 자기라는 걸 모르지만 엄청 좋아하거든요!",
+    "materials": [
+      "안전 거울"
+    ],
+    "difficulty": "easy",
+    "category": "social",
+    "source": "Zero to Three",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
+    "sourceQuote": "거울놀이는 사회적 미소, 자기 인식, 시각적 탐색을 동시에 발달시켜요."
+  },
+  {
+    "id": "pt-4-2",
+    "month": 4,
+    "title": "잡기 연습 놀이",
+    "description": "다양한 크기와 질감의 장난감을 아기 앞에 놓아주세요. 딸랑이, 천 인형, 고무공 등을 손 뻗으면 잡을 수 있는 거리에 두면 아기가 열심히 시도해요. 잡으면 엄청 뿌듯해하거든요!",
+    "materials": [
+      "딸랑이",
+      "천 인형",
+      "고무공"
+    ],
+    "difficulty": "easy",
+    "category": "physical",
+    "source": "Pathways.org",
+    "sourceUrl": "https://pathways.org/topics-of-development/play",
+    "sourceQuote": "다양한 물건을 잡아보는 활동은 손-눈 협응력과 소근육 발달에 중요해요."
+  },
+  {
+    "id": "pt-4-3",
+    "month": 4,
+    "title": "소리 탐험 놀이",
+    "description": "딸랑이, 바스락거리는 장난감, 음악 장난감 등 다양한 소리 나는 물건을 들려주세요. 아기가 소리 나는 방향으로 고개를 돌리고, 소리를 따라 하려고도 해요.",
+    "materials": [
+      "딸랑이",
+      "바스락 장난감",
+      "음악 장난감"
+    ],
+    "difficulty": "easy",
+    "category": "cognitive",
+    "source": "NAEYC",
+    "sourceUrl": "https://www.naeyc.org/resources/topics/play",
+    "sourceQuote": "다양한 소리를 탐색하는 놀이는 청각 발달과 인과관계 이해의 기초가 돼요."
+  },
+  {
+    "id": "pt-5-1",
+    "month": 5,
+    "title": "뒤집기 응원하기",
+    "description": "아기가 뒤집으려고 몸을 비틀 때, 옆에서 장난감으로 유도해 주세요. 뒤집으면 크게 칭찬해 주세요! 아기가 성공의 기쁨을 느끼면 더 시도하게 돼요.",
+    "materials": [
+      "좋아하는 장난감"
+    ],
+    "difficulty": "easy",
+    "category": "physical",
+    "source": "Pathways.org",
+    "sourceUrl": "https://pathways.org/topics-of-development/play",
+    "sourceQuote": "뒤집기를 격려하면 대근육 발달과 자기 효능감이 함께 성장해요."
+  },
+  {
+    "id": "pt-5-2",
+    "month": 5,
+    "title": "입으로 탐색 놀이",
+    "description": "다양한 질감의 안전한 장난감을 주세요. 실리콘 치발기, 나무 장난감, 천 인형 등. 아기가 입으로 탐색하는 건 정상이에요. 이렇게 세상을 배우는 거거든요. 위험한 것만 빼주세요!",
+    "materials": [
+      "치발기",
+      "나무 장난감",
+      "천 인형"
+    ],
+    "difficulty": "easy",
+    "category": "cognitive",
+    "source": "Zero to Three",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
+    "sourceQuote": "입으로 탐색하는 것은 영아의 중요한 감각 학습 방법이에요. 안전한 물건으로 자유롭게 탐색하게 해주세요."
+  },
+  {
+    "id": "pt-5-3",
+    "month": 5,
+    "title": "까꿍 놀이 입문",
+    "description": "손으로 얼굴을 가렸다가 '까꿍!' 해주세요. 간단하지만 아기가 엄청 좋아해요. 안 보여도 있다는 '대상 영속성' 개념을 이해하는 첫 단계예요.",
+    "materials": [],
+    "difficulty": "easy",
+    "category": "social",
+    "source": "Zero to Three",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
+    "sourceQuote": "까꿍놀이는 대상 영속성 발달의 초기 단계를 돕고, 사회적 상호작용의 즐거움을 알게 해줘요."
+  },
+  {
+    "id": "pt-6-1",
+    "month": 6,
+    "title": "앉아서 장난감 놀이",
+    "description": "쿠션으로 받쳐서 앉힌 뒤, 앞에 장난감을 여러 개 놓아주세요. 앉은 자세에서 손을 뻗고, 잡고, 입에 넣고, 떨어뜨리면서 놀아요. 앉기 연습이랑 소근육 발달이 동시에 돼요!",
+    "materials": [
+      "쿠션",
+      "다양한 장난감"
+    ],
+    "difficulty": "easy",
+    "category": "physical",
+    "source": "Pathways.org",
+    "sourceUrl": "https://pathways.org/topics-of-development/play",
+    "sourceQuote": "앉은 자세에서 놀이하면 코어 근력과 소근육이 동시에 발달해요."
+  },
+  {
+    "id": "pt-6-2",
+    "month": 6,
+    "title": "이유식 감각 놀이",
+    "description": "이유식을 시작했다면, 다양한 질감의 음식을 만져보게 해주세요. 으깬 바나나, 부드러운 고구마 등을 손으로 만지고 입에 넣어보는 거예요. 지저분해도 괜찮아요, 감각 발달에 최고예요!",
+    "materials": [
+      "으깬 바나나",
+      "부드러운 고구마",
+      "비닐 깔개"
+    ],
+    "difficulty": "easy",
+    "category": "cognitive",
+    "source": "Zero to Three",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
+    "sourceQuote": "음식을 손으로 만져보는 것은 촉각 발달과 자기 주도 식사의 기초가 돼요."
+  },
+  {
+    "id": "pt-6-3",
+    "month": 6,
+    "title": "소리로 대화하기",
+    "description": "아기가 옹알이하면 마치 진짜 대화하듯 대답해 주세요. \"그래? 그랬구나!\" \"진짜요?\" 하면서요. 아기가 더 많이 소리를 내고, 대화의 리듬을 배우게 돼요.",
+    "materials": [],
+    "difficulty": "easy",
+    "category": "language",
+    "source": "AAP (HealthyChildren.org)",
+    "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
+    "sourceQuote": "아기의 옹알이에 대화하듯 반응하면 주고받기 패턴을 배우고 언어 발달이 촉진돼요."
+  },
+  {
+    "id": "pt-7-1",
+    "month": 7,
+    "title": "물건 숨기기 놀이",
+    "description": "장난감 위에 천을 덮어 숨긴 뒤, \"어디 갔지~?\" 해보세요. 아기가 천을 치우면서 찾으면 \"찾았다!\" 하고 크게 반응해 주세요. 대상 영속성을 배우는 중요한 놀이예요.",
+    "materials": [
+      "얇은 천",
+      "좋아하는 장난감"
+    ],
+    "difficulty": "easy",
+    "category": "cognitive",
+    "source": "Zero to Three",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
+    "sourceQuote": "물건 숨기기 놀이는 대상 영속성 개념 발달을 직접적으로 도와주는 놀이예요."
+  },
+  {
+    "id": "pt-7-2",
+    "month": 7,
+    "title": "방방이 놀이",
+    "description": "아기 겨드랑이를 잡고 바닥에서 위아래로 튀기듯 놀아주세요. 다리에 체중을 싣는 연습이 되면서, 나중에 서기와 걷기의 기초가 돼요. 신나서 깔깔 웃을 거예요!",
+    "materials": [],
+    "difficulty": "easy",
+    "category": "physical",
+    "source": "Pathways.org",
+    "sourceUrl": "https://pathways.org/topics-of-development/play",
+    "sourceQuote": "체중 싣기 놀이는 하체 근력과 균형 감각 발달에 도움이 돼요."
+  },
+  {
+    "id": "pt-7-3",
+    "month": 7,
+    "title": "두드리기 놀이",
+    "description": "냄비, 그릇, 나무 숟가락을 주면 신나게 두드려요. 시끄럽지만 아기는 '내가 하면 소리가 난다!'는 인과관계를 배우고, 리듬 감각도 생기거든요. 같이 두드리면 더 좋아해요!",
+    "materials": [
+      "냄비",
+      "플라스틱 그릇",
+      "나무 숟가락"
+    ],
+    "difficulty": "easy",
+    "category": "cognitive",
+    "source": "NAEYC",
+    "sourceUrl": "https://www.naeyc.org/resources/topics/play",
+    "sourceQuote": "두드리기 놀이는 인과관계 이해, 리듬 감각, 대근육 발달에 모두 도움이 돼요."
+  },
+  {
+    "id": "pt-8-1",
+    "month": 8,
+    "title": "까꿍 놀이 업그레이드",
+    "description": "이제 단순한 까꿍에서 벗어나, 다양한 곳에서 나타나 보세요. 소파 뒤에서, 문 뒤에서, 이불 속에서. 아기가 어디서 나올지 예측하면서 두리번거리는 모습이 너무 귀여워요!",
+    "materials": [
+      "이불",
+      "큰 수건"
+    ],
+    "difficulty": "easy",
+    "category": "social",
+    "source": "Zero to Three",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
+    "sourceQuote": "다양한 변형의 까꿍 놀이는 대상 영속성, 기억력, 예측 능력을 모두 발달시켜요."
+  },
+  {
+    "id": "pt-8-2",
+    "month": 8,
+    "title": "기기 장애물 코스",
+    "description": "쿠션이랑 베개로 간단한 장애물을 만들어주세요. 아기가 넘고, 돌아가고, 밑으로 지나가면서 기어다녀요. 문제 해결력이랑 대근육이 동시에 발달해요!",
+    "materials": [
+      "쿠션",
+      "베개",
+      "담요"
+    ],
+    "difficulty": "medium",
+    "category": "physical",
+    "source": "Pathways.org",
+    "sourceUrl": "https://pathways.org/topics-of-development/play",
+    "sourceQuote": "다양한 장애물을 넘는 놀이는 대근육 발달, 공간 감각, 문제 해결력을 키워줘요."
+  },
+  {
+    "id": "pt-8-3",
+    "month": 8,
+    "title": "전달하기 놀이",
+    "description": "아기한테 장난감을 건네고, \"엄마한테 줘~\" 하면서 손을 내밀어 보세요. 주고받기가 되면 엄청 칭찬해 주세요. 나누기와 소통의 기초가 되는 놀이예요!",
+    "materials": [
+      "부드러운 장난감"
+    ],
+    "difficulty": "easy",
+    "category": "social",
+    "source": "Zero to Three",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
+    "sourceQuote": "주고받기 놀이는 사회적 상호작용과 의사소통 능력 발달의 중요한 기초예요."
+  },
+  {
     "id": "pt-9-1",
     "month": 9,
     "title": "까꿍! 어디 숨었지~",

@@ -19,7 +19,7 @@ const LanguageContext = createContext<LanguageContextValue>({
 const translations: Record<Language, Record<string, string>> = {
   en: {
     // App
-    "app.title": "Rowoon's Growth Book",
+    "app.title": "Baby Growth Book",
     "app.subtitle": "Track milestones, activities, and memories",
     "app.growth_book": "'s Growth Book",
     // Nav
@@ -111,7 +111,7 @@ const translations: Record<Language, Record<string, string>> = {
     "notify.enabled": "Notifications enabled",
     "notify.off": "Turn off",
     "notify.get_reminders": "Get milestone reminders",
-    "notify.stay_updated": "Stay updated on Rowoon's growth",
+    "notify.stay_updated": "Stay updated on your baby's growth",
     "notify.enable": "Enable",
     "notify.retry": "Retry",
     // Source
@@ -129,10 +129,20 @@ const translations: Record<Language, Record<string, string>> = {
     "age.months": "months",
     "age.days": "days",
     "age.and": "and",
+    // Onboarding
+    "onboarding.welcome": "Welcome!",
+    "onboarding.subtitle": "Set up your baby's profile to get started",
+    "onboarding.name": "Baby's name",
+    "onboarding.name_ko": "Korean name (optional)",
+    "onboarding.birthday": "Birthday",
+    "onboarding.gender": "Gender",
+    "onboarding.boy": "Boy",
+    "onboarding.girl": "Girl",
+    "onboarding.start": "Get Started",
   },
   ko: {
     // App
-    "app.title": "로운이의 성장 일기",
+    "app.title": "아기 성장 일기",
     "app.subtitle": "발달, 놀이, 안전, 그리고 추억 기록",
     "app.growth_book": "의 성장 일기",
     // Nav
@@ -224,7 +234,7 @@ const translations: Record<Language, Record<string, string>> = {
     "notify.enabled": "알림 켜짐",
     "notify.off": "끄기",
     "notify.get_reminders": "발달 알림 받기",
-    "notify.stay_updated": "로운이의 성장 소식을 받아보세요",
+    "notify.stay_updated": "아기의 성장 소식을 받아보세요",
     "notify.enable": "켜기",
     "notify.retry": "다시 시도",
     // Source
@@ -242,6 +252,16 @@ const translations: Record<Language, Record<string, string>> = {
     "age.months": "개월",
     "age.days": "일",
     "age.and": "",
+    // Onboarding
+    "onboarding.welcome": "환영해요!",
+    "onboarding.subtitle": "아기 정보를 입력하고 시작해 보세요",
+    "onboarding.name": "아기 이름",
+    "onboarding.name_ko": "한국어 이름 (선택)",
+    "onboarding.birthday": "생일",
+    "onboarding.gender": "성별",
+    "onboarding.boy": "남자",
+    "onboarding.girl": "여자",
+    "onboarding.start": "시작하기",
   },
 };
 

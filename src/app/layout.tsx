@@ -6,6 +6,7 @@ import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/shared/app-sidebar";
 import { MobileNav } from "@/components/shared/mobile-nav";
 import { LanguageProvider } from "@/contexts/language-context";
+import { BabyProvider } from "@/contexts/baby-context";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,8 +26,8 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Rowoon's Growth Book",
-  description: "Baby growth tracker, milestones, play tips, and memo journal for Rowoon",
+  title: "Baby Growth Book",
+  description: "Baby growth tracker, milestones, play tips, and memo journal",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
@@ -50,15 +51,17 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <LanguageProvider>
-          <SidebarProvider>
-            <AppSidebar />
-            <SidebarInset>
-              <main className="flex-1 pb-20 md:pb-0">
-                {children}
-              </main>
-            </SidebarInset>
-          </SidebarProvider>
-          <MobileNav />
+          <BabyProvider>
+            <SidebarProvider>
+              <AppSidebar />
+              <SidebarInset>
+                <main className="flex-1 pb-20 md:pb-0">
+                  {children}
+                </main>
+              </SidebarInset>
+            </SidebarProvider>
+            <MobileNav />
+          </BabyProvider>
         </LanguageProvider>
         <Script id="sw-register" strategy="afterInteractive">{`
           if ('serviceWorker' in navigator) {

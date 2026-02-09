@@ -1,5 +1,645 @@
 [
   {
+    "id": "m-1-social-1",
+    "month": 1,
+    "category": "social",
+    "title": "Recognizes parent's voice",
+    "description": "Your baby heard your voice in the womb and already finds it familiar. They may calm down or become alert when they hear you speak, showing the earliest signs of social connection.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/2-months.html",
+    "sourceQuote": "Newborns recognize their parent's voice from hearing it in the womb and will calm down or become alert when they hear it."
+  },
+  {
+    "id": "m-1-social-2",
+    "month": 1,
+    "category": "social",
+    "title": "Makes eye contact during feeding",
+    "description": "Newborns can see about 8 to 12 inches away, roughly the distance to your face during feeding. Your baby gazes at your face during nursing or bottle-feeding, building the first bond.",
+    "source": "AAP",
+    "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
+    "sourceQuote": "Newborns see best at a distance of 8 to 12 inches, the perfect distance to gaze at your face during feeding."
+  },
+  {
+    "id": "m-1-language-1",
+    "month": 1,
+    "category": "language",
+    "title": "Startles at loud sounds",
+    "description": "Your baby's Moro reflex kicks in when they hear a sudden loud noise, causing them to fling their arms out and cry. This shows their hearing is working and they are responding to the world around them.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/2-months.html",
+    "sourceQuote": "Newborns startle at loud sounds, demonstrating the Moro reflex and showing that their hearing is functioning normally."
+  },
+  {
+    "id": "m-1-language-2",
+    "month": 1,
+    "category": "language",
+    "title": "Calms when spoken to",
+    "description": "Your baby prefers human voices over other sounds, especially familiar ones. When you speak softly, they may stop fussing, turn toward you, or become still and attentive.",
+    "source": "Zero to Three",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
+    "sourceQuote": "Newborns prefer human voices, especially familiar ones, and will often calm down or become attentive when spoken to gently."
+  },
+  {
+    "id": "m-1-cognitive-1",
+    "month": 1,
+    "category": "cognitive",
+    "title": "Focuses on faces",
+    "description": "From birth, babies are drawn to face-like patterns and prefer looking at faces over other objects. Your newborn will study your features up close, learning to recognize the people who care for them.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/2-months.html",
+    "sourceQuote": "Newborns prefer face-like patterns and will focus on faces within their visual range, studying features up close."
+  },
+  {
+    "id": "m-1-cognitive-2",
+    "month": 1,
+    "category": "cognitive",
+    "title": "Begins to follow objects briefly",
+    "description": "Your baby can track a slow-moving object a short distance with their eyes. This early visual tracking lays the groundwork for hand-eye coordination later on.",
+    "source": "AAP",
+    "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
+    "sourceQuote": "Newborns begin to briefly follow a slowly moving object with their eyes, an early sign of developing visual tracking ability."
+  },
+  {
+    "id": "m-1-physical-1",
+    "month": 1,
+    "category": "physical",
+    "title": "Lifts head briefly during tummy time",
+    "description": "When placed on their stomach, your baby briefly raises their head before setting it back down. These mini lifts build the neck muscles needed for later head control.",
+    "source": "WHO",
+    "sourceUrl": "https://www.who.int/tools/child-growth-standards",
+    "sourceQuote": "Newborns can briefly lift their head when placed on their stomach, building the neck strength needed for future motor milestones."
+  },
+  {
+    "id": "m-1-physical-2",
+    "month": 1,
+    "category": "physical",
+    "title": "Strong grasp reflex",
+    "description": "When you place your finger in your newborn's palm, they grip it tightly. This automatic grasp reflex is one of several newborn reflexes that will gradually give way to intentional grasping.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/2-months.html",
+    "sourceQuote": "The grasp reflex causes newborns to automatically grip a finger placed in their palm, a reflex that fades as intentional grasping develops."
+  },
+  {
+    "id": "m-2-social-1",
+    "month": 2,
+    "category": "social",
+    "title": "First social smile",
+    "description": "Around 6 to 8 weeks, your baby gives their first true social smile in response to your face or voice. Unlike earlier reflexive smiles, this one is intentional and aimed at connecting with you.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/2-months.html",
+    "sourceQuote": "By 2 months, most babies begin to smile at people, especially in response to familiar faces and voices."
+  },
+  {
+    "id": "m-2-social-2",
+    "month": 2,
+    "category": "social",
+    "title": "Calms when picked up and comforted",
+    "description": "Your baby settles down when you pick them up, hold them close, and speak soothingly. This shows they are learning that their caregivers bring comfort and safety.",
+    "source": "Zero to Three",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
+    "sourceQuote": "Babies calm when picked up and comforted, showing they are developing trust and a sense of security with their caregivers."
+  },
+  {
+    "id": "m-2-language-1",
+    "month": 2,
+    "category": "language",
+    "title": "Begins cooing",
+    "description": "Your baby starts making soft vowel sounds like \"ooh\" and \"aah.\" These early coos are their first experiments with using their voice on purpose, and they love hearing you coo back.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/2-months.html",
+    "sourceQuote": "By 2 months, most babies begin to coo, making soft vowel-like sounds such as 'ooh' and 'aah' as early vocal experiments."
+  },
+  {
+    "id": "m-2-language-2",
+    "month": 2,
+    "category": "language",
+    "title": "Turns toward sounds",
+    "description": "Your baby moves their head in the direction of interesting sounds, like your voice or a rattle. This shows their hearing is developing well and they are curious about where sounds come from.",
+    "source": "AAP",
+    "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
+    "sourceQuote": "By 2 months, babies begin turning their head toward interesting sounds, showing developing auditory awareness and sound localization."
+  },
+  {
+    "id": "m-2-cognitive-1",
+    "month": 2,
+    "category": "cognitive",
+    "title": "Tracks moving objects with eyes",
+    "description": "Your baby follows a slow-moving toy or your face across their visual field. Their tracking is becoming smoother and they can follow objects further than before.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/2-months.html",
+    "sourceQuote": "By 2 months, most babies can follow a slowly moving object with their eyes across their visual field."
+  },
+  {
+    "id": "m-2-cognitive-2",
+    "month": 2,
+    "category": "cognitive",
+    "title": "Shows interest in faces",
+    "description": "Your baby stares intently at faces, clearly preferring them over other objects. They are learning to recognize the people who matter most and beginning to distinguish facial expressions.",
+    "source": "Zero to Three",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
+    "sourceQuote": "Babies show a strong preference for faces over other objects, staring intently as they learn to recognize familiar people."
+  },
+  {
+    "id": "m-2-physical-1",
+    "month": 2,
+    "category": "physical",
+    "title": "Lifts head at 45 degrees during tummy time",
+    "description": "During tummy time, your baby pushes up on their forearms and lifts their head higher than before. Their neck muscles are getting stronger with each practice session.",
+    "source": "WHO",
+    "sourceUrl": "https://www.who.int/tools/child-growth-standards",
+    "sourceQuote": "By 2 months, most babies can lift their head to about 45 degrees during tummy time, showing strengthening neck and upper body muscles."
+  },
+  {
+    "id": "m-2-physical-2",
+    "month": 2,
+    "category": "physical",
+    "title": "Movements become smoother",
+    "description": "The jerky, startled movements of the newborn period start to smooth out. Your baby's arms and legs move more fluidly as their nervous system matures.",
+    "source": "AAP",
+    "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
+    "sourceQuote": "By 2 months, the jerky newborn movements begin to smooth out as your baby's nervous system matures and muscle control improves."
+  },
+  {
+    "id": "m-3-social-1",
+    "month": 3,
+    "category": "social",
+    "title": "Smiles at familiar people",
+    "description": "Your baby smiles readily when they see parents and familiar faces, showing growing social awareness. Their smile is becoming a reliable way to greet the people they love.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/4-months.html",
+    "sourceQuote": "By 3 months, most babies smile at familiar people, showing social recognition and the desire to engage with those they know."
+  },
+  {
+    "id": "m-3-social-2",
+    "month": 3,
+    "category": "social",
+    "title": "Enjoys playing with people",
+    "description": "Your baby loves face-to-face interaction and may cry or fuss when the fun stops. They are learning that being with people is enjoyable and rewarding.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/4-months.html",
+    "sourceQuote": "By 3 months, most babies enjoy playing with people and may cry when playing stops, showing early social engagement."
+  },
+  {
+    "id": "m-3-language-1",
+    "month": 3,
+    "category": "language",
+    "title": "Coos and makes gurgling sounds",
+    "description": "Your baby experiments with vowel sounds and gurgles, often in response to your talking. These little \"conversations\" are building the foundation for real speech.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/4-months.html",
+    "sourceQuote": "By 3 months, most babies coo and make gurgling sounds, experimenting with their voice and responding to conversation."
+  },
+  {
+    "id": "m-3-language-2",
+    "month": 3,
+    "category": "language",
+    "title": "Begins to babble and imitate sounds",
+    "description": "Your baby starts copying some of the sounds and facial expressions you make. They may try to match your tone or mimic your mouth movements during face-to-face time.",
+    "source": "AAP",
+    "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
+    "sourceQuote": "Around 3 months, babies begin to imitate some sounds and facial expressions, showing early communication and social learning."
+  },
+  {
+    "id": "m-3-cognitive-1",
+    "month": 3,
+    "category": "cognitive",
+    "title": "Follows objects with eyes in a full arc",
+    "description": "Your baby can now track a moving object 180 degrees from one side to the other. Their visual tracking is becoming smooth and coordinated.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/4-months.html",
+    "sourceQuote": "By 3 months, most babies follow moving objects with their eyes across a full 180-degree arc."
+  },
+  {
+    "id": "m-3-cognitive-2",
+    "month": 3,
+    "category": "cognitive",
+    "title": "Recognizes familiar people at a distance",
+    "description": "Your baby's vision is improving and they can now identify familiar faces from farther away. They may smile or kick excitedly when they spot you across the room.",
+    "source": "AAP",
+    "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
+    "sourceQuote": "By 3 months, babies can recognize familiar people at a distance, showing their vision and memory are developing together."
+  },
+  {
+    "id": "m-3-physical-1",
+    "month": 3,
+    "category": "physical",
+    "title": "Pushes up on arms during tummy time",
+    "description": "Your baby does mini push-ups during tummy time, lifting their head up to 90 degrees. This builds the upper body strength needed for rolling and eventually crawling.",
+    "source": "WHO",
+    "sourceUrl": "https://www.who.int/tools/child-growth-standards",
+    "sourceQuote": "By 3 months, most babies push up on their arms during tummy time, lifting their head to about 90 degrees."
+  },
+  {
+    "id": "m-3-physical-2",
+    "month": 3,
+    "category": "physical",
+    "title": "Opens and closes hands",
+    "description": "Your baby's hands are open more often now instead of clenched in fists. They grasp and let go of objects voluntarily and may play with their own fingers.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/4-months.html",
+    "sourceQuote": "By 3 months, most babies open and close their hands, grasping and releasing objects and beginning to play with their fingers."
+  },
+  {
+    "id": "m-4-social-1",
+    "month": 4,
+    "category": "social",
+    "title": "Copies facial expressions",
+    "description": "Your baby is becoming a little mimic, copying your smiles, frowns, and surprised looks. This back-and-forth imitation is one of the earliest forms of social conversation.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/4-months.html",
+    "sourceQuote": "By 4 months, most babies copy some facial expressions, like smiling and frowning, showing early social communication."
+  },
+  {
+    "id": "m-4-social-2",
+    "month": 4,
+    "category": "social",
+    "title": "Enjoys playing and may fuss when playing stops",
+    "description": "Your baby loves interactive time and lets you know when the fun ends too soon. They may fuss, squirm, or look longingly at you to keep the game going.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/4-months.html",
+    "sourceQuote": "By 4 months, most babies enjoy playing and may cry when playing stops, showing they are engaged and want more interaction."
+  },
+  {
+    "id": "m-4-language-1",
+    "month": 4,
+    "category": "language",
+    "title": "Babbles with expression",
+    "description": "Your baby makes sounds with rising and falling tones that mimic the rhythm of real conversation. These expressive babbles show they are tuning in to the music of language.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/4-months.html",
+    "sourceQuote": "By 4 months, most babies babble expressively, using rising and falling tones that mimic the rhythm of conversation."
+  },
+  {
+    "id": "m-4-language-2",
+    "month": 4,
+    "category": "language",
+    "title": "Cries in different ways for different needs",
+    "description": "You may notice your baby's cries sound different depending on whether they are hungry, tired, or uncomfortable. This variation is an early form of intentional communication.",
+    "source": "AAP",
+    "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
+    "sourceQuote": "By 4 months, babies develop distinct cries for hunger, tiredness, and discomfort, an early form of intentional communication."
+  },
+  {
+    "id": "m-4-cognitive-1",
+    "month": 4,
+    "category": "cognitive",
+    "title": "Reaches for toy with one hand",
+    "description": "Your baby deliberately reaches for objects that catch their interest, using one hand to swipe or grab at toys. This shows growing hand-eye coordination and intentional action.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/4-months.html",
+    "sourceQuote": "By 4 months, most babies reach for a toy with one hand, showing developing hand-eye coordination and intentional movement."
+  },
+  {
+    "id": "m-4-cognitive-2",
+    "month": 4,
+    "category": "cognitive",
+    "title": "Watches faces closely",
+    "description": "Your baby studies facial expressions intently and reacts to emotional cues. They may smile when you smile or look concerned when you sound upset.",
+    "source": "Zero to Three",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
+    "sourceQuote": "Babies watch faces closely and begin to respond to emotional cues, reacting to smiles, frowns, and changes in tone of voice."
+  },
+  {
+    "id": "m-4-physical-1",
+    "month": 4,
+    "category": "physical",
+    "title": "Holds head steady without support",
+    "description": "When held upright, your baby can now keep their head steady and centered. This solid head control is a major physical milestone that opens the door to sitting and more.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/4-months.html",
+    "sourceQuote": "By 4 months, most babies hold their head steady without support when held upright, a key physical milestone."
+  },
+  {
+    "id": "m-4-physical-2",
+    "month": 4,
+    "category": "physical",
+    "title": "Pushes down on legs when feet are on a hard surface",
+    "description": "When you hold your baby in a standing position on a firm surface, they push down with their legs and bear some weight. They love this \"standing\" practice.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/4-months.html",
+    "sourceQuote": "By 4 months, most babies push down on their legs when their feet are placed on a hard surface, bearing some weight."
+  },
+  {
+    "id": "m-5-social-1",
+    "month": 5,
+    "category": "social",
+    "title": "Distinguishes familiar and unfamiliar faces",
+    "description": "Your baby reacts differently to people they know versus strangers. They may smile readily at family members but stare cautiously at unfamiliar faces.",
+    "source": "AAP",
+    "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
+    "sourceQuote": "By 5 months, babies clearly distinguish between familiar and unfamiliar faces, reacting differently to strangers versus known people."
+  },
+  {
+    "id": "m-5-social-2",
+    "month": 5,
+    "category": "social",
+    "title": "Responds to other people's emotions",
+    "description": "Your baby picks up on emotional cues and mirrors them. If you laugh, they may laugh back. If they sense tension, they might become fussy or quiet.",
+    "source": "Zero to Three",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
+    "sourceQuote": "Around 5 months, babies respond to the emotions of those around them, mirroring happy or upset expressions as early empathy develops."
+  },
+  {
+    "id": "m-5-language-1",
+    "month": 5,
+    "category": "language",
+    "title": "Blows raspberries",
+    "description": "Your baby discovers the fun of blowing \"raspberries\" with their lips. This buzzing sound is both entertaining and great practice for the mouth muscles needed for speech.",
+    "source": "AAP",
+    "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
+    "sourceQuote": "Blowing raspberries is a fun way babies practice using their lips and mouth muscles, building the oral motor skills needed for speech."
+  },
+  {
+    "id": "m-5-language-2",
+    "month": 5,
+    "category": "language",
+    "title": "Responds to own name",
+    "description": "Your baby is beginning to turn their head when you call their name. This early name recognition shows they are connecting the sound of their name with themselves.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/6-months.html",
+    "sourceQuote": "Around 5 months, babies begin to turn when their name is called, showing early recognition of their own name."
+  },
+  {
+    "id": "m-5-cognitive-1",
+    "month": 5,
+    "category": "cognitive",
+    "title": "Brings things to mouth to explore",
+    "description": "Everything goes in the mouth at this age. Your baby uses their mouth to learn about the texture, shape, and taste of objects, making it a primary tool for exploration.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/6-months.html",
+    "sourceQuote": "Babies bring things to their mouth to explore them, using their mouth as a primary tool for learning about textures and shapes."
+  },
+  {
+    "id": "m-5-cognitive-2",
+    "month": 5,
+    "category": "cognitive",
+    "title": "Shows curiosity about out-of-reach objects",
+    "description": "Your baby sees something interesting and reaches persistently for it, sometimes squirming or rocking to try to get closer. Their curiosity is driving them to explore.",
+    "source": "Zero to Three",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
+    "sourceQuote": "Babies show growing curiosity by reaching persistently for out-of-reach objects, driven by a desire to explore their world."
+  },
+  {
+    "id": "m-5-physical-1",
+    "month": 5,
+    "category": "physical",
+    "title": "Rolls from tummy to back",
+    "description": "Your baby achieves their first rolling milestone, flipping from their stomach to their back. This is a big moment that shows growing core strength and body coordination.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/6-months.html",
+    "sourceQuote": "By 5 months, many babies roll from their tummy to their back, a major motor milestone showing developing core strength."
+  },
+  {
+    "id": "m-5-physical-2",
+    "month": 5,
+    "category": "physical",
+    "title": "Can hold small objects",
+    "description": "Your baby grasps a rattle, ring, or small toy voluntarily and holds onto it for a while. Their grip is getting stronger and more purposeful.",
+    "source": "WHO",
+    "sourceUrl": "https://www.who.int/tools/child-growth-standards",
+    "sourceQuote": "By 5 months, most babies can voluntarily grasp and hold small objects like rattles, showing improving fine motor control."
+  },
+  {
+    "id": "m-6-social-1",
+    "month": 6,
+    "category": "social",
+    "title": "Knows familiar faces",
+    "description": "Your baby clearly recognizes family members and close friends, smiling and reaching for them. They may become wary or reserved around people they don't know well.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/6-months.html",
+    "sourceQuote": "By 6 months, most babies know familiar faces and begin to recognize whether someone is a stranger."
+  },
+  {
+    "id": "m-6-social-2",
+    "month": 6,
+    "category": "social",
+    "title": "Likes to look at self in mirror",
+    "description": "Your baby is fascinated by their own reflection, smiling and reaching at the baby in the mirror. While they don't yet realize it's themselves, they love the interaction.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/6-months.html",
+    "sourceQuote": "By 6 months, most babies like to look at themselves in a mirror, smiling and reaching at their own reflection."
+  },
+  {
+    "id": "m-6-language-1",
+    "month": 6,
+    "category": "language",
+    "title": "Responds to own name consistently",
+    "description": "When you call your baby's name, they turn toward you reliably. This consistent response shows they have connected their name with themselves.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/6-months.html",
+    "sourceQuote": "By 6 months, most babies respond to their own name by turning toward the speaker, showing clear name recognition."
+  },
+  {
+    "id": "m-6-language-2",
+    "month": 6,
+    "category": "language",
+    "title": "Strings vowel sounds together",
+    "description": "Your baby chains together sounds like \"ah,\" \"eh,\" and \"oh\" in long vocal strings. These playful sound combinations are practice runs for real words down the road.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/6-months.html",
+    "sourceQuote": "By 6 months, most babies string vowel sounds together when babbling, like 'ah,' 'eh,' and 'oh.'"
+  },
+  {
+    "id": "m-6-cognitive-1",
+    "month": 6,
+    "category": "cognitive",
+    "title": "Brings things to mouth to explore",
+    "description": "Mouthing objects is still your baby's primary way of learning about the world. They are gathering information about texture, shape, and even temperature through oral exploration.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/6-months.html",
+    "sourceQuote": "By 6 months, babies continue to explore objects primarily by putting them in their mouth, learning about shape, texture, and more."
+  },
+  {
+    "id": "m-6-cognitive-2",
+    "month": 6,
+    "category": "cognitive",
+    "title": "Shows curiosity and reaches for things",
+    "description": "Your baby actively reaches for objects that interest them, stretching and sometimes lunging to grab what they want. Their curiosity is a powerful motivator for movement.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/6-months.html",
+    "sourceQuote": "By 6 months, most babies show curiosity about things and try to get things that are out of reach."
+  },
+  {
+    "id": "m-6-physical-1",
+    "month": 6,
+    "category": "physical",
+    "title": "Sits with support",
+    "description": "Your baby can sit upright when propped with pillows or held at the hips. They are building the core strength and balance needed for sitting independently soon.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/6-months.html",
+    "sourceQuote": "By 6 months, most babies sit with support, building the core strength and balance needed for independent sitting."
+  },
+  {
+    "id": "m-6-physical-2",
+    "month": 6,
+    "category": "physical",
+    "title": "Begins to pass objects between hands",
+    "description": "Your baby starts transferring a toy from one hand to the other, a skill that requires coordination between both sides of the body and brain.",
+    "source": "AAP",
+    "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
+    "sourceQuote": "Around 6 months, babies begin passing objects from one hand to the other, showing improving bilateral coordination."
+  },
+  {
+    "id": "m-7-social-1",
+    "month": 7,
+    "category": "social",
+    "title": "Responds to emotions of others",
+    "description": "Your baby notices when people around them are happy, sad, or upset and reacts accordingly. They may become quiet when they sense tension or laugh when others are joyful.",
+    "source": "Zero to Three",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
+    "sourceQuote": "Around 7 months, babies show increasing sensitivity to the emotions of those around them, responding to the mood in the room."
+  },
+  {
+    "id": "m-7-social-2",
+    "month": 7,
+    "category": "social",
+    "title": "Enjoys social games like peek-a-boo",
+    "description": "Your baby laughs and squeals during interactive games like peek-a-boo and pat-a-cake. They may even try to keep the game going by grabbing the blanket or bouncing with excitement.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/9-months.html",
+    "sourceQuote": "Babies love interactive games like peek-a-boo and pat-a-cake, laughing and participating as their social skills develop."
+  },
+  {
+    "id": "m-7-language-1",
+    "month": 7,
+    "category": "language",
+    "title": "Babbles chains of consonant sounds",
+    "description": "Your baby strings together consonant-vowel combinations like \"bababa\" and \"mamama.\" These repetitive sound chains are an important step toward first words.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/9-months.html",
+    "sourceQuote": "By 7 months, most babies babble strings of consonant-vowel sounds like 'bababa' and 'mamama,' practicing the building blocks of speech."
+  },
+  {
+    "id": "m-7-language-2",
+    "month": 7,
+    "category": "language",
+    "title": "Responds to 'no'",
+    "description": "Your baby may pause briefly when you say \"no\" in a firm voice. They are beginning to understand tone and the meaning behind certain words, even if they don't always comply.",
+    "source": "AAP",
+    "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
+    "sourceQuote": "Around 7 months, babies begin to respond to the word 'no,' pausing briefly at the tone of voice, even if they don't fully understand."
+  },
+  {
+    "id": "m-7-cognitive-1",
+    "month": 7,
+    "category": "cognitive",
+    "title": "Finds partially hidden objects",
+    "description": "When you partially cover a toy with a cloth, your baby pulls the cloth away to find it. This early search behavior shows the beginnings of object permanence.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/9-months.html",
+    "sourceQuote": "Around 7 months, babies find partially hidden objects, showing early understanding that objects exist even when partly out of sight."
+  },
+  {
+    "id": "m-7-cognitive-2",
+    "month": 7,
+    "category": "cognitive",
+    "title": "Explores objects by banging and shaking",
+    "description": "Your baby learns about objects by shaking them, banging them on surfaces, and dropping them. Every sound and reaction teaches them something about how things work.",
+    "source": "Zero to Three",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
+    "sourceQuote": "Babies explore objects by banging, shaking, and dropping them, learning about cause and effect through hands-on experimentation."
+  },
+  {
+    "id": "m-7-physical-1",
+    "month": 7,
+    "category": "physical",
+    "title": "Sits without support",
+    "description": "Your baby can sit on the floor independently, using their hands for balance when needed. This frees up both hands for playing and exploring while sitting.",
+    "source": "WHO",
+    "sourceUrl": "https://www.who.int/tools/child-growth-standards",
+    "sourceQuote": "Sitting without support is one of the six gross motor milestones in the WHO standards, typically achieved between 5 and 9 months."
+  },
+  {
+    "id": "m-7-physical-2",
+    "month": 7,
+    "category": "physical",
+    "title": "May begin crawling or scooting",
+    "description": "Your baby starts moving their body across the floor by crawling on hands and knees, army crawling on their belly, or scooting on their bottom. Every baby finds their own style.",
+    "source": "AAP",
+    "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
+    "sourceQuote": "Around 7 months, many babies begin to crawl, scoot, or creep across the floor, each finding their own unique style of mobility."
+  },
+  {
+    "id": "m-8-social-1",
+    "month": 8,
+    "category": "social",
+    "title": "Stranger anxiety developing",
+    "description": "Your baby may cry or cling to you when unfamiliar people approach. This is a healthy sign of attachment and shows they know the difference between the people they trust and those they don't.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/9-months.html",
+    "sourceQuote": "Stranger anxiety is common around this age and is a normal sign that your baby has formed strong attachments to familiar caregivers."
+  },
+  {
+    "id": "m-8-social-2",
+    "month": 8,
+    "category": "social",
+    "title": "Has favorite toys",
+    "description": "Your baby shows clear preferences for certain toys or objects, reaching for them specifically and sometimes protesting when they are taken away.",
+    "source": "Zero to Three",
+    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
+    "sourceQuote": "Around 8 months, babies develop clear preferences for certain toys, showing growing personality and the ability to make choices."
+  },
+  {
+    "id": "m-8-language-1",
+    "month": 8,
+    "category": "language",
+    "title": "Says 'mama' or 'dada' without meaning",
+    "description": "Your baby babbles \"mama\" and \"dada\" as part of their consonant practice, but they don't yet use these sounds to refer specifically to you. That intentional use is coming soon.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/9-months.html",
+    "sourceQuote": "By 8 months, many babies say 'mama' or 'dada' as part of babbling, though they don't yet use these words with specific meaning."
+  },
+  {
+    "id": "m-8-language-2",
+    "month": 8,
+    "category": "language",
+    "title": "Points at objects of interest",
+    "description": "Your baby uses pointing to communicate and share attention with you. When they point at something, they are saying \"Look at that!\" and inviting you into their world.",
+    "source": "AAP",
+    "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
+    "sourceQuote": "Pointing is an important communication milestone that shows your baby can share attention and direct your gaze to something of interest."
+  },
+  {
+    "id": "m-8-cognitive-1",
+    "month": 8,
+    "category": "cognitive",
+    "title": "Explores how objects work",
+    "description": "Your baby turns things over, shakes them, and drops them to see what happens. They are little scientists, testing and retesting to understand the properties of everyday objects.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/9-months.html",
+    "sourceQuote": "Around 8 months, babies explore objects by turning them over, shaking, and dropping to discover how things work."
+  },
+  {
+    "id": "m-8-cognitive-2",
+    "month": 8,
+    "category": "cognitive",
+    "title": "Watches path of falling objects",
+    "description": "When something drops, your baby follows it with their eyes and looks where it landed. This tracking ability shows developing object permanence and spatial awareness.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/9-months.html",
+    "sourceQuote": "Babies watch the path of falling objects and look for where they went, showing developing object permanence and visual tracking."
+  },
+  {
+    "id": "m-8-physical-1",
+    "month": 8,
+    "category": "physical",
+    "title": "Pulls to standing",
+    "description": "Your baby grabs onto furniture, crib rails, or your hands and pulls themselves up to a standing position. This is an exciting step toward cruising and eventually walking.",
+    "source": "WHO",
+    "sourceUrl": "https://www.who.int/tools/child-growth-standards",
+    "sourceQuote": "Pulling to stand using furniture or support is a key motor milestone, typically achieved between 7 and 12 months."
+  },
+  {
+    "id": "m-8-physical-2",
+    "month": 8,
+    "category": "physical",
+    "title": "Passes objects between hands smoothly",
+    "description": "Your baby transfers toys from one hand to the other with ease, no longer fumbling the exchange. This smooth transfer shows maturing fine motor coordination.",
+    "source": "AAP",
+    "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
+    "sourceQuote": "By 8 months, most babies pass objects smoothly from hand to hand, showing improving bilateral coordination and fine motor control."
+  },
+  {
     "id": "m-9-social-1",
     "month": 9,
     "category": "social",
@@ -1194,7 +1834,7 @@
     "month": 25,
     "category": "language",
     "title": "Refers to self by name",
-    "description": "Toddler uses their own name when talking about themselves, like 'Rowoon want that.'",
+    "description": "Toddler uses their own name when talking about themselves, like 'Maya want that' or 'Tommy go outside.'",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
     "sourceQuote": "Using their own name to refer to themselves shows your toddler has a clear sense of self-identity and is learning how language represents people."

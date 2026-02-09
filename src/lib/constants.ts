@@ -1,14 +1,7 @@
-import { BabyInfo, MilestoneCategory } from "./types";
-
-export const BABY: BabyInfo = {
-  name: "Rowoon",
-  nameKo: "로운",
-  birthDate: "2025-04-17",
-  gender: "girl",
-};
+import { MilestoneCategory } from "./types";
 
 export const MONTH_RANGE = {
-  min: 9,
+  min: 1,
   max: 36,
 };
 
@@ -25,10 +18,10 @@ export const MILESTONE_CATEGORIES: {
   emoji: string;
   color: string;
 }[] = [
-  { value: "social", label: "Social & Emotional", emoji: "💕", color: "bg-pink-100 text-pink-800" },
-  { value: "language", label: "Language & Communication", emoji: "🗣️", color: "bg-blue-100 text-blue-800" },
-  { value: "cognitive", label: "Cognitive", emoji: "🧠", color: "bg-purple-100 text-purple-800" },
-  { value: "physical", label: "Movement & Physical", emoji: "🏃", color: "bg-green-100 text-green-800" },
+  { value: "social", label: "Social & Emotional", emoji: "\uD83D\uDC95", color: "bg-pink-100 text-pink-800" },
+  { value: "language", label: "Language & Communication", emoji: "\uD83D\uDDE3\uFE0F", color: "bg-blue-100 text-blue-800" },
+  { value: "cognitive", label: "Cognitive", emoji: "\uD83E\uDDE0", color: "bg-purple-100 text-purple-800" },
+  { value: "physical", label: "Movement & Physical", emoji: "\uD83C\uDFC3", color: "bg-green-100 text-green-800" },
 ];
 
 export const DIFFICULTY_CONFIG = {
@@ -38,9 +31,9 @@ export const DIFFICULTY_CONFIG = {
 };
 
 export const SEVERITY_CONFIG = {
-  info: { label: "Info", color: "bg-blue-100 text-blue-700", icon: "ℹ️" },
-  caution: { label: "Caution", color: "bg-yellow-100 text-yellow-700", icon: "⚠️" },
-  urgent: { label: "Urgent", color: "bg-red-100 text-red-700", icon: "🚨" },
+  info: { label: "Info", color: "bg-blue-100 text-blue-700", icon: "\u2139\uFE0F" },
+  caution: { label: "Caution", color: "bg-yellow-100 text-yellow-700", icon: "\u26A0\uFE0F" },
+  urgent: { label: "Urgent", color: "bg-red-100 text-red-700", icon: "\uD83D\uDEA8" },
 };
 
 export const NAV_ITEMS = [

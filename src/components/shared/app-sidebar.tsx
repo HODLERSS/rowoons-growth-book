@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { BABY } from "@/lib/constants";
+import { useBaby } from "@/contexts/baby-context";
 import { useAge } from "@/hooks/use-age";
 import { useLanguage } from "@/contexts/language-context";
 import {
@@ -21,6 +21,7 @@ import { Home, Star, Sparkles, AlertTriangle, BookOpen } from "lucide-react";
 
 export function AppSidebar() {
   const pathname = usePathname();
+  const { baby } = useBaby();
   const { age, currentMonth, mounted } = useAge();
   const { t, lang } = useLanguage();
 
@@ -48,11 +49,11 @@ export function AppSidebar() {
         <div className="flex items-center gap-3">
           <Avatar className="h-12 w-12 bg-primary/10">
             <AvatarFallback className="bg-primary/10 text-primary text-lg font-semibold">
-              {BABY.name[0]}
+              {baby?.name?.[0] || "B"}
             </AvatarFallback>
           </Avatar>
           <div>
-            <h2 className="font-semibold text-base">{lang === "ko" ? BABY.nameKo : BABY.name}{t("app.growth_book")}</h2>
+            <h2 className="font-semibold text-base">{baby ? `${lang === "ko" ? baby.nameKo || baby.name : baby.name}${t("app.growth_book")}` : t("app.title")}</h2>
             {mounted && (
               <p className="text-xs text-muted-foreground">
                 {(() => {

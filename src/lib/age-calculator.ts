@@ -1,8 +1,8 @@
 import { AgeInfo } from "./types";
-import { BABY, MONTH_RANGE } from "./constants";
+import { MONTH_RANGE } from "./constants";
 
-export function calculateAge(fromDate?: string): AgeInfo {
-  const [y, m, d] = BABY.birthDate.split("-").map(Number);
+export function calculateAge(birthDate: string, fromDate?: string): AgeInfo {
+  const [y, m, d] = birthDate.split("-").map(Number);
   const birth = new Date(y, m - 1, d);
   const now = fromDate ? new Date(fromDate) : new Date();
 
@@ -32,8 +32,8 @@ export function calculateAge(fromDate?: string): AgeInfo {
   return { months, days, totalDays, label };
 }
 
-export function getCurrentMonth(): number {
-  const { months } = calculateAge();
+export function getCurrentMonth(birthDate: string): number {
+  const { months } = calculateAge(birthDate);
   return Math.max(MONTH_RANGE.min, Math.min(MONTH_RANGE.max, months));
 }
 

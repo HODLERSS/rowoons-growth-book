@@ -1,14 +1,20 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useBaby } from "@/contexts/baby-context";
 import { useLanguage } from "@/contexts/language-context";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 
-export function BabySetupModal() {
-  const { hasBaby, setBaby } = useBaby();
+interface BabySetupModalProps {
+  mode?: "create" | "edit";
+  open?: boolean;
+  onClose?: () => void;
+}
+
+export function BabySetupModal({ mode = "create", open, onClose }: BabySetupModalProps) {
+  const { baby, hasBaby, setBaby } = useBaby();
   const { t } = useLanguage();
 
   const [name, setName] = useState("");
@@ -16,7 +22,19 @@ export function BabySetupModal() {
   const [birthDate, setBirthDate] = useState("");
   const [gender, setGender] = useState<"boy" | "girl">("girl");
 
-  if (hasBaby) return null;
+  const isEdit = mode === "edit";
+  const isVisible = isEdit ? !!open : !hasBaby;
+
+  useEffect(() => {
+    if (isEdit && open && baby) {
+      setName(baby.name);
+      setNameKo(baby.nameKo || "");
+      setBirthDate(baby.birthDate);
+      setGender(baby.gender);
+    }
+  }, [isEdit, open, baby]);
+
+  if (!isVisible) return null;
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -27,15 +45,18 @@ export function BabySetupModal() {
       birthDate,
       gender,
     });
+    onClose?.();
   };
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
-          <CardTitle className="text-2xl">{t("onboarding.welcome")}</CardTitle>
+          <CardTitle className="text-2xl">
+            {isEdit ? t("onboarding.edit_title") : t("onboarding.welcome")}
+          </CardTitle>
           <p className="text-muted-foreground text-sm">
-            {t("onboarding.subtitle")}
+            {isEdit ? t("onboarding.edit_subtitle") : t("onboarding.subtitle")}
           </p>
         </CardHeader>
         <CardContent>
@@ -98,9 +119,16 @@ export function BabySetupModal() {
               </div>
             </div>
 
-            <Button type="submit" size="lg" className="mt-2 w-full">
-              {t("onboarding.start")}
-            </Button>
+            <div className={`mt-2 flex gap-2 ${isEdit ? "" : "flex-col"}`}>
+              {isEdit && (
+                <Button type="button" variant="outline" className="flex-1" onClick={onClose}>
+                  {t("memo.cancel")}
+                </Button>
+              )}
+              <Button type="submit" size="lg" className="flex-1">
+                {isEdit ? t("memo.save") : t("onboarding.start")}
+              </Button>
+            </div>
           </form>
         </CardContent>
       </Card>

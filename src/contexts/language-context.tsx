@@ -139,6 +139,8 @@ const translations: Record<Language, Record<string, string>> = {
     "onboarding.boy": "Boy",
     "onboarding.girl": "Girl",
     "onboarding.start": "Get Started",
+    "onboarding.edit_title": "Edit Profile",
+    "onboarding.edit_subtitle": "Update your baby's information",
   },
   ko: {
     // App
@@ -262,6 +264,8 @@ const translations: Record<Language, Record<string, string>> = {
     "onboarding.boy": "남자",
     "onboarding.girl": "여자",
     "onboarding.start": "시작하기",
+    "onboarding.edit_title": "프로필 수정",
+    "onboarding.edit_subtitle": "아기 정보를 수정해 주세요",
   },
 };
 

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nabi — app mock</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Noto+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gb-accent);outline-offset:2px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+button,.tap{min-height:44px;min-width:44px;cursor:pointer}
+.gb-num{font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
+.g{flex:none}
+
+:root{
+  --gb-bg: #F6F8FB;
+  --gb-surface: #FFFFFF;
+  --gb-ink: #2A2140;
+  --gb-muted: #5F5A6E;
+  --gb-primary: #5B3D8C;
+  --gb-on-primary: #F6F8FB;
+  --gb-accent: #6E5300;
+  --gb-ornament: #E9B949;
+  --gb-done: #E9B949;
+  --gb-danger: #9C2B4B;
+  --gb-caution: #6E5300;
+  --gb-info: #5B3D8C;
+  --gb-rule: #E1E5EE;
+  --gb-hover: #EDF0F6;
+  --gb-radius: 18px;
+  --gb-row: 52px;
+  --gb-font-display: "Outfit";
+  --gb-font-ui: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", system-ui, sans-serif;
+}
+.dark{
+  --gb-bg: #14121C;
+  --gb-surface: #1D1A28;
+  --gb-ink: #EEEBF5;
+  --gb-muted: #A9A4B8;
+  --gb-primary: #C3A9F0;
+  --gb-on-primary: #14121C;
+  --gb-accent: #F0CC6A;
+  --gb-ornament: #F0CC6A;
+  --gb-done: #F0CC6A;
+  --gb-danger: #F08AA8;
+  --gb-caution: #F0CC6A;
+  --gb-info: #C3A9F0;
+  --gb-rule: #2C2838;
+  --gb-hover: #241F31;
+}
+body{background:var(--gb-bg);color:var(--gb-ink);font:15px/1.5 var(--gb-font-ui);padding:40px 20px 80px}
+h1{font:600 26px/1.2 var(--gb-font-display),serif;max-width:1180px;margin:0 auto 6px}
+.sub{color:var(--gb-muted);max-width:1180px;margin:0 auto 28px;font-size:14px}
+.stage{display:flex;gap:28px;justify-content:center;flex-wrap:wrap;align-items:flex-start}
+.phone{width:390px;height:844px;border:1px solid var(--gb-rule);border-radius:44px;background:var(--gb-bg);color:var(--gb-ink);overflow:hidden;display:flex;flex-direction:column;box-shadow:0 1px 0 var(--gb-rule)}
+.sb{display:flex;justify-content:space-between;padding:14px 28px 0;font-size:14px;font-weight:600}
+.ah{display:flex;justify-content:space-between;align-items:center;padding:10px 20px 0}
+.wm{font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:.04em;text-transform:lowercase;font-size:20px}
+.lang{font-size:12px;font-weight:600;border:1px solid var(--gb-rule);border-radius:999px;padding:4px 10px;color:var(--gb-muted)}
+.lt{font:600 30px/1.15 var(--gb-font-display),serif;padding:12px 20px 8px}
+.phone[lang=ko] .lt,.phone[lang=ko] .wm{font-family:"Noto Serif KR",serif}
+.scroll{flex:1;overflow:hidden;padding:4px 16px 16px;display:flex;flex-direction:column;gap:12px}
+.hero{display:flex;align-items:center;gap:14px;padding:16px;border:1px solid var(--gb-rule);border-radius:var(--gb-radius);background:var(--gb-surface)}
+.hero .mk{width:56px;height:56px;border-radius:14px;background:var(--gb-hover);display:flex;align-items:center;justify-content:center}
+.hero .nm{font:600 20px/1.2 var(--gb-font-display),serif}
+.phone[lang=ko] .hero .nm{font-family:"Noto Serif KR",serif}
+.hero .ag{font-size:15px;margin-top:2px}
+.hero .bn{font-size:12.5px;color:var(--gb-muted);margin-top:2px}
+.pill{margin-left:auto;font-size:12.5px;font-weight:600;background:var(--gb-primary);color:var(--gb-on-primary);border-radius:999px;padding:5px 10px}
+.card{border:1px solid var(--gb-rule);border-radius:var(--gb-radius);background:var(--gb-surface);padding:12px 14px}
+.ch{display:flex;justify-content:space-between;align-items:center;font-size:14px;color:var(--gb-muted);margin-bottom:8px}
+.ch b{color:var(--gb-ink);font-weight:600;font-size:15px}
+.bar{height:6px;border-radius:999px;background:var(--gb-hover);overflow:hidden;margin-bottom:8px}
+.bar i{display:block;height:100%;background:var(--gb-primary)}
+ul.rows{list-style:none}
+.row{display:flex;align-items:center;gap:12px;min-height:var(--gb-row);padding:6px 0;border-bottom:1px solid var(--gb-rule);font-size:15px}
+.row:last-child{border-bottom:0}
+.row .rt{flex:1}
+.row.done .rt{color:var(--gb-muted)}
+.row .rd{font-size:12.5px;color:var(--gb-done)}
+.lnk{display:inline-flex;align-items:center;gap:4px;color:var(--gb-primary);font-weight:600;font-size:14px;text-decoration:none;padding:0 4px}
+.empty{font-size:14px;color:var(--gb-muted)}
+.months{display:flex;gap:8px;overflow:hidden;padding:2px 0 6px}
+.m{flex:none;min-width:44px;height:36px;display:flex;align-items:center;justify-content:center;border-radius:999px;background:var(--gb-hover);color:var(--gb-muted);font-size:14px;font-weight:600}
+.m.sel{background:var(--gb-primary);color:var(--gb-on-primary)}
+.note{border:1px solid var(--gb-rule);border-radius:var(--gb-radius);background:var(--gb-surface)}
+.note summary{display:flex;align-items:center;gap:8px;padding:10px 14px;font-size:14px;list-style:none;cursor:pointer}
+.note summary span{flex:1}
+.sev{border-left:4px solid var(--gb-info)}
+.sev.danger{border-left-color:var(--gb-danger)}
+.sev.caution{border-left-color:var(--gb-caution)}
+.sev .tag{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gb-info)}
+.sev.danger .tag{color:var(--gb-danger)}
+.sev.caution .tag{color:var(--gb-caution)}
+.sev .body{font-size:15px;color:var(--gb-ink)}
+.tabs{display:flex;justify-content:space-around;padding:8px 6px 26px;border-top:1px solid var(--gb-rule);background:var(--gb-surface)}
+.tab{display:flex;flex-direction:column;align-items:center;gap:3px;min-width:56px;font-size:11px;font-weight:500;color:var(--gb-muted);text-decoration:none;padding:6px 4px}
+.tab.on{color:var(--gb-primary)}
+</style>
+</head>
+<body>
+<h1>Nabi · 나비 — applied to the product</h1>
+<p class="sub">Three real screens, painted only through tokens.css: Home (English, light), Milestones (Korean, light), Safety (Korean, dark). Every row is 52pt, every target 44pt, and the milestone device replaces the checkbox.</p>
+<div class="stage">
+<div class="phone" lang="en">
+  <div class="sb gb-num"><span>9:41</span><span>●●● ⌒ ▮</span></div>
+  <header class="ah"><span class="wm">Nabi</span><span class="lang gb-num">EN</span></header>
+  <h3 class="lt">Today</h3>
+  <div class="scroll">
+<div class="hero">
+  <div class="mk"><svg width="40" height="40" viewBox="0 0 32 32" role="img" aria-label="done" style="opacity:1;flex:none"><path d="M16 16C16 8 10 4 5 6c-1 6 3 11 11 10z" fill="var(--gb-done)"/><path d="M16 16c0-8 6-12 11-10 1 6-3 11-11 10z" fill="var(--gb-done)"/><path d="M16 17c-1 5-5 8-9 7 0-5 4-8 9-7z" fill="var(--gb-done)" opacity=".7"/><path d="M16 17c1 5 5 8 9 7 0-5-4-8-9-7z" fill="var(--gb-done)" opacity=".7"/><path d="M16 12v14" stroke="var(--gb-done)" stroke-width="2" stroke-linecap="round" fill="none"/></svg></div>
+  <div><div class="nm">Rowoon</div><div class="ag gb-num">4 months 14 days</div><div class="bn gb-num">Born April 17, 2025</div></div>
+  <span class="pill gb-num">Month 4</span>
+</div>
+<section class="card">
+  <div class="ch"><b>This month</b><span class="gb-num">2 of 7 confirmed</span></div>
+  <div class="bar" role="progressbar" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100"><i style="width:29%"></i></div>
+  <ul class="rows"><li class="row done"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="done" style="opacity:1;flex:none"><path d="M16 16C16 8 10 4 5 6c-1 6 3 11 11 10z" fill="var(--gb-done)"/><path d="M16 16c0-8 6-12 11-10 1 6-3 11-11 10z" fill="var(--gb-done)"/><path d="M16 17c-1 5-5 8-9 7 0-5 4-8 9-7z" fill="var(--gb-done)" opacity=".7"/><path d="M16 17c1 5 5 8 9 7 0-5-4-8-9-7z" fill="var(--gb-done)" opacity=".7"/><path d="M16 12v14" stroke="var(--gb-done)" stroke-width="2" stroke-linecap="round" fill="none"/></svg><span class="rt">Recognizes parent&#x27;s voice</span></li><li class="row done"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="done" style="opacity:1;flex:none"><path d="M16 16C16 8 10 4 5 6c-1 6 3 11 11 10z" fill="var(--gb-done)"/><path d="M16 16c0-8 6-12 11-10 1 6-3 11-11 10z" fill="var(--gb-done)"/><path d="M16 17c-1 5-5 8-9 7 0-5 4-8 9-7z" fill="var(--gb-done)" opacity=".7"/><path d="M16 17c1 5 5 8 9 7 0-5-4-8-9-7z" fill="var(--gb-done)" opacity=".7"/><path d="M16 12v14" stroke="var(--gb-done)" stroke-width="2" stroke-linecap="round" fill="none"/></svg><span class="rt">Makes eye contact during feeding</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><path d="M16 16C16 8 10 4 5 6c-1 6 3 11 11 10z" fill="var(--gb-muted)"/><path d="M16 16c0-8 6-12 11-10 1 6-3 11-11 10z" fill="var(--gb-muted)"/><path d="M16 17c-1 5-5 8-9 7 0-5 4-8 9-7z" fill="var(--gb-muted)" opacity=".7"/><path d="M16 17c1 5 5 8 9 7 0-5-4-8-9-7z" fill="var(--gb-muted)" opacity=".7"/><path d="M16 12v14" stroke="var(--gb-muted)" stroke-width="2" stroke-linecap="round" fill="none"/></svg><span class="rt">Startles at loud sounds</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><path d="M16 16C16 8 10 4 5 6c-1 6 3 11 11 10z" fill="var(--gb-muted)"/><path d="M16 16c0-8 6-12 11-10 1 6-3 11-11 10z" fill="var(--gb-muted)"/><path d="M16 17c-1 5-5 8-9 7 0-5 4-8 9-7z" fill="var(--gb-muted)" opacity=".7"/><path d="M16 17c1 5 5 8 9 7 0-5-4-8-9-7z" fill="var(--gb-muted)" opacity=".7"/><path d="M16 12v14" stroke="var(--gb-muted)" stroke-width="2" stroke-linecap="round" fill="none"/></svg><span class="rt">Focuses on faces</span></li></ul>
+</section>
+<section class="card">
+  <div class="ch"><b>Journal</b><a class="lnk tap" href="#"><svg class="g " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>Write</a></div>
+  <p class="empty">Empty so far. What did you notice today?</p>
+</section></div>
+  <nav class="tabs"><a class="tab on tap" href="#" aria-current="page"><svg class="g " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg><span>Home</span></a><a class="tab tap" href="#" aria-current="false"><svg class="g " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3v18M5 4h12l-2 4 2 4H5"/></svg><span>Milestones</span></a><a class="tab tap" href="#" aria-current="false"><svg class="g " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 13h7v7H4zM13 13h7v7h-7zM8.5 4l3.5 6h-7z"/></svg><span>Play</span></a><a class="tab tap" href="#" aria-current="false"><svg class="g " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg><span>Safety</span></a><a class="tab tap" href="#" aria-current="false"><svg class="g " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h13v18H8a3 3 0 0 1-3-3zM5 18a3 3 0 0 1 3-3h10"/></svg><span>Journal</span></a></nav>
+</div>
+<div class="phone" lang="ko">
+  <div class="sb gb-num"><span>9:41</span><span>●●● ⌒ ▮</span></div>
+  <header class="ah"><span class="wm">나비</span><span class="lang gb-num">KO</span></header>
+  <h3 class="lt">발달</h3>
+  <div class="scroll">
+<div class="months" aria-label="months"><span class="m gb-num">1</span><span class="m gb-num">2</span><span class="m gb-num">3</span><span class="m gb-num sel">4</span><span class="m gb-num">5</span><span class="m gb-num">6</span><span class="m gb-num">7</span><span class="m gb-num">8</span></div>
+<details class="note"><summary class="tap"><svg class="g " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h13v18H8a3 3 0 0 1-3-3zM5 18a3 3 0 0 1 3-3h10"/></svg><span>부모님께</span><svg class="g " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></summary></details>
+<section class="card">
+  <div class="ch"><b>4개월 · 발달 이정표 7개</b><span class="gb-num">29%</span></div>
+  <ul class="rows"><li class="row done"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="done" style="opacity:1;flex:none"><path d="M16 16C16 8 10 4 5 6c-1 6 3 11 11 10z" fill="var(--gb-done)"/><path d="M16 16c0-8 6-12 11-10 1 6-3 11-11 10z" fill="var(--gb-done)"/><path d="M16 17c-1 5-5 8-9 7 0-5 4-8 9-7z" fill="var(--gb-done)" opacity=".7"/><path d="M16 17c1 5 5 8 9 7 0-5-4-8-9-7z" fill="var(--gb-done)" opacity=".7"/><path d="M16 12v14" stroke="var(--gb-done)" stroke-width="2" stroke-linecap="round" fill="none"/></svg><span class="rt">엄마 아빠 목소리를 알아요</span><span class="rd gb-num">8월 31일</span></li><li class="row done"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="done" style="opacity:1;flex:none"><path d="M16 16C16 8 10 4 5 6c-1 6 3 11 11 10z" fill="var(--gb-done)"/><path d="M16 16c0-8 6-12 11-10 1 6-3 11-11 10z" fill="var(--gb-done)"/><path d="M16 17c-1 5-5 8-9 7 0-5 4-8 9-7z" fill="var(--gb-done)" opacity=".7"/><path d="M16 17c1 5 5 8 9 7 0-5-4-8-9-7z" fill="var(--gb-done)" opacity=".7"/><path d="M16 12v14" stroke="var(--gb-done)" stroke-width="2" stroke-linecap="round" fill="none"/></svg><span class="rt">수유할 때 눈을 맞춰요</span><span class="rd gb-num">8월 31일</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><path d="M16 16C16 8 10 4 5 6c-1 6 3 11 11 10z" fill="var(--gb-muted)"/><path d="M16 16c0-8 6-12 11-10 1 6-3 11-11 10z" fill="var(--gb-muted)"/><path d="M16 17c-1 5-5 8-9 7 0-5 4-8 9-7z" fill="var(--gb-muted)" opacity=".7"/><path d="M16 17c1 5 5 8 9 7 0-5-4-8-9-7z" fill="var(--gb-muted)" opacity=".7"/><path d="M16 12v14" stroke="var(--gb-muted)" stroke-width="2" stroke-linecap="round" fill="none"/></svg><span class="rt">큰 소리에 깜짝 놀라요</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><path d="M16 16C16 8 10 4 5 6c-1 6 3 11 11 10z" fill="var(--gb-muted)"/><path d="M16 16c0-8 6-12 11-10 1 6-3 11-11 10z" fill="var(--gb-muted)"/><path d="M16 17c-1 5-5 8-9 7 0-5 4-8 9-7z" fill="var(--gb-muted)" opacity=".7"/><path d="M16 17c1 5 5 8 9 7 0-5-4-8-9-7z" fill="var(--gb-muted)" opacity=".7"/><path d="M16 12v14" stroke="var(--gb-muted)" stroke-width="2" stroke-linecap="round" fill="none"/></svg><span class="rt">얼굴을 가만히 바라봐요</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><path d="M16 16C16 8 10 4 5 6c-1 6 3 11 11 10z" fill="var(--gb-muted)"/><path d="M16 16c0-8 6-12 11-10 1 6-3 11-11 10z" fill="var(--gb-muted)"/><path d="M16 17c-1 5-5 8-9 7 0-5 4-8 9-7z" fill="var(--gb-muted)" opacity=".7"/><path d="M16 17c1 5 5 8 9 7 0-5-4-8-9-7z" fill="var(--gb-muted)" opacity=".7"/><path d="M16 12v14" stroke="var(--gb-muted)" stroke-width="2" stroke-linecap="round" fill="none"/></svg><span class="rt">엎드리면 잠깐 고개를 들어요</span></li></ul>
+</section></div>
+  <nav class="tabs"><a class="tab tap" href="#" aria-current="false"><svg class="g " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg><span>홈</span></a><a class="tab on tap" href="#" aria-current="page"><svg class="g " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3v18M5 4h12l-2 4 2 4H5"/></svg><span>발달</span></a><a class="tab tap" href="#" aria-current="false"><svg class="g " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 13h7v7H4zM13 13h7v7h-7zM8.5 4l3.5 6h-7z"/></svg><span>놀이</span></a><a class="tab tap" href="#" aria-current="false"><svg class="g " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg><span>안전</span></a><a class="tab tap" href="#" aria-current="false"><svg class="g " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h13v18H8a3 3 0 0 1-3-3zM5 18a3 3 0 0 1 3-3h10"/></svg><span>기록</span></a></nav>
+</div>
+<div class="phone dark" lang="ko">
+  <div class="sb gb-num"><span>9:41</span><span>●●● ⌒ ▮</span></div>
+  <header class="ah"><span class="wm">나비</span><span class="lang gb-num">KO</span></header>
+  <h3 class="lt">안전 · 4개월</h3>
+  <div class="scroll">
+<section class="card sev danger">
+  <div class="ch"><span class="tag"><svg class="g " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l10 18H2zM12 10v5M12 18v.5"/></svg>긴급</span></div>
+  <p class="body">잠은 언제나 등을 대고. 예외는 없어요.</p>
+</section>
+<section class="card sev caution">
+  <div class="ch"><span class="tag">주의</span></div>
+  <p class="body">카시트: 뒤보기, 벨트는 딱 맞게, 가슴 클립은 겨드랑이 높이에.</p>
+</section>
+<section class="card sev info">
+  <div class="ch"><span class="tag">참고</span></div>
+  <p class="body">감기는 정상이에요. 어린이집에 다니면 1년에 6~8번은 걸려요.</p>
+</section></div>
+  <nav class="tabs"><a class="tab tap" href="#" aria-current="false"><svg class="g " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg><span>홈</span></a><a class="tab tap" href="#" aria-current="false"><svg class="g " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3v18M5 4h12l-2 4 2 4H5"/></svg><span>발달</span></a><a class="tab tap" href="#" aria-current="false"><svg class="g " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 13h7v7H4zM13 13h7v7h-7zM8.5 4l3.5 6h-7z"/></svg><span>놀이</span></a><a class="tab on tap" href="#" aria-current="page"><svg class="g " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg><span>안전</span></a><a class="tab tap" href="#" aria-current="false"><svg class="g " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h13v18H8a3 3 0 0 1-3-3zM5 18a3 3 0 0 1 3-3h10"/></svg><span>기록</span></a></nav>
+</div></div>
+<p class="sub" style="margin-top:28px"><a href="book.html">Brand book</a> · <a href="tokens.css">tokens.css</a> · <a href="../index.html">All five options</a></p>
+</body></html>

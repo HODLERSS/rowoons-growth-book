@@ -1,42 +1,34 @@
 "use client";
 
-import { useState, useCallback, useEffect } from "react";
-import { MilestoneCompletion } from "@/lib/types";
-import {
-  getMilestoneCompletion,
-  toggleMilestoneCompletion,
-} from "@/lib/milestone-storage";
+import { useCallback, useMemo } from "react";
+import { KEYS, readKey, useStoredValue, writeKey, jsonOr } from "@/lib/store";
+import { isCompletion } from "@/lib/backup";
+import type { MilestoneCompletion } from "@/lib/types";
+
+const parse = jsonOr<MilestoneCompletion>({}, isCompletion);
 
 export function useMilestones() {
-  const [completions, setCompletions] = useState<MilestoneCompletion>({});
+  const completions = useStoredValue<MilestoneCompletion>(KEYS.milestones, parse, {});
 
-  useEffect(() => {
-    setCompletions(getMilestoneCompletion());
+  const toggle = useCallback((id: string): boolean => {
+    const current = { ...readKey(KEYS.milestones, parse) };
+    const wasDone = current[id]?.completed ?? false;
+    if (wasDone) delete current[id];
+    else current[id] = { completed: true, completedAt: new Date().toISOString() };
+    writeKey(KEYS.milestones, current);
+    return !wasDone;
   }, []);
 
-  const toggle = useCallback((milestoneId: string) => {
-    toggleMilestoneCompletion(milestoneId);
-    setCompletions(getMilestoneCompletion());
-  }, []);
-
-  const isCompleted = useCallback(
-    (milestoneId: string) => completions[milestoneId]?.completed ?? false,
-    [completions]
-  );
+  const isCompleted = useCallback((id: string) => completions[id]?.completed ?? false, [completions]);
+  const completedAt = useCallback((id: string) => completions[id]?.completedAt ?? null, [completions]);
 
   const stats = useCallback(
-    (milestoneIds: string[]) => {
-      const completed = milestoneIds.filter(
-        (id) => completions[id]?.completed
-      ).length;
-      return {
-        completed,
-        total: milestoneIds.length,
-        percentage: milestoneIds.length > 0 ? Math.round((completed / milestoneIds.length) * 100) : 0,
-      };
+    (ids: string[]) => {
+      const done = ids.filter((id) => completions[id]?.completed).length;
+      return { done, total: ids.length, percentage: ids.length ? Math.round((done / ids.length) * 100) : 0 };
     },
     [completions]
   );
 
-  return { completions, toggle, isCompleted, stats };
+  return useMemo(() => ({ completions, toggle, isCompleted, completedAt, stats }), [completions, toggle, isCompleted, completedAt, stats]);
 }

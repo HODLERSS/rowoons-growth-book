@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nabi — brand book</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Noto+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gb-accent);outline-offset:2px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+button,.tap{min-height:44px;min-width:44px;cursor:pointer}
+.gb-num{font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
+.g{flex:none}
+
+:root{
+  --gb-bg: #F6F8FB;
+  --gb-surface: #FFFFFF;
+  --gb-ink: #2A2140;
+  --gb-muted: #5F5A6E;
+  --gb-primary: #5B3D8C;
+  --gb-on-primary: #F6F8FB;
+  --gb-accent: #6E5300;
+  --gb-ornament: #E9B949;
+  --gb-done: #E9B949;
+  --gb-danger: #9C2B4B;
+  --gb-caution: #6E5300;
+  --gb-info: #5B3D8C;
+  --gb-rule: #E1E5EE;
+  --gb-hover: #EDF0F6;
+  --gb-radius: 18px;
+  --gb-row: 52px;
+  --gb-font-display: "Outfit";
+  --gb-font-ui: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", system-ui, sans-serif;
+}
+.dark{
+  --gb-bg: #14121C;
+  --gb-surface: #1D1A28;
+  --gb-ink: #EEEBF5;
+  --gb-muted: #A9A4B8;
+  --gb-primary: #C3A9F0;
+  --gb-on-primary: #14121C;
+  --gb-accent: #F0CC6A;
+  --gb-ornament: #F0CC6A;
+  --gb-done: #F0CC6A;
+  --gb-danger: #F08AA8;
+  --gb-caution: #F0CC6A;
+  --gb-info: #C3A9F0;
+  --gb-rule: #2C2838;
+  --gb-hover: #241F31;
+}
+body{background:var(--gb-bg);color:var(--gb-ink);font:16px/1.6 var(--gb-font-ui)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px 96px}
+header.hd{padding:72px 0 40px;border-bottom:2px solid var(--gb-rule)}
+.kick{font:600 11px/1 var(--gb-font-ui);letter-spacing:.22em;text-transform:uppercase;color:var(--gb-muted)}
+h1{font:600 44px/1.1 var(--gb-font-display),serif;margin-top:10px;display:flex;gap:16px;align-items:baseline;flex-wrap:wrap}
+h1 .word{font-family:'Outfit',sans-serif;font-weight:600;letter-spacing:.04em;text-transform:lowercase;}
+h1 .ko{font-family:"Noto Serif KR",serif;font-weight:600;font-size:34px;color:var(--gb-muted)}
+.tagline{font:500 22px/1.35 var(--gb-font-display),serif;margin-top:18px}
+.tagline .k{display:block;font-family:"Noto Serif KR",serif;color:var(--gb-muted);font-size:19px;margin-top:4px}
+.essence{color:var(--gb-muted);max-width:66ch;margin-top:14px}
+h2{font:600 12px/1 var(--gb-font-ui);letter-spacing:.18em;text-transform:uppercase;color:var(--gb-muted);margin:52px 0 16px}
+.stage{border:1px solid var(--gb-rule);border-radius:var(--gb-radius);padding:36px 20px;background:var(--gb-surface)}
+.marks{display:flex;gap:28px;justify-content:center;align-items:center;flex-wrap:wrap}
+.marks .cell{padding:18px;border:1px dashed var(--gb-rule);border-radius:12px;display:flex;flex-direction:column;align-items:center;gap:10px;font-size:12.5px;color:var(--gb-muted)}
+.marks .rev{background:var(--gb-primary);border-color:var(--gb-primary)}
+.marks .rev span{color:var(--gb-on-primary)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.sw{border:1px solid var(--gb-rule);border-radius:8px;overflow:hidden;background:var(--gb-surface)}
+.sw .chip{height:52px}
+.sw .meta{padding:8px 10px;font-size:12.5px;line-height:1.5}
+.sw .meta b{display:block}
+.sw .cr{display:block;color:var(--gb-muted)}
+.darkpane{background:var(--gb-bg);color:var(--gb-ink);border-radius:var(--gb-radius);padding:16px}
+table{width:100%;border-collapse:collapse}
+table.spec th,table.spec td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--gb-rule);font-size:14.5px;vertical-align:top}
+table.spec th{font-weight:600;white-space:nowrap;width:110px;color:var(--gb-muted)}
+.type .d1{font:600 34px/1.2 var(--gb-font-display),serif}
+.type .d1k{font:600 30px/1.3 "Noto Serif KR",serif;margin-top:6px}
+.type .b{margin-top:14px;max-width:60ch}
+.type .c{font-size:13px;color:var(--gb-muted);margin-top:8px}
+.type .num{font-size:28px;font-weight:600;margin-top:14px}
+.voice{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.vc{border:1px solid var(--gb-rule);border-radius:var(--gb-radius);padding:16px;background:var(--gb-surface)}
+.vc .lab{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gb-muted);margin-bottom:8px}
+.vc p{font-size:15px}
+.vc p.k{color:var(--gb-muted);margin-top:6px}
+.vc.urgent{border-left:4px solid var(--gb-danger)}
+.vc.urgent .lab{color:var(--gb-danger)}
+.lists{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+ul.rows{list-style:none;border:1px solid var(--gb-rule);border-radius:var(--gb-radius);background:var(--gb-surface);overflow:hidden}
+.row{display:flex;align-items:center;gap:12px;min-height:var(--gb-row);padding:8px 14px;border-bottom:1px solid var(--gb-rule);font-size:15px}
+.row:last-child{border-bottom:0}
+.row .rt{flex:1}
+.row.done .rt{color:var(--gb-muted)}
+.row .rd{font-size:12.5px;color:var(--gb-done)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+ul.dd{padding-left:18px}
+ul.dd li{margin:6px 0}
+.dd-h{font-weight:600;margin-bottom:6px}
+.dont .dd-h{color:var(--gb-danger)}
+.foot{margin-top:56px;padding-top:16px;border-top:1px solid var(--gb-rule);font-size:13px;color:var(--gb-muted)}
+.foot a{padding:12px 0;display:inline-block}
+</style>
+</head>
+<body><div class="wrap">
+<header class="hd">
+  <div class="kick">Baby Growth Book · brand option 05 · Butterfly</div>
+  <h1><span class="word">Nabi</span><span class="ko">나비</span></h1>
+  <p class="tagline">A little different every month.<span class="k">매달 조금씩 달라져요.</span></p>
+  <p class="essence">나비, butterfly: a child changes shape month by month. Pale sky page, plum ink, a mustard wing. Light and playful without being childish — geometric wings drawn from two arcs, never a cartoon.</p>
+</header>
+<main>
+<h2>Marks</h2>
+<div class="stage"><div class="marks">
+  <div class="cell"><svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 32 32" role="img" aria-label="Nabi mark"><path d="M16 16C16 8 10 4 5 6c-1 6 3 11 11 10z" fill="#5B3D8C"/><path d="M16 16c0-8 6-12 11-10 1 6-3 11-11 10z" fill="#5B3D8C"/><path d="M16 17c-1 5-5 8-9 7 0-5 4-8 9-7z" fill="#5B3D8C" opacity=".7"/><path d="M16 17c1 5 5 8 9 7 0-5-4-8-9-7z" fill="#5B3D8C" opacity=".7"/><path d="M16 12v14" stroke="#5B3D8C" stroke-width="2" stroke-linecap="round" fill="none"/></svg><span>Standard</span></div>
+  <div class="cell rev"><svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 32 32" role="img" aria-label="Nabi mark reversed"><path d="M16 16C16 8 10 4 5 6c-1 6 3 11 11 10z" fill="#F6F8FB"/><path d="M16 16c0-8 6-12 11-10 1 6-3 11-11 10z" fill="#F6F8FB"/><path d="M16 17c-1 5-5 8-9 7 0-5 4-8 9-7z" fill="#F6F8FB" opacity=".7"/><path d="M16 17c1 5 5 8 9 7 0-5-4-8-9-7z" fill="#F6F8FB" opacity=".7"/><path d="M16 12v14" stroke="#F6F8FB" stroke-width="2" stroke-linecap="round" fill="none"/></svg><span>Reversed</span></div>
+  <div class="cell"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 32 32" role="img" aria-label="Nabi"><rect width="32" height="32" rx="7" fill="#5B3D8C"/><g transform="translate(4.8 4.8) scale(0.7)"><path d="M16 16C16 8 10 4 5 6c-1 6 3 11 11 10z" fill="#E9B949"/><path d="M16 16c0-8 6-12 11-10 1 6-3 11-11 10z" fill="#E9B949"/><path d="M16 17c-1 5-5 8-9 7 0-5 4-8 9-7z" fill="#E9B949" opacity=".7"/><path d="M16 17c1 5 5 8 9 7 0-5-4-8-9-7z" fill="#E9B949" opacity=".7"/><path d="M16 12v14" stroke="#E9B949" stroke-width="2" stroke-linecap="round" fill="none"/></g></svg><span>Favicon</span></div>
+  <div class="cell"><svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 1024 1024" role="img" aria-label="Nabi app icon"><rect width="1024" height="1024" fill="#5B3D8C"/><path d="M512 512c0-250-190-380-350-320-30 190 100 350 350 320z" fill="#E9B949"/><path d="M512 512c0-250 190-380 350-320 30 190-100 350-350 320z" fill="#E9B949"/><path d="M512 544c-30 160-160 250-290 220 0-160 130-250 290-220z" fill="#E9B949" opacity=".75"/><path d="M512 544c30 160 160 250 290 220 0-160-130-250-290-220z" fill="#E9B949" opacity=".75"/></svg><span>App icon (1024)</span></div>
+</div>
+<p style="text-align:center;color:var(--gb-muted);font-size:14px;margin-top:18px">Device: the two-arc wing. Geometric on a 32-unit grid; never redrawn by eye.</p>
+</div>
+
+<h2>Colour — light</h2>
+<div class="grid"><div class="sw"><div class="chip" style="background:#F6F8FB"></div><div class="meta"><b>Page</b><span class="gb-num">#F6F8FB</span></div></div><div class="sw"><div class="chip" style="background:#FFFFFF"></div><div class="meta"><b>Surface</b><span class="gb-num">#FFFFFF</span></div></div><div class="sw"><div class="chip" style="background:#2A2140"></div><div class="meta"><b>Ink</b><span class="gb-num">#2A2140</span><span class="cr">14.2:1 on page</span></div></div><div class="sw"><div class="chip" style="background:#5F5A6E"></div><div class="meta"><b>Muted</b><span class="gb-num">#5F5A6E</span><span class="cr">6.2:1</span></div></div><div class="sw"><div class="chip" style="background:#5B3D8C"></div><div class="meta"><b>Primary</b><span class="gb-num">#5B3D8C</span><span class="cr">7.9:1 with its text</span></div></div><div class="sw"><div class="chip" style="background:#6E5300"></div><div class="meta"><b>Accent (text)</b><span class="gb-num">#6E5300</span><span class="cr">6.8:1</span></div></div><div class="sw"><div class="chip" style="background:#E9B949"></div><div class="meta"><b>Ornament</b><span class="gb-num">#E9B949</span><span class="cr">marks only</span></div></div><div class="sw"><div class="chip" style="background:#E9B949"></div><div class="meta"><b>Done</b><span class="gb-num">#E9B949</span><span class="cr">device</span></div></div><div class="sw"><div class="chip" style="background:#9C2B4B"></div><div class="meta"><b>Danger</b><span class="gb-num">#9C2B4B</span><span class="cr">6.9:1</span></div></div><div class="sw"><div class="chip" style="background:#6E5300"></div><div class="meta"><b>Caution</b><span class="gb-num">#6E5300</span><span class="cr">6.8:1</span></div></div><div class="sw"><div class="chip" style="background:#5B3D8C"></div><div class="meta"><b>Info</b><span class="gb-num">#5B3D8C</span><span class="cr">7.9:1</span></div></div><div class="sw"><div class="chip" style="background:#E1E5EE"></div><div class="meta"><b>Rule</b><span class="gb-num">#E1E5EE</span></div></div></div>
+<h2>Colour — dark</h2>
+<div class="dark darkpane"><div class="grid"><div class="sw"><div class="chip" style="background:#14121C"></div><div class="meta"><b>Page</b><span class="gb-num">#14121C</span></div></div><div class="sw"><div class="chip" style="background:#1D1A28"></div><div class="meta"><b>Surface</b><span class="gb-num">#1D1A28</span></div></div><div class="sw"><div class="chip" style="background:#EEEBF5"></div><div class="meta"><b>Ink</b><span class="gb-num">#EEEBF5</span><span class="cr">15.7:1 on page</span></div></div><div class="sw"><div class="chip" style="background:#A9A4B8"></div><div class="meta"><b>Muted</b><span class="gb-num">#A9A4B8</span><span class="cr">7.7:1</span></div></div><div class="sw"><div class="chip" style="background:#C3A9F0"></div><div class="meta"><b>Primary</b><span class="gb-num">#C3A9F0</span><span class="cr">9.0:1 with its text</span></div></div><div class="sw"><div class="chip" style="background:#F0CC6A"></div><div class="meta"><b>Accent (text)</b><span class="gb-num">#F0CC6A</span><span class="cr">12.0:1</span></div></div><div class="sw"><div class="chip" style="background:#F0CC6A"></div><div class="meta"><b>Ornament</b><span class="gb-num">#F0CC6A</span><span class="cr">marks only</span></div></div><div class="sw"><div class="chip" style="background:#F0CC6A"></div><div class="meta"><b>Done</b><span class="gb-num">#F0CC6A</span><span class="cr">device</span></div></div><div class="sw"><div class="chip" style="background:#F08AA8"></div><div class="meta"><b>Danger</b><span class="gb-num">#F08AA8</span><span class="cr">7.9:1</span></div></div><div class="sw"><div class="chip" style="background:#F0CC6A"></div><div class="meta"><b>Caution</b><span class="gb-num">#F0CC6A</span><span class="cr">12.0:1</span></div></div><div class="sw"><div class="chip" style="background:#C3A9F0"></div><div class="meta"><b>Info</b><span class="gb-num">#C3A9F0</span><span class="cr">9.0:1</span></div></div><div class="sw"><div class="chip" style="background:#2C2838"></div><div class="meta"><b>Rule</b><span class="gb-num">#2C2838</span></div></div></div></div>
+
+<h2>Type</h2>
+<div class="stage type">
+  <div class="d1">A little different every month.</div>
+  <div class="d1k">매달 조금씩 달라져요.</div>
+  <p class="b">Body is the platform face: SF Pro on iOS with Apple SD Gothic Neo for Korean; Pretendard on the web. 16px body, 15px list rows, 13px captions — nothing smaller than 11px. The display face is reserved for the wordmark, screen titles and month numerals.</p>
+  <p class="c">Caption · 부모님께 안내 · 13px, muted</p>
+  <div class="num gb-num">4 months 14 days · 4개월 14일 · 136 days</div>
+</div>
+
+<h2>Voice</h2>
+<p class="essence" style="margin:0 0 14px">A playful aunt. Light, curious, quick to notice.</p>
+<div class="voice">
+  <div class="vc"><div class="lab">Milestone confirmed</div><p>New wing: first smile, day 41.</p><p class="k">새 날개. 첫 미소, 41일째.</p></div>
+  <div class="vc"><div class="lab">Journal empty</div><p>Empty so far. What did you notice today?</p><p class="k">아직 비어 있어요. 오늘은 뭘 발견했나요?</p></div>
+  <div class="vc urgent"><div class="lab">Urgent watch-out</div><p>Back to sleep, every time — this one has no exceptions.</p><p class="k">잠은 언제나 등을 대고. 예외는 없어요.</p></div>
+</div>
+
+<h2>Application — the milestone list</h2>
+<div class="lists">
+  <ul class="rows" aria-label="Month 1 milestones, English"><li class="row done"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="done" style="opacity:1;flex:none"><path d="M16 16C16 8 10 4 5 6c-1 6 3 11 11 10z" fill="var(--gb-done)"/><path d="M16 16c0-8 6-12 11-10 1 6-3 11-11 10z" fill="var(--gb-done)"/><path d="M16 17c-1 5-5 8-9 7 0-5 4-8 9-7z" fill="var(--gb-done)" opacity=".7"/><path d="M16 17c1 5 5 8 9 7 0-5-4-8-9-7z" fill="var(--gb-done)" opacity=".7"/><path d="M16 12v14" stroke="var(--gb-done)" stroke-width="2" stroke-linecap="round" fill="none"/></svg><span class="rt">Recognizes parent&#x27;s voice</span><span class="rd gb-num">Aug 31</span></li><li class="row done"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="done" style="opacity:1;flex:none"><path d="M16 16C16 8 10 4 5 6c-1 6 3 11 11 10z" fill="var(--gb-done)"/><path d="M16 16c0-8 6-12 11-10 1 6-3 11-11 10z" fill="var(--gb-done)"/><path d="M16 17c-1 5-5 8-9 7 0-5 4-8 9-7z" fill="var(--gb-done)" opacity=".7"/><path d="M16 17c1 5 5 8 9 7 0-5-4-8-9-7z" fill="var(--gb-done)" opacity=".7"/><path d="M16 12v14" stroke="var(--gb-done)" stroke-width="2" stroke-linecap="round" fill="none"/></svg><span class="rt">Makes eye contact during feeding</span><span class="rd gb-num">Aug 31</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><path d="M16 16C16 8 10 4 5 6c-1 6 3 11 11 10z" fill="var(--gb-muted)"/><path d="M16 16c0-8 6-12 11-10 1 6-3 11-11 10z" fill="var(--gb-muted)"/><path d="M16 17c-1 5-5 8-9 7 0-5 4-8 9-7z" fill="var(--gb-muted)" opacity=".7"/><path d="M16 17c1 5 5 8 9 7 0-5-4-8-9-7z" fill="var(--gb-muted)" opacity=".7"/><path d="M16 12v14" stroke="var(--gb-muted)" stroke-width="2" stroke-linecap="round" fill="none"/></svg><span class="rt">Startles at loud sounds</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><path d="M16 16C16 8 10 4 5 6c-1 6 3 11 11 10z" fill="var(--gb-muted)"/><path d="M16 16c0-8 6-12 11-10 1 6-3 11-11 10z" fill="var(--gb-muted)"/><path d="M16 17c-1 5-5 8-9 7 0-5 4-8 9-7z" fill="var(--gb-muted)" opacity=".7"/><path d="M16 17c1 5 5 8 9 7 0-5-4-8-9-7z" fill="var(--gb-muted)" opacity=".7"/><path d="M16 12v14" stroke="var(--gb-muted)" stroke-width="2" stroke-linecap="round" fill="none"/></svg><span class="rt">Focuses on faces</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><path d="M16 16C16 8 10 4 5 6c-1 6 3 11 11 10z" fill="var(--gb-muted)"/><path d="M16 16c0-8 6-12 11-10 1 6-3 11-11 10z" fill="var(--gb-muted)"/><path d="M16 17c-1 5-5 8-9 7 0-5 4-8 9-7z" fill="var(--gb-muted)" opacity=".7"/><path d="M16 17c1 5 5 8 9 7 0-5-4-8-9-7z" fill="var(--gb-muted)" opacity=".7"/><path d="M16 12v14" stroke="var(--gb-muted)" stroke-width="2" stroke-linecap="round" fill="none"/></svg><span class="rt">Lifts head briefly during tummy time</span></li></ul>
+  <ul class="rows" lang="ko" aria-label="1개월 발달 이정표"><li class="row done"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="done" style="opacity:1;flex:none"><path d="M16 16C16 8 10 4 5 6c-1 6 3 11 11 10z" fill="var(--gb-done)"/><path d="M16 16c0-8 6-12 11-10 1 6-3 11-11 10z" fill="var(--gb-done)"/><path d="M16 17c-1 5-5 8-9 7 0-5 4-8 9-7z" fill="var(--gb-done)" opacity=".7"/><path d="M16 17c1 5 5 8 9 7 0-5-4-8-9-7z" fill="var(--gb-done)" opacity=".7"/><path d="M16 12v14" stroke="var(--gb-done)" stroke-width="2" stroke-linecap="round" fill="none"/></svg><span class="rt">엄마 아빠 목소리를 알아요</span><span class="rd gb-num">8월 31일</span></li><li class="row done"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="done" style="opacity:1;flex:none"><path d="M16 16C16 8 10 4 5 6c-1 6 3 11 11 10z" fill="var(--gb-done)"/><path d="M16 16c0-8 6-12 11-10 1 6-3 11-11 10z" fill="var(--gb-done)"/><path d="M16 17c-1 5-5 8-9 7 0-5 4-8 9-7z" fill="var(--gb-done)" opacity=".7"/><path d="M16 17c1 5 5 8 9 7 0-5-4-8-9-7z" fill="var(--gb-done)" opacity=".7"/><path d="M16 12v14" stroke="var(--gb-done)" stroke-width="2" stroke-linecap="round" fill="none"/></svg><span class="rt">수유할 때 눈을 맞춰요</span><span class="rd gb-num">8월 31일</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><path d="M16 16C16 8 10 4 5 6c-1 6 3 11 11 10z" fill="var(--gb-muted)"/><path d="M16 16c0-8 6-12 11-10 1 6-3 11-11 10z" fill="var(--gb-muted)"/><path d="M16 17c-1 5-5 8-9 7 0-5 4-8 9-7z" fill="var(--gb-muted)" opacity=".7"/><path d="M16 17c1 5 5 8 9 7 0-5-4-8-9-7z" fill="var(--gb-muted)" opacity=".7"/><path d="M16 12v14" stroke="var(--gb-muted)" stroke-width="2" stroke-linecap="round" fill="none"/></svg><span class="rt">큰 소리에 깜짝 놀라요</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><path d="M16 16C16 8 10 4 5 6c-1 6 3 11 11 10z" fill="var(--gb-muted)"/><path d="M16 16c0-8 6-12 11-10 1 6-3 11-11 10z" fill="var(--gb-muted)"/><path d="M16 17c-1 5-5 8-9 7 0-5 4-8 9-7z" fill="var(--gb-muted)" opacity=".7"/><path d="M16 17c1 5 5 8 9 7 0-5-4-8-9-7z" fill="var(--gb-muted)" opacity=".7"/><path d="M16 12v14" stroke="var(--gb-muted)" stroke-width="2" stroke-linecap="round" fill="none"/></svg><span class="rt">얼굴을 가만히 바라봐요</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><path d="M16 16C16 8 10 4 5 6c-1 6 3 11 11 10z" fill="var(--gb-muted)"/><path d="M16 16c0-8 6-12 11-10 1 6-3 11-11 10z" fill="var(--gb-muted)"/><path d="M16 17c-1 5-5 8-9 7 0-5 4-8 9-7z" fill="var(--gb-muted)" opacity=".7"/><path d="M16 17c1 5 5 8 9 7 0-5-4-8-9-7z" fill="var(--gb-muted)" opacity=".7"/><path d="M16 12v14" stroke="var(--gb-muted)" stroke-width="2" stroke-linecap="round" fill="none"/></svg><span class="rt">엎드리면 잠깐 고개를 들어요</span></li></ul>
+</div>
+<p class="essence" style="margin-top:12px">Done rows keep their text and add the device plus the date. Colour never carries the state alone.</p>
+
+<h2>App rules</h2>
+<table class="spec"><tr><th scope="row">Canvas</th><td>One column; sky page, white cards, 18pt radius.</td></tr><tr><th scope="row">Lists</th><td>52pt rows; the wing fills mustard when confirmed.</td></tr><tr><th scope="row">Type</th><td>Outfit for wordmark and titles; system faces for UI in both scripts.</td></tr><tr><th scope="row">Controls</th><td>18pt radius, plum fill, sky text; mustard only for the wing.</td></tr><tr><th scope="row">Motion</th><td>Wings open 200ms on confirm.</td></tr></table>
+
+<h2>iOS adaptation</h2>
+<p class="essence" style="margin:0">Five tabs; playful glyphs; large title in Outfit; dark mode deepens plum, mustard stays.</p>
+
+<h2>Do / Don't</h2>
+<div class="two">
+  <div><div class="dd-h">Do</div><ul class="dd"><li>Draw wings from arcs only</li><li>Keep mustard for the wing</li><li>Short, curious sentences</li><li>Plum for action only</li></ul></div>
+  <div class="dont"><div class="dd-h">Don't</div><ul class="dd"><li>No cartoon butterflies or antennae</li><li>No pastel rainbows</li><li>No mustard text on sky — it fails contrast</li><li>No more than one wing per screen</li></ul></div>
+</div>
+
+<h2>Korean</h2>
+<p class="essence" style="margin:0">Apple SD Gothic Neo / Pretendard for UI; Outfit carries Latin titles; Korean titles in the UI face at 600.</p>
+</main>
+<p class="foot"><a href="app.html">App mock</a> · <a href="tokens.css">tokens.css</a> · <a href="../index.html">All five options</a></p>
+</div></body></html>

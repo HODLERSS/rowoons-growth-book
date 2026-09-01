@@ -1,57 +1,80 @@
-const CACHE_NAME = "growth-book-v2";
+/* Dodam service worker (web only). App shell + content are static, so cache aggressively and fall back offline. */
+const VERSION = "dodam-v1";
+const SHELL = ["/", "/memo/", "/settings/", "/manifest.json", "/icon-192.png"];
 
 self.addEventListener("install", (event) => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) =>
-      cache.addAll(["/", "/memo"]).catch(() => {})
-    )
-  );
+  event.waitUntil(caches.open(VERSION).then((cache) => cache.addAll(SHELL).catch(() => {})));
   self.skipWaiting();
 });
 
 self.addEventListener("activate", (event) => {
-  event.waitUntil(
-    caches.keys().then((keys) =>
-      Promise.all(
-        keys.filter((k) => k !== CACHE_NAME).map((k) => caches.delete(k))
-      )
-    )
-  );
+  event.waitUntil(caches.keys().then((keys) => Promise.all(keys.filter((k) => k !== VERSION).map((k) => caches.delete(k)))));
   self.clients.claim();
 });
 
 self.addEventListener("fetch", (event) => {
-  if (event.request.method !== "GET") return;
+  const { request } = event;
+  if (request.method !== "GET") return;
+  const url = new URL(request.url);
+  if (url.origin !== self.location.origin) return;
+  if (url.pathname.startsWith("/api/")) return;
+
+  // Hashed build assets: cache first.
+  if (url.pathname.startsWith("/_next/static/")) {
+    event.respondWith(
+      caches.match(request).then(
+        (hit) =>
+          hit ||
+          fetch(request).then((res) => {
+            const copy = res.clone();
+            caches.open(VERSION).then((c) => c.put(request, copy));
+            return res;
+          })
+      )
+    );
+    return;
+  }
+
+  // Pages and everything else: network first, cache fallback, then the shell.
   event.respondWith(
-    fetch(event.request)
-      .then((response) => {
-        const clone = response.clone();
-        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
-        return response;
+    fetch(request)
+      .then((res) => {
+        if (res.ok) {
+          const copy = res.clone();
+          caches.open(VERSION).then((c) => c.put(request, copy));
+        }
+        return res;
       })
-      .catch(() => caches.match(event.request))
+      .catch(async () => (await caches.match(request)) || (request.mode === "navigate" ? caches.match("/") : Response.error()))
   );
 });
 
 self.addEventListener("push", (event) => {
-  const data = event.data ? event.data.json() : {};
-  const title = data.title || "Rowoon's Growth Book";
-  const options = {
-    body: data.body || "You have a new notification",
-    icon: "/icon-192.png",
-    badge: "/icon-192.png",
-    data: { url: data.url || "/" },
-  };
-  event.waitUntil(self.registration.showNotification(title, options));
+  let data = {};
+  try {
+    data = event.data ? event.data.json() : {};
+  } catch {
+    data = { body: event.data ? event.data.text() : "" };
+  }
+  const title = data.title || "Dodam";
+  event.waitUntil(
+    self.registration.showNotification(title, {
+      body: data.body || "",
+      icon: "/icon-192.png",
+      badge: "/badge-96.png",
+      data: { url: data.url || "/" },
+    })
+  );
 });
 
 self.addEventListener("notificationclick", (event) => {
   event.notification.close();
   const url = event.notification.data?.url || "/";
   event.waitUntil(
-    clients.matchAll({ type: "window", includeUncontrolled: true }).then((windowClients) => {
-      for (const client of windowClients) {
-        if (client.url.includes(self.location.origin) && "focus" in client) {
+    clients.matchAll({ type: "window", includeUncontrolled: true }).then((wins) => {
+      for (const client of wins) {
+        if (client.url.startsWith(self.location.origin) && "focus" in client) {
+          client.navigate?.(url);
           return client.focus();
         }
       }

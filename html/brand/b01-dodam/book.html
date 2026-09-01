@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dodam — brand book</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&family=Noto+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gb-accent);outline-offset:2px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+button,.tap{min-height:44px;min-width:44px;cursor:pointer}
+.gb-num{font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
+.g{flex:none}
+
+:root{
+  --gb-bg: #FAF6EE;
+  --gb-surface: #FFFCF6;
+  --gb-ink: #1F3327;
+  --gb-muted: #5F6356;
+  --gb-primary: #2F5D45;
+  --gb-on-primary: #FAF6EE;
+  --gb-accent: #A63D2A;
+  --gb-ornament: #C9453A;
+  --gb-done: #C9453A;
+  --gb-danger: #8C2F1F;
+  --gb-caution: #7D5F16;
+  --gb-info: #2F5D45;
+  --gb-rule: #E6DFD0;
+  --gb-hover: #F3EDE0;
+  --gb-radius: 12px;
+  --gb-row: 52px;
+  --gb-font-display: "Noto Serif KR";
+  --gb-font-ui: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", system-ui, sans-serif;
+}
+.dark{
+  --gb-bg: #151A16;
+  --gb-surface: #1D231E;
+  --gb-ink: #ECE7DA;
+  --gb-muted: #A9AA9B;
+  --gb-primary: #8CC1A2;
+  --gb-on-primary: #10150F;
+  --gb-accent: #E7967F;
+  --gb-ornament: #E05C4E;
+  --gb-done: #E05C4E;
+  --gb-danger: #E68A79;
+  --gb-caution: #D9B45B;
+  --gb-info: #8CC1A2;
+  --gb-rule: #2D342E;
+  --gb-hover: #242B25;
+}
+body{background:var(--gb-bg);color:var(--gb-ink);font:16px/1.6 var(--gb-font-ui)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px 96px}
+header.hd{padding:72px 0 40px;border-bottom:2px solid var(--gb-rule)}
+.kick{font:600 11px/1 var(--gb-font-ui);letter-spacing:.22em;text-transform:uppercase;color:var(--gb-muted)}
+h1{font:600 44px/1.1 var(--gb-font-display),serif;margin-top:10px;display:flex;gap:16px;align-items:baseline;flex-wrap:wrap}
+h1 .word{font-family:'Noto Serif KR',serif;font-weight:600;letter-spacing:-.01em;}
+h1 .ko{font-family:"Noto Serif KR",serif;font-weight:600;font-size:34px;color:var(--gb-muted)}
+.tagline{font:500 22px/1.35 var(--gb-font-display),serif;margin-top:18px}
+.tagline .k{display:block;font-family:"Noto Serif KR",serif;color:var(--gb-muted);font-size:19px;margin-top:4px}
+.essence{color:var(--gb-muted);max-width:66ch;margin-top:14px}
+h2{font:600 12px/1 var(--gb-font-ui);letter-spacing:.18em;text-transform:uppercase;color:var(--gb-muted);margin:52px 0 16px}
+.stage{border:1px solid var(--gb-rule);border-radius:var(--gb-radius);padding:36px 20px;background:var(--gb-surface)}
+.marks{display:flex;gap:28px;justify-content:center;align-items:center;flex-wrap:wrap}
+.marks .cell{padding:18px;border:1px dashed var(--gb-rule);border-radius:12px;display:flex;flex-direction:column;align-items:center;gap:10px;font-size:12.5px;color:var(--gb-muted)}
+.marks .rev{background:var(--gb-primary);border-color:var(--gb-primary)}
+.marks .rev span{color:var(--gb-on-primary)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.sw{border:1px solid var(--gb-rule);border-radius:8px;overflow:hidden;background:var(--gb-surface)}
+.sw .chip{height:52px}
+.sw .meta{padding:8px 10px;font-size:12.5px;line-height:1.5}
+.sw .meta b{display:block}
+.sw .cr{display:block;color:var(--gb-muted)}
+.darkpane{background:var(--gb-bg);color:var(--gb-ink);border-radius:var(--gb-radius);padding:16px}
+table{width:100%;border-collapse:collapse}
+table.spec th,table.spec td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--gb-rule);font-size:14.5px;vertical-align:top}
+table.spec th{font-weight:600;white-space:nowrap;width:110px;color:var(--gb-muted)}
+.type .d1{font:600 34px/1.2 var(--gb-font-display),serif}
+.type .d1k{font:600 30px/1.3 "Noto Serif KR",serif;margin-top:6px}
+.type .b{margin-top:14px;max-width:60ch}
+.type .c{font-size:13px;color:var(--gb-muted);margin-top:8px}
+.type .num{font-size:28px;font-weight:600;margin-top:14px}
+.voice{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.vc{border:1px solid var(--gb-rule);border-radius:var(--gb-radius);padding:16px;background:var(--gb-surface)}
+.vc .lab{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gb-muted);margin-bottom:8px}
+.vc p{font-size:15px}
+.vc p.k{color:var(--gb-muted);margin-top:6px}
+.vc.urgent{border-left:4px solid var(--gb-danger)}
+.vc.urgent .lab{color:var(--gb-danger)}
+.lists{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+ul.rows{list-style:none;border:1px solid var(--gb-rule);border-radius:var(--gb-radius);background:var(--gb-surface);overflow:hidden}
+.row{display:flex;align-items:center;gap:12px;min-height:var(--gb-row);padding:8px 14px;border-bottom:1px solid var(--gb-rule);font-size:15px}
+.row:last-child{border-bottom:0}
+.row .rt{flex:1}
+.row.done .rt{color:var(--gb-muted)}
+.row .rd{font-size:12.5px;color:var(--gb-done)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+ul.dd{padding-left:18px}
+ul.dd li{margin:6px 0}
+.dd-h{font-weight:600;margin-bottom:6px}
+.dont .dd-h{color:var(--gb-danger)}
+.foot{margin-top:56px;padding-top:16px;border-top:1px solid var(--gb-rule);font-size:13px;color:var(--gb-muted)}
+.foot a{padding:12px 0;display:inline-block}
+</style>
+</head>
+<body><div class="wrap">
+<header class="hd">
+  <div class="kick">Baby Growth Book · brand option 01 · Hanji and seal</div>
+  <h1><span class="word">Dodam</span><span class="ko">도담</span></h1>
+  <p class="tagline">Grow well, one month at a time.<span class="k">한 달 한 달, 도담도담.</span></p>
+  <p class="essence">도담도담 — the Korean word for a child growing up sturdy and well. Hanji cream, pine-green ink, and one cinnabar seal. Each milestone a parent confirms is stamped, the way a passbook is stamped: a quiet, physical record of a child growing well. Korean and English are one voice, not a translation.</p>
+</header>
+<main>
+<h2>Marks</h2>
+<div class="stage"><div class="marks">
+  <div class="cell"><svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 32 32" role="img" aria-label="Dodam mark"><rect x="4" y="4" width="24" height="24" rx="5" fill="none" stroke="#2F5D45" stroke-width="2.4"/><path d="M20 11H12v10h8" fill="none" stroke="#2F5D45" stroke-width="2.8" stroke-linecap="square"/></svg><span>Standard</span></div>
+  <div class="cell rev"><svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 32 32" role="img" aria-label="Dodam mark reversed"><rect x="4" y="4" width="24" height="24" rx="5" fill="none" stroke="#FAF6EE" stroke-width="2.4"/><path d="M20 11H12v10h8" fill="none" stroke="#FAF6EE" stroke-width="2.8" stroke-linecap="square"/></svg><span>Reversed</span></div>
+  <div class="cell"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 32 32" role="img" aria-label="Dodam"><rect width="32" height="32" rx="7" fill="#C9453A"/><g transform="translate(4.8 4.8) scale(0.7)"><rect x="4" y="4" width="24" height="24" rx="5" fill="none" stroke="#FAF6EE" stroke-width="2.4"/><path d="M20 11H12v10h8" fill="none" stroke="#FAF6EE" stroke-width="2.8" stroke-linecap="square"/></g></svg><span>Favicon</span></div>
+  <div class="cell"><svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 1024 1024" role="img" aria-label="Dodam app icon"><rect width="1024" height="1024" fill="#C9453A"/><path d="M640 352H384v320h256" fill="none" stroke="#FAF6EE" stroke-width="88" stroke-linecap="square"/></svg><span>App icon (1024)</span></div>
+</div>
+<p style="text-align:center;color:var(--gb-muted);font-size:14px;margin-top:18px">Device: the seal (도장) — a square stamp holding ㄷ, the first letter of 도담 and a D at once. Geometric on a 32-unit grid; never redrawn by eye.</p>
+</div>
+
+<h2>Colour — light</h2>
+<div class="grid"><div class="sw"><div class="chip" style="background:#FAF6EE"></div><div class="meta"><b>Page</b><span class="gb-num">#FAF6EE</span></div></div><div class="sw"><div class="chip" style="background:#FFFCF6"></div><div class="meta"><b>Surface</b><span class="gb-num">#FFFCF6</span></div></div><div class="sw"><div class="chip" style="background:#1F3327"></div><div class="meta"><b>Ink</b><span class="gb-num">#1F3327</span><span class="cr">12.5:1 on page</span></div></div><div class="sw"><div class="chip" style="background:#5F6356"></div><div class="meta"><b>Muted</b><span class="gb-num">#5F6356</span><span class="cr">5.7:1</span></div></div><div class="sw"><div class="chip" style="background:#2F5D45"></div><div class="meta"><b>Primary</b><span class="gb-num">#2F5D45</span><span class="cr">7.0:1 with its text</span></div></div><div class="sw"><div class="chip" style="background:#A63D2A"></div><div class="meta"><b>Accent (text)</b><span class="gb-num">#A63D2A</span><span class="cr">5.9:1</span></div></div><div class="sw"><div class="chip" style="background:#C9453A"></div><div class="meta"><b>Ornament</b><span class="gb-num">#C9453A</span><span class="cr">marks only</span></div></div><div class="sw"><div class="chip" style="background:#C9453A"></div><div class="meta"><b>Done</b><span class="gb-num">#C9453A</span><span class="cr">device</span></div></div><div class="sw"><div class="chip" style="background:#8C2F1F"></div><div class="meta"><b>Danger</b><span class="gb-num">#8C2F1F</span><span class="cr">7.7:1</span></div></div><div class="sw"><div class="chip" style="background:#7D5F16"></div><div class="meta"><b>Caution</b><span class="gb-num">#7D5F16</span><span class="cr">5.5:1</span></div></div><div class="sw"><div class="chip" style="background:#2F5D45"></div><div class="meta"><b>Info</b><span class="gb-num">#2F5D45</span><span class="cr">7.0:1</span></div></div><div class="sw"><div class="chip" style="background:#E6DFD0"></div><div class="meta"><b>Rule</b><span class="gb-num">#E6DFD0</span></div></div></div>
+<h2>Colour — dark</h2>
+<div class="dark darkpane"><div class="grid"><div class="sw"><div class="chip" style="background:#151A16"></div><div class="meta"><b>Page</b><span class="gb-num">#151A16</span></div></div><div class="sw"><div class="chip" style="background:#1D231E"></div><div class="meta"><b>Surface</b><span class="gb-num">#1D231E</span></div></div><div class="sw"><div class="chip" style="background:#ECE7DA"></div><div class="meta"><b>Ink</b><span class="gb-num">#ECE7DA</span><span class="cr">14.3:1 on page</span></div></div><div class="sw"><div class="chip" style="background:#A9AA9B"></div><div class="meta"><b>Muted</b><span class="gb-num">#A9AA9B</span><span class="cr">7.5:1</span></div></div><div class="sw"><div class="chip" style="background:#8CC1A2"></div><div class="meta"><b>Primary</b><span class="gb-num">#8CC1A2</span><span class="cr">9.0:1 with its text</span></div></div><div class="sw"><div class="chip" style="background:#E7967F"></div><div class="meta"><b>Accent (text)</b><span class="gb-num">#E7967F</span><span class="cr">7.6:1</span></div></div><div class="sw"><div class="chip" style="background:#E05C4E"></div><div class="meta"><b>Ornament</b><span class="gb-num">#E05C4E</span><span class="cr">marks only</span></div></div><div class="sw"><div class="chip" style="background:#E05C4E"></div><div class="meta"><b>Done</b><span class="gb-num">#E05C4E</span><span class="cr">device</span></div></div><div class="sw"><div class="chip" style="background:#E68A79"></div><div class="meta"><b>Danger</b><span class="gb-num">#E68A79</span><span class="cr">6.9:1</span></div></div><div class="sw"><div class="chip" style="background:#D9B45B"></div><div class="meta"><b>Caution</b><span class="gb-num">#D9B45B</span><span class="cr">8.9:1</span></div></div><div class="sw"><div class="chip" style="background:#8CC1A2"></div><div class="meta"><b>Info</b><span class="gb-num">#8CC1A2</span><span class="cr">8.6:1</span></div></div><div class="sw"><div class="chip" style="background:#2D342E"></div><div class="meta"><b>Rule</b><span class="gb-num">#2D342E</span></div></div></div></div>
+
+<h2>Type</h2>
+<div class="stage type">
+  <div class="d1">Grow well, one month at a time.</div>
+  <div class="d1k">한 달 한 달, 도담도담.</div>
+  <p class="b">Body is the platform face: SF Pro on iOS with Apple SD Gothic Neo for Korean; Pretendard on the web. 16px body, 15px list rows, 13px captions — nothing smaller than 11px. The display face is reserved for the wordmark, screen titles and month numerals.</p>
+  <p class="c">Caption · 부모님께 안내 · 13px, muted</p>
+  <div class="num gb-num">4 months 14 days · 4개월 14일 · 136 days</div>
+</div>
+
+<h2>Voice</h2>
+<p class="essence" style="margin:0 0 14px">A calm, literate grandmother who has raised children and reads the research. Warm, never cute. Says the true thing gently.</p>
+<div class="voice">
+  <div class="vc"><div class="lab">Milestone confirmed</div><p>Stamped. First smile, day 41.</p><p class="k">도장 쾅. 첫 미소, 41일째.</p></div>
+  <div class="vc"><div class="lab">Journal empty</div><p>The book is open. Write down one small thing from today.</p><p class="k">책이 펼쳐져 있어요. 오늘의 작은 일 하나를 적어 주세요.</p></div>
+  <div class="vc urgent"><div class="lab">Urgent watch-out</div><p>Back to sleep, every sleep. This one is not optional.</p><p class="k">잠은 언제나 등을 대고. 이건 꼭 지켜 주세요.</p></div>
+</div>
+
+<h2>Application — the milestone list</h2>
+<div class="lists">
+  <ul class="rows" aria-label="Month 1 milestones, English"><li class="row done"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="done" style="opacity:1;flex:none"><rect x="4" y="4" width="24" height="24" rx="5" fill="none" stroke="var(--gb-done)" stroke-width="2.4"/><path d="M20 11H12v10h8" fill="none" stroke="var(--gb-done)" stroke-width="2.8" stroke-linecap="square"/></svg><span class="rt">Recognizes parent&#x27;s voice</span><span class="rd gb-num">Aug 31</span></li><li class="row done"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="done" style="opacity:1;flex:none"><rect x="4" y="4" width="24" height="24" rx="5" fill="none" stroke="var(--gb-done)" stroke-width="2.4"/><path d="M20 11H12v10h8" fill="none" stroke="var(--gb-done)" stroke-width="2.8" stroke-linecap="square"/></svg><span class="rt">Makes eye contact during feeding</span><span class="rd gb-num">Aug 31</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><rect x="4" y="4" width="24" height="24" rx="5" fill="none" stroke="var(--gb-muted)" stroke-width="2.4"/><path d="M20 11H12v10h8" fill="none" stroke="var(--gb-muted)" stroke-width="2.8" stroke-linecap="square"/></svg><span class="rt">Startles at loud sounds</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><rect x="4" y="4" width="24" height="24" rx="5" fill="none" stroke="var(--gb-muted)" stroke-width="2.4"/><path d="M20 11H12v10h8" fill="none" stroke="var(--gb-muted)" stroke-width="2.8" stroke-linecap="square"/></svg><span class="rt">Focuses on faces</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><rect x="4" y="4" width="24" height="24" rx="5" fill="none" stroke="var(--gb-muted)" stroke-width="2.4"/><path d="M20 11H12v10h8" fill="none" stroke="var(--gb-muted)" stroke-width="2.8" stroke-linecap="square"/></svg><span class="rt">Lifts head briefly during tummy time</span></li></ul>
+  <ul class="rows" lang="ko" aria-label="1개월 발달 이정표"><li class="row done"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="done" style="opacity:1;flex:none"><rect x="4" y="4" width="24" height="24" rx="5" fill="none" stroke="var(--gb-done)" stroke-width="2.4"/><path d="M20 11H12v10h8" fill="none" stroke="var(--gb-done)" stroke-width="2.8" stroke-linecap="square"/></svg><span class="rt">엄마 아빠 목소리를 알아요</span><span class="rd gb-num">8월 31일</span></li><li class="row done"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="done" style="opacity:1;flex:none"><rect x="4" y="4" width="24" height="24" rx="5" fill="none" stroke="var(--gb-done)" stroke-width="2.4"/><path d="M20 11H12v10h8" fill="none" stroke="var(--gb-done)" stroke-width="2.8" stroke-linecap="square"/></svg><span class="rt">수유할 때 눈을 맞춰요</span><span class="rd gb-num">8월 31일</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><rect x="4" y="4" width="24" height="24" rx="5" fill="none" stroke="var(--gb-muted)" stroke-width="2.4"/><path d="M20 11H12v10h8" fill="none" stroke="var(--gb-muted)" stroke-width="2.8" stroke-linecap="square"/></svg><span class="rt">큰 소리에 깜짝 놀라요</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><rect x="4" y="4" width="24" height="24" rx="5" fill="none" stroke="var(--gb-muted)" stroke-width="2.4"/><path d="M20 11H12v10h8" fill="none" stroke="var(--gb-muted)" stroke-width="2.8" stroke-linecap="square"/></svg><span class="rt">얼굴을 가만히 바라봐요</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><rect x="4" y="4" width="24" height="24" rx="5" fill="none" stroke="var(--gb-muted)" stroke-width="2.4"/><path d="M20 11H12v10h8" fill="none" stroke="var(--gb-muted)" stroke-width="2.8" stroke-linecap="square"/></svg><span class="rt">엎드리면 잠깐 고개를 들어요</span></li></ul>
+</div>
+<p class="essence" style="margin-top:12px">Done rows keep their text and add the device plus the date. Colour never carries the state alone.</p>
+
+<h2>App rules</h2>
+<table class="spec"><tr><th scope="row">Canvas</th><td>One column, 16pt gutters; hanji cream page, warm white cards; no pure white, no pure black.</td></tr><tr><th scope="row">Lists</th><td>52pt rows; the seal replaces the checkbox — empty outline before, cinnabar stamp after.</td></tr><tr><th scope="row">Type</th><td>Noto Serif KR for the wordmark and screen titles (both scripts); SF Pro / Apple SD Gothic Neo for everything else.</td></tr><tr><th scope="row">Controls</th><td>12pt radius, pine fill, cream text; secondary is a pine outline; destructive is oxblood text, never a red fill.</td></tr><tr><th scope="row">Motion</th><td>The stamp lands: 120ms scale from 1.15 to 1.0. Nothing else moves.</td></tr></table>
+
+<h2>iOS adaptation</h2>
+<p class="essence" style="margin:0">Tab bar of five with SF-style glyphs; large title uses the serif; safe areas honoured; the stamp is the haptic moment (light impact).</p>
+
+<h2>Do / Don't</h2>
+<div class="two">
+  <div><div class="dd-h">Do</div><ul class="dd"><li>Stamp, don't tick — the seal is the whole brand</li><li>Write KO and EN as one voice</li><li>Keep cinnabar for the seal and the app icon only</li><li>Let hanji cream be the page; cards are warm white</li></ul></div>
+  <div class="dont"><div class="dd-h">Don't</div><ul class="dd"><li>No pastel pink-and-blue baby clichés</li><li>No pure white, no pure black</li><li>No cinnabar text — it is an ornament, not an ink</li><li>No exclamation marks in system copy</li></ul></div>
+</div>
+
+<h2>Korean</h2>
+<p class="essence" style="margin:0">Native. Apple SD Gothic Neo on iOS, Pretendard on the web (CDN), Noto Sans KR as the last fallback. Serif KR for titles in both scripts.</p>
+</main>
+<p class="foot"><a href="app.html">App mock</a> · <a href="tokens.css">tokens.css</a> · <a href="../index.html">All five options</a></p>
+</div></body></html>

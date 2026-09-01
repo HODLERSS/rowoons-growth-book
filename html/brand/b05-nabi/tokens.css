@@ -1,0 +1,59 @@
+/* Nabi (05) — Baby Growth Book brand tokens. Paste into the app to apply this identity. */
+:root {
+  --gb-bg: #F6F8FB;
+  --gb-surface: #FFFFFF;
+  --gb-ink: #2A2140;
+  --gb-muted: #5F5A6E;
+  --gb-primary: #5B3D8C;
+  --gb-on-primary: #F6F8FB;
+  --gb-accent: #6E5300;
+  --gb-ornament: #E9B949;
+  --gb-done: #E9B949;
+  --gb-danger: #9C2B4B;
+  --gb-caution: #6E5300;
+  --gb-info: #5B3D8C;
+  --gb-rule: #E1E5EE;
+  --gb-hover: #EDF0F6;
+  --gb-radius: 18px;
+  --gb-row: 52px;
+  --gb-font-display: "Outfit";
+  --gb-font-ui: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", system-ui, sans-serif;
+}
+/* Dark appearance: same roles, re-tuned values. Every light token has a dark counterpart. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+  --gb-bg: #14121C;
+  --gb-surface: #1D1A28;
+  --gb-ink: #EEEBF5;
+  --gb-muted: #A9A4B8;
+  --gb-primary: #C3A9F0;
+  --gb-on-primary: #14121C;
+  --gb-accent: #F0CC6A;
+  --gb-ornament: #F0CC6A;
+  --gb-done: #F0CC6A;
+  --gb-danger: #F08AA8;
+  --gb-caution: #F0CC6A;
+  --gb-info: #C3A9F0;
+  --gb-rule: #2C2838;
+  --gb-hover: #241F31;
+  }
+}
+:root[data-theme="dark"] {
+  --gb-bg: #14121C;
+  --gb-surface: #1D1A28;
+  --gb-ink: #EEEBF5;
+  --gb-muted: #A9A4B8;
+  --gb-primary: #C3A9F0;
+  --gb-on-primary: #14121C;
+  --gb-accent: #F0CC6A;
+  --gb-ornament: #F0CC6A;
+  --gb-done: #F0CC6A;
+  --gb-danger: #F08AA8;
+  --gb-caution: #F0CC6A;
+  --gb-info: #C3A9F0;
+  --gb-rule: #2C2838;
+  --gb-hover: #241F31;
+}
+/* Numerals (ages, days, counts) are always tabular. */
+.gb-num { font-variant-numeric: tabular-nums; font-feature-settings: "tnum"; }
+/* Colour never carries meaning alone: done = device + label, danger = glyph + word. */

@@ -4,6 +4,8 @@ export interface SourceInfo {
   sourceQuote?: string;
 }
 
+export type MilestoneCategory = "social" | "language" | "cognitive" | "physical";
+
 export interface Milestone extends SourceInfo {
   id: string;
   month: number;
@@ -12,8 +14,6 @@ export interface Milestone extends SourceInfo {
   description: string;
 }
 
-export type MilestoneCategory = "social" | "language" | "cognitive" | "physical";
-
 export interface MilestoneCompletion {
   [milestoneId: string]: {
     completed: boolean;
@@ -21,22 +21,26 @@ export interface MilestoneCompletion {
   };
 }
 
+export type Difficulty = "easy" | "medium" | "advanced";
+
 export interface PlayTip extends SourceInfo {
   id: string;
   month: number;
   title: string;
   description: string;
   materials?: string[];
-  difficulty: "easy" | "medium" | "advanced";
+  difficulty: Difficulty;
   category: string;
 }
+
+export type Severity = "info" | "caution" | "urgent";
 
 export interface WatchOut extends SourceInfo {
   id: string;
   month: number;
   title: string;
   description: string;
-  severity: "info" | "caution" | "urgent";
+  severity: Severity;
   action?: string;
 }
 
@@ -60,12 +64,29 @@ export interface BabyInfo {
   name: string;
   nameKo?: string;
   birthDate: string;
-  gender: "boy" | "girl";
+  /** Kept for backward compatibility; not shown in the UI. */
+  gender?: "boy" | "girl";
 }
 
 export interface AgeInfo {
   months: number;
   days: number;
   totalDays: number;
-  label: string;
+  isFuture: boolean;
+  valid: boolean;
+}
+
+export interface Settings {
+  reminders: boolean;
+  notifyDismissed: boolean;
+}
+
+export interface BackupFile {
+  app: "dodam";
+  version: 1;
+  exportedAt: string;
+  profile: BabyInfo | null;
+  language: "en" | "ko" | null;
+  milestones: MilestoneCompletion;
+  memos: Memo[];
 }

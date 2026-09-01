@@ -1,73 +1,44 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import Script from "next/script";
+import { Noto_Serif_KR } from "next/font/google";
 import "./globals.css";
-import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
-import { AppSidebar } from "@/components/shared/app-sidebar";
-import { MobileNav } from "@/components/shared/mobile-nav";
-import { LanguageProvider } from "@/contexts/language-context";
-import { BabyProvider } from "@/contexts/baby-context";
+import { AppShell } from "@/components/shell/app-shell";
+import { APP_URL } from "@/lib/constants";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const display = Noto_Serif_KR({
+  weight: ["600"],
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-display-face",
+  display: "swap",
+  preload: true,
 });
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
-  themeColor: "#e86f4a",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#FAF6EE" },
+    { media: "(prefers-color-scheme: dark)", color: "#151A16" },
+  ],
 };
 
 export const metadata: Metadata = {
-  title: "Baby Growth Book",
-  description: "Baby growth tracker, milestones, play tips, and memo journal",
+  metadataBase: new URL(APP_URL),
+  title: { default: "Dodam", template: "%s · Dodam" },
+  description: "A month-by-month record of your baby's milestones, play ideas and safety notes. 도담 — 한 달 한 달, 도담도담.",
+  applicationName: "Dodam",
   manifest: "/manifest.json",
-  appleWebApp: {
-    capable: true,
-    statusBarStyle: "default",
-    title: "Growth Book",
-  },
-  icons: {
-    apple: "/apple-touch-icon.png",
-  },
+  appleWebApp: { capable: true, statusBarStyle: "default", title: "Dodam" },
+  icons: { icon: [{ url: "/favicon-32.png", sizes: "32x32" }, { url: "/icon-192.png", sizes: "192x192" }], apple: "/apple-touch-icon.png" },
+  formatDetection: { telephone: false },
+  openGraph: { title: "Dodam", description: "Grow well, one month at a time.", url: APP_URL, siteName: "Dodam", images: ["/og.png"] },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        suppressHydrationWarning
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <LanguageProvider>
-          <BabyProvider>
-            <SidebarProvider>
-              <AppSidebar />
-              <SidebarInset>
-                <main className="flex-1 pb-20 md:pb-0">
-                  {children}
-                </main>
-              </SidebarInset>
-            </SidebarProvider>
-            <MobileNav />
-          </BabyProvider>
-        </LanguageProvider>
-        <Script id="sw-register" strategy="afterInteractive">{`
-          if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/sw.js');
-          }
-        `}</Script>
+    <html lang="en" suppressHydrationWarning className={display.variable}>
+      <body className="antialiased">
+        <AppShell>{children}</AppShell>
       </body>
     </html>
   );

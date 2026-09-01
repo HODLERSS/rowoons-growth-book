@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sprout — brand book</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Noto+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gb-accent);outline-offset:2px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+button,.tap{min-height:44px;min-width:44px;cursor:pointer}
+.gb-num{font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
+.g{flex:none}
+
+:root{
+  --gb-bg: #FFF8F3;
+  --gb-surface: #FFFFFF;
+  --gb-ink: #3A2A22;
+  --gb-muted: #6F5D52;
+  --gb-primary: #B0432A;
+  --gb-on-primary: #FFF8F3;
+  --gb-accent: #B0432A;
+  --gb-ornament: #E86F4A;
+  --gb-done: #2E7A45;
+  --gb-danger: #A0301E;
+  --gb-caution: #8A5E10;
+  --gb-info: #3E5F8C;
+  --gb-rule: #F0DED2;
+  --gb-hover: #FBEDE4;
+  --gb-radius: 20px;
+  --gb-row: 56px;
+  --gb-font-display: "Nunito";
+  --gb-font-ui: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", system-ui, sans-serif;
+}
+.dark{
+  --gb-bg: #1C1512;
+  --gb-surface: #261D18;
+  --gb-ink: #F5E9E1;
+  --gb-muted: #B8A79C;
+  --gb-primary: #F2917A;
+  --gb-on-primary: #1C1512;
+  --gb-accent: #F2917A;
+  --gb-ornament: #F2917A;
+  --gb-done: #8FCB9B;
+  --gb-danger: #F09A8A;
+  --gb-caution: #E0B860;
+  --gb-info: #9FBCE8;
+  --gb-rule: #3A2C25;
+  --gb-hover: #302420;
+}
+body{background:var(--gb-bg);color:var(--gb-ink);font:16px/1.6 var(--gb-font-ui)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px 96px}
+header.hd{padding:72px 0 40px;border-bottom:2px solid var(--gb-rule)}
+.kick{font:600 11px/1 var(--gb-font-ui);letter-spacing:.22em;text-transform:uppercase;color:var(--gb-muted)}
+h1{font:600 44px/1.1 var(--gb-font-display),serif;margin-top:10px;display:flex;gap:16px;align-items:baseline;flex-wrap:wrap}
+h1 .word{font-family:'Nunito',sans-serif;font-weight:800;letter-spacing:-.02em;}
+h1 .ko{font-family:"Noto Serif KR",serif;font-weight:600;font-size:34px;color:var(--gb-muted)}
+.tagline{font:500 22px/1.35 var(--gb-font-display),serif;margin-top:18px}
+.tagline .k{display:block;font-family:"Noto Serif KR",serif;color:var(--gb-muted);font-size:19px;margin-top:4px}
+.essence{color:var(--gb-muted);max-width:66ch;margin-top:14px}
+h2{font:600 12px/1 var(--gb-font-ui);letter-spacing:.18em;text-transform:uppercase;color:var(--gb-muted);margin:52px 0 16px}
+.stage{border:1px solid var(--gb-rule);border-radius:var(--gb-radius);padding:36px 20px;background:var(--gb-surface)}
+.marks{display:flex;gap:28px;justify-content:center;align-items:center;flex-wrap:wrap}
+.marks .cell{padding:18px;border:1px dashed var(--gb-rule);border-radius:12px;display:flex;flex-direction:column;align-items:center;gap:10px;font-size:12.5px;color:var(--gb-muted)}
+.marks .rev{background:var(--gb-primary);border-color:var(--gb-primary)}
+.marks .rev span{color:var(--gb-on-primary)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.sw{border:1px solid var(--gb-rule);border-radius:8px;overflow:hidden;background:var(--gb-surface)}
+.sw .chip{height:52px}
+.sw .meta{padding:8px 10px;font-size:12.5px;line-height:1.5}
+.sw .meta b{display:block}
+.sw .cr{display:block;color:var(--gb-muted)}
+.darkpane{background:var(--gb-bg);color:var(--gb-ink);border-radius:var(--gb-radius);padding:16px}
+table{width:100%;border-collapse:collapse}
+table.spec th,table.spec td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--gb-rule);font-size:14.5px;vertical-align:top}
+table.spec th{font-weight:600;white-space:nowrap;width:110px;color:var(--gb-muted)}
+.type .d1{font:600 34px/1.2 var(--gb-font-display),serif}
+.type .d1k{font:600 30px/1.3 "Noto Serif KR",serif;margin-top:6px}
+.type .b{margin-top:14px;max-width:60ch}
+.type .c{font-size:13px;color:var(--gb-muted);margin-top:8px}
+.type .num{font-size:28px;font-weight:600;margin-top:14px}
+.voice{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.vc{border:1px solid var(--gb-rule);border-radius:var(--gb-radius);padding:16px;background:var(--gb-surface)}
+.vc .lab{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gb-muted);margin-bottom:8px}
+.vc p{font-size:15px}
+.vc p.k{color:var(--gb-muted);margin-top:6px}
+.vc.urgent{border-left:4px solid var(--gb-danger)}
+.vc.urgent .lab{color:var(--gb-danger)}
+.lists{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+ul.rows{list-style:none;border:1px solid var(--gb-rule);border-radius:var(--gb-radius);background:var(--gb-surface);overflow:hidden}
+.row{display:flex;align-items:center;gap:12px;min-height:var(--gb-row);padding:8px 14px;border-bottom:1px solid var(--gb-rule);font-size:15px}
+.row:last-child{border-bottom:0}
+.row .rt{flex:1}
+.row.done .rt{color:var(--gb-muted)}
+.row .rd{font-size:12.5px;color:var(--gb-done)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+ul.dd{padding-left:18px}
+ul.dd li{margin:6px 0}
+.dd-h{font-weight:600;margin-bottom:6px}
+.dont .dd-h{color:var(--gb-danger)}
+.foot{margin-top:56px;padding-top:16px;border-top:1px solid var(--gb-rule);font-size:13px;color:var(--gb-muted)}
+.foot a{padding:12px 0;display:inline-block}
+</style>
+</head>
+<body><div class="wrap">
+<header class="hd">
+  <div class="kick">Baby Growth Book · brand option 03 · Warm coral, evolved</div>
+  <h1><span class="word">Sprout</span><span class="ko">새싹</span></h1>
+  <p class="tagline">Grow, one leaf at a time.<span class="k">한 잎, 한 잎 자라요.</span></p>
+  <p class="essence">The current identity, matured: terracotta rather than coral, cream rather than white, and the two-leaf sprout kept as the only picture in the system. Friendly and upbeat; the safest of the five and the least distinctive — a name already used by several baby apps.</p>
+</header>
+<main>
+<h2>Marks</h2>
+<div class="stage"><div class="marks">
+  <div class="cell"><svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 32 32" role="img" aria-label="Sprout mark"><path d="M16 28V14" stroke="#B0432A" stroke-width="2.6" stroke-linecap="round" fill="none"/><path d="M16 16c-1-6-5-8-10-8 0 6 4 9 10 8z" fill="#B0432A"/><path d="M16 12c1-5 4-7 9-7 0 5-3 8-9 7z" fill="#B0432A"/></svg><span>Standard</span></div>
+  <div class="cell rev"><svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 32 32" role="img" aria-label="Sprout mark reversed"><path d="M16 28V14" stroke="#FFF8F3" stroke-width="2.6" stroke-linecap="round" fill="none"/><path d="M16 16c-1-6-5-8-10-8 0 6 4 9 10 8z" fill="#FFF8F3"/><path d="M16 12c1-5 4-7 9-7 0 5-3 8-9 7z" fill="#FFF8F3"/></svg><span>Reversed</span></div>
+  <div class="cell"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 32 32" role="img" aria-label="Sprout"><rect width="32" height="32" rx="7" fill="#E86F4A"/><g transform="translate(4.8 4.8) scale(0.7)"><path d="M16 28V14" stroke="#FFF8F3" stroke-width="2.6" stroke-linecap="round" fill="none"/><path d="M16 16c-1-6-5-8-10-8 0 6 4 9 10 8z" fill="#FFF8F3"/><path d="M16 12c1-5 4-7 9-7 0 5-3 8-9 7z" fill="#FFF8F3"/></g></svg><span>Favicon</span></div>
+  <div class="cell"><svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 1024 1024" role="img" aria-label="Sprout app icon"><rect width="1024" height="1024" fill="#E86F4A"/><path d="M512 880V440" stroke="#FFF8F3" stroke-width="72" stroke-linecap="round" fill="none"/><path d="M512 520c-30-190-160-250-320-250 0 190 130 290 320 250z" fill="#FFF8F3"/><path d="M512 400c30-160 130-220 290-220 0 160-100 250-290 220z" fill="#FFF8F3"/></svg><span>App icon (1024)</span></div>
+</div>
+<p style="text-align:center;color:var(--gb-muted);font-size:14px;margin-top:18px">Device: the two-leaf sprout. Geometric on a 32-unit grid; never redrawn by eye.</p>
+</div>
+
+<h2>Colour — light</h2>
+<div class="grid"><div class="sw"><div class="chip" style="background:#FFF8F3"></div><div class="meta"><b>Page</b><span class="gb-num">#FFF8F3</span></div></div><div class="sw"><div class="chip" style="background:#FFFFFF"></div><div class="meta"><b>Surface</b><span class="gb-num">#FFFFFF</span></div></div><div class="sw"><div class="chip" style="background:#3A2A22"></div><div class="meta"><b>Ink</b><span class="gb-num">#3A2A22</span><span class="cr">13.0:1 on page</span></div></div><div class="sw"><div class="chip" style="background:#6F5D52"></div><div class="meta"><b>Muted</b><span class="gb-num">#6F5D52</span><span class="cr">5.9:1</span></div></div><div class="sw"><div class="chip" style="background:#B0432A"></div><div class="meta"><b>Primary</b><span class="gb-num">#B0432A</span><span class="cr">5.4:1 with its text</span></div></div><div class="sw"><div class="chip" style="background:#B0432A"></div><div class="meta"><b>Accent (text)</b><span class="gb-num">#B0432A</span><span class="cr">5.4:1</span></div></div><div class="sw"><div class="chip" style="background:#E86F4A"></div><div class="meta"><b>Ornament</b><span class="gb-num">#E86F4A</span><span class="cr">marks only</span></div></div><div class="sw"><div class="chip" style="background:#2E7A45"></div><div class="meta"><b>Done</b><span class="gb-num">#2E7A45</span><span class="cr">device</span></div></div><div class="sw"><div class="chip" style="background:#A0301E"></div><div class="meta"><b>Danger</b><span class="gb-num">#A0301E</span><span class="cr">6.8:1</span></div></div><div class="sw"><div class="chip" style="background:#8A5E10"></div><div class="meta"><b>Caution</b><span class="gb-num">#8A5E10</span><span class="cr">5.4:1</span></div></div><div class="sw"><div class="chip" style="background:#3E5F8C"></div><div class="meta"><b>Info</b><span class="gb-num">#3E5F8C</span><span class="cr">6.2:1</span></div></div><div class="sw"><div class="chip" style="background:#F0DED2"></div><div class="meta"><b>Rule</b><span class="gb-num">#F0DED2</span></div></div></div>
+<h2>Colour — dark</h2>
+<div class="dark darkpane"><div class="grid"><div class="sw"><div class="chip" style="background:#1C1512"></div><div class="meta"><b>Page</b><span class="gb-num">#1C1512</span></div></div><div class="sw"><div class="chip" style="background:#261D18"></div><div class="meta"><b>Surface</b><span class="gb-num">#261D18</span></div></div><div class="sw"><div class="chip" style="background:#F5E9E1"></div><div class="meta"><b>Ink</b><span class="gb-num">#F5E9E1</span><span class="cr">15.1:1 on page</span></div></div><div class="sw"><div class="chip" style="background:#B8A79C"></div><div class="meta"><b>Muted</b><span class="gb-num">#B8A79C</span><span class="cr">7.8:1</span></div></div><div class="sw"><div class="chip" style="background:#F2917A"></div><div class="meta"><b>Primary</b><span class="gb-num">#F2917A</span><span class="cr">7.8:1 with its text</span></div></div><div class="sw"><div class="chip" style="background:#F2917A"></div><div class="meta"><b>Accent (text)</b><span class="gb-num">#F2917A</span><span class="cr">7.8:1</span></div></div><div class="sw"><div class="chip" style="background:#F2917A"></div><div class="meta"><b>Ornament</b><span class="gb-num">#F2917A</span><span class="cr">marks only</span></div></div><div class="sw"><div class="chip" style="background:#8FCB9B"></div><div class="meta"><b>Done</b><span class="gb-num">#8FCB9B</span><span class="cr">device</span></div></div><div class="sw"><div class="chip" style="background:#F09A8A"></div><div class="meta"><b>Danger</b><span class="gb-num">#F09A8A</span><span class="cr">8.3:1</span></div></div><div class="sw"><div class="chip" style="background:#E0B860"></div><div class="meta"><b>Caution</b><span class="gb-num">#E0B860</span><span class="cr">9.6:1</span></div></div><div class="sw"><div class="chip" style="background:#9FBCE8"></div><div class="meta"><b>Info</b><span class="gb-num">#9FBCE8</span><span class="cr">9.3:1</span></div></div><div class="sw"><div class="chip" style="background:#3A2C25"></div><div class="meta"><b>Rule</b><span class="gb-num">#3A2C25</span></div></div></div></div>
+
+<h2>Type</h2>
+<div class="stage type">
+  <div class="d1">Grow, one leaf at a time.</div>
+  <div class="d1k">한 잎, 한 잎 자라요.</div>
+  <p class="b">Body is the platform face: SF Pro on iOS with Apple SD Gothic Neo for Korean; Pretendard on the web. 16px body, 15px list rows, 13px captions — nothing smaller than 11px. The display face is reserved for the wordmark, screen titles and month numerals.</p>
+  <p class="c">Caption · 부모님께 안내 · 13px, muted</p>
+  <div class="num gb-num">4 months 14 days · 4개월 14일 · 136 days</div>
+</div>
+
+<h2>Voice</h2>
+<p class="essence" style="margin:0 0 14px">An encouraging friend who has been through it. Upbeat, plain, kind.</p>
+<div class="voice">
+  <div class="vc"><div class="lab">Milestone confirmed</div><p>Nice — first smile logged.</p><p class="k">좋아요. 첫 미소 기록 완료.</p></div>
+  <div class="vc"><div class="lab">Journal empty</div><p>Nothing here yet. Start with today.</p><p class="k">아직 아무것도 없어요. 오늘부터 시작해요.</p></div>
+  <div class="vc urgent"><div class="lab">Urgent watch-out</div><p>Back to sleep, every single time.</p><p class="k">잠은 언제나 등을 대고 재워요.</p></div>
+</div>
+
+<h2>Application — the milestone list</h2>
+<div class="lists">
+  <ul class="rows" aria-label="Month 1 milestones, English"><li class="row done"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="done" style="opacity:1;flex:none"><path d="M16 28V14" stroke="var(--gb-done)" stroke-width="2.6" stroke-linecap="round" fill="none"/><path d="M16 16c-1-6-5-8-10-8 0 6 4 9 10 8z" fill="var(--gb-done)"/><path d="M16 12c1-5 4-7 9-7 0 5-3 8-9 7z" fill="var(--gb-done)"/></svg><span class="rt">Recognizes parent&#x27;s voice</span><span class="rd gb-num">Aug 31</span></li><li class="row done"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="done" style="opacity:1;flex:none"><path d="M16 28V14" stroke="var(--gb-done)" stroke-width="2.6" stroke-linecap="round" fill="none"/><path d="M16 16c-1-6-5-8-10-8 0 6 4 9 10 8z" fill="var(--gb-done)"/><path d="M16 12c1-5 4-7 9-7 0 5-3 8-9 7z" fill="var(--gb-done)"/></svg><span class="rt">Makes eye contact during feeding</span><span class="rd gb-num">Aug 31</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><path d="M16 28V14" stroke="var(--gb-muted)" stroke-width="2.6" stroke-linecap="round" fill="none"/><path d="M16 16c-1-6-5-8-10-8 0 6 4 9 10 8z" fill="var(--gb-muted)"/><path d="M16 12c1-5 4-7 9-7 0 5-3 8-9 7z" fill="var(--gb-muted)"/></svg><span class="rt">Startles at loud sounds</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><path d="M16 28V14" stroke="var(--gb-muted)" stroke-width="2.6" stroke-linecap="round" fill="none"/><path d="M16 16c-1-6-5-8-10-8 0 6 4 9 10 8z" fill="var(--gb-muted)"/><path d="M16 12c1-5 4-7 9-7 0 5-3 8-9 7z" fill="var(--gb-muted)"/></svg><span class="rt">Focuses on faces</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><path d="M16 28V14" stroke="var(--gb-muted)" stroke-width="2.6" stroke-linecap="round" fill="none"/><path d="M16 16c-1-6-5-8-10-8 0 6 4 9 10 8z" fill="var(--gb-muted)"/><path d="M16 12c1-5 4-7 9-7 0 5-3 8-9 7z" fill="var(--gb-muted)"/></svg><span class="rt">Lifts head briefly during tummy time</span></li></ul>
+  <ul class="rows" lang="ko" aria-label="1개월 발달 이정표"><li class="row done"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="done" style="opacity:1;flex:none"><path d="M16 28V14" stroke="var(--gb-done)" stroke-width="2.6" stroke-linecap="round" fill="none"/><path d="M16 16c-1-6-5-8-10-8 0 6 4 9 10 8z" fill="var(--gb-done)"/><path d="M16 12c1-5 4-7 9-7 0 5-3 8-9 7z" fill="var(--gb-done)"/></svg><span class="rt">엄마 아빠 목소리를 알아요</span><span class="rd gb-num">8월 31일</span></li><li class="row done"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="done" style="opacity:1;flex:none"><path d="M16 28V14" stroke="var(--gb-done)" stroke-width="2.6" stroke-linecap="round" fill="none"/><path d="M16 16c-1-6-5-8-10-8 0 6 4 9 10 8z" fill="var(--gb-done)"/><path d="M16 12c1-5 4-7 9-7 0 5-3 8-9 7z" fill="var(--gb-done)"/></svg><span class="rt">수유할 때 눈을 맞춰요</span><span class="rd gb-num">8월 31일</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><path d="M16 28V14" stroke="var(--gb-muted)" stroke-width="2.6" stroke-linecap="round" fill="none"/><path d="M16 16c-1-6-5-8-10-8 0 6 4 9 10 8z" fill="var(--gb-muted)"/><path d="M16 12c1-5 4-7 9-7 0 5-3 8-9 7z" fill="var(--gb-muted)"/></svg><span class="rt">큰 소리에 깜짝 놀라요</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><path d="M16 28V14" stroke="var(--gb-muted)" stroke-width="2.6" stroke-linecap="round" fill="none"/><path d="M16 16c-1-6-5-8-10-8 0 6 4 9 10 8z" fill="var(--gb-muted)"/><path d="M16 12c1-5 4-7 9-7 0 5-3 8-9 7z" fill="var(--gb-muted)"/></svg><span class="rt">얼굴을 가만히 바라봐요</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><path d="M16 28V14" stroke="var(--gb-muted)" stroke-width="2.6" stroke-linecap="round" fill="none"/><path d="M16 16c-1-6-5-8-10-8 0 6 4 9 10 8z" fill="var(--gb-muted)"/><path d="M16 12c1-5 4-7 9-7 0 5-3 8-9 7z" fill="var(--gb-muted)"/></svg><span class="rt">엎드리면 잠깐 고개를 들어요</span></li></ul>
+</div>
+<p class="essence" style="margin-top:12px">Done rows keep their text and add the device plus the date. Colour never carries the state alone.</p>
+
+<h2>App rules</h2>
+<table class="spec"><tr><th scope="row">Canvas</th><td>One column; cream page, white cards, generous 20pt radius.</td></tr><tr><th scope="row">Lists</th><td>56pt rows; the leaf fills green when confirmed.</td></tr><tr><th scope="row">Type</th><td>Nunito for the wordmark and titles; system faces for body in both scripts.</td></tr><tr><th scope="row">Controls</th><td>Pill buttons, terracotta fill, cream text.</td></tr><tr><th scope="row">Motion</th><td>Leaf unfolds 180ms on confirm.</td></tr></table>
+
+<h2>iOS adaptation</h2>
+<p class="essence" style="margin:0">Five tabs; rounded, friendly, familiar to anyone who has used a consumer health app.</p>
+
+<h2>Do / Don't</h2>
+<div class="two">
+  <div><div class="dd-h">Do</div><ul class="dd"><li>Keep the sprout as the only illustration</li><li>Use green for done only</li><li>Cream page, white cards</li><li>Short, cheerful sentences</li></ul></div>
+  <div class="dont"><div class="dd-h">Don't</div><ul class="dd"><li>No gradients on the icon (the current one has two)</li><li>No sparkle or star motifs</li><li>No additional mascots</li><li>No coral body text</li></ul></div>
+</div>
+
+<h2>Korean</h2>
+<p class="essence" style="margin:0">Apple SD Gothic Neo / Pretendard for UI; Nunito carries Latin titles, Korean titles set in the UI face at 700.</p>
+</main>
+<p class="foot"><a href="app.html">App mock</a> · <a href="tokens.css">tokens.css</a> · <a href="../index.html">All five options</a></p>
+</div></body></html>

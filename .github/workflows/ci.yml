@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Content integrity and Korean parity
+        run: python3 scripts/qa/content_check.py
+      - run: npm run typecheck
+      - run: npx eslint --max-warnings=0
+      - run: npm test
+      - run: npm run build
+      - name: Native export builds
+        run: npm run build:native
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium webkit
+      - name: E2E (iPhone Chromium + WebKit, dark, desktop)
+        run: npx playwright test
+        env:
+          CI: "1"
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report
+          path: |
+            test-results
+            qa/e2e-results.json
+          retention-days: 7

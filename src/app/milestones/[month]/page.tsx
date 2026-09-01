@@ -1,80 +1,15 @@
-"use client";
+import { ALL_MONTHS } from "@/lib/constants";
+import { getMonthBundle } from "@/lib/content-loader";
+import { MilestonesScreen } from "@/screens/milestones-screen";
 
-import { useParams, useRouter } from "next/navigation";
-import { useMemo, useEffect } from "react";
-import { Header } from "@/components/shared/header";
-import { MonthNavigator } from "@/components/shared/month-navigator";
-import { MonthlyNote } from "@/components/shared/monthly-note";
-import { MilestoneProgress } from "@/components/milestones/milestone-progress";
-import { CategorySection } from "@/components/milestones/category-section";
-import { useMilestones } from "@/hooks/use-milestones";
-import { useLanguage } from "@/contexts/language-context";
-import { useAge } from "@/hooks/use-age";
-import { getMilestones, getMilestonesByCategory } from "@/lib/content-loader";
-import { MILESTONE_CATEGORIES } from "@/lib/constants";
+export const dynamicParams = false;
 
-export default function MilestonesPage() {
-  const params = useParams<{ month: string }>();
-  const router = useRouter();
-  const { lang, t } = useLanguage();
-  const { currentMonth } = useAge();
+export function generateStaticParams() {
+  return ALL_MONTHS.map((m) => ({ month: String(m) }));
+}
 
-  useEffect(() => {
-    if (params.month === "current") {
-      router.replace(`/milestones/${currentMonth}`);
-    }
-  }, [params.month, router, currentMonth]);
-
-  const month = params.month === "current" ? currentMonth : Number(params.month);
-  const { toggle, isCompleted, stats } = useMilestones();
-
-  const milestones = useMemo(() => getMilestones(month, lang), [month, lang]);
-  const byCategory = useMemo(() => getMilestonesByCategory(month, lang), [month, lang]);
-  const milestoneIds = useMemo(() => milestones.map((m) => m.id), [milestones]);
-  const completionStats = stats(milestoneIds);
-
-  return (
-    <div className="flex flex-col h-full">
-      <Header
-        title={t("milestones.title").replace("{month}", String(month))}
-        subtitle={t("milestones.subtitle").replace("{count}", String(milestones.length))}
-      />
-
-      <div className="flex-1 overflow-y-auto">
-        <div className="p-4 space-y-6 max-w-2xl mx-auto">
-          <MonthNavigator basePath="/milestones" selectedMonth={month} />
-          <MonthlyNote month={month} variant="milestones" />
-
-          {milestones.length === 0 ? (
-            <div className="text-center py-12 space-y-2">
-              <p className="text-4xl">🌱</p>
-              <p className="text-muted-foreground text-sm">
-                {t("milestones.empty").replace("{month}", String(month))}
-              </p>
-            </div>
-          ) : (
-            <>
-              <MilestoneProgress
-                completed={completionStats.completed}
-                total={completionStats.total}
-                percentage={completionStats.percentage}
-              />
-
-              <div className="space-y-6">
-                {MILESTONE_CATEGORIES.map((cat) => (
-                  <CategorySection
-                    key={cat.value}
-                    category={cat.value}
-                    milestones={byCategory[cat.value]}
-                    isCompleted={isCompleted}
-                    onToggle={toggle}
-                  />
-                ))}
-              </div>
-            </>
-          )}
-        </div>
-      </div>
-    </div>
-  );
+export default async function Page({ params }: { params: Promise<{ month: string }> }) {
+  const { month } = await params;
+  const m = Number(month);
+  return <MilestonesScreen month={m} content={getMonthBundle(m)} />;
 }

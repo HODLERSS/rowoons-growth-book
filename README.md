@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dodam (도담)
 
-## Getting Started
+A month-by-month book for a baby's first 36 months: milestones, play ideas, safety notes and a private journal — in
+English and Korean, built with Next.js 16 and shipped as a PWA (baby.minjae.co) and an iOS app (Capacitor).
 
-First, run the development server:
-
+## Run
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm ci
+npm run dev            # http://localhost:3000
+npm run build && npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Quality gate
+```bash
+npm run typecheck && npm run lint && npm test     # unit
+npm run build && npm run test:e2e                 # Playwright (iPhone Chromium/WebKit, dark, desktop)
+npm run qa                                        # docs/QUALITY.md machine checks + Lighthouse
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Native (iOS)
+```bash
+npm run cap:sync       # static export → ios/App/App/public
+npm run cap:open       # Xcode
+```
+See `docs/app-store/LAUNCH_CHECKLIST.md`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Layout
+- `src/app` routes (server wrappers) · `src/screens` client screens · `src/components` UI · `src/hooks` state
+  (localStorage via `useSyncExternalStore`) · `src/lib` logic · `src/i18n` UI strings · `src/content` EN/KO data.
+- `html/brand` — the brand system (five options, Dodam selected; `_build/qa.py` verifies it).
+- `docs` — quality metrics, Korean style guide, App Store material.
+- Web-only routes (`/admin`, `/api/push/*`) use the `.web.tsx` / `.web.ts` extension and are excluded from the native build.

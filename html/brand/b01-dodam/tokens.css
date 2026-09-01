@@ -1,0 +1,59 @@
+/* Dodam (01) — Baby Growth Book brand tokens. Paste into the app to apply this identity. */
+:root {
+  --gb-bg: #FAF6EE;
+  --gb-surface: #FFFCF6;
+  --gb-ink: #1F3327;
+  --gb-muted: #5F6356;
+  --gb-primary: #2F5D45;
+  --gb-on-primary: #FAF6EE;
+  --gb-accent: #A63D2A;
+  --gb-ornament: #C9453A;
+  --gb-done: #C9453A;
+  --gb-danger: #8C2F1F;
+  --gb-caution: #7D5F16;
+  --gb-info: #2F5D45;
+  --gb-rule: #E6DFD0;
+  --gb-hover: #F3EDE0;
+  --gb-radius: 12px;
+  --gb-row: 52px;
+  --gb-font-display: "Noto Serif KR";
+  --gb-font-ui: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", system-ui, sans-serif;
+}
+/* Dark appearance: same roles, re-tuned values. Every light token has a dark counterpart. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+  --gb-bg: #151A16;
+  --gb-surface: #1D231E;
+  --gb-ink: #ECE7DA;
+  --gb-muted: #A9AA9B;
+  --gb-primary: #8CC1A2;
+  --gb-on-primary: #10150F;
+  --gb-accent: #E7967F;
+  --gb-ornament: #E05C4E;
+  --gb-done: #E05C4E;
+  --gb-danger: #E68A79;
+  --gb-caution: #D9B45B;
+  --gb-info: #8CC1A2;
+  --gb-rule: #2D342E;
+  --gb-hover: #242B25;
+  }
+}
+:root[data-theme="dark"] {
+  --gb-bg: #151A16;
+  --gb-surface: #1D231E;
+  --gb-ink: #ECE7DA;
+  --gb-muted: #A9AA9B;
+  --gb-primary: #8CC1A2;
+  --gb-on-primary: #10150F;
+  --gb-accent: #E7967F;
+  --gb-ornament: #E05C4E;
+  --gb-done: #E05C4E;
+  --gb-danger: #E68A79;
+  --gb-caution: #D9B45B;
+  --gb-info: #8CC1A2;
+  --gb-rule: #2D342E;
+  --gb-hover: #242B25;
+}
+/* Numerals (ages, days, counts) are always tabular. */
+.gb-num { font-variant-numeric: tabular-nums; font-feature-settings: "tnum"; }
+/* Colour never carries meaning alone: done = device + label, danger = glyph + word. */

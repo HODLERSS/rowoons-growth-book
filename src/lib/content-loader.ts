@@ -1,5 +1,11 @@
-import { Milestone, PlayTip, WatchOut, MonthlyNote } from "./types";
-import type { Language } from "@/contexts/language-context";
+/**
+ * Server-side / test access to the full content set. Never import this from a client component:
+ * it pulls every month in both languages into the bundle. Clients use lib/month-content.ts.
+ */
+import type { Milestone, MilestoneCategory, MonthlyNote, PlayTip, WatchOut } from "./types";
+import type { Language } from "@/i18n";
+import type { MonthBundle, MonthContent } from "./month-content";
+import { CATEGORY_ORDER, SEVERITY_ORDER } from "./constants";
 
 import milestonesEn from "@/content/milestones.json";
 import playTipsEn from "@/content/play-tips.json";
@@ -24,20 +30,17 @@ const data = {
     watchOuts: watchOutsKo as WatchOut[],
     monthlyNotes: monthlyNotesKo as Record<string, MonthlyNote>,
   },
-};
+} satisfies Record<Language, unknown>;
 
 export function getMilestones(month: number, lang: Language = "en"): Milestone[] {
   return data[lang].milestones.filter((m) => m.month === month);
 }
 
-export function getMilestonesByCategory(month: number, lang: Language = "en") {
-  const milestones = getMilestones(month, lang);
-  return {
-    social: milestones.filter((m) => m.category === "social"),
-    language: milestones.filter((m) => m.category === "language"),
-    cognitive: milestones.filter((m) => m.category === "cognitive"),
-    physical: milestones.filter((m) => m.category === "physical"),
-  };
+export function getMilestonesByCategory(month: number, lang: Language = "en"): Record<MilestoneCategory, Milestone[]> {
+  const list = getMilestones(month, lang);
+  const out = { social: [], language: [], cognitive: [], physical: [] } as Record<MilestoneCategory, Milestone[]>;
+  for (const cat of CATEGORY_ORDER) out[cat] = list.filter((m) => m.category === cat);
+  return out;
 }
 
 export function getAllMilestones(lang: Language = "en"): Milestone[] {
@@ -48,23 +51,23 @@ export function getPlayTips(month: number, lang: Language = "en"): PlayTip[] {
   return data[lang].playTips.filter((t) => t.month === month);
 }
 
+/** Watch-outs sorted urgent → caution → info. */
 export function getWatchOuts(month: number, lang: Language = "en"): WatchOut[] {
-  return data[lang].watchOuts.filter((w) => w.month === month);
+  return data[lang].watchOuts
+    .filter((w) => w.month === month)
+    .slice()
+    .sort((a, b) => SEVERITY_ORDER[a.severity] - SEVERITY_ORDER[b.severity]);
 }
 
 export function getMonthlyNote(month: number, lang: Language = "en"): MonthlyNote | null {
   return data[lang].monthlyNotes[String(month)] ?? null;
 }
 
-export function getAvailableMonths(
-  type: "milestones" | "play-tips" | "watch-outs"
-): number[] {
-  const src =
-    type === "milestones"
-      ? data.en.milestones
-      : type === "play-tips"
-        ? data.en.playTips
-        : data.en.watchOuts;
-  const months = new Set(src.map((d) => d.month));
-  return Array.from(months).sort((a, b) => a - b);
+export function getMonthContent(month: number, lang: Language): MonthContent {
+  return { month, milestones: getMilestones(month, lang), playTips: getPlayTips(month, lang), watchOuts: getWatchOuts(month, lang), note: getMonthlyNote(month, lang) };
+}
+
+/** Both languages for one month — passed from static pages to their client screens. */
+export function getMonthBundle(month: number): MonthBundle {
+  return { en: getMonthContent(month, "en"), ko: getMonthContent(month, "ko") };
 }

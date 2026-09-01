@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moons — brand book</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Noto+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gb-accent);outline-offset:2px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+button,.tap{min-height:44px;min-width:44px;cursor:pointer}
+.gb-num{font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
+.g{flex:none}
+
+:root{
+  --gb-bg: #F7F5EE;
+  --gb-surface: #FFFFFF;
+  --gb-ink: #1B2233;
+  --gb-muted: #5B6170;
+  --gb-primary: #24325A;
+  --gb-on-primary: #F7F5EE;
+  --gb-accent: #6E5310;
+  --gb-ornament: #D4AA3F;
+  --gb-done: #D4AA3F;
+  --gb-danger: #9B2F2F;
+  --gb-caution: #6E5310;
+  --gb-info: #24325A;
+  --gb-rule: #E3E0D6;
+  --gb-hover: #EFECE3;
+  --gb-radius: 16px;
+  --gb-row: 52px;
+  --gb-font-display: "Fraunces";
+  --gb-font-ui: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", system-ui, sans-serif;
+}
+.dark{
+  --gb-bg: #0F1422;
+  --gb-surface: #171D2E;
+  --gb-ink: #ECEBE3;
+  --gb-muted: #A0A4B0;
+  --gb-primary: #A9B8E8;
+  --gb-on-primary: #0F1422;
+  --gb-accent: #E2C46B;
+  --gb-ornament: #E2C46B;
+  --gb-done: #E2C46B;
+  --gb-danger: #F09090;
+  --gb-caution: #E2C46B;
+  --gb-info: #A9B8E8;
+  --gb-rule: #262D40;
+  --gb-hover: #1E2537;
+}
+body{background:var(--gb-bg);color:var(--gb-ink);font:16px/1.6 var(--gb-font-ui)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px 96px}
+header.hd{padding:72px 0 40px;border-bottom:2px solid var(--gb-rule)}
+.kick{font:600 11px/1 var(--gb-font-ui);letter-spacing:.22em;text-transform:uppercase;color:var(--gb-muted)}
+h1{font:600 44px/1.1 var(--gb-font-display),serif;margin-top:10px;display:flex;gap:16px;align-items:baseline;flex-wrap:wrap}
+h1 .word{font-family:'Fraunces',serif;font-weight:500;letter-spacing:.01em;}
+h1 .ko{font-family:"Noto Serif KR",serif;font-weight:600;font-size:34px;color:var(--gb-muted)}
+.tagline{font:500 22px/1.35 var(--gb-font-display),serif;margin-top:18px}
+.tagline .k{display:block;font-family:"Noto Serif KR",serif;color:var(--gb-muted);font-size:19px;margin-top:4px}
+.essence{color:var(--gb-muted);max-width:66ch;margin-top:14px}
+h2{font:600 12px/1 var(--gb-font-ui);letter-spacing:.18em;text-transform:uppercase;color:var(--gb-muted);margin:52px 0 16px}
+.stage{border:1px solid var(--gb-rule);border-radius:var(--gb-radius);padding:36px 20px;background:var(--gb-surface)}
+.marks{display:flex;gap:28px;justify-content:center;align-items:center;flex-wrap:wrap}
+.marks .cell{padding:18px;border:1px dashed var(--gb-rule);border-radius:12px;display:flex;flex-direction:column;align-items:center;gap:10px;font-size:12.5px;color:var(--gb-muted)}
+.marks .rev{background:var(--gb-primary);border-color:var(--gb-primary)}
+.marks .rev span{color:var(--gb-on-primary)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.sw{border:1px solid var(--gb-rule);border-radius:8px;overflow:hidden;background:var(--gb-surface)}
+.sw .chip{height:52px}
+.sw .meta{padding:8px 10px;font-size:12.5px;line-height:1.5}
+.sw .meta b{display:block}
+.sw .cr{display:block;color:var(--gb-muted)}
+.darkpane{background:var(--gb-bg);color:var(--gb-ink);border-radius:var(--gb-radius);padding:16px}
+table{width:100%;border-collapse:collapse}
+table.spec th,table.spec td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--gb-rule);font-size:14.5px;vertical-align:top}
+table.spec th{font-weight:600;white-space:nowrap;width:110px;color:var(--gb-muted)}
+.type .d1{font:600 34px/1.2 var(--gb-font-display),serif}
+.type .d1k{font:600 30px/1.3 "Noto Serif KR",serif;margin-top:6px}
+.type .b{margin-top:14px;max-width:60ch}
+.type .c{font-size:13px;color:var(--gb-muted);margin-top:8px}
+.type .num{font-size:28px;font-weight:600;margin-top:14px}
+.voice{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.vc{border:1px solid var(--gb-rule);border-radius:var(--gb-radius);padding:16px;background:var(--gb-surface)}
+.vc .lab{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gb-muted);margin-bottom:8px}
+.vc p{font-size:15px}
+.vc p.k{color:var(--gb-muted);margin-top:6px}
+.vc.urgent{border-left:4px solid var(--gb-danger)}
+.vc.urgent .lab{color:var(--gb-danger)}
+.lists{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+ul.rows{list-style:none;border:1px solid var(--gb-rule);border-radius:var(--gb-radius);background:var(--gb-surface);overflow:hidden}
+.row{display:flex;align-items:center;gap:12px;min-height:var(--gb-row);padding:8px 14px;border-bottom:1px solid var(--gb-rule);font-size:15px}
+.row:last-child{border-bottom:0}
+.row .rt{flex:1}
+.row.done .rt{color:var(--gb-muted)}
+.row .rd{font-size:12.5px;color:var(--gb-done)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+ul.dd{padding-left:18px}
+ul.dd li{margin:6px 0}
+.dd-h{font-weight:600;margin-bottom:6px}
+.dont .dd-h{color:var(--gb-danger)}
+.foot{margin-top:56px;padding-top:16px;border-top:1px solid var(--gb-rule);font-size:13px;color:var(--gb-muted)}
+.foot a{padding:12px 0;display:inline-block}
+</style>
+</head>
+<body><div class="wrap">
+<header class="hd">
+  <div class="kick">Baby Growth Book · brand option 02 · Thirty-six moons</div>
+  <h1><span class="word">Moons</span><span class="ko">달</span></h1>
+  <p class="tagline">Thirty-six moons, one small person.<span class="k">서른여섯 번의 달, 한 아이.</span></p>
+  <p class="essence">A month is a moon. The book is thirty-six of them. Ivory page, indigo ink, and a moon that fills gold as the month&#x27;s milestones are met. Quiet and observational — the voice of someone who keeps a night diary.</p>
+</header>
+<main>
+<h2>Marks</h2>
+<div class="stage"><div class="marks">
+  <div class="cell"><svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 32 32" role="img" aria-label="Moons mark"><path fill-rule="evenodd" d="M16 4a12 12 0 1 0 0 24 12 12 0 1 0 0-24zm4 2a10 10 0 1 1 0 20 10 10 0 1 1 0-20z" fill="#24325A"/></svg><span>Standard</span></div>
+  <div class="cell rev"><svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 32 32" role="img" aria-label="Moons mark reversed"><path fill-rule="evenodd" d="M16 4a12 12 0 1 0 0 24 12 12 0 1 0 0-24zm4 2a10 10 0 1 1 0 20 10 10 0 1 1 0-20z" fill="#F7F5EE"/></svg><span>Reversed</span></div>
+  <div class="cell"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 32 32" role="img" aria-label="Moons"><rect width="32" height="32" rx="7" fill="#24325A"/><g transform="translate(4.8 4.8) scale(0.7)"><path fill-rule="evenodd" d="M16 4a12 12 0 1 0 0 24 12 12 0 1 0 0-24zm4 2a10 10 0 1 1 0 20 10 10 0 1 1 0-20z" fill="#D4AA3F"/></g></svg><span>Favicon</span></div>
+  <div class="cell"><svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 1024 1024" role="img" aria-label="Moons app icon"><rect width="1024" height="1024" fill="#24325A"/><path fill-rule="evenodd" d="M512 176a336 336 0 1 0 0 672 336 336 0 1 0 0-672zm120 56a280 280 0 1 1 0 560 280 280 0 1 1 0-560z" fill="#D4AA3F"/></svg><span>App icon (1024)</span></div>
+</div>
+<p style="text-align:center;color:var(--gb-muted);font-size:14px;margin-top:18px">Device: the phase disc — a crescent that becomes a full moon as the month completes. Geometric on a 32-unit grid; never redrawn by eye.</p>
+</div>
+
+<h2>Colour — light</h2>
+<div class="grid"><div class="sw"><div class="chip" style="background:#F7F5EE"></div><div class="meta"><b>Page</b><span class="gb-num">#F7F5EE</span></div></div><div class="sw"><div class="chip" style="background:#FFFFFF"></div><div class="meta"><b>Surface</b><span class="gb-num">#FFFFFF</span></div></div><div class="sw"><div class="chip" style="background:#1B2233"></div><div class="meta"><b>Ink</b><span class="gb-num">#1B2233</span><span class="cr">14.5:1 on page</span></div></div><div class="sw"><div class="chip" style="background:#5B6170"></div><div class="meta"><b>Muted</b><span class="gb-num">#5B6170</span><span class="cr">5.7:1</span></div></div><div class="sw"><div class="chip" style="background:#24325A"></div><div class="meta"><b>Primary</b><span class="gb-num">#24325A</span><span class="cr">11.5:1 with its text</span></div></div><div class="sw"><div class="chip" style="background:#6E5310"></div><div class="meta"><b>Accent (text)</b><span class="gb-num">#6E5310</span><span class="cr">6.6:1</span></div></div><div class="sw"><div class="chip" style="background:#D4AA3F"></div><div class="meta"><b>Ornament</b><span class="gb-num">#D4AA3F</span><span class="cr">marks only</span></div></div><div class="sw"><div class="chip" style="background:#D4AA3F"></div><div class="meta"><b>Done</b><span class="gb-num">#D4AA3F</span><span class="cr">device</span></div></div><div class="sw"><div class="chip" style="background:#9B2F2F"></div><div class="meta"><b>Danger</b><span class="gb-num">#9B2F2F</span><span class="cr">6.8:1</span></div></div><div class="sw"><div class="chip" style="background:#6E5310"></div><div class="meta"><b>Caution</b><span class="gb-num">#6E5310</span><span class="cr">6.6:1</span></div></div><div class="sw"><div class="chip" style="background:#24325A"></div><div class="meta"><b>Info</b><span class="gb-num">#24325A</span><span class="cr">11.5:1</span></div></div><div class="sw"><div class="chip" style="background:#E3E0D6"></div><div class="meta"><b>Rule</b><span class="gb-num">#E3E0D6</span></div></div></div>
+<h2>Colour — dark</h2>
+<div class="dark darkpane"><div class="grid"><div class="sw"><div class="chip" style="background:#0F1422"></div><div class="meta"><b>Page</b><span class="gb-num">#0F1422</span></div></div><div class="sw"><div class="chip" style="background:#171D2E"></div><div class="meta"><b>Surface</b><span class="gb-num">#171D2E</span></div></div><div class="sw"><div class="chip" style="background:#ECEBE3"></div><div class="meta"><b>Ink</b><span class="gb-num">#ECEBE3</span><span class="cr">15.4:1 on page</span></div></div><div class="sw"><div class="chip" style="background:#A0A4B0"></div><div class="meta"><b>Muted</b><span class="gb-num">#A0A4B0</span><span class="cr">7.4:1</span></div></div><div class="sw"><div class="chip" style="background:#A9B8E8"></div><div class="meta"><b>Primary</b><span class="gb-num">#A9B8E8</span><span class="cr">9.4:1 with its text</span></div></div><div class="sw"><div class="chip" style="background:#E2C46B"></div><div class="meta"><b>Accent (text)</b><span class="gb-num">#E2C46B</span><span class="cr">10.8:1</span></div></div><div class="sw"><div class="chip" style="background:#E2C46B"></div><div class="meta"><b>Ornament</b><span class="gb-num">#E2C46B</span><span class="cr">marks only</span></div></div><div class="sw"><div class="chip" style="background:#E2C46B"></div><div class="meta"><b>Done</b><span class="gb-num">#E2C46B</span><span class="cr">device</span></div></div><div class="sw"><div class="chip" style="background:#F09090"></div><div class="meta"><b>Danger</b><span class="gb-num">#F09090</span><span class="cr">8.0:1</span></div></div><div class="sw"><div class="chip" style="background:#E2C46B"></div><div class="meta"><b>Caution</b><span class="gb-num">#E2C46B</span><span class="cr">10.8:1</span></div></div><div class="sw"><div class="chip" style="background:#A9B8E8"></div><div class="meta"><b>Info</b><span class="gb-num">#A9B8E8</span><span class="cr">9.4:1</span></div></div><div class="sw"><div class="chip" style="background:#262D40"></div><div class="meta"><b>Rule</b><span class="gb-num">#262D40</span></div></div></div></div>
+
+<h2>Type</h2>
+<div class="stage type">
+  <div class="d1">Thirty-six moons, one small person.</div>
+  <div class="d1k">서른여섯 번의 달, 한 아이.</div>
+  <p class="b">Body is the platform face: SF Pro on iOS with Apple SD Gothic Neo for Korean; Pretendard on the web. 16px body, 15px list rows, 13px captions — nothing smaller than 11px. The display face is reserved for the wordmark, screen titles and month numerals.</p>
+  <p class="c">Caption · 부모님께 안내 · 13px, muted</p>
+  <div class="num gb-num">4 months 14 days · 4개월 14일 · 136 days</div>
+</div>
+
+<h2>Voice</h2>
+<p class="essence" style="margin:0 0 14px">A night diarist. Notices, records, does not fuss.</p>
+<div class="voice">
+  <div class="vc"><div class="lab">Milestone confirmed</div><p>Moon 3, waxing. Rolled over today.</p><p class="k">세 번째 달. 오늘 처음 뒤집었어요.</p></div>
+  <div class="vc"><div class="lab">Journal empty</div><p>No entries yet this moon.</p><p class="k">이번 달에는 아직 기록이 없어요.</p></div>
+  <div class="vc urgent"><div class="lab">Urgent watch-out</div><p>Button batteries burn in two hours. Keep every remote out of reach.</p><p class="k">단추 전지는 두 시간이면 화상을 입혀요. 리모컨은 손이 닿지 않는 곳에 두세요.</p></div>
+</div>
+
+<h2>Application — the milestone list</h2>
+<div class="lists">
+  <ul class="rows" aria-label="Month 1 milestones, English"><li class="row done"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="done" style="opacity:1;flex:none"><path fill-rule="evenodd" d="M16 4a12 12 0 1 0 0 24 12 12 0 1 0 0-24zm4 2a10 10 0 1 1 0 20 10 10 0 1 1 0-20z" fill="var(--gb-done)"/></svg><span class="rt">Recognizes parent&#x27;s voice</span><span class="rd gb-num">Aug 31</span></li><li class="row done"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="done" style="opacity:1;flex:none"><path fill-rule="evenodd" d="M16 4a12 12 0 1 0 0 24 12 12 0 1 0 0-24zm4 2a10 10 0 1 1 0 20 10 10 0 1 1 0-20z" fill="var(--gb-done)"/></svg><span class="rt">Makes eye contact during feeding</span><span class="rd gb-num">Aug 31</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><path fill-rule="evenodd" d="M16 4a12 12 0 1 0 0 24 12 12 0 1 0 0-24zm4 2a10 10 0 1 1 0 20 10 10 0 1 1 0-20z" fill="var(--gb-muted)"/></svg><span class="rt">Startles at loud sounds</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><path fill-rule="evenodd" d="M16 4a12 12 0 1 0 0 24 12 12 0 1 0 0-24zm4 2a10 10 0 1 1 0 20 10 10 0 1 1 0-20z" fill="var(--gb-muted)"/></svg><span class="rt">Focuses on faces</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><path fill-rule="evenodd" d="M16 4a12 12 0 1 0 0 24 12 12 0 1 0 0-24zm4 2a10 10 0 1 1 0 20 10 10 0 1 1 0-20z" fill="var(--gb-muted)"/></svg><span class="rt">Lifts head briefly during tummy time</span></li></ul>
+  <ul class="rows" lang="ko" aria-label="1개월 발달 이정표"><li class="row done"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="done" style="opacity:1;flex:none"><path fill-rule="evenodd" d="M16 4a12 12 0 1 0 0 24 12 12 0 1 0 0-24zm4 2a10 10 0 1 1 0 20 10 10 0 1 1 0-20z" fill="var(--gb-done)"/></svg><span class="rt">엄마 아빠 목소리를 알아요</span><span class="rd gb-num">8월 31일</span></li><li class="row done"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="done" style="opacity:1;flex:none"><path fill-rule="evenodd" d="M16 4a12 12 0 1 0 0 24 12 12 0 1 0 0-24zm4 2a10 10 0 1 1 0 20 10 10 0 1 1 0-20z" fill="var(--gb-done)"/></svg><span class="rt">수유할 때 눈을 맞춰요</span><span class="rd gb-num">8월 31일</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><path fill-rule="evenodd" d="M16 4a12 12 0 1 0 0 24 12 12 0 1 0 0-24zm4 2a10 10 0 1 1 0 20 10 10 0 1 1 0-20z" fill="var(--gb-muted)"/></svg><span class="rt">큰 소리에 깜짝 놀라요</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><path fill-rule="evenodd" d="M16 4a12 12 0 1 0 0 24 12 12 0 1 0 0-24zm4 2a10 10 0 1 1 0 20 10 10 0 1 1 0-20z" fill="var(--gb-muted)"/></svg><span class="rt">얼굴을 가만히 바라봐요</span></li><li class="row"><svg width="22" height="22" viewBox="0 0 32 32" role="img" aria-label="not yet" style="opacity:.55;flex:none"><path fill-rule="evenodd" d="M16 4a12 12 0 1 0 0 24 12 12 0 1 0 0-24zm4 2a10 10 0 1 1 0 20 10 10 0 1 1 0-20z" fill="var(--gb-muted)"/></svg><span class="rt">엎드리면 잠깐 고개를 들어요</span></li></ul>
+</div>
+<p class="essence" style="margin-top:12px">Done rows keep their text and add the device plus the date. Colour never carries the state alone.</p>
+
+<h2>App rules</h2>
+<table class="spec"><tr><th scope="row">Canvas</th><td>One column; ivory page, white cards, indigo type; the moon lives in the header.</td></tr><tr><th scope="row">Lists</th><td>52pt rows; a small disc fills from crescent to full as the row is confirmed.</td></tr><tr><th scope="row">Type</th><td>Fraunces for wordmark and month numerals; system faces for UI in both scripts.</td></tr><tr><th scope="row">Controls</th><td>16pt radius, indigo fill, ivory text; gold only for the disc and the today marker.</td></tr><tr><th scope="row">Motion</th><td>The disc fills over 200ms. Nothing else moves.</td></tr></table>
+
+<h2>iOS adaptation</h2>
+<p class="essence" style="margin:0">Five tabs; the month header shows the phase disc at large title size; dark mode is the brand&#x27;s native state.</p>
+
+<h2>Do / Don't</h2>
+<div class="two">
+  <div><div class="dd-h">Do</div><ul class="dd"><li>One moon per screen, maximum</li><li>Use gold for the disc only</li><li>Set month numerals in Fraunces</li><li>Keep copy in the past tense — things observed</li></ul></div>
+  <div class="dont"><div class="dd-h">Don't</div><ul class="dd"><li>No stars, no night-sky gradients</li><li>No gold text on ivory — it fails contrast by design</li><li>No exclamation marks</li><li>Never show two discs side by side</li></ul></div>
+</div>
+
+<h2>Korean</h2>
+<p class="essence" style="margin:0">Apple SD Gothic Neo / Pretendard for UI; Fraunces carries Latin numerals only — Korean month labels set in the UI face.</p>
+</main>
+<p class="foot"><a href="app.html">App mock</a> · <a href="tokens.css">tokens.css</a> · <a href="../index.html">All five options</a></p>
+</div></body></html>

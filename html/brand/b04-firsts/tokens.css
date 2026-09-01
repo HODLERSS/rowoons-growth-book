@@ -1,0 +1,59 @@
+/* Firsts (04) — Baby Growth Book brand tokens. Paste into the app to apply this identity. */
+:root {
+  --gb-bg: #FFFFFF;
+  --gb-surface: #F7F7F5;
+  --gb-ink: #111111;
+  --gb-muted: #595959;
+  --gb-primary: #111111;
+  --gb-on-primary: #FFFFFF;
+  --gb-accent: #A8241C;
+  --gb-ornament: #D0342C;
+  --gb-done: #D0342C;
+  --gb-danger: #111111;
+  --gb-caution: #6E5310;
+  --gb-info: #595959;
+  --gb-rule: #E5E5E2;
+  --gb-hover: #F2F2F0;
+  --gb-radius: 4px;
+  --gb-row: 48px;
+  --gb-font-display: "Newsreader";
+  --gb-font-ui: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", system-ui, sans-serif;
+}
+/* Dark appearance: same roles, re-tuned values. Every light token has a dark counterpart. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+  --gb-bg: #121212;
+  --gb-surface: #1B1B1B;
+  --gb-ink: #F2F2F2;
+  --gb-muted: #A6A6A6;
+  --gb-primary: #F2F2F2;
+  --gb-on-primary: #121212;
+  --gb-accent: #FF8A80;
+  --gb-ornament: #FF5C51;
+  --gb-done: #FF5C51;
+  --gb-danger: #F2F2F2;
+  --gb-caution: #E3BE62;
+  --gb-info: #A6A6A6;
+  --gb-rule: #2A2A2A;
+  --gb-hover: #222222;
+  }
+}
+:root[data-theme="dark"] {
+  --gb-bg: #121212;
+  --gb-surface: #1B1B1B;
+  --gb-ink: #F2F2F2;
+  --gb-muted: #A6A6A6;
+  --gb-primary: #F2F2F2;
+  --gb-on-primary: #121212;
+  --gb-accent: #FF8A80;
+  --gb-ornament: #FF5C51;
+  --gb-done: #FF5C51;
+  --gb-danger: #F2F2F2;
+  --gb-caution: #E3BE62;
+  --gb-info: #A6A6A6;
+  --gb-rule: #2A2A2A;
+  --gb-hover: #222222;
+}
+/* Numerals (ages, days, counts) are always tabular. */
+.gb-num { font-variant-numeric: tabular-nums; font-feature-settings: "tnum"; }
+/* Colour never carries meaning alone: done = device + label, danger = glyph + word. */

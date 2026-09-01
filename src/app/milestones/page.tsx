@@ -1,16 +1,5 @@
-"use client";
+import { MonthRedirect } from "@/components/month-redirect";
 
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
-import { useAge } from "@/hooks/use-age";
-
-export default function MilestonesRedirect() {
-  const router = useRouter();
-  const { currentMonth } = useAge();
-
-  useEffect(() => {
-    router.replace(`/milestones/${currentMonth}`);
-  }, [currentMonth, router]);
-
-  return null;
+export default function Page() {
+  return <MonthRedirect base="/milestones" titleKey="milestones.title" />;
 }

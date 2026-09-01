@@ -12,6 +12,16 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Generated or non-source trees
+    "ios/**",
+    "resources/**",
+    "html/**",
+    "docs/**",
+    "qa/**",
+    "test-results/**",
+    "playwright-report/**",
+    "src/content/gen/**",
+    "public/sw.js",
   ]),
 ]);
 

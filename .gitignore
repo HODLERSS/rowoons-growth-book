@@ -40,3 +40,17 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .env*.local
+
+# generated
+/out/
+/qa/
+/test-results/
+/playwright-report/
+/ios/App/App/public/
+/ios/App/App/capacitor.config.json
+/ios/App/build/
+/ios/App/DerivedData/
+/ios/App/App.xcodeproj/xcuserdata/
+/ios/App/App.xcodeproj/project.xcworkspace/xcuserdata/
+.DS_Store
+/src/content/gen/

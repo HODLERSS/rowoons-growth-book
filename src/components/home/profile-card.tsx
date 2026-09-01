@@ -1,7 +1,7 @@
 "use client";
 
 import { Pencil } from "lucide-react";
-import { SealMark } from "@/components/brand/seal";
+import { LeafMark } from "@/components/brand/leaf";
 import { useBaby, displayName } from "@/hooks/use-baby";
 import { useAge } from "@/hooks/use-age";
 import { useLanguage } from "@/hooks/use-language";
@@ -13,15 +13,15 @@ export function ProfileCard({ onEdit }: { onEdit: () => void }) {
   const { age, currentMonth, beyondRange, isFuture, ready } = useAge();
   const { lang, t } = useLanguage();
 
-  if (!hydrated) return <div className="h-[104px] rounded-xl border border-rule bg-surface" aria-hidden="true" />;
+  if (!hydrated) return <div className="h-[6.5rem] rounded-xl border border-rule bg-surface" aria-hidden="true" />;
 
   if (!baby) {
     return (
       <button type="button" onClick={onEdit} className="flex w-full items-center gap-4 rounded-xl border border-rule bg-surface p-4 text-left hover:bg-hover/50">
-        <SealMark size={56} />
+        <LeafMark size={56} />
         <span className="min-w-0 flex-1">
-          <span className="font-display block text-[19px] font-semibold leading-tight">{t("home.setup")}</span>
-          <span className="mt-1 block text-[14px] text-muted-foreground">{t("home.setup_hint")}</span>
+          <span className="font-display block text-[1.1875rem] font-semibold leading-tight">{t("home.setup")}</span>
+          <span className="mt-1 block text-[0.875rem] text-muted-foreground">{t("home.setup_hint")}</span>
         </span>
       </button>
     );
@@ -45,21 +45,21 @@ export function ProfileCard({ onEdit }: { onEdit: () => void }) {
         aria-label={t("home.edit_profile")}
         className="group flex w-full items-center gap-4 rounded-xl border border-rule bg-surface p-4 text-left transition-colors hover:bg-hover/50"
       >
-        <SealMark size={56} />
+        <LeafMark size={56} />
         <span className="min-w-0 flex-1">
-          <span className="font-display block truncate text-[22px] font-semibold leading-tight" lang={lang}>
+          <span className="font-display block truncate text-[1.375rem] font-semibold leading-tight" lang={lang}>
             {name}
           </span>
-          <span className="tnum mt-0.5 block text-[15px]">{ageText || " "}</span>
-          {born && <span className="tnum mt-0.5 block text-[13px] text-muted-foreground">{t("age.born", { date: formatDate(lang, born) })}</span>}
+          <span className="tnum mt-0.5 block text-[0.9375rem]">{ageText || " "}</span>
+          {born && <span className="tnum mt-0.5 block text-[0.8125rem] text-muted-foreground">{t("age.born", { date: formatDate(lang, born) })}</span>}
         </span>
         <span className="flex flex-col items-end gap-2">
-          <span className="tnum rounded-full bg-primary px-2.5 py-1 text-[12px] font-semibold text-primary-foreground">{t("age.month_pill", { month: currentMonth })}</span>
+          <span className="tnum rounded-full bg-primary px-2.5 py-1 text-[0.75rem] font-semibold text-primary-foreground">{t("age.month_pill", { month: currentMonth })}</span>
           <Pencil className="size-4 text-muted-foreground" aria-hidden="true" />
         </span>
       </button>
       {ready && (beyondRange || isFuture) && (
-        <p className="rounded-lg bg-hover px-3 py-2 text-[13px] text-muted-foreground">{beyondRange ? t("age.beyond") : t("age.future")}</p>
+        <p className="rounded-lg bg-hover px-3 py-2 text-[0.8125rem] text-muted-foreground">{beyondRange ? t("age.beyond") : t("age.future")}</p>
       )}
     </>
   );

@@ -35,7 +35,7 @@ export function MilestoneSections({ byCategory }: { byCategory: Record<Milestone
         const Icon = CATEGORY_ICON[cat];
         return (
           <section key={cat} aria-labelledby={`cat-${cat}`} className="rounded-xl border border-rule bg-surface px-4">
-            <h2 id={`cat-${cat}`} className="flex h-12 items-center gap-2 border-b border-rule text-[13px] font-semibold uppercase tracking-[0.1em] text-muted-foreground">
+            <h2 id={`cat-${cat}`} className="flex h-12 items-center gap-2 border-b border-rule text-[0.8125rem] font-semibold uppercase tracking-[0.1em] text-muted-foreground">
               <Icon className="size-4" aria-hidden="true" />
               {t(`category.${cat}`)}
               <span className="tnum ml-auto font-medium">{t("milestones.count", { count: list.length })}</span>

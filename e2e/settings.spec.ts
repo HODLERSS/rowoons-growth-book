@@ -22,11 +22,11 @@ test.describe("settings", () => {
     test.skip(browserName === "webkit", "download events are not exposed in WebKit headless");
     await gotoReady(page, "/settings/");
     const [download] = await Promise.all([page.waitForEvent("download"), page.getByRole("button", { name: "Export a backup" }).click()]);
-    expect(download.suggestedFilename()).toMatch(/^dodam-backup-\d{8}\.json$/);
+    expect(download.suggestedFilename()).toMatch(/^sprout-backup-\d{8}\.json$/);
     const path = await download.path();
     const fs = await import("node:fs");
     const backup = JSON.parse(fs.readFileSync(path!, "utf8"));
-    expect(backup.app).toBe("dodam");
+    expect(backup.app).toBe("sprout");
     expect(backup.profile.name).toBe("Rowoon");
     expect(backup.memos).toHaveLength(1);
 
@@ -35,7 +35,7 @@ test.describe("settings", () => {
     await page.getByRole("dialog").getByRole("button", { name: "Delete" }).click();
     await expect(page.getByText("All data deleted.")).toBeVisible();
     await gotoReady(page, "/memo/");
-    await expect(page.getByText("The book is open.")).toBeVisible();
+    await expect(page.getByText("Nothing here yet.")).toBeVisible();
 
     await gotoReady(page, "/settings/");
     await page.locator('input[type="file"]').setInputFiles(path!);
@@ -48,7 +48,7 @@ test.describe("settings", () => {
   test("a bad file is rejected without changing data", async ({ page }) => {
     await gotoReady(page, "/settings/");
     await page.locator('input[type="file"]').setInputFiles({ name: "x.json", mimeType: "application/json", buffer: Buffer.from('{"nope":true}') });
-    await expect(page.getByText("That file isn’t a Dodam backup.")).toBeVisible();
+    await expect(page.getByText("That file isn’t a Sprout backup.")).toBeVisible();
     await gotoReady(page, "/memo/");
     await expect(page.getByRole("link", { name: /Hello/ })).toBeVisible();
   });

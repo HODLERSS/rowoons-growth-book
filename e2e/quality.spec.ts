@@ -73,7 +73,7 @@ test.describe("quality gates", () => {
     await page.emulateMedia({ reducedMotion: "reduce" });
     await gotoReady(page, "/milestones/16/");
     await page.getByRole("button", { name: /^Confirm: / }).first().click();
-    const duration = await page.locator("svg.seal-stamp").first().evaluate((el) => getComputedStyle(el).animationDuration);
+    const duration = await page.locator("svg.leaf-unfold").first().evaluate((el) => getComputedStyle(el).animationDuration);
     expect(parseFloat(duration)).toBeLessThan(0.01);
   });
 });

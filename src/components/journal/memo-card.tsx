@@ -23,12 +23,12 @@ export function MemoCard({ memo }: { memo: Memo }) {
         className="block rounded-xl border border-rule bg-surface p-4 transition-colors hover:border-primary/40 hover:bg-hover/40"
       >
         <div className="flex items-baseline justify-between gap-3">
-          <h2 className="min-w-0 flex-1 truncate text-[16px] font-semibold">{memo.title || t("journal.untitled")}</h2>
-          <time dateTime={memo.updatedAt} className="tnum shrink-0 text-[12px] text-muted-foreground">
+          <h2 className="min-w-0 flex-1 truncate text-[1rem] font-semibold">{memo.title || t("journal.untitled")}</h2>
+          <time dateTime={memo.updatedAt} className="tnum shrink-0 text-[0.75rem] text-muted-foreground">
             {formatDate(lang, memo.updatedAt, { month: "short", day: "numeric", year: "numeric" })}
           </time>
         </div>
-        {memo.content && <p className="mt-1 line-clamp-2 text-[14px] leading-relaxed text-muted-foreground">{preview(memo.content)}</p>}
+        {memo.content && <p className="mt-1 line-clamp-2 text-[0.875rem] leading-relaxed text-muted-foreground">{preview(memo.content)}</p>}
       </Link>
     </li>
   );

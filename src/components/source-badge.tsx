@@ -19,7 +19,7 @@ export function SourceBadge({ sourceInfo, itemTitle }: SourceBadgeProps) {
         <button
           type="button"
           aria-label={t("source.aria", { source: sourceInfo.source })}
-          className="-ml-2 inline-flex min-h-11 items-center gap-1.5 rounded-lg px-2 text-[12px] font-medium text-muted-foreground hover:bg-hover hover:text-foreground"
+          className="-ml-2 inline-flex min-h-11 items-center gap-1.5 rounded-lg px-2 text-[0.75rem] font-medium text-muted-foreground hover:bg-hover hover:text-foreground"
         >
           <BookOpen className="size-3.5" aria-hidden="true" />
           <span translate="no">{sourceInfo.source}</span>
@@ -28,13 +28,13 @@ export function SourceBadge({ sourceInfo, itemTitle }: SourceBadgeProps) {
       <DialogContent className="max-w-[calc(100vw-2rem)] overscroll-contain sm:max-w-md">
         <DialogHeader>
           <DialogTitle className="pr-6 text-base leading-snug">{itemTitle}</DialogTitle>
-          <DialogDescription className="text-[13px]">
+          <DialogDescription className="text-[0.8125rem]">
             {t("source.label")}: <span translate="no">{sourceInfo.source}</span>
           </DialogDescription>
         </DialogHeader>
         {sourceInfo.sourceQuote && (
           <blockquote className="border-l-2 border-primary/40 pl-3">
-            <p className="text-[15px] leading-relaxed text-foreground">“{sourceInfo.sourceQuote}”</p>
+            <p className="text-[0.9375rem] leading-relaxed text-foreground">“{sourceInfo.sourceQuote}”</p>
           </blockquote>
         )}
         {sourceInfo.sourceUrl && (
@@ -42,13 +42,13 @@ export function SourceBadge({ sourceInfo, itemTitle }: SourceBadgeProps) {
             href={sourceInfo.sourceUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex min-h-11 items-center justify-center gap-2 rounded-lg border border-rule text-[15px] font-medium hover:bg-hover"
+            className="flex min-h-11 items-center justify-center gap-2 rounded-lg border border-rule text-[0.9375rem] font-medium hover:bg-hover"
           >
             <ExternalLink className="size-4" aria-hidden="true" />
             {t("source.view")}
           </a>
         )}
-        <p className="text-[12px] leading-relaxed text-muted-foreground">{t("source.disclaimer", { source: sourceInfo.source })}</p>
+        <p className="text-[0.75rem] leading-relaxed text-muted-foreground">{t("source.disclaimer", { source: sourceInfo.source })}</p>
       </DialogContent>
     </Dialog>
   );

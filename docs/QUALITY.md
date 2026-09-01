@@ -1,4 +1,4 @@
-# Quality bars — Dodam (Baby Growth Book)
+# Quality bars — Sprout (Baby Growth Book)
 
 Ten metrics. Each is scored 0–100. **Launch gate: every metric ≥ 95.**
 Machine parts are computed by `npm run qa` (`scripts/qa/run.mjs`); judged parts are scored against the

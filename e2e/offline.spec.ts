@@ -14,7 +14,7 @@ test.describe("offline", () => {
     // The SW caches pages after responding; wait until the month page is in the cache.
     await page.waitForFunction(
       async () => {
-        const cache = await caches.open("dodam-v1");
+        const cache = await caches.open("sprout-v1");
         const keys = await cache.keys();
         return keys.some((r) => new URL(r.url).pathname === "/milestones/16/");
       },

@@ -1,11 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Noto_Serif_KR } from "next/font/google";
+import { Nunito } from "next/font/google";
 import "./globals.css";
 import { AppShell } from "@/components/shell/app-shell";
 import { APP_URL } from "@/lib/constants";
 
-const display = Noto_Serif_KR({
-  weight: ["600"],
+const display = Nunito({
+  weight: ["700", "800"],
   subsets: ["latin"],
   variable: "--font-display-face",
   display: "swap",
@@ -17,21 +17,21 @@ export const viewport: Viewport = {
   initialScale: 1,
   viewportFit: "cover",
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#FAF6EE" },
-    { media: "(prefers-color-scheme: dark)", color: "#151A16" },
+    { media: "(prefers-color-scheme: light)", color: "#FFF8F3" },
+    { media: "(prefers-color-scheme: dark)", color: "#1C1512" },
   ],
 };
 
 export const metadata: Metadata = {
   metadataBase: new URL(APP_URL),
-  title: { default: "Dodam", template: "%s · Dodam" },
-  description: "A month-by-month record of your baby's milestones, play ideas and safety notes. 도담 — 한 달 한 달, 도담도담.",
-  applicationName: "Dodam",
+  title: { default: "Sprout", template: "%s · Sprout" },
+  description: "A month-by-month record of your baby's milestones, play ideas and safety notes. 새싹 — 한 잎, 한 잎 자라요.",
+  applicationName: "Sprout",
   manifest: "/manifest.json",
-  appleWebApp: { capable: true, statusBarStyle: "default", title: "Dodam" },
+  appleWebApp: { capable: true, statusBarStyle: "default", title: "Sprout" },
   icons: { icon: [{ url: "/favicon-32.png", sizes: "32x32" }, { url: "/icon-192.png", sizes: "192x192" }], apple: "/apple-touch-icon.png" },
   formatDetection: { telephone: false },
-  openGraph: { title: "Dodam", description: "Grow well, one month at a time.", url: APP_URL, siteName: "Dodam", images: ["/og.png"] },
+  openGraph: { title: "Sprout", description: "Grow, one leaf at a time.", url: APP_URL, siteName: "Sprout", images: ["/og.png"] },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

@@ -4,7 +4,7 @@ import { useState, type FormEvent } from "react";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { SealMark } from "@/components/brand/seal";
+import { LeafMark } from "@/components/brand/leaf";
 import { Segmented } from "@/components/segmented";
 import { useBaby } from "@/hooks/use-baby";
 import { useLanguage } from "@/hooks/use-language";
@@ -88,9 +88,9 @@ function ProfileForm({ mode, initial, lang, setLang, t, onSubmit, onCancel }: Fo
   return (
     <form onSubmit={submit} noValidate className="space-y-4">
       <DialogHeader className="items-center text-center">
-        <SealMark size={48} className="mb-1" />
-        <DialogTitle className="font-display text-[22px]">{isEdit ? t("onboarding.edit_title") : t("onboarding.welcome")}</DialogTitle>
-        <DialogDescription className="text-[15px]">{isEdit ? t("onboarding.edit_subtitle") : t("onboarding.subtitle")}</DialogDescription>
+        <LeafMark size={48} className="mb-1" />
+        <DialogTitle className="font-display text-[1.375rem]">{isEdit ? t("onboarding.edit_title") : t("onboarding.welcome")}</DialogTitle>
+        <DialogDescription className="text-[0.9375rem]">{isEdit ? t("onboarding.edit_subtitle") : t("onboarding.subtitle")}</DialogDescription>
       </DialogHeader>
 
       {!isEdit && (
@@ -106,7 +106,7 @@ function ProfileForm({ mode, initial, lang, setLang, t, onSubmit, onCancel }: Fo
       )}
 
       <div className="space-y-1.5">
-        <label htmlFor="profile-name" className="text-[14px] font-semibold">
+        <label htmlFor="profile-name" className="text-[0.875rem] font-semibold">
           {t("onboarding.name")}
         </label>
         <Input
@@ -118,24 +118,24 @@ function ProfileForm({ mode, initial, lang, setLang, t, onSubmit, onCancel }: Fo
           onChange={(e) => setName(e.target.value)}
           aria-invalid={!!errors.name}
           aria-describedby={errors.name ? "profile-name-error" : undefined}
-          className="h-12 text-[16px]"
+          className="h-12 text-[1rem]"
         />
         {errors.name && (
-          <p id="profile-name-error" role="alert" className="text-[13px] text-danger">
+          <p id="profile-name-error" role="alert" className="text-[0.8125rem] text-danger">
             {errors.name}
           </p>
         )}
       </div>
 
       <div className="space-y-1.5">
-        <label htmlFor="profile-name-alt" className="text-[14px] font-semibold">
+        <label htmlFor="profile-name-alt" className="text-[0.875rem] font-semibold">
           {t("onboarding.name_alt")}
         </label>
-        <Input id="profile-name-alt" name="babyNameAlt" autoComplete="off" spellCheck={false} value={nameAlt} onChange={(e) => setNameAlt(e.target.value)} className="h-12 text-[16px]" />
+        <Input id="profile-name-alt" name="babyNameAlt" autoComplete="off" spellCheck={false} value={nameAlt} onChange={(e) => setNameAlt(e.target.value)} className="h-12 text-[1rem]" />
       </div>
 
       <div className="space-y-1.5">
-        <label htmlFor="profile-birthday" className="text-[14px] font-semibold">
+        <label htmlFor="profile-birthday" className="text-[0.875rem] font-semibold">
           {t("onboarding.birthday")}
         </label>
         <Input
@@ -147,16 +147,16 @@ function ProfileForm({ mode, initial, lang, setLang, t, onSubmit, onCancel }: Fo
           onChange={(e) => setBirthDate(e.target.value)}
           aria-invalid={!!errors.date}
           aria-describedby={errors.date ? "profile-birthday-error" : undefined}
-          className="h-12 text-[16px]"
+          className="h-12 text-[1rem]"
         />
         {errors.date && (
-          <p id="profile-birthday-error" role="alert" className="text-[13px] text-danger">
+          <p id="profile-birthday-error" role="alert" className="text-[0.8125rem] text-danger">
             {errors.date}
           </p>
         )}
       </div>
 
-      <p className="text-[12px] leading-relaxed text-muted-foreground">{t("onboarding.disclaimer")}</p>
+      <p className="text-[0.75rem] leading-relaxed text-muted-foreground">{t("onboarding.disclaimer")}</p>
 
       <div className="flex gap-2 pt-1">
         {isEdit && (

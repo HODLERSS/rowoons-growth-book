@@ -25,12 +25,12 @@ function Inner({ onDismiss }: { onDismiss: () => void }) {
       <div className="flex items-start gap-3">
         <Bell className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden="true" />
         <div className="min-w-0 flex-1">
-          <h2 id="notify-card" className="text-[15px] font-semibold">
+          <h2 id="notify-card" className="text-[0.9375rem] font-semibold">
             {t("notify.title")}
           </h2>
-          <p className="text-[13px] text-muted-foreground">{t("notify.desc")}</p>
+          <p className="text-[0.8125rem] text-muted-foreground">{t("notify.desc")}</p>
           {error && (
-            <p role="alert" className="mt-1 text-[13px] text-danger">
+            <p role="alert" className="mt-1 text-[0.8125rem] text-danger">
               {error}
             </p>
           )}

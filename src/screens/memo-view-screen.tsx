@@ -33,7 +33,7 @@ function Inner() {
       <>
         <Header title={t("journal.title")} backHref="/memo" />
         <Screen>
-          <p className="text-[15px] text-muted-foreground" aria-live="polite">
+          <p className="text-[0.9375rem] text-muted-foreground" aria-live="polite">
             {t("journal.loading")}
           </p>
         </Screen>
@@ -49,7 +49,7 @@ function Inner() {
           <EmptyState
             text={t("journal.not_found")}
             action={
-              <Link href="/memo" className="flex h-11 items-center rounded-lg border border-rule px-4 text-[15px] font-semibold hover:bg-hover">
+              <Link href="/memo" className="flex h-11 items-center rounded-lg border border-rule px-4 text-[0.9375rem] font-semibold hover:bg-hover">
                 {t("nav.journal")}
               </Link>
             }

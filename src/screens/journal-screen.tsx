@@ -14,7 +14,7 @@ export function JournalScreen() {
   const { t } = useLanguage();
   const hydrated = useHydrated();
   const newLink = (
-    <Link href="/memo/new" className="flex h-11 items-center gap-1.5 rounded-lg bg-primary px-3.5 text-[14px] font-semibold text-primary-foreground hover:opacity-90">
+    <Link href="/memo/new" className="flex h-11 items-center gap-1.5 rounded-lg bg-primary px-3.5 text-[0.875rem] font-semibold text-primary-foreground hover:opacity-90">
       <Plus className="size-4" aria-hidden="true" />
       {t("journal.new")}
     </Link>
@@ -27,7 +27,7 @@ export function JournalScreen() {
           <EmptyState
             text={t("journal.empty")}
             action={
-              <Link href="/memo/new" className="flex h-11 items-center rounded-lg border border-rule px-4 text-[15px] font-semibold hover:bg-hover">
+              <Link href="/memo/new" className="flex h-11 items-center rounded-lg border border-rule px-4 text-[0.9375rem] font-semibold hover:bg-hover">
                 {t("journal.write_first")}
               </Link>
             }

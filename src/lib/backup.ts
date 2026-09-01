@@ -21,12 +21,12 @@ export function isCompletion(v: unknown): v is MilestoneCompletion {
 export function isBackupFile(v: unknown): v is BackupFile {
   if (!v || typeof v !== "object") return false;
   const o = v as Record<string, unknown>;
-  return o.app === "dodam" && o.version === 1 && (o.profile === null || isBabyInfo(o.profile)) && isMemoArray(o.memos) && isCompletion(o.milestones);
+  return (o.app === "sprout" || o.app === "dodam") && o.version === 1 && (o.profile === null || isBabyInfo(o.profile)) && isMemoArray(o.memos) && isCompletion(o.milestones);
 }
 
 export function createBackup(): BackupFile {
   return {
-    app: "dodam",
+    app: "sprout",
     version: 1,
     exportedAt: new Date().toISOString(),
     profile: readKey(KEYS.profile, jsonOr<BabyInfo | null>(null, (v): v is BabyInfo | null => v === null || isBabyInfo(v))),
@@ -52,5 +52,5 @@ export function clearAllData(): void {
 
 export function backupFilename(date = new Date()): string {
   const p = (n: number) => String(n).padStart(2, "0");
-  return `dodam-backup-${date.getFullYear()}${p(date.getMonth() + 1)}${p(date.getDate())}.json`;
+  return `sprout-backup-${date.getFullYear()}${p(date.getMonth() + 1)}${p(date.getDate())}.json`;
 }

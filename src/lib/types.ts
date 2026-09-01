@@ -82,7 +82,7 @@ export interface Settings {
 }
 
 export interface BackupFile {
-  app: "dodam";
+  app: "sprout" | "dodam";
   version: 1;
   exportedAt: string;
   profile: BabyInfo | null;

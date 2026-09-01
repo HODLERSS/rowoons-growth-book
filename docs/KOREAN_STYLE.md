@@ -1,4 +1,4 @@
-# Korean style guide — Dodam (도담)
+# Korean style guide — Sprout (새싹)
 
 The Korean text is not a translation of the English; it is the same book written by the same person in Korean.
 English is the source of *facts* (every claim, number and citation); Korean owns its *phrasing*.

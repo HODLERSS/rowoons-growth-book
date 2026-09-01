@@ -24,14 +24,14 @@ import type { BackupFile } from "@/lib/types";
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section aria-label={title} className="space-y-2">
-      <h2 className="px-1 text-[12px] font-semibold uppercase tracking-[0.12em] text-muted-foreground">{title}</h2>
+      <h2 className="px-1 text-[0.75rem] font-semibold uppercase tracking-[0.12em] text-muted-foreground">{title}</h2>
       <div className="divide-y divide-rule rounded-xl border border-rule bg-surface">{children}</div>
     </section>
   );
 }
 
 function Row({ children, className }: { children?: React.ReactNode; className?: string }) {
-  return <div className={"flex min-h-[52px] items-center gap-3 px-4 py-2 " + (className ?? "")}>{children}</div>;
+  return <div className={"flex min-h-[3.25rem] items-center gap-3 px-4 py-2 " + (className ?? "")}>{children}</div>;
 }
 
 export function SettingsScreen() {
@@ -52,7 +52,7 @@ export function SettingsScreen() {
     const nav = navigator as Navigator & { canShare?: (d: ShareData) => boolean };
     if (nav.share && nav.canShare?.({ files: [file] })) {
       try {
-        await nav.share({ files: [file], title: "Dodam backup" });
+        await nav.share({ files: [file], title: "Sprout backup" });
         return;
       } catch {
         /* user cancelled or share failed; fall through to download */
@@ -86,12 +86,12 @@ export function SettingsScreen() {
       <Header title={t("settings.title")} backHref="/" />
       <Screen className="space-y-6">
         <Section title={t("settings.profile")}>
-          <button type="button" onClick={() => setEditing(true)} className="flex min-h-[60px] w-full items-center gap-3 px-4 py-2 text-left hover:bg-hover/60">
+          <button type="button" onClick={() => setEditing(true)} className="flex min-h-[3.75rem] w-full items-center gap-3 px-4 py-2 text-left hover:bg-hover/60">
             <span className="min-w-0 flex-1">
-              <span className="font-display block truncate text-[18px] font-semibold">{hydrated && baby ? displayName(baby, lang) : t("home.setup")}</span>
-              {hydrated && born && <span className="tnum block text-[13px] text-muted-foreground">{t("age.born", { date: formatDate(lang, born) })}</span>}
+              <span className="font-display block truncate text-[1.125rem] font-semibold">{hydrated && baby ? displayName(baby, lang) : t("home.setup")}</span>
+              {hydrated && born && <span className="tnum block text-[0.8125rem] text-muted-foreground">{t("age.born", { date: formatDate(lang, born) })}</span>}
             </span>
-            <span className="text-[15px] font-semibold text-primary">{t("settings.edit_profile")}</span>
+            <span className="text-[0.9375rem] font-semibold text-primary">{t("settings.edit_profile")}</span>
             <ChevronRight className="size-4 text-muted-foreground" aria-hidden="true" />
           </button>
         </Section>
@@ -111,31 +111,31 @@ export function SettingsScreen() {
           </Row>
         </Section>
 
-        <Section title={t("settings.notifications")}>{hydrated ? <NotificationsBody /> : <Row className="min-h-[76px]" />}</Section>
+        <Section title={t("settings.notifications")}>{hydrated ? <NotificationsBody /> : <Row className="min-h-[4.75rem]" />}</Section>
 
         <Section title={t("settings.data")}>
           <Row>
-            <p className="text-[14px] leading-relaxed text-muted-foreground">{t("settings.local_note")}</p>
+            <p className="text-[0.875rem] leading-relaxed text-muted-foreground">{t("settings.local_note")}</p>
           </Row>
-          <button type="button" onClick={exportBackup} className="flex min-h-[52px] w-full items-center gap-3 px-4 py-2 text-left hover:bg-hover/60">
+          <button type="button" onClick={exportBackup} className="flex min-h-[3.25rem] w-full items-center gap-3 px-4 py-2 text-left hover:bg-hover/60">
             <Download className="size-5 text-primary" aria-hidden="true" />
             <span className="min-w-0 flex-1">
-              <span className="block text-[15px] font-medium">{t("settings.export")}</span>
-              <span className="block text-[13px] text-muted-foreground">{t("settings.export_desc")}</span>
+              <span className="block text-[0.9375rem] font-medium">{t("settings.export")}</span>
+              <span className="block text-[0.8125rem] text-muted-foreground">{t("settings.export_desc")}</span>
             </span>
           </button>
-          <button type="button" onClick={() => fileRef.current?.click()} className="flex min-h-[52px] w-full items-center gap-3 px-4 py-2 text-left hover:bg-hover/60">
+          <button type="button" onClick={() => fileRef.current?.click()} className="flex min-h-[3.25rem] w-full items-center gap-3 px-4 py-2 text-left hover:bg-hover/60">
             <Upload className="size-5 text-primary" aria-hidden="true" />
-            <span className="text-[15px] font-medium">{t("settings.import")}</span>
+            <span className="text-[0.9375rem] font-medium">{t("settings.import")}</span>
           </button>
           <input ref={fileRef} type="file" accept="application/json,.json" className="hidden" aria-label={t("settings.import")} onChange={onFile} tabIndex={-1} />
-          <button type="button" onClick={() => setAskDelete(true)} className="flex min-h-[52px] w-full items-center gap-3 px-4 py-2 text-left text-danger hover:bg-hover/60">
+          <button type="button" onClick={() => setAskDelete(true)} className="flex min-h-[3.25rem] w-full items-center gap-3 px-4 py-2 text-left text-danger hover:bg-hover/60">
             <Trash2 className="size-5" aria-hidden="true" />
-            <span className="text-[15px] font-medium">{t("settings.delete_all")}</span>
+            <span className="text-[0.9375rem] font-medium">{t("settings.delete_all")}</span>
           </button>
           {message && (
             <Row>
-              <p role="status" aria-live="polite" className="text-[14px] font-medium">
+              <p role="status" aria-live="polite" className="text-[0.875rem] font-medium">
                 {message}
               </p>
             </Row>
@@ -144,15 +144,15 @@ export function SettingsScreen() {
 
         <Section title={t("settings.about")}>
           <Row>
-            <span className="tnum text-[15px]">{t("settings.version", { version: APP_VERSION })}</span>
+            <span className="tnum text-[0.9375rem]">{t("settings.version", { version: APP_VERSION })}</span>
           </Row>
           <Row className="flex-col items-start">
-            <span className="text-[15px] font-medium">{t("settings.sources")}</span>
-            <p className="text-[13px] leading-relaxed text-muted-foreground">{t("settings.sources_desc")}</p>
+            <span className="text-[0.9375rem] font-medium">{t("settings.sources")}</span>
+            <p className="text-[0.8125rem] leading-relaxed text-muted-foreground">{t("settings.sources_desc")}</p>
             <ul className="mt-1 w-full">
               {SOURCES.map((s) => (
                 <li key={s.url}>
-                  <a href={s.url} target="_blank" rel="noopener noreferrer" className="-mx-1 flex min-h-[44px] items-center gap-2 rounded px-1 text-[14px] text-primary hover:bg-hover">
+                  <a href={s.url} target="_blank" rel="noopener noreferrer" className="flex min-h-[2.75rem] items-center gap-2 rounded text-[0.875rem] text-primary hover:underline">
                     <ExternalLink className="size-3.5 shrink-0" aria-hidden="true" />
                     <span translate="no">{s.name}</span>
                   </a>
@@ -161,19 +161,19 @@ export function SettingsScreen() {
             </ul>
           </Row>
           <Row>
-            <p className="text-[13px] leading-relaxed text-muted-foreground">{t("settings.disclaimer")}</p>
+            <p className="text-[0.8125rem] leading-relaxed text-muted-foreground">{t("settings.disclaimer")}</p>
           </Row>
-          <Link href="/privacy" className="flex min-h-[52px] items-center justify-between px-4 text-[15px] font-medium hover:bg-hover/60">
+          <Link href="/privacy" className="flex min-h-[3.25rem] items-center justify-between px-4 text-[0.9375rem] font-medium hover:bg-hover/60">
             {t("settings.privacy")}
             <ChevronRight className="size-4 text-muted-foreground" aria-hidden="true" />
           </Link>
-          <Link href="/terms" className="flex min-h-[52px] items-center justify-between px-4 text-[15px] font-medium hover:bg-hover/60">
+          <Link href="/terms" className="flex min-h-[3.25rem] items-center justify-between px-4 text-[0.9375rem] font-medium hover:bg-hover/60">
             {t("settings.terms")}
             <ChevronRight className="size-4 text-muted-foreground" aria-hidden="true" />
           </Link>
-          <a href={`mailto:${SUPPORT_EMAIL}`} className="flex min-h-[52px] items-center justify-between px-4 text-[15px] font-medium hover:bg-hover/60">
+          <a href={`mailto:${SUPPORT_EMAIL}`} className="flex min-h-[3.25rem] items-center justify-between px-4 text-[0.9375rem] font-medium hover:bg-hover/60">
             {t("settings.contact")}
-            <span className="text-[13px] text-muted-foreground" translate="no">
+            <span className="text-[0.8125rem] text-muted-foreground" translate="no">
               {SUPPORT_EMAIL}
             </span>
           </a>
@@ -246,10 +246,10 @@ function NativeReminders() {
   }
 
   return (
-      <Row className="min-h-[76px]">
+      <Row className="min-h-[4.75rem]">
         <span className="min-w-0 flex-1">
-          <span className="block text-[15px] font-medium">{t("settings.reminders")}</span>
-          <span className="block text-[13px] text-muted-foreground">{status === "denied" ? t("settings.reminders_denied") : t("settings.reminders_desc", { name: name || "—" })}</span>
+          <span className="block text-[0.9375rem] font-medium">{t("settings.reminders")}</span>
+          <span className="block text-[0.8125rem] text-muted-foreground">{status === "denied" ? t("settings.reminders_denied") : t("settings.reminders_desc", { name: name || "—" })}</span>
         </span>
         <button
           type="button"
@@ -258,7 +258,7 @@ function NativeReminders() {
           aria-label={t("settings.reminders")}
           disabled={busy || !baby || status === "denied"}
           onClick={toggle}
-          className={"relative h-8 w-[52px] shrink-0 rounded-full transition-colors disabled:opacity-50 " + (on ? "bg-primary" : "bg-rule")}
+          className={"relative h-8 w-[3.25rem] shrink-0 rounded-full transition-colors disabled:opacity-50 " + (on ? "bg-primary" : "bg-rule")}
         >
           <span className={"absolute top-1 size-6 rounded-full bg-surface shadow transition-transform " + (on ? "left-1 translate-x-5" : "left-1")} />
         </button>
@@ -270,19 +270,19 @@ function WebPush() {
   const { t } = useLanguage();
   const { permission, subscribed, busy, error, subscribe, unsubscribe } = usePush();
   let body: React.ReactNode;
-  if (permission === "unsupported") body = <p className="text-[14px] text-muted-foreground">{t("notify.unsupported")}</p>;
-  else if (permission === "denied") body = <p className="text-[14px] text-muted-foreground">{t("notify.blocked")}</p>;
+  if (permission === "unsupported") body = <p className="text-[0.875rem] text-muted-foreground">{t("notify.unsupported")}</p>;
+  else if (permission === "denied") body = <p className="text-[0.875rem] text-muted-foreground">{t("notify.blocked")}</p>;
   else
     body = (
       <>
         <span className="min-w-0 flex-1">
-          <span className="block text-[15px] font-medium">{subscribed ? t("notify.enabled") : t("notify.title")}</span>
-          <span className="block text-[13px] text-muted-foreground">{error ?? t("notify.desc")}</span>
+          <span className="block text-[0.9375rem] font-medium">{subscribed ? t("notify.enabled") : t("notify.title")}</span>
+          <span className="block text-[0.8125rem] text-muted-foreground">{error ?? t("notify.desc")}</span>
         </span>
         <Button type="button" variant={subscribed ? "outline" : "default"} size="lg" disabled={busy} onClick={subscribed ? unsubscribe : subscribe}>
           {busy ? t("notify.working") : subscribed ? t("notify.off") : t("notify.enable")}
         </Button>
       </>
     );
-  return <Row className="min-h-[76px]">{body}</Row>;
+  return <Row className="min-h-[4.75rem]">{body}</Row>;
 }

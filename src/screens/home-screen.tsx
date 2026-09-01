@@ -26,7 +26,7 @@ export function HomeScreen() {
   return (
     <>
       <Header
-        title={<Wordmark className="text-[22px]" />}
+        title={<Wordmark className="text-[1.375rem]" />}
         actions={
           <Link href="/settings" aria-label={t("nav.settings")} className="-mr-2 flex size-11 items-center justify-center rounded-lg hover:bg-hover">
             <Settings className="size-5" strokeWidth={1.8} aria-hidden="true" />

@@ -51,7 +51,7 @@ export function MemoNewScreen() {
                   setAskDiscard(true);
                 }
               }}
-              className="flex h-11 items-center rounded-lg px-3 text-[15px] font-medium text-muted-foreground hover:bg-hover"
+              className="flex h-11 items-center rounded-lg px-3 text-[0.9375rem] font-medium text-muted-foreground hover:bg-hover"
             >
               {t("journal.cancel")}
             </Link>

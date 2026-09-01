@@ -1,5 +1,5 @@
-/* Dodam service worker (web only). App shell + content are static, so cache aggressively and fall back offline. */
-const VERSION = "dodam-v1";
+/* Sprout service worker (web only). App shell + content are static, so cache aggressively and fall back offline. */
+const VERSION = "sprout-v1";
 const SHELL = ["/", "/memo/", "/settings/", "/manifest.json", "/icon-192.png"];
 
 self.addEventListener("install", (event) => {
@@ -56,7 +56,7 @@ self.addEventListener("push", (event) => {
   } catch {
     data = { body: event.data ? event.data.text() : "" };
   }
-  const title = data.title || "Dodam";
+  const title = data.title || "Sprout";
   event.waitUntil(
     self.registration.showNotification(title, {
       body: data.body || "",

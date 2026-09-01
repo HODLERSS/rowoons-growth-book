@@ -28,7 +28,7 @@ export function MemoEditor({ title, content, onTitleChange, onContentChange }: M
         placeholder={t("journal.placeholder_title")}
         value={title}
         onChange={(e) => onTitleChange(e.target.value)}
-        className="h-12 w-full rounded-lg border border-rule bg-surface px-3 text-[17px] font-semibold placeholder:text-muted-foreground/70 focus-visible:border-primary"
+        className="h-12 w-full rounded-lg border border-rule bg-surface px-3 text-[1.0625rem] font-semibold placeholder:text-muted-foreground/70 focus-visible:border-primary"
       />
       <div role="group" aria-label={t("journal.preview")} className="flex gap-1 rounded-lg bg-hover p-1">
         {(["write", "preview"] as const).map((mode) => {
@@ -40,7 +40,7 @@ export function MemoEditor({ title, content, onTitleChange, onContentChange }: M
               aria-pressed={active}
               onClick={() => setPreview(mode === "preview")}
               className={cn(
-                "h-11 flex-1 rounded-md text-[14px] font-semibold transition-colors",
+                "h-11 flex-1 rounded-md text-[0.875rem] font-semibold transition-colors",
                 active ? "bg-surface text-foreground shadow-[0_1px_0_var(--gb-rule)]" : "text-muted-foreground hover:text-foreground"
               )}
             >
@@ -50,7 +50,7 @@ export function MemoEditor({ title, content, onTitleChange, onContentChange }: M
         })}
       </div>
       {preview ? (
-        <div className="prose-dodam min-h-[40vh] rounded-lg border border-rule bg-surface p-4 text-[15px]">
+        <div className="prose-app min-h-[40vh] rounded-lg border border-rule bg-surface p-4 text-[0.9375rem]">
           {content ? <ReactMarkdown>{content}</ReactMarkdown> : <p className="text-muted-foreground">{t("journal.preview_empty")}</p>}
         </div>
       ) : (
@@ -64,7 +64,7 @@ export function MemoEditor({ title, content, onTitleChange, onContentChange }: M
             placeholder={t("journal.placeholder_body")}
             value={content}
             onChange={(e) => onContentChange(e.target.value)}
-            className="min-h-[40vh] w-full resize-y rounded-lg border border-rule bg-surface p-3 text-[15px] leading-relaxed placeholder:text-muted-foreground/70 focus-visible:border-primary"
+            className="min-h-[40vh] w-full resize-y rounded-lg border border-rule bg-surface p-3 text-[1rem] leading-relaxed placeholder:text-muted-foreground/70 focus-visible:border-primary"
           />
         </>
       )}

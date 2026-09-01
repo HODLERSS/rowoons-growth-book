@@ -15,10 +15,11 @@ const listeners = new Map<string, Set<Listener>>();
 const cache = new Map<string, { raw: string | null; value: unknown }>();
 
 const LEGACY_KEYS: Record<string, string[]> = {
-  "dodam:profile": ["baby-profile"],
-  "dodam:memos": ["growth-memos", "rowoon-memos"],
-  "dodam:milestones": ["growth-milestones", "rowoon-milestones"],
-  "dodam:language": ["language"],
+  "sprout:profile": ["dodam:profile", "baby-profile"],
+  "sprout:memos": ["dodam:memos", "growth-memos", "rowoon-memos"],
+  "sprout:milestones": ["dodam:milestones", "growth-milestones", "rowoon-milestones"],
+  "sprout:language": ["dodam:language", "language"],
+  "sprout:settings": ["dodam:settings"],
 };
 
 let migrated = false;
@@ -32,7 +33,7 @@ function migrateLegacy() {
         const raw = localStorage.getItem(old);
         if (raw !== null) {
           // Old keys stored language as a bare string; everything else as JSON.
-          localStorage.setItem(key, key === "dodam:language" && !raw.startsWith('"') ? JSON.stringify(raw) : raw);
+          localStorage.setItem(key, key === "sprout:language" && !raw.startsWith('"') ? JSON.stringify(raw) : raw);
           break;
         }
       }
@@ -159,9 +160,9 @@ export function useHydrated(): boolean {
 }
 
 export const KEYS = {
-  profile: "dodam:profile",
-  memos: "dodam:memos",
-  milestones: "dodam:milestones",
-  language: "dodam:language",
-  settings: "dodam:settings",
+  profile: "sprout:profile",
+  memos: "sprout:memos",
+  milestones: "sprout:milestones",
+  language: "sprout:language",
+  settings: "sprout:settings",
 } as const;

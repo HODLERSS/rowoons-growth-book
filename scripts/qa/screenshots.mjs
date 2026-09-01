@@ -34,11 +34,11 @@ const SHOTS = {
 const seed = (lang) => [
   (args) => {
     const [p, l] = args;
-    localStorage.setItem("dodam:profile", JSON.stringify(p));
-    localStorage.setItem("dodam:language", JSON.stringify(l));
-    localStorage.setItem("dodam:milestones", JSON.stringify({ "m-16-social-1": { completed: true, completedAt: "2026-08-20T10:00:00Z" }, "m-16-language-1": { completed: true, completedAt: "2026-08-24T10:00:00Z" } }));
+    localStorage.setItem("sprout:profile", JSON.stringify(p));
+    localStorage.setItem("sprout:language", JSON.stringify(l));
+    localStorage.setItem("sprout:milestones", JSON.stringify({ "m-16-social-1": { completed: true, completedAt: "2026-08-20T10:00:00Z" }, "m-16-language-1": { completed: true, completedAt: "2026-08-24T10:00:00Z" } }));
     localStorage.setItem(
-      "dodam:memos",
+      "sprout:memos",
       JSON.stringify([
         { id: "a1", title: l === "ko" ? "첫 걸음" : "First steps", content: l === "ko" ? "소파까지 세 걸음, 그리고 털썩." : "Three steps toward the sofa, then a sit.", createdAt: "2026-08-29T10:00:00Z", updatedAt: "2026-08-29T10:00:00Z" },
         { id: "a2", title: l === "ko" ? "'엄마' 라고 했어요" : "Said “mama”", content: l === "ko" ? "아침에 분명히 들었어요." : "Clearly, at breakfast.", createdAt: "2026-08-14T10:00:00Z", updatedAt: "2026-08-14T10:00:00Z" },
@@ -52,7 +52,7 @@ const escape = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
 
 /** Greedy word wrap into at most two lines (Korean wraps by character count). */
 function wrap(text, lang) {
-  const max = lang === "ko" ? 15 : 24;
+  const max = lang === "ko" ? 12 : 24;
   if (text.length <= max) return [text];
   if (lang === "ko") {
     const words = text.split(" ");
@@ -98,16 +98,16 @@ for (const size of SIZES) {
       const innerW = Math.round(size.w * scale);
       const x = Math.round((size.w - innerW) / 2);
       const app = await sharp(raw).resize(innerW, innerH).png().toBuffer();
-      const font = lang === "ko" ? "Apple SD Gothic Neo, Noto Sans KR, sans-serif" : "Noto Serif KR, Georgia, serif";
+      const font = lang === "ko" ? "Apple SD Gothic Neo, Noto Sans KR, sans-serif" : "Nunito, Avenir Next, Helvetica Neue, Arial, sans-serif";
       const lines = wrap(shot.caption, lang);
       const fs = Math.round(size.w * 0.046);
       const lineH = Math.round(fs * 1.25);
       const y0 = Math.round(bandH / 2 - ((lines.length - 1) * lineH) / 2 + fs * 0.35);
-      const textEls = lines.map((l, i) => `<text x="${size.w / 2}" y="${y0 + i * lineH}" text-anchor="middle" font-family="${font}" font-weight="600" font-size="${fs}" fill="#1F3327">${escape(l)}</text>`).join("");
+      const textEls = lines.map((l, i) => `<text x="${size.w / 2}" y="${y0 + i * lineH}" text-anchor="middle" font-family="${font}" font-weight="800" font-size="${fs}" fill="#3A2A22">${escape(l)}</text>`).join("");
       const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size.w}" height="${size.h}">
-        <rect width="${size.w}" height="${size.h}" fill="#FAF6EE"/>
+        <rect width="${size.w}" height="${size.h}" fill="#FFF8F3"/>
         ${textEls}
-        <rect x="${x - 6}" y="${bandH - 6}" width="${innerW + 12}" height="${innerH + 12}" rx="60" fill="#E6DFD0"/>
+        <rect x="${x - 6}" y="${bandH - 6}" width="${innerW + 12}" height="${innerH + 12}" rx="60" fill="#F0DED2"/>
       </svg>`;
       const out = await sharp(Buffer.from(svg))
         .composite([{ input: await sharp(app).composite([{ input: Buffer.from(`<svg width="${innerW}" height="${innerH}"><rect width="${innerW}" height="${innerH}" rx="56" fill="#fff"/></svg>`), blend: "dest-in" }]).png().toBuffer(), left: x, top: bandH }])

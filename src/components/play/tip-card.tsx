@@ -14,17 +14,17 @@ export function TipCard({ tip }: { tip: PlayTip }) {
   return (
     <article className="rounded-xl border border-rule bg-surface p-4">
       <div className="flex items-start justify-between gap-3">
-        <h2 className="text-[17px] font-semibold leading-snug">{tip.title}</h2>
+        <h2 className="text-[1.0625rem] font-semibold leading-snug">{tip.title}</h2>
         <DifficultyTag difficulty={tip.difficulty} />
       </div>
       {category && <CategoryLabel category={category} className="mt-1" />}
-      <p className="mt-2 text-[15px] leading-relaxed text-foreground">{tip.description}</p>
+      <p className="mt-2 text-[0.9375rem] leading-relaxed text-foreground">{tip.description}</p>
       {tip.materials && tip.materials.length > 0 && (
         <div className="mt-3">
-          <h3 className="mb-1.5 text-[12px] font-semibold uppercase tracking-[0.1em] text-muted-foreground">{t("play.materials")}</h3>
+          <h3 className="mb-1.5 text-[0.75rem] font-semibold uppercase tracking-[0.1em] text-muted-foreground">{t("play.materials")}</h3>
           <ul className="flex flex-wrap gap-1.5">
             {tip.materials.map((m) => (
-              <li key={m} className="rounded-full bg-hover px-2.5 py-1 text-[13px]">
+              <li key={m} className="rounded-full bg-hover px-2.5 py-1 text-[0.8125rem]">
                 {m}
               </li>
             ))}

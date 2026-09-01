@@ -4,24 +4,24 @@
 
 @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
-/* ---- Dodam brand tokens (html/brand/b01-dodam/tokens.css) ---- */
+/* ---- Sprout brand tokens (html/brand/b03-sprout/tokens.css) ---- */
 :root {
-  --gb-bg: #FAF6EE;
-  --gb-surface: #FFFCF6;
-  --gb-ink: #1F3327;
-  --gb-muted: #5F6356;
-  --gb-primary: #2F5D45;
-  --gb-on-primary: #FAF6EE;
-  --gb-accent: #A63D2A;
-  --gb-ornament: #C9453A;
-  --gb-done: #C9453A;
-  --gb-danger: #8C2F1F;
-  --gb-caution: #7D5F16;
-  --gb-info: #2F5D45;
-  --gb-rule: #E6DFD0;
-  --gb-hover: #F3EDE0;
-  --gb-radius: 12px;
-  --gb-row: 52px;
+  --gb-bg: #FFF8F3;
+  --gb-surface: #FFFFFF;
+  --gb-ink: #3A2A22;
+  --gb-muted: #6F5D52;
+  --gb-primary: #B0432A;
+  --gb-on-primary: #FFF8F3;
+  --gb-accent: #B0432A;
+  --gb-ornament: #E86F4A;
+  --gb-done: #2E7A45;
+  --gb-danger: #A0301E;
+  --gb-caution: #8A5E10;
+  --gb-info: #3E5F8C;
+  --gb-rule: #F0DED2;
+  --gb-hover: #FBEDE4;
+  --gb-radius: 20px;
+  --gb-row: 56px;
 
   --radius: var(--gb-radius);
   --background: var(--gb-bg);
@@ -60,38 +60,38 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --gb-bg: #151A16;
-    --gb-surface: #1D231E;
-    --gb-ink: #ECE7DA;
-    --gb-muted: #A9AA9B;
-    --gb-primary: #8CC1A2;
-    --gb-on-primary: #10150F;
-    --gb-accent: #E7967F;
-    --gb-ornament: #E05C4E;
-    --gb-done: #E05C4E;
-    --gb-danger: #E68A79;
-    --gb-caution: #D9B45B;
-    --gb-info: #8CC1A2;
-    --gb-rule: #2D342E;
-    --gb-hover: #242B25;
+    --gb-bg: #1C1512;
+    --gb-surface: #261D18;
+    --gb-ink: #F5E9E1;
+    --gb-muted: #B8A79C;
+    --gb-primary: #F2917A;
+    --gb-on-primary: #1C1512;
+    --gb-accent: #F2917A;
+    --gb-ornament: #F2917A;
+    --gb-done: #8FCB9B;
+    --gb-danger: #F09A8A;
+    --gb-caution: #E0B860;
+    --gb-info: #9FBCE8;
+    --gb-rule: #3A2C25;
+    --gb-hover: #302420;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --gb-bg: #151A16;
-  --gb-surface: #1D231E;
-  --gb-ink: #ECE7DA;
-  --gb-muted: #A9AA9B;
-  --gb-primary: #8CC1A2;
-  --gb-on-primary: #10150F;
-  --gb-accent: #E7967F;
-  --gb-ornament: #E05C4E;
-  --gb-done: #E05C4E;
-  --gb-danger: #E68A79;
-  --gb-caution: #D9B45B;
-  --gb-info: #8CC1A2;
-  --gb-rule: #2D342E;
-  --gb-hover: #242B25;
+  --gb-bg: #1C1512;
+  --gb-surface: #261D18;
+  --gb-ink: #F5E9E1;
+  --gb-muted: #B8A79C;
+  --gb-primary: #F2917A;
+  --gb-on-primary: #1C1512;
+  --gb-accent: #F2917A;
+  --gb-ornament: #F2917A;
+  --gb-done: #8FCB9B;
+  --gb-danger: #F09A8A;
+  --gb-caution: #E0B860;
+  --gb-info: #9FBCE8;
+  --gb-rule: #3A2C25;
+  --gb-hover: #302420;
   color-scheme: dark;
 }
 
@@ -148,7 +148,7 @@
   --radius-2xl: calc(var(--radius) + 8px);
 
   --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", system-ui, sans-serif;
-  --font-display: var(--font-display-face), "Noto Serif KR", "Apple SD Gothic Neo", Georgia, serif;
+  --font-display: var(--font-display-face), "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", system-ui, sans-serif;
 }
 
 @layer base {
@@ -159,17 +159,32 @@
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
     overscroll-behavior-y: none;
+    font-size: 16px;
+  }
+  /* iOS Dynamic Type: the root size follows the user's text size setting; all sizes below are rem. */
+  html.ios {
+    font: -apple-system-body;
   }
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-sans);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5;
     min-height: 100dvh;
     text-rendering: optimizeLegibility;
   }
   a, button, [role="button"], input, textarea, select, summary {
     touch-action: manipulation;
+  }
+  /* iOS: no long-press callout on app chrome; text stays selectable inside content and inputs. */
+  nav, header, button, [role="button"], summary {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  /* iOS zooms the viewport when a focused field is under 16px; keep every field at 1rem or more. */
+  input, textarea, select {
+    font-size: max(1rem, 1em);
   }
   :focus-visible {
     outline: 3px solid var(--gb-primary);
@@ -193,7 +208,8 @@
 
 @utility font-display {
   font-family: var(--font-display);
-  letter-spacing: -0.01em;
+  font-weight: 800;
+  letter-spacing: -0.02em;
 }
 @utility tnum {
   font-variant-numeric: tabular-nums;
@@ -213,30 +229,30 @@
   overscroll-behavior: contain;
 }
 
-/* The seal lands: a single 120ms settle on confirm. */
-@keyframes seal-stamp {
-  0% { transform: scale(1.18); opacity: 0.6; }
-  100% { transform: scale(1); opacity: 1; }
+/* The leaf unfolds: a single 180ms settle on confirm. */
+@keyframes leaf-unfold {
+  0% { transform: scale(0.7) rotate(-12deg); opacity: 0.4; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
 }
-.seal-stamp {
-  animation: seal-stamp 120ms ease-out;
+.leaf-unfold {
+  animation: leaf-unfold 180ms ease-out;
   transform-origin: center;
 }
 
 /* Markdown in journal entries */
-.prose-dodam :is(h1, h2, h3) { font-family: var(--font-display); font-weight: 600; margin: 1em 0 0.4em; line-height: 1.25; }
-.prose-dodam h1 { font-size: 1.375rem; }
-.prose-dodam h2 { font-size: 1.2rem; }
-.prose-dodam h3 { font-size: 1.05rem; }
-.prose-dodam p { margin: 0.5em 0; }
-.prose-dodam ul, .prose-dodam ol { padding-left: 1.4em; margin: 0.5em 0; }
-.prose-dodam ul { list-style: disc; }
-.prose-dodam ol { list-style: decimal; }
-.prose-dodam blockquote { border-left: 3px solid var(--gb-rule); padding-left: 0.9em; color: var(--gb-muted); margin: 0.6em 0; }
-.prose-dodam code { background: var(--gb-hover); border-radius: 4px; padding: 0.1em 0.35em; font-size: 0.92em; }
-.prose-dodam a { color: var(--gb-primary); text-decoration: underline; text-underline-offset: 3px; }
-.prose-dodam strong { font-weight: 600; }
-.prose-dodam hr { border: 0; border-top: 1px solid var(--gb-rule); margin: 1em 0; }
+.prose-app :is(h1, h2, h3) { font-family: var(--font-display); font-weight: 800; margin: 1em 0 0.4em; line-height: 1.25; }
+.prose-app h1 { font-size: 1.375rem; }
+.prose-app h2 { font-size: 1.2rem; }
+.prose-app h3 { font-size: 1.05rem; }
+.prose-app p { margin: 0.5em 0; }
+.prose-app ul, .prose-app ol { padding-left: 1.4em; margin: 0.5em 0; }
+.prose-app ul { list-style: disc; }
+.prose-app ol { list-style: decimal; }
+.prose-app blockquote { border-left: 3px solid var(--gb-rule); padding-left: 0.9em; color: var(--gb-muted); margin: 0.6em 0; }
+.prose-app code { background: var(--gb-hover); border-radius: 4px; padding: 0.1em 0.35em; font-size: 0.92em; }
+.prose-app a { color: var(--gb-primary); text-decoration: underline; text-underline-offset: 3px; }
+.prose-app strong { font-weight: 600; }
+.prose-app hr { border: 0; border-top: 1px solid var(--gb-rule); margin: 1em 0; }
 
 .skip-link {
   position: absolute;

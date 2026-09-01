@@ -30,7 +30,7 @@ export function MilestonesScreen({ month, content }: { month: number; content: M
         ) : (
           <>
             <section aria-label={t("milestones.progress", { done, total })} className="rounded-xl border border-rule bg-surface p-4">
-              <div className="mb-2 flex items-center justify-between text-[15px]">
+              <div className="mb-2 flex items-center justify-between text-[0.9375rem]">
                 <span className="font-semibold">{t("milestones.progress", { done, total })}</span>
                 <span className="tnum font-semibold text-primary">{percentage}%</span>
               </div>

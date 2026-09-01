@@ -71,7 +71,14 @@ verified by `_build/qa.py` (re-run after any edit); judged bars are scored again
 Gate (≥95 everywhere) is met by **Dodam** and **Moons**. Sprout, Firsts and Nabi fall short on name/distinctiveness
 and are kept as documented alternatives.
 
-## Decision: 01 Dodam (도담)
+## Owner decision (2026-09-01): 03 Sprout (새싹)
+
+The owner chose Sprout for continuity with the app's existing coral identity and its warmth. Consequences handled in the
+product: the store name is **Sprout – Baby Milestones** / **새싹 – 아기 발달 기록** (distinct from "Sprout Baby" and
+"Sprouty"), bundle id `co.minjae.sprout`, and the name should be reserved in App Store Connect on day one. The
+analysis below is kept as the record of the recommendation.
+
+## Recommendation (superseded): 01 Dodam (도담)
 
 1. **The name is the promise.** 도담도담 describes a child growing up sturdy and well — exactly what the product tracks.
    No other option's name carries meaning in both languages; "Dodam" is five letters, pronounceable in English, and
@@ -85,7 +92,7 @@ and are kept as documented alternatives.
    iOS system UI and hold up in dark mode without re-tuning the concept.
 5. **Runner-up:** Moons (02). If a future product wants a calmer, night-diary register, it is the token swap to make.
 
-App Store name: **Dodam – Baby Milestones** (EN) · **도담 – 아기 발달 기록** (KO). Bundle id `co.minjae.dodam`.
+(Superseded) App Store name would have been **Dodam – Baby Milestones** / **도담 – 아기 발달 기록**, bundle id `co.minjae.dodam`.
 
 ## Iteration log
 - v1: palette drafted; qa.py caught nothing on contrast because values were pre-computed against 7:1 / 4.5:1 in both

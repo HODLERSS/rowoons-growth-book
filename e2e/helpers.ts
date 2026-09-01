@@ -14,10 +14,10 @@ export async function seed(ctx: BrowserContext, opts: { lang?: "en" | "ko"; prof
     ([p, l, ms, mm]) => {
       if (localStorage.getItem("e2e:seeded")) return; // seed once per context, not on every navigation
       localStorage.setItem("e2e:seeded", "1");
-      if (p) localStorage.setItem("dodam:profile", JSON.stringify(p));
-      localStorage.setItem("dodam:language", JSON.stringify(l));
-      localStorage.setItem("dodam:milestones", JSON.stringify(ms));
-      localStorage.setItem("dodam:memos", JSON.stringify(mm));
+      if (p) localStorage.setItem("sprout:profile", JSON.stringify(p));
+      localStorage.setItem("sprout:language", JSON.stringify(l));
+      localStorage.setItem("sprout:milestones", JSON.stringify(ms));
+      localStorage.setItem("sprout:memos", JSON.stringify(mm));
     },
     [profile, lang, milestones, memos] as const
   );
@@ -32,7 +32,7 @@ export async function gotoReady(page: Page, url: string) {
 
 /** Switch the stored language on an already-open page and reload. */
 export async function setLanguage(page: Page, lang: "en" | "ko") {
-  await page.evaluate((l) => localStorage.setItem("dodam:language", JSON.stringify(l)), lang);
+  await page.evaluate((l) => localStorage.setItem("sprout:language", JSON.stringify(l)), lang);
   await page.reload();
   await page.waitForSelector("html[data-hydrated]", { state: "attached" });
 }

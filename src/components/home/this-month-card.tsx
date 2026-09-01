@@ -21,18 +21,18 @@ export function ThisMonthCard({ month }: { month: number }) {
   return (
     <section aria-labelledby="this-month" className="rounded-xl border border-rule bg-surface px-4 pt-4 pb-2">
       <div className="flex items-baseline justify-between">
-        <h2 id="this-month" className="text-[16px] font-semibold">
+        <h2 id="this-month" className="text-[1rem] font-semibold">
           {t("home.this_month")}
         </h2>
-        <span className="tnum text-[13px] text-muted-foreground">{t("home.confirmed", { done, total })}</span>
+        <span className="tnum text-[0.8125rem] text-muted-foreground">{t("home.confirmed", { done, total })}</span>
       </div>
       <ProgressBar value={percentage} label={t("home.confirmed", { done, total })} className="mt-2" />
       {!content ? (
-        <div className="h-[220px]" aria-hidden="true" />
+        <div className="h-[13.75rem]" aria-hidden="true" />
       ) : total === 0 ? (
-        <p className="py-4 text-[15px] text-muted-foreground">{t("home.no_milestones", { month })}</p>
+        <p className="py-4 text-[0.9375rem] text-muted-foreground">{t("home.no_milestones", { month })}</p>
       ) : pending.length === 0 ? (
-        <p className="py-4 text-[15px] text-muted-foreground">{t("home.all_done", { month })}</p>
+        <p className="py-4 text-[0.9375rem] text-muted-foreground">{t("home.all_done", { month })}</p>
       ) : (
         <ul className="mt-1">
           {pending.map((m) => (
@@ -40,7 +40,7 @@ export function ThisMonthCard({ month }: { month: number }) {
           ))}
         </ul>
       )}
-      <Link href={`/milestones/${month}`} className="-mx-2 flex h-11 items-center justify-between rounded-lg px-2 text-[15px] font-semibold text-primary hover:bg-hover">
+      <Link href={`/milestones/${month}`} className="-mx-2 flex h-11 items-center justify-between rounded-lg px-2 text-[0.9375rem] font-semibold text-primary hover:bg-hover">
         {t("home.see_all", { count: total })}
         <ChevronRight className="size-4" aria-hidden="true" />
       </Link>

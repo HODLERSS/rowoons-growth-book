@@ -23,10 +23,10 @@ for (const lang of ["en", "ko"]) {
     const ctx = await browser.newContext({ ...devices["iPhone 15"], colorScheme: scheme, locale: lang === "ko" ? "ko-KR" : "en-US" });
     await ctx.addInitScript(
       ([p, l]) => {
-        localStorage.setItem("dodam:profile", JSON.stringify(p));
-        localStorage.setItem("dodam:language", JSON.stringify(l));
-        localStorage.setItem("dodam:milestones", JSON.stringify({ "m-16-social-1": { completed: true, completedAt: "2026-08-20T10:00:00Z" } }));
-        localStorage.setItem("dodam:memos", JSON.stringify([{ id: "a1", title: "First steps", content: "Three steps toward the sofa, then a sit.", createdAt: "2026-08-29T10:00:00Z", updatedAt: "2026-08-29T10:00:00Z" }]));
+        localStorage.setItem("sprout:profile", JSON.stringify(p));
+        localStorage.setItem("sprout:language", JSON.stringify(l));
+        localStorage.setItem("sprout:milestones", JSON.stringify({ "m-16-social-1": { completed: true, completedAt: "2026-08-20T10:00:00Z" } }));
+        localStorage.setItem("sprout:memos", JSON.stringify([{ id: "a1", title: "First steps", content: "Three steps toward the sofa, then a sit.", createdAt: "2026-08-29T10:00:00Z", updatedAt: "2026-08-29T10:00:00Z" }]));
       },
       [profile, lang]
     );

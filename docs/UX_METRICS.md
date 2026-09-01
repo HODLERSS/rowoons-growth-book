@@ -1,0 +1,22 @@
+# UX/UI quality metrics — Sprout (새싹)
+
+Ten metrics for the *experience* of the app, separate from the content and engineering gates in `docs/QUALITY.md`.
+Each is scored 0–100; **launch gate ≥ 95 on every one**. Machine parts are computed by `npm run qa` (section
+"UX"), judged parts are scored against the rubric in `docs/UX_SCORECARD.md`.
+
+| # | Metric | What "95+" means | Measured by |
+|---|--------|------------------|-------------|
+| U1 | **iPhone platform conformance** | Light and dark appearance from one token set; `theme-color` for both; safe-area insets top and bottom; Dynamic Type (in the native app and installed PWA the root size follows the iOS text-size setting; every text size in rem); Reduce Motion honoured; 44×44pt targets; haptic on the primary action; portrait, no zoom lock; standalone/Capacitor status bar respected. | Machine: tokens paired light/dark; two `theme-color` metas; `pt-safe`/`pb-safe` present; no px text sizes in components; `html.ios { font: -apple-system-body }` present; reduced-motion E2E; tap-target E2E on every route; viewport not zoom-locked. |
+| U2 | **Visual consistency** | One colour system (tokens only), one display face + platform face, one icon library, one radius and spacing scale, no emoji glyphs, no gradients/glass. | Machine: raw-hex / palette / emoji / icon-library scans; gradient and backdrop scans; radius values limited to the token scale. |
+| U3 | **Hierarchy & readability** | Body ≥ 15px (0.9375rem), captions ≥ 12px, contrast AA for every text role and AAA for body ink in both appearances, line length ≤ 70ch, tabular numerals for ages/counts. | Machine: smallest rem size in components ≥ 0.75rem; token contrast computed light + dark; `tnum` utility used on numerals; axe colour-contrast rule clean. |
+| U4 | **Navigation clarity** | Every core screen ≤ 2 taps from Home; every screen has a back path; the active tab is announced (`aria-current`); the month you are on is always visible; bare section URLs redirect to the current month. | Machine: E2E depth test, back-path test, `aria-current` checks, redirect test. |
+| U5 | **Minimalism** | One primary action per screen; no duplicated navigation surfaces; ≤ 10 interactive elements above the fold on Home and ≤ 14 in total; nothing decorative. | Machine: interactive-element counts on Home (iPhone 15 viewport); at most one filled action besides the month pill. Judged: screen-by-screen audit. |
+| U6 | **Feedback & state design** | Every async or empty situation has a designed state (loading, empty, error, not-found); confirming a milestone gives immediate visual + haptic + date feedback; destructive actions confirm; unsaved text warns; status messages are announced (`aria-live`). | Machine: E2E — empty journal, 404, missing entry, bad backup, discard guard, delete confirm; stamp feedback test. |
+| U7 | **Accessibility** | axe WCAG 2.1 AA: zero serious/critical on every route in both appearances; every control named; focus visible; dialogs trap focus and close on Escape; `lang` follows the UI language. | Machine: axe E2E (light + dark), Escape-closes-dialog test, `lang` assertions. |
+| U8 | **Perceived performance** | Lighthouse mobile performance ≥ 95 on every core route, CLS < 0.02, no layout jump on hydration (placeholders reserve space), first-load JS ≤ 250 kB over the wire, works offline. | Machine: Lighthouse, CLS, JS over the wire, offline E2E. |
+| U9 | **Bilingual layout parity** | Korean and English fit the same layout: no clipped or overflowing text on any route in either language at iPhone width, no horizontal page scroll, dates/numbers localised with `Intl`. | Machine: E2E overflow scan (any element with `scrollWidth > clientWidth + 1` that is not an intentional horizontal scroller) on every route in EN and KO; `document.documentElement.scrollWidth <= innerWidth`. |
+| U10 | **Helpfulness for parents** | Every screen answers "what do I do now": milestones carry a plain description and a source; every safety note has a *What to do*; every month has a parent note with a line for the parent; the home screen shows this month's progress and next actions; the disclaimer is present but not nagging. | Machine: content checks (source/action/note coverage); E2E: Home shows progress, pending milestones, note and journal entry point. Judged: parent read-through of three months. |
+
+## Scoring
+Machine checks deduct their weight from 100; judged items are scored per rubric line. The scorecard is regenerated
+before every release (`docs/UX_SCORECARD.md`).

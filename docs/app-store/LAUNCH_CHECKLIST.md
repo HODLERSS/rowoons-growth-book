@@ -1,10 +1,10 @@
-# Dodam — iOS launch checklist
+# Sprout — iOS launch checklist
 
 Everything below is prepared in this repo. The steps marked **[you]** need the Apple Developer account and Xcode,
 which are not available on the build machine.
 
 ## 0. What is already done
-- `ios/` — Capacitor iOS project (Swift Package Manager, no CocoaPods). Bundle id `co.minjae.dodam`, display name Dodam.
+- `ios/` — Capacitor iOS project (Swift Package Manager, no CocoaPods). Bundle id `co.minjae.sprout`, display name Sprout.
 - `resources/icon-1024.png` (opaque), `resources/splash-2732.png` / `-dark.png` — App Store icon and launch images.
 - `ios/App/App/Info.plist` — portrait only, `ITSAppUsesNonExemptEncryption = NO`, no camera/mic/location usage.
 - `ios/App/App/PrivacyInfo.xcprivacy` — privacy manifest: no tracking, no collected data, UserDefaults reason CA92.1.
@@ -25,7 +25,7 @@ This writes the static app to `out/` and copies it into `ios/App/App/public`.
 npm run cap:open          # or: open ios/App/App.xcodeproj
 ```
 1. Xcode ▸ Settings ▸ Accounts: sign in with the Apple ID that owns the Developer Program membership.
-2. Target **App** ▸ Signing & Capabilities: Team = your team, check *Automatically manage signing*. Bundle id stays `co.minjae.dodam`.
+2. Target **App** ▸ Signing & Capabilities: Team = your team, check *Automatically manage signing*. Bundle id stays `co.minjae.sprout`.
 3. Add the **Push Notifications** capability only if you later ship remote push; local notifications need nothing.
 4. General ▸ App Icons: the asset catalog already holds the 1024 icon; confirm it renders.
 5. Product ▸ Run on a simulator (iPhone 16 Pro) — confirm: onboarding, stamping a milestone (haptic), language switch, Settings ▸ Monthly reminders prompts for permission, dark mode, safe areas on a notched device.
@@ -36,7 +36,7 @@ npm run cap:open          # or: open ios/App/App.xcodeproj
 3. Wait for processing (≈10 min). If prompted about export compliance, the answer is already in Info.plist (NO).
 
 ## 4. App Store Connect **[you]** — copy from `docs/app-store/listing.json`
-1. My Apps ▸ **+** ▸ New App: iOS, name `Dodam – Baby Milestones`, primary language English (U.S.), bundle id `co.minjae.dodam`, SKU `dodam-ios-001`.
+1. My Apps ▸ **+** ▸ New App: iOS, name `Sprout – Baby Milestones`, primary language English (U.S.), bundle id `co.minjae.sprout`, SKU `sprout-ios-001`.
 2. App Information: category Health & Fitness (secondary Education), content rights, age rating (all *None* → 4+).
 3. App Privacy: **Data Not Collected**. Privacy policy URL `https://baby.minjae.co/privacy/`.
 4. Version 1.0 ▸ upload screenshots (6.9″ set is required; 6.7″ optional), fill promotional text, description, keywords, support URL, marketing URL, copyright. Add **Korean** localization and paste the `ko` block.

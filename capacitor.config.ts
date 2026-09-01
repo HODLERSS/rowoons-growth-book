@@ -1,14 +1,14 @@
 import type { CapacitorConfig } from "@capacitor/cli";
 
 const config: CapacitorConfig = {
-  appId: "co.minjae.dodam",
-  appName: "Dodam",
+  appId: "co.minjae.sprout",
+  appName: "Sprout",
   webDir: "out",
   ios: {
     contentInset: "automatic",
     backgroundColor: "#FAF6EE",
     preferredContentMode: "mobile",
-    scheme: "Dodam",
+    scheme: "Sprout",
   },
   plugins: {
     LocalNotifications: {

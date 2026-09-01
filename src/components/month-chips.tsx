@@ -35,7 +35,7 @@ export function MonthChips({ basePath, selectedMonth }: MonthChipsProps) {
                 aria-current={selected ? "page" : undefined}
                 aria-label={current ? t("months.current", { month }) : t("months.aria", { month })}
                 className={cn(
-                  "tnum flex h-11 min-w-11 items-center justify-center rounded-full px-3 text-[15px] font-semibold transition-colors",
+                  "tnum flex h-11 min-w-11 items-center justify-center rounded-full px-3 text-[0.9375rem] font-semibold transition-colors",
                   selected
                     ? "bg-primary text-primary-foreground"
                     : current

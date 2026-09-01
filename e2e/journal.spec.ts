@@ -9,7 +9,7 @@ test.describe("journal", () => {
 
   test("create → view → edit → delete", async ({ page }) => {
     await gotoReady(page, "/memo/");
-    await expect(page.getByText("The book is open.")).toBeVisible();
+    await expect(page.getByText("Nothing here yet.")).toBeVisible();
     await page.getByRole("link", { name: "New entry" }).click();
     await expect(page).toHaveURL(/\/memo\/new\/$/);
     const save = page.getByRole("button", { name: "Save" });
@@ -17,7 +17,7 @@ test.describe("journal", () => {
     await page.locator("#memo-title").fill("First smile");
     await page.locator("#memo-content").fill("Day 41. **Real** smile, not gas.");
     await page.getByRole("button", { name: "Preview" }).click();
-    await expect(page.locator(".prose-dodam strong")).toHaveText("Real");
+    await expect(page.locator(".prose-app strong")).toHaveText("Real");
     await save.click();
     await expect(page).toHaveURL(/\/memo\/view\/\?id=/);
     await expect(page.getByRole("heading", { name: "First smile" })).toBeVisible();
@@ -37,7 +37,7 @@ test.describe("journal", () => {
     await expect(dialog).toContainText("“First smile!” will be removed.");
     await dialog.getByRole("button", { name: "Delete" }).click();
     await expect(page).toHaveURL(/\/memo\/$/);
-    await expect(page.getByText("The book is open.")).toBeVisible();
+    await expect(page.getByText("Nothing here yet.")).toBeVisible();
   });
 
   test("cancelling with unsaved text asks first", async ({ page }) => {

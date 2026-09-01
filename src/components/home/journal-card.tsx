@@ -13,23 +13,23 @@ export function JournalCard() {
   return (
     <section aria-labelledby="journal-card" className="rounded-xl border border-rule bg-surface px-4 py-2">
       <div className="flex h-11 items-center justify-between">
-        <h2 id="journal-card" className="text-[16px] font-semibold">
+        <h2 id="journal-card" className="text-[1rem] font-semibold">
           {t("home.journal")}
         </h2>
-        <Link href="/memo/new" className="-mr-2 flex h-11 items-center gap-1 rounded-lg px-2 text-[15px] font-semibold text-primary hover:bg-hover">
+        <Link href="/memo/new" className="-mr-2 flex h-11 items-center gap-1 rounded-lg px-2 text-[0.9375rem] font-semibold text-primary hover:bg-hover">
           <Plus className="size-4" aria-hidden="true" />
           {t("home.write")}
         </Link>
       </div>
       {recent.length === 0 ? (
-        <p className="pb-3 text-[15px] leading-relaxed text-muted-foreground">{t("journal.empty")}</p>
+        <p className="pb-3 text-[0.9375rem] leading-relaxed text-muted-foreground">{t("journal.empty")}</p>
       ) : (
         <ul>
           {recent.map((m) => (
-            <li key={m.id} className="border-t border-rule">
-              <Link href={`/memo/view?id=${encodeURIComponent(m.id)}`} className="-mx-2 flex min-h-[48px] items-center gap-3 rounded-lg px-2 py-2 hover:bg-hover">
-                <span className="min-w-0 flex-1 truncate text-[15px]">{m.title || t("journal.untitled")}</span>
-                <time dateTime={m.updatedAt} className="tnum shrink-0 text-[12px] text-muted-foreground">
+            <li key={m.id} className="-mx-4 border-t border-rule px-4 transition-colors hover:bg-hover">
+              <Link href={`/memo/view?id=${encodeURIComponent(m.id)}`} className="flex min-h-[3rem] items-center gap-3 py-2">
+                <span className="min-w-0 flex-1 truncate text-[0.9375rem]">{m.title || t("journal.untitled")}</span>
+                <time dateTime={m.updatedAt} className="tnum shrink-0 text-[0.75rem] text-muted-foreground">
                   {formatShortDate(lang, m.updatedAt)}
                 </time>
               </Link>

@@ -18,7 +18,7 @@ export function SideNav() {
     <aside className="hidden md:flex md:w-60 md:shrink-0 md:flex-col md:border-r md:border-rule md:bg-surface">
       <div className="sticky top-0 flex h-dvh flex-col p-4">
         <Link href="/" className="flex h-11 items-center px-2 rounded-lg hover:bg-hover">
-          <Wordmark className="text-[22px]" />
+          <Wordmark className="text-[1.375rem]" />
         </Link>
         <nav aria-label={t("nav.home")} className="mt-4 flex-1">
           <ul className="space-y-1">
@@ -31,7 +31,7 @@ export function SideNav() {
                     href={navHref(item, currentMonth)}
                     aria-current={active ? "page" : undefined}
                     className={cn(
-                      "flex h-11 items-center gap-3 rounded-lg px-3 text-[15px] transition-colors",
+                      "flex h-11 items-center gap-3 rounded-lg px-3 text-[0.9375rem] transition-colors",
                       active ? "bg-hover font-semibold text-primary" : "text-foreground hover:bg-hover"
                     )}
                   >
@@ -47,7 +47,7 @@ export function SideNav() {
           href="/settings"
           aria-current={settingsActive ? "page" : undefined}
           className={cn(
-            "flex h-11 items-center gap-3 rounded-lg px-3 text-[15px] transition-colors",
+            "flex h-11 items-center gap-3 rounded-lg px-3 text-[0.9375rem] transition-colors",
             settingsActive ? "bg-hover font-semibold text-primary" : "text-foreground hover:bg-hover"
           )}
         >

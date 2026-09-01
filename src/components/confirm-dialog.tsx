@@ -21,8 +21,8 @@ export function ConfirmDialog({ open, onOpenChange, title, body, confirmLabel, c
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-[calc(100vw-2rem)] overscroll-contain sm:max-w-sm">
         <DialogHeader>
-          <DialogTitle className="text-[17px]">{title}</DialogTitle>
-          {body && <DialogDescription className="text-[15px]">{body}</DialogDescription>}
+          <DialogTitle className="text-[1.0625rem]">{title}</DialogTitle>
+          {body && <DialogDescription className="text-[0.9375rem]">{body}</DialogDescription>}
         </DialogHeader>
         <DialogFooter className="gap-2 sm:gap-2">
           <Button type="button" variant="outline" size="lg" onClick={() => onOpenChange(false)}>

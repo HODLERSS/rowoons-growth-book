@@ -1,4 +1,4 @@
-# Dodam (도담)
+# Sprout (새싹)
 
 A month-by-month book for a baby's first 36 months: milestones, play ideas, safety notes and a private journal — in
 English and Korean, built with Next.js 16 and shipped as a PWA (baby.minjae.co) and an iOS app (Capacitor).
@@ -27,6 +27,6 @@ See `docs/app-store/LAUNCH_CHECKLIST.md`.
 ## Layout
 - `src/app` routes (server wrappers) · `src/screens` client screens · `src/components` UI · `src/hooks` state
   (localStorage via `useSyncExternalStore`) · `src/lib` logic · `src/i18n` UI strings · `src/content` EN/KO data.
-- `html/brand` — the brand system (five options, Dodam selected; `_build/qa.py` verifies it).
+- `html/brand` — the brand system (five options, Sprout selected; `_build/qa.py` verifies it).
 - `docs` — quality metrics, Korean style guide, App Store material.
 - Web-only routes (`/admin`, `/api/push/*`) use the `.web.tsx` / `.web.ts` extension and are excluded from the native build.

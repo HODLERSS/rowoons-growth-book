@@ -4,7 +4,7 @@ import { jsonOr } from "../store";
 
 describe("validators", () => {
   it("accepts a well-formed backup and rejects others", () => {
-    const good = { app: "dodam", version: 1, exportedAt: "2026-08-31T00:00:00Z", profile: { name: "Rowoon", birthDate: "2025-04-17" }, language: "ko", milestones: {}, memos: [] };
+    const good = { app: "sprout", version: 1, exportedAt: "2026-08-31T00:00:00Z", profile: { name: "Rowoon", birthDate: "2025-04-17" }, language: "ko", milestones: {}, memos: [] };
     expect(isBackupFile(good)).toBe(true);
     expect(isBackupFile({ ...good, app: "other" })).toBe(false);
     expect(isBackupFile({ ...good, memos: "nope" })).toBe(false);
@@ -20,7 +20,7 @@ describe("validators", () => {
     expect(isCompletion([])).toBe(false);
   });
   it("names backups by date", () => {
-    expect(backupFilename(new Date(2026, 7, 31))).toBe("dodam-backup-20260831.json");
+    expect(backupFilename(new Date(2026, 7, 31))).toBe("sprout-backup-20260831.json");
   });
 });
 

@@ -17,16 +17,16 @@ export function ParentNote({ note, sections, defaultOpen = false }: ParentNotePr
   const labels = { milestone: t("note.milestone"), watchout: t("note.watchout"), cheerup: t("note.cheerup") } as const;
   return (
     <details className="group rounded-xl border border-rule bg-surface" open={defaultOpen}>
-      <summary className="flex min-h-[52px] cursor-pointer list-none items-center gap-3 px-4 py-2 text-[15px] font-medium [&::-webkit-details-marker]:hidden">
-        <BookOpen className="size-[18px] text-primary" aria-hidden="true" />
+      <summary className="flex min-h-[3.25rem] cursor-pointer list-none items-center gap-3 px-4 py-2 text-[0.9375rem] font-medium [&::-webkit-details-marker]:hidden">
+        <BookOpen className="size-[1.125rem] text-primary" aria-hidden="true" />
         <span className="flex-1">{t("note.label")}</span>
         <ChevronDown className="size-4 text-muted-foreground transition-transform group-open:rotate-180" aria-hidden="true" />
       </summary>
       <div className="space-y-4 px-4 pb-4">
         {sections.map((s) => (
           <section key={s}>
-            <h3 className="mb-1 text-[12px] font-semibold uppercase tracking-[0.12em] text-muted-foreground">{labels[s]}</h3>
-            <p className={s === "cheerup" ? "font-display text-[15px] leading-relaxed" : "text-[15px] leading-relaxed"}>{note[s]}</p>
+            <h3 className="mb-1 text-[0.75rem] font-semibold uppercase tracking-[0.12em] text-muted-foreground">{labels[s]}</h3>
+            <p className={s === "cheerup" ? "text-[0.9375rem] font-medium leading-relaxed" : "text-[0.9375rem] leading-relaxed"}>{note[s]}</p>
           </section>
         ))}
       </div>

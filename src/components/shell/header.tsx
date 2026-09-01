@@ -32,8 +32,8 @@ export function Header({ title, subtitle, backHref, actions, leading, className 
         )}
         {leading}
         <div className="min-w-0 flex-1">
-          <h1 className="font-display truncate text-[22px] font-semibold leading-tight md:text-2xl">{title}</h1>
-          {subtitle && <p className="tnum truncate text-[13px] text-muted-foreground">{subtitle}</p>}
+          <h1 className="font-display truncate text-[1.375rem] font-semibold leading-tight md:text-2xl">{title}</h1>
+          {subtitle && <p className="tnum truncate text-[0.8125rem] text-muted-foreground">{subtitle}</p>}
         </div>
         {actions && <div className="flex shrink-0 items-center gap-1">{actions}</div>}
       </div>

@@ -14,7 +14,7 @@ export function NotFoundScreen() {
         <EmptyState
           text={t("notfound.body")}
           action={
-            <Link href="/" className="flex h-11 items-center rounded-lg border border-rule px-4 text-[15px] font-semibold hover:bg-hover">
+            <Link href="/" className="flex h-11 items-center rounded-lg border border-rule px-4 text-[0.9375rem] font-semibold hover:bg-hover">
               {t("notfound.home")}
             </Link>
           }

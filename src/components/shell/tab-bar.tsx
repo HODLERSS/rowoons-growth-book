@@ -23,11 +23,11 @@ export function TabBar() {
                 href={navHref(item, currentMonth)}
                 aria-current={active ? "page" : undefined}
                 className={cn(
-                  "flex h-full min-w-[44px] flex-col items-center justify-center gap-1 rounded-lg text-[11px] font-medium transition-colors",
+                  "flex h-full min-w-[2.75rem] flex-col items-center justify-center gap-1 rounded-lg text-[0.75rem] font-medium transition-colors",
                   active ? "text-primary" : "text-muted-foreground hover:text-foreground active:text-foreground"
                 )}
               >
-                <Icon className="size-[22px]" strokeWidth={active ? 2.2 : 1.8} aria-hidden="true" />
+                <Icon className="size-[1.375rem]" strokeWidth={active ? 2.2 : 1.8} aria-hidden="true" />
                 <span>{t(item.label)}</span>
               </Link>
             </li>

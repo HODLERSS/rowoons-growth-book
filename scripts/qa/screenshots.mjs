@@ -17,14 +17,14 @@ const profile = { name: "Rowoon", nameKo: "로운", birthDate: "2025-04-17" };
 const SHOTS = {
   en: [
     { path: "/", caption: "One book for the first 36 months" },
-    { path: "/milestones/16/", caption: "Confirm a milestone. It’s stamped with the date." },
+    { path: "/milestones/16/", caption: "Confirm a milestone. Its leaf turns green." },
     { path: "/play-tips/16/", caption: "Play ideas matched to this month" },
     { path: "/watch-outs/16/", caption: "Safety notes, graded and actionable" },
     { path: "/memo/", caption: "A private journal that stays on your phone" },
   ],
   ko: [
     { path: "/", caption: "생후 36개월까지, 한 권의 책" },
-    { path: "/milestones/16/", caption: "확인하면 날짜와 함께 도장이 찍혀요" },
+    { path: "/milestones/16/", caption: "확인하면 잎이 초록으로 물들어요" },
     { path: "/play-tips/16/", caption: "이번 달에 딱 맞는 놀이" },
     { path: "/watch-outs/16/", caption: "긴급·주의·참고로 나눈 안전 정보" },
     { path: "/memo/", caption: "휴대폰에만 남는 나만의 기록" },

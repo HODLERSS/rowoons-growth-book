@@ -23,6 +23,8 @@ const nextConfig: NextConfig = {
   outputFileTracingRoot: process.cwd(),
   turbopack: { root: process.cwd() },
   output: native ? "export" : undefined,
+  // Keep the native export out of .next so it can never clobber a web build that `next start` will serve.
+  distDir: native ? ".next-native" : ".next",
   // Web-only files use the .web.tsx / .web.ts extension; the native build never sees them.
   pageExtensions: native ? ["tsx", "ts"] : ["web.tsx", "web.ts", "tsx", "ts"],
   images: { unoptimized: true },

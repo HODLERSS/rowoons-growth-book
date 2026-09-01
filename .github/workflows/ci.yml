@@ -21,9 +21,9 @@ jobs:
       - run: npm run typecheck
       - run: npx eslint --max-warnings=0
       - run: npm test
-      - run: npm run build
-      - name: Native export builds
+      - name: Native export builds (separate distDir)
         run: npm run build:native
+      - run: npm run build
       - name: Install Playwright browsers
         run: npx playwright install --with-deps chromium webkit
       - name: E2E (iPhone Chromium + WebKit, dark, desktop)

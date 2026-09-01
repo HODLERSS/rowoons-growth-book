@@ -4,6 +4,7 @@ Everything below is prepared in this repo. The steps marked **[you]** need the A
 which are not available on the build machine.
 
 ## 0. What is already done
+- **Verified on the iOS 26.3 simulator (iPhone 17 Pro):** the project builds with Xcode 26.3, installs, launches, auto-selects Korean from the device language, and renders both languages in light and dark appearance. Simulator quirk to know: the simulator's `-apple-system` font does not cascade to Korean (real devices do); the app names the Korean face explicitly, so it renders everywhere.
 - `ios/` — Capacitor iOS project (Swift Package Manager, no CocoaPods). Bundle id `co.minjae.sprout`, display name Sprout.
 - `resources/icon-1024.png` (opaque), `resources/splash-2732.png` / `-dark.png` — App Store icon and launch images.
 - `ios/App/App/Info.plist` — portrait only, `ITSAppUsesNonExemptEncryption = NO`, no camera/mic/location usage.
@@ -18,7 +19,7 @@ which are not available on the build machine.
 npm ci
 npm run cap:sync          # = BUILD_TARGET=native next build && cap sync ios
 ```
-This writes the static app to `out/` and copies it into `ios/App/App/public`.
+This writes the static app to `.next-native/` and copies it into `ios/App/App/public`.
 
 ## 2. Open in Xcode **[you]**
 ```bash

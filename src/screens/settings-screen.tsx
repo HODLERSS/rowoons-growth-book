@@ -8,7 +8,7 @@ import { Segmented } from "@/components/segmented";
 import { ConfirmDialog } from "@/components/confirm-dialog";
 import { ProfileDialog } from "@/components/profile/profile-dialog";
 import { Button } from "@/components/ui/button";
-import { useBaby, displayName } from "@/hooks/use-baby";
+import { useBaby, displayName, nameLang } from "@/hooks/use-baby";
 import { useLanguage } from "@/hooks/use-language";
 import { useSettings } from "@/hooks/use-settings";
 import { usePush } from "@/hooks/use-push";
@@ -88,7 +88,7 @@ export function SettingsScreen() {
         <Section title={t("settings.profile")}>
           <button type="button" onClick={() => setEditing(true)} className="flex min-h-[3.75rem] w-full items-center gap-3 px-4 py-2 text-left hover:bg-hover/60">
             <span className="min-w-0 flex-1">
-              <span className="font-display block truncate text-[1.125rem] font-semibold">{hydrated && baby ? displayName(baby, lang) : t("home.setup")}</span>
+              <span className="font-display block truncate text-[1.125rem] font-semibold" lang={hydrated && baby ? nameLang(displayName(baby, lang), lang) : lang}>{hydrated && baby ? displayName(baby, lang) : t("home.setup")}</span>
               {hydrated && born && <span className="tnum block text-[0.8125rem] text-muted-foreground">{t("age.born", { date: formatDate(lang, born) })}</span>}
             </span>
             <span className="text-[0.9375rem] font-semibold text-primary">{t("settings.edit_profile")}</span>
@@ -104,7 +104,7 @@ export function SettingsScreen() {
               onChange={(v) => setLang(v as Language)}
               options={[
                 { value: "en", label: "English" },
-                { value: "ko", label: "한국어" },
+                { value: "ko", label: "한국어", lang: "ko" },
               ]}
               className="w-full"
             />

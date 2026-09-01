@@ -21,6 +21,11 @@ export function displayName(baby: BabyInfo | null, lang: Language): string {
   return latin ?? names[0];
 }
 
+/** Language tag for a rendered name: Korean names get lang="ko" so the Korean face is used even in English UI. */
+export function nameLang(name: string, uiLang: Language): Language {
+  return HANGUL.test(name) ? "ko" : uiLang;
+}
+
 export function useBaby() {
   const baby = useStoredValue<BabyInfo | null>(KEYS.profile, parseBaby, null);
   const hydrated = useHydrated();

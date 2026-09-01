@@ -19,7 +19,7 @@ npm run qa                                        # docs/QUALITY.md machine chec
 
 ## Native (iOS)
 ```bash
-npm run cap:sync       # static export → ios/App/App/public
+npm run cap:sync       # static export (.next-native) → ios/App/App/public
 npm run cap:open       # Xcode
 ```
 See `docs/app-store/LAUNCH_CHECKLIST.md`.

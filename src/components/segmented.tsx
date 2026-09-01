@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 interface SegmentedProps<T extends string> {
   label: string;
   value: T;
-  options: { value: T; label: string }[];
+  options: { value: T; label: string; lang?: string }[];
   onChange: (v: T) => void;
   className?: string;
 }
@@ -21,6 +21,7 @@ export function Segmented<T extends string>({ label, value, options, onChange, c
             type="button"
             role="radio"
             aria-checked={active}
+            lang={o.lang}
             onClick={() => onChange(o.value)}
             className={cn(
               "h-11 flex-1 rounded-md text-[0.9375rem] font-semibold transition-colors",

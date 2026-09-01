@@ -2,7 +2,7 @@
 
 import { Pencil } from "lucide-react";
 import { LeafMark } from "@/components/brand/leaf";
-import { useBaby, displayName } from "@/hooks/use-baby";
+import { useBaby, displayName, nameLang } from "@/hooks/use-baby";
 import { useAge } from "@/hooks/use-age";
 import { useLanguage } from "@/hooks/use-language";
 import { formatDate } from "@/i18n";
@@ -47,7 +47,7 @@ export function ProfileCard({ onEdit }: { onEdit: () => void }) {
       >
         <LeafMark size={56} />
         <span className="min-w-0 flex-1">
-          <span className="font-display block truncate text-[1.375rem] font-semibold leading-tight" lang={lang}>
+          <span className="font-display block truncate text-[1.375rem] font-semibold leading-tight" lang={nameLang(name, lang)}>
             {name}
           </span>
           <span className="tnum mt-0.5 block text-[0.9375rem]">{ageText || " "}</span>

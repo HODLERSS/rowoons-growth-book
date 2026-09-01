@@ -100,7 +100,7 @@ function ProfileForm({ mode, initial, lang, setLang, t, onSubmit, onCancel }: Fo
           onChange={(v) => setLang(v as Language)}
           options={[
             { value: "en", label: "English" },
-            { value: "ko", label: "한국어" },
+            { value: "ko", label: "한국어", lang: "ko" },
           ]}
         />
       )}

@@ -19,6 +19,9 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
+  // This repo lives under a folder that has its own lockfile; pin the root so tracing/turbopack never guess.
+  outputFileTracingRoot: process.cwd(),
+  turbopack: { root: process.cwd() },
   output: native ? "export" : undefined,
   // Web-only files use the .web.tsx / .web.ts extension; the native build never sees them.
   pageExtensions: native ? ["tsx", "ts"] : ["web.tsx", "web.ts", "tsx", "ts"],

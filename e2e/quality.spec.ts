@@ -11,7 +11,6 @@ test.describe("quality gates", () => {
   for (const route of ROUTES) {
     test(`axe: no serious or critical violations on ${route}`, async ({ page }) => {
       await gotoReady(page, route);
-      await page.waitForLoadState("networkidle");
       const results = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"]).analyze();
       const bad = results.violations.filter((v) => v.impact === "serious" || v.impact === "critical");
       expect(bad.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(" ")).join(", ")}`)).toEqual([]);
@@ -20,14 +19,12 @@ test.describe("quality gates", () => {
     test(`console is clean on ${route}`, async ({ page }) => {
       const problems = watchConsole(page);
       await gotoReady(page, route);
-      await page.waitForLoadState("networkidle");
-      await page.waitForTimeout(300);
+      await page.waitForTimeout(500);
       expect(problems).toEqual([]);
     });
 
     test(`tap targets are at least 44×44 on ${route}`, async ({ page }) => {
       await gotoReady(page, route);
-      await page.waitForLoadState("networkidle");
       const small = await page.evaluate(() => {
         const els = Array.from(document.querySelectorAll<HTMLElement>('a[href], button, [role="button"], [role="radio"], input:not([type="hidden"]), textarea, summary'));
         const out: string[] = [];

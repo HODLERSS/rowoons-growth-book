@@ -7,13 +7,20 @@ test.describe("offline", () => {
     await seed(context);
     await pinClock(page);
     await gotoReady(page, "/");
-    await page.waitForLoadState("networkidle");
-    // Wait for the service worker to control the page, then warm the cache.
-    await page.evaluate(() => navigator.serviceWorker.ready);
+    // Wait for the service worker to activate (bounded), then warm the cache with the pages we will need offline.
+    await page.evaluate(() => Promise.race([navigator.serviceWorker.ready, new Promise((_, reject) => setTimeout(() => reject(new Error("service worker not ready")), 15000))]));
     await gotoReady(page, "/milestones/16/");
-    await page.waitForLoadState("networkidle");
     await gotoReady(page, "/memo/");
-    await page.waitForLoadState("networkidle");
+    // The SW caches pages after responding; wait until the month page is in the cache.
+    await page.waitForFunction(
+      async () => {
+        const cache = await caches.open("dodam-v1");
+        const keys = await cache.keys();
+        return keys.some((r) => new URL(r.url).pathname === "/milestones/16/");
+      },
+      undefined,
+      { timeout: 15000 }
+    );
 
     await context.setOffline(true);
     await gotoReady(page, "/milestones/16/");

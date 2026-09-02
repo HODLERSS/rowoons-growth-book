@@ -57,9 +57,10 @@ English is the source of *facts* (every claim, number and citation); Korean owns
 | 기억하세요! / 명심하세요 | (state the rule plainly) |
 | 놀라운 / 경이로운 / 마법 같은 | (drop — the fact is enough) |
 
-## Quotes from sources (`sourceQuote`)
-- Render the source's sentence faithfully in Korean; add nothing, soften nothing. Keep the organisation name in Latin
-  (CDC, AAP, WHO). The UI labels it as a quotation from that source.
+## Source summaries (`sourceSummary`)
+- A one- or two-sentence summary of what the cited page says, in Korean; add nothing, soften nothing. Keep the
+  organisation name in Latin (CDC, AAP, WHO). The UI labels it 출처 내용 요약, never as a quotation, because the
+  English text is our summary, not the source's own words.
 
 ## Titles
 - Milestone titles: a verb phrase ending in 요, ≤ 18 characters (one line on an iPhone at 15px; e.g. 엄마 아빠 목소리를 알아요).

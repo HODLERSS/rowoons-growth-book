@@ -50,6 +50,7 @@ npm run cap:open          # or: open ios/App/App.xcodeproj
 - Tag the release: `git tag v1.0.0 && git push --tags`.
 - Bump `APP_VERSION` in `src/lib/constants.ts`, `version` in `package.json`, and CFBundleShortVersionString/CFBundleVersion in Xcode for every subsequent build.
 - Re-run `npm run qa` and regenerate screenshots (`node scripts/qa/screenshots.mjs`) when screens change.
+- Build order matters locally as in CI: `npm run build:native` **before** `npm run build` (the native export rewrites `.next/BUILD_ID`, which breaks a running `next start` and the screenshot/E2E runs against it).
 
 ## Known limits to disclose in TestFlight notes
 - Web push (baby.minjae.co) and native reminders are separate systems; the iOS app uses local notifications only.

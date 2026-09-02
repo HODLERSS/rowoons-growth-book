@@ -8,6 +8,7 @@ import { Wordmark } from "@/components/brand/wordmark";
 import { ProfileCard } from "@/components/home/profile-card";
 import { ThisMonthCard } from "@/components/home/this-month-card";
 import { NoteCard } from "@/components/home/note-card";
+import { ComingUpCard } from "@/components/home/coming-up-card";
 import { JournalCard } from "@/components/home/journal-card";
 import { NotifyCard } from "@/components/home/notify-card";
 import { ProfileDialog } from "@/components/profile/profile-dialog";
@@ -44,6 +45,7 @@ export function HomeScreen() {
           <>
             <ThisMonthCard month={currentMonth} />
             <NoteCard month={currentMonth} />
+            <ComingUpCard month={currentMonth} />
             <JournalCard />
             <NotifyCard />
           </>

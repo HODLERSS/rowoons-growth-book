@@ -14,7 +14,7 @@ interface PushSubscriptionJSON {
 
 export async function POST(request: Request) {
   try {
-    const { password, title, body, endpoints } = await request.json();
+    const { password, title, body, url, endpoints } = await request.json();
 
     if (password !== process.env.ADMIN_PASSWORD) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
@@ -50,7 +50,7 @@ export async function POST(request: Request) {
     let failed = 0;
     const expired: string[] = [];
 
-    const payload = JSON.stringify({ title: title || "Baby Growth Book", body });
+    const payload = JSON.stringify({ title: title || "Sprout", body, url: typeof url === "string" && url.startsWith("/") ? url : "/" });
 
     await Promise.all(
       targets.map(async (sub) => {

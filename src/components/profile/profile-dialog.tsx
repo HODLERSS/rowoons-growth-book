@@ -10,9 +10,9 @@ import { useBaby } from "@/hooks/use-baby";
 import { useLanguage } from "@/hooks/use-language";
 import { useSettings } from "@/hooks/use-settings";
 import { parseLocalDate, toLocalISO } from "@/lib/age-calculator";
-import { scheduleReminders } from "@/lib/reminders";
 import { isNative } from "@/lib/platform";
 import type { Language } from "@/i18n";
+import type { BabyInfo } from "@/lib/types";
 
 interface ProfileDialogProps {
   mode: "create" | "edit";
@@ -37,7 +37,7 @@ export function ProfileDialog({ mode, open, onClose }: ProfileDialogProps) {
             t={t}
             onSubmit={(info) => {
               setBaby(info);
-              if (isNative() && settings.reminders) void scheduleReminders(info.nameKo && lang === "ko" ? info.nameKo : info.name, info.birthDate, lang);
+              if (isNative() && settings.reminders) void import("@/lib/reminders").then((m) => m.scheduleReminders(info, lang));
               onClose();
             }}
             onCancel={onClose}
@@ -50,11 +50,11 @@ export function ProfileDialog({ mode, open, onClose }: ProfileDialogProps) {
 
 interface FormProps {
   mode: "create" | "edit";
-  initial: { name: string; nameKo?: string; birthDate: string } | null;
+  initial: BabyInfo | null;
   lang: Language;
   setLang: (l: Language) => void;
   t: ReturnType<typeof useLanguage>["t"];
-  onSubmit: (info: { name: string; nameKo?: string; birthDate: string }) => void;
+  onSubmit: (info: BabyInfo) => void;
   onCancel: () => void;
 }
 
@@ -62,17 +62,20 @@ function ProfileForm({ mode, initial, lang, setLang, t, onSubmit, onCancel }: Fo
   const [name, setName] = useState(initial?.name ?? "");
   const [nameAlt, setNameAlt] = useState(initial?.nameKo ?? "");
   const [birthDate, setBirthDate] = useState(initial?.birthDate ?? "");
-  const [errors, setErrors] = useState<{ name?: string; date?: string }>({});
+  const [dueDate, setDueDate] = useState(initial?.dueDate ?? "");
+  const [showDue, setShowDue] = useState(!!initial?.dueDate);
+  const [errors, setErrors] = useState<{ name?: string; date?: string; due?: string }>({});
   const today = toLocalISO(new Date());
   const isEdit = mode === "edit";
 
   function submit(e: FormEvent) {
     e.preventDefault();
-    const next: { name?: string; date?: string } = {};
+    const next: { name?: string; date?: string; due?: string } = {};
     if (!name.trim()) next.name = t("onboarding.name_required");
     if (!birthDate) next.date = t("onboarding.date_required");
     else if (!parseLocalDate(birthDate)) next.date = t("onboarding.date_invalid");
     else if (birthDate > today) next.date = t("onboarding.date_future");
+    if (dueDate && !parseLocalDate(dueDate)) next.due = t("onboarding.date_invalid");
     setErrors(next);
     if (next.name) {
       document.getElementById("profile-name")?.focus();
@@ -82,7 +85,11 @@ function ProfileForm({ mode, initial, lang, setLang, t, onSubmit, onCancel }: Fo
       document.getElementById("profile-birthday")?.focus();
       return;
     }
-    onSubmit({ name: name.trim(), nameKo: nameAlt.trim() || undefined, birthDate });
+    if (next.due) {
+      document.getElementById("profile-due")?.focus();
+      return;
+    }
+    onSubmit({ name: name.trim(), nameKo: nameAlt.trim() || undefined, birthDate, dueDate: dueDate || undefined });
   }
 
   return (
@@ -155,6 +162,43 @@ function ProfileForm({ mode, initial, lang, setLang, t, onSubmit, onCancel }: Fo
           </p>
         )}
       </div>
+
+      {!showDue ? (
+        <button
+          type="button"
+          aria-expanded={false}
+          aria-controls="profile-due-section"
+          onClick={() => setShowDue(true)}
+          className="-mx-2 flex min-h-11 items-center rounded-lg px-2 text-left text-[0.875rem] font-semibold text-primary hover:bg-hover"
+        >
+          {t("onboarding.due_toggle")}
+        </button>
+      ) : (
+        <div id="profile-due-section" className="space-y-1.5">
+          <label htmlFor="profile-due" className="text-[0.875rem] font-semibold">
+            {t("onboarding.due_date")}
+          </label>
+          <Input
+            id="profile-due"
+            name="dueDate"
+            type="date"
+            value={dueDate}
+            onChange={(e) => setDueDate(e.target.value)}
+            aria-invalid={!!errors.due}
+            aria-describedby={errors.due ? "profile-due-error" : "profile-due-hint"}
+            className="h-12 text-[1rem]"
+          />
+          {errors.due ? (
+            <p id="profile-due-error" role="alert" className="text-[0.8125rem] text-danger">
+              {errors.due}
+            </p>
+          ) : (
+            <p id="profile-due-hint" className="text-[0.75rem] leading-relaxed text-muted-foreground">
+              {t("onboarding.due_date_hint")}
+            </p>
+          )}
+        </div>
+      )}
 
       <p className="text-[0.75rem] leading-relaxed text-muted-foreground">{t("onboarding.disclaimer")}</p>
 

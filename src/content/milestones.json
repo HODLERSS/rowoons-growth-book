@@ -5,9 +5,9 @@
     "category": "social",
     "title": "Recognizes parent's voice",
     "description": "Your baby heard your voice in the womb and already finds it familiar. They may calm down or become alert when they hear you speak, showing the earliest signs of social connection.",
-    "source": "CDC",
-    "sourceUrl": "https://www.cdc.gov/act-early/milestones/2-months.html",
-    "sourceQuote": "Newborns recognize their parent's voice from hearing it in the womb and will calm down or become alert when they hear it."
+    "source": "AAP",
+    "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/Developmental-Milestones-1-Month.aspx",
+    "sourceSummary": "AAP's one-month milestones include looking or turning toward familiar sounds and voices."
   },
   {
     "id": "m-1-social-2",
@@ -17,7 +17,7 @@
     "description": "Newborns can see about 8 to 12 inches away, roughly the distance to your face during feeding. Your baby gazes at your face during nursing or bottle-feeding, building the first bond.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Newborns see best at a distance of 8 to 12 inches, the perfect distance to gaze at your face during feeding."
+    "sourceSummary": "Newborns see best at a distance of 8 to 12 inches, the perfect distance to gaze at your face during feeding."
   },
   {
     "id": "m-1-language-1",
@@ -27,7 +27,7 @@
     "description": "Your baby's Moro reflex kicks in when they hear a sudden loud noise, causing them to fling their arms out and cry. This shows their hearing is working and they are responding to the world around them.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/2-months.html",
-    "sourceQuote": "Newborns startle at loud sounds, demonstrating the Moro reflex and showing that their hearing is functioning normally."
+    "sourceSummary": "Newborns startle at loud sounds, demonstrating the Moro reflex and showing that their hearing is functioning normally."
   },
   {
     "id": "m-1-language-2",
@@ -37,7 +37,7 @@
     "description": "Your baby prefers human voices over other sounds, especially familiar ones. When you speak softly, they may stop fussing, turn toward you, or become still and attentive.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Newborns prefer human voices, especially familiar ones, and will often calm down or become attentive when spoken to gently."
+    "sourceSummary": "Newborns prefer human voices, especially familiar ones, and will often calm down or become attentive when spoken to gently."
   },
   {
     "id": "m-1-cognitive-1",
@@ -47,7 +47,7 @@
     "description": "From birth, babies are drawn to face-like patterns and prefer looking at faces over other objects. Your newborn will study your features up close, learning to recognize the people who care for them.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/2-months.html",
-    "sourceQuote": "Newborns prefer face-like patterns and will focus on faces within their visual range, studying features up close."
+    "sourceSummary": "Newborns prefer face-like patterns and will focus on faces within their visual range, studying features up close."
   },
   {
     "id": "m-1-cognitive-2",
@@ -57,7 +57,7 @@
     "description": "Your baby can track a slow-moving object a short distance with their eyes. This early visual tracking lays the groundwork for hand-eye coordination later on.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Newborns begin to briefly follow a slowly moving object with their eyes, an early sign of developing visual tracking ability."
+    "sourceSummary": "Newborns begin to briefly follow a slowly moving object with their eyes, an early sign of developing visual tracking ability."
   },
   {
     "id": "m-1-physical-1",
@@ -67,7 +67,7 @@
     "description": "When placed on their stomach, your baby briefly raises their head before setting it back down. These mini lifts build the neck muscles needed for later head control.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "Newborns can briefly lift their head when placed on their stomach, building the neck strength needed for future motor milestones."
+    "sourceSummary": "Newborns can briefly lift their head when placed on their stomach, building the neck strength needed for future motor milestones."
   },
   {
     "id": "m-1-physical-2",
@@ -75,9 +75,9 @@
     "category": "physical",
     "title": "Strong grasp reflex",
     "description": "When you place your finger in your newborn's palm, they grip it tightly. This automatic grasp reflex is one of several newborn reflexes that will gradually give way to intentional grasping.",
-    "source": "CDC",
-    "sourceUrl": "https://www.cdc.gov/act-early/milestones/2-months.html",
-    "sourceQuote": "The grasp reflex causes newborns to automatically grip a finger placed in their palm, a reflex that fades as intentional grasping develops."
+    "source": "AAP",
+    "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/Developmental-Milestones-1-Month.aspx",
+    "sourceSummary": "AAP lists strong reflex movements among one-month milestones; the grasp reflex fades as intentional grasping develops."
   },
   {
     "id": "m-2-social-1",
@@ -87,7 +87,7 @@
     "description": "Around 6 to 8 weeks, your baby gives their first true social smile in response to your face or voice. Unlike earlier reflexive smiles, this one is intentional and aimed at connecting with you.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/2-months.html",
-    "sourceQuote": "By 2 months, most babies begin to smile at people, especially in response to familiar faces and voices."
+    "sourceSummary": "By 2 months, most babies begin to smile at people, especially in response to familiar faces and voices."
   },
   {
     "id": "m-2-social-2",
@@ -97,7 +97,7 @@
     "description": "Your baby settles down when you pick them up, hold them close, and speak soothingly. This shows they are learning that their caregivers bring comfort and safety.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Babies calm when picked up and comforted, showing they are developing trust and a sense of security with their caregivers."
+    "sourceSummary": "Babies calm when picked up and comforted, showing they are developing trust and a sense of security with their caregivers."
   },
   {
     "id": "m-2-language-1",
@@ -107,7 +107,7 @@
     "description": "Your baby starts making soft vowel sounds like \"ooh\" and \"aah.\" These early coos are their first experiments with using their voice on purpose, and they love hearing you coo back.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/2-months.html",
-    "sourceQuote": "By 2 months, most babies begin to coo, making soft vowel-like sounds such as 'ooh' and 'aah' as early vocal experiments."
+    "sourceSummary": "By 2 months, most babies begin to coo, making soft vowel-like sounds such as 'ooh' and 'aah' as early vocal experiments."
   },
   {
     "id": "m-2-language-2",
@@ -117,7 +117,7 @@
     "description": "Your baby moves their head in the direction of interesting sounds, like your voice or a rattle. This shows their hearing is developing well and they are curious about where sounds come from.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "By 2 months, babies begin turning their head toward interesting sounds, showing developing auditory awareness and sound localization."
+    "sourceSummary": "By 2 months, babies begin turning their head toward interesting sounds, showing developing auditory awareness and sound localization."
   },
   {
     "id": "m-2-cognitive-1",
@@ -127,7 +127,7 @@
     "description": "Your baby follows a slow-moving toy or your face across their visual field. Their tracking is becoming smoother and they can follow objects further than before.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/2-months.html",
-    "sourceQuote": "By 2 months, most babies can follow a slowly moving object with their eyes across their visual field."
+    "sourceSummary": "By 2 months, most babies can follow a slowly moving object with their eyes across their visual field."
   },
   {
     "id": "m-2-cognitive-2",
@@ -137,7 +137,7 @@
     "description": "Your baby stares intently at faces, clearly preferring them over other objects. They are learning to recognize the people who matter most and beginning to distinguish facial expressions.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Babies show a strong preference for faces over other objects, staring intently as they learn to recognize familiar people."
+    "sourceSummary": "Babies show a strong preference for faces over other objects, staring intently as they learn to recognize familiar people."
   },
   {
     "id": "m-2-physical-1",
@@ -147,7 +147,7 @@
     "description": "During tummy time, your baby pushes up on their forearms and lifts their head higher than before. Their neck muscles are getting stronger with each practice session.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "By 2 months, most babies can lift their head to about 45 degrees during tummy time, showing strengthening neck and upper body muscles."
+    "sourceSummary": "By 2 months, most babies can lift their head to about 45 degrees during tummy time, showing strengthening neck and upper body muscles."
   },
   {
     "id": "m-2-physical-2",
@@ -157,7 +157,7 @@
     "description": "The jerky, startled movements of the newborn period start to smooth out. Your baby's arms and legs move more fluidly as their nervous system matures.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "By 2 months, the jerky newborn movements begin to smooth out as your baby's nervous system matures and muscle control improves."
+    "sourceSummary": "By 2 months, the jerky newborn movements begin to smooth out as your baby's nervous system matures and muscle control improves."
   },
   {
     "id": "m-3-social-1",
@@ -167,7 +167,7 @@
     "description": "Your baby smiles readily when they see parents and familiar faces, showing growing social awareness. Their smile is becoming a reliable way to greet the people they love.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/4-months.html",
-    "sourceQuote": "By 3 months, most babies smile at familiar people, showing social recognition and the desire to engage with those they know."
+    "sourceSummary": "By 3 months, most babies smile at familiar people, showing social recognition and the desire to engage with those they know."
   },
   {
     "id": "m-3-social-2",
@@ -177,7 +177,7 @@
     "description": "Your baby loves face-to-face interaction and may cry or fuss when the fun stops. They are learning that being with people is enjoyable and rewarding.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/4-months.html",
-    "sourceQuote": "By 3 months, most babies enjoy playing with people and may cry when playing stops, showing early social engagement."
+    "sourceSummary": "By 3 months, most babies enjoy playing with people and may cry when playing stops, showing early social engagement."
   },
   {
     "id": "m-3-language-1",
@@ -187,7 +187,7 @@
     "description": "Your baby experiments with vowel sounds and gurgles, often in response to your talking. These little \"conversations\" are building the foundation for real speech.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/4-months.html",
-    "sourceQuote": "By 3 months, most babies coo and make gurgling sounds, experimenting with their voice and responding to conversation."
+    "sourceSummary": "By 3 months, most babies coo and make gurgling sounds, experimenting with their voice and responding to conversation."
   },
   {
     "id": "m-3-language-2",
@@ -197,7 +197,7 @@
     "description": "Your baby starts copying some of the sounds and facial expressions you make. They may try to match your tone or mimic your mouth movements during face-to-face time.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Around 3 months, babies begin to imitate some sounds and facial expressions, showing early communication and social learning."
+    "sourceSummary": "Around 3 months, babies begin to imitate some sounds and facial expressions, showing early communication and social learning."
   },
   {
     "id": "m-3-cognitive-1",
@@ -205,9 +205,9 @@
     "category": "cognitive",
     "title": "Tracks objects in a full arc",
     "description": "Your baby can now track a moving object 180 degrees from one side to the other. Their visual tracking is becoming smooth and coordinated.",
-    "source": "CDC",
-    "sourceUrl": "https://www.cdc.gov/act-early/milestones/4-months.html",
-    "sourceQuote": "By 3 months, most babies follow moving objects with their eyes across a full 180-degree arc."
+    "source": "AAP",
+    "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/Developmental-Milestones-3-Months.aspx",
+    "sourceSummary": "AAP's 1–4-month milestones include the eyes following moving objects by 2 months."
   },
   {
     "id": "m-3-cognitive-2",
@@ -217,7 +217,7 @@
     "description": "Your baby's vision is improving and they can now identify familiar faces from farther away. They may smile or kick excitedly when they spot you across the room.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "By 3 months, babies can recognize familiar people at a distance, showing their vision and memory are developing together."
+    "sourceSummary": "By 3 months, babies can recognize familiar people at a distance, showing their vision and memory are developing together."
   },
   {
     "id": "m-3-physical-1",
@@ -227,7 +227,7 @@
     "description": "Your baby does mini push-ups during tummy time, lifting their head up to 90 degrees. This builds the upper body strength needed for rolling and eventually crawling.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "By 3 months, most babies push up on their arms during tummy time, lifting their head to about 90 degrees."
+    "sourceSummary": "By 3 months, most babies push up on their arms during tummy time, lifting their head to about 90 degrees."
   },
   {
     "id": "m-3-physical-2",
@@ -235,39 +235,39 @@
     "category": "physical",
     "title": "Opens and closes hands",
     "description": "Your baby's hands are open more often now instead of clenched in fists. They grasp and let go of objects voluntarily and may play with their own fingers.",
-    "source": "CDC",
-    "sourceUrl": "https://www.cdc.gov/act-early/milestones/4-months.html",
-    "sourceQuote": "By 3 months, most babies open and close their hands, grasping and releasing objects and beginning to play with their fingers."
+    "source": "AAP",
+    "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/Developmental-Milestones-3-Months.aspx",
+    "sourceSummary": "AAP's 1–4-month milestones include opening the hands briefly by 2 months and starting to use hands and eyes together."
   },
   {
     "id": "m-4-social-1",
     "month": 4,
     "category": "social",
-    "title": "Copies facial expressions",
-    "description": "Your baby is becoming a little mimic, copying your smiles, frowns, and surprised looks. This back-and-forth imitation is one of the earliest forms of social conversation.",
+    "title": "Chuckles when you make them laugh",
+    "description": "Not a full belly laugh yet, but a chuckle when you play silly. Your baby is discovering that you are the funniest person in the world.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/4-months.html",
-    "sourceQuote": "By 4 months, most babies copy some facial expressions, like smiling and frowning, showing early social communication."
+    "sourceSummary": "CDC's 4-month checklist includes chuckling (not yet a full laugh) when you try to make them laugh."
   },
   {
     "id": "m-4-social-2",
     "month": 4,
     "category": "social",
-    "title": "Enjoys play; fusses when it stops",
-    "description": "Your baby loves interactive time and lets you know when the fun ends too soon. They may fuss, squirm, or look longingly at you to keep the game going.",
+    "title": "Works to keep your attention",
+    "description": "Your baby looks at you, wiggles, or makes sounds to get your attention and keep the play going. When you stop, they let you know.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/4-months.html",
-    "sourceQuote": "By 4 months, most babies enjoy playing and may cry when playing stops, showing they are engaged and want more interaction."
+    "sourceSummary": "CDC's 4-month checklist includes looking at you, moving, or making sounds to get or keep your attention."
   },
   {
     "id": "m-4-language-1",
     "month": 4,
     "category": "language",
-    "title": "Babbles with expression",
-    "description": "Your baby makes sounds with rising and falling tones that mimic the rhythm of real conversation. These expressive babbles show they are tuning in to the music of language.",
+    "title": "Makes sounds back when you talk",
+    "description": "Talk to your baby and pause: they answer with coos and gurgles. These first back-and-forths are the start of conversation.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/4-months.html",
-    "sourceQuote": "By 4 months, most babies babble expressively, using rising and falling tones that mimic the rhythm of conversation."
+    "sourceSummary": "CDC's 4-month checklist includes making sounds back when you talk to them."
   },
   {
     "id": "m-4-language-2",
@@ -277,7 +277,7 @@
     "description": "You may notice your baby's cries sound different depending on whether they are hungry, tired, or uncomfortable. This variation is an early form of intentional communication.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "By 4 months, babies develop distinct cries for hunger, tiredness, and discomfort, an early form of intentional communication."
+    "sourceSummary": "By 4 months, babies develop distinct cries for hunger, tiredness, and discomfort, an early form of intentional communication."
   },
   {
     "id": "m-4-cognitive-1",
@@ -287,7 +287,7 @@
     "description": "Your baby deliberately reaches for objects that catch their interest, using one hand to swipe or grab at toys. This shows growing hand-eye coordination and intentional action.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/4-months.html",
-    "sourceQuote": "By 4 months, most babies reach for a toy with one hand, showing developing hand-eye coordination and intentional movement."
+    "sourceSummary": "By 4 months, most babies reach for a toy with one hand, showing developing hand-eye coordination and intentional movement."
   },
   {
     "id": "m-4-cognitive-2",
@@ -297,7 +297,7 @@
     "description": "Your baby studies facial expressions intently and reacts to emotional cues. They may smile when you smile or look concerned when you sound upset.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Babies watch faces closely and begin to respond to emotional cues, reacting to smiles, frowns, and changes in tone of voice."
+    "sourceSummary": "Babies watch faces closely and begin to respond to emotional cues, reacting to smiles, frowns, and changes in tone of voice."
   },
   {
     "id": "m-4-physical-1",
@@ -307,17 +307,17 @@
     "description": "When held upright, your baby can now keep their head steady and centered. This solid head control is a major physical milestone that opens the door to sitting and more.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/4-months.html",
-    "sourceQuote": "By 4 months, most babies hold their head steady without support when held upright, a key physical milestone."
+    "sourceSummary": "By 4 months, most babies hold their head steady without support when held upright, a key physical milestone."
   },
   {
     "id": "m-4-physical-2",
     "month": 4,
     "category": "physical",
-    "title": "Pushes with legs on a hard surface",
-    "description": "When you hold your baby in a standing position on a firm surface, they push down with their legs and bear some weight. They love this \"standing\" practice.",
+    "title": "Pushes up on elbows on tummy",
+    "description": "During tummy time your baby props up on their forearms and lifts their chest to look around. Neck, shoulder and back muscles are getting strong.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/4-months.html",
-    "sourceQuote": "By 4 months, most babies push down on their legs when their feet are placed on a hard surface, bearing some weight."
+    "sourceSummary": "CDC's 4-month checklist includes pushing up onto elbows or forearms when on the tummy."
   },
   {
     "id": "m-5-social-1",
@@ -327,7 +327,7 @@
     "description": "Your baby reacts differently to people they know versus strangers. They may smile readily at family members but stare cautiously at unfamiliar faces.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "By 5 months, babies clearly distinguish between familiar and unfamiliar faces, reacting differently to strangers versus known people."
+    "sourceSummary": "By 5 months, babies clearly distinguish between familiar and unfamiliar faces, reacting differently to strangers versus known people."
   },
   {
     "id": "m-5-social-2",
@@ -337,7 +337,7 @@
     "description": "Your baby picks up on emotional cues and mirrors them. If you laugh, they may laugh back. If they sense tension, they might become fussy or quiet.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Around 5 months, babies respond to the emotions of those around them, mirroring happy or upset expressions as early empathy develops."
+    "sourceSummary": "Around 5 months, babies respond to the emotions of those around them, mirroring happy or upset expressions as early empathy develops."
   },
   {
     "id": "m-5-language-1",
@@ -347,17 +347,17 @@
     "description": "Your baby discovers the fun of blowing \"raspberries\" with their lips. This buzzing sound is both entertaining and great practice for the mouth muscles needed for speech.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Blowing raspberries is a fun way babies practice using their lips and mouth muscles, building the oral motor skills needed for speech."
+    "sourceSummary": "Blowing raspberries is a fun way babies practice using their lips and mouth muscles, building the oral motor skills needed for speech."
   },
   {
     "id": "m-5-language-2",
     "month": 5,
     "category": "language",
     "title": "Responds to own name",
-    "description": "Your baby is beginning to turn their head when you call their name. This early name recognition shows they are connecting the sound of their name with themselves.",
+    "description": "Your baby may be starting to turn their head when you call their name. Many begin now; CDC lists it as something most babies do by 9 months, so there is no worry if it comes later.",
     "source": "CDC",
-    "sourceUrl": "https://www.cdc.gov/act-early/milestones/6-months.html",
-    "sourceQuote": "Around 5 months, babies begin to turn when their name is called, showing early recognition of their own name."
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/9-months.html",
+    "sourceSummary": "CDC's 9-month checklist includes looking when you call their name; most babies do this by 9 months."
   },
   {
     "id": "m-5-cognitive-1",
@@ -367,7 +367,7 @@
     "description": "Everything goes in the mouth at this age. Your baby uses their mouth to learn about the texture, shape, and taste of objects, making it a primary tool for exploration.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/6-months.html",
-    "sourceQuote": "Babies bring things to their mouth to explore them, using their mouth as a primary tool for learning about textures and shapes."
+    "sourceSummary": "Babies bring things to their mouth to explore them, using their mouth as a primary tool for learning about textures and shapes."
   },
   {
     "id": "m-5-cognitive-2",
@@ -377,7 +377,7 @@
     "description": "Your baby sees something interesting and reaches persistently for it, sometimes squirming or rocking to try to get closer. Their curiosity is driving them to explore.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Babies show growing curiosity by reaching persistently for out-of-reach objects, driven by a desire to explore their world."
+    "sourceSummary": "Babies show growing curiosity by reaching persistently for out-of-reach objects, driven by a desire to explore their world."
   },
   {
     "id": "m-5-physical-1",
@@ -387,7 +387,7 @@
     "description": "Your baby achieves their first rolling milestone, flipping from their stomach to their back. This is a big moment that shows growing core strength and body coordination.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/6-months.html",
-    "sourceQuote": "By 5 months, many babies roll from their tummy to their back, a major motor milestone showing developing core strength."
+    "sourceSummary": "By 5 months, many babies roll from their tummy to their back, a major motor milestone showing developing core strength."
   },
   {
     "id": "m-5-physical-2",
@@ -397,7 +397,7 @@
     "description": "Your baby grasps a rattle, ring, or small toy voluntarily and holds onto it for a while. Their grip is getting stronger and more purposeful.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "By 5 months, most babies can voluntarily grasp and hold small objects like rattles, showing improving fine motor control."
+    "sourceSummary": "By 5 months, most babies can voluntarily grasp and hold small objects like rattles, showing improving fine motor control."
   },
   {
     "id": "m-6-social-1",
@@ -407,7 +407,7 @@
     "description": "Your baby clearly recognizes family members and close friends, smiling and reaching for them. They may become wary or reserved around people they don't know well.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/6-months.html",
-    "sourceQuote": "By 6 months, most babies know familiar faces and begin to recognize whether someone is a stranger."
+    "sourceSummary": "By 6 months, most babies know familiar faces and begin to recognize whether someone is a stranger."
   },
   {
     "id": "m-6-social-2",
@@ -417,17 +417,17 @@
     "description": "Your baby is fascinated by their own reflection, smiling and reaching at the baby in the mirror. While they don't yet realize it's themselves, they love the interaction.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/6-months.html",
-    "sourceQuote": "By 6 months, most babies like to look at themselves in a mirror, smiling and reaching at their own reflection."
+    "sourceSummary": "By 6 months, most babies like to look at themselves in a mirror, smiling and reaching at their own reflection."
   },
   {
     "id": "m-6-language-1",
     "month": 6,
     "category": "language",
     "title": "Responds to own name consistently",
-    "description": "When you call your baby's name, they turn toward you reliably. This consistent response shows they have connected their name with themselves.",
+    "description": "When you call your baby's name, they turn toward you more and more reliably. CDC lists this as something most babies do by 9 months.",
     "source": "CDC",
-    "sourceUrl": "https://www.cdc.gov/act-early/milestones/6-months.html",
-    "sourceQuote": "By 6 months, most babies respond to their own name by turning toward the speaker, showing clear name recognition."
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/9-months.html",
+    "sourceSummary": "CDC's 9-month checklist includes looking when you call their name; most babies do this by 9 months."
   },
   {
     "id": "m-6-language-2",
@@ -437,7 +437,7 @@
     "description": "Your baby chains together sounds like \"ah,\" \"eh,\" and \"oh\" in long vocal strings. These playful sound combinations are practice runs for real words down the road.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/6-months.html",
-    "sourceQuote": "By 6 months, most babies string vowel sounds together when babbling, like 'ah,' 'eh,' and 'oh.'"
+    "sourceSummary": "CDC's 6-month checklist includes taking turns making sounds with you and making squealing noises."
   },
   {
     "id": "m-6-cognitive-1",
@@ -447,7 +447,7 @@
     "description": "Mouthing objects is still your baby's primary way of learning about the world. They are gathering information about texture, shape, and even temperature through oral exploration.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/6-months.html",
-    "sourceQuote": "By 6 months, babies continue to explore objects primarily by putting them in their mouth, learning about shape, texture, and more."
+    "sourceSummary": "By 6 months, babies continue to explore objects primarily by putting them in their mouth, learning about shape, texture, and more."
   },
   {
     "id": "m-6-cognitive-2",
@@ -457,7 +457,7 @@
     "description": "Your baby actively reaches for objects that interest them, stretching and sometimes lunging to grab what they want. Their curiosity is a powerful motivator for movement.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/6-months.html",
-    "sourceQuote": "By 6 months, most babies show curiosity about things and try to get things that are out of reach."
+    "sourceSummary": "By 6 months, most babies show curiosity about things and try to get things that are out of reach."
   },
   {
     "id": "m-6-physical-1",
@@ -467,7 +467,7 @@
     "description": "Your baby can sit upright when propped with pillows or held at the hips. They are building the core strength and balance needed for sitting independently soon.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/6-months.html",
-    "sourceQuote": "By 6 months, most babies sit with support, building the core strength and balance needed for independent sitting."
+    "sourceSummary": "By 6 months, most babies sit with support, building the core strength and balance needed for independent sitting."
   },
   {
     "id": "m-6-physical-2",
@@ -477,7 +477,7 @@
     "description": "Your baby starts transferring a toy from one hand to the other, a skill that requires coordination between both sides of the body and brain.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Around 6 months, babies begin passing objects from one hand to the other, showing improving bilateral coordination."
+    "sourceSummary": "Around 6 months, babies begin passing objects from one hand to the other, showing improving bilateral coordination."
   },
   {
     "id": "m-7-social-1",
@@ -487,7 +487,7 @@
     "description": "Your baby notices when people around them are happy, sad, or upset and reacts accordingly. They may become quiet when they sense tension or laugh when others are joyful.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Around 7 months, babies show increasing sensitivity to the emotions of those around them, responding to the mood in the room."
+    "sourceSummary": "Around 7 months, babies show increasing sensitivity to the emotions of those around them, responding to the mood in the room."
   },
   {
     "id": "m-7-social-2",
@@ -497,7 +497,7 @@
     "description": "Your baby laughs and squeals during interactive games like peek-a-boo and pat-a-cake. They may even try to keep the game going by grabbing the blanket or bouncing with excitement.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/9-months.html",
-    "sourceQuote": "Babies love interactive games like peek-a-boo and pat-a-cake, laughing and participating as their social skills develop."
+    "sourceSummary": "Babies love interactive games like peek-a-boo and pat-a-cake, laughing and participating as their social skills develop."
   },
   {
     "id": "m-7-language-1",
@@ -507,7 +507,7 @@
     "description": "Your baby strings together consonant-vowel combinations like \"bababa\" and \"mamama.\" These repetitive sound chains are an important step toward first words.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/9-months.html",
-    "sourceQuote": "By 7 months, most babies babble strings of consonant-vowel sounds like 'bababa' and 'mamama,' practicing the building blocks of speech."
+    "sourceSummary": "By 7 months, most babies babble strings of consonant-vowel sounds like 'bababa' and 'mamama,' practicing the building blocks of speech."
   },
   {
     "id": "m-7-language-2",
@@ -517,7 +517,7 @@
     "description": "Your baby may pause briefly when you say \"no\" in a firm voice. They are beginning to understand tone and the meaning behind certain words, even if they don't always comply.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Around 7 months, babies begin to respond to the word 'no,' pausing briefly at the tone of voice, even if they don't fully understand."
+    "sourceSummary": "Around 7 months, babies begin to respond to the word 'no,' pausing briefly at the tone of voice, even if they don't fully understand."
   },
   {
     "id": "m-7-cognitive-1",
@@ -527,7 +527,7 @@
     "description": "When you partially cover a toy with a cloth, your baby pulls the cloth away to find it. This early search behavior shows the beginnings of object permanence.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/9-months.html",
-    "sourceQuote": "Around 7 months, babies find partially hidden objects, showing early understanding that objects exist even when partly out of sight."
+    "sourceSummary": "Around 7 months, babies find partially hidden objects, showing early understanding that objects exist even when partly out of sight."
   },
   {
     "id": "m-7-cognitive-2",
@@ -537,7 +537,7 @@
     "description": "Your baby learns about objects by shaking them, banging them on surfaces, and dropping them. Every sound and reaction teaches them something about how things work.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Babies explore objects by banging, shaking, and dropping them, learning about cause and effect through hands-on experimentation."
+    "sourceSummary": "Babies explore objects by banging, shaking, and dropping them, learning about cause and effect through hands-on experimentation."
   },
   {
     "id": "m-7-physical-1",
@@ -547,7 +547,7 @@
     "description": "Your baby can sit on the floor independently, using their hands for balance when needed. This frees up both hands for playing and exploring while sitting.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "Sitting without support is one of the six gross motor milestones in the WHO standards, typically achieved between 5 and 9 months."
+    "sourceSummary": "Sitting without support is one of the six gross motor milestones in the WHO standards, typically achieved between 5 and 9 months."
   },
   {
     "id": "m-7-physical-2",
@@ -557,7 +557,7 @@
     "description": "Your baby starts moving their body across the floor by crawling on hands and knees, army crawling on their belly, or scooting on their bottom. Every baby finds their own style.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Around 7 months, many babies begin to crawl, scoot, or creep across the floor, each finding their own unique style of mobility."
+    "sourceSummary": "Around 7 months, many babies begin to crawl, scoot, or creep across the floor, each finding their own unique style of mobility."
   },
   {
     "id": "m-8-social-1",
@@ -567,17 +567,17 @@
     "description": "Your baby may cry or cling to you when unfamiliar people approach. This is a healthy sign of attachment and shows they know the difference between the people they trust and those they don't.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/9-months.html",
-    "sourceQuote": "Stranger anxiety is common around this age and is a normal sign that your baby has formed strong attachments to familiar caregivers."
+    "sourceSummary": "Stranger anxiety is common around this age and is a normal sign that your baby has formed strong attachments to familiar caregivers."
   },
   {
     "id": "m-8-social-2",
     "month": 8,
     "category": "social",
-    "title": "Has favorite toys",
-    "description": "Your baby shows clear preferences for certain toys or objects, reaching for them specifically and sometimes protesting when they are taken away.",
-    "source": "Zero to Three",
-    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Around 8 months, babies develop clear preferences for certain toys, showing growing personality and the ability to make choices."
+    "title": "Shows several facial expressions",
+    "description": "Happy, sad, angry, surprised: your baby's face now shows a range of clear expressions, and you can read their mood at a glance.",
+    "source": "CDC",
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/9-months.html",
+    "sourceSummary": "CDC's 9-month checklist includes showing several facial expressions, like happy, sad, angry, and surprised."
   },
   {
     "id": "m-8-language-1",
@@ -587,7 +587,7 @@
     "description": "Your baby babbles \"mama\" and \"dada\" as part of their consonant practice, but they don't yet use these sounds to refer specifically to you. That intentional use is coming soon.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/9-months.html",
-    "sourceQuote": "By 8 months, many babies say 'mama' or 'dada' as part of babbling, though they don't yet use these words with specific meaning."
+    "sourceSummary": "By 8 months, many babies say 'mama' or 'dada' as part of babbling, though they don't yet use these words with specific meaning."
   },
   {
     "id": "m-8-language-2",
@@ -597,7 +597,7 @@
     "description": "Your baby uses pointing to communicate and share attention with you. When they point at something, they are saying \"Look at that!\" and inviting you into their world.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Pointing is an important communication milestone that shows your baby can share attention and direct your gaze to something of interest."
+    "sourceSummary": "Pointing is an important communication milestone that shows your baby can share attention and direct your gaze to something of interest."
   },
   {
     "id": "m-8-cognitive-1",
@@ -607,7 +607,7 @@
     "description": "Your baby turns things over, shakes them, and drops them to see what happens. They are little scientists, testing and retesting to understand the properties of everyday objects.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/9-months.html",
-    "sourceQuote": "Around 8 months, babies explore objects by turning them over, shaking, and dropping to discover how things work."
+    "sourceSummary": "CDC's 9-month checklist includes banging two things together and looking for objects when they drop out of sight."
   },
   {
     "id": "m-8-cognitive-2",
@@ -617,7 +617,7 @@
     "description": "When something drops, your baby follows it with their eyes and looks where it landed. This tracking ability shows developing object permanence and spatial awareness.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/9-months.html",
-    "sourceQuote": "Babies watch the path of falling objects and look for where they went, showing developing object permanence and visual tracking."
+    "sourceSummary": "CDC's 9-month checklist includes looking for objects when they are dropped out of sight, like a spoon or toy."
   },
   {
     "id": "m-8-physical-1",
@@ -627,7 +627,7 @@
     "description": "Your baby grabs onto furniture, crib rails, or your hands and pulls themselves up to a standing position. This is an exciting step toward cruising and eventually walking.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "Pulling to stand using furniture or support is a key motor milestone, typically achieved between 7 and 12 months."
+    "sourceSummary": "Pulling to stand using furniture or support is a key motor milestone, typically achieved between 7 and 12 months."
   },
   {
     "id": "m-8-physical-2",
@@ -637,7 +637,7 @@
     "description": "Your baby transfers toys from one hand to the other with ease, no longer fumbling the exchange. This smooth transfer shows maturing fine motor coordination.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "By 8 months, most babies pass objects smoothly from hand to hand, showing improving bilateral coordination and fine motor control."
+    "sourceSummary": "By 8 months, most babies pass objects smoothly from hand to hand, showing improving bilateral coordination and fine motor control."
   },
   {
     "id": "m-9-social-1",
@@ -647,27 +647,27 @@
     "description": "Baby may cry or cling when unfamiliar people approach. This is normal stranger anxiety and shows healthy attachment.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/9-months.html",
-    "sourceQuote": "Most babies this age are shy, clingy, or fearful around strangers. This is a normal part of development."
+    "sourceSummary": "Most babies this age are shy, clingy, or fearful around strangers. This is a normal part of development."
   },
   {
     "id": "m-9-social-2",
     "month": 9,
     "category": "social",
-    "title": "Has favorite toys",
-    "description": "Baby shows clear preferences for certain toys or objects and may get upset if they are taken away.",
+    "title": "Reacts when you leave",
+    "description": "When you walk away, your baby looks after you, reaches for you, or cries. It shows how attached they are, and that they know you exist even out of sight.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/9-months.html",
-    "sourceQuote": "By 9 months, most babies have favorite toys and may cling to them or get upset when they are taken away."
+    "sourceSummary": "CDC's 9-month checklist includes reacting when you leave (looks, reaches for you, or cries)."
   },
   {
     "id": "m-9-language-1",
     "month": 9,
     "category": "language",
     "title": "Understands 'no'",
-    "description": "Baby pauses or stops briefly when you say 'no,' showing they understand the word even if they don't always comply.",
+    "description": "Baby pauses or stops briefly when you say 'no,' showing they understand the word even if they don't always comply. CDC lists this as something most babies do by 12 months.",
     "source": "CDC",
-    "sourceUrl": "https://www.cdc.gov/act-early/milestones/9-months.html",
-    "sourceQuote": "By 9 months, most babies understand 'no' and will briefly pause or stop when they hear it."
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/1-year.html",
+    "sourceSummary": "CDC's 12-month checklist includes understanding 'no' (pausing briefly or stopping when you say it)."
   },
   {
     "id": "m-9-language-2",
@@ -677,7 +677,7 @@
     "description": "Baby babbles strings of sounds like 'mamamama' or 'babababa' and experiments with different consonant-vowel combinations.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/9-months.html",
-    "sourceQuote": "By 9 months, most babies make a lot of different sounds like 'mamamama' and 'babababa,' stringing consonants and vowels together."
+    "sourceSummary": "By 9 months, most babies make a lot of different sounds like 'mamamama' and 'babababa,' stringing consonants and vowels together."
   },
   {
     "id": "m-9-cognitive-1",
@@ -687,7 +687,7 @@
     "description": "Baby tracks objects that fall and looks for them, showing developing understanding of object permanence.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/9-months.html",
-    "sourceQuote": "By 9 months, most babies watch the path of something as it falls and look for things they see you hide."
+    "sourceSummary": "CDC's 9-month checklist includes looking for objects when they are dropped out of sight, like a spoon or toy."
   },
   {
     "id": "m-9-cognitive-2",
@@ -697,17 +697,17 @@
     "description": "When you hide a toy under a blanket, baby tries to find it. This demonstrates growing memory and understanding that things still exist when out of sight.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/9-months.html",
-    "sourceQuote": "By 9 months, most babies look for things they see you hide, showing they understand objects still exist when out of sight."
+    "sourceSummary": "By 9 months, most babies look for things they see you hide, showing they understand objects still exist when out of sight."
   },
   {
     "id": "m-9-physical-1",
     "month": 9,
     "category": "physical",
     "title": "Stands holding on",
-    "description": "Baby can pull up to standing using furniture or your hands and briefly hold the position while supported.",
+    "description": "Baby can pull up to standing using furniture or your hands and briefly hold the position while supported. CDC lists pulling up and cruising as something most babies do by 12 months.",
     "source": "CDC",
-    "sourceUrl": "https://www.cdc.gov/act-early/milestones/9-months.html",
-    "sourceQuote": "By 9 months, most babies can pull to stand and stand holding on to furniture or other support."
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/1-year.html",
+    "sourceSummary": "CDC's 12-month checklist includes pulling up to stand and walking while holding on to furniture."
   },
   {
     "id": "m-9-physical-2",
@@ -717,7 +717,7 @@
     "description": "Baby can push up from tummy or roll into a sitting position without help and sit steadily without support.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/9-months.html",
-    "sourceQuote": "By 9 months, most babies can get to a sitting position by themselves and sit without support."
+    "sourceSummary": "By 9 months, most babies can get to a sitting position by themselves and sit without support."
   },
   {
     "id": "m-10-social-1",
@@ -727,7 +727,7 @@
     "description": "Baby actively participates in peek-a-boo games, laughing and sometimes trying to initiate the game themselves.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Around this age, babies love simple games like peek-a-boo and will laugh and try to keep the game going by hiding and reappearing."
+    "sourceSummary": "Around this age, babies love simple games like peek-a-boo and will laugh and try to keep the game going by hiding and reappearing."
   },
   {
     "id": "m-10-social-2",
@@ -737,7 +737,7 @@
     "description": "Baby clearly prefers familiar caregivers and may reach for specific people, showing developing social bonds.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Babies at this age develop strong preferences for familiar caregivers and may reach for or crawl toward their favorite people."
+    "sourceSummary": "Babies at this age develop strong preferences for familiar caregivers and may reach for or crawl toward their favorite people."
   },
   {
     "id": "m-10-language-1",
@@ -747,7 +747,7 @@
     "description": "Baby reliably turns toward you when you call their name, showing they recognize and respond to it.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "By this age, your baby should consistently turn toward you when you call their name, a key sign of social and language development."
+    "sourceSummary": "By this age, your baby should consistently turn toward you when you call their name, a key sign of social and language development."
   },
   {
     "id": "m-10-language-2",
@@ -757,7 +757,7 @@
     "description": "Baby waves bye-bye, shakes head, or uses other gestures along with babbling to express wants and feelings.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Babies begin using gestures such as waving bye-bye and shaking their head to communicate before they can use words."
+    "sourceSummary": "Babies begin using gestures such as waving bye-bye and shaking their head to communicate before they can use words."
   },
   {
     "id": "m-10-cognitive-1",
@@ -767,7 +767,7 @@
     "description": "Baby shakes, bangs, throws, and drops objects to discover what they do, experimenting with cause and effect.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Babies explore objects by shaking, banging, throwing, and dropping them to discover how things work and what they can do."
+    "sourceSummary": "Babies explore objects by shaking, banging, throwing, and dropping them to discover how things work and what they can do."
   },
   {
     "id": "m-10-physical-1",
@@ -777,7 +777,7 @@
     "description": "Baby moves around efficiently on hands and knees or by scooting, exploring the environment more independently.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "Hands-and-knees crawling is a key motor milestone, with most children achieving proficient crawling between 8 and 11 months."
+    "sourceSummary": "Hands-and-knees crawling is a key motor milestone, with most children achieving proficient crawling between 8 and 11 months."
   },
   {
     "id": "m-10-physical-2",
@@ -787,7 +787,7 @@
     "description": "Baby picks up small objects between thumb and index finger with increasing precision.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "The pincer grasp, picking up small objects between thumb and forefinger, is an important fine motor milestone that typically develops around 9 to 10 months."
+    "sourceSummary": "The pincer grasp, picking up small objects between thumb and forefinger, is an important fine motor milestone that typically develops around 9 to 10 months."
   },
   {
     "id": "m-11-social-1",
@@ -797,7 +797,7 @@
     "description": "Baby may cry or become distressed when a primary caregiver leaves the room. This peaks around this age and is a normal sign of attachment.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Separation anxiety is common at this age and is a sign of the strong bond your baby has formed with you. It typically peaks around 10 to 12 months."
+    "sourceSummary": "Separation anxiety is common at this age and is a sign of the strong bond your baby has formed with you. It typically peaks around 10 to 12 months."
   },
   {
     "id": "m-11-social-2",
@@ -807,7 +807,7 @@
     "description": "Baby laughs during interactive games like pat-a-cake and may try to keep the game going by repeating actions.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Babies love interactive games like pat-a-cake and will try to keep a fun game going by repeating actions and looking at you expectantly."
+    "sourceSummary": "Babies love interactive games like pat-a-cake and will try to keep a fun game going by repeating actions and looking at you expectantly."
   },
   {
     "id": "m-11-language-1",
@@ -817,7 +817,7 @@
     "description": "Baby's babbling begins to sound like real conversation, with rising and falling tones that mimic speech patterns.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Your baby's babbling may start to sound like real conversation, with rising and falling tones that mimic the patterns of your speech."
+    "sourceSummary": "Your baby's babbling may start to sound like real conversation, with rising and falling tones that mimic the patterns of your speech."
   },
   {
     "id": "m-11-language-2",
@@ -827,7 +827,7 @@
     "description": "Baby begins to follow simple requests like 'give me that' or 'come here' when paired with gestures.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Around this age, babies begin to understand simple requests such as 'give me that' or 'come here,' especially when accompanied by gestures."
+    "sourceSummary": "Around this age, babies begin to understand simple requests such as 'give me that' or 'come here,' especially when accompanied by gestures."
   },
   {
     "id": "m-11-cognitive-1",
@@ -837,7 +837,7 @@
     "description": "Baby copies simple actions they observe, like clapping hands, stirring with a spoon, or talking on a phone.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Babies learn through imitation, copying everyday actions they see like clapping, stirring, or pretending to talk on the phone."
+    "sourceSummary": "Babies learn through imitation, copying everyday actions they see like clapping, stirring, or pretending to talk on the phone."
   },
   {
     "id": "m-11-physical-1",
@@ -847,7 +847,7 @@
     "description": "Baby walks sideways while holding onto furniture, building leg strength and balance for independent walking.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "Walking with assistance, including cruising along furniture, is a normal transitional motor milestone that typically occurs between 9 and 12 months."
+    "sourceSummary": "Walking with assistance, including cruising along furniture, is a normal transitional motor milestone that typically occurs between 9 and 12 months."
   },
   {
     "id": "m-11-physical-2",
@@ -857,7 +857,7 @@
     "description": "Baby can let go of support and stand independently for a few seconds before sitting back down.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "Standing alone is a milestone most children achieve between 9 and 14 months, beginning with brief moments of independent standing."
+    "sourceSummary": "Standing alone is a milestone most children achieve between 9 and 14 months, beginning with brief moments of independent standing."
   },
   {
     "id": "m-12-social-1",
@@ -866,8 +866,8 @@
     "title": "Is shy or nervous with strangers",
     "description": "Baby may hide behind caregiver or cry around unfamiliar people. This shows healthy attachment and social awareness.",
     "source": "CDC",
-    "sourceUrl": "https://www.cdc.gov/act-early/milestones/1-year.html",
-    "sourceQuote": "By 12 months, most children are shy or nervous with strangers. This is a normal sign that your child knows the difference between familiar and unfamiliar people."
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/9-months.html",
+    "sourceSummary": "CDC's 9-month checklist includes being shy, clingy, or fearful around strangers; it often continues well past the first birthday."
   },
   {
     "id": "m-12-social-2",
@@ -876,18 +876,18 @@
     "title": "Hands you a book to read",
     "description": "Baby brings objects to you for help or to share, showing early cooperative communication and shared attention.",
     "source": "CDC",
-    "sourceUrl": "https://www.cdc.gov/act-early/milestones/1-year.html",
-    "sourceQuote": "By 12 months, most babies hand you a book when they want to hear a story, showing they can communicate their wants through actions."
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/15-months.html",
+    "sourceSummary": "CDC's 15-month checklist includes showing you an object they like; by 18 months, looking at a few pages of a book with you."
   },
   {
     "id": "m-12-social-3",
     "month": 12,
     "category": "social",
-    "title": "Repeats actions that get attention",
-    "description": "Baby does things to get a reaction, like making silly sounds or dropping food, then looking at you to see your response.",
+    "title": "Plays games with you, like pat-a-cake",
+    "description": "Your baby joins in on simple games, clapping along to pat-a-cake or waiting for the peek-a-boo reveal. Taking turns like this is early conversation without words.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/1-year.html",
-    "sourceQuote": "By 12 months, most babies repeat sounds or actions to get attention and see how you react. This shows growing social awareness."
+    "sourceSummary": "CDC's 12-month checklist includes playing games with you, like pat-a-cake."
   },
   {
     "id": "m-12-language-1",
@@ -897,17 +897,17 @@
     "description": "Baby uses 'mama' and 'dada' (or similar) specifically for parents rather than as random babbling.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/1-year.html",
-    "sourceQuote": "By 12 months, most babies say 'mama' and 'dada' and use them to call for the specific parent, not just as babbling."
+    "sourceSummary": "By 12 months, most babies say 'mama' and 'dada' and use them to call for the specific parent, not just as babbling."
   },
   {
     "id": "m-12-language-2",
     "month": 12,
     "category": "language",
     "title": "Tries to say words you say",
-    "description": "Baby attempts to copy words they hear, even if the pronunciation isn't quite right yet.",
+    "description": "Baby attempts to copy words they hear, even if the pronunciation isn't quite right yet. CDC lists one or two words besides 'mama' and 'dada' by 15 months.",
     "source": "CDC",
-    "sourceUrl": "https://www.cdc.gov/act-early/milestones/1-year.html",
-    "sourceQuote": "By 12 months, most babies try to say one or two words besides 'mama' and 'dada,' like 'ba' for ball or 'da' for dog."
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/15-months.html",
+    "sourceSummary": "CDC's 15-month checklist includes trying to say one or two words besides 'mama' or 'dada,' like 'ba' for ball."
   },
   {
     "id": "m-12-cognitive-1",
@@ -917,7 +917,7 @@
     "description": "Baby can find a toy hidden under a blanket or cup, showing solid understanding of object permanence.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/1-year.html",
-    "sourceQuote": "By 12 months, most babies can find hidden things easily and understand that objects continue to exist even when they can't be seen."
+    "sourceSummary": "By 12 months, most babies can find hidden things easily and understand that objects continue to exist even when they can't be seen."
   },
   {
     "id": "m-12-cognitive-2",
@@ -926,8 +926,8 @@
     "title": "Starts to use objects correctly",
     "description": "Baby uses everyday objects appropriately - drinks from a cup, brushes hair, holds phone to ear.",
     "source": "CDC",
-    "sourceUrl": "https://www.cdc.gov/act-early/milestones/1-year.html",
-    "sourceQuote": "By 12 months, most babies begin to use things correctly, such as drinking from a cup or brushing their hair."
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/15-months.html",
+    "sourceSummary": "CDC's 15-month checklist includes trying to use things the right way, like a phone, cup, or book."
   },
   {
     "id": "m-12-physical-1",
@@ -936,8 +936,8 @@
     "title": "May take first steps",
     "description": "Some babies begin walking independently around 12 months, though the normal range is 9-15 months.",
     "source": "CDC",
-    "sourceUrl": "https://www.cdc.gov/act-early/milestones/1-year.html",
-    "sourceQuote": "By 12 months, some babies may take a few steps without holding on. The normal range for first steps is 9 to 15 months."
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/15-months.html",
+    "sourceSummary": "CDC lists pulling up to stand and cruising along furniture by 12 months, and taking a few steps alone by 15 months."
   },
   {
     "id": "m-12-physical-2",
@@ -947,7 +947,7 @@
     "description": "Baby picks up small items like cereal pieces between thumb and forefinger with good control.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/1-year.html",
-    "sourceQuote": "By 12 months, most babies pick up things between thumb and pointer finger, like small pieces of food, with good control."
+    "sourceSummary": "CDC's 12-month checklist includes picking things up between thumb and pointer finger, like small bits of food."
   },
   {
     "id": "m-13-social-1",
@@ -956,8 +956,8 @@
     "title": "Shows affection to familiar people",
     "description": "Baby hugs, kisses, or pats familiar caregivers and family members spontaneously.",
     "source": "Zero to Three",
-    "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Toddlers show affection by hugging, kissing, and patting the people they love. This is a wonderful sign of secure attachment."
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/15-months.html",
+    "sourceSummary": "CDC's 15-month checklist includes showing you affection with hugs, cuddles, or kisses."
   },
   {
     "id": "m-13-social-2",
@@ -967,7 +967,7 @@
     "description": "Baby begins very basic pretend play, like pretending to drink from an empty cup or feed a stuffed animal.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Early pretend play, like pretending to drink from a cup or feed a doll, begins around 12 to 15 months and shows growing imagination."
+    "sourceSummary": "Early pretend play, like pretending to drink from a cup or feed a doll, begins around 12 to 15 months and shows growing imagination."
   },
   {
     "id": "m-13-language-1",
@@ -977,7 +977,7 @@
     "description": "Baby has a few real words beyond 'mama' and 'dada,' though pronunciation may still be approximate.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "By 12 to 15 months, most toddlers use one to three words with meaning, even if pronunciation is still approximate."
+    "sourceSummary": "By 12 to 15 months, most toddlers use one to three words with meaning, even if pronunciation is still approximate."
   },
   {
     "id": "m-13-language-2",
@@ -987,7 +987,7 @@
     "description": "Baby points at objects they want and looks at you, combining gesture with vocalization to communicate.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Pointing to request objects is an important communication milestone that shows your child is learning to share their wants with you."
+    "sourceSummary": "Pointing to request objects is an important communication milestone that shows your child is learning to share their wants with you."
   },
   {
     "id": "m-13-cognitive-1",
@@ -997,7 +997,7 @@
     "description": "Baby enjoys putting objects in and taking them out of containers, exploring spatial relationships.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Toddlers love filling and dumping containers, which helps them learn about spatial relationships and cause and effect."
+    "sourceSummary": "Toddlers love filling and dumping containers, which helps them learn about spatial relationships and cause and effect."
   },
   {
     "id": "m-13-physical-1",
@@ -1007,7 +1007,7 @@
     "description": "Baby can walk while holding one of your hands for balance, gaining confidence in upright movement.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "Walking with assistance is a normal developmental step, with most children progressing from supported to independent walking between 11 and 15 months."
+    "sourceSummary": "Walking with assistance is a normal developmental step, with most children progressing from supported to independent walking between 11 and 15 months."
   },
   {
     "id": "m-14-social-1",
@@ -1017,7 +1017,7 @@
     "description": "Baby performs for an audience, repeating actions that make people laugh and clap.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Toddlers love an audience and will repeat actions that get laughs and applause, building social confidence and connection."
+    "sourceSummary": "Toddlers love an audience and will repeat actions that get laughs and applause, building social confidence and connection."
   },
   {
     "id": "m-14-social-2",
@@ -1027,7 +1027,7 @@
     "description": "Baby watches and copies what other children do, showing interest in peer interaction.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Toddlers are fascinated by other children and learn by watching and imitating what they do, which is an early form of social learning."
+    "sourceSummary": "Toddlers are fascinated by other children and learn by watching and imitating what they do, which is an early form of social learning."
   },
   {
     "id": "m-14-language-1",
@@ -1037,7 +1037,7 @@
     "description": "Baby understands many more words than they can say, following simple requests and recognizing familiar objects by name.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "At this age, your toddler understands far more words than they can say. Receptive language develops well ahead of expressive language."
+    "sourceSummary": "At this age, your toddler understands far more words than they can say. Receptive language develops well ahead of expressive language."
   },
   {
     "id": "m-14-language-2",
@@ -1047,7 +1047,7 @@
     "description": "Baby says 'uh-oh' or similar exclamations appropriately in context.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Toddlers often use exclamations like 'uh-oh!' in the right context, showing they understand the social meaning of these expressions."
+    "sourceSummary": "Toddlers often use exclamations like 'uh-oh!' in the right context, showing they understand the social meaning of these expressions."
   },
   {
     "id": "m-14-cognitive-1",
@@ -1057,7 +1057,7 @@
     "description": "Baby can place one block on top of another, showing improving hand-eye coordination and spatial understanding.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Stacking blocks is a milestone that shows developing hand-eye coordination, spatial awareness, and the ability to plan and execute actions."
+    "sourceSummary": "Stacking blocks is a milestone that shows developing hand-eye coordination, spatial awareness, and the ability to plan and execute actions."
   },
   {
     "id": "m-14-physical-1",
@@ -1067,7 +1067,7 @@
     "description": "Baby's walking becomes more coordinated with fewer falls, though gait is still wide-legged.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "After beginning to walk independently, children gradually develop a steadier gait with fewer falls over the following weeks and months."
+    "sourceSummary": "After beginning to walk independently, children gradually develop a steadier gait with fewer falls over the following weeks and months."
   },
   {
     "id": "m-14-physical-2",
@@ -1077,7 +1077,7 @@
     "description": "Baby can bend down to pick something up from the floor and return to standing without falling.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "The ability to squat down and return to standing shows developing balance and leg strength, a natural progression after learning to walk."
+    "sourceSummary": "The ability to squat down and return to standing shows developing balance and leg strength, a natural progression after learning to walk."
   },
   {
     "id": "m-15-social-1",
@@ -1087,7 +1087,7 @@
     "description": "Baby imitates actions of other kids during play, showing early social learning through observation.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/15-months.html",
-    "sourceQuote": "By 15 months, most toddlers copy other children while playing. This is a healthy sign of social awareness and learning."
+    "sourceSummary": "By 15 months, most toddlers copy other children while playing. This is a healthy sign of social awareness and learning."
   },
   {
     "id": "m-15-social-2",
@@ -1097,17 +1097,17 @@
     "description": "Baby brings toys or objects to show you, seeking to share experiences and get your reaction.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/15-months.html",
-    "sourceQuote": "By 15 months, most toddlers show you an object they like, sharing their interest and seeking your reaction."
+    "sourceSummary": "By 15 months, most toddlers show you an object they like, sharing their interest and seeking your reaction."
   },
   {
     "id": "m-15-language-1",
     "month": 15,
     "category": "language",
-    "title": "Tries to say 3 or more words",
-    "description": "Baby uses several words besides 'mama' and 'dada' to communicate, even if pronunciation isn't perfect.",
+    "title": "Tries one or two new words",
+    "description": "Besides 'mama' and 'dada', your toddler tries one or two more words, like 'ba' for ball. Pronunciation doesn't matter; the attempt does.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/15-months.html",
-    "sourceQuote": "By 15 months, most toddlers try to say three or more words besides 'mama' or 'dada,' even if the words aren't clear."
+    "sourceSummary": "CDC's 15-month checklist includes trying to say one or two words besides 'mama' or 'dada,' like 'ba' for ball or 'da' for dog."
   },
   {
     "id": "m-15-language-2",
@@ -1117,7 +1117,7 @@
     "description": "Baby can follow one-step commands like 'give me the ball' or 'sit down' without gestures.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/15-months.html",
-    "sourceQuote": "By 15 months, most toddlers follow directions given without any gestures, like handing you a toy when asked."
+    "sourceSummary": "By 15 months, most toddlers follow directions given without any gestures, like handing you a toy when asked."
   },
   {
     "id": "m-15-cognitive-1",
@@ -1127,7 +1127,7 @@
     "description": "Baby uses pointing purposefully to request items or direct your attention to something interesting.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/15-months.html",
-    "sourceQuote": "By 15 months, most toddlers point to ask for something or to get help, an important communication skill."
+    "sourceSummary": "By 15 months, most toddlers point to ask for something or to get help, an important communication skill."
   },
   {
     "id": "m-15-cognitive-2",
@@ -1137,7 +1137,7 @@
     "description": "When you name a familiar object, baby looks at it, showing word comprehension is growing.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/15-months.html",
-    "sourceQuote": "By 15 months, most toddlers look at a familiar object when you name it, showing they connect words to the things around them."
+    "sourceSummary": "By 15 months, most toddlers look at a familiar object when you name it, showing they connect words to the things around them."
   },
   {
     "id": "m-15-physical-1",
@@ -1147,7 +1147,7 @@
     "description": "Baby walks independently, taking several steps at a time, though may still prefer crawling for speed.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/15-months.html",
-    "sourceQuote": "By 15 months, most toddlers take a few steps on their own, though some may still prefer crawling when they want to move quickly."
+    "sourceSummary": "By 15 months, most toddlers take a few steps on their own, though some may still prefer crawling when they want to move quickly."
   },
   {
     "id": "m-15-physical-2",
@@ -1157,7 +1157,7 @@
     "description": "Baby self-feeds with finger foods effectively and may attempt to use a spoon.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/15-months.html",
-    "sourceQuote": "By 15 months, most toddlers use their fingers to feed themselves and may try to use a spoon, though messily."
+    "sourceSummary": "By 15 months, most toddlers use their fingers to feed themselves and may try to use a spoon, though messily."
   },
   {
     "id": "m-16-social-1",
@@ -1167,7 +1167,7 @@
     "description": "Baby shows affection toward toys and comfort objects, demonstrating early empathy and nurturing behavior.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Toddlers begin to show caring behaviors, hugging stuffed animals and dolls, which is an early sign of empathy and nurturing instincts."
+    "sourceSummary": "Toddlers begin to show caring behaviors, hugging stuffed animals and dolls, which is an early sign of empathy and nurturing instincts."
   },
   {
     "id": "m-16-social-2",
@@ -1177,7 +1177,7 @@
     "description": "Baby cooperates during dressing by pushing arms through sleeves or lifting feet for shoes.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Toddlers start to help with dressing by pushing arms through sleeves or lifting feet, showing growing independence and body awareness."
+    "sourceSummary": "Toddlers start to help with dressing by pushing arms through sleeves or lifting feet, showing growing independence and body awareness."
   },
   {
     "id": "m-16-language-1",
@@ -1187,7 +1187,7 @@
     "description": "Baby uses more words, including names for familiar people, animals, body parts, or common objects.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Between 15 and 18 months, most toddlers use 5 to 10 words, including names for people, animals, and favorite objects."
+    "sourceSummary": "Between 15 and 18 months, most toddlers use 5 to 10 words, including names for people, animals, and favorite objects."
   },
   {
     "id": "m-16-language-2",
@@ -1197,7 +1197,7 @@
     "description": "Baby can identify nose, eyes, mouth, or tummy when asked 'Where is your nose?' etc.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Your toddler can now point to several body parts when you name them, showing their understanding of language is growing rapidly."
+    "sourceSummary": "Your toddler can now point to several body parts when you name them, showing their understanding of language is growing rapidly."
   },
   {
     "id": "m-16-cognitive-1",
@@ -1207,7 +1207,7 @@
     "description": "Baby builds a small tower of three blocks, improving on earlier stacking attempts.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Building a tower of blocks requires concentration, fine motor control, and spatial awareness, all of which are rapidly developing at this age."
+    "sourceSummary": "Building a tower of blocks requires concentration, fine motor control, and spatial awareness, all of which are rapidly developing at this age."
   },
   {
     "id": "m-16-physical-1",
@@ -1217,7 +1217,7 @@
     "description": "Baby walks confidently in most situations, rarely falling, and begins to run clumsily.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "Most children walk independently by 15 to 16 months. Walking alone is one of the six gross motor milestones in the WHO developmental standards."
+    "sourceSummary": "Most children walk independently by 15 to 16 months. Walking alone is one of the six gross motor milestones in the WHO developmental standards."
   },
   {
     "id": "m-17-social-1",
@@ -1227,7 +1227,7 @@
     "description": "Baby plays alongside other children, not yet interacting directly but aware of and interested in peers.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Playing alongside other children without direct interaction is called parallel play, and it is the most common form of social play for toddlers this age."
+    "sourceSummary": "Playing alongside other children without direct interaction is called parallel play, and it is the most common form of social play for toddlers this age."
   },
   {
     "id": "m-17-social-2",
@@ -1237,7 +1237,7 @@
     "description": "Baby says 'mine' or clutches toys when others approach, showing developing sense of possession.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Toddlers begin to claim objects as 'mine,' which is a normal part of developing a sense of self and understanding ownership."
+    "sourceSummary": "Toddlers begin to claim objects as 'mine,' which is a normal part of developing a sense of self and understanding ownership."
   },
   {
     "id": "m-17-language-1",
@@ -1247,7 +1247,7 @@
     "description": "Baby responds to questions like 'Where is the dog?' by looking around or pointing.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Your toddler can now respond to simple questions by pointing or looking, showing that language comprehension is progressing well."
+    "sourceSummary": "Your toddler can now respond to simple questions by pointing or looking, showing that language comprehension is progressing well."
   },
   {
     "id": "m-17-language-2",
@@ -1257,7 +1257,7 @@
     "description": "Baby combines pointing with words, like pointing at a cup and saying 'juice.'",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Combining gestures with words, such as pointing and naming, is a sign your toddler is building the foundation for more complex communication."
+    "sourceSummary": "Combining gestures with words, such as pointing and naming, is a sign your toddler is building the foundation for more complex communication."
   },
   {
     "id": "m-17-cognitive-1",
@@ -1267,7 +1267,7 @@
     "description": "Baby figures out simple challenges like pulling a string to reach a toy or using a stick to get something.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Toddlers begin to solve simple problems through trial and error, like pulling a string to bring a toy closer, showing early logical thinking."
+    "sourceSummary": "Toddlers begin to solve simple problems through trial and error, like pulling a string to bring a toy closer, showing early logical thinking."
   },
   {
     "id": "m-17-physical-1",
@@ -1277,7 +1277,7 @@
     "description": "Baby climbs onto low furniture like couches and chairs and can get back down (though not always safely).",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "Climbing is a natural extension of walking, and toddlers typically begin climbing onto low furniture as their strength and coordination increase."
+    "sourceSummary": "Climbing is a natural extension of walking, and toddlers typically begin climbing onto low furniture as their strength and coordination increase."
   },
   {
     "id": "m-17-physical-2",
@@ -1287,7 +1287,7 @@
     "description": "Baby makes marks on paper with a crayon or marker, showing developing fine motor control.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Around this age, your toddler may enjoy scribbling with crayons, which builds the fine motor skills needed for later drawing and writing."
+    "sourceSummary": "Around this age, your toddler may enjoy scribbling with crayons, which builds the fine motor skills needed for later drawing and writing."
   },
   {
     "id": "m-18-social-1",
@@ -1295,9 +1295,9 @@
     "category": "social",
     "title": "May have tantrums",
     "description": "Baby has emotional outbursts when frustrated, tired, or told 'no.' This is normal as they have big feelings but limited ability to express them.",
-    "source": "CDC",
-    "sourceUrl": "https://www.cdc.gov/act-early/milestones/18-months.html",
-    "sourceQuote": "Tantrums are normal at this age. Your toddler has big feelings but does not yet have the words or skills to manage them."
+    "source": "AAP",
+    "sourceUrl": "https://www.healthychildren.org/English/family-life/family-dynamics/communication-discipline/Pages/Temper-Tantrums.aspx",
+    "sourceSummary": "AAP explains that tantrums are a normal part of development between ages 1 and 3 and tend to ease after 3."
   },
   {
     "id": "m-18-social-2",
@@ -1307,7 +1307,7 @@
     "description": "Baby engages in pretend play like feeding a doll, talking on a toy phone, or pretending to cook.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/18-months.html",
-    "sourceQuote": "By 18 months, most toddlers play simple pretend, like feeding a doll or talking on a toy phone. This shows growing imagination."
+    "sourceSummary": "By 18 months, most toddlers play simple pretend, like feeding a doll or talking on a toy phone. This shows growing imagination."
   },
   {
     "id": "m-18-social-3",
@@ -1316,8 +1316,8 @@
     "title": "Shows affection to familiar people",
     "description": "Baby spontaneously hugs, kisses, and cuddles with parents and familiar people.",
     "source": "CDC",
-    "sourceUrl": "https://www.cdc.gov/act-early/milestones/18-months.html",
-    "sourceQuote": "By 18 months, most toddlers show affection to familiar people by hugging, cuddling, or kissing them spontaneously."
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/15-months.html",
+    "sourceSummary": "CDC's 15-month checklist includes showing you affection with hugs, cuddles, or kisses."
   },
   {
     "id": "m-18-language-1",
@@ -1327,7 +1327,7 @@
     "description": "Baby's vocabulary includes several words for familiar objects, people, and actions.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/18-months.html",
-    "sourceQuote": "By 18 months, most toddlers try to say three or more words besides 'mama' and 'dada,' and words are beginning to have clear meaning."
+    "sourceSummary": "By 18 months, most toddlers try to say three or more words besides 'mama' and 'dada,' and words are beginning to have clear meaning."
   },
   {
     "id": "m-18-language-2",
@@ -1337,7 +1337,7 @@
     "description": "Baby understands and follows simple verbal commands like 'Put it down' without needing you to point or gesture.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/18-months.html",
-    "sourceQuote": "By 18 months, most toddlers follow one-step directions without gestures, like sitting down when you say 'sit down.'"
+    "sourceSummary": "By 18 months, most toddlers follow one-step directions without gestures, like sitting down when you say 'sit down.'"
   },
   {
     "id": "m-18-cognitive-1",
@@ -1347,7 +1347,7 @@
     "description": "Baby uses pointing to share discoveries and direct your attention, not just to request things.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/18-months.html",
-    "sourceQuote": "By 18 months, most toddlers point to show you something interesting, not just to ask for things. This is called joint attention."
+    "sourceSummary": "By 18 months, most toddlers point to show you something interesting, not just to ask for things. This is called joint attention."
   },
   {
     "id": "m-18-cognitive-2",
@@ -1356,8 +1356,8 @@
     "title": "Knows what ordinary objects are for",
     "description": "Baby uses phone, brush, spoon correctly, showing understanding of everyday object purposes.",
     "source": "CDC",
-    "sourceUrl": "https://www.cdc.gov/act-early/milestones/18-months.html",
-    "sourceQuote": "By 18 months, most toddlers know what ordinary things are for, like a phone, brush, or spoon, and try to use them correctly."
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/15-months.html",
+    "sourceSummary": "CDC's 15-month checklist includes trying to use things the right way, like a phone, cup, or book."
   },
   {
     "id": "m-18-physical-1",
@@ -1367,7 +1367,7 @@
     "description": "Baby walks independently and confidently, including on uneven surfaces.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/18-months.html",
-    "sourceQuote": "By 18 months, most toddlers walk without holding on to anyone or anything and may try to walk up steps or run."
+    "sourceSummary": "By 18 months, most toddlers walk without holding on to anyone or anything and may try to walk up steps or run."
   },
   {
     "id": "m-18-physical-2",
@@ -1377,7 +1377,7 @@
     "description": "Baby can drink from an open cup (with some spilling) and use a spoon to self-feed.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/18-months.html",
-    "sourceQuote": "By 18 months, most toddlers can drink from a cup without a lid and eat with a spoon, though some spilling is normal."
+    "sourceSummary": "By 18 months, most toddlers can drink from a cup without a lid and eat with a spoon, though some spilling is normal."
   },
   {
     "id": "m-19-social-1",
@@ -1387,7 +1387,7 @@
     "description": "Baby runs to parent for comfort when hurt, scared, or upset, using caregiver as a secure base.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Toddlers use their parents as a secure base, running to them for comfort when hurt or scared, which is a healthy sign of strong attachment."
+    "sourceSummary": "Toddlers use their parents as a secure base, running to them for comfort when hurt or scared, which is a healthy sign of strong attachment."
   },
   {
     "id": "m-19-social-2",
@@ -1397,7 +1397,7 @@
     "description": "Baby wants to do things by themselves - holding their own spoon, carrying things, choosing what to wear.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "A growing desire to do things independently is a healthy sign of development. Toddlers want to feed themselves, carry things, and make choices."
+    "sourceSummary": "A growing desire to do things independently is a healthy sign of development. Toddlers want to feed themselves, carry things, and make choices."
   },
   {
     "id": "m-19-language-1",
@@ -1407,7 +1407,7 @@
     "description": "Baby's spoken vocabulary continues growing, including names of people, objects, and a few action words.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Between 18 and 24 months, your toddler's vocabulary grows rapidly, and most children use 10 to 20 words by around 19 months."
+    "sourceSummary": "Between 18 and 24 months, your toddler's vocabulary grows rapidly, and most children use 10 to 20 words by around 19 months."
   },
   {
     "id": "m-19-language-2",
@@ -1417,7 +1417,7 @@
     "description": "Baby says 'no' often, both appropriately and as a way to assert independence.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Saying 'no' frequently is a normal way toddlers assert independence and test boundaries. It shows growing self-awareness and language use."
+    "sourceSummary": "Saying 'no' frequently is a normal way toddlers assert independence and test boundaries. It shows growing self-awareness and language use."
   },
   {
     "id": "m-19-cognitive-1",
@@ -1427,7 +1427,7 @@
     "description": "Baby can point to named pictures in books, like 'Where is the dog?' and find the correct image.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Toddlers can point to pictures in a book when you name them, showing they connect words to images and are building vocabulary."
+    "sourceSummary": "Toddlers can point to pictures in a book when you name them, showing they connect words to images and are building vocabulary."
   },
   {
     "id": "m-19-physical-1",
@@ -1437,7 +1437,7 @@
     "description": "Baby walks while holding toys or objects, showing improving balance and coordination.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "Carrying objects while walking demonstrates improved balance and motor planning, as the child must coordinate movement with holding items."
+    "sourceSummary": "Carrying objects while walking demonstrates improved balance and motor planning, as the child must coordinate movement with holding items."
   },
   {
     "id": "m-20-social-1",
@@ -1447,7 +1447,7 @@
     "description": "Baby tests boundaries by doing things they know are not allowed while watching your reaction. This is normal and developmentally healthy.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Testing limits is a normal part of toddler development. When your child breaks a rule and looks at you, they are learning about boundaries."
+    "sourceSummary": "Testing limits is a normal part of toddler development. When your child breaks a rule and looks at you, they are learning about boundaries."
   },
   {
     "id": "m-20-social-2",
@@ -1457,7 +1457,7 @@
     "description": "Baby wants to 'help' with sweeping, wiping, putting items in trash, and other simple household tasks.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Toddlers love to help around the house. Letting them participate in simple tasks builds confidence and a sense of belonging in the family."
+    "sourceSummary": "Toddlers love to help around the house. Letting them participate in simple tasks builds confidence and a sense of belonging in the family."
   },
   {
     "id": "m-20-language-1",
@@ -1467,7 +1467,7 @@
     "description": "Baby uses more complex combinations of words and gestures to communicate needs and share experiences.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Combining words with gestures shows your toddler is developing more sophisticated communication skills and learning to express complex ideas."
+    "sourceSummary": "Combining words with gestures shows your toddler is developing more sophisticated communication skills and learning to express complex ideas."
   },
   {
     "id": "m-20-language-2",
@@ -1477,7 +1477,7 @@
     "description": "Baby can name objects they see in picture books, not just point to them.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Your toddler can now name familiar pictures in books, moving from pointing to verbally identifying what they see."
+    "sourceSummary": "Your toddler can now name familiar pictures in books, moving from pointing to verbally identifying what they see."
   },
   {
     "id": "m-20-cognitive-1",
@@ -1487,7 +1487,7 @@
     "description": "Baby can match simple shapes to corresponding holes in a shape sorter with some practice.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Sorting shapes into matching holes helps toddlers develop spatial reasoning and problem-solving skills as they figure out which piece fits where."
+    "sourceSummary": "Sorting shapes into matching holes helps toddlers develop spatial reasoning and problem-solving skills as they figure out which piece fits where."
   },
   {
     "id": "m-20-physical-1",
@@ -1497,7 +1497,7 @@
     "description": "Baby can walk up to a ball and kick it (not always accurately), showing coordination of legs and balance.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "Kicking a ball forward requires coordination of balance, leg strength, and motor planning, and typically emerges in the second year of life."
+    "sourceSummary": "Kicking a ball forward requires coordination of balance, leg strength, and motor planning, and typically emerges in the second year of life."
   },
   {
     "id": "m-20-physical-2",
@@ -1507,7 +1507,7 @@
     "description": "Baby starts running, though the movement may be stiff and they can't yet stop or turn quickly.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "Running develops naturally after walking is well established, and early running may appear stiff with limited ability to stop or change direction."
+    "sourceSummary": "Running develops naturally after walking is well established, and early running may appear stiff with limited ability to stop or change direction."
   },
   {
     "id": "m-21-social-1",
@@ -1517,7 +1517,7 @@
     "description": "Baby may pat or try to comfort someone who is crying, showing early empathy and emotional awareness.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Toddlers begin to show empathy by noticing when someone is upset and trying to comfort them, such as patting a crying friend or offering a toy."
+    "sourceSummary": "Toddlers begin to show empathy by noticing when someone is upset and trying to comfort them, such as patting a crying friend or offering a toy."
   },
   {
     "id": "m-21-social-2",
@@ -1527,7 +1527,7 @@
     "description": "Baby engages in more purposeful parallel play, often imitating what other children are doing nearby.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Parallel play, where toddlers play side by side and often imitate each other, is the most common way children this age interact with peers."
+    "sourceSummary": "Parallel play, where toddlers play side by side and often imitate each other, is the most common way children this age interact with peers."
   },
   {
     "id": "m-21-language-1",
@@ -1537,7 +1537,7 @@
     "description": "Baby's spoken vocabulary is growing rapidly. They use words for many everyday objects, people, and actions.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Your toddler's vocabulary is expanding rapidly, and most children use 20 to 50 words by around 21 months, with new words added regularly."
+    "sourceSummary": "Your toddler's vocabulary is expanding rapidly, and most children use 20 to 50 words by around 21 months, with new words added regularly."
   },
   {
     "id": "m-21-language-2",
@@ -1547,7 +1547,7 @@
     "description": "Baby can follow simple two-step commands like 'Pick up the ball and bring it to me.'",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Being able to follow two-step instructions shows your toddler's language comprehension and memory are developing well."
+    "sourceSummary": "Being able to follow two-step instructions shows your toddler's language comprehension and memory are developing well."
   },
   {
     "id": "m-21-cognitive-1",
@@ -1557,7 +1557,7 @@
     "description": "Baby starts to notice and group objects that are similar in color or shape.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Sorting by color or shape shows that toddlers are beginning to notice similarities and differences between objects, a key thinking skill."
+    "sourceSummary": "Sorting by color or shape shows that toddlers are beginning to notice similarities and differences between objects, a key thinking skill."
   },
   {
     "id": "m-21-physical-1",
@@ -1567,7 +1567,7 @@
     "description": "Baby can walk up stairs while holding your hand or the railing, placing both feet on each step.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "Walking upstairs with support is a normal motor progression, with most children placing both feet on each step before alternating feet later."
+    "sourceSummary": "Walking upstairs with support is a normal motor progression, with most children placing both feet on each step before alternating feet later."
   },
   {
     "id": "m-22-social-1",
@@ -1577,7 +1577,7 @@
     "description": "Baby's pretend play becomes more elaborate - feeding dolls, putting them to bed, having toy conversations.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Pretend play becomes more elaborate as toddlers create simple scenarios like feeding a doll, putting it to bed, or having pretend conversations."
+    "sourceSummary": "Pretend play becomes more elaborate as toddlers create simple scenarios like feeding a doll, putting it to bed, or having pretend conversations."
   },
   {
     "id": "m-22-social-2",
@@ -1587,7 +1587,7 @@
     "description": "Baby shows joy, anger, frustration, excitement, and sadness more clearly, though managing these emotions is still difficult.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Toddlers feel a wide range of emotions including joy, anger, frustration, and sadness, but they still need help managing these big feelings."
+    "sourceSummary": "Toddlers feel a wide range of emotions including joy, anger, frustration, and sadness, but they still need help managing these big feelings."
   },
   {
     "id": "m-22-language-1",
@@ -1597,7 +1597,7 @@
     "description": "Baby starts putting two words together, like 'more milk,' 'daddy go,' or 'big dog.'",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Putting two words together, like 'more milk' or 'daddy go,' is a major language milestone that shows your toddler is beginning to form sentences."
+    "sourceSummary": "Putting two words together, like 'more milk' or 'daddy go,' is a major language milestone that shows your toddler is beginning to form sentences."
   },
   {
     "id": "m-22-language-2",
@@ -1607,7 +1607,7 @@
     "description": "Baby starts using simple pronouns, especially 'me' and 'mine,' showing growing self-awareness.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Using pronouns like 'me' and 'mine' shows growing self-awareness and is a normal step in language development for toddlers this age."
+    "sourceSummary": "Using pronouns like 'me' and 'mine' shows growing self-awareness and is a normal step in language development for toddlers this age."
   },
   {
     "id": "m-22-cognitive-1",
@@ -1617,7 +1617,7 @@
     "description": "Baby can place pieces in simple puzzles with 3-4 large pieces, especially shape-based or picture puzzles.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Simple puzzles with large pieces help toddlers build problem-solving skills and hand-eye coordination as they figure out where each piece goes."
+    "sourceSummary": "Simple puzzles with large pieces help toddlers build problem-solving skills and hand-eye coordination as they figure out where each piece goes."
   },
   {
     "id": "m-22-physical-1",
@@ -1627,7 +1627,7 @@
     "description": "Baby can throw a ball forward using an overhand motion, though aim is still developing.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "Throwing a ball overhand requires upper body coordination and motor planning, and most toddlers develop this skill during their second year."
+    "sourceSummary": "Throwing a ball overhand requires upper body coordination and motor planning, and most toddlers develop this skill during their second year."
   },
   {
     "id": "m-23-social-1",
@@ -1637,7 +1637,7 @@
     "description": "Baby notices when other children are happy or upset and may react by watching closely or trying to help.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Toddlers become increasingly aware of other children's feelings, watching closely when a peer is upset and sometimes trying to help or comfort them."
+    "sourceSummary": "Toddlers become increasingly aware of other children's feelings, watching closely when a peer is upset and sometimes trying to help or comfort them."
   },
   {
     "id": "m-23-social-2",
@@ -1647,7 +1647,7 @@
     "description": "Baby wants to do many things without help and may resist assistance, saying 'I do it!' or 'my turn.'",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Asserting independence, even insisting 'I do it myself!', is a healthy sign that your toddler is developing confidence and self-reliance."
+    "sourceSummary": "Asserting independence, even insisting 'I do it myself!', is a healthy sign that your toddler is developing confidence and self-reliance."
   },
   {
     "id": "m-23-language-1",
@@ -1657,7 +1657,7 @@
     "description": "Baby's vocabulary is expanding rapidly as they approach the 'word explosion' phase.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Many toddlers experience a 'word explosion' around this age, rapidly adding new words to their vocabulary as they approach 50 or more words."
+    "sourceSummary": "Many toddlers experience a 'word explosion' around this age, rapidly adding new words to their vocabulary as they approach 50 or more words."
   },
   {
     "id": "m-23-language-2",
@@ -1667,7 +1667,7 @@
     "description": "Baby points at objects and asks their name, showing curiosity and desire to learn new words.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Asking 'what's that?' shows your toddler's natural curiosity and eagerness to learn new words, which helps fuel rapid vocabulary growth."
+    "sourceSummary": "Asking 'what's that?' shows your toddler's natural curiosity and eagerness to learn new words, which helps fuel rapid vocabulary growth."
   },
   {
     "id": "m-23-cognitive-1",
@@ -1677,7 +1677,7 @@
     "description": "Baby can stack four or more blocks into a tower, showing improving fine motor control and spatial thinking.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Building taller towers of four or more blocks shows improving hand control, concentration, and understanding of balance and spatial relationships."
+    "sourceSummary": "Building taller towers of four or more blocks shows improving hand control, concentration, and understanding of balance and spatial relationships."
   },
   {
     "id": "m-23-physical-1",
@@ -1687,7 +1687,7 @@
     "description": "Baby's running becomes more coordinated with better ability to stop and change direction.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "As children approach their second birthday, running becomes smoother and more coordinated, with improved ability to stop and change direction."
+    "sourceSummary": "As children approach their second birthday, running becomes smoother and more coordinated, with improved ability to stop and change direction."
   },
   {
     "id": "m-24-social-1",
@@ -1697,7 +1697,7 @@
     "description": "Toddler may pause, look sad, or try to comfort another child or adult who seems upset.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/2-years.html",
-    "sourceQuote": "By 2 years, most toddlers notice when others are hurt or upset and may pause, look sad, or try to comfort them."
+    "sourceSummary": "By 2 years, most toddlers notice when others are hurt or upset and may pause, look sad, or try to comfort them."
   },
   {
     "id": "m-24-social-2",
@@ -1707,7 +1707,7 @@
     "description": "Toddler begins moving from parallel play to brief interactive play with peers.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/2-years.html",
-    "sourceQuote": "By 2 years, most toddlers play next to other children and sometimes join in to play with them, a sign of growing social skills."
+    "sourceSummary": "By 2 years, most toddlers play next to other children and sometimes join in to play with them, a sign of growing social skills."
   },
   {
     "id": "m-24-social-3",
@@ -1717,7 +1717,7 @@
     "description": "Toddler checks your expression before approaching something new, using your reaction as a guide.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/2-years.html",
-    "sourceQuote": "By 2 years, most toddlers look at your face to see how to react in a new situation. This is called social referencing and is perfectly normal."
+    "sourceSummary": "By 2 years, most toddlers look at your face to see how to react in a new situation. This is called social referencing and is perfectly normal."
   },
   {
     "id": "m-24-language-1",
@@ -1727,7 +1727,7 @@
     "description": "Toddler can find and point to specific items on a page when you ask 'Where is the cat?'",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/2-years.html",
-    "sourceQuote": "By 2 years, most toddlers point to things in a book when you ask, like 'Where is the bear?' showing growing language comprehension."
+    "sourceSummary": "By 2 years, most toddlers point to things in a book when you ask, like 'Where is the bear?' showing growing language comprehension."
   },
   {
     "id": "m-24-language-2",
@@ -1737,7 +1737,7 @@
     "description": "Toddler regularly combines two or more words like 'more milk,' 'mommy up,' or 'big truck.'",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/2-years.html",
-    "sourceQuote": "By 2 years, most toddlers say at least two words together, like 'more milk' or 'mommy up,' forming the basis of early sentences."
+    "sourceSummary": "By 2 years, most toddlers say at least two words together, like 'more milk' or 'mommy up,' forming the basis of early sentences."
   },
   {
     "id": "m-24-language-3",
@@ -1747,7 +1747,7 @@
     "description": "Toddler can identify multiple body parts by name, like nose, eyes, ears, hands, feet.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/2-years.html",
-    "sourceQuote": "By 2 years, most toddlers point to at least two body parts when you name them, showing they understand the names for parts of their body."
+    "sourceSummary": "By 2 years, most toddlers point to at least two body parts when you name them, showing they understand the names for parts of their body."
   },
   {
     "id": "m-24-cognitive-1",
@@ -1756,8 +1756,8 @@
     "title": "Uses both hands for different jobs",
     "description": "Toddler shows hand dominance and coordination, like holding a jar with one hand while unscrewing the lid with the other.",
     "source": "CDC",
-    "sourceUrl": "https://www.cdc.gov/act-early/milestones/2-years.html",
-    "sourceQuote": "By 2 years, most toddlers can hold something in one hand while using the other hand, showing developing coordination and hand dominance."
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/30-months.html",
+    "sourceSummary": "CDC's 30-month checklist includes using the hands to twist things, like turning doorknobs or unscrewing lids."
   },
   {
     "id": "m-24-cognitive-2",
@@ -1767,7 +1767,7 @@
     "description": "Toddler experiments with mechanical toys and devices, figuring out how to operate them.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/2-years.html",
-    "sourceQuote": "By 2 years, most toddlers try to use switches, knobs, or buttons on a toy, showing curiosity about how things work."
+    "sourceSummary": "By 2 years, most toddlers try to use switches, knobs, or buttons on a toy, showing curiosity about how things work."
   },
   {
     "id": "m-24-physical-1",
@@ -1777,7 +1777,7 @@
     "description": "Toddler can walk up to a ball and kick it forward with reasonable aim.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/2-years.html",
-    "sourceQuote": "By 2 years, most toddlers kick a ball forward, showing coordination of balance and leg strength."
+    "sourceSummary": "By 2 years, most toddlers kick a ball forward, showing coordination of balance and leg strength."
   },
   {
     "id": "m-24-physical-2",
@@ -1787,7 +1787,7 @@
     "description": "Toddler runs with growing coordination, though may still be somewhat stiff.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/2-years.html",
-    "sourceQuote": "By 2 years, most toddlers run, though their movements may still be somewhat stiff and uneven."
+    "sourceSummary": "By 2 years, most toddlers run, though their movements may still be somewhat stiff and uneven."
   },
   {
     "id": "m-24-physical-3",
@@ -1797,7 +1797,7 @@
     "description": "Toddler navigates stairs by stepping up, using a railing or holding a hand if needed.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/2-years.html",
-    "sourceQuote": "By 2 years, most toddlers walk up a few stairs with or without help, placing both feet on each step."
+    "sourceSummary": "By 2 years, most toddlers walk up a few stairs with or without help, placing both feet on each step."
   },
   {
     "id": "m-25-social-1",
@@ -1807,7 +1807,7 @@
     "description": "Toddler begins to understand taking turns, like rolling a ball back and forth or stacking blocks with a partner.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Turn-taking begins with simple games like rolling a ball back and forth, building the social skills needed for more complex interactions later."
+    "sourceSummary": "Turn-taking begins with simple games like rolling a ball back and forth, building the social skills needed for more complex interactions later."
   },
   {
     "id": "m-25-social-2",
@@ -1817,7 +1817,7 @@
     "description": "Toddler expresses pride when accomplishing something, shame when caught doing something wrong, and frustration more articulately.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Toddlers express an increasingly wide range of emotions, including pride, frustration, and even embarrassment, as their emotional awareness deepens."
+    "sourceSummary": "Toddlers express an increasingly wide range of emotions, including pride, frustration, and even embarrassment, as their emotional awareness deepens."
   },
   {
     "id": "m-25-language-1",
@@ -1827,7 +1827,7 @@
     "description": "Toddler consistently puts two words together to make simple sentences throughout the day.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Regular use of two-word sentences is a key language milestone, showing your toddler can combine words to express ideas and needs."
+    "sourceSummary": "Regular use of two-word sentences is a key language milestone, showing your toddler can combine words to express ideas and needs."
   },
   {
     "id": "m-25-language-2",
@@ -1837,7 +1837,7 @@
     "description": "Toddler uses their own name when talking about themselves, like 'Maya want that' or 'Tommy go outside.'",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Using their own name to refer to themselves shows your toddler has a clear sense of self-identity and is learning how language represents people."
+    "sourceSummary": "Using their own name to refer to themselves shows your toddler has a clear sense of self-identity and is learning how language represents people."
   },
   {
     "id": "m-25-cognitive-1",
@@ -1847,7 +1847,7 @@
     "description": "Toddler can match a real object to its picture in a book, showing abstract thinking development.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Matching real objects to pictures in a book shows developing abstract thinking, as your toddler connects a 3D object to its 2D representation."
+    "sourceSummary": "Matching real objects to pictures in a book shows developing abstract thinking, as your toddler connects a 3D object to its 2D representation."
   },
   {
     "id": "m-25-physical-1",
@@ -1857,7 +1857,7 @@
     "description": "Toddler begins jumping, getting both feet off the ground at the same time.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "Jumping with both feet leaving the ground requires significant coordination, balance, and leg strength, and typically emerges around 24 months."
+    "sourceSummary": "Jumping with both feet leaving the ground requires significant coordination, balance, and leg strength, and typically emerges around 24 months."
   },
   {
     "id": "m-26-social-1",
@@ -1867,7 +1867,7 @@
     "description": "Toddler creates simple scenarios in pretend play, like having a tea party or playing house.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Pretend play grows more creative as toddlers invent scenarios like tea parties or playing house, using imagination to explore the world."
+    "sourceSummary": "Pretend play grows more creative as toddlers invent scenarios like tea parties or playing house, using imagination to explore the world."
   },
   {
     "id": "m-26-social-2",
@@ -1877,7 +1877,7 @@
     "description": "Toddler insists on doing things 'by myself,' from eating to getting dressed to choosing toys.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "The desire to do things independently is a healthy and important part of your toddler's growing sense of competence and self-confidence."
+    "sourceSummary": "The desire to do things independently is a healthy and important part of your toddler's growing sense of competence and self-confidence."
   },
   {
     "id": "m-26-language-1",
@@ -1887,7 +1887,7 @@
     "description": "Toddler starts stringing three words together, like 'I want milk' or 'Daddy go work.'",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Moving from two-word to three-word phrases is a significant language step, allowing your toddler to express more complex thoughts and needs."
+    "sourceSummary": "Moving from two-word to three-word phrases is a significant language step, allowing your toddler to express more complex thoughts and needs."
   },
   {
     "id": "m-26-language-2",
@@ -1897,7 +1897,7 @@
     "description": "Toddler can describe what's happening in a picture, like 'dog running' or 'baby sleeping.'",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Naming actions in pictures shows your toddler understands verbs and can describe what is happening, not just name objects."
+    "sourceSummary": "Naming actions in pictures shows your toddler understands verbs and can describe what is happening, not just name objects."
   },
   {
     "id": "m-26-cognitive-1",
@@ -1907,7 +1907,7 @@
     "description": "Toddler begins to understand the concept of 'one' and can give you 'one' of something when asked.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Understanding the concept of 'one' is an early math skill. When your toddler can hand you one block when asked, they are learning to count."
+    "sourceSummary": "Understanding the concept of 'one' is an early math skill. When your toddler can hand you one block when asked, they are learning to count."
   },
   {
     "id": "m-26-physical-1",
@@ -1917,7 +1917,7 @@
     "description": "Toddler may begin to pedal a tricycle or ride-on toy, using feet to push along if pedaling is too hard.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "Pedaling a tricycle involves coordinating alternating leg movements, and many toddlers begin to master this skill between 24 and 30 months."
+    "sourceSummary": "Pedaling a tricycle involves coordinating alternating leg movements, and many toddlers begin to master this skill between 24 and 30 months."
   },
   {
     "id": "m-27-social-1",
@@ -1927,7 +1927,7 @@
     "description": "Toddler may bring a toy or pat a crying child, showing developing empathy and social awareness.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "When toddlers try to comfort a crying friend by bringing them a toy or patting them, it shows real empathy is developing."
+    "sourceSummary": "When toddlers try to comfort a crying friend by bringing them a toy or patting them, it shows real empathy is developing."
   },
   {
     "id": "m-27-social-2",
@@ -1937,7 +1937,7 @@
     "description": "Toddler starts to internalize simple rules, though following them consistently is still hard.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Toddlers start to internalize simple rules and routines, even though consistently following them is still challenging at this age."
+    "sourceSummary": "Toddlers start to internalize simple rules and routines, even though consistently following them is still challenging at this age."
   },
   {
     "id": "m-27-language-1",
@@ -1947,7 +1947,7 @@
     "description": "Toddler uses personal pronouns, though may still mix up 'I' and 'me' sometimes.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Using personal pronouns like 'I,' 'me,' and 'you' is a notable language milestone, even though mix-ups are common and perfectly normal."
+    "sourceSummary": "Using personal pronouns like 'I,' 'me,' and 'you' is a notable language milestone, even though mix-ups are common and perfectly normal."
   },
   {
     "id": "m-27-language-2",
@@ -1957,7 +1957,7 @@
     "description": "Toddler can answer 'What is this?' when shown familiar objects.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Answering simple 'what' questions shows your toddler can process a question and retrieve the right word, an important cognitive and language skill."
+    "sourceSummary": "Answering simple 'what' questions shows your toddler can process a question and retrieve the right word, an important cognitive and language skill."
   },
   {
     "id": "m-27-cognitive-1",
@@ -1967,7 +1967,7 @@
     "description": "Toddler can build taller towers, showing patience and fine motor improvement.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Building towers of six or more blocks requires patience, steady hands, and spatial understanding, all of which are growing at this age."
+    "sourceSummary": "Building towers of six or more blocks requires patience, steady hands, and spatial understanding, all of which are growing at this age."
   },
   {
     "id": "m-27-physical-1",
@@ -1977,7 +1977,7 @@
     "description": "Toddler can walk on tiptoes for a few steps, showing balance and leg strength improvement.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "Walking on tiptoes for a few steps demonstrates developing balance, calf strength, and body control in toddlers."
+    "sourceSummary": "Walking on tiptoes for a few steps demonstrates developing balance, calf strength, and body control in toddlers."
   },
   {
     "id": "m-28-social-1",
@@ -1987,7 +1987,7 @@
     "description": "Toddler engages in short cooperative play episodes with other children, not just alongside them.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Brief episodes of cooperative play begin as toddlers move beyond parallel play and start directly interacting with peers during activities."
+    "sourceSummary": "Brief episodes of cooperative play begin as toddlers move beyond parallel play and start directly interacting with peers during activities."
   },
   {
     "id": "m-28-social-2",
@@ -1997,7 +1997,7 @@
     "description": "Toddler says 'I love you' or 'I like you' to family members and favorite people.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Saying 'I love you' is a wonderful milestone that shows your toddler can express deep feelings using words, not just actions."
+    "sourceSummary": "Saying 'I love you' is a wonderful milestone that shows your toddler can express deep feelings using words, not just actions."
   },
   {
     "id": "m-28-language-1",
@@ -2007,7 +2007,7 @@
     "description": "Toddler's vocabulary is growing rapidly, with new words being learned almost daily.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "By this age, most toddlers have a vocabulary of over 100 words and are learning new words almost every day."
+    "sourceSummary": "By this age, most toddlers have a vocabulary of over 100 words and are learning new words almost every day."
   },
   {
     "id": "m-28-language-2",
@@ -2017,7 +2017,7 @@
     "description": "Toddler begins asking question words, showing curiosity about the world.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Asking 'why' and 'where' questions shows your toddler's growing curiosity and their ability to use language as a tool for learning."
+    "sourceSummary": "Asking 'why' and 'where' questions shows your toddler's growing curiosity and their ability to use language as a tool for learning."
   },
   {
     "id": "m-28-cognitive-1",
@@ -2027,7 +2027,7 @@
     "description": "Toddler uses one object to represent another, like a banana as a phone or a block as a car.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Using one object to represent another, like pretending a banana is a phone, shows symbolic thinking, a major cognitive leap for toddlers."
+    "sourceSummary": "Using one object to represent another, like pretending a banana is a phone, shows symbolic thinking, a major cognitive leap for toddlers."
   },
   {
     "id": "m-28-physical-1",
@@ -2037,7 +2037,7 @@
     "description": "Toddler can balance on one foot for a second or two with or without support.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "Briefly standing on one foot requires advanced balance and core strength, and most children begin to achieve this between 24 and 30 months."
+    "sourceSummary": "Briefly standing on one foot requires advanced balance and core strength, and most children begin to achieve this between 24 and 30 months."
   },
   {
     "id": "m-29-social-1",
@@ -2047,7 +2047,7 @@
     "description": "Toddler directs pretend play by assigning roles: 'You be the mommy, I'm the baby.'",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Assigning roles during pretend play shows advanced social and cognitive skills, as toddlers plan scenarios and direct others in shared stories."
+    "sourceSummary": "Assigning roles during pretend play shows advanced social and cognitive skills, as toddlers plan scenarios and direct others in shared stories."
   },
   {
     "id": "m-29-social-2",
@@ -2057,7 +2057,7 @@
     "description": "Toddler begins to notice and comment on gender differences, like 'She's a girl' or 'He's a boy.'",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Toddlers begin to notice gender differences and may label people as 'boy' or 'girl,' which is a normal part of making sense of the world."
+    "sourceSummary": "Toddlers begin to notice gender differences and may label people as 'boy' or 'girl,' which is a normal part of making sense of the world."
   },
   {
     "id": "m-29-language-1",
@@ -2067,7 +2067,7 @@
     "description": "Toddler speaks in 3-4 word sentences regularly, telling you about what they see, want, and feel.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Speaking in 3- to 4-word sentences allows your toddler to share observations, express needs, and describe feelings more clearly."
+    "sourceSummary": "Speaking in 3- to 4-word sentences allows your toddler to share observations, express needs, and describe feelings more clearly."
   },
   {
     "id": "m-29-language-2",
@@ -2077,7 +2077,7 @@
     "description": "People outside the family can understand roughly half of what the toddler says.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "By this age, unfamiliar people should be able to understand about half of what your toddler says, a sign of improving speech clarity."
+    "sourceSummary": "By this age, unfamiliar people should be able to understand about half of what your toddler says, a sign of improving speech clarity."
   },
   {
     "id": "m-29-cognitive-1",
@@ -2087,7 +2087,7 @@
     "description": "Toddler grasps size concepts and can identify which of two objects is bigger or smaller.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Understanding size concepts like 'big' and 'little' shows your toddler is developing the ability to compare and categorize objects."
+    "sourceSummary": "Understanding size concepts like 'big' and 'little' shows your toddler is developing the ability to compare and categorize objects."
   },
   {
     "id": "m-29-physical-1",
@@ -2097,7 +2097,7 @@
     "description": "Toddler begins walking up stairs placing one foot per step instead of both feet on each step.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "Walking up stairs with alternating feet is an advanced motor skill that shows improved balance, strength, and coordination."
+    "sourceSummary": "Walking up stairs with alternating feet is an advanced motor skill that shows improved balance, strength, and coordination."
   },
   {
     "id": "m-30-social-1",
@@ -2107,7 +2107,7 @@
     "description": "Toddler transitions between parallel and cooperative play, beginning to interact more with peers during play.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/30-months.html",
-    "sourceQuote": "By 30 months, most toddlers play next to other children and sometimes play with them, showing growing social awareness and cooperation."
+    "sourceSummary": "By 30 months, most toddlers play next to other children and sometimes play with them, showing growing social awareness and cooperation."
   },
   {
     "id": "m-30-social-2",
@@ -2117,7 +2117,7 @@
     "description": "Toddler seeks attention and praise for accomplishments, showing pride in new skills.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/30-months.html",
-    "sourceQuote": "By 30 months, most toddlers say 'Look at me!' to show you what they can do, seeking your attention and approval."
+    "sourceSummary": "By 30 months, most toddlers say 'Look at me!' to show you what they can do, seeking your attention and approval."
   },
   {
     "id": "m-30-language-1",
@@ -2127,7 +2127,7 @@
     "description": "Toddler has a substantial vocabulary and is adding words almost daily.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/30-months.html",
-    "sourceQuote": "By 30 months, most toddlers say about 50 words or more and are learning new words regularly."
+    "sourceSummary": "By 30 months, most toddlers say about 50 words or more and are learning new words regularly."
   },
   {
     "id": "m-30-language-2",
@@ -2137,7 +2137,7 @@
     "description": "Toddler uses verb-containing phrases like 'doggy run,' 'want cookie,' or 'mommy sit.'",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/30-months.html",
-    "sourceQuote": "By 30 months, most toddlers say two or more words together with one action word, like 'doggy run' or 'mommy sit.'"
+    "sourceSummary": "By 30 months, most toddlers say two or more words together with one action word, like 'doggy run' or 'mommy sit.'"
   },
   {
     "id": "m-30-language-3",
@@ -2147,7 +2147,7 @@
     "description": "Toddler can name familiar objects and characters in picture books.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/30-months.html",
-    "sourceQuote": "By 30 months, most toddlers name things in a book when you point and ask 'What is this?'"
+    "sourceSummary": "By 30 months, most toddlers name things in a book when you point and ask 'What is this?'"
   },
   {
     "id": "m-30-cognitive-1",
@@ -2157,7 +2157,7 @@
     "description": "Toddler's pretend play becomes more creative and symbolic.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/30-months.html",
-    "sourceQuote": "By 30 months, most toddlers use things to pretend, like feeding a block to a doll as if it were food, showing symbolic thinking."
+    "sourceSummary": "By 30 months, most toddlers use things to pretend, like feeding a block to a doll as if it were food, showing symbolic thinking."
   },
   {
     "id": "m-30-cognitive-2",
@@ -2167,7 +2167,7 @@
     "description": "Toddler figures out simple problems like turning a container to dump out contents or stepping on a stool to reach something.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/30-months.html",
-    "sourceQuote": "By 30 months, most toddlers show simple problem-solving skills, like standing on a stool to reach something on the counter."
+    "sourceSummary": "By 30 months, most toddlers show simple problem-solving skills, like standing on a stool to reach something on the counter."
   },
   {
     "id": "m-30-physical-1",
@@ -2177,7 +2177,7 @@
     "description": "Toddler has the wrist control and strength to turn doorknobs, open jars, and screw lids.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/30-months.html",
-    "sourceQuote": "By 30 months, most toddlers use their hands to twist things, like turning doorknobs or unscrewing lids, showing fine motor growth."
+    "sourceSummary": "By 30 months, most toddlers use their hands to twist things, like turning doorknobs or unscrewing lids, showing fine motor growth."
   },
   {
     "id": "m-30-physical-2",
@@ -2187,7 +2187,7 @@
     "description": "Toddler can remove simple clothing like shoes, socks, and hats independently.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/30-months.html",
-    "sourceQuote": "By 30 months, most toddlers take some clothes off by themselves, like shoes, socks, or loose pants."
+    "sourceSummary": "By 30 months, most toddlers take some clothes off by themselves, like shoes, socks, or loose pants."
   },
   {
     "id": "m-31-social-1",
@@ -2197,7 +2197,7 @@
     "description": "Toddler starts playing with other children directly, sharing a goal like building something together.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Cooperative play, where children work together toward a shared goal, begins to emerge and is a major social milestone for toddlers."
+    "sourceSummary": "Cooperative play, where children work together toward a shared goal, begins to emerge and is a major social milestone for toddlers."
   },
   {
     "id": "m-31-social-2",
@@ -2207,7 +2207,7 @@
     "description": "Toddler understands and follows daily routines like brushing teeth after eating or putting shoes on to go outside.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Following daily routines shows your toddler understands the sequence of events and can predict what comes next, providing comfort and security."
+    "sourceSummary": "Following daily routines shows your toddler understands the sequence of events and can predict what comes next, providing comfort and security."
   },
   {
     "id": "m-31-language-1",
@@ -2217,7 +2217,7 @@
     "description": "Toddler starts using conjunctions to make longer sentences: 'Mommy and Daddy' or 'ball and book.'",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Using conjunctions like 'and' to link words and ideas is a sign of more complex language development emerging in your toddler."
+    "sourceSummary": "Using conjunctions like 'and' to link words and ideas is a sign of more complex language development emerging in your toddler."
   },
   {
     "id": "m-31-language-2",
@@ -2227,7 +2227,7 @@
     "description": "Toddler frequently asks 'what,' 'where,' and 'who' questions, eager to learn about everything.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Asking frequent questions is your toddler's way of learning about the world. Responding patiently helps build vocabulary and understanding."
+    "sourceSummary": "Asking frequent questions is your toddler's way of learning about the world. Responding patiently helps build vocabulary and understanding."
   },
   {
     "id": "m-31-cognitive-1",
@@ -2237,7 +2237,7 @@
     "description": "Toddler can count 'one, two, three' objects, though may not always be accurate.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Counting to three is an early math milestone. Toddlers may recite numbers in order and begin to count small groups of objects."
+    "sourceSummary": "Counting to three is an early math milestone. Toddlers may recite numbers in order and begin to count small groups of objects."
   },
   {
     "id": "m-31-physical-1",
@@ -2247,7 +2247,7 @@
     "description": "Toddler can catch a large ball with both arms extended, though coordination is still developing.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "Catching a large ball with both arms requires visual tracking, hand-eye coordination, and timing, skills that develop throughout the toddler years."
+    "sourceSummary": "Catching a large ball with both arms requires visual tracking, hand-eye coordination, and timing, skills that develop throughout the toddler years."
   },
   {
     "id": "m-32-social-1",
@@ -2257,7 +2257,7 @@
     "description": "Toddler recognizes and responds to emotional expressions in others, saying things like 'You sad?'",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Recognizing and naming others' emotions, like asking 'You sad?', shows your toddler's empathy and emotional understanding are growing rapidly."
+    "sourceSummary": "Recognizing and naming others' emotions, like asking 'You sad?', shows your toddler's empathy and emotional understanding are growing rapidly."
   },
   {
     "id": "m-32-social-2",
@@ -2267,7 +2267,7 @@
     "description": "Toddler shows preferences for certain playmates and may ask for them by name.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Having favorite friends shows your toddler is forming meaningful social bonds and preferences, an important step in social development."
+    "sourceSummary": "Having favorite friends shows your toddler is forming meaningful social bonds and preferences, an important step in social development."
   },
   {
     "id": "m-32-language-1",
@@ -2277,7 +2277,7 @@
     "description": "Toddler recounts simple events from their day, like 'We went park. I played slide.'",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Telling simple stories about their day shows your toddler's memory, sequencing, and narrative skills are developing."
+    "sourceSummary": "Telling simple stories about their day shows your toddler's memory, sequencing, and narrative skills are developing."
   },
   {
     "id": "m-32-language-2",
@@ -2287,7 +2287,7 @@
     "description": "Toddler uses spatial prepositions correctly most of the time.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Using prepositions like 'in,' 'on,' and 'under' correctly shows your toddler understands spatial relationships and can describe them with words."
+    "sourceSummary": "Using prepositions like 'in,' 'on,' and 'under' correctly shows your toddler understands spatial relationships and can describe them with words."
   },
   {
     "id": "m-32-cognitive-1",
@@ -2297,7 +2297,7 @@
     "description": "Toddler can group objects by color when given direction, like 'Put the red ones here.'",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Sorting objects by color shows your toddler can identify colors and group items by shared characteristics, an early classification skill."
+    "sourceSummary": "Sorting objects by color shows your toddler can identify colors and group items by shared characteristics, an early classification skill."
   },
   {
     "id": "m-32-physical-1",
@@ -2307,7 +2307,7 @@
     "description": "Toddler can thread large beads onto a string, showing improving fine motor control and patience.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Stringing beads requires precise hand-eye coordination and patience, and is a good activity for building fine motor skills at this age."
+    "sourceSummary": "Stringing beads requires precise hand-eye coordination and patience, and is a good activity for building fine motor skills at this age."
   },
   {
     "id": "m-33-social-1",
@@ -2317,7 +2317,7 @@
     "description": "Toddler participates in group pretend play, taking on roles and following basic storylines.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Playing imaginatively with others, taking on roles, and following storylines shows advanced social and cognitive skills developing in your toddler."
+    "sourceSummary": "Playing imaginatively with others, taking on roles, and following storylines shows advanced social and cognitive skills developing in your toddler."
   },
   {
     "id": "m-33-social-2",
@@ -2327,7 +2327,7 @@
     "description": "Toddler begins to grasp the concept of ownership beyond just saying 'mine,' understanding that others have possessions too.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Understanding 'mine' and 'yours' shows your toddler is grasping the concept of ownership and recognizing that others have possessions too."
+    "sourceSummary": "Understanding 'mine' and 'yours' shows your toddler is grasping the concept of ownership and recognizing that others have possessions too."
   },
   {
     "id": "m-33-language-1",
@@ -2337,7 +2337,7 @@
     "description": "Toddler adds 's' to make words plural: 'dogs,' 'shoes,' 'cookies,' though may over-generalize ('foots').",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Using plurals, even with over-generalizations like 'foots,' shows your toddler is learning grammar rules and applying them to language."
+    "sourceSummary": "Using plurals, even with over-generalizations like 'foots,' shows your toddler is learning grammar rules and applying them to language."
   },
   {
     "id": "m-33-language-2",
@@ -2347,7 +2347,7 @@
     "description": "Toddler's vocabulary has grown substantially and they learn multiple new words each day.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "By this age, most toddlers have a vocabulary of 200 or more words and continue to learn several new words every day."
+    "sourceSummary": "By this age, most toddlers have a vocabulary of 200 or more words and continue to learn several new words every day."
   },
   {
     "id": "m-33-cognitive-1",
@@ -2357,7 +2357,7 @@
     "description": "Toddler can complete simple puzzles with several pieces, showing spatial reasoning growth.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Completing puzzles with several pieces helps toddlers build spatial reasoning, problem-solving skills, and the persistence needed for more complex tasks."
+    "sourceSummary": "Completing puzzles with several pieces helps toddlers build spatial reasoning, problem-solving skills, and the persistence needed for more complex tasks."
   },
   {
     "id": "m-33-physical-1",
@@ -2367,7 +2367,7 @@
     "description": "Toddler can briefly balance on one foot, showing core strength and balance development.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "Balancing on one foot for a second or two requires core stability and leg strength, and is a developing skill for children around this age."
+    "sourceSummary": "Balancing on one foot for a second or two requires core stability and leg strength, and is a developing skill for children around this age."
   },
   {
     "id": "m-34-social-1",
@@ -2377,7 +2377,7 @@
     "description": "Toddler can share when prompted, though spontaneous sharing is still developing.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Sharing when asked shows your toddler can control impulses and respond to social expectations, even though spontaneous sharing takes more time."
+    "sourceSummary": "Sharing when asked shows your toddler can control impulses and respond to social expectations, even though spontaneous sharing takes more time."
   },
   {
     "id": "m-34-social-2",
@@ -2387,7 +2387,7 @@
     "description": "Toddler beams and says 'I did it!' when completing a task, showing self-awareness and confidence.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Showing pride in accomplishments by saying 'I did it!' reflects your toddler's growing self-awareness and developing sense of competence."
+    "sourceSummary": "Showing pride in accomplishments by saying 'I did it!' reflects your toddler's growing self-awareness and developing sense of competence."
   },
   {
     "id": "m-34-language-1",
@@ -2397,7 +2397,7 @@
     "description": "Toddler begins using past tense: 'I played,' 'Daddy went,' though may make errors ('I goed').",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Using past tense, even with errors like 'I goed,' shows your toddler is learning grammar rules and applying them to talk about past events."
+    "sourceSummary": "Using past tense, even with errors like 'I goed,' shows your toddler is learning grammar rules and applying them to talk about past events."
   },
   {
     "id": "m-34-language-2",
@@ -2407,7 +2407,7 @@
     "description": "About 75% of what the toddler says is understandable to unfamiliar people.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "By this age, strangers should understand about 75% of what your toddler says, reflecting improving speech clarity and pronunciation."
+    "sourceSummary": "By this age, strangers should understand about 75% of what your toddler says, reflecting improving speech clarity and pronunciation."
   },
   {
     "id": "m-34-cognitive-1",
@@ -2417,7 +2417,7 @@
     "description": "Toddler can identify and name at least 3-4 common colors correctly.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Naming several colors correctly shows your toddler can categorize visual information and connect it with the right words."
+    "sourceSummary": "Naming several colors correctly shows your toddler can categorize visual information and connect it with the right words."
   },
   {
     "id": "m-34-physical-1",
@@ -2427,7 +2427,7 @@
     "description": "Toddler attempts hopping on one foot, managing 1-2 hops before losing balance.",
     "source": "WHO",
     "sourceUrl": "https://www.who.int/tools/child-growth-standards",
-    "sourceQuote": "Hopping on one foot is an advanced gross motor skill that requires strength, balance, and coordination, and begins to emerge around age 3."
+    "sourceSummary": "Hopping on one foot is an advanced gross motor skill that requires strength, balance, and coordination, and begins to emerge around age 3."
   },
   {
     "id": "m-35-social-1",
@@ -2437,7 +2437,7 @@
     "description": "Toddler begins to take turns during play more independently, though still needs reminders.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Taking turns with less prompting shows your toddler is internalizing social rules and building the self-control needed for cooperative play."
+    "sourceSummary": "Taking turns with less prompting shows your toddler is internalizing social rules and building the self-control needed for cooperative play."
   },
   {
     "id": "m-35-social-2",
@@ -2447,7 +2447,7 @@
     "description": "Toddler spontaneously tries to comfort peers who are hurt or crying, showing maturing empathy.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Spontaneously comforting a friend who is upset shows real empathy developing, as your child recognizes and responds to others' emotions."
+    "sourceSummary": "Spontaneously comforting a friend who is upset shows real empathy developing, as your child recognizes and responds to others' emotions."
   },
   {
     "id": "m-35-language-1",
@@ -2457,7 +2457,7 @@
     "description": "Toddler's sentences are getting longer and more complex, with better grammar.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Speaking in 4- to 5-word sentences with improving grammar shows your toddler's language skills are maturing rapidly."
+    "sourceSummary": "Speaking in 4- to 5-word sentences with improving grammar shows your toddler's language skills are maturing rapidly."
   },
   {
     "id": "m-35-language-2",
@@ -2467,7 +2467,7 @@
     "description": "Toddler can sing along to parts of familiar songs and recite simple nursery rhymes.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Singing songs and reciting rhymes builds memory, rhythm awareness, and language skills in toddlers this age."
+    "sourceSummary": "Singing songs and reciting rhymes builds memory, rhythm awareness, and language skills in toddlers this age."
   },
   {
     "id": "m-35-cognitive-1",
@@ -2477,7 +2477,7 @@
     "description": "Toddler can identify when two things are the same or different in basic comparisons.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Understanding 'same' and 'different' shows your toddler can compare objects and recognize similarities and differences, a key thinking skill."
+    "sourceSummary": "Understanding 'same' and 'different' shows your toddler can compare objects and recognize similarities and differences, a key thinking skill."
   },
   {
     "id": "m-35-physical-1",
@@ -2487,7 +2487,7 @@
     "description": "Toddler can copy a circle or make a cross, moving beyond random scribbling to intentional shapes.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Drawing intentional shapes like circles and crosses shows your toddler's fine motor control and visual-motor integration are maturing."
+    "sourceSummary": "Drawing intentional shapes like circles and crosses shows your toddler's fine motor control and visual-motor integration are maturing."
   },
   {
     "id": "m-36-social-1",
@@ -2497,7 +2497,7 @@
     "description": "Child can recover from separation distress relatively quickly when left with familiar caregivers.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/3-years.html",
-    "sourceQuote": "By 3 years, most children calm down within 10 minutes after you leave them, showing they feel secure and trust their caregivers."
+    "sourceSummary": "By 3 years, most children calm down within 10 minutes after you leave them, showing they feel secure and trust their caregivers."
   },
   {
     "id": "m-36-social-2",
@@ -2507,7 +2507,7 @@
     "description": "Child actively approaches other children to play, showing social initiative and confidence.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/3-years.html",
-    "sourceQuote": "By 3 years, most children notice other children and join them to play, showing social initiative and growing confidence with peers."
+    "sourceSummary": "By 3 years, most children notice other children and join them to play, showing social initiative and growing confidence with peers."
   },
   {
     "id": "m-36-social-3",
@@ -2516,8 +2516,8 @@
     "title": "Shows concern for a crying friend",
     "description": "Child demonstrates empathy by responding to peers' emotions with comfort or concern.",
     "source": "CDC",
-    "sourceUrl": "https://www.cdc.gov/act-early/milestones/3-years.html",
-    "sourceQuote": "By 3 years, most children show concern for a crying friend without being told to, demonstrating developing empathy and compassion."
+    "sourceUrl": "https://www.cdc.gov/act-early/milestones/2-years.html",
+    "sourceSummary": "CDC's 2-year checklist includes noticing when others are hurt or upset, like pausing or looking sad when someone is crying."
   },
   {
     "id": "m-36-language-1",
@@ -2527,7 +2527,7 @@
     "description": "Child can maintain a simple conversation, responding to what you say and adding their own thoughts.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/3-years.html",
-    "sourceQuote": "By 3 years, most children talk with you in conversation using at least two back-and-forth exchanges, a key communication milestone."
+    "sourceSummary": "By 3 years, most children talk with you in conversation using at least two back-and-forth exchanges, a key communication milestone."
   },
   {
     "id": "m-36-language-2",
@@ -2537,7 +2537,7 @@
     "description": "Child asks questions to learn about the world, showing growing curiosity and language sophistication.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/3-years.html",
-    "sourceQuote": "By 3 years, most children ask 'who,' 'what,' 'where,' or 'why' questions, driven by curiosity and an expanding understanding of language."
+    "sourceSummary": "By 3 years, most children ask 'who,' 'what,' 'where,' or 'why' questions, driven by curiosity and an expanding understanding of language."
   },
   {
     "id": "m-36-language-3",
@@ -2547,7 +2547,7 @@
     "description": "Child can tell you their first name when someone asks them.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/3-years.html",
-    "sourceQuote": "By 3 years, most children can say their first name when asked, showing self-awareness and the ability to share personal information."
+    "sourceSummary": "By 3 years, most children can say their first name when asked, showing self-awareness and the ability to share personal information."
   },
   {
     "id": "m-36-cognitive-1",
@@ -2557,7 +2557,7 @@
     "description": "Child can copy a circle after watching you draw one, showing visual-motor integration.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/3-years.html",
-    "sourceQuote": "By 3 years, most children draw a circle when you show them how, demonstrating visual-motor skills and the ability to imitate."
+    "sourceSummary": "By 3 years, most children draw a circle when you show them how, demonstrating visual-motor skills and the ability to imitate."
   },
   {
     "id": "m-36-cognitive-2",
@@ -2567,7 +2567,7 @@
     "description": "Child understands and heeds warnings about danger, showing developing reasoning and self-control.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/3-years.html",
-    "sourceQuote": "By 3 years, most children avoid touching hot objects like a stove when you warn them, showing they understand danger and can exercise self-control."
+    "sourceSummary": "By 3 years, most children avoid touching hot objects like a stove when you warn them, showing they understand danger and can exercise self-control."
   },
   {
     "id": "m-36-physical-1",
@@ -2577,7 +2577,7 @@
     "description": "Child has the fine motor skills and patience to thread objects onto a string.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/3-years.html",
-    "sourceQuote": "By 3 years, most children can string items together, like large beads or macaroni, showing fine motor precision and patience."
+    "sourceSummary": "By 3 years, most children can string items together, like large beads or macaroni, showing fine motor precision and patience."
   },
   {
     "id": "m-36-physical-2",
@@ -2587,7 +2587,7 @@
     "description": "Child can pull on pants, put arms through sleeves, or put on shoes (though not necessarily on the right feet).",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/3-years.html",
-    "sourceQuote": "By 3 years, most children put on some clothes by themselves, like pulling up pants or slipping on a jacket, building independence."
+    "sourceSummary": "By 3 years, most children put on some clothes by themselves, like pulling up pants or slipping on a jacket, building independence."
   },
   {
     "id": "m-36-physical-3",
@@ -2597,6 +2597,6 @@
     "description": "Child can spear food with a fork and bring it to their mouth fairly neatly.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/3-years.html",
-    "sourceQuote": "By 3 years, most children use a fork to eat, spearing food and bringing it to their mouth with good control."
+    "sourceSummary": "By 3 years, most children use a fork to eat, spearing food and bringing it to their mouth with good control."
   }
 ]

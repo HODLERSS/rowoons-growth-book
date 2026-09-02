@@ -10,7 +10,7 @@ import { parseLocalDate } from "@/lib/age-calculator";
 
 export function ProfileCard({ onEdit }: { onEdit: () => void }) {
   const { baby, hydrated } = useBaby();
-  const { age, currentMonth, beyondRange, isFuture, ready } = useAge();
+  const { age, correctedAge, currentMonth, beyondRange, isFuture, ready } = useAge();
   const { lang, t } = useLanguage();
 
   if (!hydrated) return <div className="h-[6.5rem] rounded-xl border border-rule bg-surface" aria-hidden="true" />;
@@ -29,13 +29,14 @@ export function ProfileCard({ onEdit }: { onEdit: () => void }) {
 
   const name = displayName(baby, lang);
   const born = parseLocalDate(baby.birthDate);
-  let ageText = "";
-  if (ready) {
-    if (age.isFuture) ageText = t("age.future");
-    else if (age.months === 0) ageText = age.days === 0 ? t("age.today") : age.days === 1 ? t("age.day_only") : t("age.days_only", { days: age.days });
-    else if (age.months === 1) ageText = age.days === 0 ? t("age.month_only") : t("age.month_days", { days: age.days });
-    else ageText = age.days === 0 ? t("age.months_only", { months: age.months }) : t("age.months_days", { months: age.months, days: age.days });
-  }
+  const label = (a: typeof age): string => {
+    if (a.isFuture) return t("age.future");
+    if (a.months === 0) return a.days === 0 ? t("age.today") : a.days === 1 ? t("age.day_only") : t("age.days_only", { days: a.days });
+    if (a.months === 1) return a.days === 0 ? t("age.month_only") : t("age.month_days", { days: a.days });
+    return a.days === 0 ? t("age.months_only", { months: a.months }) : t("age.months_days", { months: a.months, days: a.days });
+  };
+  const ageText = ready ? label(age) : "";
+  const correctedText = ready && correctedAge ? t("age.corrected", { age: label(correctedAge) }) : "";
 
   return (
     <>
@@ -51,6 +52,7 @@ export function ProfileCard({ onEdit }: { onEdit: () => void }) {
             {name}
           </span>
           <span className="tnum mt-0.5 block text-[0.9375rem]">{ageText || " "}</span>
+          {correctedText && <span className="tnum mt-0.5 block text-[0.8125rem] font-medium text-primary">{correctedText}</span>}
           {born && <span className="tnum mt-0.5 block text-[0.8125rem] text-muted-foreground">{t("age.born", { date: formatDate(lang, born) })}</span>}
         </span>
         <span className="flex flex-col items-end gap-2">

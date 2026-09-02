@@ -45,7 +45,7 @@ for f in FILES:
     for i in kom:
         if i not in enm: fail(f"{f}: extra in ko: {i}")
     for i, e in enm.items():
-        for key in ("source", "sourceUrl", "sourceQuote", "title", "description"):
+        for key in ("source", "sourceUrl", "sourceSummary", "title", "description"):
             if not e.get(key): fail(f"{f}/{i}: EN missing {key}")
         host = re.sub(r"^https?://([^/]+).*$", r"\1", e.get("sourceUrl", ""))
         if host not in ALLOWED_HOSTS: fail(f"{f}/{i}: source host not allowed: {host}")
@@ -57,7 +57,7 @@ for f in FILES:
         if ("materials" in e) != ("materials" in k): fail(f"{f}/{i}: materials presence mismatch")
         if "materials" in e and len(e["materials"]) != len(k.get("materials", [])): warn(f"{f}/{i}: materials count differs")
         if ("action" in e) != ("action" in k): fail(f"{f}/{i}: action presence mismatch")
-        for key in ("title", "description", "sourceQuote", "action"):
+        for key in ("title", "description", "sourceSummary", "action"):
             if key in k and k[key]:
                 ko_text_checks(f"ko/{f}/{i}.{key}", k[key])
                 if not re.search(r"[가-힣]", k[key]): fail(f"ko/{f}/{i}.{key}: no Hangul (untranslated?)")

@@ -8,7 +8,7 @@
     "category": "social",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "맨살을 맞대는 접촉은 신생아의 체온과 심장 박동을 안정시켜 줘요. 동시에 건강한 발달을 뒷받침하는 안정 애착도 만들어 줘요."
+    "sourceSummary": "맨살을 맞대는 접촉은 신생아의 체온과 심장 박동을 안정시켜 줘요. 동시에 건강한 발달을 뒷받침하는 안정 애착도 만들어 줘요."
   },
   {
     "id": "pt-1-2",
@@ -22,7 +22,7 @@
     "category": "cognitive",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "신생아는 대비가 강한 무늬에 끌려요. 아직 발달 중인 눈 때문이에요. 생후 첫 몇 주에는 색보다 뚜렷한 흑백 그림을 더 쉽게 알아보거든요."
+    "sourceSummary": "신생아는 대비가 강한 무늬에 끌려요. 아직 발달 중인 눈 때문이에요. 생후 첫 몇 주에는 색보다 뚜렷한 흑백 그림을 더 쉽게 알아보거든요."
   },
   {
     "id": "pt-1-3",
@@ -33,7 +33,7 @@
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "생후 첫날부터 하는 터미타임은 목, 어깨, 몸통 근력을 길러 줘요. 이후의 모든 주요 운동 발달 이정표에 필요한 힘이에요."
+    "sourceSummary": "생후 첫날부터 하는 터미타임은 목, 어깨, 몸통 근력을 길러 줘요. 이후의 모든 주요 운동 발달 이정표에 필요한 힘이에요."
   },
   {
     "id": "pt-2-1",
@@ -47,7 +47,7 @@
     "category": "cognitive",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "생후 2개월 무렵이면 아기는 움직이는 물체를 눈으로 따라가기 시작해요. 손과 눈의 협응과 공간 감각을 뒷받침하는 핵심 시각 능력이에요."
+    "sourceSummary": "생후 2개월 무렵이면 아기는 움직이는 물체를 눈으로 따라가기 시작해요. 손과 눈의 협응과 공간 감각을 뒷받침하는 핵심 시각 능력이에요."
   },
   {
     "id": "pt-2-2",
@@ -58,7 +58,7 @@
     "category": "language",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "하루 종일 아기에게 말을 걸고 노래를 불러 주면 뇌 속 언어 회로가 만들어져요. 부모와 아기 사이의 유대도 단단해져요."
+    "sourceSummary": "하루 종일 아기에게 말을 걸고 노래를 불러 주면 뇌 속 언어 회로가 만들어져요. 부모와 아기 사이의 유대도 단단해져요."
   },
   {
     "id": "pt-2-3",
@@ -72,7 +72,7 @@
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "터미타임에 거울을 더하면 아기가 고개를 들고 돌리고 싶어져요. 그러면서 뒤집기와 앉기에 필요한 목과 상체 근력이 길러져요."
+    "sourceSummary": "터미타임에 거울을 더하면 아기가 고개를 들고 돌리고 싶어져요. 그러면서 뒤집기와 앉기에 필요한 목과 상체 근력이 길러져요."
   },
   {
     "id": "pt-3-1",
@@ -86,7 +86,7 @@
     "category": "physical",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "아기 체육관은 머리 위 장난감에 손을 뻗고 쳐 보게 해요. 그러면서 물건을 잡고 쥐는 것으로 이어지는 손과 눈의 협응력과 팔 조절력이 발달해요."
+    "sourceSummary": "아기 체육관은 머리 위 장난감에 손을 뻗고 쳐 보게 해요. 그러면서 물건을 잡고 쥐는 것으로 이어지는 손과 눈의 협응력과 팔 조절력이 발달해요."
   },
   {
     "id": "pt-3-2",
@@ -97,7 +97,7 @@
     "category": "language",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "아기의 쿠잉과 소리에 반응해 주면 아기는 대화의 리듬을 배워요. 자기 목소리가 소중하고 들을 가치가 있다는 것도 알게 돼요."
+    "sourceSummary": "아기의 쿠잉과 소리에 반응해 주면 아기는 대화의 리듬을 배워요. 자기 목소리가 소중하고 들을 가치가 있다는 것도 알게 돼요."
   },
   {
     "id": "pt-3-3",
@@ -108,7 +108,7 @@
     "category": "social",
     "source": "CDC Act Early",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/",
-    "sourceQuote": "생후 3개월 무렵이면 아기는 사회적 미소를 짓고 얼굴을 자세히 살피기 시작해요. 사회적 소통의 바탕이 되는 감정 표현을 읽는 법을 배우는 거예요."
+    "sourceSummary": "생후 3개월 무렵이면 아기는 사회적 미소를 짓고 얼굴을 자세히 살피기 시작해요. 사회적 소통의 바탕이 되는 감정 표현을 읽는 법을 배우는 거예요."
   },
   {
     "id": "pt-4-1",
@@ -122,7 +122,7 @@
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "아기가 딸랑이를 흔들어 소리를 들을 때, 아기는 원인과 결과를 발견하고 있어요. 가장 이르고 가장 중요한 인지적 연결 가운데 하나예요."
+    "sourceSummary": "아기가 딸랑이를 흔들어 소리를 들을 때, 아기는 원인과 결과를 발견하고 있어요. 가장 이르고 가장 중요한 인지적 연결 가운데 하나예요."
   },
   {
     "id": "pt-4-2",
@@ -133,7 +133,7 @@
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "정강이 위에 아기를 올리는 것 같은 놀이식 터미타임이 있어요. 목과 몸통 근육을 계속 튼튼하게 해 주면서, 아기와 엄마 아빠 모두에게 즐거운 시간이 돼요."
+    "sourceSummary": "정강이 위에 아기를 올리는 것 같은 놀이식 터미타임이 있어요. 목과 몸통 근육을 계속 튼튼하게 해 주면서, 아기와 엄마 아빠 모두에게 즐거운 시간이 돼요."
   },
   {
     "id": "pt-4-3",
@@ -147,7 +147,7 @@
     "category": "language",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "생후 첫 몇 달부터 책을 읽어 주면 듣기 능력과 어휘가 자라요. 책에 대한 좋은 느낌도 생겨서 평생 이어져요."
+    "sourceSummary": "생후 첫 몇 달부터 책을 읽어 주면 듣기 능력과 어휘가 자라요. 책에 대한 좋은 느낌도 생겨서 평생 이어져요."
   },
   {
     "id": "pt-5-1",
@@ -158,7 +158,7 @@
     "category": "language",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "부르르 입술 소리 같은 우스운 소리는 아기가 입 움직임과 소리를 실험해 보게 해요. 옹알이와 말하기로 이어지는 입 근육 운동 능력이 이렇게 길러져요."
+    "sourceSummary": "부르르 입술 소리 같은 우스운 소리는 아기가 입 움직임과 소리를 실험해 보게 해요. 옹알이와 말하기로 이어지는 입 근육 운동 능력이 이렇게 길러져요."
   },
   {
     "id": "pt-5-2",
@@ -172,7 +172,7 @@
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "질감이 다른 물건에 손을 뻗어 잡아 보면 손 근육이 튼튼해져요. 눈으로 본 것과 손의 움직임을 맞추는 법도 배워요."
+    "sourceSummary": "질감이 다른 물건에 손을 뻗어 잡아 보면 손 근육이 튼튼해져요. 눈으로 본 것과 손의 움직임을 맞추는 법도 배워요."
   },
   {
     "id": "pt-5-3",
@@ -183,7 +183,7 @@
     "category": "social",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "까꿍 놀이는 아기에게 대상 영속성을 가르쳐 주는 첫 놀이 가운데 하나예요. 사랑하는 사람은 언제나 돌아온다는 믿음도 길러 줘요."
+    "sourceSummary": "까꿍 놀이는 아기에게 대상 영속성을 가르쳐 주는 첫 놀이 가운데 하나예요. 사랑하는 사람은 언제나 돌아온다는 믿음도 길러 줘요."
   },
   {
     "id": "pt-6-1",
@@ -197,7 +197,7 @@
     "category": "social",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "거울 놀이는 호기심과 초기 자기 인식을 일깨워요. 아기가 자기 움직임을 눈앞의 거울 속 모습과 연결하기 시작하거든요."
+    "sourceSummary": "거울 놀이는 호기심과 초기 자기 인식을 일깨워요. 아기가 자기 움직임을 눈앞의 거울 속 모습과 연결하기 시작하거든요."
   },
   {
     "id": "pt-6-2",
@@ -211,7 +211,7 @@
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "여러 질감을 손으로 탐색하면 아기 뇌 속에 감각 회로가 만들어져요. 묘사하는 말이 발달할 바탕도 마련돼요."
+    "sourceSummary": "여러 질감을 손으로 탐색하면 아기 뇌 속에 감각 회로가 만들어져요. 묘사하는 말이 발달할 바탕도 마련돼요."
   },
   {
     "id": "pt-6-3",
@@ -222,7 +222,7 @@
     "category": "physical",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "양육자 무릎 위에서 하는 통통 튕기기와 움직임 놀이는 몸통 힘과 균형 감각을 길러 줘요. 아기에게 말의 리듬과 멜로디도 알려 주고요."
+    "sourceSummary": "양육자 무릎 위에서 하는 통통 튕기기와 움직임 놀이는 몸통 힘과 균형 감각을 길러 줘요. 아기에게 말의 리듬과 멜로디도 알려 주고요."
   },
   {
     "id": "pt-6-4",
@@ -233,7 +233,7 @@
     "category": "language",
     "source": "CDC Act Early",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/",
-    "sourceQuote": "옹알이에 진짜 대화처럼 반응해 주면 아기는 소통의 주고받는 패턴을 배워요. 더 많이 소리를 내게 되고요."
+    "sourceSummary": "옹알이에 진짜 대화처럼 반응해 주면 아기는 소통의 주고받는 패턴을 배워요. 더 많이 소리를 내게 되고요."
   },
   {
     "id": "pt-7-1",
@@ -248,7 +248,7 @@
     "category": "cognitive",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "물건을 자꾸 떨어뜨리면 인내심이 시험받을 수 있어요. 하지만 아기는 반복을 통해 배우고 있어요. 중력, 원인과 결과, 세상이 돌아가는 방식을요."
+    "sourceSummary": "물건을 자꾸 떨어뜨리면 인내심이 시험받을 수 있어요. 하지만 아기는 반복을 통해 배우고 있어요. 중력, 원인과 결과, 세상이 돌아가는 방식을요."
   },
   {
     "id": "pt-7-2",
@@ -263,7 +263,7 @@
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "잡고 서기는 아기가 다리로 체중을 지탱해 볼 기회를 줘요. 잡고 일어서기와 가구 잡고 걷기에 필요한 힘과 균형 감각이 길러져요."
+    "sourceSummary": "잡고 서기는 아기가 다리로 체중을 지탱해 볼 기회를 줘요. 잡고 일어서기와 가구 잡고 걷기에 필요한 힘과 균형 감각이 길러져요."
   },
   {
     "id": "pt-7-3",
@@ -274,7 +274,7 @@
     "category": "social",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "짝짜꿍처럼 함께하는 손 놀이는 아기에게 리듬과 기대하는 즐거움을 알려 줘요. 부모와 아기의 유대를 단단하게 하는, 함께 노는 기쁨도 알려 주고요."
+    "sourceSummary": "짝짜꿍처럼 함께하는 손 놀이는 아기에게 리듬과 기대하는 즐거움을 알려 줘요. 부모와 아기의 유대를 단단하게 하는, 함께 노는 기쁨도 알려 주고요."
   },
   {
     "id": "pt-8-1",
@@ -289,7 +289,7 @@
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "통을 채우고 비우는 놀이는 단순하고 반복적이에요. 그 놀이를 통해 아기는 공간 관계, 대상 영속성, 원인과 결과를 배워요."
+    "sourceSummary": "통을 채우고 비우는 놀이는 단순하고 반복적이에요. 그 놀이를 통해 아기는 공간 관계, 대상 영속성, 원인과 결과를 배워요."
   },
   {
     "id": "pt-8-2",
@@ -303,7 +303,7 @@
     "category": "physical",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "가구를 따라 안전하게 잡고 걸을 길을 만들어 주면 아기는 자신감과 연습 기회를 얻어요. 혼자 걷기로 나아가는 데 필요한 것들이에요."
+    "sourceSummary": "가구를 따라 안전하게 잡고 걸을 길을 만들어 주면 아기는 자신감과 연습 기회를 얻어요. 혼자 걷기로 나아가는 데 필요한 것들이에요."
   },
   {
     "id": "pt-8-3",
@@ -314,7 +314,7 @@
     "category": "language",
     "source": "CDC Act Early",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/",
-    "sourceQuote": "빠이빠이 손 흔들기는 중요한 의사소통 몸짓이에요. 아기가 사회적 일과를 이해하고 행동으로 뜻을 전하기 시작했다는 걸 보여 줘요."
+    "sourceSummary": "빠이빠이 손 흔들기는 중요한 의사소통 몸짓이에요. 아기가 사회적 일과를 이해하고 행동으로 뜻을 전하기 시작했다는 걸 보여 줘요."
   },
   {
     "id": "pt-9-1",
@@ -329,7 +329,7 @@
     "category": "social",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "까꿍 놀이는 아기가 대상 영속성을 이해하도록 도와줘요. 사람과 물건이 안 보여도 여전히 있다는 것, 생후 첫해의 중요한 인지 발달 이정표예요."
+    "sourceSummary": "까꿍 놀이는 아기가 대상 영속성을 이해하도록 도와줘요. 사람과 물건이 안 보여도 여전히 있다는 것, 생후 첫해의 중요한 인지 발달 이정표예요."
   },
   {
     "id": "pt-9-2",
@@ -345,7 +345,7 @@
     "category": "cognitive",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "넣고 쏟는 놀이는 아기가 원인과 결과를 탐색하게 해요. 나중에 더 복잡한 일을 하는 데 필요한 소근육 협응력도 길러 주고요."
+    "sourceSummary": "넣고 쏟는 놀이는 아기가 원인과 결과를 탐색하게 해요. 나중에 더 복잡한 일을 하는 데 필요한 소근육 협응력도 길러 주고요."
   },
   {
     "id": "pt-9-3",
@@ -361,7 +361,7 @@
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "여러 가지 표면 위를 기어다니면 몸통 근육이 튼튼해지고 협응력이 자라요. 걷기와 다른 대근육 기술에 필요한 몸 감각도 생겨요."
+    "sourceSummary": "여러 가지 표면 위를 기어다니면 몸통 근육이 튼튼해지고 협응력이 자라요. 걷기와 다른 대근육 기술에 필요한 몸 감각도 생겨요."
   },
   {
     "id": "pt-9-4",
@@ -377,7 +377,7 @@
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "놀이로 소리와 리듬을 탐색하면 초기 인지 발달에 도움이 돼요. 아기가 패턴과 원인-결과 관계를 이해하게 되거든요."
+    "sourceSummary": "놀이로 소리와 리듬을 탐색하면 초기 인지 발달에 도움이 돼요. 아기가 패턴과 원인-결과 관계를 이해하게 되거든요."
   },
   {
     "id": "pt-10-1",
@@ -392,7 +392,7 @@
     "category": "cognitive",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "쌓고 무너뜨리는 놀이는 아기에게 원인과 결과, 공간 관계, 중력을 가르쳐 줘요. 손과 눈의 협응력도 길러 주고요."
+    "sourceSummary": "쌓고 무너뜨리는 놀이는 아기에게 원인과 결과, 공간 관계, 중력을 가르쳐 줘요. 손과 눈의 협응력도 길러 주고요."
   },
   {
     "id": "pt-10-2",
@@ -403,7 +403,7 @@
     "category": "social",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "짝짜꿍 같은 함께하는 놀이는 소통의 바탕이 되는 주고받기를 길러 줘요. 부모와 아기의 유대도 단단하게 해요."
+    "sourceSummary": "짝짜꿍 같은 함께하는 놀이는 소통의 바탕이 되는 주고받기를 길러 줘요. 부모와 아기의 유대도 단단하게 해요."
   },
   {
     "id": "pt-10-3",
@@ -419,7 +419,7 @@
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "스스로 먹으면서 집게 잡기를 연습하면 정교한 소근육이 발달해요. 나중에 그리기, 단추 채우기, 글씨 쓰기에 필요한 능력이에요."
+    "sourceSummary": "스스로 먹으면서 집게 잡기를 연습하면 정교한 소근육이 발달해요. 나중에 그리기, 단추 채우기, 글씨 쓰기에 필요한 능력이에요."
   },
   {
     "id": "pt-10-4",
@@ -433,7 +433,7 @@
     "category": "social",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "단순한 차례 주고받기 놀이는 가장 이른 형태의 협동 놀이 가운데 하나예요. 나누기와 소통 같은 사회성의 바탕이 돼요."
+    "sourceSummary": "단순한 차례 주고받기 놀이는 가장 이른 형태의 협동 놀이 가운데 하나예요. 나누기와 소통 같은 사회성의 바탕이 돼요."
   },
   {
     "id": "pt-11-1",
@@ -447,7 +447,7 @@
     "category": "physical",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "가구를 잡고 걸으면서 아기는 다리 힘, 균형 감각, 자신감을 키워요. 혼자 첫걸음을 떼는 데 필요한 것들이에요."
+    "sourceSummary": "가구를 잡고 걸으면서 아기는 다리 힘, 균형 감각, 자신감을 키워요. 혼자 첫걸음을 떼는 데 필요한 것들이에요."
   },
   {
     "id": "pt-11-2",
@@ -458,7 +458,7 @@
     "category": "language",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "일상에서 물건을 가리키며 이름을 말해 주는 것은 가장 강력한 방법 가운데 하나예요. 아기의 어휘와 언어 이해가 이렇게 자라요."
+    "sourceSummary": "일상에서 물건을 가리키며 이름을 말해 주는 것은 가장 강력한 방법 가운데 하나예요. 아기의 어휘와 언어 이해가 이렇게 자라요."
   },
   {
     "id": "pt-11-3",
@@ -476,7 +476,7 @@
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "감각이 풍부한 놀이 경험은 아기가 느끼는 것과 그것을 설명하는 말을 연결하게 해 줘요. 인지와 언어 능력이 함께 자라요."
+    "sourceSummary": "감각이 풍부한 놀이 경험은 아기가 느끼는 것과 그것을 설명하는 말을 연결하게 해 줘요. 인지와 언어 능력이 함께 자라요."
   },
   {
     "id": "pt-12-1",
@@ -490,7 +490,7 @@
     "category": "language",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "아기 때부터 소리 내어 책을 읽어 주면 언어 발달이 자극되고 부모와 아기의 관계가 단단해져요. 아기가 첫 단어를 말하기 전부터요."
+    "sourceSummary": "아기 때부터 소리 내어 책을 읽어 주면 언어 발달이 자극되고 부모와 아기의 관계가 단단해져요. 아기가 첫 단어를 말하기 전부터요."
   },
   {
     "id": "pt-12-2",
@@ -505,7 +505,7 @@
     "category": "physical",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "밀고 끄는 장난감은 이제 막 걷기 시작한 아기가 균형과 협응력을 연습하게 해요. 스스로 움직이는 자신감도 길러 주고요."
+    "sourceSummary": "밀고 끄는 장난감은 이제 막 걷기 시작한 아기가 균형과 협응력을 연습하게 해요. 스스로 움직이는 자신감도 길러 주고요."
   },
   {
     "id": "pt-12-3",
@@ -519,7 +519,7 @@
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "도형 맞추기 놀이는 초기 문제 해결 능력을 길러 줘요. 관찰하고, 비교하고, 맞추는 법을 배우거든요. 수학적 사고의 핵심 바탕이에요."
+    "sourceSummary": "도형 맞추기 놀이는 초기 문제 해결 능력을 길러 줘요. 관찰하고, 비교하고, 맞추는 법을 배우거든요. 수학적 사고의 핵심 바탕이에요."
   },
   {
     "id": "pt-12-4",
@@ -533,7 +533,7 @@
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "음악에 맞춰 움직이면 균형 감각, 협응력, 몸 감각이 발달해요. 아기가 새로 익히는 운동 능력을 즐겁게 연습하는 방법이에요."
+    "sourceSummary": "음악에 맞춰 움직이면 균형 감각, 협응력, 몸 감각이 발달해요. 아기가 새로 익히는 운동 능력을 즐겁게 연습하는 방법이에요."
   },
   {
     "id": "pt-13-1",
@@ -547,7 +547,7 @@
     "category": "language",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "전화기 같은 일상 물건으로 하는 상상 놀이가 있어요. 아이는 이를 통해 상징으로 실제 사물을 나타내는 법을 배워요. 언어와 인지 발달의 핵심 단계예요."
+    "sourceSummary": "전화기 같은 일상 물건으로 하는 상상 놀이가 있어요. 아이는 이를 통해 상징으로 실제 사물을 나타내는 법을 배워요. 언어와 인지 발달의 핵심 단계예요."
   },
   {
     "id": "pt-13-2",
@@ -564,7 +564,7 @@
     "category": "cognitive",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "물놀이는 강력한 감각 경험이에요. 아이는 직접 만져 보며 부피, 원인과 결과, 물질의 성질을 배워요."
+    "sourceSummary": "물놀이는 강력한 감각 경험이에요. 아이는 직접 만져 보며 부피, 원인과 결과, 물질의 성질을 배워요."
   },
   {
     "id": "pt-13-3",
@@ -578,7 +578,7 @@
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "끼우고 쌓는 놀이는 아이에게 크기 비교와 순서 개념을 알려 줘요. 손으로 하는 놀이를 통해 초기 수학적 사고도 길러 주고요."
+    "sourceSummary": "끼우고 쌓는 놀이는 아이에게 크기 비교와 순서 개념을 알려 줘요. 손으로 하는 놀이를 통해 초기 수학적 사고도 길러 주고요."
   },
   {
     "id": "pt-14-1",
@@ -589,7 +589,7 @@
     "category": "social",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "숨바꼭질 같은 놀이는 아이의 대상 영속성 이해를 단단하게 해요. 사랑하는 사람은 돌아온다는 믿음도 길러서 안정 애착을 뒷받침해요."
+    "sourceSummary": "숨바꼭질 같은 놀이는 아이의 대상 영속성 이해를 단단하게 해요. 사랑하는 사람은 돌아온다는 믿음도 길러서 안정 애착을 뒷받침해요."
   },
   {
     "id": "pt-14-2",
@@ -605,7 +605,7 @@
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "이른 낙서는 아이가 글씨를 쓸 때 쓸 손과 손가락 근육을 튼튼하게 해요. 흔적을 남기는 활동을 통해 창의성과 자기표현도 길러 주고요."
+    "sourceSummary": "이른 낙서는 아이가 글씨를 쓸 때 쓸 손과 손가락 근육을 튼튼하게 해요. 흔적을 남기는 활동을 통해 창의성과 자기표현도 길러 주고요."
   },
   {
     "id": "pt-14-3",
@@ -616,7 +616,7 @@
     "category": "social",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "따라 하기 놀이는 사회정서 발달을 도와요. 아이가 관심받고 소중하게 여겨진다고 느끼게 하거든요. 배움에 꼭 필요한 관찰력도 길러 주고요."
+    "sourceSummary": "따라 하기 놀이는 사회정서 발달을 도와요. 아이가 관심받고 소중하게 여겨진다고 느끼게 하거든요. 배움에 꼭 필요한 관찰력도 길러 주고요."
   },
   {
     "id": "pt-15-1",
@@ -630,7 +630,7 @@
     "category": "language",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "그림을 소리와 단어에 연결하면 아이의 어휘가 늘어요. 말하기 발달에 꼭 필요한 소리 따라 하기도 연습하게 돼요."
+    "sourceSummary": "그림을 소리와 단어에 연결하면 아이의 어휘가 늘어요. 말하기 발달에 꼭 필요한 소리 따라 하기도 연습하게 돼요."
   },
   {
     "id": "pt-15-2",
@@ -645,7 +645,7 @@
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "볼풀 놀이는 깊은 감각 자극을 줘요. 아이의 몸 감각과 균형 감각, 오르기와 다른 대근육 기술에 필요한 협응력이 자라요."
+    "sourceSummary": "볼풀 놀이는 깊은 감각 자극을 줘요. 아이의 몸 감각과 균형 감각, 오르기와 다른 대근육 기술에 필요한 협응력이 자라요."
   },
   {
     "id": "pt-15-3",
@@ -660,7 +660,7 @@
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "스티커를 떼고 붙이면 집게 잡기와 양손 협응력이 발달해요. 옷 입기, 밥 먹기, 나아가 글씨 쓰기에 필요한 능력이에요."
+    "sourceSummary": "스티커를 떼고 붙이면 집게 잡기와 양손 협응력이 발달해요. 옷 입기, 밥 먹기, 나아가 글씨 쓰기에 필요한 능력이에요."
   },
   {
     "id": "pt-16-1",
@@ -671,7 +671,7 @@
     "category": "language",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "말과 동작을 짝지은 노래는 아이가 언어를 뜻과 연결하도록 도와줘요. 새 어휘를 기억하고 쓰기가 더 쉬워져요."
+    "sourceSummary": "말과 동작을 짝지은 노래는 아이가 언어를 뜻과 연결하도록 도와줘요. 새 어휘를 기억하고 쓰기가 더 쉬워져요."
   },
   {
     "id": "pt-16-2",
@@ -685,7 +685,7 @@
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "블록 놀이는 가장 가치 있는 초기 학습 활동 가운데 하나예요. 공간 감각, 문제 해결력, 그리고 세기와 균형 같은 초기 수학 개념을 길러 줘요."
+    "sourceSummary": "블록 놀이는 가장 가치 있는 초기 학습 활동 가운데 하나예요. 공간 감각, 문제 해결력, 그리고 세기와 균형 같은 초기 수학 개념을 길러 줘요."
   },
   {
     "id": "pt-16-3",
@@ -696,7 +696,7 @@
     "category": "cognitive",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "다정한 어른과 함께 자연을 탐색하면 호기심과 어휘가 자라요. 아이가 관찰하고, 질문하고, 주변 세상을 이해하는 법을 배우거든요."
+    "sourceSummary": "다정한 어른과 함께 자연을 탐색하면 호기심과 어휘가 자라요. 아이가 관찰하고, 질문하고, 주변 세상을 이해하는 법을 배우거든요."
   },
   {
     "id": "pt-17-1",
@@ -713,7 +713,7 @@
     "category": "social",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "상상 놀이를 통해 아이는 실제 세상의 역할과 사회적 상호작용을 연습해요. 안전한 상황에서 언어, 공감, 창의적 사고가 자라요."
+    "sourceSummary": "상상 놀이를 통해 아이는 실제 세상의 역할과 사회적 상호작용을 연습해요. 안전한 상황에서 언어, 공감, 창의적 사고가 자라요."
   },
   {
     "id": "pt-17-2",
@@ -728,7 +728,7 @@
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "안전하게 오를 기회는 상체와 하체 힘, 협응력, 공간 계획 능력을 길러 줘요. 아이가 자신 있게 몸을 움직이며 탐색하는 데 필요한 것들이에요."
+    "sourceSummary": "안전하게 오를 기회는 상체와 하체 힘, 협응력, 공간 계획 능력을 길러 줘요. 아이가 자신 있게 몸을 움직이며 탐색하는 데 필요한 것들이에요."
   },
   {
     "id": "pt-17-3",
@@ -742,7 +742,7 @@
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "퍼즐은 문제 해결력과 공간 추론 능력을 길러 줘요. 아이가 시도하고 목적을 갖고 탐색하면서 도형을 돌리고, 뒤집고, 맞추는 법을 배우거든요."
+    "sourceSummary": "퍼즐은 문제 해결력과 공간 추론 능력을 길러 줘요. 아이가 시도하고 목적을 갖고 탐색하면서 도형을 돌리고, 뒤집고, 맞추는 법을 배우거든요."
   },
   {
     "id": "pt-18-1",
@@ -758,7 +758,7 @@
     "category": "social",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "인형과 봉제 인형을 돌보면서 아이는 공감과 보살피는 행동을 연습해요. 자기 양육자에게 받는 사랑 어린 돌봄을 그대로 비추는 거예요."
+    "sourceSummary": "인형과 봉제 인형을 돌보면서 아이는 공감과 보살피는 행동을 연습해요. 자기 양육자에게 받는 사랑 어린 돌봄을 그대로 비추는 거예요."
   },
   {
     "id": "pt-18-2",
@@ -775,7 +775,7 @@
     "category": "cognitive",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "감각 놀이를 하며 아이는 질감을 탐색하고 소근육을 발달시켜요. 손과 눈으로 숨겨진 물건을 찾으면서 문제 해결도 연습해요."
+    "sourceSummary": "감각 놀이를 하며 아이는 질감을 탐색하고 소근육을 발달시켜요. 손과 눈으로 숨겨진 물건을 찾으면서 문제 해결도 연습해요."
   },
   {
     "id": "pt-18-3",
@@ -786,7 +786,7 @@
     "category": "physical",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "지시를 따르고 동작을 따라 하는 활동적인 놀이는 아이의 대근육과 몸 조절력을 길러 줘요. 한 가지에 집중하는 힘도 자라고요."
+    "sourceSummary": "지시를 따르고 동작을 따라 하는 활동적인 놀이는 아이의 대근육과 몸 조절력을 길러 줘요. 한 가지에 집중하는 힘도 자라고요."
   },
   {
     "id": "pt-18-4",
@@ -797,7 +797,7 @@
     "category": "language",
     "source": "CDC Act Early",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/",
-    "sourceQuote": "18개월 무렵이면 아이는 보통 이름을 말해 주면 몸 부위 여러 곳을 가리킬 수 있어요. 듣고 이해하는 언어와 몸 감각이 자라고 있음을 보여 주는 발달 이정표예요."
+    "sourceSummary": "18개월 무렵이면 아이는 보통 이름을 말해 주면 몸 부위 여러 곳을 가리킬 수 있어요. 듣고 이해하는 언어와 몸 감각이 자라고 있음을 보여 주는 발달 이정표예요."
   },
   {
     "id": "pt-19-1",
@@ -812,7 +812,7 @@
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "분류 놀이는 아이에게 분류와 논리적 사고를 알려 줘요. 나중에 수학과 과학을 배우는 바탕이 되는 핵심 능력이에요."
+    "sourceSummary": "분류 놀이는 아이에게 분류와 논리적 사고를 알려 줘요. 나중에 수학과 과학을 배우는 바탕이 되는 핵심 능력이에요."
   },
   {
     "id": "pt-19-2",
@@ -823,7 +823,7 @@
     "category": "physical",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "놀이터 놀이는 아이가 힘, 균형 감각, 협응력을 기를 기회를 줘요. 자라나는 신체 능력에 도전하는 환경이거든요."
+    "sourceSummary": "놀이터 놀이는 아이가 힘, 균형 감각, 협응력을 기를 기회를 줘요. 자라나는 신체 능력에 도전하는 환경이거든요."
   },
   {
     "id": "pt-19-3",
@@ -837,7 +837,7 @@
     "category": "language",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "부모가 질문하고 대답을 기다려 주는 상호작용 읽기는 이해력과 어휘를 길러 줘요. 평생 이어지는 책 사랑도 생기고요."
+    "sourceSummary": "부모가 질문하고 대답을 기다려 주는 상호작용 읽기는 이해력과 어휘를 길러 줘요. 평생 이어지는 책 사랑도 생기고요."
   },
   {
     "id": "pt-20-1",
@@ -853,7 +853,7 @@
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "점토를 쥐고 빚으면 손과 손가락의 작은 근육이 튼튼해져요. 연필 잡기 같은 소근육 활동에 필요한 근육이에요."
+    "sourceSummary": "점토를 쥐고 빚으면 손과 손가락의 작은 근육이 튼튼해져요. 연필 잡기 같은 소근육 활동에 필요한 근육이에요."
   },
   {
     "id": "pt-20-2",
@@ -867,7 +867,7 @@
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "짝 찾기 놀이는 눈으로 구별하고 분류하는 능력을 길러 줘요. 초기 읽기와 수학을 뒷받침하는 같은 점과 다른 점을 알아채게 되거든요."
+    "sourceSummary": "짝 찾기 놀이는 눈으로 구별하고 분류하는 능력을 길러 줘요. 초기 읽기와 수학을 뒷받침하는 같은 점과 다른 점을 알아채게 되거든요."
   },
   {
     "id": "pt-20-3",
@@ -882,7 +882,7 @@
     "category": "social",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "간단한 집안일에 아이를 참여시키면 유능감과 소속감이 자라고, 책임감과 협동도 배워요."
+    "sourceSummary": "간단한 집안일에 아이를 참여시키면 유능감과 소속감이 자라고, 책임감과 협동도 배워요."
   },
   {
     "id": "pt-21-1",
@@ -897,7 +897,7 @@
     "category": "language",
     "source": "CDC Act Early",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/",
-    "sourceQuote": "두 단계 지시 따르기는 중요한 발달 이정표예요. 아이가 말을 처리하고, 순서를 기억하고, 지시대로 행동하는 능력이 자라고 있음을 보여 줘요."
+    "sourceSummary": "두 단계 지시 따르기는 중요한 발달 이정표예요. 아이가 말을 처리하고, 순서를 기억하고, 지시대로 행동하는 능력이 자라고 있음을 보여 줘요."
   },
   {
     "id": "pt-21-2",
@@ -912,7 +912,7 @@
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "비눗방울을 쫓아 터뜨리면 손과 눈의 협응력, 균형 감각, 움직임 계획 능력이 자라요. 아이가 눈으로 따라가고, 손을 뻗고, 여러 방향으로 몸을 움직이거든요."
+    "sourceSummary": "비눗방울을 쫓아 터뜨리면 손과 눈의 협응력, 균형 감각, 움직임 계획 능력이 자라요. 아이가 눈으로 따라가고, 손을 뻗고, 여러 방향으로 몸을 움직이거든요."
   },
   {
     "id": "pt-21-3",
@@ -923,7 +923,7 @@
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "추상적인 도형을 실제 물건과 연결하면 수학적 이해가 깊어져요. 배움이 일상 속에 있다는 것도 아이가 알게 돼요."
+    "sourceSummary": "추상적인 도형을 실제 물건과 연결하면 수학적 이해가 깊어져요. 배움이 일상 속에 있다는 것도 아이가 알게 돼요."
   },
   {
     "id": "pt-22-1",
@@ -939,7 +939,7 @@
     "category": "social",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "다과회 같은 역할 놀이는 아이가 사회적 관습을 연습하게 해요. 상황에 맞게 말을 쓰고, 단체 생활에 필요한 자기 조절력을 기르도록 도와줘요."
+    "sourceSummary": "다과회 같은 역할 놀이는 아이가 사회적 관습을 연습하게 해요. 상황에 맞게 말을 쓰고, 단체 생활에 필요한 자기 조절력을 기르도록 도와줘요."
   },
   {
     "id": "pt-22-2",
@@ -955,7 +955,7 @@
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "손가락 그림은 손 힘과 촉각을 발달시켜요. 아직 말로 다 표현하지 못하는 아이에게 창의적으로 자신을 표현할 방법도 줘요."
+    "sourceSummary": "손가락 그림은 손 힘과 촉각을 발달시켜요. 아직 말로 다 표현하지 못하는 아이에게 창의적으로 자신을 표현할 방법도 줘요."
   },
   {
     "id": "pt-22-3",
@@ -966,7 +966,7 @@
     "category": "cognitive",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "하루 일과 속에 세기를 녹여 넣으면 아이는 수 개념을 자연스럽게 익혀요. 수학이 일상에 쓸모 있는 것임도 이해하게 돼요."
+    "sourceSummary": "하루 일과 속에 세기를 녹여 넣으면 아이는 수 개념을 자연스럽게 익혀요. 수학이 일상에 쓸모 있는 것임도 이해하게 돼요."
   },
   {
     "id": "pt-23-1",
@@ -977,7 +977,7 @@
     "category": "language",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "듣기와 몸 움직임을 결합한 놀이는 언어 이해와 운동 반응 사이의 연결을 단단하게 해요. 두 능력을 한꺼번에 키워 주는 거예요."
+    "sourceSummary": "듣기와 몸 움직임을 결합한 놀이는 언어 이해와 운동 반응 사이의 연결을 단단하게 해요. 두 능력을 한꺼번에 키워 주는 거예요."
   },
   {
     "id": "pt-23-2",
@@ -993,7 +993,7 @@
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "아이가 경사로와 움직임을 실험할 때 초기 과학적 사고를 하게 돼요. 예측을 시험하고 원인-결과 관계를 관찰하거든요."
+    "sourceSummary": "아이가 경사로와 움직임을 실험할 때 초기 과학적 사고를 하게 돼요. 예측을 시험하고 원인-결과 관계를 관찰하거든요."
   },
   {
     "id": "pt-23-3",
@@ -1010,7 +1010,7 @@
     "category": "social",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "변장 놀이는 상상력과 자기표현을 길러 줘요. 점점 독립하는 데 필요한 옷 입기 기술을 실제로 연습할 기회도 주고요."
+    "sourceSummary": "변장 놀이는 상상력과 자기표현을 길러 줘요. 점점 독립하는 데 필요한 옷 입기 기술을 실제로 연습할 기회도 주고요."
   },
   {
     "id": "pt-24-1",
@@ -1024,7 +1024,7 @@
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "색깔 맞추기 놀이는 관찰력과 분류 능력을 날카롭게 해 줘요. 아이가 의미 있는 놀이를 통해 세상에 대한 이해를 정리하게 되거든요."
+    "sourceSummary": "색깔 맞추기 놀이는 관찰력과 분류 능력을 날카롭게 해 줘요. 아이가 의미 있는 놀이를 통해 세상에 대한 이해를 정리하게 되거든요."
   },
   {
     "id": "pt-24-2",
@@ -1035,7 +1035,7 @@
     "category": "physical",
     "source": "CDC Act Early",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/",
-    "sourceQuote": "두 발을 모두 땅에서 떼고 뛰기는 만 2세 무렵의 중요한 대근육 발달 이정표예요. 힘과 균형 감각, 협응력이 자라고 있음을 보여 줘요."
+    "sourceSummary": "두 발을 모두 땅에서 떼고 뛰기는 만 2세 무렵의 중요한 대근육 발달 이정표예요. 힘과 균형 감각, 협응력이 자라고 있음을 보여 줘요."
   },
   {
     "id": "pt-24-3",
@@ -1049,7 +1049,7 @@
     "category": "language",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "이야기를 다시 말하면서 아이는 이야기 구성력과 순서 정리 능력을 키워요. 말로 자기 생각과 경험을 나누는 자신감도 자라요."
+    "sourceSummary": "이야기를 다시 말하면서 아이는 이야기 구성력과 순서 정리 능력을 키워요. 말로 자기 생각과 경험을 나누는 자신감도 자라요."
   },
   {
     "id": "pt-24-4",
@@ -1067,7 +1067,7 @@
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "씻기 같은 실생활 활동은 양손 협응력과 손 힘을 길러 줘요. 아이가 모든 배움의 영역에서 쓰는 순서 정리 능력도 자라고요."
+    "sourceSummary": "씻기 같은 실생활 활동은 양손 협응력과 손 힘을 길러 줘요. 아이가 모든 배움의 영역에서 쓰는 순서 정리 능력도 자라고요."
   },
   {
     "id": "pt-25-1",
@@ -1081,7 +1081,7 @@
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "기억력 놀이는 작업 기억과 집중력을 단단하게 해 줘요. 나중에 모든 학습 영역을 뒷받침하는 두 가지 핵심 인지 능력이에요."
+    "sourceSummary": "기억력 놀이는 작업 기억과 집중력을 단단하게 해 줘요. 나중에 모든 학습 영역을 뒷받침하는 두 가지 핵심 인지 능력이에요."
   },
   {
     "id": "pt-25-2",
@@ -1092,7 +1092,7 @@
     "category": "language",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "율동 노래는 말, 리듬, 움직임을 결합해요. 몸과 뇌 사이의 강력한 연결을 통해 아이가 새 단어와 표현을 기억하도록 도와줘요."
+    "sourceSummary": "율동 노래는 말, 리듬, 움직임을 결합해요. 몸과 뇌 사이의 강력한 연결을 통해 아이가 새 단어와 표현을 기억하도록 도와줘요."
   },
   {
     "id": "pt-25-3",
@@ -1107,7 +1107,7 @@
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "꿰기와 끈 끼우기 놀이는 손과 눈의 협응력과 양손 사용 능력을 정교하게 다듬어 줘요. 스스로 돌보기와 쓰기 전 단계 기술에 필요한 능력이에요."
+    "sourceSummary": "꿰기와 끈 끼우기 놀이는 손과 눈의 협응력과 양손 사용 능력을 정교하게 다듬어 줘요. 스스로 돌보기와 쓰기 전 단계 기술에 필요한 능력이에요."
   },
   {
     "id": "pt-26-1",
@@ -1121,7 +1121,7 @@
     "category": "cognitive",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "자연물을 모으고 분류하면 관찰력, 분류 능력, 초기 과학 능력이 자라요. 세상에 대한 아이의 호기심도 커지고요."
+    "sourceSummary": "자연물을 모으고 분류하면 관찰력, 분류 능력, 초기 과학 능력이 자라요. 세상에 대한 아이의 호기심도 커지고요."
   },
   {
     "id": "pt-26-2",
@@ -1136,7 +1136,7 @@
     "category": "physical",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "세발자전거와 밸런스 바이크를 타면 다리 힘, 협응력, 균형 감각이 발달해요. 아이는 독립심과 성취감도 느껴요."
+    "sourceSummary": "세발자전거와 밸런스 바이크를 타면 다리 힘, 협응력, 균형 감각이 발달해요. 아이는 독립심과 성취감도 느껴요."
   },
   {
     "id": "pt-26-3",
@@ -1151,7 +1151,7 @@
     "category": "language",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "인형 놀이는 아이가 안전하게 감정을 표현하고 대화를 연습하게 해 줘요. 이야기 만들기와 여러 목소리도 실험해 볼 수 있고요."
+    "sourceSummary": "인형 놀이는 아이가 안전하게 감정을 표현하고 대화를 연습하게 해 줘요. 이야기 만들기와 여러 목소리도 실험해 볼 수 있고요."
   },
   {
     "id": "pt-27-1",
@@ -1165,7 +1165,7 @@
     "category": "physical",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "움직이다가 신호에 멈추는 놀이는 자기 조절력과 듣기 능력을 길러 줘요. 더 체계적인 활동에 필요한 몸 조절력도 자라고요."
+    "sourceSummary": "움직이다가 신호에 멈추는 놀이는 자기 조절력과 듣기 능력을 길러 줘요. 더 체계적인 활동에 필요한 몸 조절력도 자라고요."
   },
   {
     "id": "pt-27-2",
@@ -1179,7 +1179,7 @@
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "놀이 중에 실제 물건을 세면 아이는 숫자가 실제 양을 나타낸다는 걸 이해하게 돼요. 일대일 대응이라고 하는 수학의 기초 개념이에요."
+    "sourceSummary": "놀이 중에 실제 물건을 세면 아이는 숫자가 실제 양을 나타낸다는 걸 이해하게 돼요. 일대일 대응이라고 하는 수학의 기초 개념이에요."
   },
   {
     "id": "pt-27-3",
@@ -1196,7 +1196,7 @@
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "여러 단계 장애물 코스는 아이가 움직임을 계획하고, 순서를 따르고, 온몸을 쓰게 해요. 운동 능력과 인지 능력이 함께 자라요."
+    "sourceSummary": "여러 단계 장애물 코스는 아이가 움직임을 계획하고, 순서를 따르고, 온몸을 쓰게 해요. 운동 능력과 인지 능력이 함께 자라요."
   },
   {
     "id": "pt-28-1",
@@ -1213,7 +1213,7 @@
     "category": "social",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "식당처럼 실제 상황을 역할극으로 해 보면 아이의 사회성과 어휘가 자라요. 다른 사람 입장에서 생각하는 능력도 자라고요."
+    "sourceSummary": "식당처럼 실제 상황을 역할극으로 해 보면 아이의 사회성과 어휘가 자라요. 다른 사람 입장에서 생각하는 능력도 자라고요."
   },
   {
     "id": "pt-28-2",
@@ -1228,7 +1228,7 @@
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "가위 쓰는 법을 배우면 손 근육, 양손 협응력, 시각-운동 통합 능력이 발달해요. 학교 갈 준비에 필요한 여러 기술의 바탕이에요."
+    "sourceSummary": "가위 쓰는 법을 배우면 손 근육, 양손 협응력, 시각-운동 통합 능력이 발달해요. 학교 갈 준비에 필요한 여러 기술의 바탕이에요."
   },
   {
     "id": "pt-28-3",
@@ -1244,7 +1244,7 @@
     "category": "cognitive",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "'뭐가 없어졌지' 같은 기억력 놀이는 아이의 작업 기억과 주의력을 단단하게 해 줘요. 배움과 문제 해결에 꼭 필요한 능력이에요."
+    "sourceSummary": "'뭐가 없어졌지' 같은 기억력 놀이는 아이의 작업 기억과 주의력을 단단하게 해 줘요. 배움과 문제 해결에 꼭 필요한 능력이에요."
   },
   {
     "id": "pt-29-1",
@@ -1259,7 +1259,7 @@
     "category": "language",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "장난감으로 이야기를 만들면 이야기하는 사고력, 어휘, 사건을 순서대로 잇는 능력이 자라요. 모두 나중에 읽기와 쓰기의 바탕이 돼요."
+    "sourceSummary": "장난감으로 이야기를 만들면 이야기하는 사고력, 어휘, 사건을 순서대로 잇는 능력이 자라요. 모두 나중에 읽기와 쓰기의 바탕이 돼요."
   },
   {
     "id": "pt-29-2",
@@ -1274,7 +1274,7 @@
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "평균대 놀이는 아이가 균형 감각과 몸 조절력을 다듬게 해요. 더 어려운 신체 기술에 필요한 몸통 안정성도 길러 주고요."
+    "sourceSummary": "평균대 놀이는 아이가 균형 감각과 몸 조절력을 다듬게 해요. 더 어려운 신체 기술에 필요한 몸통 안정성도 길러 주고요."
   },
   {
     "id": "pt-29-3",
@@ -1288,7 +1288,7 @@
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "크기별로 나누면 아이는 비교와 순서 매기기를 배워요. 논리적으로 생각하고 주변 세상을 설명하도록 돕는 초기 수학 능력이에요."
+    "sourceSummary": "크기별로 나누면 아이는 비교와 순서 매기기를 배워요. 논리적으로 생각하고 주변 세상을 설명하도록 돕는 초기 수학 능력이에요."
   },
   {
     "id": "pt-30-1",
@@ -1303,7 +1303,7 @@
     "category": "social",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "병원 방문처럼 실제 경험을 상상 놀이로 해 보면 아이는 감정을 정리하고 불안을 줄여요. 새로운 상황을 더 잘 다룰 수 있다고 느끼게 되고요."
+    "sourceSummary": "병원 방문처럼 실제 경험을 상상 놀이로 해 보면 아이는 감정을 정리하고 불안을 줄여요. 새로운 상황을 더 잘 다룰 수 있다고 느끼게 되고요."
   },
   {
     "id": "pt-30-2",
@@ -1317,7 +1317,7 @@
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "보드게임은 아이에게 규칙 따르기, 차례 지키기, 결과 받아들이기를 가르쳐 줘요. 단체 학습에 꼭 필요한 자기 조절력과 사회성이 자라요."
+    "sourceSummary": "보드게임은 아이에게 규칙 따르기, 차례 지키기, 결과 받아들이기를 가르쳐 줘요. 단체 학습에 꼭 필요한 자기 조절력과 사회성이 자라요."
   },
   {
     "id": "pt-30-3",
@@ -1328,7 +1328,7 @@
     "category": "language",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "일상에서 일찍 글자를 접하면 문자 인식이 자라요. 글자에 뜻이 있고 우리 주변 어디에나 있다는 걸 아이가 이해하게 되거든요."
+    "sourceSummary": "일상에서 일찍 글자를 접하면 문자 인식이 자라요. 글자에 뜻이 있고 우리 주변 어디에나 있다는 걸 아이가 이해하게 되거든요."
   },
   {
     "id": "pt-30-4",
@@ -1343,7 +1343,7 @@
     "category": "physical",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "목표를 향해 공을 차면 다리 힘, 균형 감각, 협응력이 발달해요. 아이는 연습을 통해 조준하고 움직임을 조절하는 법도 배워요."
+    "sourceSummary": "목표를 향해 공을 차면 다리 힘, 균형 감각, 협응력이 발달해요. 아이는 연습을 통해 조준하고 움직임을 조절하는 법도 배워요."
   },
   {
     "id": "pt-31-1",
@@ -1359,7 +1359,7 @@
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "지도를 활용한 놀이는 공간 추론과 상징적 사고를 알려 줘요. 그림이 실제 장소와 물건을 나타낼 수 있다는 걸 아이가 이해하게 되거든요."
+    "sourceSummary": "지도를 활용한 놀이는 공간 추론과 상징적 사고를 알려 줘요. 그림이 실제 장소와 물건을 나타낼 수 있다는 걸 아이가 이해하게 되거든요."
   },
   {
     "id": "pt-31-2",
@@ -1370,7 +1370,7 @@
     "category": "language",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "운율 놀이는 말소리 인식, 곧 단어 속 소리를 듣고 다루는 능력을 길러 줘요. 읽기 성공을 가장 잘 예측하는 요소 가운데 하나예요."
+    "sourceSummary": "운율 놀이는 말소리 인식, 곧 단어 속 소리를 듣고 다루는 능력을 길러 줘요. 읽기 성공을 가장 잘 예측하는 요소 가운데 하나예요."
   },
   {
     "id": "pt-31-3",
@@ -1384,7 +1384,7 @@
     "category": "physical",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "공 받기는 손과 눈의 협응력, 타이밍, 움직이는 물체를 눈으로 따라가는 능력을 길러 줘요. 모두 전반적인 신체 발달을 뒷받침해요."
+    "sourceSummary": "공 받기는 손과 눈의 협응력, 타이밍, 움직이는 물체를 눈으로 따라가는 능력을 길러 줘요. 모두 전반적인 신체 발달을 뒷받침해요."
   },
   {
     "id": "pt-32-1",
@@ -1401,7 +1401,7 @@
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "오리고, 붙이고, 배치하면 소근육 조절력과 손과 눈의 협응력이 발달해요. 아이는 창의적으로 선택하고 생각을 표현할 방법도 얻어요."
+    "sourceSummary": "오리고, 붙이고, 배치하면 소근육 조절력과 손과 눈의 협응력이 발달해요. 아이는 창의적으로 선택하고 생각을 표현할 방법도 얻어요."
   },
   {
     "id": "pt-32-2",
@@ -1412,7 +1412,7 @@
     "category": "social",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "감정에 이름을 붙이면 아이의 감정 이해력이 자라요. 행동으로 터뜨리는 대신 기분을 말로 표현할 어휘가 생기거든요."
+    "sourceSummary": "감정에 이름을 붙이면 아이의 감정 이해력이 자라요. 행동으로 터뜨리는 대신 기분을 말로 표현할 어휘가 생기거든요."
   },
   {
     "id": "pt-32-3",
@@ -1426,7 +1426,7 @@
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "패턴을 알아보고 만드는 것은 수학적 사고의 기초예요. 아이가 예측하고, 논리적으로 생각하고, 세상의 질서를 이해하도록 도와줘요."
+    "sourceSummary": "패턴을 알아보고 만드는 것은 수학적 사고의 기초예요. 아이가 예측하고, 논리적으로 생각하고, 세상의 질서를 이해하도록 도와줘요."
   },
   {
     "id": "pt-33-1",
@@ -1440,7 +1440,7 @@
     "category": "language",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "노래와 손으로 하는 활동으로 부담 없이 즐겁게 글자를 접하면 글자 지식이 쌓여요. 나중에 읽기를 잘하는 데 필요한 지식이에요."
+    "sourceSummary": "노래와 손으로 하는 활동으로 부담 없이 즐겁게 글자를 접하면 글자 지식이 쌓여요. 나중에 읽기를 잘하는 데 필요한 지식이에요."
   },
   {
     "id": "pt-33-2",
@@ -1455,7 +1455,7 @@
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "다리 같은 구조물을 만들면 균형과 안정성 같은 공학 개념을 접하게 돼요. 아이는 창의적으로 생각하고 문제를 풀게 되고요."
+    "sourceSummary": "다리 같은 구조물을 만들면 균형과 안정성 같은 공학 개념을 접하게 돼요. 아이는 창의적으로 생각하고 문제를 풀게 되고요."
   },
   {
     "id": "pt-33-3",
@@ -1469,7 +1469,7 @@
     "category": "physical",
     "source": "CDC Act Early",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/",
-    "sourceQuote": "한 발 뛰기는 이 시기에 발달 중인 대근육 발달 이정표예요. 균형 감각, 다리 힘, 몸의 협응력이 자라고 있음을 보여 줘요."
+    "sourceSummary": "한 발 뛰기는 이 시기에 발달 중인 대근육 발달 이정표예요. 균형 감각, 다리 힘, 몸의 협응력이 자라고 있음을 보여 줘요."
   },
   {
     "id": "pt-34-1",
@@ -1486,7 +1486,7 @@
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "색깔 섞기처럼 직접 해 보는 실험은 과학적 사고를 길러 줘요. 아이가 놀이를 통해 예측하고, 결과를 관찰하고, 새로운 개념을 발견하게 하거든요."
+    "sourceSummary": "색깔 섞기처럼 직접 해 보는 실험은 과학적 사고를 길러 줘요. 아이가 놀이를 통해 예측하고, 결과를 관찰하고, 새로운 개념을 발견하게 하거든요."
   },
   {
     "id": "pt-34-2",
@@ -1497,7 +1497,7 @@
     "category": "language",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "열린 '만약에' 질문은 아이의 상상력을 일깨우고 말을 창의적으로 쓰도록 북돋아요. 사고력과 소통 능력이 함께 자라요."
+    "sourceSummary": "열린 '만약에' 질문은 아이의 상상력을 일깨우고 말을 창의적으로 쓰도록 북돋아요. 사고력과 소통 능력이 함께 자라요."
   },
   {
     "id": "pt-34-3",
@@ -1513,7 +1513,7 @@
     "category": "social",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "가게 운영처럼 복잡한 상상 놀이는 언어, 수학, 사회성을 하나로 엮어요. 아이가 상상 속에서 실제 세상의 상호작용을 연습하게 되거든요."
+    "sourceSummary": "가게 운영처럼 복잡한 상상 놀이는 언어, 수학, 사회성을 하나로 엮어요. 아이가 상상 속에서 실제 세상의 상호작용을 연습하게 되거든요."
   },
   {
     "id": "pt-35-1",
@@ -1528,7 +1528,7 @@
     "category": "physical",
     "source": "Pathways.org",
     "sourceUrl": "https://pathways.org/topics-of-development/play",
-    "sourceQuote": "사람 그리기는 소근육과 인지 발달의 큰 발달 이정표예요. 아이가 세상에 대한 이해를 종이에 표현할 수 있다는 걸 보여 줘요."
+    "sourceSummary": "사람 그리기는 소근육과 인지 발달의 큰 발달 이정표예요. 아이가 세상에 대한 이해를 종이에 표현할 수 있다는 걸 보여 줘요."
   },
   {
     "id": "pt-35-2",
@@ -1542,7 +1542,7 @@
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "물건을 비교하고 대조하면 분석적 사고와 묘사하는 말이 자라요. 아이가 세부를 알아채고 관찰한 것을 정리하게 되거든요."
+    "sourceSummary": "물건을 비교하고 대조하면 분석적 사고와 묘사하는 말이 자라요. 아이가 세부를 알아채고 관찰한 것을 정리하게 되거든요."
   },
   {
     "id": "pt-35-3",
@@ -1553,7 +1553,7 @@
     "category": "language",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "같이 노래를 부르면 기억력, 어휘, 말의 리듬 패턴이 단단해져요. 부모와 아이가 즐겁게 이어지는 순간도 만들어지고요."
+    "sourceSummary": "같이 노래를 부르면 기억력, 어휘, 말의 리듬 패턴이 단단해져요. 부모와 아이가 즐겁게 이어지는 순간도 만들어지고요."
   },
   {
     "id": "pt-36-1",
@@ -1564,7 +1564,7 @@
     "category": "cognitive",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "실제 물건으로 세면 일대일 대응과 수 감각이 자라요. 숫자가 진짜 무엇을 뜻하는지 아이가 구체적으로 이해하게 돼요."
+    "sourceSummary": "실제 물건으로 세면 일대일 대응과 수 감각이 자라요. 숫자가 진짜 무엇을 뜻하는지 아이가 구체적으로 이해하게 돼요."
   },
   {
     "id": "pt-36-2",
@@ -1579,7 +1579,7 @@
     "category": "language",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "함께 이야기를 만들면 이야기 구성력, 창의성, 차례 주고받기가 자라요. 아이는 자기 생각이 소중하고 나눌 가치가 있다는 것도 알게 돼요."
+    "sourceSummary": "함께 이야기를 만들면 이야기 구성력, 창의성, 차례 주고받기가 자라요. 아이는 자기 생각이 소중하고 나눌 가치가 있다는 것도 알게 돼요."
   },
   {
     "id": "pt-36-3",
@@ -1596,7 +1596,7 @@
     "category": "social",
     "source": "NAEYC",
     "sourceUrl": "https://www.naeyc.org/resources/topics/play",
-    "sourceQuote": "요새 만들기처럼 함께 짓는 놀이는 팀워크, 공간 추론, 창의적 문제 해결력을 길러 줘요. 아이들이 같이 계획하고, 만들고, 놀면서요."
+    "sourceSummary": "요새 만들기처럼 함께 짓는 놀이는 팀워크, 공간 추론, 창의적 문제 해결력을 길러 줘요. 아이들이 같이 계획하고, 만들고, 놀면서요."
   },
   {
     "id": "pt-36-4",
@@ -1610,6 +1610,6 @@
     "category": "physical",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "크기가 다른 공으로 던지고 받기를 연습하면 손과 눈의 협응력과 움직임 계획 능력이 자라요. 달라지는 과제에 맞춰 움직임을 조절하는 능력도 자라고요."
+    "sourceSummary": "크기가 다른 공으로 던지고 받기를 연습하면 손과 눈의 협응력과 움직임 계획 능력이 자라요. 달라지는 과제에 맞춰 움직임을 조절하는 능력도 자라고요."
   }
 ]

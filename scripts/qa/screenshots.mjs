@@ -89,7 +89,10 @@ for (const size of SIZES) {
     let i = 1;
     for (const shot of SHOTS[lang]) {
       await page.goto(base + shot.path, { waitUntil: "networkidle" });
-      await page.waitForTimeout(400);
+      // Deterministic: hydrated, and the screen's first heading/card rendered (Home fills in after its month chunk loads).
+      await page.waitForSelector("html[data-hydrated]", { state: "attached" });
+      await page.waitForSelector("main h2, main article, main h1", { state: "visible" });
+      await page.waitForTimeout(600);
       const raw = await page.screenshot({ type: "png" }); // exactly size.w × size.h
       // Caption band (brand cream, serif) drawn over the top 16% with the app pushed down and framed.
       const bandH = Math.round(size.h * 0.16);

@@ -1,7 +1,8 @@
 export interface SourceInfo {
   source?: string;
   sourceUrl?: string;
-  sourceQuote?: string;
+  /** Our short summary of what the cited page says (not a verbatim quotation). */
+  sourceSummary?: string;
 }
 
 export type MilestoneCategory = "social" | "language" | "cognitive" | "physical";
@@ -64,6 +65,8 @@ export interface BabyInfo {
   name: string;
   nameKo?: string;
   birthDate: string;
+  /** Optional; when 3+ weeks after the birthday, content follows the corrected age until 24 months. */
+  dueDate?: string;
   /** Kept for backward compatibility; not shown in the UI. */
   gender?: "boy" | "girl";
 }

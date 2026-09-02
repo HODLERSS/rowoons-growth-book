@@ -37,7 +37,7 @@ describe("content coverage", () => {
       for (const item of [...getMilestones(m, "en"), ...getPlayTips(m, "en"), ...getWatchOuts(m, "en")]) {
         expect(item.source, item.id).toBeTruthy();
         expect(item.sourceUrl, item.id).toMatch(/^https:\/\//);
-        expect(item.sourceQuote, item.id).toBeTruthy();
+        expect(item.sourceSummary, item.id).toBeTruthy();
       }
     }
   });

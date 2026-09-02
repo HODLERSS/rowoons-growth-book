@@ -6,6 +6,9 @@ export const SUPPORT_EMAIL = "minjae.m.lee@gmail.com";
 
 export const MONTH_RANGE = { min: 1, max: 36 } as const;
 
+/** Last run of `node scripts/qa/sources.mjs` that every cited page was checked against (qa/source-audit.json). */
+export const CONTENT_REVIEWED = "2026-09-02";
+
 export const ALL_MONTHS = Array.from({ length: MONTH_RANGE.max - MONTH_RANGE.min + 1 }, (_, i) => i + MONTH_RANGE.min);
 
 export const CATEGORY_ORDER: MilestoneCategory[] = ["social", "language", "cognitive", "physical"];

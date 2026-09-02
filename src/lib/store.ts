@@ -165,4 +165,5 @@ export const KEYS = {
   milestones: "sprout:milestones",
   language: "sprout:language",
   settings: "sprout:settings",
+  acks: "sprout:acks",
 } as const;

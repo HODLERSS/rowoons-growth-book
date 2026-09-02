@@ -4,6 +4,9 @@ import { BookOpen, ExternalLink } from "lucide-react";
 import type { SourceInfo } from "@/lib/types";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { useLanguage } from "@/hooks/use-language";
+import { formatDate } from "@/i18n";
+import { parseLocalDate } from "@/lib/age-calculator";
+import { CONTENT_REVIEWED } from "@/lib/constants";
 
 interface SourceBadgeProps {
   sourceInfo: SourceInfo;
@@ -11,7 +14,7 @@ interface SourceBadgeProps {
 }
 
 export function SourceBadge({ sourceInfo, itemTitle }: SourceBadgeProps) {
-  const { t } = useLanguage();
+  const { lang, t } = useLanguage();
   if (!sourceInfo.source) return null;
   return (
     <Dialog>
@@ -32,10 +35,11 @@ export function SourceBadge({ sourceInfo, itemTitle }: SourceBadgeProps) {
             {t("source.label")}: <span translate="no">{sourceInfo.source}</span>
           </DialogDescription>
         </DialogHeader>
-        {sourceInfo.sourceQuote && (
-          <blockquote className="border-l-2 border-primary/40 pl-3">
-            <p className="text-[0.9375rem] leading-relaxed text-foreground">“{sourceInfo.sourceQuote}”</p>
-          </blockquote>
+        {sourceInfo.sourceSummary && (
+          <div className="border-l-2 border-primary/40 pl-3">
+            <p className="text-[0.75rem] font-semibold uppercase tracking-[0.1em] text-muted-foreground">{t("source.summary")}</p>
+            <p className="mt-1 text-[0.9375rem] leading-relaxed text-foreground">{sourceInfo.sourceSummary}</p>
+          </div>
         )}
         {sourceInfo.sourceUrl && (
           <a
@@ -48,7 +52,9 @@ export function SourceBadge({ sourceInfo, itemTitle }: SourceBadgeProps) {
             {t("source.view")}
           </a>
         )}
-        <p className="text-[0.75rem] leading-relaxed text-muted-foreground">{t("source.disclaimer", { source: sourceInfo.source })}</p>
+        <p className="text-[0.75rem] leading-relaxed text-muted-foreground">
+          {t("source.disclaimer", { source: sourceInfo.source })} <span className="tnum">{t("source.reviewed", { date: formatDate(lang, parseLocalDate(CONTENT_REVIEWED)!) })}</span>
+        </p>
       </DialogContent>
     </Dialog>
   );

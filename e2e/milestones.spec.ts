@@ -59,12 +59,15 @@ test.describe("milestones", () => {
     await expect(page.getByRole("heading", { name: "There’s nothing here." })).toBeVisible();
   });
 
-  test("source dialog opens with the quotation and a link", async ({ page }) => {
+  test("source dialog opens with a labelled summary (never a quotation), the audit date and a link", async ({ page }) => {
     await gotoReady(page, `/milestones/${CURRENT_MONTH}/`);
     await page.getByRole("button", { name: /^Source: / }).first().click();
     const dialog = page.getByRole("dialog");
     await expect(dialog).toBeVisible();
-    await expect(dialog.locator("blockquote")).toBeVisible();
+    await expect(dialog.getByText("In short, the source says")).toBeVisible();
+    await expect(dialog.locator("blockquote")).toHaveCount(0);
+    await expect(dialog.getByText(/^“/)).toHaveCount(0);
+    await expect(dialog.getByText(/Sources checked /)).toBeVisible();
     await expect(dialog.getByRole("link", { name: "Open the source" })).toHaveAttribute("target", "_blank");
     await page.keyboard.press("Escape");
     await expect(dialog).toBeHidden();

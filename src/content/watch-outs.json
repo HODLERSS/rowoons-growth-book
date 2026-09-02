@@ -8,7 +8,7 @@
     "action": "Always place baby on their back to sleep. Use a firm, flat mattress with a fitted sheet only. Keep the crib bare: no loose bedding, toys, or crib bumpers.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/safety-prevention/Pages/default.aspx",
-    "sourceQuote": "To reduce the risk of SIDS and other sleep-related deaths, always place your baby on their back for every sleep, on a firm, flat surface with no soft bedding or objects in the sleep area."
+    "sourceSummary": "To reduce the risk of SIDS and other sleep-related deaths, always place your baby on their back for every sleep, on a firm, flat surface with no soft bedding or objects in the sleep area."
   },
   {
     "id": "wo-1-2",
@@ -19,7 +19,7 @@
     "action": "Install the rear-facing car seat according to manufacturer instructions. Ensure the harness is snug (you shouldn't be able to pinch excess webbing) and the chest clip is at armpit level.",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/safety-prevention/Pages/default.aspx",
-    "sourceQuote": "A properly installed rear-facing car seat is the safest way for infants to travel. The harness should fit snugly, and the chest clip should be positioned at armpit level for optimal protection."
+    "sourceSummary": "A properly installed rear-facing car seat is the safest way for infants to travel. The harness should fit snugly, and the chest clip should be positioned at armpit level for optimal protection."
   },
   {
     "id": "wo-1-3",
@@ -30,7 +30,7 @@
     "action": "If you feel frustrated or overwhelmed by baby's crying, place baby safely in the crib and step away for a few minutes. Call a friend, family member, or helpline for support.",
     "source": "CDC",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/",
-    "sourceQuote": "Shaking a baby, even briefly, can cause serious brain injury or death. If a baby's crying becomes overwhelming, it is always safe to put the baby down in a secure place and take a moment to calm down."
+    "sourceSummary": "Shaking a baby, even briefly, can cause serious brain injury or death. If a baby's crying becomes overwhelming, it is always safe to put the baby down in a secure place and take a moment to calm down."
   },
   {
     "id": "wo-2-1",
@@ -41,7 +41,7 @@
     "action": "Place baby's crib or bassinet in your room for at least the first 6 months. Offer a pacifier at nap and bedtime. Dress baby in a sleep sack instead of loose blankets. Keep the room at a comfortable temperature (68-72F).",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/safety-prevention/Pages/default.aspx",
-    "sourceQuote": "Room-sharing without bed-sharing, offering a pacifier at sleep time, and avoiding overheating are evidence-based strategies that significantly reduce the risk of SIDS during the highest-risk period."
+    "sourceSummary": "Room-sharing without bed-sharing, offering a pacifier at sleep time, and avoiding overheating are evidence-based strategies that significantly reduce the risk of SIDS during the highest-risk period."
   },
   {
     "id": "wo-2-2",
@@ -52,7 +52,7 @@
     "action": "Place baby on their tummy for short supervised sessions (3-5 minutes) several times a day while awake. Stay with baby at all times during tummy time. If baby falls asleep on their stomach, gently roll them onto their back.",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx",
-    "sourceQuote": "Supervised tummy time while baby is awake helps strengthen neck and shoulder muscles and supports motor development. Always stay with your baby during tummy time and never let them sleep on their stomach."
+    "sourceSummary": "Supervised tummy time while baby is awake helps strengthen neck and shoulder muscles and supports motor development. Always stay with your baby during tummy time and never let them sleep on their stomach."
   },
   {
     "id": "wo-3-1",
@@ -63,7 +63,7 @@
     "action": "Always keep one hand on baby during diaper changes. Gather all supplies before placing baby on the changing table. If you need to step away, place baby in the crib or on the floor first.",
     "source": "CPSC",
     "sourceUrl": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies",
-    "sourceQuote": "Falls from elevated surfaces such as changing tables are among the most common injuries in young infants. Always keep one hand on your baby and never leave them unattended on any raised surface."
+    "sourceSummary": "Falls from elevated surfaces such as changing tables are among the most common injuries in young infants. Always keep one hand on your baby and never leave them unattended on any raised surface."
   },
   {
     "id": "wo-3-2",
@@ -74,7 +74,7 @@
     "action": "Check that harness straps are at or below baby's shoulders when rear-facing. Verify the car seat has not been recalled and is not expired. Re-check installation after any adjustments.",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/safety-prevention/Pages/default.aspx",
-    "sourceQuote": "As your baby grows, regularly check that the car seat harness is positioned at or below shoulder level for rear-facing use. An expired or recalled car seat may not provide adequate protection in a crash."
+    "sourceSummary": "As your baby grows, regularly check that the car seat harness is positioned at or below shoulder level for rear-facing use. An expired or recalled car seat may not provide adequate protection in a crash."
   },
   {
     "id": "wo-4-1",
@@ -85,7 +85,7 @@
     "action": "Use the safety strap on the changing table every time. Never leave baby alone on any elevated surface. Consider doing diaper changes on the floor if your baby is very active.",
     "source": "CPSC",
     "sourceUrl": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies",
-    "sourceQuote": "Thousands of infants are treated in emergency rooms each year for falls from changing tables, beds, and other furniture. Never leave a baby unattended on an elevated surface, even for a moment."
+    "sourceSummary": "Thousands of infants are treated in emergency rooms each year for falls from changing tables, beds, and other furniture. Never leave a baby unattended on an elevated surface, even for a moment."
   },
   {
     "id": "wo-4-2",
@@ -96,7 +96,7 @@
     "action": "Do a daily floor scan for small objects. Check all toys for loose or broken parts before giving them to baby. Keep coins, batteries, and small household items stored securely out of reach.",
     "source": "CPSC",
     "sourceUrl": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies",
-    "sourceQuote": "Babies explore the world through their mouths. Any object small enough to pass through a toilet paper roll poses a choking risk and should be kept well out of an infant's reach."
+    "sourceSummary": "Babies explore the world through their mouths. Any object small enough to pass through a toilet paper roll poses a choking risk and should be kept well out of an infant's reach."
   },
   {
     "id": "wo-4-3",
@@ -107,7 +107,7 @@
     "action": "Set up a designated play area for older children's small toys that baby cannot access. Teach older siblings to keep small pieces off the floor. Use containers with lids to store small toys securely.",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/safety-prevention/Pages/default.aspx",
-    "sourceQuote": "In homes with children of different ages, older children's toys with small parts are a leading choking hazard for infants and toddlers. Keeping play areas and toy storage separate is an effective safety strategy."
+    "sourceSummary": "In homes with children of different ages, older children's toys with small parts are a leading choking hazard for infants and toddlers. Keeping play areas and toy storage separate is an effective safety strategy."
   },
   {
     "id": "wo-5-1",
@@ -118,7 +118,7 @@
     "action": "Always use the safety strap on the changing table. Never leave baby unattended on beds, couches, or other elevated surfaces. Place baby on the floor or in a crib if you need to step away.",
     "source": "CPSC",
     "sourceUrl": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies",
-    "sourceQuote": "Falls are the most frequently reported injury among infants. As babies become more active and mobile, the risk of rolling off beds, couches, and changing tables increases significantly."
+    "sourceSummary": "Falls are the most frequently reported injury among infants. As babies become more active and mobile, the risk of rolling off beds, couches, and changing tables increases significantly."
   },
   {
     "id": "wo-5-2",
@@ -129,7 +129,7 @@
     "action": "Get down to baby's level and scan for hazards daily. Secure battery compartments on all devices with tape or screws. Keep button batteries, magnets, and coins locked away. If a button battery is swallowed, go to the ER immediately.",
     "source": "CPSC",
     "sourceUrl": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies",
-    "sourceQuote": "As infants develop better hand coordination, they can reach and grasp objects more easily. Button batteries pose an especially serious risk and can cause life-threatening injuries if swallowed."
+    "sourceSummary": "As infants develop better hand coordination, they can reach and grasp objects more easily. Button batteries pose an especially serious risk and can cause life-threatening injuries if swallowed."
   },
   {
     "id": "wo-6-1",
@@ -140,7 +140,7 @@
     "action": "Start with single-ingredient purees or soft foods. Introduce one new food every 2-3 days and watch for signs of allergic reaction (rash, vomiting, difficulty breathing). Never give honey to a baby under 12 months due to botulism risk.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "When starting solid foods, introduce one single-ingredient food at a time and wait several days before adding another. This approach helps identify any food allergies or sensitivities early."
+    "sourceSummary": "When starting solid foods, introduce one single-ingredient food at a time and wait several days before adding another. This approach helps identify any food allergies or sensitivities early."
   },
   {
     "id": "wo-6-2",
@@ -151,7 +151,7 @@
     "action": "Get on your hands and knees and survey every room from baby's perspective. Cover electrical outlets, secure cords, pad sharp furniture corners, anchor heavy furniture and TVs, and gate off dangerous areas.",
     "source": "CPSC",
     "sourceUrl": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies",
-    "sourceQuote": "Before your baby begins crawling, get down to their level and look for potential hazards in every room. Thorough baby-proofing before mobility begins is one of the most important steps parents can take."
+    "sourceSummary": "Before your baby begins crawling, get down to their level and look for potential hazards in every room. Thorough baby-proofing before mobility begins is one of the most important steps parents can take."
   },
   {
     "id": "wo-6-3",
@@ -162,7 +162,7 @@
     "action": "Cut round foods like grapes and hot dogs lengthwise, then into small pieces. Avoid hard, round, or sticky foods. Always supervise mealtimes. Take an infant CPR class so you are prepared in an emergency.",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/safety-prevention/Pages/default.aspx",
-    "sourceQuote": "Choking is a leading cause of injury and death among young children. Foods should be cut into small pieces no larger than half an inch, and round foods must be quartered lengthwise to reduce choking risk."
+    "sourceSummary": "Choking is a leading cause of injury and death among young children. Foods should be cut into small pieces no larger than half an inch, and round foods must be quartered lengthwise to reduce choking risk."
   },
   {
     "id": "wo-7-1",
@@ -173,7 +173,7 @@
     "action": "Install hardware-mounted safety gates at the top of stairs and pressure-mounted gates at the bottom. Never use pressure-mounted gates at the top of stairs, as they can be pushed out. Check gates regularly for secure fit.",
     "source": "CPSC",
     "sourceUrl": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies",
-    "sourceQuote": "Stair falls are among the most common causes of injury in infants and toddlers. Hardware-mounted safety gates at the top of stairs and pressure-mounted gates at the bottom provide essential protection."
+    "sourceSummary": "Stair falls are among the most common causes of injury in infants and toddlers. Hardware-mounted safety gates at the top of stairs and pressure-mounted gates at the bottom provide essential protection."
   },
   {
     "id": "wo-7-2",
@@ -184,7 +184,7 @@
     "action": "Install outlet covers or tamper-resistant receptacles on all accessible outlets. Secure electrical cords behind furniture or with cord covers. Unplug appliances when not in use.",
     "source": "CPSC",
     "sourceUrl": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies",
-    "sourceQuote": "Electrical outlets are at the perfect height for crawling babies to explore. Outlet covers and tamper-resistant receptacles prevent children from inserting objects that could cause electrical shock or burns."
+    "sourceSummary": "Electrical outlets are at the perfect height for crawling babies to explore. Outlet covers and tamper-resistant receptacles prevent children from inserting objects that could cause electrical shock or burns."
   },
   {
     "id": "wo-7-3",
@@ -195,7 +195,7 @@
     "action": "Install child-proof locks on all lower cabinets and drawers, especially those containing cleaning supplies, chemicals, sharp utensils, and medications. Move hazardous items to higher storage if possible.",
     "source": "CPSC",
     "sourceUrl": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies",
-    "sourceQuote": "Cabinets and drawers within a child's reach should be secured with safety locks. Household cleaning products and sharp objects are among the most common hazards found in accessible storage."
+    "sourceSummary": "Cabinets and drawers within a child's reach should be secured with safety locks. Household cleaning products and sharp objects are among the most common hazards found in accessible storage."
   },
   {
     "id": "wo-8-1",
@@ -206,7 +206,7 @@
     "action": "Anchor all dressers, bookshelves, entertainment centers, and flat-screen TVs to the wall using anti-tip brackets or straps. Test furniture stability by gently pulling on it. Remove items from furniture tops that might tempt baby to climb.",
     "source": "CPSC",
     "sourceUrl": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies",
-    "sourceQuote": "Furniture and TV tip-overs are a hidden hazard that can cause serious injuries or death. The CPSC strongly recommends anchoring all top-heavy furniture and televisions to the wall with anti-tip devices."
+    "sourceSummary": "Furniture and TV tip-overs are a hidden hazard that can cause serious injuries or death. The CPSC strongly recommends anchoring all top-heavy furniture and televisions to the wall with anti-tip devices."
   },
   {
     "id": "wo-8-2",
@@ -217,7 +217,7 @@
     "action": "Replace all corded window blinds with cordless alternatives. Secure charging cables and appliance cords out of baby's reach. Remove any strings, ribbons, or cords from the baby's environment, including around the crib area.",
     "source": "CPSC",
     "sourceUrl": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies",
-    "sourceQuote": "Window covering cords are among the top five hidden hazards in American homes. Young children can become entangled in cord loops, leading to strangulation. Cordless window coverings are the safest choice."
+    "sourceSummary": "Window covering cords are among the top five hidden hazards in American homes. Young children can become entangled in cord loops, leading to strangulation. Cordless window coverings are the safest choice."
   },
   {
     "id": "wo-8-3",
@@ -228,7 +228,7 @@
     "action": "Allow baby time to warm up to new people at their own pace. Don't force baby into unfamiliar arms. Let baby observe from the safety of your lap before engaging with others.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Stranger anxiety typically emerges around 7-8 months and reflects healthy cognitive development. It means your baby can distinguish between familiar caregivers and unfamiliar people, an important social milestone."
+    "sourceSummary": "Stranger anxiety typically emerges around 7-8 months and reflects healthy cognitive development. It means your baby can distinguish between familiar caregivers and unfamiliar people, an important social milestone."
   },
   {
     "id": "wo-9-1",
@@ -239,7 +239,7 @@
     "action": "Do a daily floor sweep for small objects. Cut food into small pieces (no larger than 1/2 inch). Avoid round, hard foods like whole grapes, hot dogs, and popcorn.",
     "source": "CPSC",
     "sourceUrl": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies",
-    "sourceQuote": "Children under age 3 are at the highest risk of choking. Any object small enough to fit through a toilet paper roll is a potential choking hazard."
+    "sourceSummary": "Children under age 3 are at the highest risk of choking. Any object small enough to fit through a toilet paper roll is a potential choking hazard."
   },
   {
     "id": "wo-9-2",
@@ -250,7 +250,7 @@
     "action": "Secure heavy furniture to walls with anti-tip anchors. Remove tablecloths. Keep hot drinks and heavy objects away from table edges.",
     "source": "CPSC",
     "sourceUrl": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies",
-    "sourceQuote": "Tip-over incidents involving furniture and TVs send thousands of children to the emergency room each year. Anchoring furniture to the wall is the most effective prevention."
+    "sourceSummary": "Tip-over incidents involving furniture and TVs send thousands of children to the emergency room each year. Anchoring furniture to the wall is the most effective prevention."
   },
   {
     "id": "wo-9-3",
@@ -261,7 +261,7 @@
     "action": "Give baby time to warm up to new people. Don't force interactions. Let baby observe from your arms before approaching others.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Stranger anxiety is a sign that your baby understands the difference between familiar and unfamiliar people, reflecting healthy emotional and social development."
+    "sourceSummary": "Stranger anxiety is a sign that your baby understands the difference between familiar and unfamiliar people, reflecting healthy emotional and social development."
   },
   {
     "id": "wo-10-1",
@@ -272,7 +272,7 @@
     "action": "Install safety gates at the top and bottom of all staircases. Teach baby to go down stairs safely by backing down feet first.",
     "source": "CPSC",
     "sourceUrl": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies",
-    "sourceQuote": "Falls are the leading cause of injury for young children. Safety gates at the top and bottom of stairs are essential once babies begin to crawl and cruise."
+    "sourceSummary": "Falls are the leading cause of injury for young children. Safety gates at the top and bottom of stairs are essential once babies begin to crawl and cruise."
   },
   {
     "id": "wo-10-2",
@@ -283,7 +283,7 @@
     "action": "Cover all accessible electrical outlets with outlet covers or plates. Keep cords out of reach and secured.",
     "source": "CPSC",
     "sourceUrl": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies",
-    "sourceQuote": "Electrical outlets should be covered with safety caps or tamper-resistant receptacles to prevent children from inserting objects that could cause shock or burns."
+    "sourceSummary": "Electrical outlets should be covered with safety caps or tamper-resistant receptacles to prevent children from inserting objects that could cause shock or burns."
   },
   {
     "id": "wo-10-3",
@@ -294,7 +294,7 @@
     "action": "Create consistent goodbye rituals. Keep separations brief at first and gradually extend. Always say goodbye rather than sneaking away.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Separation anxiety shows that your child has formed a strong, healthy attachment. Consistent and reassuring goodbye routines help children learn that you always come back."
+    "sourceSummary": "Separation anxiety shows that your child has formed a strong, healthy attachment. Consistent and reassuring goodbye routines help children learn that you always come back."
   },
   {
     "id": "wo-11-1",
@@ -305,7 +305,7 @@
     "action": "Install child-proof locks on all cabinets containing hazardous items. Move cleaning supplies and medications to high shelves. Lock the medicine cabinet.",
     "source": "CPSC",
     "sourceUrl": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies",
-    "sourceQuote": "Household cleaning products and medications should be stored in locked cabinets out of children's reach. Child-resistant packaging is not child-proof."
+    "sourceSummary": "Household cleaning products and medications should be stored in locked cabinets out of children's reach. Child-resistant packaging is not child-proof."
   },
   {
     "id": "wo-11-2",
@@ -316,7 +316,7 @@
     "action": "Avoid walkers (they can delay walking and cause injuries). Let baby cruise, stand, and step at their own pace. Consult your pediatrician if baby isn't walking by 18 months.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "The AAP advises against infant walkers, as they can cause injuries and may delay motor development. Children develop walking skills on their own timeline."
+    "sourceSummary": "The AAP advises against infant walkers, as they can cause injuries and may delay motor development. Children develop walking skills on their own timeline."
   },
   {
     "id": "wo-11-3",
@@ -327,7 +327,7 @@
     "action": "Never leave baby alone in the bath, even for a moment. Use a non-slip mat. Keep water temperature below 100F (38C). Always test water before placing baby in.",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/safety-prevention/Pages/default.aspx",
-    "sourceQuote": "A child can drown in just one inch of water. Never leave a young child unattended in or near any body of water, including bathtubs, even for a moment."
+    "sourceSummary": "A child can drown in just one inch of water. Never leave a young child unattended in or near any body of water, including bathtubs, even for a moment."
   },
   {
     "id": "wo-12-1",
@@ -338,7 +338,7 @@
     "action": "Start offering milk in a sippy cup or open cup. Gradually reduce bottle feedings, eliminating the bedtime bottle last.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Pediatricians recommend weaning from the bottle by 12 to 15 months of age, as prolonged bottle use is associated with dental cavities and excess calorie intake."
+    "sourceSummary": "Pediatricians recommend weaning from the bottle by 12 to 15 months of age, as prolonged bottle use is associated with dental cavities and excess calorie intake."
   },
   {
     "id": "wo-12-2",
@@ -349,7 +349,7 @@
     "action": "Limit whole milk to 16-24 oz per day. Ensure baby is eating a variety of iron-rich foods. Continue offering water throughout the day.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "After 12 months, children can begin drinking whole cow's milk, but intake should be limited to 16-24 ounces per day to ensure adequate iron and nutrient intake from solid foods."
+    "sourceSummary": "After 12 months, children can begin drinking whole cow's milk, but intake should be limited to 16-24 ounces per day to ensure adequate iron and nutrient intake from solid foods."
   },
   {
     "id": "wo-12-3",
@@ -360,7 +360,7 @@
     "action": "Pad sharp furniture corners. Keep floors clear of tripping hazards. Monitor closely but allow reasonable exploration. Know the signs of concussion.",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/safety-prevention/Pages/default.aspx",
-    "sourceQuote": "Falls are the most common cause of injury in children learning to walk. Padding sharp corners and clearing floors of obstacles can reduce the risk of head injuries."
+    "sourceSummary": "Falls are the most common cause of injury in children learning to walk. Padding sharp corners and clearing floors of obstacles can reduce the risk of head injuries."
   },
   {
     "id": "wo-13-1",
@@ -371,7 +371,7 @@
     "action": "Continue offering a variety of foods without pressure. It can take 10-15 exposures before a child accepts a new food. Don't make separate meals.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Picky eating is a normal part of toddler development as children assert independence. Repeated, pressure-free exposure to new foods is the best approach to expanding their diet."
+    "sourceSummary": "Picky eating is a normal part of toddler development as children assert independence. Repeated, pressure-free exposure to new foods is the best approach to expanding their diet."
   },
   {
     "id": "wo-13-2",
@@ -382,7 +382,7 @@
     "action": "Anchor all tall furniture and TVs to the wall. Remove items that encourage climbing near windows or on high surfaces.",
     "source": "CPSC",
     "sourceUrl": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies",
-    "sourceQuote": "A child dies every two weeks from furniture or TV tip-overs. The CPSC urges all families to anchor furniture and TVs to the wall to prevent these preventable tragedies."
+    "sourceSummary": "A child dies every two weeks from furniture or TV tip-overs. The CPSC urges all families to anchor furniture and TVs to the wall to prevent these preventable tragedies."
   },
   {
     "id": "wo-14-1",
@@ -393,7 +393,7 @@
     "action": "Install window guards or stops that prevent windows from opening more than 4 inches. Keep furniture away from windows. Supervise on balconies.",
     "source": "CPSC",
     "sourceUrl": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies",
-    "sourceQuote": "Window screens are designed to keep insects out, not to prevent children from falling. Install window guards or stops to limit openings to 4 inches or less."
+    "sourceSummary": "Window screens are designed to keep insects out, not to prevent children from falling. Install window guards or stops to limit openings to 4 inches or less."
   },
   {
     "id": "wo-14-2",
@@ -404,7 +404,7 @@
     "action": "Talk and read to baby frequently. If baby uses no words and doesn't seem to understand simple phrases, discuss with your pediatrician at the next visit.",
     "source": "CDC Act Early",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/",
-    "sourceQuote": "Monitoring your child's developmental milestones helps catch concerns early. If your child is not meeting communication milestones, early intervention can make a meaningful difference."
+    "sourceSummary": "Monitoring your child's developmental milestones helps catch concerns early. If your child is not meeting communication milestones, early intervention can make a meaningful difference."
   },
   {
     "id": "wo-15-1",
@@ -415,7 +415,7 @@
     "action": "Schedule the 15-month well-child visit. Prepare a list of developmental concerns or questions. Bring your baby's health records.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Well-child visits are essential for tracking growth, development, and administering recommended vaccinations on schedule to protect your child's health."
+    "sourceSummary": "Well-child visits are essential for tracking growth, development, and administering recommended vaccinations on schedule to protect your child's health."
   },
   {
     "id": "wo-15-2",
@@ -426,7 +426,7 @@
     "action": "Stay calm during tantrums. Acknowledge feelings: 'I know you're frustrated.' Offer simple choices to give some control. Ensure safety during the tantrum.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Tantrums are a normal part of development when toddlers' desire to do things outpaces their ability to communicate. Staying calm and validating feelings helps children learn to manage emotions."
+    "sourceSummary": "Tantrums are a normal part of development when toddlers' desire to do things outpaces their ability to communicate. Staying calm and validating feelings helps children learn to manage emotions."
   },
   {
     "id": "wo-15-3",
@@ -437,7 +437,7 @@
     "action": "Schedule a dental visit if not done yet. Brush teeth twice daily with a rice-grain-sized amount of fluoride toothpaste. Avoid juice and sugary drinks.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "The AAP recommends a child's first dental visit by age 1 or within 6 months of the first tooth. Early preventive dental care reduces the risk of cavities and future dental problems."
+    "sourceSummary": "The AAP recommends a child's first dental visit by age 1 or within 6 months of the first tooth. Early preventive dental care reduces the risk of cavities and future dental problems."
   },
   {
     "id": "wo-16-1",
@@ -448,7 +448,7 @@
     "action": "Use stove knob covers and back burners. Turn pot handles inward. Store knives and chemicals up high. Keep toddler away from the stove when cooking.",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/safety-prevention/Pages/default.aspx",
-    "sourceQuote": "Burns from hot liquids and contact with stoves are among the most common kitchen injuries in young children. Using back burners and turning pot handles inward are simple, effective precautions."
+    "sourceSummary": "Burns from hot liquids and contact with stoves are among the most common kitchen injuries in young children. Using back burners and turning pot handles inward are simple, effective precautions."
   },
   {
     "id": "wo-16-2",
@@ -459,7 +459,7 @@
     "action": "Limit or avoid screen time. If using screens, watch together and talk about what you see. Prioritize interactive play, reading, and outdoor time.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "The AAP recommends avoiding digital media use, except video chatting, for children younger than 18 months, as interactive play better supports language and cognitive development."
+    "sourceSummary": "The AAP recommends avoiding digital media use, except video chatting, for children younger than 18 months, as interactive play better supports language and cognitive development."
   },
   {
     "id": "wo-17-1",
@@ -470,7 +470,7 @@
     "action": "Lower the mattress to its lowest position. Remove bumpers, toys, and pillows that could be used as stepping stones. If climbing persists, consider transitioning to a toddler bed.",
     "source": "CPSC",
     "sourceUrl": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies",
-    "sourceQuote": "Set the crib mattress to the lowest position as soon as your child can pull to stand. Remove any objects from the crib that could be used as a step for climbing out."
+    "sourceSummary": "Set the crib mattress to the lowest position as soon as your child can pull to stand. Remove any objects from the crib that could be used as a step for climbing out."
   },
   {
     "id": "wo-17-2",
@@ -481,7 +481,7 @@
     "action": "Provide safe throwing opportunities with soft balls. Redirect throwing of hard or dangerous objects. Say 'Balls are for throwing, blocks are not.'",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Throwing is how toddlers explore cause and effect and develop motor skills. Providing appropriate outlets for throwing helps channel this behavior constructively."
+    "sourceSummary": "Throwing is how toddlers explore cause and effect and develop motor skills. Providing appropriate outlets for throwing helps channel this behavior constructively."
   },
   {
     "id": "wo-18-1",
@@ -492,7 +492,7 @@
     "action": "Attend the 18-month well-child visit. Complete any screening questionnaires your pediatrician provides. Discuss any concerns about social interaction, communication, or repetitive behaviors.",
     "source": "CDC Act Early",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/",
-    "sourceQuote": "The AAP recommends developmental screening at 9, 18, and 30 months, and autism-specific screening at 18 months. Early identification leads to earlier access to services that improve outcomes."
+    "sourceSummary": "The AAP recommends developmental screening at 9, 18, and 30 months, and autism-specific screening at 18 months. Early identification leads to earlier access to services that improve outcomes."
   },
   {
     "id": "wo-18-2",
@@ -503,7 +503,7 @@
     "action": "Stay calm. Say 'No biting. Biting hurts.' Comfort the other child first. Help toddler use words for feelings. Never bite back as punishment.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Biting and hitting are common in toddlers who lack the language to express strong feelings. Responding calmly and consistently helps children gradually develop self-control."
+    "sourceSummary": "Biting and hitting are common in toddlers who lack the language to express strong feelings. Responding calmly and consistently helps children gradually develop self-control."
   },
   {
     "id": "wo-18-3",
@@ -514,7 +514,7 @@
     "action": "Keep car seat rear-facing. Check that the harness fits snugly. Verify the seat is installed correctly. Never use a car seat that has been in an accident.",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/safety-prevention/Pages/default.aspx",
-    "sourceQuote": "Children should ride in a rear-facing car seat as long as possible, until they reach the maximum height or weight allowed by the seat. Rear-facing provides the best protection for a child's head, neck, and spine."
+    "sourceSummary": "Children should ride in a rear-facing car seat as long as possible, until they reach the maximum height or weight allowed by the seat. Rear-facing provides the best protection for a child's head, neck, and spine."
   },
   {
     "id": "wo-19-1",
@@ -525,7 +525,7 @@
     "action": "Hold hands in parking lots and near streets. Teach 'stop' as a safety command. Practice listening to 'freeze' and 'wait.' Never let toddler walk unattended near traffic.",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/safety-prevention/Pages/default.aspx",
-    "sourceQuote": "Young children have no concept of traffic safety and may dart into the street without warning. Always hold a child's hand in or near roadways and parking areas."
+    "sourceSummary": "Young children have no concept of traffic safety and may dart into the street without warning. Always hold a child's hand in or near roadways and parking areas."
   },
   {
     "id": "wo-19-2",
@@ -536,7 +536,7 @@
     "action": "Maintain a consistent bedtime routine. Keep the same sleep schedule. Be patient; most regressions pass in 2-6 weeks. Avoid introducing new sleep crutches.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Sleep disruptions are common during periods of rapid development. Maintaining a consistent, calming bedtime routine helps toddlers settle back into healthy sleep patterns."
+    "sourceSummary": "Sleep disruptions are common during periods of rapid development. Maintaining a consistent, calming bedtime routine helps toddlers settle back into healthy sleep patterns."
   },
   {
     "id": "wo-20-1",
@@ -547,7 +547,7 @@
     "action": "Never leave toddler unattended near any water. Empty buckets and wading pools after use. Install pool fences with self-closing gates. Keep toilet lids locked.",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/safety-prevention/Pages/default.aspx",
-    "sourceQuote": "Drowning is the leading cause of death for children ages 1 to 4. Constant adult supervision and barriers like pool fencing are the most effective ways to prevent drowning."
+    "sourceSummary": "Drowning is the leading cause of death for children ages 1 to 4. Constant adult supervision and barriers like pool fencing are the most effective ways to prevent drowning."
   },
   {
     "id": "wo-20-2",
@@ -558,7 +558,7 @@
     "action": "Offer limited choices instead of yes/no questions. Pick your battles. Stay calm and consistent with important boundaries. Praise cooperation when it happens.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Toddlers say 'no' as a way of asserting their growing sense of self. Offering limited choices gives them a healthy sense of control while keeping them safe."
+    "sourceSummary": "Toddlers say 'no' as a way of asserting their growing sense of self. Offering limited choices gives them a healthy sense of control while keeping them safe."
   },
   {
     "id": "wo-21-1",
@@ -569,7 +569,7 @@
     "action": "Stay within arm's reach on playground equipment. Choose age-appropriate equipment. Check that the ground surface is soft (mulch, rubber). Avoid equipment taller than 4 feet.",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/safety-prevention/Pages/default.aspx",
-    "sourceQuote": "Most playground injuries are caused by falls. Using age-appropriate equipment with proper safety surfacing underneath significantly reduces the risk of serious injury."
+    "sourceSummary": "Most playground injuries are caused by falls. Using age-appropriate equipment with proper safety surfacing underneath significantly reduces the risk of serious injury."
   },
   {
     "id": "wo-21-2",
@@ -580,7 +580,7 @@
     "action": "Make brushing fun with songs or games. Let toddler hold their own brush while you do the actual brushing. Use a timer or fun app. Brush twice daily.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Parents should brush their child's teeth twice daily using a smear of fluoride toothpaste. Good oral hygiene habits established early help prevent cavities throughout childhood."
+    "sourceSummary": "Parents should brush their child's teeth twice daily using a smear of fluoride toothpaste. Good oral hygiene habits established early help prevent cavities throughout childhood."
   },
   {
     "id": "wo-22-1",
@@ -591,7 +591,7 @@
     "action": "Validate emotions: 'You're really angry right now.' Stay nearby but calm. Don't give in to demands made during tantrums. Teach simple emotion words.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Toddlers experience intense emotions but are still developing the brain pathways needed for self-regulation. Naming feelings and staying calm teaches them to manage emotions over time."
+    "sourceSummary": "Toddlers experience intense emotions but are still developing the brain pathways needed for self-regulation. Naming feelings and staying calm teaches them to manage emotions over time."
   },
   {
     "id": "wo-22-2",
@@ -602,7 +602,7 @@
     "action": "Store all medications and cleaning products locked and out of reach. Keep Poison Control number saved: 1-800-222-1222. Know which houseplants are toxic.",
     "source": "CPSC",
     "sourceUrl": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies",
-    "sourceQuote": "Over 2 million poisoning cases involving children under 6 are reported each year. Store all household chemicals and medicines in locked cabinets out of children's sight and reach."
+    "sourceSummary": "Over 2 million poisoning cases involving children under 6 are reported each year. Store all household chemicals and medicines in locked cabinets out of children's sight and reach."
   },
   {
     "id": "wo-23-1",
@@ -613,7 +613,7 @@
     "action": "Look for readiness signs: staying dry for 2+ hours, interest in the toilet, telling you about wet/dirty diapers. Don't force it; follow child's lead.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Most children show signs of readiness for toilet training between 18 and 24 months. Following the child's cues rather than a strict timeline leads to more successful outcomes."
+    "sourceSummary": "Most children show signs of readiness for toilet training between 18 and 24 months. Following the child's cues rather than a strict timeline leads to more successful outcomes."
   },
   {
     "id": "wo-23-2",
@@ -624,7 +624,7 @@
     "action": "Replace corded blinds with cordless ones. Keep all cords and strings out of reach. Tie up curtain cords and charging cables. Remove necklaces and long strings from toys.",
     "source": "CPSC",
     "sourceUrl": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies",
-    "sourceQuote": "Window blind cords are among the top hidden hazards in homes. The CPSC recommends using only cordless window coverings in homes with young children to prevent strangulation."
+    "sourceSummary": "Window blind cords are among the top hidden hazards in homes. The CPSC recommends using only cordless window coverings in homes with young children to prevent strangulation."
   },
   {
     "id": "wo-24-1",
@@ -635,7 +635,7 @@
     "action": "Schedule the 2-year well-child visit. Note developmental milestones reached and any concerns. Bring questions about behavior, sleep, eating, and development.",
     "source": "CDC Act Early",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/",
-    "sourceQuote": "The CDC recommends developmental screening at the 2-year well-child visit, including a second autism-specific screening. Tracking milestones helps identify concerns when early intervention is most effective."
+    "sourceSummary": "The CDC recommends developmental screening at the 2-year well-child visit, including a second autism-specific screening. Tracking milestones helps identify concerns when early intervention is most effective."
   },
   {
     "id": "wo-24-2",
@@ -646,7 +646,7 @@
     "action": "Keep rear-facing as long as possible within the car seat's limits. When switching to forward-facing, ensure the harness is properly positioned at or above shoulders.",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/safety-prevention/Pages/default.aspx",
-    "sourceQuote": "The AAP recommends keeping children rear-facing as long as possible, up to the maximum height and weight limits of the car seat. Rear-facing seats provide superior crash protection."
+    "sourceSummary": "The AAP recommends keeping children rear-facing as long as possible, up to the maximum height and weight limits of the car seat. Rear-facing seats provide superior crash protection."
   },
   {
     "id": "wo-24-3",
@@ -657,7 +657,7 @@
     "action": "Supervise play closely. Intervene calmly and quickly. Model gentle behavior. Use simple words: 'Gentle hands.' Remove child briefly if behavior continues.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Aggressive behavior in toddlers reflects their still-developing impulse control and limited social skills. Calm, consistent guidance helps children gradually learn to interact with peers."
+    "sourceSummary": "Aggressive behavior in toddlers reflects their still-developing impulse control and limited social skills. Calm, consistent guidance helps children gradually learn to interact with peers."
   },
   {
     "id": "wo-25-1",
@@ -668,7 +668,7 @@
     "action": "Secure furniture to walls. Cover outlets. Remove choking hazards. Install a gate at the bedroom door or top of stairs. Use a bed rail to prevent rolling out.",
     "source": "CPSC",
     "sourceUrl": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies",
-    "sourceQuote": "When transitioning to a toddler bed, the entire room becomes the child's sleep environment. Anchor furniture, cover outlets, and use safety gates to keep the space safe."
+    "sourceSummary": "When transitioning to a toddler bed, the entire room becomes the child's sleep environment. Anchor furniture, cover outlets, and use safety gates to keep the space safe."
   },
   {
     "id": "wo-25-2",
@@ -679,7 +679,7 @@
     "action": "Apply SPF 30+ sunscreen 15 minutes before going outside. Reapply every 2 hours. Use hats and UV-protective clothing. Seek shade during peak hours (10am-2pm).",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/safety-prevention/Pages/default.aspx",
-    "sourceQuote": "Children's skin is more vulnerable to sun damage than adults'. The AAP recommends broad-spectrum SPF 30+ sunscreen, protective clothing, and seeking shade during peak UV hours."
+    "sourceSummary": "Children's skin is more vulnerable to sun damage than adults'. The AAP recommends broad-spectrum SPF 30+ sunscreen, protective clothing, and seeking shade during peak UV hours."
   },
   {
     "id": "wo-26-1",
@@ -690,7 +690,7 @@
     "action": "Comfort and reassure your child. Use a nightlight if darkness is scary. Avoid scary content before bed. Maintain a calming bedtime routine.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Nightmares can begin as a child's imagination develops. Comforting your child and maintaining a predictable bedtime routine helps them feel safe and secure at night."
+    "sourceSummary": "Nightmares can begin as a child's imagination develops. Comforting your child and maintaining a predictable bedtime routine helps them feel safe and secure at night."
   },
   {
     "id": "wo-26-2",
@@ -701,7 +701,7 @@
     "action": "Always know where your toddler is before moving a vehicle. Walk around the car before backing up. Hold toddler's hand in driveways. Keep garage doors closed.",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/safety-prevention/Pages/default.aspx",
-    "sourceQuote": "Young children are especially at risk for backover injuries because they are small and difficult to see behind vehicles. Always check behind your car before moving it."
+    "sourceSummary": "Young children are especially at risk for backover injuries because they are small and difficult to see behind vehicles. Always check behind your car before moving it."
   },
   {
     "id": "wo-27-1",
@@ -712,7 +712,7 @@
     "action": "Never leave toddler unsupervised with any pet. Teach gentle petting. Keep toddler away from pets that are eating. Learn to read pet stress signals.",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/safety-prevention/Pages/default.aspx",
-    "sourceQuote": "Most dog bites to children come from a familiar dog, often the family pet. Children should always be supervised around animals and taught to interact gently."
+    "sourceSummary": "Most dog bites to children come from a familiar dog, often the family pet. Children should always be supervised around animals and taught to interact gently."
   },
   {
     "id": "wo-27-2",
@@ -723,7 +723,7 @@
     "action": "Keep offering vegetables without pressure. Serve them alongside accepted foods. Try different preparations (roasted, pureed, raw with dip). Model eating vegetables yourself.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Toddlers are naturally cautious about new and bitter-tasting foods as a protective instinct. Research shows that repeated, no-pressure exposure is the most effective way to broaden food acceptance."
+    "sourceSummary": "Toddlers are naturally cautious about new and bitter-tasting foods as a protective instinct. Research shows that repeated, no-pressure exposure is the most effective way to broaden food acceptance."
   },
   {
     "id": "wo-28-1",
@@ -734,7 +734,7 @@
     "action": "Only allow scissors during supervised activities. Use child-safe scissors with rounded tips. Teach that scissors are only for paper. Store out of reach when not in use.",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/safety-prevention/Pages/default.aspx",
-    "sourceQuote": "When introducing scissors, always supervise closely and use child-safe scissors with blunt tips. Teaching proper use early helps build fine motor skills while preventing injuries."
+    "sourceSummary": "When introducing scissors, always supervise closely and use child-safe scissors with blunt tips. Teaching proper use early helps build fine motor skills while preventing injuries."
   },
   {
     "id": "wo-28-2",
@@ -745,7 +745,7 @@
     "action": "Don't draw attention to the stuttering. Maintain eye contact and wait patiently. Don't finish their sentences. Speak slowly yourself. If it persists past 6 months, consult a speech-language pathologist.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "Developmental stuttering is common between ages 2 and 5 as children's language skills are rapidly expanding. Most children outgrow it naturally without intervention."
+    "sourceSummary": "Developmental stuttering is common between ages 2 and 5 as children's language skills are rapidly expanding. Most children outgrow it naturally without intervention."
   },
   {
     "id": "wo-29-1",
@@ -756,7 +756,7 @@
     "action": "Ensure outdoor play areas have soft surfaces. Keep pathways clear of tripping hazards. Have toddler wear supportive shoes with non-slip soles.",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/safety-prevention/Pages/default.aspx",
-    "sourceQuote": "Unintentional falls are the leading cause of non-fatal injuries in young children. Safe footwear and clear play areas help reduce the risk as toddlers develop coordination."
+    "sourceSummary": "Unintentional falls are the leading cause of non-fatal injuries in young children. Safe footwear and clear play areas help reduce the risk as toddlers develop coordination."
   },
   {
     "id": "wo-29-2",
@@ -767,7 +767,7 @@
     "action": "Take fears seriously even if they seem irrational. Use a nightlight. Read books about overcoming fears. Avoid forcing child into scary situations. Offer comfort and reassurance.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Emerging fears are a sign of a growing imagination and developing cognitive abilities. Taking a child's fears seriously and offering comfort helps build their sense of security."
+    "sourceSummary": "Emerging fears are a sign of a growing imagination and developing cognitive abilities. Taking a child's fears seriously and offering comfort helps build their sense of security."
   },
   {
     "id": "wo-30-1",
@@ -778,7 +778,7 @@
     "action": "Review CDC developmental milestones for 30 months. Contact your pediatrician if toddler doesn't use 2-word phrases, doesn't know what to do with familiar objects, or doesn't copy actions and words.",
     "source": "CDC Act Early",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/",
-    "sourceQuote": "Developmental monitoring at 30 months helps identify children who may benefit from early intervention services. Tracking milestones at home between visits is an important part of your child's care."
+    "sourceSummary": "Developmental monitoring at 30 months helps identify children who may benefit from early intervention services. Tracking milestones at home between visits is an important part of your child's care."
   },
   {
     "id": "wo-30-2",
@@ -789,7 +789,7 @@
     "action": "Secure all battery compartments with tape or screws. Keep loose batteries locked away. If swallowing is suspected, go to the ER immediately. Do not induce vomiting.",
     "source": "CPSC",
     "sourceUrl": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies",
-    "sourceQuote": "Button batteries can cause serious injury or death if swallowed. A swallowed battery can burn through a child's esophagus in as little as two hours. Seek emergency care immediately."
+    "sourceSummary": "Button batteries can cause serious injury or death if swallowed. A swallowed battery can burn through a child's esophagus in as little as two hours. Seek emergency care immediately."
   },
   {
     "id": "wo-31-1",
@@ -800,7 +800,7 @@
     "action": "Celebrate successes without over-praising. Don't punish accidents. Be patient with regression. Avoid asking 'Do you need to go potty?' constantly.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Toilet learning works best when children feel in control of the process. Pressure and punishment can create anxiety and lead to resistance, prolonging the process."
+    "sourceSummary": "Toilet learning works best when children feel in control of the process. Pressure and punishment can create anxiety and lead to resistance, prolonging the process."
   },
   {
     "id": "wo-31-2",
@@ -811,7 +811,7 @@
     "action": "Store all medications locked and out of reach. Never call medicine 'candy.' Dispose of unused medications safely. Program Poison Control (1-800-222-1222) into your phone.",
     "source": "CPSC",
     "sourceUrl": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies",
-    "sourceQuote": "Child-resistant packaging is not child-proof. More than 60,000 children are seen in emergency rooms each year due to unsupervised access to medicines. Always store medications locked and out of reach."
+    "sourceSummary": "Child-resistant packaging is not child-proof. More than 60,000 children are seen in emergency rooms each year due to unsupervised access to medicines. Always store medications locked and out of reach."
   },
   {
     "id": "wo-32-1",
@@ -822,7 +822,7 @@
     "action": "Give toddler special one-on-one time daily. Let them 'help' with the baby. Avoid major changes (new bed, potty training) right around the birth. Be patient with regression.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Regression and jealousy when a new sibling arrives are normal reactions to a big life change. One-on-one time and involvement in baby care help toddlers adjust."
+    "sourceSummary": "Regression and jealousy when a new sibling arrives are normal reactions to a big life change. One-on-one time and involvement in baby care help toddlers adjust."
   },
   {
     "id": "wo-32-2",
@@ -833,7 +833,7 @@
     "action": "Remove step stools and chairs that enable climbing to dangerous areas. Keep knives, scissors, and hazardous items in locked or high cabinets. Install stove guards.",
     "source": "CPSC",
     "sourceUrl": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Kids-and-Babies",
-    "sourceQuote": "As children grow more skilled at climbing, reassess your home for new hazards they can reach. Move dangerous items higher and remove furniture that serves as stepping stones."
+    "sourceSummary": "As children grow more skilled at climbing, reassess your home for new hazards they can reach. Move dangerous items higher and remove furniture that serves as stepping stones."
   },
   {
     "id": "wo-33-1",
@@ -844,7 +844,7 @@
     "action": "Visit potential preschools together. Start with short trial visits. Read books about school. Create a consistent drop-off routine. Give it 2-4 weeks for adjustment.",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Transitions to new settings can be challenging for young children. Gradual introductions, consistent routines, and reading about the experience beforehand help ease the adjustment."
+    "sourceSummary": "Transitions to new settings can be challenging for young children. Gradual introductions, consistent routines, and reading about the experience beforehand help ease the adjustment."
   },
   {
     "id": "wo-33-2",
@@ -855,7 +855,7 @@
     "action": "Teach hand washing. Keep child home when running a fever. Ensure vaccinations are up to date. Consult your doctor about concerning symptoms, not just frequency of colds.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "It is normal for young children in group settings to get 6 to 8 colds per year. Frequent handwashing and staying current on vaccinations are the best ways to reduce illness."
+    "sourceSummary": "It is normal for young children in group settings to get 6 to 8 colds per year. Frequent handwashing and staying current on vaccinations are the best ways to reduce illness."
   },
   {
     "id": "wo-34-1",
@@ -866,7 +866,7 @@
     "action": "Install child-proof door handle covers or high deadbolts. Consider door alarms. Teach your address and phone number. Ensure yard is fenced. Always supervise outdoor play.",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/safety-prevention/Pages/default.aspx",
-    "sourceQuote": "Children who can reach and open doors can wander into dangerous situations quickly. Door locks, alarms, and fenced yards provide critical layers of protection."
+    "sourceSummary": "Children who can reach and open doors can wander into dangerous situations quickly. Door locks, alarms, and fenced yards provide critical layers of protection."
   },
   {
     "id": "wo-34-2",
@@ -877,7 +877,7 @@
     "action": "If strangers can't understand most of what your child says, or if child is very frustrated trying to communicate, ask your pediatrician about a speech evaluation.",
     "source": "CDC Act Early",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/",
-    "sourceQuote": "By age 3, most of what a child says should be understandable to people outside the family. If speech is very difficult to understand, a speech-language evaluation may be helpful."
+    "sourceSummary": "By age 3, most of what a child says should be understandable to people outside the family. If speech is very difficult to understand, a speech-language evaluation may be helpful."
   },
   {
     "id": "wo-35-1",
@@ -888,7 +888,7 @@
     "action": "Schedule the 3-year checkup. Track developmental milestones. Prepare questions about behavior, sleep, diet, and social development.",
     "source": "AAP",
     "sourceUrl": "https://www.healthychildren.org/English/family-life/health-management/Pages/Milestones-Matter.aspx",
-    "sourceQuote": "The 3-year well-child visit is a key checkpoint that includes vision and hearing screening, developmental assessment, and a review of your child's overall health and growth."
+    "sourceSummary": "The 3-year well-child visit is a key checkpoint that includes vision and hearing screening, developmental assessment, and a review of your child's overall health and growth."
   },
   {
     "id": "wo-35-2",
@@ -899,7 +899,7 @@
     "action": "Supervise closely at playgrounds. Ensure equipment is age-appropriate. Check for proper safety surfacing under equipment. Teach children to wait their turn.",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/safety-prevention/Pages/default.aspx",
-    "sourceQuote": "More than 200,000 children are treated in emergency rooms for playground injuries each year. Active supervision and age-appropriate equipment are key to safe outdoor play."
+    "sourceSummary": "More than 200,000 children are treated in emergency rooms for playground injuries each year. Active supervision and age-appropriate equipment are key to safe outdoor play."
   },
   {
     "id": "wo-36-1",
@@ -910,7 +910,7 @@
     "action": "Review CDC milestones for 3 years. Discuss any concerns with your pediatrician. Early intervention services are most effective when started early.",
     "source": "CDC Act Early",
     "sourceUrl": "https://www.cdc.gov/act-early/milestones/",
-    "sourceQuote": "Research shows that early identification and intervention for developmental delays lead to better outcomes. If your child is not meeting key milestones by age 3, talk to your pediatrician."
+    "sourceSummary": "Research shows that early identification and intervention for developmental delays lead to better outcomes. If your child is not meeting key milestones by age 3, talk to your pediatrician."
   },
   {
     "id": "wo-36-2",
@@ -921,7 +921,7 @@
     "action": "Keep child in a harnessed forward-facing car seat. Don't switch to a booster seat yet. Verify your car seat's weight and height limits.",
     "source": "AAP (HealthyChildren.org)",
     "sourceUrl": "https://www.healthychildren.org/English/safety-prevention/Pages/default.aspx",
-    "sourceQuote": "Children should ride in a forward-facing car seat with a harness for as long as possible, until they reach the seat's maximum height or weight. A harnessed seat provides better crash protection than a booster."
+    "sourceSummary": "Children should ride in a forward-facing car seat with a harness for as long as possible, until they reach the seat's maximum height or weight. A harnessed seat provides better crash protection than a booster."
   },
   {
     "id": "wo-36-3",
@@ -932,6 +932,6 @@
     "action": "Agree on rules with all caregivers. Be consistent in enforcement. Use natural consequences when possible. Explain rules simply: 'We hold hands in the parking lot because cars can hurt us.'",
     "source": "Zero to Three",
     "sourceUrl": "https://www.zerotothree.org/your-childs-development-age-based-tips-from-birth-to-36-months-2/",
-    "sourceQuote": "Consistent, clear boundaries help children feel safe and learn self-discipline. When all caregivers follow the same rules, children are less confused and more cooperative."
+    "sourceSummary": "Consistent, clear boundaries help children feel safe and learn self-discipline. When all caregivers follow the same rules, children are less confused and more cooperative."
   }
 ]

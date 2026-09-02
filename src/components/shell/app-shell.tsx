@@ -1,8 +1,10 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
+import { useBaby } from "@/hooks/use-baby";
 import { useLanguage } from "@/hooks/use-language";
+import { useSettings } from "@/hooks/use-settings";
 import { isNative, isStandalonePWA } from "@/lib/platform";
 import { TabBar } from "./tab-bar";
 import { SideNav } from "./side-nav";
@@ -25,6 +27,19 @@ function Effects() {
     if (isNative() || !("serviceWorker" in navigator) || process.env.NODE_ENV !== "production") return;
     navigator.serviceWorker.register("/sw.js").catch(() => {});
   }, []);
+  // Native: re-plan the weekly notes once per launch so they follow the baby's month and what was confirmed.
+  const { baby } = useBaby();
+  const { settings } = useSettings();
+  const planned = useRef(false);
+  useEffect(() => {
+    if (planned.current || !isNative() || !settings.reminders || !baby) return;
+    planned.current = true;
+    // Loaded on demand so the web bundle never carries the notification planner.
+    import("@/lib/reminders").then(async ({ reminderStatus, scheduleReminders }) => {
+      if ((await reminderStatus()) === "granted") void scheduleReminders(baby, lang);
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- once per launch, with whatever profile is loaded first
+  }, [baby, settings.reminders]);
   return null;
 }
 

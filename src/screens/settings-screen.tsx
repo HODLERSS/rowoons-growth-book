@@ -235,7 +235,7 @@ function NativeReminders() {
         await cancelReminders();
         update({ reminders: false });
       } else {
-        const n = await scheduleReminders(name, baby.birthDate, lang);
+        const n = await scheduleReminders(baby, lang);
         const s = await reminderStatus();
         setStatus(s);
         update({ reminders: n > 0 });

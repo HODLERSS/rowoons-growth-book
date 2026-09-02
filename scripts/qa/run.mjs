@@ -86,7 +86,7 @@ if (!skip.has("links")) {
   const koLong = json("src/content/ko/milestones.json").filter((i) => i.title.length > 18).map((i) => i.id);
   add("4", "KO milestone titles ≤ 18 characters", koLong.length === 0, 10, koLong.slice(0, 8).join(","));
   add("4", "every watch-out has an action", json("src/content/watch-outs.json").every((w) => w.action), 10);
-  add("U10", "every safety note has a What-to-do, every month has a three-voice note, every item cites a source", json("src/content/watch-outs.json").every((w) => w.action) && Object.keys(json("src/content/monthly-notes.json")).length === 36 && items.every((i) => i.source && i.sourceUrl && i.sourceQuote), 50);
+  add("U10", "every safety note has a What-to-do, every month has a three-voice note, every item cites a source", json("src/content/watch-outs.json").every((w) => w.action) && Object.keys(json("src/content/monthly-notes.json")).length === 36 && items.every((i) => i.source && i.sourceUrl && i.sourceSummary), 50);
 }
 
 // ---------- 5. Visual identity ----------

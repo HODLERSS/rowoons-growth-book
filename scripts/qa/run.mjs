@@ -223,7 +223,8 @@ if (!skip.has("bundle")) {
   }
   add("U1", "text sizes are rem-based (Dynamic Type scales them)", pxText.length === 0, 25, pxText.join(","));
   add("U1", "iOS root font follows Dynamic Type (html.ios { font: -apple-system-body })", /html\.ios\s*\{\s*font:\s*-apple-system-body/.test(css) && /classList\.add\("ios"\)/.test(read("src/components/shell/app-shell.tsx")), 25);
-  add("U1", "form fields never drop under 16px on iOS (no focus zoom)", /input, textarea, select \{\s*font-size: max\(1rem, 1em\)/.test(css), 15);
+  add("U1", "form fields never drop under 16px on iOS (no focus zoom)", /input, textarea, select \{\s*font-size: max\(1rem, 1em\)/.test(css), 10);
+  add("U1", "form fields keep touch-action: auto (installed iOS web apps open no keyboard otherwise)", /input, textarea, select \{\s*touch-action: auto/.test(css) && !/(^|,)\s*(input|textarea|select)[^{]*\{\s*touch-action: manipulation/m.test(css), 5);
   add("U1", "reduced-motion rule and safe-area utilities present", /prefers-reduced-motion/.test(css) && /@utility pt-safe/.test(css) && /@utility pb-safe/.test(css), 15);
   add("U1", "viewport allows zoom, theme-color declared for both appearances", /viewportFit: "cover"/.test(read("src/app/layout.tsx")) && !/userScalable: false|maximumScale: 1\b/.test(read("src/app/layout.tsx")) && (read("src/app/layout.tsx").match(/prefers-color-scheme/g) || []).length >= 2, 20);
   add("U2", "no gradients or glass effects in components", gradients.length === 0, 30, gradients.join(","));

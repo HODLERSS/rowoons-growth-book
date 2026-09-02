@@ -181,8 +181,13 @@
     min-height: 100dvh;
     text-rendering: optimizeLegibility;
   }
-  a, button, [role="button"], input, textarea, select, summary {
+  a, button, [role="button"], summary {
     touch-action: manipulation;
+  }
+  /* Never on form fields: in an installed iOS web app (Home Screen), touch-action other than auto on a text
+     field places the caret but the keyboard does not open. Safari tabs tolerate it; standalone mode does not. */
+  input, textarea, select {
+    touch-action: auto;
   }
   /* iOS: no long-press callout on app chrome; text stays selectable inside content and inputs. */
   nav, header, button, [role="button"], summary {

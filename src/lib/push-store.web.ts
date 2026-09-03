@@ -1,25 +1,22 @@
 import { del, list, put } from "@vercel/blob";
-import { randomBytes } from "node:crypto";
+import { createHash } from "node:crypto";
 import { open, seal } from "./push-crypto";
 
 /**
- * Web push subscriber list in a Vercel Blob store, as AES-256-GCM ciphertext (push-crypto.ts; without
- * PUSH_STORE_SECRET the file is noise, so the store may be public-read).
- *
- * Every write creates a NEW file (`push/subscriptions/<zero-padded ms>-<rand>.v1`) and the newest file wins.
- * Overwriting one pathname is not an option: Vercel's CDN serves an overwritten blob stale for up to a minute
- * and a read-modify-write on a stale read silently drops subscriptions. `list()` is served by the API, not
- * the CDN, and a fresh pathname is never cached. Older versions are pruned after each write (a few kept).
- * The list is tiny (a few phones); concurrent writes are last-writer-wins, and the client re-registers its
- * subscription on every load, which repairs any lost entry. Server routes only.
+ * Web push subscribers in a Vercel Blob store: ONE blob per subscriber, named by a hash of its endpoint, holding
+ * AES-256-GCM ciphertext (push-crypto.ts; without PUSH_STORE_SECRET the file is noise, so the store may be
+ * public-read). Subscribe = put, unsubscribe = delete, send = list + fetch. There is deliberately no
+ * read-modify-write of a shared list: Blob `list()` is eventually consistent and the CDN serves an overwritten
+ * pathname stale for up to a minute, so a shared list silently lost entries in production. Per-subscriber
+ * blobs make every write independent; at worst a brand-new subscriber shows up in `list()` a few seconds late.
+ * Server routes only.
  */
 export interface PushSubscriptionJSON {
   endpoint: string;
   keys: { p256dh: string; auth: string };
 }
 
-const PREFIX = "push/subscriptions/";
-const KEEP = 3;
+const PREFIX = "push/subs/";
 
 function secret(): string {
   const s = process.env.PUSH_STORE_SECRET;
@@ -27,29 +24,40 @@ function secret(): string {
   return s;
 }
 
-async function versions() {
-  const { blobs } = await list({ prefix: PREFIX, limit: 1000 });
-  // Pathnames sort chronologically (zero-padded epoch millis first).
-  return blobs.filter((b) => b.pathname.endsWith(".v1")).sort((a, b) => (a.pathname < b.pathname ? 1 : -1));
+export function subscriptionPath(endpoint: string): string {
+  return `${PREFIX}${createHash("sha256").update(endpoint).digest("hex")}.v1`;
+}
+
+export async function addSubscription(sub: PushSubscriptionJSON): Promise<void> {
+  const clean: PushSubscriptionJSON = { endpoint: sub.endpoint, keys: { p256dh: sub.keys.p256dh, auth: sub.keys.auth } };
+  await put(subscriptionPath(sub.endpoint), seal(clean, secret()), { access: "public", addRandomSuffix: false, allowOverwrite: true, contentType: "text/plain" });
+}
+
+export async function removeSubscription(endpoint: string): Promise<boolean> {
+  const path = subscriptionPath(endpoint);
+  const { blobs } = await list({ prefix: path, limit: 1 });
+  if (!blobs.length) return false;
+  await del(blobs.map((b) => b.url));
+  return true;
 }
 
 export async function readSubscriptions(): Promise<PushSubscriptionJSON[]> {
-  const [newest] = await versions();
-  if (!newest) return [];
-  const res = await fetch(newest.url, { cache: "no-store" });
-  if (!res.ok) throw new Error(`push store read failed: ${res.status}`);
-  const text = await res.text();
-  if (!text) return [];
-  const parsed = open<PushSubscriptionJSON[]>(text, secret());
-  return Array.isArray(parsed) ? parsed : [];
-}
-
-export async function writeSubscriptions(next: PushSubscriptionJSON[]): Promise<void> {
-  const name = `${PREFIX}${String(Date.now()).padStart(14, "0")}-${randomBytes(3).toString("hex")}.v1`;
-  await put(name, seal(next, secret()), { access: "public", addRandomSuffix: false, contentType: "text/plain" });
-  const all = await versions();
-  const stale = all.filter((b) => b.pathname !== name).slice(KEEP - 1);
-  if (stale.length) await del(stale.map((b) => b.url)).catch(() => {});
+  const { blobs } = await list({ prefix: PREFIX, limit: 1000 });
+  const key = secret();
+  const out: PushSubscriptionJSON[] = [];
+  await Promise.all(
+    blobs.map(async (b) => {
+      try {
+        const res = await fetch(b.url, { cache: "no-store" });
+        if (!res.ok) return;
+        const sub = open<PushSubscriptionJSON>(await res.text(), key);
+        if (isSubscription(sub)) out.push(sub);
+      } catch {
+        /* a corrupt or foreign blob is skipped, never fatal */
+      }
+    })
+  );
+  return out.sort((a, b) => (a.endpoint < b.endpoint ? -1 : 1));
 }
 
 export function isSubscription(v: unknown): v is PushSubscriptionJSON {

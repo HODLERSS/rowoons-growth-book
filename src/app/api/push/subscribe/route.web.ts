@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { isSubscription, readSubscriptions, writeSubscriptions } from "@/lib/push-store.web";
+import { addSubscription, isSubscription } from "@/lib/push-store.web";
 
 export async function POST(request: Request) {
   let body: unknown;
@@ -10,10 +10,7 @@ export async function POST(request: Request) {
   }
   if (!isSubscription(body)) return NextResponse.json({ error: "Invalid subscription" }, { status: 400 });
   try {
-    const existing = await readSubscriptions();
-    const deduped = existing.filter((s) => s.endpoint !== body.endpoint);
-    deduped.push({ endpoint: body.endpoint, keys: { p256dh: body.keys.p256dh, auth: body.keys.auth } });
-    await writeSubscriptions(deduped);
+    await addSubscription(body);
     return NextResponse.json({ ok: true });
   } catch (err) {
     console.error("Push subscribe error:", err);

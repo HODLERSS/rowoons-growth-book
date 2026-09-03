@@ -157,6 +157,7 @@ export const en = {
   "settings.disclaimer": "Sprout is a record-keeping tool, not medical advice. Every child develops at their own pace. If you have a concern about your child’s development, talk to your pediatrician.",
   "settings.privacy": "Privacy policy",
   "settings.terms": "Terms of use",
+  "settings.support": "Help & contact",
   "settings.contact": "Contact",
   "settings.brand": "Brand system",
 
@@ -215,6 +216,7 @@ export const en = {
 
   "legal.privacy_title": "Privacy policy",
   "legal.terms_title": "Terms of use",
+  "legal.support_title": "Help & contact",
   "legal.updated": "Last updated {date}",
 } as const;
 
@@ -375,6 +377,7 @@ export const ko: Record<MessageKey, string> = {
   "settings.disclaimer": "새싹은 기록을 돕는 도구이지 의학적 조언이 아니에요. 아이마다 자라는 속도가 달라요. 아이의 발달이 걱정되면 소아과 선생님과 상담해 주세요.",
   "settings.privacy": "개인정보 처리방침",
   "settings.terms": "이용약관",
+  "settings.support": "도움말과 문의",
   "settings.contact": "문의",
   "settings.brand": "브랜드 시스템",
 
@@ -433,6 +436,7 @@ export const ko: Record<MessageKey, string> = {
 
   "legal.privacy_title": "개인정보 처리방침",
   "legal.terms_title": "이용약관",
+  "legal.support_title": "도움말과 문의",
   "legal.updated": "{date} 업데이트",
 };
 

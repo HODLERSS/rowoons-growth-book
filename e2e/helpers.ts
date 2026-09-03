@@ -5,7 +5,7 @@ export const TODAY = "2026-08-31";
 /** Month for PROFILE on TODAY (16 months 14 days). */
 export const CURRENT_MONTH = 16;
 
-export const ROUTES = ["/", `/milestones/${CURRENT_MONTH}/`, `/play-tips/${CURRENT_MONTH}/`, `/watch-outs/${CURRENT_MONTH}/`, "/memo/", "/memo/new/", "/settings/", "/privacy/", "/terms/"];
+export const ROUTES = ["/", `/milestones/${CURRENT_MONTH}/`, `/play-tips/${CURRENT_MONTH}/`, `/watch-outs/${CURRENT_MONTH}/`, "/memo/", "/memo/new/", "/settings/", "/privacy/", "/terms/", "/support/"];
 
 /** Seed a profile (and optionally language) before any page script runs, and pin the clock. */
 export async function seed(ctx: BrowserContext, opts: { lang?: "en" | "ko"; profile?: typeof PROFILE | null; milestones?: Record<string, unknown>; memos?: unknown[] } = {}) {

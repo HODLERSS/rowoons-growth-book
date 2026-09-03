@@ -5,12 +5,12 @@ import { useLanguage } from "@/hooks/use-language";
 import { SUPPORT_EMAIL } from "@/lib/constants";
 import { formatDate } from "@/i18n";
 
-const UPDATED = "2026-08-31";
+const UPDATED = "2026-09-02";
 
-export function LegalScreen({ kind }: { kind: "privacy" | "terms" }) {
+export function LegalScreen({ kind }: { kind: "privacy" | "terms" | "support" }) {
   const { lang, t } = useLanguage();
-  const title = kind === "privacy" ? t("legal.privacy_title") : t("legal.terms_title");
-  const body = kind === "privacy" ? PRIVACY[lang] : TERMS[lang];
+  const title = kind === "privacy" ? t("legal.privacy_title") : kind === "terms" ? t("legal.terms_title") : t("legal.support_title");
+  const body = kind === "privacy" ? PRIVACY[lang] : kind === "terms" ? TERMS[lang] : SUPPORT[lang];
   return (
     <>
       <Header title={title} backHref="/settings" />
@@ -113,5 +113,36 @@ const TERMS: Record<"en" | "ko", Sec[]> = {
     { h: "내 콘텐츠", p: ["기록과 확인 내역은 사용자의 것이고 기기에만 남아요. 백업은 사용자가 직접 관리해요."] },
     { h: "변경", p: ["지침이 바뀌면 내용과 기능도 바뀔 수 있어요. 새싹은 법이 허용하는 범위에서 어떤 보증도 없이 있는 그대로 제공돼요."] },
     { h: "문의", p: ["문의: {email}"] },
+  ],
+};
+
+const SUPPORT: Record<"en" | "ko", Sec[]> = {
+  en: [
+    { h: "Contact", p: ["Email {email}. Replies usually within two days. Include your iPhone model and iOS version if something looks wrong."] },
+    {
+      h: "Common questions",
+      p: [
+        "Where is my data? On this device only. Settings › Export a backup saves a file you can move to another phone and restore there.",
+        "My baby was born early. Add the due date in the profile; until 24 months Sprout counts from it, the way pediatricians do.",
+        "Why does a milestone say “CDC lists this by 9 months”? The book places some milestones a little early so you can watch for them; the note tells you the age by which most children do it.",
+        "Reminders: the iOS app schedules them on the phone (a note on each monthly birthday and one tip on Sunday mornings). On the web, add Sprout to your Home Screen, then turn notifications on from the Home card.",
+        "Wrong or unclear content? Every item has a source card with a link and the date the sources were last checked. Tell us what you found; corrections ship quickly.",
+      ],
+    },
+    { h: "Not medical advice", p: ["Sprout is a record-keeping tool. If you have any concern about your child’s health or development, talk to your pediatrician."] },
+  ],
+  ko: [
+    { h: "문의", p: ["{email}로 메일을 보내 주세요. 보통 이틀 안에 답해 드려요. 문제가 있다면 아이폰 기종과 iOS 버전을 함께 적어 주세요."] },
+    {
+      h: "자주 묻는 질문",
+      p: [
+        "내 데이터는 어디에 있나요? 이 기기에만 있어요. 설정 › 백업 내보내기로 파일을 만들어 다른 휴대폰에서 불러올 수 있어요.",
+        "아기가 일찍 태어났어요. 아기 정보에 출산 예정일을 넣어 주세요. 24개월까지는 소아과에서처럼 예정일 기준으로 계산해요.",
+        "발달 이정표에 “CDC는 9개월까지…”라고 적힌 이유는? 미리 살펴볼 수 있도록 조금 이른 달에 넣은 항목이 있어요. 그 문장은 대부분의 아이가 해내는 시기를 알려 드리는 거예요.",
+        "알림: iOS 앱은 휴대폰 안에서 예약해요(한 달 더 자란 날 아침, 그리고 일요일 아침 팁 하나). 웹에서는 홈 화면에 추가한 뒤 홈 카드에서 알림을 켜 주세요.",
+        "내용이 틀리거나 어색하다면? 모든 항목에 출처 카드와 링크, 출처 확인일이 있어요. 알려 주시면 빠르게 고칠게요.",
+      ],
+    },
+    { h: "의학적 조언이 아니에요", p: ["새싹은 기록 도구예요. 아이의 건강이나 발달이 걱정되면 소아과 선생님과 상담해 주세요."] },
   ],
 };

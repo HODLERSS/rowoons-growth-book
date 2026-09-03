@@ -171,6 +171,10 @@ export function SettingsScreen() {
             {t("settings.terms")}
             <ChevronRight className="size-4 text-muted-foreground" aria-hidden="true" />
           </Link>
+          <Link href="/support" className="flex min-h-[3.25rem] items-center justify-between px-4 text-[0.9375rem] font-medium hover:bg-hover/60">
+            {t("settings.support")}
+            <ChevronRight className="size-4 text-muted-foreground" aria-hidden="true" />
+          </Link>
           <a href={`mailto:${SUPPORT_EMAIL}`} className="flex min-h-[3.25rem] items-center justify-between px-4 text-[0.9375rem] font-medium hover:bg-hover/60">
             {t("settings.contact")}
             <span className="text-[0.8125rem] text-muted-foreground" translate="no">

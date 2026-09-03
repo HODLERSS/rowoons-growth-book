@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { notificationTarget } from "@/lib/notification-target";
 import { useBaby } from "@/hooks/use-baby";
 import { useLanguage } from "@/hooks/use-language";
 import { useSettings } from "@/hooks/use-settings";
@@ -27,6 +28,19 @@ function Effects() {
     if (isNative() || !("serviceWorker" in navigator) || process.env.NODE_ENV !== "production") return;
     navigator.serviceWorker.register("/sw.js").catch(() => {});
   }, []);
+  // Native: a tapped reminder opens the month it is about.
+  const router = useRouter();
+  useEffect(() => {
+    if (!isNative()) return;
+    let remove: (() => void) | undefined;
+    import("@capacitor/local-notifications").then(async ({ LocalNotifications }) => {
+      const handle = await LocalNotifications.addListener("localNotificationActionPerformed", (event) => {
+        router.push(notificationTarget(event.notification.extra));
+      });
+      remove = () => void handle.remove();
+    });
+    return () => remove?.();
+  }, [router]);
   // Native: re-plan the weekly notes once per launch so they follow the baby's month and what was confirmed.
   const { baby } = useBaby();
   const { settings } = useSettings();
@@ -46,7 +60,7 @@ function Effects() {
 export function AppShell({ children }: { children: React.ReactNode }) {
   const { t } = useLanguage();
   const pathname = usePathname();
-  const legal = pathname === "/privacy" || pathname === "/terms" || pathname.startsWith("/privacy/") || pathname.startsWith("/terms/");
+  const legal = ["/privacy", "/terms", "/support"].some((p) => pathname === p || pathname.startsWith(p + "/"));
   return (
     <>
       <Effects />

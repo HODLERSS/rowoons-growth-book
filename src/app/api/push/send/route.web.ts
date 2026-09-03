@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import webpush from "web-push";
-import { readSubscriptions, writeSubscriptions } from "@/lib/push-store.web";
+import { readSubscriptions, removeSubscription } from "@/lib/push-store.web";
 
 export async function POST(request: Request) {
   try {
@@ -31,7 +31,7 @@ export async function POST(request: Request) {
         }
       })
     );
-    if (expired.length > 0) await writeSubscriptions(all.filter((s) => !expired.includes(s.endpoint)));
+    await Promise.all(expired.map((e) => removeSubscription(e).catch(() => false)));
     return NextResponse.json({ sent, failed, expired: expired.length });
   } catch (err) {
     console.error("Push send error:", err);

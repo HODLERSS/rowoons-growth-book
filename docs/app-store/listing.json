@@ -15,11 +15,11 @@
   "exportCompliance": "Uses only standard HTTPS (exempt). ITSAppUsesNonExemptEncryption = NO in Info.plist.",
   "urls": {
     "marketing": "https://baby.minjae.co",
-    "support": "https://baby.minjae.co/settings/",
+    "support": "https://baby.minjae.co/support/",
     "privacyPolicy": "https://baby.minjae.co/privacy/"
   },
   "copyright": "© 2026 Minjae Lee",
-  "reviewNotes": "Sprout is an offline record-keeping app for parents. No login is needed: enter any name and a birthday (for example Rowoon, 2025-04-17) to open the book. Content is drawn from CDC, AAP, WHO, Zero to Three, NAEYC, CPSC and Pathways.org; every item shows its source and a medical disclaimer (Settings › About). Notifications are optional local reminders on the child's monthly birthday. Language can be switched in Settings (English / Korean).",
+  "reviewNotes": "Sprout is an offline record-keeping app for parents. No login is needed: enter any name and a birthday (for example Rowoon, 2025-04-17) to open the book; the optional due date field only matters for babies born 3+ weeks early (content then follows corrected age until 24 months). Content is drawn from CDC, AAP, WHO, Zero to Three, NAEYC, CPSC and Pathways.org; every item shows its source with a short summary of the cited page, a link, and the date the sources were last checked, plus a medical disclaimer (onboarding and Settings › About). Notifications are optional local reminders scheduled on the device: one on the child's monthly birthday and one short tip on Sunday mornings; nothing is sent from a server and no data leaves the device. Language can be switched in Settings (English / Korean).",
   "locales": {
     "en": {
       "name": "Sprout – Baby Milestones",
@@ -36,6 +36,12 @@
       "keywords": "아기,발달,이정표,육아,신생아,월령,놀이,안전,기록,일기,milestones,baby",
       "description": "새싹은 생후 36개월까지, 아기의 한 달 한 달을 담는 책이에요.\n\n이런 것들이 들어 있어요\n• 발달 이정표 — 사회성, 언어, 인지, 신체 영역의 달별 발달 이정표. CDC와 AAP 자료를 바탕으로 했어요. 확인하면 날짜와 함께 잎이 초록으로 바뀌어요.\n• 놀이 — 달마다 3가지 이상의 월령 맞춤 놀이. 준비물과 왜 도움이 되는지도 함께요.\n• 안전 — 이번 달 꼭 살펴야 할 주의사항을 긴급, 주의, 참고로 나누고, 이렇게 해 주세요를 덧붙였어요.\n• 부모님께 — 달마다 지금 이 시기에 무슨 일이 일어나는지 담담하게 적은 글과, 엄마 아빠를 위한 한 줄.\n• 기록 — 무엇이든 적어 두세요. 마크다운도 돼요. 휴대폰 안에만 남아요.\n\n모든 항목에 출처가 있어요\n발달 이정표, 놀이, 주의사항은 CDC, AAP(HealthyChildren.org), WHO, Zero to Three, NAEYC, CPSC, Pathways.org를 인용하고, 해당 페이지 내용을 짧게 요약한 글과 링크를 함께 보여 드려요. 2026년 9월에 출처를 다시 확인했어요.\n\n한국어와 영어\n번역한 게 아니라 두 언어로 따로 썼어요. 설정에서 언제든 바꿀 수 있어요.\n\n처음부터 개인정보를 지켜요\n계정도, 추적도, 광고도 없어요. 모든 정보는 기기에만 저장돼요. 언제든 백업을 내보낼 수 있어요.\n\n다음 달 미리보기\n아기는 달력보다 먼저 구르고, 기어오르고, 잡아당겨요. 홈 화면에서 다음 달 가장 중요한 안전 주의사항을 한 달 먼저 보여 드려요.\n\n일찍 태어났다면\n출산 예정일을 입력하면 소아과에서처럼 24개월까지 예정일 기준으로 계산해요.\n\n알림\n선택 사항이에요. 아기가 한 달 더 자란 날 아침, 그리고 일요일 아침마다 놀이나 안전 팁을 하나씩 알려 드려요.\n\n새싹은 기록을 돕는 도구이지 의학적 조언이 아니에요. 아이마다 자라는 속도가 달라요. 걱정되는 점이 있으면 소아과 선생님과 상담해 주세요.",
       "whatsNew": "첫 출시예요."
+    }
+  },
+  "testflight": {
+    "whatToTest": {
+      "en": "1) Onboarding: name, birthday, optional due date; the form must fit or scroll on your screen and the keyboard must open on every field. 2) Home: confirm a milestone (leaf turns green, haptic), read the note, check the 'Coming up' card and tap 'Got it'. 3) Settings › Reminders: allow notifications; a reminder is scheduled for the next monthly birthday and one for next Sunday 9 am. 4) Switch language to Korean and back; switch the phone to dark mode. 5) Journal: write, edit, delete an entry; Settings › Export a backup then Restore it. Tell us anything that looked cut off, mistranslated, or unclear.",
+      "ko": "1) 시작하기: 이름, 생일, (선택) 출산 예정일. 화면에 맞게 보이거나 스크롤돼야 하고, 모든 입력란에서 키보드가 열려야 해요. 2) 홈: 발달 이정표 하나를 확인하고(잎이 초록으로, 진동), 이번 달 한마디를 읽고, '다음 달 미리보기'에서 '확인했어요'를 눌러 보세요. 3) 설정 › 알림: 알림을 허용하면 다음 달 생일 아침과 다음 일요일 아침 9시에 알림이 예약돼요. 4) 언어를 한국어/영어로 바꿔 보고, 휴대폰을 다크 모드로 바꿔 보세요. 5) 기록: 쓰기, 수정, 삭제. 설정 › 백업 내보내기 후 불러오기. 잘리거나, 어색하거나, 이해하기 어려운 부분이 있으면 알려 주세요."
     }
   }
 }

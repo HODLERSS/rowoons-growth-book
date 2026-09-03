@@ -51,3 +51,32 @@ test.describe("first run", () => {
     await expect(page.getByRole("dialog")).toBeVisible();
   });
 });
+
+test.describe("small iPhone (SE-class, 375×667)", () => {
+  test.use({ viewport: { width: 375, height: 667 } });
+
+  test("a form taller than the screen scrolls inside the dialog so every field and the submit button stay reachable", async ({ page }) => {
+    await pinClock(page);
+    await gotoReady(page, "/");
+    const dialog = page.getByRole("dialog");
+    await dialog.getByLabel("Baby’s name").fill("Rowoon");
+    await dialog.getByLabel("Korean name (optional)").fill("로운");
+    await dialog.getByLabel("Birthday").fill("2025-04-17");
+    await dialog.getByRole("button", { name: /Born 3\+ weeks early/ }).click();
+    await dialog.getByLabel("Due date").fill("2025-05-01");
+    const submit = dialog.getByRole("button", { name: "Get started" });
+    await submit.scrollIntoViewIfNeeded();
+    const box = await submit.boundingBox();
+    expect(box, "submit button has a box").not.toBeNull();
+    expect(box!.y + box!.height, "submit button is inside the viewport after scrolling").toBeLessThanOrEqual(667);
+    expect(box!.y, "submit button is inside the viewport after scrolling").toBeGreaterThanOrEqual(0);
+    // The top of the form is reachable too (not clipped above the screen).
+    const heading = dialog.getByRole("heading", { name: "Welcome to Sprout" });
+    await heading.scrollIntoViewIfNeeded();
+    const hb = await heading.boundingBox();
+    expect(hb!.y).toBeGreaterThanOrEqual(0);
+    await submit.click();
+    await expect(dialog).toBeHidden();
+    await expect(page.getByRole("button", { name: "Edit profile" })).toContainText("Rowoon");
+  });
+});

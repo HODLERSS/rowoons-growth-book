@@ -1,46 +1,16 @@
 import { NextResponse } from "next/server";
-import { createClient } from "@vercel/kv";
-
-const KV_KEY = "push:subscriptions";
-
-interface PushSubscriptionJSON {
-  endpoint: string;
-  keys: {
-    p256dh: string;
-    auth: string;
-  };
-}
+import { readSubscriptions } from "@/lib/push-store.web";
 
 export async function POST(request: Request) {
   try {
-    const { password } = await request.json();
-
-    if (password !== process.env.ADMIN_PASSWORD) {
-      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-    }
-
-    const kv = createClient({
-      url: process.env.KV_REST_API_URL!,
-      token: process.env.KV_REST_API_TOKEN!,
-    });
-
-    const subscriptions: PushSubscriptionJSON[] = (await kv.get(KV_KEY)) || [];
-
-    // Return a safe summary (endpoint domain + short ID, not full keys)
-    const subscribers = subscriptions.map((sub, i) => {
-      const url = new URL(sub.endpoint);
-      return {
-        id: i,
-        endpoint: sub.endpoint,
-        domain: url.hostname,
-        shortId: sub.endpoint.slice(-8),
-      };
-    });
-
-    return NextResponse.json({ subscribers, total: subscribers.length });
+    const { password } = (await request.json()) as { password?: unknown };
+    if (!process.env.ADMIN_PASSWORD || password !== process.env.ADMIN_PASSWORD) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    const subscriptions = await readSubscriptions();
+    // A safe summary: endpoint host and a short id, never the keys.
+    const subscribers = subscriptions.map((sub, i) => ({ id: i, endpoint: sub.endpoint, domain: new URL(sub.endpoint).hostname, shortId: sub.endpoint.slice(-8) }));
+    return NextResponse.json({ subscribers, total: subscribers.length, count: subscribers.length });
   } catch (err) {
     console.error("List subscribers error:", err);
-    const message = err instanceof Error ? err.message : "Failed to list";
-    return NextResponse.json({ error: message }, { status: 500 });
+    return NextResponse.json({ error: err instanceof Error ? err.message : "Failed to list" }, { status: 500 });
   }
 }

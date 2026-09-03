@@ -52,7 +52,14 @@ export function usePush() {
       .getRegistration()
       .then((reg) => reg?.pushManager.getSubscription())
       .then((sub) => {
-        if (!cancelled) setSubscribed(!!sub);
+        if (cancelled) return;
+        setSubscribed(!!sub);
+        // Re-register an existing browser subscription with the server: heals a list lost server-side
+        // (a store outage or migration) without asking the parent to toggle anything. Idempotent.
+        if (sub) {
+          const json = sub.toJSON();
+          if (json.endpoint && json.keys) fetch("/api/push/subscribe", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(json), keepalive: true }).catch(() => {});
+        }
       })
       .catch(() => {});
     return () => {

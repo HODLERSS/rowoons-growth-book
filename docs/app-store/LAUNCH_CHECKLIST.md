@@ -52,6 +52,9 @@ npm run cap:open          # or: open ios/App/App.xcodeproj
 - Re-run `npm run qa` and regenerate screenshots (`node scripts/qa/screenshots.mjs`) when screens change.
 - Build order matters locally as in CI: `npm run build:native` **before** `npm run build` (the native export rewrites `.next/BUILD_ID`, which breaks a running `next start` and the screenshot/E2E runs against it).
 
+## Web push infrastructure (baby.minjae.co only)
+- Subscriptions live in the Vercel Blob store `sprout-push-main` as one AES-256-GCM-encrypted file; the server needs `BLOB_READ_WRITE_TOKEN` (linked by the store) and `PUSH_STORE_SECRET` (64 hex chars) plus the three VAPID variables and `ADMIN_PASSWORD`. The earlier Upstash/KV store was deleted upstream on 2026-09-02, which made every subscribe return 500; the client now re-registers an existing browser subscription on each load so a store loss heals itself.
+
 ## Known limits to disclose in TestFlight notes
 - Web push (baby.minjae.co) and native reminders are separate systems; the iOS app uses local notifications only.
 - Data lives on one device. Use Settings ▸ Export a backup to move it (the file opens in the share sheet on iOS).

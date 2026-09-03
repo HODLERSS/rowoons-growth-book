@@ -12,7 +12,7 @@ which are not available on the build machine.
 - `docs/app-store/listing.json` — name, subtitle, promotional text, keywords, description and What's New in **English and Korean**, category, age rating answers, App Privacy answers, review notes, URLs.
 - `docs/app-store/screenshots/` — 5 framed screenshots per language at 1320×2868 (6.9″) and 1290×2796 (6.7″).
 - Privacy policy and terms live at https://baby.minjae.co/privacy/ and https://baby.minjae.co/terms/.
-- `npm run qa` — the quality gate (docs/QUALITY.md). Run it before every submission.
+- `npm run qa` — the quality gate (docs/QUALITY.md). Run it before every submission, with `npm run build && npm run start` serving the web build on :3000 (the Lighthouse and bundle-size checks read from it).
 
 ## 1. Build the native bundle (any machine with Node)
 ```bash

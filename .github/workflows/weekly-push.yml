@@ -1,0 +1,15 @@
+name: Weekly push notes
+# Runs hourly; the endpoint sends only to subscribers whose local time is Sunday 09:00 (once per week each).
+on:
+  schedule:
+    - cron: "5 * * * *"
+  workflow_dispatch:
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger the weekly job
+        run: |
+          code=$(curl -s -o /tmp/out.json -w "%{http_code}" -X POST "${{ secrets.APP_URL }}/api/cron/weekly/" -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}")
+          cat /tmp/out.json; echo
+          test "$code" = "200"

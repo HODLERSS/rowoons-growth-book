@@ -9,8 +9,46 @@
     "expected": "4+"
   },
   "appPrivacy": {
-    "dataCollection": "Data Not Collected",
-    "notes": "No account, no analytics, no advertising SDKs, no tracking. All data stays on device. The iOS app schedules local notifications only; it never contacts a server. (The web version's optional push subscription is not part of the iOS binary.)"
+    "summary": "Optional account. Guests: Data Not Collected. Signed-in users: Contact Info (email) and User Content (journal, milestones, baby profile) linked to the user, used only for App Functionality; no tracking, no third-party advertising.",
+    "dataTypes": [
+      {
+        "type": "Contact Info › Email Address",
+        "collected": true,
+        "linkedToUser": true,
+        "usedForTracking": false,
+        "purposes": [
+          "App Functionality"
+        ],
+        "note": "Only when the user signs in (Google or email link)."
+      },
+      {
+        "type": "User Content › Other User Content",
+        "collected": true,
+        "linkedToUser": true,
+        "usedForTracking": false,
+        "purposes": [
+          "App Functionality"
+        ],
+        "note": "Journal entries, confirmed milestones, baby name/birthday, settings; stored only when signed in."
+      },
+      {
+        "type": "Identifiers › User ID",
+        "collected": true,
+        "linkedToUser": true,
+        "usedForTracking": false,
+        "purposes": [
+          "App Functionality"
+        ],
+        "note": "Random account ID from Supabase Auth."
+      },
+      {
+        "type": "Health & Fitness",
+        "collected": false,
+        "note": "Milestone confirmations are parent notes, not health records, and are entered voluntarily."
+      }
+    ],
+    "accountDeletion": "Settings › Account › Delete account (in-app, immediate).",
+    "privacyPolicyUrl": "https://baby.minjae.co/privacy/"
   },
   "exportCompliance": "Uses only standard HTTPS (exempt). ITSAppUsesNonExemptEncryption = NO in Info.plist.",
   "urls": {
@@ -19,7 +57,7 @@
     "privacyPolicy": "https://baby.minjae.co/privacy/"
   },
   "copyright": "© 2026 Minjae Lee",
-  "reviewNotes": "Sprout is an offline record-keeping app for parents. No login is needed: enter any name and a birthday (for example Rowoon, 2025-04-17) to open the book; the optional due date field only matters for babies born 3+ weeks early (content then follows corrected age until 24 months). Content is drawn from CDC, AAP, WHO, Zero to Three, NAEYC, CPSC and Pathways.org; every item shows its source with a short summary of the cited page, a link, and the date the sources were last checked, plus a medical disclaimer (onboarding and Settings › About). Notifications are optional local reminders scheduled on the device: one on the child's monthly birthday and one short tip on Sunday mornings; nothing is sent from a server and no data leaves the device. Language can be switched in Settings (English / Korean).",
+  "reviewNotes": "Sprout is an offline record-keeping app for parents. No login is needed (an optional account backs records up: in this iOS build sign-in is by email link only; deletion is in Settings › Account › Delete account and takes effect immediately): enter any name and a birthday (for example Rowoon, 2025-04-17) to open the book; the optional due date field only matters for babies born 3+ weeks early (content then follows corrected age until 24 months). Content is drawn from CDC, AAP, WHO, Zero to Three, NAEYC, CPSC and Pathways.org; every item shows its source with a short summary of the cited page, a link, and the date the sources were last checked, plus a medical disclaimer (onboarding and Settings › About). Notifications are optional local reminders scheduled on the device: one on the child's monthly birthday and one short tip on Sunday mornings; nothing is sent from a server and no data leaves the device. Language can be switched in Settings (English / Korean).",
   "locales": {
     "en": {
       "name": "Sprout – Baby Milestones",

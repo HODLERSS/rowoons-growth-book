@@ -66,7 +66,16 @@ function emit(key: string) {
   listeners.get(key)?.forEach((l) => l());
 }
 
-export function writeKey(key: string, value: unknown) {
+/** Observers of every write (the account sync layer). `fromSync` marks writes that came from the account copy. */
+export type WriteOptions = { fromSync?: boolean };
+type WriteListener = (key: string, value: unknown, opts: WriteOptions) => void;
+const writeListeners = new Set<WriteListener>();
+export function onWrite(listener: WriteListener): () => void {
+  writeListeners.add(listener);
+  return () => writeListeners.delete(listener);
+}
+
+export function writeKey(key: string, value: unknown, opts: WriteOptions = {}) {
   if (typeof window === "undefined") return;
   try {
     if (value === null || value === undefined) localStorage.removeItem(key);
@@ -76,6 +85,7 @@ export function writeKey(key: string, value: unknown) {
     cache.set(key, { raw: JSON.stringify(value), value });
   }
   emit(key);
+  writeListeners.forEach((l) => l(key, value, opts));
 }
 
 export function subscribeKey(key: string, listener: Listener): () => void {

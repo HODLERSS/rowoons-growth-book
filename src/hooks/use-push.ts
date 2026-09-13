@@ -1,6 +1,9 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import { KEYS, readKey, jsonOr } from "@/lib/store";
+import { supabase } from "@/lib/supabase";
+import type { BabyInfo } from "@/lib/types";
 
 export type PushPermission = "default" | "granted" | "denied" | "unsupported";
 
@@ -38,6 +41,21 @@ function detect(): PushPermission {
   return Notification.permission as PushPermission;
 }
 
+type PushSubscriptionJSON = { endpoint: string; keys: { p256dh: string; auth: string } };
+
+/** What the server needs to send month-appropriate weekly notes without an account: a profile snapshot. */
+async function subscriptionPayload(json: PushSubscriptionJSON) {
+  const baby = readKey(KEYS.profile, jsonOr<BabyInfo | null>(null));
+  const lang = readKey(KEYS.language, jsonOr<string | null>(null)) ?? (navigator.language.startsWith("ko") ? "ko" : "en");
+  let userId: string | undefined;
+  try {
+    userId = (await supabase()?.auth.getSession())?.data.session?.user.id;
+  } catch {
+    /* no account */
+  }
+  return { ...json, lang, tz: Intl.DateTimeFormat().resolvedOptions().timeZone, name: baby?.nameKo && lang === "ko" ? baby.nameKo : baby?.name, birthDate: baby?.birthDate, dueDate: baby?.dueDate, userId };
+}
+
 /** Web push subscription state (web only; the native app uses local reminders instead). */
 export function usePush() {
   const [permission, setPermission] = useState<PushPermission>(detect);
@@ -57,8 +75,8 @@ export function usePush() {
         // Re-register an existing browser subscription with the server: heals a list lost server-side
         // (a store outage or migration) without asking the parent to toggle anything. Idempotent.
         if (sub) {
-          const json = sub.toJSON();
-          if (json.endpoint && json.keys) fetch("/api/push/subscribe", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(json), keepalive: true }).catch(() => {});
+          const json = sub.toJSON() as PushSubscriptionJSON;
+          if (json.endpoint && json.keys) void subscriptionPayload(json).then((payload) => fetch("/api/push/subscribe", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload), keepalive: true }).catch(() => {}));
         }
       })
       .catch(() => {});
@@ -78,9 +96,9 @@ export function usePush() {
       const vapidKey = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY;
       if (!vapidKey) throw new Error("Missing VAPID key");
       const subscription = await registration.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: urlBase64ToUint8Array(vapidKey) });
-      const json = subscription.toJSON();
+      const json = subscription.toJSON() as PushSubscriptionJSON;
       if (!json.endpoint || !json.keys) throw new Error("Incomplete subscription");
-      const res = await fetch("/api/push/subscribe", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(json) });
+      const res = await fetch("/api/push/subscribe", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(await subscriptionPayload(json)) });
       if (!res.ok) throw new Error(`Server error ${res.status}`);
       setSubscribed(true);
     } catch (err) {

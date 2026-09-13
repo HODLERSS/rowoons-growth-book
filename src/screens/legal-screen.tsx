@@ -5,7 +5,7 @@ import { useLanguage } from "@/hooks/use-language";
 import { SUPPORT_EMAIL } from "@/lib/constants";
 import { formatDate } from "@/i18n";
 
-const UPDATED = "2026-09-02";
+const UPDATED = "2026-09-13";
 
 export function LegalScreen({ kind }: { kind: "privacy" | "terms" | "support" }) {
   const { lang, t } = useLanguage();
@@ -37,12 +37,20 @@ type Sec = { h: string; p: string[] };
 
 const PRIVACY: Record<"en" | "ko", Sec[]> = {
   en: [
-    { h: "The short version", p: ["Sprout keeps your baby’s information on your device. There is no account, no analytics, no advertising, and no data is sold or shared."] },
+    { h: "The short version", p: ["Sprout works without an account and keeps your baby’s information on your device. If you choose to sign in, the same records are also stored in your Sprout account so you can back them up and use another phone. There is no analytics, no advertising, and no data is sold or shared."] },
     {
       h: "What Sprout stores",
       p: [
-        "Your baby’s name and birthday, the milestones you confirm (with the date you confirmed them), your journal entries, and your language and settings.",
-        "On the web this lives in your browser’s storage; in the iOS app it lives in the app’s storage on your phone. Deleting the app, clearing site data, or using Settings › Delete all data removes it.",
+        "Your baby’s name, birthday and (optional) due date, the milestones you confirm (with the date you confirmed them), the safety notes you mark as read, your journal entries, and your language and settings.",
+        "Without an account this lives only on your device: in your browser’s storage on the web, or in the app’s storage on your phone. Deleting the app, clearing site data, or using Settings › Delete all data removes it.",
+      ],
+    },
+    {
+      h: "If you sign in",
+      p: [
+        "Signing in is optional. You can sign in with Google or with a link sent to your email. Sprout receives only your email address and a random account ID; it never sees your Google password, contacts, or other Google data.",
+        "With an account, the records listed above are stored in Sprout’s database, hosted by Supabase in the United States (AWS us-east-1), encrypted in transit and at rest, and readable only by you through your signed-in session. Sprout staff do not read your records except to fix a problem you report.",
+        "Signing out keeps the copy on your phone and stops mirroring. Settings › Delete account removes the account and every record stored in it within minutes; that cannot be undone.",
       ],
     },
     {
@@ -53,8 +61,12 @@ const PRIVACY: Record<"en" | "ko", Sec[]> = {
       h: "Reminders",
       p: [
         "In the iOS app, monthly reminders are scheduled on your phone. Nothing leaves the device.",
-        "In the web app, if you turn on notifications, your browser issues an anonymous push subscription (an endpoint URL and encryption keys). Sprout stores that subscription on its server to send reminders. It contains no personal information and is deleted when you turn notifications off or when the subscription expires.",
+        "In the web app, if you turn on notifications, your browser issues a push subscription (an endpoint URL and encryption keys). Sprout stores it on its server together with your language, time zone and your baby’s name and birthday, so that the Sunday-morning note fits your baby’s month. It is deleted when you turn notifications off, when the subscription expires, or when you delete your account.",
       ],
+    },
+    {
+      h: "Service providers",
+      p: ["Vercel hosts the website and its server functions. Supabase hosts account sign-in and the account database. Google provides sign-in when you choose it. Each processes data only to provide that service."],
     },
     {
       h: "External links",
@@ -64,12 +76,20 @@ const PRIVACY: Record<"en" | "ko", Sec[]> = {
     { h: "Contact", p: ["Questions about privacy: {email}."] },
   ],
   ko: [
-    { h: "요약", p: ["새싹은 아기 정보를 사용자의 기기에만 보관해요. 계정도, 분석 도구도, 광고도 없고, 어떤 정보도 팔거나 공유하지 않아요."] },
+    { h: "요약", p: ["새싹은 계정 없이도 쓸 수 있고, 아기 정보를 사용자의 기기에 보관해요. 로그인하면 같은 기록이 새싹 계정에도 저장돼서 백업하고 다른 휴대폰에서도 쓸 수 있어요. 분석 도구도, 광고도 없고, 어떤 정보도 팔거나 공유하지 않아요."] },
     {
       h: "새싹이 저장하는 정보",
       p: [
-        "아기 이름과 생일, 확인한 발달 이정표(확인한 날짜 포함), 기록, 언어와 설정이에요.",
-        "웹에서는 브라우저 저장 공간에, iOS 앱에서는 휴대폰의 앱 저장 공간에 보관돼요. 앱을 삭제하거나, 사이트 데이터를 지우거나, 설정 › 모든 데이터 삭제를 누르면 지워져요.",
+        "아기 이름, 생일, (선택) 출산 예정일, 확인한 발달 이정표(확인한 날짜 포함), 읽음 표시한 주의사항, 기록, 언어와 설정이에요.",
+        "계정이 없으면 기기에만 보관돼요. 웹에서는 브라우저 저장 공간에, iOS 앱에서는 휴대폰의 앱 저장 공간에 있어요. 앱을 삭제하거나, 사이트 데이터를 지우거나, 설정 › 모든 데이터 삭제를 누르면 지워져요.",
+      ],
+    },
+    {
+      h: "로그인하면",
+      p: [
+        "로그인은 선택이에요. Google 계정이나 이메일로 받은 링크로 로그인할 수 있어요. 새싹은 이메일 주소와 무작위 계정 ID만 받고, Google 비밀번호나 연락처 같은 다른 정보는 볼 수 없어요.",
+        "계정이 있으면 위 기록이 새싹 데이터베이스에 저장돼요. 데이터베이스는 Supabase가 미국(AWS us-east-1)에서 운영하고, 전송 중과 저장 시 암호화되며, 로그인한 본인만 읽을 수 있어요. 새싹 운영자는 사용자가 문제를 알려온 경우가 아니면 기록을 열어 보지 않아요.",
+        "로그아웃하면 휴대폰의 사본은 남고 동기화만 멈춰요. 설정 › 계정 삭제를 누르면 계정과 계정에 저장된 모든 기록이 몇 분 안에 지워지고, 되돌릴 수 없어요.",
       ],
     },
     { h: "백업", p: ["설정 › 백업 내보내기로 위 정보가 담긴 파일을 만들 수 있어요. 파일을 어디에 둘지는 사용자가 정해요. 백업을 불러오면 기기의 데이터가 백업 내용으로 바뀌어요."] },
@@ -77,9 +97,10 @@ const PRIVACY: Record<"en" | "ko", Sec[]> = {
       h: "알림",
       p: [
         "iOS 앱의 월별 알림은 휴대폰 안에서 예약돼요. 어떤 정보도 기기 밖으로 나가지 않아요.",
-        "웹에서 알림을 켜면 브라우저가 익명 푸시 구독 정보(엔드포인트 주소와 암호화 키)를 만들어요. 새싹은 알림을 보내기 위해 이 구독 정보를 서버에 보관해요. 개인정보는 들어 있지 않고, 알림을 끄거나 구독이 만료되면 삭제돼요.",
+        "웹에서 알림을 켜면 브라우저가 푸시 구독 정보(엔드포인트 주소와 암호화 키)를 만들어요. 새싹은 일요일 아침 알림을 아기 월령에 맞추기 위해 이 정보를 언어, 시간대, 아기 이름과 생일과 함께 서버에 보관해요. 알림을 끄거나, 구독이 만료되거나, 계정을 삭제하면 지워져요.",
       ],
     },
+    { h: "서비스 제공자", p: ["웹사이트와 서버 기능은 Vercel이, 로그인과 계정 데이터베이스는 Supabase가, 선택 시 로그인은 Google이 제공해요. 각 회사는 해당 서비스를 제공하는 데에만 정보를 처리해요."] },
     { h: "외부 링크", p: ["출처 링크는 CDC, AAP, WHO, Zero to Three, NAEYC, CPSC, Pathways.org가 운영하는 페이지로 연결돼요. 각 사이트의 개인정보 정책은 따로 있어요."] },
     { h: "어린이", p: ["새싹은 부모와 양육자를 위한 도구예요. 어린이의 정보를 의도적으로 수집하지 않아요."] },
     { h: "문의", p: ["개인정보 관련 문의: {email}"] },
@@ -100,7 +121,8 @@ const TERMS: Record<"en" | "ko", Sec[]> = {
         "Nothing in Sprout is medical advice, diagnosis or treatment. Every child develops at their own pace. If you have any concern about your child’s health or development, talk to your pediatrician. In an emergency, call your local emergency number.",
       ],
     },
-    { h: "Your content", p: ["Journal entries and confirmations are yours and stay on your device. You are responsible for keeping backups."] },
+    { h: "Your content", p: ["Journal entries and confirmations are yours. Without an account they stay on your device and you are responsible for backups; with an account they are also stored under your account and you can delete them, or the whole account, at any time from Settings."] },
+    { h: "Accounts", p: ["An account is optional and free. Keep your sign-in method (Google account or email) secure; anyone who can use it can see your records. Sprout may suspend an account used to abuse the service."] },
     { h: "Changes", p: ["Content and features may change as guidance is updated. Sprout is provided as is, without warranty of any kind, to the extent permitted by law."] },
     { h: "Contact", p: ["Questions: {email}."] },
   ],
@@ -110,7 +132,8 @@ const TERMS: Record<"en" | "ko", Sec[]> = {
       h: "의학적 조언이 아니에요",
       p: ["새싹의 내용은 진단이나 치료를 위한 의학적 조언이 아니에요. 아이마다 자라는 속도가 달라요. 아이의 건강이나 발달이 걱정되면 소아과 선생님과 상담해 주세요. 응급 상황에서는 119에 연락해 주세요."],
     },
-    { h: "내 콘텐츠", p: ["기록과 확인 내역은 사용자의 것이고 기기에만 남아요. 백업은 사용자가 직접 관리해요."] },
+    { h: "내 콘텐츠", p: ["기록과 확인 내역은 사용자의 것이에요. 계정이 없으면 기기에만 남고 백업은 직접 관리해요. 계정이 있으면 계정에도 저장되고, 설정에서 언제든 기록이나 계정 전체를 삭제할 수 있어요."] },
+    { h: "계정", p: ["계정은 선택이고 무료예요. 로그인 수단(Google 계정이나 이메일)을 안전하게 관리해 주세요. 그 수단을 쓸 수 있는 사람은 기록을 볼 수 있어요. 서비스를 악용하는 계정은 정지될 수 있어요."] },
     { h: "변경", p: ["지침이 바뀌면 내용과 기능도 바뀔 수 있어요. 새싹은 법이 허용하는 범위에서 어떤 보증도 없이 있는 그대로 제공돼요."] },
     { h: "문의", p: ["문의: {email}"] },
   ],

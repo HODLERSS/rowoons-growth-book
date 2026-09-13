@@ -21,6 +21,9 @@ export default function AdminPage() {
   const [authenticated, setAuthenticated] = useState(false);
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
+  const [url, setUrl] = useState("");
+  const [weeklyBusy, setWeeklyBusy] = useState(false);
+  const [weeklyResult, setWeeklyResult] = useState<string | null>(null);
   const [sending, setSending] = useState(false);
   const [result, setResult] = useState<string | null>(null);
   const [subscribers, setSubscribers] = useState<Subscriber[]>([]);
@@ -99,6 +102,7 @@ export default function AdminPage() {
           password,
           title: title.trim() || undefined,
           body: body.trim(),
+          url: url.trim() || undefined,
           endpoints: sendAll ? undefined : Array.from(selectedEndpoints),
         }),
       });
@@ -253,6 +257,12 @@ export default function AdminPage() {
                       />
                     </div>
                     <div className="space-y-2">
+                      <label className="text-sm font-medium" htmlFor="url">
+                        Opens page (optional, e.g. /play-tips/16/)
+                      </label>
+                      <Input id="url" placeholder="/milestones/16/" value={url} onChange={(e) => setUrl(e.target.value)} />
+                    </div>
+                    <div className="space-y-2">
                       <label className="text-sm font-medium" htmlFor="body">
                         Message
                       </label>
@@ -279,6 +289,33 @@ export default function AdminPage() {
                       </p>
                     )}
                   </form>
+                  <div className="mt-6 space-y-2 rounded-lg border p-4">
+                    <p className="text-sm font-medium">This week&apos;s note (the Sunday 9 am message)</p>
+                    <p className="text-xs text-muted-foreground">
+                      Sends the real weekly note now, to the selected devices, ignoring the Sunday slot. Use it to preview on your own phone. The scheduled job runs hourly via GitHub Actions and sends each phone its note at 9 am local time on Sundays.
+                    </p>
+                    <Button
+                      type="button"
+                      variant="outline"
+                      disabled={weeklyBusy || subscribers.length === 0}
+                      onClick={async () => {
+                        setWeeklyBusy(true);
+                        setWeeklyResult(null);
+                        try {
+                          const res = await fetch("/api/cron/weekly", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ password, force: true, endpoints: Array.from(selectedEndpoints) }) });
+                          const data = await res.json();
+                          setWeeklyResult(res.ok ? `Weekly: sent ${data.sent}, failed ${data.failed}, no profile ${data.skipped?.noProfile ?? 0}` : data.error || "Failed");
+                        } catch {
+                          setWeeklyResult("Network error");
+                        } finally {
+                          setWeeklyBusy(false);
+                        }
+                      }}
+                    >
+                      {weeklyBusy ? "Sending…" : "Send this week's note now"}
+                    </Button>
+                    {weeklyResult && <p className="text-sm">{weeklyResult}</p>}
+                  </div>
                 </CardContent>
               </Card>
             </>

@@ -82,6 +82,8 @@ export interface AgeInfo {
 export interface Settings {
   reminders: boolean;
   notifyDismissed: boolean;
+  /** The Home card inviting a sign-in was dismissed. */
+  accountDismissed?: boolean;
 }
 
 export interface BackupFile {

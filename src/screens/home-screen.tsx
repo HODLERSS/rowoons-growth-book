@@ -11,6 +11,7 @@ import { NoteCard } from "@/components/home/note-card";
 import { ComingUpCard } from "@/components/home/coming-up-card";
 import { JournalCard } from "@/components/home/journal-card";
 import { NotifyCard } from "@/components/home/notify-card";
+import { AccountCard, useAccountInvite } from "@/components/home/account-card";
 import { ProfileDialog } from "@/components/profile/profile-dialog";
 import { useBaby } from "@/hooks/use-baby";
 import { useAge } from "@/hooks/use-age";
@@ -22,6 +23,7 @@ export function HomeScreen() {
   const { t } = useLanguage();
   const [editing, setEditing] = useState(false);
   const [dismissed, setDismissed] = useState(false);
+  const invite = useAccountInvite();
   const open = hydrated && ((!hasBaby && !dismissed) || editing);
 
   return (
@@ -47,7 +49,8 @@ export function HomeScreen() {
             <NoteCard month={currentMonth} />
             <ComingUpCard month={currentMonth} />
             <JournalCard />
-            <NotifyCard />
+            <AccountCard />
+            {!invite && <NotifyCard />}
           </>
         )}
       </Screen>

@@ -3,6 +3,8 @@
 import { useEffect, useRef } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { notificationTarget } from "@/lib/notification-target";
+import { startSync } from "@/lib/sync";
+import { handleNativeAuthUrl } from "@/hooks/use-auth";
 import { useBaby } from "@/hooks/use-baby";
 import { useLanguage } from "@/hooks/use-language";
 import { useSettings } from "@/hooks/use-settings";
@@ -27,6 +29,20 @@ function Effects() {
   useEffect(() => {
     if (isNative() || !("serviceWorker" in navigator) || process.env.NODE_ENV !== "production") return;
     navigator.serviceWorker.register("/sw.js").catch(() => {});
+  }, []);
+  // Account sync (no-op for guests and when accounts are not configured).
+  useEffect(() => startSync(), []);
+  // Native: sprout://auth/callback carries the sign-in code back from the system browser.
+  useEffect(() => {
+    if (!isNative()) return;
+    let remove: (() => void) | undefined;
+    import("@capacitor/app").then(async ({ App }) => {
+      const handle = await App.addListener("appUrlOpen", (event) => {
+        void handleNativeAuthUrl(event.url);
+      });
+      remove = () => void handle.remove();
+    });
+    return () => remove?.();
   }, []);
   // Native: a tapped reminder opens the month it is about.
   const router = useRouter();

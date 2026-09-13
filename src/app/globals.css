@@ -166,6 +166,11 @@
     font: -apple-system-body;
   }
   :root {
+    /* Google "G" mark colours (brand guidelines); used only by the sign-in button. */
+    --brand-google-blue: #4285f4;
+    --brand-google-green: #34a853;
+    --brand-google-yellow: #fbbc05;
+    --brand-google-red: #ea4335;
     /* Korean-first stack: Apple SD Gothic Neo on Apple platforms, Noto Sans CJK on Android, Malgun Gothic on
        Windows. Named explicitly because the -apple-system cascade does not reach Korean on iOS simulators. */
     --font-ko-stack: "Apple SD Gothic Neo", "Noto Sans KR", "Noto Sans CJK KR", "Malgun Gothic", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;

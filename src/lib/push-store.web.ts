@@ -1,67 +1,92 @@
-import { del, list, put } from "@vercel/blob";
-import { createHash } from "node:crypto";
-import { open, seal } from "./push-crypto";
+import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 
 /**
- * Web push subscribers in a Vercel Blob store: ONE blob per subscriber, named by a hash of its endpoint, holding
- * AES-256-GCM ciphertext (push-crypto.ts; without PUSH_STORE_SECRET the file is noise, so the store may be
- * public-read). Subscribe = put, unsubscribe = delete, send = list + fetch. There is deliberately no
- * read-modify-write of a shared list: Blob `list()` is eventually consistent and the CDN serves an overwritten
- * pathname stale for up to a minute, so a shared list silently lost entries in production. Per-subscriber
- * blobs make every write independent; at worst a brand-new subscriber shows up in `list()` a few seconds late.
- * Server routes only.
+ * Web push subscribers, one row each in `push_subscriptions` (Supabase, service role only; no client policies).
+ * Guests may subscribe (user_id null). The profile snapshot columns let the weekly job pick month-appropriate
+ * content; the client refreshes them every time it loads, so they track the profile without a sign-in.
  */
 export interface PushSubscriptionJSON {
   endpoint: string;
   keys: { p256dh: string; auth: string };
 }
 
-const PREFIX = "push/subs/";
-
-function secret(): string {
-  const s = process.env.PUSH_STORE_SECRET;
-  if (!s) throw new Error("PUSH_STORE_SECRET is not set");
-  return s;
+export interface SubscriberRow extends PushSubscriptionJSON {
+  user_id: string | null;
+  lang: "en" | "ko";
+  tz: string;
+  name: string | null;
+  birth_date: string | null;
+  due_date: string | null;
+  weekly_enabled: boolean;
+  last_weekly_at: string | null;
 }
 
-export function subscriptionPath(endpoint: string): string {
-  return `${PREFIX}${createHash("sha256").update(endpoint).digest("hex")}.v1`;
+export interface SubscribeInput extends PushSubscriptionJSON {
+  lang?: unknown;
+  tz?: unknown;
+  name?: unknown;
+  birthDate?: unknown;
+  dueDate?: unknown;
+  userId?: unknown;
 }
 
-export async function addSubscription(sub: PushSubscriptionJSON): Promise<void> {
-  const clean: PushSubscriptionJSON = { endpoint: sub.endpoint, keys: { p256dh: sub.keys.p256dh, auth: sub.keys.auth } };
-  await put(subscriptionPath(sub.endpoint), seal(clean, secret()), { access: "public", addRandomSuffix: false, allowOverwrite: true, contentType: "text/plain" });
+let admin: SupabaseClient | null = null;
+export function adminClient(): SupabaseClient {
+  if (admin) return admin;
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!url || !key) throw new Error("Supabase service credentials are not set");
+  admin = createClient(url, key, { auth: { persistSession: false, autoRefreshToken: false } });
+  return admin;
 }
 
-export async function removeSubscription(endpoint: string): Promise<boolean> {
-  const path = subscriptionPath(endpoint);
-  const { blobs } = await list({ prefix: path, limit: 1 });
-  if (!blobs.length) return false;
-  await del(blobs.map((b) => b.url));
-  return true;
-}
+const DATE = /^\d{4}-\d{2}-\d{2}$/;
+const str = (v: unknown, max = 200) => (typeof v === "string" && v.trim() ? v.trim().slice(0, max) : null);
 
-export async function readSubscriptions(): Promise<PushSubscriptionJSON[]> {
-  const { blobs } = await list({ prefix: PREFIX, limit: 1000 });
-  const key = secret();
-  const out: PushSubscriptionJSON[] = [];
-  await Promise.all(
-    blobs.map(async (b) => {
-      try {
-        const res = await fetch(b.url, { cache: "no-store" });
-        if (!res.ok) return;
-        const sub = open<PushSubscriptionJSON>(await res.text(), key);
-        if (isSubscription(sub)) out.push(sub);
-      } catch {
-        /* a corrupt or foreign blob is skipped, never fatal */
-      }
-    })
-  );
-  return out.sort((a, b) => (a.endpoint < b.endpoint ? -1 : 1));
-}
-
-export function isSubscription(v: unknown): v is PushSubscriptionJSON {
+export function isSubscription(v: unknown): v is SubscribeInput {
   if (!v || typeof v !== "object") return false;
   const o = v as PushSubscriptionJSON;
   return typeof o.endpoint === "string" && /^https:\/\//.test(o.endpoint) && !!o.keys && typeof o.keys.p256dh === "string" && typeof o.keys.auth === "string";
+}
+
+export async function addSubscription(input: SubscribeInput): Promise<void> {
+  const lang = input.lang === "ko" ? "ko" : "en";
+  let tz = str(input.tz, 64) ?? "UTC";
+  try {
+    Intl.DateTimeFormat("en-US", { timeZone: tz });
+  } catch {
+    tz = "UTC";
+  }
+  const birth = str(input.birthDate, 10);
+  const due = str(input.dueDate, 10);
+  const row = {
+    endpoint: input.endpoint,
+    p256dh: input.keys.p256dh,
+    auth: input.keys.auth,
+    lang,
+    tz,
+    name: str(input.name, 80),
+    birth_date: birth && DATE.test(birth) ? birth : null,
+    due_date: due && DATE.test(due) ? due : null,
+    user_id: typeof input.userId === "string" && /^[0-9a-f-]{36}$/i.test(input.userId) ? input.userId : null,
+  };
+  const { error } = await adminClient().from("push_subscriptions").upsert(row, { onConflict: "endpoint" });
+  if (error) throw new Error(error.message);
+}
+
+export async function removeSubscription(endpoint: string): Promise<boolean> {
+  const { data, error } = await adminClient().from("push_subscriptions").delete().eq("endpoint", endpoint).select("endpoint");
+  if (error) throw new Error(error.message);
+  return (data?.length ?? 0) > 0;
+}
+
+export async function readSubscriptions(): Promise<SubscriberRow[]> {
+  const { data, error } = await adminClient().from("push_subscriptions").select("endpoint, p256dh, auth, user_id, lang, tz, name, birth_date, due_date, weekly_enabled, last_weekly_at").order("created_at");
+  if (error) throw new Error(error.message);
+  return (data ?? []).map((r) => ({ endpoint: r.endpoint, keys: { p256dh: r.p256dh, auth: r.auth }, user_id: r.user_id, lang: r.lang, tz: r.tz, name: r.name, birth_date: r.birth_date, due_date: r.due_date, weekly_enabled: r.weekly_enabled, last_weekly_at: r.last_weekly_at }));
+}
+
+export async function markWeeklySent(endpoints: string[], at: Date): Promise<void> {
+  if (!endpoints.length) return;
+  await adminClient().from("push_subscriptions").update({ last_weekly_at: at.toISOString() }).in("endpoint", endpoints);
 }

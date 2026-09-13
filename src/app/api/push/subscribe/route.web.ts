@@ -10,7 +10,7 @@ export async function POST(request: Request) {
   }
   if (!isSubscription(body)) return NextResponse.json({ error: "Invalid subscription" }, { status: 400 });
   try {
-    await addSubscription(body);
+    await addSubscription(body); // profile snapshot fields (lang, tz, name, birthDate, dueDate, userId) ride along
     return NextResponse.json({ ok: true });
   } catch (err) {
     console.error("Push subscribe error:", err);

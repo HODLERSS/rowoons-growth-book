@@ -7,6 +7,7 @@ import { Header, Screen } from "@/components/shell/header";
 import { Segmented } from "@/components/segmented";
 import { ConfirmDialog } from "@/components/confirm-dialog";
 import { ProfileDialog } from "@/components/profile/profile-dialog";
+import { AccountSection } from "@/components/account/account-section";
 import { Button } from "@/components/ui/button";
 import { useBaby, displayName, nameLang } from "@/hooks/use-baby";
 import { useLanguage } from "@/hooks/use-language";
@@ -109,6 +110,10 @@ export function SettingsScreen() {
               className="w-full"
             />
           </Row>
+        </Section>
+
+        <Section title={t("account.title")}>
+          <AccountSection onMessage={setMessage} />
         </Section>
 
         <Section title={t("settings.notifications")}>{hydrated ? <NotificationsBody /> : <Row className="min-h-[4.75rem]" />}</Section>

@@ -52,8 +52,14 @@ npm run cap:open          # or: open ios/App/App.xcodeproj
 - Re-run `npm run qa` and regenerate screenshots (`node scripts/qa/screenshots.mjs`) when screens change.
 - Build order matters locally as in CI: `npm run build:native` **before** `npm run build` (the native export rewrites `.next/BUILD_ID`, which breaks a running `next start` and the screenshot/E2E runs against it).
 
+## Accounts (optional sign-in) — Supabase project `sprout` (ref bshigwopeuigcoizufyh, org "Sprout", us-east-1)
+- Guests need nothing; sign-in mirrors the device store into `public.user_data` (one JSON row per key, RLS `auth.uid() = user_id`). Migration: `supabase/migrations/20260913000000_init.sql`.
+- Providers: Google (Google Cloud project `sprout-507516`, OAuth client "Sprout web (Supabase auth)", consent screen published) and email magic link. Redirects allowed: `https://baby.minjae.co/**`, `http://localhost:3000/**`, `sprout://auth/callback` (native, via SFSafariViewController + the `sprout` URL scheme in Info.plist).
+- Env: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY` (client), `SUPABASE_SERVICE_ROLE_KEY` (server routes: account deletion, push, weekly job), `CRON_SECRET` (hourly GitHub Actions → `/api/cron/weekly/`). Set in Vercel (production, preview), GitHub Actions secrets, and `.env.local`.
+- App Store: the iOS build hides Google sign-in (email link only) until Sign in with Apple is wired, which satisfies guideline 4.8 by omission. Steps to add Apple + re-enable Google (`NEXT_PUBLIC_NATIVE_GOOGLE_SIGNIN=1` at native build time) are in `READINESS.md`.
+
 ## Web push infrastructure (baby.minjae.co only)
-- Subscriptions live in the Vercel Blob store `sprout-push-main` as one AES-256-GCM-encrypted file; the server needs `BLOB_READ_WRITE_TOKEN` (linked by the store) and `PUSH_STORE_SECRET` (64 hex chars) plus the three VAPID variables and `ADMIN_PASSWORD`. The earlier Upstash/KV store was deleted upstream on 2026-09-02, which made every subscribe return 500; the client now re-registers an existing browser subscription on each load so a store loss heals itself.
+- Subscriptions live in Supabase `public.push_subscriptions` (service role only) with a profile snapshot (lang, tz, name, birth/due date) so the weekly job works for guests too; the client re-registers on every load. Needs the three VAPID variables and `ADMIN_PASSWORD`. Ad hoc sends and a "send this week's note now" preview: baby.minjae.co/admin. Scheduled: `.github/workflows/weekly-push.yml` hourly → each phone gets its Sunday 09:00 local note once per week.
 
 ## Known limits to disclose in TestFlight notes
 - Web push (baby.minjae.co) and native reminders are separate systems; the iOS app uses local notifications only.

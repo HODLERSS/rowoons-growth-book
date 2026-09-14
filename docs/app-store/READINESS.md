@@ -1,4 +1,4 @@
-# App Store readiness — status as of 2026-09-13
+# App Store readiness — status as of 2026-09-13 (submission night)
 
 **Short answer: the app and every artifact are ready. What remains is the part only the Apple account holder can do:
 enroll, sign, upload, and click through App Store Connect (≈ 2 hours of your time, 3–6 days of Apple's).**
@@ -19,6 +19,18 @@ enroll, sign, upload, and click through App Store Connect (≈ 2 hours of your t
 | Web push (site only) | ✅ | Supabase-backed subscriber table with profile snapshot; ad hoc sends from /admin; weekly Sunday 09:00 local notes via hourly GitHub Actions job |
 | Optional accounts | ✅ | Google + email-link sign-in (Supabase Auth), device data merged into the account on first sign-in, live mirroring, second-device restore, RLS-isolated rows, in-app account deletion; guests unaffected. E2E suite `e2e/account.spec.ts` runs against the real backend with disposable users |
 | Upload tooling | ✅ | `scripts/ios/archive.sh` + `ios/ExportOptions.plist`: one command from static export to TestFlight upload once signing is set |
+
+## Submission log (2026-09-13 evening)
+- App Store Connect app 6811727495 `Sprout – Baby Milestones` (KO: 새싹 – 아기 발달 기록), SKU sprout-ios-001, Team 5RCPL9J3UX.
+- App Information: Health & Fitness / Education, no third-party content, age rating **9+** (Health or Wellness Topics = Yes, everything else None/No; 12+ Vietnam/Brazil, ALL Korea), not a regulated medical device, EN + KO names/subtitles.
+- App Privacy published: Email Address, User ID, Other User Content — App Functionality, linked, no tracking; policy https://baby.minjae.co/privacy/.
+- App Accessibility (iPhone) saved as draft: VoiceOver, Voice Control, Larger Text, Dark Interface, Differentiate Without Color Alone, Sufficient Contrast, Reduced Motion (publishes after release).
+- Pricing Free, all 175 countries, Mac/visionOS distribution off, tax category App Store software.
+- Version 1.0: EN + KO promo/description/keywords, support/marketing URLs, copyright, 5 screenshots each at 1284×2778 (6.5" slot), review notes + contact, sign-in not required, manual release.
+- Builds: 1.0.0 (1) uploaded 21:06 (Apple sign-in on); 1.0.0 (2) adds the compact onboarding sheet for SE-class screens.
+- Signing: automatic; the Mac itself is the registered development device (Designed-for-iPad build with `-allowProvisioningDeviceRegistration`), so no iPhone had to be plugged in.
+- Device matrix `e2e/devices.spec.ts`: SE / 13 mini / 15 / 16e / 16 Pro Max / iPad mini × EN/KO × 8 routes + onboarding + dialogs — all green; native build launched on SE (3rd gen) and 13 mini simulators.
+- Left for the owner: Digital Services Act trader declaration (EU visibility), TestFlight on a real iPhone, Sign in with Apple **web** flow (needs a Services ID + key; the native flow is live).
 
 ## Standards re-checked against Apple's current rules (2026-09-13)
 - **SDK**: since 2026-04-28 uploads must be built with Xcode 26 / iOS 26 SDK. We build with Xcode 26.3 (deployment target iOS 15). ✅

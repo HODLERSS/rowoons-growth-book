@@ -93,11 +93,13 @@ function ProfileForm({ mode, initial, lang, setLang, t, onSubmit, onCancel }: Fo
   }
 
   return (
-    <form onSubmit={submit} noValidate className="space-y-4">
+    // Short screens (iPhone SE class, 667px tall): drop the mark and the subtitle so the primary button
+    // sits inside the first screen instead of below the fold. The sheet still scrolls if the keyboard is up.
+    <form onSubmit={submit} noValidate className="space-y-4 [@media(max-height:720px)]:space-y-3">
       <DialogHeader className="items-center text-center">
-        <LeafMark size={48} className="mb-1" />
+        <LeafMark size={48} className="mb-1 [@media(max-height:720px)]:hidden" />
         <DialogTitle className="font-display text-[1.375rem]">{isEdit ? t("onboarding.edit_title") : t("onboarding.welcome")}</DialogTitle>
-        <DialogDescription className="text-[0.9375rem]">{isEdit ? t("onboarding.edit_subtitle") : t("onboarding.subtitle")}</DialogDescription>
+        <DialogDescription className="text-[0.9375rem] [@media(max-height:720px)]:sr-only">{isEdit ? t("onboarding.edit_subtitle") : t("onboarding.subtitle")}</DialogDescription>
       </DialogHeader>
 
       {!isEdit && (

@@ -22,10 +22,10 @@ enroll, sign, upload, and click through App Store Connect (≈ 2 hours of your t
 
 ## Standards re-checked against Apple's current rules (2026-09-13)
 - **SDK**: since 2026-04-28 uploads must be built with Xcode 26 / iOS 26 SDK. We build with Xcode 26.3 (deployment target iOS 15). ✅
-- **Age rating (new 2025 questionnaire, 4+/9+/13+/16+/18+)**: answers recorded in `listing.json › ageRating` (all descriptors None; no parental controls, no UGC sharing, no unrestricted web; medical/treatment "None" because the app records milestones and gives home-safety notes with a disclaimer, it does not diagnose or treat). Expected 4+. Korea's GRAC applies to games only. ✅
+- **Age rating (new 2025 questionnaire, 4+/9+/13+/16+/18+)**: answers recorded in `listing.json › ageRating` (all descriptors None; no parental controls, no UGC sharing, no unrestricted web; medical/treatment "None" because the app records milestones and gives home-safety notes with a disclaimer, it does not diagnose or treat). Calculated 9+ because "Health or Wellness Topics" is Yes (Health & Fitness category, development and safety content); all other descriptors None/No. Korea's GRAC applies to games only. ✅
 - **Accessibility Nutrition Labels** (voluntary now, becoming required): answers and evidence in `listing.json › accessibility`; accessibility URL https://baby.minjae.co/support/#accessibility. New E2E check at 200% text size backs the Larger Text label. ✅
 - **Privacy manifest** declares email, user ID, user content (linked, not tracking) + UserDefaults reason CA92.1; Capacitor plugins ship their own manifests. ✅
-- **Sign in**: iOS build = email link only until you flip `NEXT_PUBLIC_APPLE_SIGNIN=1`, which turns on Sign in with Apple (native plugin, code already in place) and Google together. ✅ (4.8)
+- **Sign in**: iOS build offers Sign in with Apple + Google + email link (`NEXT_PUBLIC_APPLE_SIGNIN=1` at native build; entitlement in `ios/App/App/App.entitlements`; Supabase Apple provider enabled with client id `co.minjae.sprout`). ✅ (4.8)
 - **Korean display name**: the icon label reads 새싹 on Korean devices (`ko.lproj/InfoPlist.strings`). ✅
 - Metadata limits: name 24/30, subtitle 24/30, keywords 87/100, promo 98/170, description 1,651/4,000. ✅
 

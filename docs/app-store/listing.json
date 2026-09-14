@@ -6,7 +6,7 @@
   "contentRights": "Contains no third-party content requiring rights; all guidance is cited to public sources.",
   "ageRating": {
     "system": "App Store Connect age-rating questionnaire (2025 update: 4+, 9+, 13+, 16+, 18+)",
-    "expected": "4+ (all regions; Korea GRAC applies to games only)",
+    "expected": "9+ (App Store Connect calculated: \"Health or Wellness Topics: Yes\" because the app is in Health & Fitness and covers development and home safety; everything else None/No. Korea GRAC applies to games only.)",
     "contentDescriptors": {
       "cartoonOrFantasyViolence": "None",
       "realisticViolence": "None",
@@ -18,7 +18,8 @@
       "alcoholTobaccoDrugs": "None",
       "medicalOrTreatmentInformation": "None (developmental milestones, play ideas and home-safety notes for parents with a medical disclaimer; no diagnosis or treatment)",
       "gamblingOrContests": "None",
-      "simulatedGambling": "None"
+      "simulatedGambling": "None",
+      "healthOrWellnessTopics": "Yes (developmental milestones, play ideas and home-safety notes for parents; no diagnosis or treatment)"
     },
     "inAppControls": {
       "parentalControls": "No",
@@ -84,7 +85,7 @@
     "privacyPolicy": "https://baby.minjae.co/privacy/"
   },
   "copyright": "© 2026 Minjae Lee",
-  "reviewNotes": "Sprout is an offline record-keeping app for parents. No login is needed (an optional account backs records up: in this iOS build sign-in is by email link only; deletion is in Settings › Account › Delete account and takes effect immediately): enter any name and a birthday (for example Rowoon, 2025-04-17) to open the book; the optional due date field only matters for babies born 3+ weeks early (content then follows corrected age until 24 months). Content is drawn from CDC, AAP, WHO, Zero to Three, NAEYC, CPSC and Pathways.org; every item shows its source with a short summary of the cited page, a link, and the date the sources were last checked, plus a medical disclaimer (onboarding and Settings › About). Notifications are optional local reminders scheduled on the device: one on the child's monthly birthday and one short tip on Sunday mornings; nothing is sent from a server and no data leaves the device. Language can be switched in Settings (English / Korean).",
+  "reviewNotes": "Sprout is an offline record-keeping app for parents. No login is needed (an optional account backs records up: sign-in is by Sign in with Apple, Google, or an email link; deletion is in Settings › Account › Delete account and takes effect immediately): enter any name and a birthday (for example Rowoon, 2025-04-17) to open the book; the optional due date field only matters for babies born 3+ weeks early (content then follows corrected age until 24 months). Content is drawn from CDC, AAP, WHO, Zero to Three, NAEYC, CPSC and Pathways.org; every item shows its source with a short summary of the cited page, a link, and the date the sources were last checked, plus a medical disclaimer (onboarding and Settings › About). Notifications are optional local reminders scheduled on the device: one on the child's monthly birthday and one short tip on Sunday mornings; nothing is sent from a server and no data leaves the device. Language can be switched in Settings (English / Korean).",
   "locales": {
     "en": {
       "name": "Sprout – Baby Milestones",

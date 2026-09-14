@@ -35,7 +35,8 @@ export function Header({ title, subtitle, backHref, actions, leading, className 
           <h1 className="font-display truncate text-[1.375rem] font-semibold leading-tight md:text-2xl">{title}</h1>
           {subtitle && <p className="tnum truncate text-[0.8125rem] text-muted-foreground">{subtitle}</p>}
         </div>
-        {actions && <div className="flex shrink-0 items-center gap-1">{actions}</div>}
+        {/* Header actions follow Dynamic Type up to ~135%, then hold, like the system navigation bar. */}
+        {actions && <div className="flex shrink-0 items-center gap-1 [font-size:min(0.9375rem,17px)] [&_a]:text-[length:inherit] [&_button]:text-[length:inherit]">{actions}</div>}
       </div>
     </header>
   );

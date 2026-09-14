@@ -87,10 +87,10 @@ export function SettingsScreen() {
       <Header title={t("settings.title")} backHref="/" />
       <Screen className="space-y-6">
         <Section title={t("settings.profile")}>
-          <button type="button" onClick={() => setEditing(true)} className="flex min-h-[3.75rem] w-full items-center gap-3 px-4 py-2 text-left hover:bg-hover/60">
-            <span className="min-w-0 flex-1">
+          <button type="button" onClick={() => setEditing(true)} className="flex min-h-[3.75rem] w-full flex-wrap items-center gap-x-3 gap-y-1 px-4 py-2 text-left hover:bg-hover/60">
+            <span className="min-w-0 flex-1 basis-[10rem]">
               <span className="font-display block truncate text-[1.125rem] font-semibold" lang={hydrated && baby ? nameLang(displayName(baby, lang), lang) : lang}>{hydrated && baby ? displayName(baby, lang) : t("home.setup")}</span>
-              {hydrated && born && <span className="tnum block text-[0.8125rem] text-muted-foreground">{t("age.born", { date: formatDate(lang, born) })}</span>}
+              {hydrated && born && <span className="tnum block text-[0.8125rem] text-muted-foreground [overflow-wrap:anywhere]">{t("age.born", { date: formatDate(lang, born) })}</span>}
             </span>
             <span className="text-[0.9375rem] font-semibold text-primary">{t("settings.edit_profile")}</span>
             <ChevronRight className="size-4 text-muted-foreground" aria-hidden="true" />
@@ -159,7 +159,7 @@ export function SettingsScreen() {
                 <li key={s.url}>
                   <a href={s.url} target="_blank" rel="noopener noreferrer" className="flex min-h-[2.75rem] items-center gap-2 rounded text-[0.875rem] text-primary hover:underline">
                     <ExternalLink className="size-3.5 shrink-0" aria-hidden="true" />
-                    <span translate="no">{s.name}</span>
+                    <span translate="no" className="min-w-0 [overflow-wrap:anywhere]">{s.name}</span>
                   </a>
                 </li>
               ))}
@@ -180,9 +180,9 @@ export function SettingsScreen() {
             {t("settings.support")}
             <ChevronRight className="size-4 text-muted-foreground" aria-hidden="true" />
           </Link>
-          <a href={`mailto:${SUPPORT_EMAIL}`} className="flex min-h-[3.25rem] items-center justify-between px-4 text-[0.9375rem] font-medium hover:bg-hover/60">
+          <a href={`mailto:${SUPPORT_EMAIL}`} className="flex min-h-[3.25rem] flex-wrap items-center justify-between gap-x-3 px-4 py-2 text-[0.9375rem] font-medium hover:bg-hover/60">
             {t("settings.contact")}
-            <span className="text-[0.8125rem] text-muted-foreground" translate="no">
+            <span className="min-w-0 text-[0.8125rem] text-muted-foreground [overflow-wrap:anywhere]" translate="no">
               {SUPPORT_EMAIL}
             </span>
           </a>

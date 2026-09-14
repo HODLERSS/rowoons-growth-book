@@ -73,6 +73,28 @@ export function useAuth() {
     return { ok: true };
   }, []);
 
+  /** Sign in with Apple: native ASAuthorization via the community plugin, the OAuth flow on the web. */
+  const signInWithApple = useCallback(async (): Promise<AuthResult> => {
+    const sb = supabase();
+    if (!sb) return { ok: false, error: "accounts unavailable" };
+    if (isNative()) {
+      try {
+        const { SignInWithApple } = await import("@capacitor-community/apple-sign-in");
+        const nonce = crypto.randomUUID();
+        const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(nonce));
+        const hashed = Array.from(new Uint8Array(digest)).map((b) => b.toString(16).padStart(2, "0")).join("");
+        const { response } = await SignInWithApple.authorize({ clientId: "co.minjae.sprout", redirectURI: authRedirectTo(), scopes: "email name", nonce: hashed });
+        if (!response.identityToken) return { ok: false, error: "no identity token" };
+        const { error } = await sb.auth.signInWithIdToken({ provider: "apple", token: response.identityToken, nonce });
+        return error ? { ok: false, error: error.message } : { ok: true };
+      } catch (e) {
+        return { ok: false, error: e instanceof Error ? e.message : String(e) };
+      }
+    }
+    const { error } = await sb.auth.signInWithOAuth({ provider: "apple", options: { redirectTo: authRedirectTo() } });
+    return error ? { ok: false, error: error.message } : { ok: true };
+  }, []);
+
   const signInWithEmail = useCallback(async (email: string): Promise<AuthResult> => {
     const sb = supabase();
     if (!sb) return { ok: false, error: "accounts unavailable" };
@@ -100,8 +122,8 @@ export function useAuth() {
   }, [state.session]);
 
   return useMemo(
-    () => ({ enabled: accountsEnabled(), ready: state.ready, user, email: user?.email ?? null, signInWithGoogle, signInWithEmail, signOut, deleteAccount }),
-    [state.ready, user, signInWithGoogle, signInWithEmail, signOut, deleteAccount]
+    () => ({ enabled: accountsEnabled(), ready: state.ready, user, email: user?.email ?? null, signInWithGoogle, signInWithApple, signInWithEmail, signOut, deleteAccount }),
+    [state.ready, user, signInWithGoogle, signInWithApple, signInWithEmail, signOut, deleteAccount]
   );
 }
 

@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-import { seed, pinClock, gotoReady, setLanguage, ROUTES } from "./helpers";
+import { seed, pinClock, gotoReady, setLanguage, ROUTES, CURRENT_MONTH } from "./helpers";
 
 /** UX/UI metric checks (docs/UX_METRICS.md): U5 minimalism, U6 feedback, U7 dialogs, U9 bilingual layout parity, U10 helpfulness. */
 test.describe("ux metrics", () => {
@@ -89,4 +89,37 @@ test.describe("ux metrics", () => {
     });
     expect(small).toBe(0);
   });
+});
+
+/** Accessibility Nutrition Label "Larger Text": Apple's bar is 200%+. Same checks as U1 at 130%, at 32px root. */
+test.describe("larger text 200%", () => {
+  test.beforeEach(async ({ context, page }) => {
+    await seed(context);
+    await pinClock(page);
+  });
+  for (const route of ["/", `/milestones/${CURRENT_MONTH}/`, "/settings/", "/memo/new/"]) {
+    test(`no clipped text and tap targets stay ≥ 44px at 200% on ${route}`, async ({ page }) => {
+      await gotoReady(page, route);
+      await page.addStyleTag({ content: "html { font-size: 32px !important; }" });
+      await page.waitForTimeout(300);
+      const problems = await page.evaluate(() => {
+        const out: string[] = [];
+        if (document.documentElement.scrollWidth > window.innerWidth + 1) out.push(`page overflows horizontally ${document.documentElement.scrollWidth} > ${window.innerWidth}`);
+        for (const el of Array.from(document.querySelectorAll<HTMLElement>("h1, h2, h3, p, span, a, button, li, label"))) {
+          const cs = getComputedStyle(el);
+          if (cs.overflowX === "auto" || cs.overflowX === "scroll" || el.closest(".scrollbar-hide")) continue;
+          if (cs.textOverflow === "ellipsis" || cs.webkitLineClamp !== "none") continue;
+          const r = el.getBoundingClientRect();
+          if (r.width === 0) continue;
+          if (el.scrollWidth > el.clientWidth + 2 && cs.overflowX !== "hidden") out.push(`${el.tagName.toLowerCase()} "${(el.textContent || "").trim().slice(0, 30)}" ${el.scrollWidth}>${el.clientWidth}`);
+        }
+        for (const el of Array.from(document.querySelectorAll<HTMLElement>('main a[href], main button, main [role="button"], main input'))) {
+          const r = el.getBoundingClientRect();
+          if (r.width > 0 && (r.height < 44 || r.width < 44)) out.push(`small target ${el.tagName.toLowerCase()} "${(el.textContent || el.getAttribute("aria-label") || "").trim().slice(0, 30)}" ${Math.round(r.width)}x${Math.round(r.height)}`);
+        }
+        return out;
+      });
+      expect(problems, route).toEqual([]);
+    });
+  }
 });

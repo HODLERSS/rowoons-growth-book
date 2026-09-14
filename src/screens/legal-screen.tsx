@@ -18,7 +18,7 @@ export function LegalScreen({ kind }: { kind: "privacy" | "terms" | "support" })
         <p className="tnum mb-6 text-[0.8125rem] text-muted-foreground">{t("legal.updated", { date: formatDate(lang, `${UPDATED}T12:00:00`) })}</p>
         <div className="space-y-6">
           {body.map((s) => (
-            <section key={s.h}>
+            <section key={s.h} id={s.id}>
               <h2 className="font-display mb-2 text-[1.125rem] font-semibold">{s.h}</h2>
               {s.p.map((p, i) => (
                 <p key={i} className="mb-2 text-[0.9375rem] leading-relaxed">
@@ -33,7 +33,7 @@ export function LegalScreen({ kind }: { kind: "privacy" | "terms" | "support" })
   );
 }
 
-type Sec = { h: string; p: string[] };
+type Sec = { h: string; p: string[]; id?: string };
 
 const PRIVACY: Record<"en" | "ko", Sec[]> = {
   en: [
@@ -152,6 +152,15 @@ const SUPPORT: Record<"en" | "ko", Sec[]> = {
         "Wrong or unclear content? Every item has a source card with a link and the date the sources were last checked. Tell us what you found; corrections ship quickly.",
       ],
     },
+    {
+      id: "accessibility",
+      h: "Accessibility",
+      p: [
+        "Sprout works with VoiceOver and Voice Control (every control is labelled), Larger Text (Dynamic Type up to the largest accessibility sizes), Dark Mode, Increase Contrast (WCAG AA colours in both appearances) and Reduce Motion (the leaf animation and transitions are turned off).",
+        "Nothing in the app relies on colour alone: a confirmed milestone shows a filled leaf and the date, and safety notes carry a text label as well as a colour. There is no audio or video content.",
+        "If something does not work with an assistive technology on your device, email {email} with the screen and the setting; fixes ship quickly.",
+      ],
+    },
     { h: "Not medical advice", p: ["Sprout is a record-keeping tool. If you have any concern about your child’s health or development, talk to your pediatrician."] },
   ],
   ko: [
@@ -164,6 +173,15 @@ const SUPPORT: Record<"en" | "ko", Sec[]> = {
         "발달 이정표에 “CDC는 9개월까지…”라고 적힌 이유는? 미리 살펴볼 수 있도록 조금 이른 달에 넣은 항목이 있어요. 그 문장은 대부분의 아이가 해내는 시기를 알려 드리는 거예요.",
         "알림: iOS 앱은 휴대폰 안에서 예약해요(한 달 더 자란 날 아침, 그리고 일요일 아침 팁 하나). 웹에서는 홈 화면에 추가한 뒤 홈 카드에서 알림을 켜 주세요.",
         "내용이 틀리거나 어색하다면? 모든 항목에 출처 카드와 링크, 출처 확인일이 있어요. 알려 주시면 빠르게 고칠게요.",
+      ],
+    },
+    {
+      id: "accessibility",
+      h: "접근성",
+      p: [
+        "새싹은 VoiceOver와 음성 제어(모든 버튼에 이름이 있어요), 더 큰 텍스트(가장 큰 손쉬운 사용 크기까지 동적 글자 크기 지원), 다크 모드, 대비 증가(밝은 화면과 어두운 화면 모두 WCAG AA 대비), 동작 줄이기(잎 애니메이션과 전환 효과 끔)를 지원해요.",
+        "색만으로 뜻을 전하는 곳은 없어요. 확인한 발달 이정표는 잎 모양과 날짜로, 주의사항은 색과 함께 글자 표시로 구분돼요. 소리나 영상 콘텐츠는 없어요.",
+        "기기의 보조 기술과 잘 맞지 않는 화면이 있으면 화면과 설정을 적어 {email}로 알려 주세요. 빠르게 고칠게요.",
       ],
     },
     { h: "의학적 조언이 아니에요", p: ["새싹은 기록 도구예요. 아이의 건강이나 발달이 걱정되면 소아과 선생님과 상담해 주세요."] },

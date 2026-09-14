@@ -21,16 +21,33 @@ function GoogleMark() {
   );
 }
 
+function AppleMark() {
+  return (
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor">
+      <path d="M16.4 12.7c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 3-.4 7.3 1.2 9.7.8 1.2 1.8 2.5 3.1 2.4 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.6-1-2.7-3.8zM14 5.5c.7-.8 1.1-2 1-3.1-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1 3 1.1.1 2.2-.6 2.9-1.4z" />
+    </svg>
+  );
+}
+
 export function SignInDialog({ open, onClose }: { open: boolean; onClose: () => void }) {
   const { t } = useLanguage();
-  const { signInWithGoogle, signInWithEmail } = useAuth();
+  const { signInWithGoogle, signInWithApple, signInWithEmail } = useAuth();
   const [email, setEmail] = useState("");
-  const [busy, setBusy] = useState<"google" | "email" | null>(null);
+  const [busy, setBusy] = useState<"google" | "apple" | "email" | null>(null);
   const [message, setMessage] = useState<{ kind: "ok" | "error"; text: string } | null>(null);
-  // App Store guideline 4.8: a third-party login in the iOS app must be paired with Sign in with Apple. Until the
-  // Apple provider is wired (needs the developer account), the native app offers the email link only.
-  const showGoogle = !isNative() || process.env.NEXT_PUBLIC_NATIVE_GOOGLE_SIGNIN === "1";
+  // App Store guideline 4.8: a third-party login in the iOS app must be paired with Sign in with Apple. Apple is
+  // switched on with NEXT_PUBLIC_APPLE_SIGNIN=1 once the provider is configured (needs the developer account);
+  // until then the native app offers the email link only, and Google stays web-only.
+  const showApple = process.env.NEXT_PUBLIC_APPLE_SIGNIN === "1";
+  const showGoogle = !isNative() || showApple;
 
+  async function apple() {
+    setBusy("apple");
+    setMessage(null);
+    const r = await signInWithApple();
+    if (!r.ok) setMessage({ kind: "error", text: t("account.error") });
+    setBusy(null);
+  }
   async function google() {
     setBusy("google");
     setMessage(null);
@@ -59,6 +76,12 @@ export function SignInDialog({ open, onClose }: { open: boolean; onClose: () => 
           <DialogTitle className="font-display text-[1.375rem]">{t("account.sign_in")}</DialogTitle>
           <DialogDescription className="text-[0.9375rem]">{t("account.guest_desc")}</DialogDescription>
         </DialogHeader>
+        {showApple && (
+          <Button type="button" variant="outline" size="lg" className="w-full gap-2" onClick={apple} disabled={busy !== null}>
+            <AppleMark />
+            {t("account.apple")}
+          </Button>
+        )}
         {showGoogle && (
           <>
             <Button type="button" variant="outline" size="lg" className="w-full gap-2" onClick={google} disabled={busy !== null}>

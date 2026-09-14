@@ -40,7 +40,7 @@ export function MemoEditor({ title, content, onTitleChange, onContentChange }: M
               aria-pressed={active}
               onClick={() => setPreview(mode === "preview")}
               className={cn(
-                "h-11 flex-1 rounded-md text-[0.875rem] font-semibold transition-colors",
+                "h-11 min-w-0 flex-1 rounded-md text-[0.875rem] font-semibold transition-colors [overflow-wrap:anywhere]",
                 active ? "bg-surface text-foreground shadow-[0_1px_0_var(--gb-rule)]" : "text-muted-foreground hover:text-foreground"
               )}
             >

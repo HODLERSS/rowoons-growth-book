@@ -5,8 +5,35 @@
   "secondaryCategory": "EDUCATION",
   "contentRights": "Contains no third-party content requiring rights; all guidance is cited to public sources.",
   "ageRating": {
-    "answers": "None for every content descriptor (no violence, sexual content, profanity, gambling, horror, drugs, medical/treatment information beyond general parenting guidance with disclaimer, contests, unrestricted web access). Made for Kids: No (the app is for parents).",
-    "expected": "4+"
+    "system": "App Store Connect age-rating questionnaire (2025 update: 4+, 9+, 13+, 16+, 18+)",
+    "expected": "4+ (all regions; Korea GRAC applies to games only)",
+    "contentDescriptors": {
+      "cartoonOrFantasyViolence": "None",
+      "realisticViolence": "None",
+      "gunsOrWeapons": "None",
+      "profanityOrCrudeHumor": "None",
+      "matureOrSuggestiveThemes": "None",
+      "sexualContentOrNudity": "None",
+      "horrorOrFearThemes": "None",
+      "alcoholTobaccoDrugs": "None",
+      "medicalOrTreatmentInformation": "None (developmental milestones, play ideas and home-safety notes for parents with a medical disclaimer; no diagnosis or treatment)",
+      "gamblingOrContests": "None",
+      "simulatedGambling": "None"
+    },
+    "inAppControls": {
+      "parentalControls": "No",
+      "ageAssurance": "No"
+    },
+    "capabilities": {
+      "unrestrictedWebAccess": "No (only fixed source links, opened in the system browser)",
+      "userGeneratedContent": "No (the journal is private to the account/device; nothing is shared or published)",
+      "socialMedia": "No",
+      "messaging": "No",
+      "locationSharing": "No",
+      "advertising": "No"
+    },
+    "madeForKids": "No (the app is for parents)",
+    "overrideToHigherRating": "No"
   },
   "appPrivacy": {
     "summary": "Optional account. Guests: Data Not Collected. Signed-in users: Contact Info (email) and User Content (journal, milestones, baby profile) linked to the user, used only for App Functionality; no tracking, no third-party advertising.",
@@ -81,5 +108,47 @@
       "en": "1) Onboarding: name, birthday, optional due date; the form must fit or scroll on your screen and the keyboard must open on every field. 2) Home: confirm a milestone (leaf turns green, haptic), read the note, check the 'Coming up' card and tap 'Got it'. 3) Settings › Reminders: allow notifications; a reminder is scheduled for the next monthly birthday and one for next Sunday 9 am. 4) Switch language to Korean and back; switch the phone to dark mode. 5) Journal: write, edit, delete an entry; Settings › Export a backup then Restore it. Tell us anything that looked cut off, mistranslated, or unclear.",
       "ko": "1) 시작하기: 이름, 생일, (선택) 출산 예정일. 화면에 맞게 보이거나 스크롤돼야 하고, 모든 입력란에서 키보드가 열려야 해요. 2) 홈: 발달 이정표 하나를 확인하고(잎이 초록으로, 진동), 이번 달 한마디를 읽고, '다음 달 미리보기'에서 '확인했어요'를 눌러 보세요. 3) 설정 › 알림: 알림을 허용하면 다음 달 생일 아침과 다음 일요일 아침 9시에 알림이 예약돼요. 4) 언어를 한국어/영어로 바꿔 보고, 휴대폰을 다크 모드로 바꿔 보세요. 5) 기록: 쓰기, 수정, 삭제. 설정 › 백업 내보내기 후 불러오기. 잘리거나, 어색하거나, 이해하기 어려운 부분이 있으면 알려 주세요."
     }
+  },
+  "accessibility": {
+    "note": "Accessibility Nutrition Labels (App Store Connect › App Accessibility). Voluntary in 2026 but to be filled at submission; evidence from npm run qa and e2e/ux.spec.ts.",
+    "iPhone": {
+      "VoiceOver": {
+        "supported": true,
+        "evidence": "every control has an accessible name (axe WCAG 2.1 AA, zero serious/critical on 10 routes × light/dark); milestone rows are buttons with aria-pressed and 'Confirm: <title>' labels; dialogs are native <dialog> roles with focus trap and Escape"
+      },
+      "VoiceControl": {
+        "supported": true,
+        "evidence": "all interactive elements are standard buttons/links/inputs with visible labels matching their accessible names"
+      },
+      "LargerText": {
+        "supported": true,
+        "evidence": "Dynamic Type via html.ios { font: -apple-system-body }; every size in rem; E2E overflow/target scan at 130% and 200% text size"
+      },
+      "DarkInterface": {
+        "supported": true,
+        "evidence": "system dark appearance with a full dark token set; axe contrast passes in dark"
+      },
+      "DifferentiateWithoutColorAlone": {
+        "supported": true,
+        "evidence": "confirmed milestones show a filled leaf and a 'Confirmed <date>' line, severity tags carry text, errors use text + role=alert"
+      },
+      "SufficientContrast": {
+        "supported": true,
+        "evidence": "WCAG AA contrast on both appearances (axe); tokens audited in npm run qa"
+      },
+      "ReducedMotion": {
+        "supported": true,
+        "evidence": "prefers-reduced-motion disables the leaf animation and transitions"
+      },
+      "Captions": {
+        "supported": null,
+        "evidence": "not applicable: no audio or video"
+      },
+      "AudioDescriptions": {
+        "supported": null,
+        "evidence": "not applicable"
+      }
+    },
+    "accessibilityUrl": "https://baby.minjae.co/support/#accessibility"
   }
 }

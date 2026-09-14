@@ -11,6 +11,7 @@ mkdirSync(OUT, { recursive: true });
 const SIZES = [
   { tag: "1320x2868", w: 1320, h: 2868, css: { w: 440, h: 956 } }, // 6.9" (iPhone 16 Pro Max) @3x
   { tag: "1290x2796", w: 1290, h: 2796, css: { w: 430, h: 932 } }, // 6.7" (iPhone 15 Plus / 14 Pro Max) @3x
+  { tag: "1284x2778", w: 1284, h: 2778, css: { w: 428, h: 926 } }, // 6.5" (iPhone 11 Pro Max / 12–13 Pro Max) @3x — App Store Connect default slot
 ];
 
 const profile = { name: "Rowoon", nameKo: "로운", birthDate: "2025-04-17" };

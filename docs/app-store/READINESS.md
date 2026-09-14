@@ -20,6 +20,24 @@ enroll, sign, upload, and click through App Store Connect (≈ 2 hours of your t
 | Optional accounts | ✅ | Google + email-link sign-in (Supabase Auth), device data merged into the account on first sign-in, live mirroring, second-device restore, RLS-isolated rows, in-app account deletion; guests unaffected. E2E suite `e2e/account.spec.ts` runs against the real backend with disposable users |
 | Upload tooling | ✅ | `scripts/ios/archive.sh` + `ios/ExportOptions.plist`: one command from static export to TestFlight upload once signing is set |
 
+## Standards re-checked against Apple's current rules (2026-09-13)
+- **SDK**: since 2026-04-28 uploads must be built with Xcode 26 / iOS 26 SDK. We build with Xcode 26.3 (deployment target iOS 15). ✅
+- **Age rating (new 2025 questionnaire, 4+/9+/13+/16+/18+)**: answers recorded in `listing.json › ageRating` (all descriptors None; no parental controls, no UGC sharing, no unrestricted web; medical/treatment "None" because the app records milestones and gives home-safety notes with a disclaimer, it does not diagnose or treat). Expected 4+. Korea's GRAC applies to games only. ✅
+- **Accessibility Nutrition Labels** (voluntary now, becoming required): answers and evidence in `listing.json › accessibility`; accessibility URL https://baby.minjae.co/support/#accessibility. New E2E check at 200% text size backs the Larger Text label. ✅
+- **Privacy manifest** declares email, user ID, user content (linked, not tracking) + UserDefaults reason CA92.1; Capacitor plugins ship their own manifests. ✅
+- **Sign in**: iOS build = email link only until you flip `NEXT_PUBLIC_APPLE_SIGNIN=1`, which turns on Sign in with Apple (native plugin, code already in place) and Google together. ✅ (4.8)
+- **Korean display name**: the icon label reads 새싹 on Korean devices (`ko.lproj/InfoPlist.strings`). ✅
+- Metadata limits: name 24/30, subtitle 24/30, keywords 87/100, promo 98/170, description 1,651/4,000. ✅
+
+## Submission-day runbook (≈ 2 hours once enrollment is approved)
+1. Xcode ▸ Settings ▸ Accounts ▸ add Apple ID → target App ▸ Signing & Capabilities ▸ Team, automatic signing. `sudo xcode-select -s /Applications/Xcode.app`.
+2. (Recommended before the first build) Sign in with Apple: follow "Enabling Sign in with Apple" below, then build native with `NEXT_PUBLIC_APPLE_SIGNIN=1 NEXT_PUBLIC_NATIVE_GOOGLE_SIGNIN=1 npm run cap:sync`.
+3. Run on your iPhone from Xcode; walk `LAUNCH_CHECKLIST.md` §2.5 plus: sign in, confirm a milestone, see it on baby.minjae.co in Chrome, sign out, delete a test account.
+4. App Store Connect ▸ New App: name `Sprout – Baby Milestones` (fallbacks in NEXT_STEPS.md), bundle `co.minjae.sprout`, SKU `sprout-ios-001`, English (U.S.) + Korean.
+5. App Information: category, content rights (no third-party content), **age rating questionnaire** from `listing.json`. App Privacy from `listing.json › appPrivacy` + policy URL. App Accessibility from `listing.json › accessibility`.
+6. Version 1.0: screenshots (1320×2868 EN + KO), promotional text, description, keywords, support/marketing URLs, copyright, review notes from `listing.json`. Sign-in required: No.
+7. `scripts/ios/archive.sh` → TestFlight (internal: you + Theresa) for a day → select the build → Add for Review → Submit. Choose manual release.
+
 ## Remaining — needs the Apple account (you)
 1. **Enroll** in the Apple Developer Program ($99/yr, individual). Apple takes 24–48 h.
 2. **Sign once in Xcode**: Settings ▸ Accounts (your Apple ID) → target App ▸ Signing & Capabilities → Team = you, automatic signing. Also run `sudo xcode-select -s /Applications/Xcode.app` once so the CLI uses Xcode.

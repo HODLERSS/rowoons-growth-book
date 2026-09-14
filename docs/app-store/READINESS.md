@@ -27,7 +27,7 @@ enroll, sign, upload, and click through App Store Connect (≈ 2 hours of your t
 - App Accessibility (iPhone) saved as draft: VoiceOver, Voice Control, Larger Text, Dark Interface, Differentiate Without Color Alone, Sufficient Contrast, Reduced Motion (publishes after release).
 - Pricing Free, all 175 countries, Mac/visionOS distribution off, tax category App Store software.
 - Version 1.0: EN + KO promo/description/keywords, support/marketing URLs, copyright, 5 screenshots each at 1284×2778 (6.5" slot), review notes + contact, sign-in not required, manual release.
-- Builds: 1.0.0 (1) uploaded 21:06 (Apple sign-in on); 1.0.0 (2) adds the compact onboarding sheet for SE-class screens.
+- Builds: 1.0.0 (1) uploaded 21:06 (Apple sign-in on); 1.0.0 (2) adds the compact onboarding sheet for SE-class screens. **Submitted 21:39 CDT with build 2 → Waiting for Review** (manual release; Apple quotes up to 48 h). Note: ASC wants the privacy policy URL per localization (EN and KO).
 - Signing: automatic; the Mac itself is the registered development device (Designed-for-iPad build with `-allowProvisioningDeviceRegistration`), so no iPhone had to be plugged in.
 - Device matrix `e2e/devices.spec.ts`: SE / 13 mini / 15 / 16e / 16 Pro Max / iPad mini × EN/KO × 8 routes + onboarding + dialogs — all green; native build launched on SE (3rd gen) and 13 mini simulators.
 - Left for the owner: Digital Services Act trader declaration (EU visibility), TestFlight on a real iPhone, Sign in with Apple **web** flow (needs a Services ID + key; the native flow is live).

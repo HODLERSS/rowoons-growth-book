@@ -43,11 +43,13 @@ export function restoreBackup(file: BackupFile): void {
   writeKey(KEYS.memos, file.memos);
 }
 
+/** Wipes every record of the child. The language stays: it is how the person reads the app, not a record of the baby. */
 export function clearAllData(): void {
   writeKey(KEYS.profile, null);
   writeKey(KEYS.milestones, null);
   writeKey(KEYS.memos, null);
   writeKey(KEYS.settings, null);
+  writeKey(KEYS.acks, null);
 }
 
 export function backupFilename(date = new Date()): string {

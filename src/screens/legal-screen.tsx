@@ -48,7 +48,7 @@ const PRIVACY: Record<"en" | "ko", Sec[]> = {
     {
       h: "If you sign in",
       p: [
-        "Signing in is optional. You can sign in with Google or with a link sent to your email. Sprout receives only your email address and a random account ID; it never sees your Google password, contacts, or other Google data.",
+        "Signing in is optional. You can sign in with Apple, with Google, or with a link sent to your email. Sprout receives only your email address and a random account ID; it never sees your Apple or Google password, contacts, or anything else held by them. If you use Sign in with Apple and choose Hide My Email, Sprout only ever sees Apple’s relay address.",
         "With an account, the records listed above are stored in Sprout’s database, hosted by Supabase in the United States (AWS us-east-1), encrypted in transit and at rest, and readable only by you through your signed-in session. Sprout staff do not read your records except to fix a problem you report.",
         "Signing out keeps the copy on your phone and stops mirroring. Settings › Delete account removes the account and every record stored in it within minutes; that cannot be undone.",
       ],
@@ -66,7 +66,7 @@ const PRIVACY: Record<"en" | "ko", Sec[]> = {
     },
     {
       h: "Service providers",
-      p: ["Vercel hosts the website and its server functions. Supabase hosts account sign-in and the account database. Google provides sign-in when you choose it. Each processes data only to provide that service."],
+      p: ["Vercel hosts the website and its server functions. Supabase hosts account sign-in and the account database. Apple and Google each provide sign-in when you choose it. Each processes data only to provide that service."],
     },
     {
       h: "External links",
@@ -87,7 +87,7 @@ const PRIVACY: Record<"en" | "ko", Sec[]> = {
     {
       h: "로그인하면",
       p: [
-        "로그인은 선택이에요. Google 계정이나 이메일로 받은 링크로 로그인할 수 있어요. 새싹은 이메일 주소와 무작위 계정 ID만 받고, Google 비밀번호나 연락처 같은 다른 정보는 볼 수 없어요.",
+        "로그인은 선택이에요. Apple이나 Google 계정, 또는 이메일로 받은 링크로 로그인할 수 있어요. 새싹은 이메일 주소와 무작위 계정 ID만 받고, Apple이나 Google 비밀번호, 연락처 같은 다른 정보는 볼 수 없어요. Apple로 로그인하면서 나의 이메일 가리기를 고르면 새싹은 Apple이 만든 전달용 주소만 보게 돼요.",
         "계정이 있으면 위 기록이 새싹 데이터베이스에 저장돼요. 데이터베이스는 Supabase가 미국(AWS us-east-1)에서 운영하고, 전송 중과 저장 시 암호화되며, 로그인한 본인만 읽을 수 있어요. 새싹 운영자는 사용자가 문제를 알려온 경우가 아니면 기록을 열어 보지 않아요.",
         "로그아웃하면 휴대폰의 사본은 남고 동기화만 멈춰요. 설정 › 계정 삭제를 누르면 계정과 계정에 저장된 모든 기록이 몇 분 안에 지워지고, 되돌릴 수 없어요.",
       ],
@@ -100,7 +100,7 @@ const PRIVACY: Record<"en" | "ko", Sec[]> = {
         "웹에서 알림을 켜면 브라우저가 푸시 구독 정보(엔드포인트 주소와 암호화 키)를 만들어요. 새싹은 일요일 아침 알림을 아기 월령에 맞추기 위해 이 정보를 언어, 시간대, 아기 이름과 생일과 함께 서버에 보관해요. 알림을 끄거나, 구독이 만료되거나, 계정을 삭제하면 지워져요.",
       ],
     },
-    { h: "서비스 제공자", p: ["웹사이트와 서버 기능은 Vercel이, 로그인과 계정 데이터베이스는 Supabase가, 선택 시 로그인은 Google이 제공해요. 각 회사는 해당 서비스를 제공하는 데에만 정보를 처리해요."] },
+    { h: "서비스 제공자", p: ["웹사이트와 서버 기능은 Vercel이, 로그인과 계정 데이터베이스는 Supabase가, 선택 시 로그인은 Apple과 Google이 제공해요. 각 회사는 해당 서비스를 제공하는 데에만 정보를 처리해요."] },
     { h: "외부 링크", p: ["출처 링크는 CDC, AAP, WHO, Zero to Three, NAEYC, CPSC, Pathways.org가 운영하는 페이지로 연결돼요. 각 사이트의 개인정보 정책은 따로 있어요."] },
     { h: "어린이", p: ["새싹은 부모와 양육자를 위한 도구예요. 어린이의 정보를 의도적으로 수집하지 않아요."] },
     { h: "문의", p: ["개인정보 관련 문의: {email}"] },

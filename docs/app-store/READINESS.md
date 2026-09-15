@@ -10,7 +10,7 @@ enroll, sign, upload, and click through App Store Connect (≈ 2 hours of your t
 | Builds & runs | ✅ | Xcode 26.3 builds it unsigned; installs and launches on the iOS 26.3 simulator; onboarding renders on 17 Pro (see §Simulator matrix for the overnight run) |
 | Real-device issues found by the owner | ✅ fixed | keyboard not opening in the Home Screen app (`touch-action`), form taller than an SE-class screen (dialogs now scroll in the overlay) — both with E2E guards |
 | Icons / launch screens | ✅ | `resources/icon-1024.png` (opaque), light/dark splash; asset catalog wired |
-| Store listing text | ✅ | `docs/app-store/listing.json`: EN + KO name/subtitle/promo/keywords/description/what's new, category, age rating (4+), App Privacy (Data Not Collected), review notes, TestFlight "what to test" |
+| Store listing text | ✅ | `docs/app-store/listing.json`: EN + KO name/subtitle/promo/keywords/description/what's new, category, age rating (9+), App Privacy (Data Not Collected), review notes, TestFlight "what to test" |
 | Screenshots | ✅ | 5 per language at 1320×2868 (required 6.9″) and 1290×2796, regenerated after the Home changes |
 | Legal & support pages | ✅ | https://baby.minjae.co/privacy/ · /terms/ · /support/ (Help & contact, EN/KO) |
 | Quality gates | ✅ | `npm run qa`: all 10 content/engineering metrics 100 (machine), all 10 UX/UI metrics ≥ 95; Lighthouse 98 on every route; 260+ E2E across iPhone Chromium/WebKit/dark/desktop |
@@ -72,7 +72,7 @@ enroll, sign, upload, and click through App Store Connect (≈ 2 hours of your t
 | 5.1.1(v) Account deletion | In-app deletion for apps with account creation | Settings › Account › Delete account removes auth user + rows immediately (service role) | ✅ |
 | 5.1.2 Data use and sharing | No selling, no third-party ads; disclose processors | Privacy policy names Vercel, Supabase (us-east-1), Google; no analytics | ✅ |
 | 5.1.3 Health | Not health data per Apple's definition; no HealthKit | Milestone confirmations are parent notes | ✅ |
-| 5.1.4 Kids | App is for parents, not children; not in Kids category | Age rating 4+, category Health & Fitness | ✅ |
+| 5.1.4 Kids | App is for parents, not children; not in Kids category | Age rating 9+, category Health & Fitness | ✅ |
 | Export compliance | Encryption declaration | `ITSAppUsesNonExemptEncryption = NO` (HTTPS only) | ✅ |
 | Privacy nutrition labels | Must match manifest and policy | `listing.json › appPrivacy` updated: Email, User ID, User Content — linked, not tracking, App Functionality | ✅ |
 

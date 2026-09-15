@@ -118,6 +118,10 @@ export function useAuth() {
     if (!res.ok) return { ok: false, error: `Server error ${res.status}` };
     await sb.auth.signOut();
     clearAllData();
+    // The records are gone, so the reminders scheduled from them must go too: otherwise the phone
+    // keeps announcing a child the app no longer knows. Loaded on demand, like every other caller,
+    // so the notifications code stays out of the first-load bundle.
+    if (isNative()) await import("@/lib/reminders").then((m) => m.cancelReminders());
     return { ok: true };
   }, [state.session]);
 

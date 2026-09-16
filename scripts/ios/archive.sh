@@ -22,6 +22,12 @@ if [[ "${1:-}" == "--no-upload" ]]; then
 fi
 
 echo "▸ upload to App Store Connect"
+# Authenticate with the App Store Connect API key, not Xcode's signed-in account: the account session
+# expires and fails the export with "Failed to Use Accounts" long after the archive itself succeeded.
+ASC_KEY_ID="${ASC_KEY_ID:-26G34JQ5XQ}"
+ASC_ISSUER_ID="${ASC_ISSUER_ID:-03b49a0e-29cc-4d9d-94bc-a12aa1f92ec4}"
 xcodebuild -exportArchive -archivePath "$OUT/Sprout.xcarchive" -exportOptionsPlist ios/ExportOptions.plist \
-  -exportPath "$OUT/export" -allowProvisioningUpdates | tail -3
+  -exportPath "$OUT/export" -allowProvisioningUpdates \
+  -authenticationKeyPath "$HOME/.private_keys/AuthKey_$ASC_KEY_ID.p8" \
+  -authenticationKeyID "$ASC_KEY_ID" -authenticationKeyIssuerID "$ASC_ISSUER_ID" | tail -3
 echo "uploaded — the build appears in App Store Connect ▸ TestFlight after processing (10–30 min)"

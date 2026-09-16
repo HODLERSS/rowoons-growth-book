@@ -48,7 +48,7 @@ const PRIVACY: Record<"en" | "ko", Sec[]> = {
     {
       h: "If you sign in",
       p: [
-        "Signing in is optional. You can sign in with Apple, with Google, or with a link sent to your email. Sprout receives only your email address and a random account ID; it never sees your Apple or Google password, contacts, or anything else held by them. If you use Sign in with Apple and choose Hide My Email, Sprout only ever sees Apple’s relay address.",
+        "Signing in is optional. You can sign in with Apple, with Google, with an email address and a password, or with a link sent to your email. Sprout receives only your email address and a random account ID; it never sees your Apple or Google password, contacts, or anything else held by them. If you use Sign in with Apple and choose Hide My Email, Sprout only ever sees Apple’s relay address.",
         "With an account, the records listed above are stored in Sprout’s database, hosted by Supabase in the United States (AWS us-east-1), encrypted in transit and at rest, and readable only by you through your signed-in session. Sprout staff do not read your records except to fix a problem you report.",
         "Signing out keeps the copy on your phone and stops mirroring. Settings › Delete account removes the account and every record stored in it within minutes; that cannot be undone.",
       ],
@@ -87,7 +87,7 @@ const PRIVACY: Record<"en" | "ko", Sec[]> = {
     {
       h: "로그인하면",
       p: [
-        "로그인은 선택이에요. Apple이나 Google 계정, 또는 이메일로 받은 링크로 로그인할 수 있어요. 새싹은 이메일 주소와 무작위 계정 ID만 받고, Apple이나 Google 비밀번호, 연락처 같은 다른 정보는 볼 수 없어요. Apple로 로그인하면서 나의 이메일 가리기를 고르면 새싹은 Apple이 만든 전달용 주소만 보게 돼요.",
+        "로그인은 선택이에요. Apple이나 Google 계정, 이메일과 비밀번호, 또는 이메일로 받은 링크로 로그인할 수 있어요. 새싹은 이메일 주소와 무작위 계정 ID만 받고, Apple이나 Google 비밀번호, 연락처 같은 다른 정보는 볼 수 없어요. Apple로 로그인하면서 나의 이메일 가리기를 고르면 새싹은 Apple이 만든 전달용 주소만 보게 돼요.",
         "계정이 있으면 위 기록이 새싹 데이터베이스에 저장돼요. 데이터베이스는 Supabase가 미국(AWS us-east-1)에서 운영하고, 전송 중과 저장 시 암호화되며, 로그인한 본인만 읽을 수 있어요. 새싹 운영자는 사용자가 문제를 알려온 경우가 아니면 기록을 열어 보지 않아요.",
         "로그아웃하면 휴대폰의 사본은 남고 동기화만 멈춰요. 설정 › 계정 삭제를 누르면 계정과 계정에 저장된 모든 기록이 몇 분 안에 지워지고, 되돌릴 수 없어요.",
       ],

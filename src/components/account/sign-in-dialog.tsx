@@ -31,9 +31,12 @@ function AppleMark() {
 
 export function SignInDialog({ open, onClose }: { open: boolean; onClose: () => void }) {
   const { t } = useLanguage();
-  const { signInWithGoogle, signInWithApple, signInWithEmail } = useAuth();
+  const { signInWithGoogle, signInWithApple, signInWithEmail, signInWithPassword, signUpWithPassword } = useAuth();
   const [email, setEmail] = useState("");
-  const [busy, setBusy] = useState<"google" | "apple" | "email" | null>(null);
+  const [busy, setBusy] = useState<"google" | "apple" | "email" | "password" | null>(null);
+  const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const [creating, setCreating] = useState(false);
   const [message, setMessage] = useState<{ kind: "ok" | "error"; text: string } | null>(null);
   // App Store guideline 4.8: a third-party login in the iOS app must be paired with Sign in with Apple. Apple is
   // switched on with NEXT_PUBLIC_APPLE_SIGNIN=1 once the provider is configured (needs the developer account);
@@ -65,6 +68,29 @@ export function SignInDialog({ open, onClose }: { open: boolean; onClose: () => 
     setMessage(null);
     const r = await signInWithEmail(email);
     setMessage(r.ok ? { kind: "ok", text: t("account.email_sent") } : { kind: "error", text: t("account.error") });
+    setBusy(null);
+  }
+
+  /** Email and password: the same account as every other route, for anyone who prefers a password. */
+  async function submitPassword(e: FormEvent) {
+    e.preventDefault();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) {
+      setMessage({ kind: "error", text: t("account.email_invalid") });
+      return;
+    }
+    if (password.length < 8) {
+      setMessage({ kind: "error", text: t("account.password_short") });
+      return;
+    }
+    setBusy("password");
+    setMessage(null);
+    const r = creating ? await signUpWithPassword(email, password) : await signInWithPassword(email, password);
+    if (r.ok) {
+      if (creating) setMessage({ kind: "ok", text: t("account.password_created") });
+    } else {
+      const wrong = /invalid login credentials/i.test(r.error);
+      setMessage({ kind: "error", text: wrong ? t("account.password_wrong") : t("account.error") });
+    }
     setBusy(null);
   }
 
@@ -105,6 +131,42 @@ export function SignInDialog({ open, onClose }: { open: boolean; onClose: () => 
             {t("account.email_send")}
           </Button>
         </form>
+        {!showPassword ? (
+          <button
+            type="button"
+            aria-expanded={false}
+            aria-controls="password-form"
+            onClick={() => setShowPassword(true)}
+            className="-mx-2 flex min-h-11 items-center justify-center rounded-lg px-2 text-[0.875rem] font-semibold text-primary hover:bg-hover"
+          >
+            {t("account.password_toggle")}
+          </button>
+        ) : (
+          <form id="password-form" onSubmit={submitPassword} noValidate className="space-y-2">
+            <label htmlFor="account-password" className="text-[0.875rem] font-semibold">
+              {t("account.password_label")}
+            </label>
+            <Input
+              id="account-password"
+              name="password"
+              type="password"
+              autoComplete={creating ? "new-password" : "current-password"}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="h-12 text-[1rem]"
+            />
+            <Button type="submit" size="lg" variant="outline" className="w-full" disabled={busy !== null}>
+              {creating ? t("account.password_create") : t("account.password_sign_in")}
+            </Button>
+            <button
+              type="button"
+              onClick={() => { setCreating(!creating); setMessage(null); }}
+              className="flex min-h-11 w-full items-center justify-center rounded-lg text-[0.8125rem] font-semibold text-muted-foreground hover:bg-hover"
+            >
+              {creating ? t("account.password_switch_sign_in") : t("account.password_switch_create")}
+            </button>
+          </form>
+        )}
         {message && (
           <p role={message.kind === "error" ? "alert" : "status"} className={"text-[0.875rem] " + (message.kind === "error" ? "text-danger" : "text-done")}>
             {message.text}

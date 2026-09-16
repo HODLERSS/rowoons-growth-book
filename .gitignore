@@ -55,3 +55,6 @@ next-env.d.ts
 .DS_Store
 /src/content/gen/
 /.next-native/
+
+# generated: carries the throwaway credentials for the App Review demo recording
+ios/App/SproutDemo.xctestplan

@@ -95,6 +95,25 @@ export function useAuth() {
     return error ? { ok: false, error: error.message } : { ok: true };
   }, []);
 
+  /**
+   * Email and password. Sprout gates nothing behind an account, so this exists alongside the other
+   * providers rather than in front of them: it gives anyone who prefers a password one, and it gives
+   * App Review a demo account they can sign into without a mailbox or an Apple ID.
+   */
+  const signInWithPassword = useCallback(async (email: string, password: string): Promise<AuthResult> => {
+    const sb = supabase();
+    if (!sb) return { ok: false, error: "accounts unavailable" };
+    const { error } = await sb.auth.signInWithPassword({ email: email.trim(), password });
+    return error ? { ok: false, error: error.message } : { ok: true };
+  }, []);
+
+  const signUpWithPassword = useCallback(async (email: string, password: string): Promise<AuthResult> => {
+    const sb = supabase();
+    if (!sb) return { ok: false, error: "accounts unavailable" };
+    const { error } = await sb.auth.signUp({ email: email.trim(), password, options: { emailRedirectTo: authRedirectTo() } });
+    return error ? { ok: false, error: error.message } : { ok: true };
+  }, []);
+
   const signInWithEmail = useCallback(async (email: string): Promise<AuthResult> => {
     const sb = supabase();
     if (!sb) return { ok: false, error: "accounts unavailable" };
@@ -126,8 +145,8 @@ export function useAuth() {
   }, [state.session]);
 
   return useMemo(
-    () => ({ enabled: accountsEnabled(), ready: state.ready, user, email: user?.email ?? null, signInWithGoogle, signInWithApple, signInWithEmail, signOut, deleteAccount }),
-    [state.ready, user, signInWithGoogle, signInWithApple, signInWithEmail, signOut, deleteAccount]
+    () => ({ enabled: accountsEnabled(), ready: state.ready, user, email: user?.email ?? null, signInWithGoogle, signInWithApple, signInWithEmail, signInWithPassword, signUpWithPassword, signOut, deleteAccount }),
+    [state.ready, user, signInWithGoogle, signInWithApple, signInWithEmail, signInWithPassword, signUpWithPassword, signOut, deleteAccount]
   );
 }
 

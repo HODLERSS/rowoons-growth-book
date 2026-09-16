@@ -1,26 +1,30 @@
 Sprout is a private record-keeping app for parents of children aged 0-36 months. It works offline and no account is required for any feature.
 
 1. DEMO VIDEO
-A screen recording made on a physical iPhone is attached here and to our Resolution Center reply. It begins at app launch and shows onboarding, all five tabs, confirming a milestone, a source citation, writing a journal entry, Settings and the English/Korean switch, then Sign in with Apple (registration), sign out, sign in again (login), and Settings > Account > Delete account (deletion).
+A screen recording made on a physical iPhone is attached here and to our Resolution Center reply. It begins at app launch and shows onboarding, all five tabs, confirming a milestone, a source citation, a journal entry, Settings and the English/Korean switch, then account registration, sign out, login, and Settings > Account > Delete account.
 
 2. PURPOSE AND TARGET AUDIENCE
 Audience: parents and caregivers of children aged 0-36 months. The app is for adults; it is not aimed at children and is not in the Kids category.
-Problem: guidance on what a baby does at a given age is scattered across many websites and rarely tied to the child's exact age, so parents miss things or search for them repeatedly.
+Problem: guidance on what a baby does at a given age is scattered across many sites and rarely tied to the child's exact age.
 Value: Sprout puts the milestones, age-matched play ideas and home-safety notes for the child's exact month on one screen, each citing its public-health source, and keeps the parent's own record of what their child has done.
 
 3. SETUP AND ACCESS
-No login, no demo account and no sample files are needed. Every feature is available without signing in.
+DEMO ACCOUNT (not required, provided for convenience)
+  Email: sprout.review@minjae.co
+  Password: __DEMO_PASSWORD__
+  Settings > Account > Sign in > "Use a password instead".
+No login is needed: every feature works signed out, and nothing is gated behind an account.
 - On first launch, type any name and a birthday (for example Rowoon, 2025-04-17) and tap Get started.
 - The optional due-date field applies only to babies born 3+ weeks early; content then follows corrected age to 24 months.
 - Five tabs: Home, Milestones, Play, Safety, Journal. Tap a leaf to confirm a milestone; tap the source name under any item for its citation.
 - The gear icon on Home opens Settings: Language (English/Korean), Account, Notifications, Data export and restore, About.
-Optional account: signing in adds only cloud backup and sync of the user's own records across devices. Sign-in is by Sign in with Apple, Google, or an emailed link, so the reviewer can use their own Apple ID; we have no credentials to supply. Sign out and Delete account are both in Settings > Account. Delete account asks for confirmation, then immediately deletes the account and every record stored under it on our server.
+Optional account: signing in adds only cloud backup and sync of the user's own records across devices. Sign-in is by Sign in with Apple, Google, an emailed link, or the email and password above. Sign out and Delete account are both in Settings > Account. Delete account asks for confirmation, then immediately deletes the account and every record stored under it on our server.
 
 4. EXTERNAL SERVICES
-- Supabase (United States, AWS us-east-1): authentication, and the database holding a signed-in user's own records. Contacted only if the user signs in.
+- Supabase (United States, AWS us-east-1): authentication and the database holding a signed-in user's own records. Contacted only if the user signs in.
 - Apple (Sign in with Apple) and Google (OAuth): identity providers, used only if the user chooses them.
 - Vercel: hosts baby.minjae.co (privacy policy, terms, support pages) plus the single endpoint used by Delete account.
-There is no analytics, tracking, advertising, crash-reporting or AI service, and no in-app purchase or payment. There is no remote push: reminders are local notifications scheduled on the device itself.
+No analytics, tracking, advertising, crash reporting or AI service, and no in-app purchase or payment. No remote push: reminders are local notifications scheduled on the device.
 
 5. REGIONAL DIFFERENCES
 None. The app behaves identically in every region and ships the same content everywhere. The only difference is the display language, English or Korean, picked by the user in Settings; on first launch it follows the device language, never the country or storefront.

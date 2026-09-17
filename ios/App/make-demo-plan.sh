@@ -4,7 +4,7 @@
 # the credentials stay in ~/.private_keys.
 set -e
 cd "$(dirname "$0")"
-REHEARSAL="${REHEARSAL:-0}" python3 - <<'PY'
+REHEARSAL="${REHEARSAL:-0}" SKIP_REGISTRATION="${SKIP_REGISTRATION:-0}" python3 - <<'PY'
 import json, os
 def creds(name):
     with open(os.path.expanduser(f"~/.private_keys/{name}")) as f:
@@ -14,6 +14,7 @@ env = [
     {"key": "DEMO_EMAIL", "value": tw["email"]},
     {"key": "DEMO_PASSWORD", "value": tw["password"]},
     {"key": "REHEARSAL", "value": os.environ.get("REHEARSAL", "0")},
+    {"key": "SKIP_REGISTRATION", "value": os.environ.get("SKIP_REGISTRATION", "0")},
 ]
 plan = {
     "configurations": [{"id": "6F1E2A3B-4C5D-4E6F-8A9B-0C1D2E3F4A5B", "name": "Demo recording", "options": {}}],

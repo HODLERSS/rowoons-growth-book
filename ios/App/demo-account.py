@@ -58,7 +58,17 @@ def main():
     throwaway = creds("sprout-demo-throwaway.txt")["email"]
     reviewer = creds("sprout-reviewer.txt")["email"]
 
-    if cmd == "reset":
+    if cmd == "ensure":
+        # Create the throwaway straight through the admin API: no confirmation email, so it does not
+        # touch the 2-per-hour cap on the built-in mailer.
+        pw = creds("sprout-demo-throwaway.txt")["password"]
+        u = find(throwaway)
+        if u:
+            call("DELETE", f"/auth/v1/admin/users/{u['id']}")
+        r = call("POST", "/auth/v1/admin/users", {"email": throwaway, "password": pw, "email_confirm": True})
+        print(f"throwaway ready ({r.get('id')})" if r.get("id") else f"could not create throwaway: {r}")
+
+    elif cmd == "reset":
         u = find(throwaway)
         if u:
             call("DELETE", f"/auth/v1/admin/users/{u['id']}")

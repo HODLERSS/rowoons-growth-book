@@ -241,7 +241,7 @@ final class SproutDemoUITests: XCTestCase {
             _ = tapFirst(app.staticTexts, startingWith: "Source:", "a source badge", timeout: 6)
         }
         beat(2.8)
-        _ = tap("Close", "the source card close button", timeout: 6)
+        _ = tapWhenOnScreen("Close", "the source card close button")
         beat(1.0)
     }
 
@@ -301,6 +301,9 @@ final class SproutDemoUITests: XCTestCase {
     // MARK: - account: registration, login, deletion
 
     private var demoEmail: String { env("DEMO_EMAIL") }
+    /// The built-in mailer allows 2 emails an hour project-wide, so a take that registers on camera is
+    /// not always possible. When set, the account already exists and the take shows login and deletion.
+    private var skipRegistration: Bool { env("SKIP_REGISTRATION") == "1" }
     private var demoPassword: String { env("DEMO_PASSWORD") }
 
     /// Apple asks to see registration, login and deletion. All three run on a throwaway account so the
@@ -314,12 +317,16 @@ final class SproutDemoUITests: XCTestCase {
         openSignInSheet()
         guard !rehearsal else { note("rehearsal: showing the sheet only"); _ = tap("Close", "close the sheet"); return }
 
-        register()
-        signInWithPassword(what: "login straight after registering")
-        signOutBeat()
-        openSignInSheet()
-        revealPasswordForm()
-        fillCredentials()
+        // Apple asks for registration, login and deletion. Signing out and back in again demonstrated
+        // nothing extra and doubled the number of places the sheet had to be re-found, so the take
+        // runs the three required beats in one continuous session.
+        if skipRegistration {
+            note("registration skipped: the account was created out of band")
+            revealPasswordForm()
+            fillCredentials()
+        } else {
+            register()
+        }
         signInWithPassword(what: "login")
         deleteBeat()
     }
@@ -329,8 +336,11 @@ final class SproutDemoUITests: XCTestCase {
         beat(2.2)                                   // the sheet: Apple, Google, an email link, a password
     }
 
+    /// The disclosure sits under the fold of the sheet on a 4.7" screen, and the keyboard hides it
+    /// further, so dismiss and scroll before tapping or the tap lands on nothing.
     private func revealPasswordForm() {
-        _ = tap("Use a password instead", "the password disclosure", timeout: 10)
+        dismissKeyboard()
+        _ = tapWhenOnScreen("Use a password instead", "the password disclosure")
         beat(1.2)
     }
 
@@ -338,6 +348,7 @@ final class SproutDemoUITests: XCTestCase {
     /// submits the web form, which would send an empty password.
     private func fillCredentials() {
         _ = fill(app.textFields.firstMatch, demoEmail, "the demo email")
+        dismissKeyboard()
         _ = fill(app.secureTextFields.firstMatch, demoPassword, "the demo password")
         dismissKeyboard()
     }
@@ -345,7 +356,7 @@ final class SproutDemoUITests: XCTestCase {
     private func register() {
         note("registration")
         revealPasswordForm()
-        _ = tap("New here? Create an account", "the create-account switch", timeout: 8)
+        _ = tapWhenOnScreen("New here? Create an account", "the create-account switch")
         beat(1.0)
         fillCredentials()
         _ = tapWhenOnScreen("Create an account", "the Create account button")
@@ -353,7 +364,7 @@ final class SproutDemoUITests: XCTestCase {
             note("MISSING the registration confirmation message")
         }
         beat(4.0)                                   // the harness confirms the address in this window
-        _ = tap("Already have a password? Sign in", "the sign-in switch", timeout: 8)
+        _ = tapWhenOnScreen("Already have a password? Sign in", "the sign-in switch")
         beat(1.0)
     }
 
@@ -374,7 +385,7 @@ final class SproutDemoUITests: XCTestCase {
         note("account deletion")
         _ = tapWhenOnScreen("Delete account", "the Delete account row")
         beat(1.8)                                   // the confirmation dialog
-        _ = tap("Delete", "the destructive confirm")
+        _ = tapWhenOnScreen("Delete", "the destructive confirm")
         if !app.staticTexts["Account deleted."].waitForExistence(timeout: 40) { note("MISSING the deletion toast") }
         beat(3.0)
     }

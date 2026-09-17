@@ -73,10 +73,17 @@ sleep 4                                   # let the Home screen settle before th
 # registered" instead of registering. The confirm loop then confirms that one address while the test
 # waits between the registration and login beats, so a single account carries all three beats.
 if [ "$REHEARSAL" != "1" ]; then
-  ./demo-account.py reset
-  CONFIRM_WINDOW=900 ./demo-account.py confirm-loop &
-  CONFIRMER=$!
-  trap 'kill $CONFIRMER 2>/dev/null || true' EXIT
+  if [ "${SKIP_REGISTRATION:-0}" = "1" ]; then
+    # The built-in mailer allows 2 emails an hour project-wide and the cap cannot be raised without
+    # custom SMTP, so the account is created through the admin API instead and the take shows login
+    # and deletion only.
+    ./demo-account.py ensure
+  else
+    ./demo-account.py reset
+    CONFIRM_WINDOW=900 ./demo-account.py confirm-loop &
+    CONFIRMER=$!
+    trap 'kill $CONFIRMER 2>/dev/null || true' EXIT
+  fi
 fi
 
 xcodebuild test-without-building -project App.xcodeproj -scheme SproutUITests \
@@ -87,9 +94,15 @@ set -e
 grep -E "error:|MISSING|could not tap|no keyboard|no return|Test Case" /tmp/sprout-demo.log | tail -20 || true
 
 # The take is only good if the throwaway really went and the reviewer account really stayed.
+# Only meaningful when the test actually ran: otherwise "throwaway gone" just means it was never
+# created, which reads like a passing deletion beat and is not one.
 if [ "$REHEARSAL" != "1" ]; then
   kill $CONFIRMER 2>/dev/null || true
-  ./demo-account.py verify || echo "ACCOUNT STATE WRONG — do not ship this take"
+  if [ $STATUS -eq 0 ]; then
+    ./demo-account.py verify || echo "ACCOUNT STATE WRONG — do not ship this take"
+  else
+    echo "test did not pass ($STATUS); skipping the account check"
+  fi
 fi
 
 rm -rf /tmp/sprout-demo-att

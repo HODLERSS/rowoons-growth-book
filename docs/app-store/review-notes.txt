@@ -1,12 +1,12 @@
-Sprout is a private record-keeping app for parents of children aged 0-36 months. It works offline and no account is required for any feature.
+Sprout is a private record-keeping app for parents of children 0-36 months. It works offline and no account is required.
 
 1. DEMO VIDEO
-A screen recording made on a physical iPhone is attached here and to our Resolution Center reply. It begins at app launch and shows onboarding, all five tabs, confirming a milestone, a source citation, a journal entry, Settings and the English/Korean switch, then account registration, sign out, login, and Settings > Account > Delete account.
+A screen recording made on a physical iPhone is attached here and to our Resolution Center reply. It begins at app launch and shows onboarding, the five tabs, confirming a milestone, a source citation, a journal entry, Settings, the English/Korean switch, signing in with the account above, and Settings > Account > Delete account with its confirmation. Account creation uses the same sheet ("Create an account"), and also happens on a first sign-in with Apple, Google or an email link.
 
 2. PURPOSE AND TARGET AUDIENCE
-Audience: parents and caregivers of children aged 0-36 months. The app is for adults; it is not aimed at children and is not in the Kids category.
-Problem: guidance on what a baby does at a given age is scattered across many sites and rarely tied to the child's exact age.
-Value: Sprout puts the milestones, age-matched play ideas and home-safety notes for the child's exact month on one screen, each citing its public-health source, and keeps the parent's own record of what their child has done.
+Audience: parents and caregivers of children aged 0-36 months. The app is for adults, not aimed at children, and not in the Kids category.
+Problem: guidance on what a baby does at a given age is scattered across many sites and rarely tied to the child's age.
+Value: Sprout puts the milestones, play ideas and home-safety notes for the child's exact month on one screen, each citing its public-health source, and keeps the parent's record of what their child has done.
 
 3. SETUP AND ACCESS
 DEMO ACCOUNT (not required, provided for convenience)
@@ -16,8 +16,8 @@ DEMO ACCOUNT (not required, provided for convenience)
 No login is needed: every feature works signed out, and nothing is gated behind an account.
 - On first launch, type any name and a birthday (for example Rowoon, 2025-04-17) and tap Get started.
 - The optional due-date field applies only to babies born 3+ weeks early; content then follows corrected age to 24 months.
-- Five tabs: Home, Milestones, Play, Safety, Journal. Tap a leaf to confirm a milestone; tap the source name under any item for its citation.
-- The gear icon on Home opens Settings: Language (English/Korean), Account, Notifications, Data export and restore, About.
+- Five tabs: Home, Milestones, Play, Safety, Journal. Tap a leaf to confirm a milestone; tap a source name for its citation.
+- The gear on Home opens Settings: Language, Account, Notifications, Data export and restore, About.
 Optional account: signing in adds only cloud backup and sync of the user's own records across devices. Sign-in is by Sign in with Apple, Google, an emailed link, or the email and password above. Sign out and Delete account are both in Settings > Account. Delete account asks for confirmation, then immediately deletes the account and every record stored under it on our server.
 
 4. EXTERNAL SERVICES
@@ -31,5 +31,5 @@ None. The app behaves identically in every region and ships the same content eve
 
 6. REGULATED INDUSTRY AND THIRD-PARTY MATERIAL
 Sprout is not a medical device and gives no diagnosis, treatment or personalised medical advice. A disclaimer appears during onboarding, on every source card, in Settings > About, and in the Terms.
-No protected third-party material is reproduced. Every milestone, play idea and safety note is our own short summary of public guidance from the CDC, AAP (HealthyChildren.org), WHO, Zero to Three, NAEYC, CPSC and Pathways.org, shown with the organisation's name, a link to the page, and the date we last checked it (2 September 2026). An automated audit of all 461 items confirmed none reproduces source text verbatim.
+No protected third-party material is reproduced. Every milestone, play idea and safety note is our own short summary of public guidance from the CDC, AAP (HealthyChildren.org), WHO, Zero to Three, NAEYC, CPSC and Pathways.org, shown with the organisation's name, a link, and the date we last checked it (2 September 2026). An automated audit of all 461 items confirmed none reproduces source text verbatim.
 No user-generated content is shared between users: journal entries are private to one account, and there is no feed, upload, messaging or public content anywhere in the app, so content reporting and blocking do not apply.

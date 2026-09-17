@@ -390,12 +390,15 @@ final class SproutDemoUITests: XCTestCase {
         beat(3.0)
     }
 
+    /// XCTest stops recording shortly after the last *action*, not the last sleep, so the take ends on
+    /// real taps: close whatever is open, go back to Home, then out to the Home screen.
     private func finish() {
         note("done")
-        beat(1.5)
-        app.swipeDown()
-        beat(1.2)
+        _ = tap("Close", "close any open sheet", timeout: 4)
+        beat(1.0)
+        _ = tap("Home", "the Home tab", timeout: 6)
+        beat(2.2)
         XCUIDevice.shared.press(.home)
-        beat(2.5)
+        beat(2.0)
     }
 }

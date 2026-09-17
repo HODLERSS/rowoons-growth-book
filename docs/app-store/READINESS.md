@@ -89,3 +89,29 @@ enroll, sign, upload, and click through App Store Connect (≈ 2 hours of your t
 - **Guideline 1.4.1 (medical content)**: mitigated by the disclaimer in onboarding, every source card and Settings, and by citing CDC/AAP with dates. If review asks, point there.
 - **Name availability**: "Sprout" alone is taken; the hyphenated store name is checked by search only, App Store Connect is the ground truth.
 - **Real-device native pass**: the WKWebView app has only been exercised on simulators (which cannot show the software keyboard reliably). Your first Xcode run on the phone is the definitive check; the web app on the same phone already exercises the same code paths.
+
+## Resubmission log (2026-09-16)
+- Rejected 2026-09-14 18:42 under **Guideline 2.1 — Information Needed — New App Submission**: the
+  boilerplate letter for an account with little review history. No defect cited, review never ran.
+  The same letter hit Assetly (6811739789) in the same minute.
+- **Resubmitted 2026-09-16 21:50 CDT with build 4 → WAITING_FOR_REVIEW** (manual release).
+  Notes 3,989/4,000 answering Apple's six items; the same answers posted in Resolution Center
+  (3,996/4,000) with `sprout-demo.mp4` attached to both the version and the reply.
+- Demo recording: 4m59s on a physical iPhone SE (iOS 18.3), driven by `SproutUITests` while Xcode
+  recorded. Shows launch from the Home screen, onboarding, the five tabs, a confirmed milestone, a
+  source citation, a journal entry, Settings, the English/Korean switch, password sign-in and
+  account deletion with its confirmation dialog.
+- **On-camera registration is missing and that is deliberate**: Supabase's built-in mailer allows
+  2 emails an hour project-wide, the cap cannot be raised without custom SMTP ("Custom SMTP required
+  to configure RATE_LIMIT_EMAIL_SENT"), and three takes failed on it. The notes and reply say plainly
+  where account creation lives instead of implying the video shows it.
+- **Bug the recording found: account deletion never worked on device.** The delete route had no
+  OPTIONS handler and no CORS headers, so the preflight from the app's custom scheme was blocked and
+  the request never left the web view. Guideline 5.1.1(v) would have failed review. Fixed server-side
+  (commit ca9711d); `e2e/account.spec.ts` missed it because the web app calls that route same-origin.
+
+### Launch blocker, unrelated to review
+Supabase's built-in email service is capped at **2 emails per hour for the whole project** and is not
+intended for production. Every magic-link sign-in and every password sign-up confirmation goes through
+it, so once Sprout has real users the third person in any hour gets nothing. Configure custom SMTP
+(Resend, Postmark, SendGrid) in Supabase before launch; it also unlocks `RATE_LIMIT_EMAIL_SENT`.

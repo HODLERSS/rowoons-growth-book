@@ -43,5 +43,10 @@ entry and its recording is discarded, then `testBhero` is the take.
 - **Segment boundaries are verified frame by frame**, never estimated. Two were a beat early and put
   the Safety caption over Play content and the Korean caption over the Settings screen.
 - **It ends on a card**, not a screenshot: a launch clip that stops mid-product leaves nothing to act on.
-- **The screen sits in a phone body** (`device-frame.py`) with a soft shadow. Bezels are thin and even
-  rather than an accurate SE, whose deep chins would date the clip to one model.
+- **The phone body matches the device the footage came from.** A first attempt wrapped this 9:16
+  recording in a thin all-screen frame and it read as a dark rectangle, because those proportions
+  belong to no real phone — modern ones are about 19.5:9, and a 16:9 display only exists on
+  home-button bodies. `device-frame.py` uses iPhone SE proportions measured against screen width
+  (side bezel 0.075, top 0.260, bottom 0.327), with the earpiece slot, camera, home button ring, side
+  buttons, a space-grey band and a soft shadow. The display has square corners, as it does on those
+  models; only the glass and body are rounded.

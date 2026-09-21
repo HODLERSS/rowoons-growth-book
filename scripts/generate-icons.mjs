@@ -34,13 +34,28 @@ const badgeSvg = (size) => {
 </svg>`;
 };
 
-const ogSvg = () => `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+/**
+ * Open Graph card, 1200x630. A link preview is often the only context someone gets, so it has to say
+ * what the app is, not just what it is called: the previous version led with a tagline and a reader
+ * could not tell it was for babies.
+ *
+ * Centred rather than left aligned because several platforms crop the card towards square, and a
+ * centred block survives that. Content stays inside an 80px margin for the same reason. Type is sized
+ * for a feed: at the ~500px these are usually rendered, 86px reads as 36 and 40px as 17. The languages
+ * are not spelled out because the wordmark already carries both, and every line is kept narrow enough
+ * to survive a centre square crop, which is what some platforms show.
+ */
+const ogSvg = () => {
+  const ICON = 168;
+  const iconX = Math.round((1200 - ICON) / 2);
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <rect width="1200" height="630" fill="${CREAM}"/>
-  <g transform="translate(80 155) scale(0.3125)">${iconSvg(1024, { radius: 0.22 }).replace(/<svg[^>]*>|<\/svg>/g, "")}</g>
-  <text x="470" y="300" font-family="Nunito, Avenir Next, Helvetica Neue, Arial, sans-serif" font-weight="800" font-size="96" fill="${INK}">Sprout · 새싹</text>
-  <text x="472" y="380" font-family="-apple-system, Helvetica Neue, Arial, sans-serif" font-size="40" fill="#6F5D52">Grow, one leaf at a time.</text>
-  <text x="472" y="440" font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="40" fill="#6F5D52">한 잎, 한 잎 자라요.</text>
+  <g transform="translate(${iconX} 108) scale(${ICON / 1024})">${iconSvg(1024, { radius: 0.22 }).replace(/<svg[^>]*>|<\/svg>/g, "")}</g>
+  <text x="600" y="380" text-anchor="middle" font-family="Nunito, Avenir Next, Helvetica Neue, Arial, sans-serif" font-weight="800" font-size="86" fill="${INK}">Sprout · 새싹</text>
+  <text x="600" y="448" text-anchor="middle" font-family="-apple-system, Helvetica Neue, Arial, sans-serif" font-size="38" fill="#6F5D52">Baby milestones, play and safety</text>
+  <text x="600" y="512" text-anchor="middle" font-family="-apple-system, Helvetica Neue, Arial, sans-serif" font-size="32" fill="#9A867A">Free on the App Store</text>
 </svg>`;
+};
 
 const png = (svg) => sharp(Buffer.from(svg)).png();
 

@@ -31,7 +31,23 @@ export const metadata: Metadata = {
   appleWebApp: { capable: true, statusBarStyle: "default", title: "Sprout" },
   icons: { icon: [{ url: "/favicon-32.png", sizes: "32x32" }, { url: "/icon-192.png", sizes: "192x192" }], apple: "/apple-touch-icon.png" },
   formatDetection: { telephone: false },
-  openGraph: { title: "Sprout", description: "Grow, one leaf at a time.", url: APP_URL, siteName: "Sprout", images: ["/og.png"] },
+  // The card is the only context a link preview gives, so the description says what the app is rather
+  // than repeating the tagline. Without an explicit twitter block X renders a small square card.
+  openGraph: {
+    type: "website",
+    title: "Sprout · 새싹",
+    description: "Milestones, play and safety for your baby's first 36 months, month by month. Free, in English and Korean.",
+    url: APP_URL,
+    siteName: "Sprout",
+    locale: "en_US",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Sprout · 새싹 — milestones, play and safety, month by month" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sprout · 새싹",
+    description: "Milestones, play and safety for your baby's first 36 months. Free, in English and Korean.",
+    images: ["/og.png"],
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

@@ -13,10 +13,29 @@ SIGN=(-allowProvisioningUpdates
       -authenticationKeyID 26G34JQ5XQ
       -authenticationKeyIssuerID 03b49a0e-29cc-4d9d-94bc-a12aa1f92ec4
       DEVELOPMENT_TEAM=5RCPL9J3UX)
+SIM=0
+DD=/tmp/dd-uitest
 
-./device-ready.py "$UDID" || { echo "device not ready"; exit 2; }
-if ! "$DEVICECTL" device process launch --device "$UDID" --terminate-existing co.minjae.sprout >/dev/null 2>/tmp/hero-lock.log; then
-  grep -qi unlock /tmp/hero-lock.log && { echo "PHONE IS LOCKED"; exit 2; }
+# A simulator is the better target for marketing footage: it renders a current-generation iPhone, so
+# the clip can sit in a modern thin-bezel body instead of the 16:9 handset that shot the App Review
+# demo. It also has no lock screen, no Touch ID and no automation prompt to answer.
+if xcrun simctl list devices | grep -q "$UDID"; then
+  SIM=1
+  SIGN=(CODE_SIGNING_ALLOWED=NO)
+  DD=/tmp/dd-sim
+  xcrun simctl bootstatus "$UDID" -b >/dev/null 2>&1 || true
+  # Apple's own convention for marketing shots: 9:41, full bars, full battery.
+  xcrun simctl status_bar "$UDID" override --time "9:41" --batteryState charged \
+    --batteryLevel 100 --cellularBars 4 --wifiBars 3 >/dev/null 2>&1 || true
+else
+  SIM=0
+  DD=/tmp/dd-uitest
+  ./device-ready.py "$UDID" || { echo "device not ready"; exit 2; }
+fi
+if [ "$SIM" -eq 0 ]; then
+  if ! "$DEVICECTL" device process launch --device "$UDID" --terminate-existing co.minjae.sprout >/dev/null 2>/tmp/hero-lock.log; then
+    grep -qi unlock /tmp/hero-lock.log && { echo "PHONE IS LOCKED"; exit 2; }
+  fi
 fi
 
 REHEARSAL="${REHEARSAL:-0}" ./make-demo-plan.sh >/dev/null
@@ -26,8 +45,13 @@ rm -rf "$RESULT"
 # which wipes what the seed pass just wrote, so splitting them with ONLY=hero leaves the take running
 # against a first-launch app and every tab tap fails. ONLY is kept for diagnosis, not for iterating.
 if [ "${SKIP_INSTALL:-0}" != "1" ]; then
-  "$DEVICECTL" device uninstall app --device "$UDID" co.minjae.sprout >/dev/null 2>&1 || true
-  "$DEVICECTL" device install app --device "$UDID" /tmp/dd-uitest/Build/Products/Debug-iphoneos/App.app >/dev/null
+  if [ "$SIM" -eq 1 ]; then
+    xcrun simctl uninstall "$UDID" co.minjae.sprout >/dev/null 2>&1 || true
+    xcrun simctl install "$UDID" "$DD/Build/Products/Debug-iphonesimulator/App.app" >/dev/null
+  else
+    "$DEVICECTL" device uninstall app --device "$UDID" co.minjae.sprout >/dev/null 2>&1 || true
+    "$DEVICECTL" device install app --device "$UDID" "$DD/Build/Products/Debug-iphoneos/App.app" >/dev/null
+  fi
   sleep 4
 fi
 
@@ -40,7 +64,7 @@ esac
 set +e
 xcodebuild test-without-building -project App.xcodeproj -scheme SproutUITests \
   -destination "id=$UDID" "${TESTS[@]}" \
-  -resultBundlePath "$RESULT" -derivedDataPath /tmp/dd-uitest "${SIGN[@]}" > /tmp/sprout-hero.log 2>&1
+  -resultBundlePath "$RESULT" -derivedDataPath "$DD" "${SIGN[@]}" > /tmp/sprout-hero.log 2>&1
 STATUS=$?
 set -e
 grep -E "Test Case|could not tap|error:" /tmp/sprout-hero.log | tail -12 || true

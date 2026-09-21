@@ -20,33 +20,42 @@ case "$ASPECT" in
 esac
 # Bezel and screen radius are derived from the screen width so the body stays concentric with
 # the screen at any size; PAD must match device-frame.py so the shadow is not clipped.
-PAD=90
-STATUS_FRAC=${STATUS_FRAC:-0.035}
+PAD=100
+# Simulator footage carries a clean 9:41 status bar and the Dynamic Island, both of which belong
+# in the frame. Only the physical-device recording needed its status bar cropped.
+STATUS_FRAC=${STATUS_FRAC:-0}
 
 SRC=$(ffprobe -v error -select_streams v -show_entries stream=width,height -of csv=p=0 "$RAW")
 SRC_W=${SRC%,*}; SRC_H=${SRC#*,}
+# Only convert range when the source really is full. Declaring limited footage as full compresses it
+# a second time and everything goes grey — the cream ground turned to putty that way.
+SRC_RANGE=$(ffprobe -v error -select_streams v -show_entries stream=color_range -of csv=p=0 "$RAW")
+if [ "$SRC_RANGE" = "pc" ] || [ "$SRC_RANGE" = "full" ]; then
+  RANGE_FILTER="scale=in_range=full:out_range=limited,"
+else
+  RANGE_FILTER=""
+fi
 CROP_TOP=$(python3 -c "print(int(round(${SRC_H}*${STATUS_FRAC}/2))*2)")
 CROP_H=$(python3 -c "print(${SRC_H}-${CROP_TOP})")
 
-read -r SCREEN_W SCREEN_H BODY_X BODY_Y SCREEN_X SCREEN_Y CAP_Y <<<"$(python3 -c "
+read -r SCREEN_W SCREEN_H SCREEN_R BODY_X BODY_Y SCREEN_X SCREEN_Y CAP_Y <<<"$(python3 -c "
 canvas_w, canvas_h, top, cap_h, pad = ${W}, ${H}, ${TOP}, ${CAP_H}, ${PAD}
-# Bezels are the SE's, as fractions of screen width; see device-frame.py. Solving for the screen that
-# makes the whole body fit the height available:
-#   body_h = screen_h + (0.260 + 0.327) * screen_w,  screen_h = screen_w * aspect
+# Uniform thin bezel, per device-frame.py. Solving for the screen that makes the body fit the height:
+#   body_h = screen_h + 2 * 0.027 * screen_w,  screen_h = screen_w * aspect
 aspect = ${CROP_H} / ${SRC_W}
 body_h = canvas_h - top - cap_h
-screen_w = int(round(body_h / (aspect + 0.587) / 2)) * 2
+screen_w = int(round(body_h / (aspect + 0.054) / 2)) * 2
 screen_h = int(round(screen_w * aspect / 2)) * 2
-side = int(round(screen_w * 0.075))
-top_bez = int(round(screen_w * 0.260))
-body_w = screen_w + 2 * side
+bez = max(6, int(round(screen_w * 0.027)))
+body_w = screen_w + 2 * bez
+body_r = int(round(body_w * 0.155))
 body_x = (canvas_w - body_w) // 2
-print(screen_w, screen_h, body_x - pad, top - pad, body_x + side, top + top_bez, canvas_h - cap_h)
+print(screen_w, screen_h, body_r - bez, body_x - pad, top - pad, body_x + bez, top + bez, canvas_h - cap_h)
 ")"
-echo "$ASPECT: screen ${SCREEN_W}x${SCREEN_H} on ${W}x${H}"
+echo "$ASPECT: screen ${SCREEN_W}x${SCREEN_H} r${SCREEN_R} on ${W}x${H}"
 
-# The display on a home-button iPhone has square corners; only the glass and body are rounded.
-./roundrect-mask.py "$SCREEN_W" "$SCREEN_H" 2 /tmp/sprout-mask.png >/dev/null
+# The display radius is the body radius minus the bezel, so the two stay concentric.
+./roundrect-mask.py "$SCREEN_W" "$SCREEN_H" "$SCREEN_R" /tmp/sprout-mask.png >/dev/null
 ./device-frame.py "$SCREEN_W" "$SCREEN_H" /tmp/sprout-frame.png >/dev/null
 
 inputs=(-i "$RAW" -i /tmp/sprout-mask.png -i /tmp/sprout-frame.png)
@@ -68,7 +77,7 @@ f="${f} [withbody][rounded] overlay=${SCREEN_X}:${SCREEN_Y}:format=auto:shortest
 for i in $(seq 0 $((n-1))); do
   f="${f} [b${i}][$((i+3)):v] overlay=0:${CAP_Y}:enable='between(t,${starts[$i]},${ends[$i]})' [b$((i+1))];"
 done
-f="${f} [b${n}] scale=in_range=full:out_range=limited, format=yuv420p [v]"
+f="${f} [b${n}] ${RANGE_FILTER}format=yuv420p [v]"
 
 ffmpeg -v error -y "${inputs[@]}" -filter_complex "$f" -map "[v]" -an \
   -c:v libx264 -crf 19 -preset slow -profile:v high -pix_fmt yuv420p \

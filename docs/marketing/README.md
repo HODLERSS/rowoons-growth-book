@@ -40,13 +40,23 @@ entry and its recording is discarded, then `testBhero` is the take.
 - **Captions are not optional.** The feed plays this muted, so the caption is the only thing telling a
   viewer what they are looking at. This ffmpeg has no `drawtext` (no freetype), so `caption-strip.py`
   draws them with PIL in Apple SD Gothic Neo, which covers Latin and Hangul in one face.
-- **Segment boundaries are verified frame by frame**, never estimated. Two were a beat early and put
-  the Safety caption over Play content and the Korean caption over the Settings screen.
+- **Segment boundaries are verified frame by frame**, never estimated, and `cut-hero.sh` now writes a
+  proof sheet — one frame from the middle of each segment, in order — because boundaries read off a
+  coarse sample were wrong twice, captioning the wrong screens both times.
 - **It ends on a card**, not a screenshot: a launch clip that stops mid-product leaves nothing to act on.
-- **The phone body matches the device the footage came from.** A first attempt wrapped this 9:16
-  recording in a thin all-screen frame and it read as a dark rectangle, because those proportions
-  belong to no real phone — modern ones are about 19.5:9, and a 16:9 display only exists on
-  home-button bodies. `device-frame.py` uses iPhone SE proportions measured against screen width
-  (side bezel 0.075, top 0.260, bottom 0.327), with the earpiece slot, camera, home button ring, side
-  buttons, a space-grey band and a soft shadow. The display has square corners, as it does on those
-  models; only the glass and body are rounded.
+- **Shot on a current-generation simulator, not the physical phone.** Marketing guidance is to show
+  the current iPhone and stay on one generation across a campaign. The App Review demo was shot on a
+  physical iPhone SE because Apple required a real device, but that handset is 16:9 — and a 16:9
+  screen forces a choice between a squat modern body and the deep chins of a home-button one, which
+  is what "too thick" was. Recording the same test on an iPhone 17 Pro simulator gives 1206×2622
+  (19.5:9), which a thin uniform bezel fits honestly. The simulator also has no lock screen, no
+  Touch ID and no automation prompt.
+- **Status bar set to Apple's own convention** before recording: 9:41, full bars, full battery, via
+  `simctl status_bar override`. The Dynamic Island and status bar are part of the recording, so the
+  frame does not draw them and nothing is cropped.
+- **Bezel proportions from the current Pro:** a 71.5mm body around a ~67.9mm display gives a bezel of
+  0.027 of screen width; body radius 0.155 of body width, display radius that minus the bezel so the
+  two stay concentric. Titanium band as a gradient, side buttons, soft shadow dropped low.
+- **Check the source colour range before converting it.** Declaring limited-range footage as full
+  compresses it twice and the cream ground turns to putty. `make-hero-clip.sh` now probes
+  `color_range` and only converts when it really is full.

@@ -16,7 +16,7 @@ RAW="${1:?}"; OUT="${2:?}"
 # seconds, which is how the first cut ended a beat before the milestone was confirmed.
 # The opening run stays continuous through the tap so confirming a milestone and the progress bar
 # moving read as one action rather than two shots.
-SEGMENTS="3.2,2.2 18.4,3.0 24.8,1.8 33.2,1.6 40.4,1.6 45.2,1.2 57.0,2.2"
+SEGMENTS="2.0,2.0 15.6,3.2 24.0,1.8 28.6,1.7 32.6,1.7 36.4,1.2 44.0,2.0"
 
 WORK=$(mktemp -d); trap 'rm -rf "$WORK"' EXIT
 
@@ -82,3 +82,18 @@ ffmpeg -v error -y -f concat -safe 0 -i "$WORK/list.txt" \
   -vf "fade=t=in:st=0:d=0.35" \
   -c:v libx264 -crf 18 -preset slow -pix_fmt yuv420p -r 30 -an "$OUT"
 echo "cut: ${TOTAL}s expected, $(ffprobe -v error -show_entries format=duration -of csv=p=0 "$OUT")s actual"
+
+# Proof sheet: one frame from the middle of every segment, in order, so a caption sitting on the
+# wrong screen is obvious. Two boundaries were wrong twice before this existed.
+rm -rf /tmp/sprout-proof; mkdir -p /tmp/sprout-proof
+i=0; t=0
+for seg in $SEGMENTS; do
+  d="${seg#*,}"
+  mid=$(python3 -c "print(round($t + $d/2, 2))")
+  ffmpeg -v error -y -i "$OUT" -ss "$mid" -frames:v 1 -vf "crop=iw:ih/2:0:0,scale=200:-1" "/tmp/sprout-proof/$i.png"
+  t=$(python3 -c "print(round($t + $d, 2))"); i=$((i+1))
+done
+ffmpeg -v error -y $(for f in /tmp/sprout-proof/*.png; do echo -n "-i $f "; done) \
+  -filter_complex "$(python3 -c "n=$i; print(''.join(f'[{k}]' for k in range(n)) + f'hstack={n}')")" \
+  /tmp/sprout-proof/sheet.png
+echo "proof sheet: /tmp/sprout-proof/sheet.png"

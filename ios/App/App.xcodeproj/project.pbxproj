@@ -19,6 +19,7 @@
 		9582B6832FE993A70072D4E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9582B6822FE993A50072D4E8 /* SceneDelegate.swift */; };
 		D0DA00000000000000000A02 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D0DA00000000000000000A01 /* PrivacyInfo.xcprivacy */; };
 		AA30000000000000000000B2 /* SproutTreeDump.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA30000000000000000000S2 /* SproutTreeDump.swift */; };
+		AA30000000000000000000B3 /* SproutHeroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA30000000000000000000S3 /* SproutHeroUITests.swift */; };
 		AA30000000000000000000B1 /* SproutDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA30000000000000000000S1 /* SproutDemoUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		958DCC722DB07C7200EA8C5F /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = debug.xcconfig; path = ../debug.xcconfig; sourceTree = SOURCE_ROOT; };
 		AA30000000000000000000P1 /* SproutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SproutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA30000000000000000000S2 /* SproutTreeDump.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SproutTreeDump.swift; sourceTree = "<group>"; };
+		AA30000000000000000000S3 /* SproutHeroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SproutHeroUITests.swift; sourceTree = "<group>"; };
 		AA30000000000000000000S1 /* SproutDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SproutDemoUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				AA30000000000000000000S1 /* SproutDemoUITests.swift */,
+				AA30000000000000000000S3 /* SproutHeroUITests.swift */,
 				AA30000000000000000000S2 /* SproutTreeDump.swift */,
 			);
 			path = SproutUITests;
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA30000000000000000000B1 /* SproutDemoUITests.swift in Sources */,
+				AA30000000000000000000B3 /* SproutHeroUITests.swift in Sources */,
 				AA30000000000000000000B2 /* SproutTreeDump.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

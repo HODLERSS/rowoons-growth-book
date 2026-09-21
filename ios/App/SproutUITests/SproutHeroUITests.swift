@@ -97,30 +97,74 @@ final class SproutHeroUITests: XCTestCase {
         }
     }
 
-    /// The clip. Even ~2.5s beats, no fumbling, ends on Home.
+    /// The clip. Every beat carries motion — a drag or a tap that visibly changes state — because a
+    /// sequence of held screens reads as a slideshow of screenshots rather than someone using the app.
     func testBhero() {
         app.terminate()
         app.launch()
-        beat(3.4)                                   // 1. Home, populated
+        beat(1.6)
 
-        confirmFirstMilestone()                     // 2. a leaf turns green, the count moves
-        beat(2.8)
+        // 1. Home, read the way a person reads it: down through the cards and back up.
+        scroll(.up, 0.55); beat(0.5)
+        scroll(.up, 0.50); beat(0.9)
+        scroll(.down, 0.55); beat(0.4)
+        scroll(.down, 0.55); beat(0.9)
 
-        tap("Milestones", timeout: 8); beat(2.6)    // 3. the month laid out
-        tap("Play", timeout: 8); beat(2.6)          // 4. play ideas, with their source
-        tap("Safety", timeout: 8); beat(2.6)        // 5. safety notes, with what to do
-        tap("Journal", timeout: 8); beat(2.4)       // 6. the journal
-        tap("Home", timeout: 8); beat(1.6)
-        app.swipeUp(); beat(2.4)                    // 7. the note for this month
+        // 2. Two milestones confirmed, so the counter and the bar move twice rather than once.
+        confirmMilestone(row: 0); beat(1.3)
+        confirmMilestone(row: 0); beat(1.5)
+
+        // 3. Milestones, scrolled through the categories.
+        tap("Milestones", timeout: 8); beat(1.1)
+        scroll(.up, 0.55); beat(1.1)
+
+        // 4. Play.
+        tap("Play", timeout: 8); beat(1.0)
+        scroll(.up, 0.55); beat(1.1)
+
+        // 5. Safety.
+        tap("Safety", timeout: 8); beat(1.0)
+        scroll(.up, 0.50); beat(1.1)
+
+        // 6. Journal. The entry is not opened: the entry view has no tab bar and no back control this
+        // test can address by label, which stranded every beat after it.
+        tap("Journal", timeout: 8); beat(1.4)
+        scroll(.up, 0.35); beat(0.9)
+
+        // 7. Korean, reached the way a user would. The gear lives in the Home header, so go there first.
+        tap("Home", timeout: 8); beat(0.7)
+        tap("Settings", timeout: 8); beat(1.2)
+        tap("한국어", timeout: 8); beat(1.6)
+        tap("홈", timeout: 8); beat(1.6)
+        scroll(.up, 0.45); beat(1.4)
+    }
+
+    private enum Dir { case up, down }
+
+    /// A press-and-drag, not swipeUp(): swipe is a flick that blurs past the content, while a drag at
+    /// this speed reads like a thumb and leaves the text legible the whole way.
+    private func scroll(_ dir: Dir, _ amount: CGFloat) {
+        let fromY: CGFloat = dir == .up ? 0.72 : 0.30
+        let toY: CGFloat = dir == .up ? 0.72 - amount : 0.30 + amount
+        let start = app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: fromY))
+        let end = app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: toY))
+        start.press(forDuration: 0.08, thenDragTo: end)
     }
 
     /// Milestone rows carry the month's own wording, so they cannot be addressed by label. The
-    /// "This month" header is fixed, and the first row sits just under it: tap relative to the header.
-    private func confirmFirstMilestone() {
+    /// "This month" header is fixed and the rows sit under it at a regular pitch.
+    private func confirmMilestone(row: Int) {
         let header = app.staticTexts["This month"]
         guard header.waitForExistence(timeout: 8) else { note("no This month card"); return }
         header.coordinate(withNormalizedOffset: CGVector(dx: 0, dy: 0))
-              .withOffset(CGVector(dx: 60, dy: 52))
+              .withOffset(CGVector(dx: 60, dy: 52 + CGFloat(row) * 44))
               .tap()
+    }
+
+    private func tapFirstJournalEntry() {
+        let entry = app.buttons.matching(NSPredicate(format: """
+            NOT (label IN {'Home','Milestones','Play','Safety','Journal','New entry','Settings','Back'})
+            """)).firstMatch
+        if entry.waitForExistence(timeout: 6) { hit(entry) } else { note("no journal entry to open") }
     }
 }

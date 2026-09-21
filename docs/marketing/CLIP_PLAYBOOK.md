@@ -1,0 +1,371 @@
+# Making a 15 second app clip that does not look homemade
+
+How the Sprout launch clip was built, and the standard applied at each step. Written so the next app
+gets there without repeating the eleven takes this one needed.
+
+The output: 15.0 seconds, 1080x1080 and 1080x1350, silent, captioned, real app footage in a current
+generation iPhone body, ending on a card. Around 800 KB.
+
+---
+
+## 1. The standard
+
+Five rules, each of which we broke once and had to go back for.
+
+1. **Real footage, never a static mockup.** The product is the screen. A pasted screenshot inside a
+   phone image reads as a brochure.
+2. **Every beat carries motion.** A sequence of held screens is a slideshow of screenshots. The first
+   version was exactly that and it was obvious.
+3. **Captions on every beat.** Feeds autoplay muted. The caption is the only thing telling a viewer
+   what they are looking at.
+4. **Current generation device.** Show one generation across a campaign. This constrains the footage,
+   not just the frame, for reasons in section 2.
+5. **End on a card.** A clip that stops mid product leaves nothing to act on.
+
+---
+
+## 2. Source footage: aspect ratio decides everything
+
+This is the single decision that determines whether the clip can look current, and it is made before
+any drawing.
+
+A physical iPhone SE shoots **16:9** (750x1334). A current iPhone is **19.5:9** (1206x2622). If the
+footage is 16:9, there are only two honest framings and both look wrong:
+
+- A thin modern bezel around 16:9 gives a squat phone that exists nowhere.
+- An accurate 16:9 body is a home button phone, whose chins are 26% and 33% of screen width. That is
+  genuinely bulky, because that is what those phones were.
+
+No redrawing fixes it. **The footage has to be 19.5:9.** Record on a current generation simulator.
+
+```
+xcrun simctl list devices available | grep "iPhone 17"
+```
+
+A simulator is better than a device for this anyway: no lock screen, no Touch ID, no automation
+prompt, no passcode toggles. The physical device is only required when Apple demands one, which is
+App Review, not marketing.
+
+### Status bar
+
+Set it to Apple's own marketing convention before recording:
+
+```
+xcrun simctl status_bar <udid> override --time "9:41" \
+  --batteryState charged --batteryLevel 100 --cellularBars 4 --wifiBars 3
+```
+
+The Dynamic Island and status bar are then part of the recording. Do not draw them in the frame and
+do not crop them. (Physical device footage is different: its status bar carries a real carrier name,
+odd time and partial battery, and should be cropped off, about 3.5% of height.)
+
+### Seeding state
+
+The app must look lived in. An empty first launch state makes a bad clip. Run two tests in sequence:
+one that populates the app (its recording is discarded), then the take.
+
+**Both must run in a single `xcodebuild` invocation.** Each invocation reinstalls the app under test,
+wiping whatever the seed just wrote. Splitting them produced a two minute recording of nothing but
+the onboarding sheet.
+
+---
+
+## 3. Driving the app
+
+XCUITest drives it while Xcode records. Enable recording in the test plan:
+
+```json
+"preferredScreenCaptureFormat": "screenRecording",
+"testTimeoutsEnabled": false,
+"uiTestingScreenshotsLifetime": "keepAlways"
+```
+
+Pull the video out of the result bundle afterwards:
+
+```
+xcrun xcresulttool export attachments --path /tmp/x.xcresult \
+  --output-path /tmp/att --test-id "<Class>/<method>()"
+```
+
+### Motion is the whole job
+
+Scroll with a press and drag, not `swipeUp()`. A swipe is a flick that blurs past the content; a drag
+at this speed reads like a thumb and leaves the text legible the whole way.
+
+```swift
+private func scroll(_ dir: Dir, _ amount: CGFloat) {
+    let fromY: CGFloat = dir == .up ? 0.72 : 0.30
+    let toY = dir == .up ? fromY - amount : fromY + amount
+    let start = app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: fromY))
+    let end   = app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: toY))
+    start.press(forDuration: 0.08, thenDragTo: end)
+}
+```
+
+Prefer taps that visibly change state. Confirming **two** items rather than one moves a counter twice
+and makes the interaction unmistakable. Read the app down and back up rather than jumping between
+tabs only.
+
+### Web view accessibility traps
+
+For a Capacitor or similar app, dump the tree before writing any selector. None of this was
+guessable:
+
+```swift
+print(app.debugDescription)
+```
+
+- A segmented control is `Other`, not `Button`.
+- `<input type="date">` is `Other`, not `TextField`, and tapping it opens a **calendar popover**.
+  Typing does nothing. Walk `Previous Month` and tap the day.
+- The caption above an input shares the input's accessibility label. Match on label, take the tall
+  one.
+- **`isHittable` throws** on web view links (`Activation point invalid`) and aborts the run. Never
+  consult it; tap the centre by coordinate.
+- **The keyboard covers the lower half of the screen.** Anything tapped beneath it hits a key. One
+  run typed a stray character into the name field this way. Dismiss before the next tap.
+- **A control below the fold reports a frame outside the window.** Tapping its centre lands on
+  nothing. Scroll until it is genuinely on screen, then tap.
+- Opening a detail view can remove the tab bar and leave no back control addressable by label, which
+  strands every beat after it. Check before relying on it.
+- `label.length` is not a valid predicate key path.
+
+Write the take to overshoot: about 45 to 60 seconds of raw for a 15 second clip gives room to choose.
+
+---
+
+## 4. Choosing the cut
+
+### Beat structure
+
+Seven beats worked well. Durations from the shipped clip:
+
+| # | Beat | Seconds | Caption |
+|---|---|---|---|
+| 1 | Home, scrolled | 2.0 | One book for the first 36 months |
+| 2 | Confirm two items | 3.2 | Tick off what they can do |
+| 3 | Detail with sources | 1.8 | Every item cites its source |
+| 4 | Second feature | 1.7 | Play ideas for right now |
+| 5 | Third feature | 1.7 | What to watch for this month |
+| 6 | User content | 1.2 | Your own journal |
+| 7 | Second language | 2.0 | English and 한국어 |
+| | end card | 1.8 | |
+
+13.6 seconds of product, crossfaded 0.45 into the card, 15.0 total. The opening beat is the hook and
+the confirm beat is the longest because it is the one real interaction.
+
+**Keep the tap and its result in one continuous segment.** Splitting them turns one action into two
+shots and the causality is lost.
+
+### Normalise before cutting
+
+XCTest records **variable frame rate**, and seeking it is unreliable in both directions. The same 2.0
+second request returned **4.35 seconds** seeking before the input and **0.35 seconds** after it.
+
+```
+ffmpeg -i raw.mp4 -vsync cfr -r 30 -c:v libx264 -crf 16 -preset fast -pix_fmt yuv420p -an norm.mp4
+```
+
+Then every cut is exact. **Time the segments against the normalised file, never the raw one**: on VFR
+footage the fps filter's clock and wall time disagree by seconds, which is how an early cut ended one
+beat before the milestone was confirmed.
+
+### Extract segments to files
+
+`split` plus `trim` plus `concat` in one filtergraph silently returned only the first segment.
+Extract each segment and concatenate explicitly. Put `-ss` **after** `-i` for frame accuracy:
+
+```
+ffmpeg -i norm.mp4 -ss "$start" -t "$dur" -c:v libx264 -crf 16 -r 30 -an "p$i.mp4"
+ffmpeg -f concat -safe 0 -i list.txt -vf "fade=t=in:st=0:d=0.35" -c:v libx264 -crf 18 -r 30 out.mp4
+```
+
+### Verify boundaries with a proof sheet
+
+Boundaries read off a coarse sample were wrong **twice**, both times putting a caption on the wrong
+screen ("Play ideas" over a Milestones screen, "English and 한국어" over a Settings screen). Neither
+was visible without checking.
+
+Emit one frame from the middle of every segment, in order, and look at it before compositing:
+
+```
+for each segment: ffmpeg -i cut.mp4 -ss <midpoint> -frames:v 1 -vf "crop=iw:ih/2:0:0,scale=200:-1" p$i.png
+ffmpeg -i p0.png … -filter_complex "[0][1]…hstack=N" sheet.png
+```
+
+---
+
+## 5. Composition
+
+### Canvas and aspect
+
+A player whose container is roughly square pillarboxes a 4:5 video with black down both sides, and
+**nothing in the file prevents that**. Before changing anything, confirm the file is not at fault:
+
+```
+ffprobe -select_streams v -show_entries stream=sample_aspect_ratio,display_aspect_ratio -of default=nw=1 out.mp4
+# want sample_aspect_ratio=1:1 and no rotation metadata
+```
+
+If the file is clean, the fix is to match the container. Export **1:1 as the default** and 4:5 as the
+alternate. There is no ratio that fills every surface: 1:1 letterboxes in a 16:9 player, 4:5
+pillarboxes in a square one.
+
+The square canvas costs screen size. The same footage renders at 418px wide in 1:1 and 527px in 4:5.
+If small in-app text matters, prefer 4:5.
+
+### Device frame proportions
+
+Measured against **screen width**, so they hold at any render size:
+
+| | Current Pro | Home button (SE) |
+|---|---|---|
+| bezel | 0.027 uniform | side 0.075, top 0.260, bottom 0.327 |
+| body radius | 0.155 of body width | 0.120 of body width |
+| display radius | body radius minus bezel | square corners |
+
+**Concentric corners are non negotiable.** Body radius must equal display radius plus bezel, or the
+frame looks moulded around the wrong shape.
+
+Other details that separate a frame from a dark rectangle:
+
+- **A metal band drawn as a vertical gradient**, not a flat outline. Brighter at the top. A flat fill
+  has no material.
+- **A bright rim reads as a halo.** We used 138,132,127 first and it glowed; 92,88,84 is right.
+- **Buttons protruding 3 to 4 pixels**, barely lighter than the body. Chunky buttons stop reading as
+  buttons and start reading as a mistake.
+- **A wide, soft, low opacity shadow dropped low.** Blur around 36, offset around 34, alpha around
+  70. A tight dark shadow looks pasted on.
+
+### Rounded corner mask
+
+ffmpeg has no rounded rect primitive. Draw an 8 bit greyscale mask and `alphamerge` it.
+
+The maths matters: clamp each pixel to the **nearest** corner centre and test that one distance.
+Testing every pixel against all four centres fills each corner square solid instead of drawing an
+arc. Ours did, and it silently cropped the outermost tab bar labels.
+
+```python
+cy = r if y < r else (h - 1 - r if y > h - 1 - r else y)
+cx = r if x < r else (w - 1 - r if x > w - 1 - r else x)
+inside = (x - cx) ** 2 + (y - cy) ** 2 <= r * r
+```
+
+### Colour range
+
+**Probe the source before converting it.** Declaring limited range footage as full compresses it a
+second time and the whole image goes grey; our cream background turned to putty and nearly shipped.
+
+```
+ffprobe -select_streams v -show_entries stream=color_range -of csv=p=0 raw.mp4
+# convert only when this is pc or full
+```
+
+Verify afterwards by sampling a known colour. Ours reads (249,245,236) against a (250,246,238)
+target.
+
+---
+
+## 6. Captions
+
+One short line per beat, benefit led, in the product's own ink colour on its own background. Hold the
+caption slightly inside the segment (0.15s in, 0.10s before the end) so it does not flash on the
+transition frame.
+
+If your ffmpeg lacks `drawtext` (built without freetype, which Homebrew's commonly is), draw each
+caption to a transparent PNG and composite it:
+
+```
+[base][capN] overlay=0:<band_y>:enable='between(t,start,end)'
+```
+
+Apple SD Gothic Neo (`/System/Library/Fonts/AppleSDGothicNeo.ttc`) covers Latin and Hangul in one
+face, so an English caption and a Korean one render consistently. Verify the PNG is not blank:
+`Image.open(p).getbbox()` returns `None` when the font silently failed.
+
+Give the caption its own band under the phone rather than overlaying the screen. Shrink the device to
+make room; do not cover UI.
+
+---
+
+## 7. End card
+
+Icon, name, one line of what it is, and where to get it. Crossfade 0.45s into it.
+
+Lay it out as a **centred block**, not at fixed offsets: measuring each line, summing, and centring
+the whole is what stops the card looking bottom heavy. Nudge it about 50px above true centre, which a
+type heavy block wants optically.
+
+`xfade` refuses inputs of differing **timebase or size**. Pin both:
+
+```
+[1:v] scale=${CW}:${CH}, fps=30, format=yuv420p, settb=AVTB [end];
+[0:v] fps=30, format=yuv420p, settb=AVTB [main];
+[main][end] xfade=transition=fade:duration=0.45:offset=${DUR-0.45}
+```
+
+---
+
+## 8. Encode and delivery
+
+```
+-c:v libx264 -crf 19 -preset slow -profile:v high -pix_fmt yuv420p
+-color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709
+-movflags +faststart -r 30 -an
+```
+
+Verify before sending:
+
+- `duration` between 12 and 15 seconds
+- `width,height` as intended, `sample_aspect_ratio=1:1`
+- **no audio stream at all** (`ffprobe -select_streams a` returns nothing)
+- faststart: `moov` before `mdat` in the atom order
+- `color_range=tv`, `pix_fmt=yuv420p`
+
+---
+
+## 9. Pipeline
+
+Four scripts, each doing one thing:
+
+```
+record-hero.sh <udid>            seed pass + take, one invocation, extracts the raw mp4
+cut-hero.sh    raw.mp4 cut.mp4   normalise to CFR, extract segments, concat, write captions + proof
+make-hero-clip.sh cut.mp4 body.mp4 captions.tsv [1x1|4x5]
+                                 mask, device frame, canvas, caption overlays
+finish-clip.sh body.mp4 card.png out.mp4 1.8
+                                 crossfade to the end card
+```
+
+Helpers: `roundrect-mask.py`, `device-frame.py`, `caption-strip.py`, `make-endcard.py`.
+
+Keeping them separate matters because iteration is almost always in one stage. Re-cutting after a
+timing fix costs seconds; re-recording costs three minutes and a seeded device.
+
+---
+
+## 10. Checklist
+
+**Footage**
+- [ ] Current generation simulator, 19.5:9
+- [ ] Status bar overridden to 9:41, full bars, full battery
+- [ ] Seed and take in one `xcodebuild` invocation
+- [ ] Every beat has a drag or a state changing tap
+- [ ] 45 to 60 seconds of raw to choose from
+
+**Cut**
+- [ ] Normalised to CFR before any timing
+- [ ] Segment times measured against the normalised file
+- [ ] Proof sheet checked, every caption on the screen it describes
+- [ ] Tap and result in one continuous segment
+
+**Composition**
+- [ ] Concentric body and display radii
+- [ ] Source colour range probed, not assumed; known colour verified after
+- [ ] Mask corners are arcs, not filled squares
+- [ ] Caption band under the phone, not over the UI
+
+**Delivery**
+- [ ] 12 to 15 seconds, silent, faststart
+- [ ] 1:1 default, 4:5 alternate
+- [ ] File aspect metadata clean before blaming a player for black bars

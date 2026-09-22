@@ -1,0 +1,20 @@
+# The web deploy needs src, public, scripts and the content files. Everything below is either a build
+# artifact or belongs to the iOS side, and shipping it aborts the upload: the Xcode archive under
+# build/ alone is around 420 MB.
+node_modules
+.next
+.next-native
+build
+out
+
+# iOS project, archives and the UI test harness
+ios
+resources
+
+# Store listing, screenshots, demo and marketing video
+docs
+qa
+
+# local
+.env.local
+*.xcresult

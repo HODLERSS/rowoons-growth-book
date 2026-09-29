@@ -12,6 +12,7 @@ import { ComingUpCard } from "@/components/home/coming-up-card";
 import { JournalCard } from "@/components/home/journal-card";
 import { NotifyCard } from "@/components/home/notify-card";
 import { AccountCard, useAccountInvite } from "@/components/home/account-card";
+import { ReminderAskCard, useReminderAsk } from "@/components/home/reminder-ask-card";
 import { ProfileDialog } from "@/components/profile/profile-dialog";
 import { useBaby } from "@/hooks/use-baby";
 import { useAge } from "@/hooks/use-age";
@@ -24,6 +25,7 @@ export function HomeScreen() {
   const [editing, setEditing] = useState(false);
   const [dismissed, setDismissed] = useState(false);
   const invite = useAccountInvite();
+  const ask = useReminderAsk();
   const open = hydrated && ((!hasBaby && !dismissed) || editing);
 
   return (
@@ -45,11 +47,12 @@ export function HomeScreen() {
         />
         {hasBaby && ready && (
           <>
+            <ReminderAskCard {...ask} />
             <ThisMonthCard month={currentMonth} />
             <NoteCard month={currentMonth} />
             <ComingUpCard month={currentMonth} />
             <JournalCard />
-            <AccountCard />
+            {!ask.show && <AccountCard />}
             {!invite && <NotifyCard />}
           </>
         )}

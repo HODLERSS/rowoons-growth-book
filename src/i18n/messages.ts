@@ -208,6 +208,11 @@ export const en = {
   "notify.unsupported": "Add Sprout to your Home Screen to get reminders.",
   "notify.working": "Working…",
 
+  "remind_ask.title": "Get a note when {name} turns {month} months",
+  "remind_ask.title_one": "Get a note when {name} turns 1 month",
+  "remind_ask.desc": "One note that morning, plus one tip every Sunday morning.",
+  "remind_ask.enable": "Turn on reminders",
+  "remind_ask.denied_title": "Reminders are off",
   "reminder.title": "{name} is {month} months old today",
   "reminder.body": "See this month’s milestones, play ideas and safety notes.",
   "reminder.weekly_title": "{name}, month {month}",
@@ -464,6 +469,11 @@ export const ko: Record<MessageKey, string> = {
   "notify.unsupported": "홈 화면에 추가하면 알림을 받을 수 있어요.",
   "notify.working": "처리 중…",
 
+  "remind_ask.title": "{name|이/가} {month}개월 되는 날 알려 드릴까요?",
+  "remind_ask.title_one": "{name|이/가} 1개월 되는 날 알려 드릴까요?",
+  "remind_ask.desc": "그날 아침에 한 번, 일요일 아침마다 팁도 하나씩 보내 드려요.",
+  "remind_ask.enable": "알림 켜기",
+  "remind_ask.denied_title": "알림이 꺼져 있어요",
   "reminder.title": "오늘 {name|이/가} {month}개월이 됐어요",
   "reminder.body": "이번 달 발달 이정표, 놀이, 주의사항을 확인해 보세요.",
   "reminder.weekly_title": "{name}, {month}개월",

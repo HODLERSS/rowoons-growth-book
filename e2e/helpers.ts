@@ -50,3 +50,46 @@ export function watchConsole(page: Page) {
   page.on("pageerror", (err) => problems.push(`[pageerror] ${err.message}`));
   return problems;
 }
+
+/**
+ * Pretend to be the iOS app: a fake WKWebView bridge that Capacitor core picks up, with LocalNotifications backed by
+ * localStorage (`e2e:perm`, `e2e:pending`). `answer` is what the user taps at the one-time iOS permission prompt.
+ */
+export async function fakeNative(ctx: BrowserContext, opts: { answer: "granted" | "denied"; perm?: "prompt" | "granted" | "denied" }) {
+  await ctx.addInitScript(
+    ([answer, initial]) => {
+      if (!localStorage.getItem("e2e:perm")) localStorage.setItem("e2e:perm", initial);
+      const promise = (...names: string[]) => names.map((name) => ({ name, rtype: "promise" }));
+      const listen = [{ name: "addListener", rtype: "callback" }, ...promise("removeListener", "removeAllListeners")];
+      const pending = () => JSON.parse(localStorage.getItem("e2e:pending") ?? "[]") as { id: number }[];
+      let callbackId = 0;
+      const w = window as unknown as Record<string, unknown>;
+      w.webkit = { messageHandlers: { bridge: { postMessage() {} } } };
+      w.Capacitor = {
+        isNativePlatform: () => true,
+        PluginHeaders: [
+          { name: "LocalNotifications", methods: [...promise("checkPermissions", "requestPermissions", "schedule", "getPending", "cancel"), ...listen] },
+          { name: "App", methods: listen },
+          { name: "Haptics", methods: promise("impact", "notification", "vibrate", "selectionStart", "selectionChanged", "selectionEnd") },
+        ],
+        nativeCallback: () => String(++callbackId),
+        nativePromise: async (plugin: string, method: string, options: { notifications?: { id: number }[] }) => {
+          if (plugin !== "LocalNotifications") return {};
+          if (method === "checkPermissions") return { display: localStorage.getItem("e2e:perm") };
+          if (method === "requestPermissions") {
+            if (localStorage.getItem("e2e:perm") === "prompt") localStorage.setItem("e2e:perm", answer);
+            return { display: localStorage.getItem("e2e:perm") };
+          }
+          if (method === "getPending") return { notifications: pending() };
+          if (method === "schedule") localStorage.setItem("e2e:pending", JSON.stringify([...pending(), ...(options.notifications ?? [])]));
+          if (method === "cancel") {
+            const gone = new Set((options.notifications ?? []).map((n) => n.id));
+            localStorage.setItem("e2e:pending", JSON.stringify(pending().filter((n) => !gone.has(n.id))));
+          }
+          return {};
+        },
+      };
+    },
+    [opts.answer, opts.perm ?? "prompt"] as const
+  );
+}

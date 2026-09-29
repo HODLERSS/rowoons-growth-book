@@ -242,7 +242,7 @@ function NativeReminders() {
     try {
       if (on) {
         await cancelReminders();
-        update({ reminders: false });
+        update({ reminders: false, remindersAsked: true });
       } else {
         const n = await scheduleReminders(baby, lang);
         const s = await reminderStatus();

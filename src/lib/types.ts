@@ -84,6 +84,8 @@ export interface Settings {
   notifyDismissed: boolean;
   /** The Home card inviting a sign-in was dismissed. */
   accountDismissed?: boolean;
+  /** Native only: the Home card offering reminders was answered (turned on, refused or "Not now"). */
+  remindersAsked?: boolean;
 }
 
 export interface BackupFile {

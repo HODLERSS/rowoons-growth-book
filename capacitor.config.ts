@@ -16,6 +16,10 @@ const config: CapacitorConfig = {
     LocalNotifications: {
       presentationOptions: ["banner", "sound"],
     },
+    // Notes from Sprout while the app is open: shown as a banner too (quietly if the parent never allowed alerts)
+    PushNotifications: {
+      presentationOptions: ["banner", "sound"],
+    },
   },
 };
 

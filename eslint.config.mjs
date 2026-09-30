@@ -23,6 +23,8 @@ const eslintConfig = defineConfig([
     "playwright-report/**",
     "src/content/gen/**",
     "public/sw.js",
+    // the admin tool is its own app (admin/, own tsconfig + tests)
+    "admin/**",
   ]),
 ]);
 

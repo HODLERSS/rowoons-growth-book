@@ -21,6 +21,9 @@ jobs:
       - run: npm run typecheck
       - run: npx eslint --max-warnings=0
       - run: npm test
+      - name: Admin tool (separate app, admin/)
+        working-directory: admin
+        run: npm ci && npm run typecheck && npm test
       - name: Native export builds (separate distDir)
         run: npm run build:native
         env:

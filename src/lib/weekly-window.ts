@@ -1,4 +1,4 @@
-/** Time helpers for the weekly push job (server). Pure, so they can be unit-tested and reused by the admin "run now". */
+/** Time helpers for the weekly push job (server). Pure, so they can be unit-tested and shared with the admin tool (admin/). */
 export const WEEKLY_LOCAL_HOUR = 9;
 export const WEEKLY_LOCAL_DAY = 0; // Sunday
 const EPOCH_SUNDAY = Date.UTC(2026, 0, 4); // 2026-01-04, a Sunday

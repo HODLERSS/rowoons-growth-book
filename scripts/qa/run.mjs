@@ -105,9 +105,9 @@ if (!skip.has("links")) {
     const rel = path.relative(ROOT, p);
     const s = readFileSync(p, "utf8");
     // layout.tsx carries the two <meta name="theme-color"> literals, which must be hex.
-    if (!["src/app/globals.css", "src/app/layout.tsx"].includes(rel) && !rel.startsWith("src/app/admin") && /#[0-9a-fA-F]{6}\b/.test(s)) rawHex.push(rel);
+    if (!["src/app/globals.css", "src/app/layout.tsx"].includes(rel) && /#[0-9a-fA-F]{6}\b/.test(s)) rawHex.push(rel);
     if (/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]/u.test(s) && !rel.includes("__tests__")) emoji.push(rel);
-    if (!rel.startsWith("src/app/admin") && !rel.startsWith("src/components/ui/") && /\b(bg|text|border)-(red|green|blue|yellow|amber|purple|pink|orange|emerald|violet|slate|gray|zinc)-\d{2,3}\b/.test(s)) twPalette.push(rel);
+    if (!rel.startsWith("src/components/ui/") && /\b(bg|text|border)-(red|green|blue|yellow|amber|purple|pink|orange|emerald|violet|slate|gray|zinc)-\d{2,3}\b/.test(s)) twPalette.push(rel);
   }
   add("5", "no raw hex colours outside globals.css", rawHex.length === 0, 30, rawHex.join(","));
   add("5", "no emoji used as UI glyphs", emoji.length === 0, 20, emoji.join(","));

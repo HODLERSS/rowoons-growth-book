@@ -30,14 +30,14 @@ export interface SubscribeInput extends PushSubscriptionJSON {
   userId?: unknown;
 }
 
-let admin: SupabaseClient | null = null;
-export function adminClient(): SupabaseClient {
-  if (admin) return admin;
+let service: SupabaseClient | null = null;
+export function serviceClient(): SupabaseClient {
+  if (service) return service;
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
   if (!url || !key) throw new Error("Supabase service credentials are not set");
-  admin = createClient(url, key, { auth: { persistSession: false, autoRefreshToken: false } });
-  return admin;
+  service = createClient(url, key, { auth: { persistSession: false, autoRefreshToken: false } });
+  return service;
 }
 
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
@@ -70,23 +70,23 @@ export async function addSubscription(input: SubscribeInput): Promise<void> {
     due_date: due && DATE.test(due) ? due : null,
     user_id: typeof input.userId === "string" && /^[0-9a-f-]{36}$/i.test(input.userId) ? input.userId : null,
   };
-  const { error } = await adminClient().from("push_subscriptions").upsert(row, { onConflict: "endpoint" });
+  const { error } = await serviceClient().from("push_subscriptions").upsert(row, { onConflict: "endpoint" });
   if (error) throw new Error(error.message);
 }
 
 export async function removeSubscription(endpoint: string): Promise<boolean> {
-  const { data, error } = await adminClient().from("push_subscriptions").delete().eq("endpoint", endpoint).select("endpoint");
+  const { data, error } = await serviceClient().from("push_subscriptions").delete().eq("endpoint", endpoint).select("endpoint");
   if (error) throw new Error(error.message);
   return (data?.length ?? 0) > 0;
 }
 
 export async function readSubscriptions(): Promise<SubscriberRow[]> {
-  const { data, error } = await adminClient().from("push_subscriptions").select("endpoint, p256dh, auth, user_id, lang, tz, name, birth_date, due_date, weekly_enabled, last_weekly_at").order("created_at");
+  const { data, error } = await serviceClient().from("push_subscriptions").select("endpoint, p256dh, auth, user_id, lang, tz, name, birth_date, due_date, weekly_enabled, last_weekly_at").order("created_at");
   if (error) throw new Error(error.message);
   return (data ?? []).map((r) => ({ endpoint: r.endpoint, keys: { p256dh: r.p256dh, auth: r.auth }, user_id: r.user_id, lang: r.lang, tz: r.tz, name: r.name, birth_date: r.birth_date, due_date: r.due_date, weekly_enabled: r.weekly_enabled, last_weekly_at: r.last_weekly_at }));
 }
 
 export async function markWeeklySent(endpoints: string[], at: Date): Promise<void> {
   if (!endpoints.length) return;
-  await adminClient().from("push_subscriptions").update({ last_weekly_at: at.toISOString() }).in("endpoint", endpoints);
+  await serviceClient().from("push_subscriptions").update({ last_weekly_at: at.toISOString() }).in("endpoint", endpoints);
 }

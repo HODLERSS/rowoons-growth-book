@@ -29,4 +29,5 @@ See `docs/app-store/LAUNCH_CHECKLIST.md`.
   (localStorage via `useSyncExternalStore`) · `src/lib` logic · `src/i18n` UI strings · `src/content` EN/KO data.
 - `html/brand` — the brand system (five options, Sprout selected; `_build/qa.py` verifies it).
 - `docs` — quality metrics, Korean style guide, App Store material.
-- Web-only routes (`/admin`, `/api/push/*`) use the `.web.tsx` / `.web.ts` extension and are excluded from the native build.
+- Web-only routes (`/api/*`) use the `.web.tsx` / `.web.ts` extension and are excluded from the native build.
+- `admin/` — the internal admin tool, a separate site (https://sprout-admin-minjae.vercel.app); nothing admin ships in the app. See `docs/RUNBOOK.md`.

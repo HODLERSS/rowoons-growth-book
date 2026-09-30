@@ -1,6 +1,6 @@
 import type { Difficulty, MilestoneCategory, Severity } from "./types";
 
-export const APP_VERSION = "1.0.0";
+export const APP_VERSION = "1.0.2";
 export const APP_URL = "https://baby.minjae.co";
 export const SUPPORT_EMAIL = "minjae.m.lee@gmail.com";
 

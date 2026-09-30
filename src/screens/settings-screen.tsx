@@ -21,6 +21,7 @@ import { isNative } from "@/lib/platform";
 import { cancelReminders, reminderStatus, scheduleReminders, type ReminderStatus } from "@/lib/reminders";
 import { useHydrated } from "@/lib/store";
 import type { BackupFile } from "@/lib/types";
+import type { PushAuth } from "@/lib/remote-push";
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
@@ -221,7 +222,62 @@ export function SettingsScreen() {
 }
 
 function NotificationsBody() {
-  return isNative() ? <NativeReminders /> : <WebPush />;
+  return isNative() ? (
+    <>
+      <NativeReminders />
+      <NotesFromSprout />
+    </>
+  ) : (
+    <WebPush />
+  );
+}
+
+function Switch({ on, label, disabled, onClick }: { on: boolean; label: string; disabled: boolean; onClick: () => void }) {
+  return (
+    <button
+      type="button"
+      role="switch"
+      aria-checked={on}
+      aria-label={label}
+      disabled={disabled}
+      onClick={onClick}
+      className={"relative h-8 w-[3.25rem] shrink-0 rounded-full transition-colors disabled:opacity-50 " + (on ? "bg-primary" : "bg-rule")}
+    >
+      <span className={"absolute top-1 size-6 rounded-full bg-surface shadow transition-transform " + (on ? "left-1 translate-x-5" : "left-1")} />
+    </button>
+  );
+}
+
+/** Native only: occasional remote notes (APNs). Device-level choice; off removes this device's token server side. */
+function NotesFromSprout() {
+  const { t } = useLanguage();
+  const [state, setState] = useState<{ enabled: boolean; status: PushAuth }>({ enabled: true, status: "unavailable" });
+  const [busy, setBusy] = useState(false);
+  useEffect(() => {
+    import("@/lib/remote-push").then(async (m) => setState({ enabled: m.notesEnabled(), status: await m.pushAuthStatus() })).catch(() => {});
+  }, []);
+  const denied = state.status === "denied";
+  const on = state.enabled && !denied;
+  async function toggle() {
+    setBusy(true);
+    try {
+      const m = await import("@/lib/remote-push");
+      const status = await m.setNotesEnabled(!on);
+      setState({ enabled: m.notesEnabled(), status });
+    } finally {
+      setBusy(false);
+    }
+  }
+  if (state.status === "unavailable") return null;
+  return (
+    <Row className="min-h-[4.75rem]">
+      <span className="min-w-0 flex-1">
+        <span className="block text-[0.9375rem] font-medium">{t("settings.notes")}</span>
+        <span className="block text-[0.8125rem] text-muted-foreground">{denied ? t("settings.reminders_denied") : t("settings.notes_desc")}</span>
+      </span>
+      <Switch on={on} label={t("settings.notes")} disabled={busy || denied} onClick={toggle} />
+    </Row>
+  );
 }
 
 function NativeReminders() {
@@ -260,17 +316,7 @@ function NativeReminders() {
           <span className="block text-[0.9375rem] font-medium">{t("settings.reminders")}</span>
           <span className="block text-[0.8125rem] text-muted-foreground">{status === "denied" ? t("settings.reminders_denied") : t("settings.reminders_desc", { name: name || "—" })}</span>
         </span>
-        <button
-          type="button"
-          role="switch"
-          aria-checked={on}
-          aria-label={t("settings.reminders")}
-          disabled={busy || !baby || status === "denied"}
-          onClick={toggle}
-          className={"relative h-8 w-[3.25rem] shrink-0 rounded-full transition-colors disabled:opacity-50 " + (on ? "bg-primary" : "bg-rule")}
-        >
-          <span className={"absolute top-1 size-6 rounded-full bg-surface shadow transition-transform " + (on ? "left-1 translate-x-5" : "left-1")} />
-        </button>
+        <Switch on={on} label={t("settings.reminders")} disabled={busy || !baby || status === "denied"} onClick={toggle} />
       </Row>
   );
 }

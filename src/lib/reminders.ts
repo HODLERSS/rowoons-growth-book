@@ -22,6 +22,14 @@ export type ReminderStatus = "unsupported" | "prompt" | "granted" | "denied";
 
 export async function reminderStatus(): Promise<ReminderStatus> {
   if (!isNative()) return "unsupported";
+  // Quiet (provisional) delivery, which Notes from Sprout sets up without a prompt, is not a yes to reminders:
+  // Capacitor reports it as "granted", which would schedule reminders at launch and pop the system prompt unasked.
+  // Read the real state from the app's own plugin; "prompt" means asking will still show the one system prompt.
+  const { pushAuthStatus } = await import("./remote-push");
+  const auth = await pushAuthStatus();
+  if (auth === "authorized") return "granted";
+  if (auth === "denied") return "denied";
+  if (auth === "provisional" || auth === "ephemeral" || auth === "notDetermined") return "prompt";
   try {
     const { LocalNotifications } = await import("@capacitor/local-notifications");
     const { display } = await LocalNotifications.checkPermissions();

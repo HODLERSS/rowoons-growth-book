@@ -9,6 +9,7 @@ import { useBaby } from "@/hooks/use-baby";
 import { useLanguage } from "@/hooks/use-language";
 import { useSettings } from "@/hooks/use-settings";
 import { isNative, isStandalonePWA } from "@/lib/platform";
+import { supabase } from "@/lib/supabase";
 import { TabBar } from "./tab-bar";
 import { SideNav } from "./side-nav";
 
@@ -56,6 +57,29 @@ function Effects() {
       remove = () => void handle.remove();
     });
     return () => remove?.();
+  }, [router]);
+  // Native: Notes from Sprout (remote notifications). Register this device once per launch and again when the
+  // account changes (the token follows the account); a tapped note opens the app route it names.
+  useEffect(() => {
+    if (!isNative()) return;
+    let off: (() => void) | undefined;
+    let unsub: (() => void) | undefined;
+    let live = true;
+    import("@/lib/remote-push").then(({ syncRemotePush, onRemotePushOpen }) => {
+      if (!live) return;
+      off = onRemotePushOpen((url) => router.push(url));
+      void syncRemotePush();
+      const sb = supabase();
+      const { data } = sb?.auth.onAuthStateChange((event) => {
+        if (event === "SIGNED_IN" || event === "SIGNED_OUT") void syncRemotePush();
+      }) ?? { data: null };
+      unsub = () => data?.subscription.unsubscribe();
+    });
+    return () => {
+      live = false;
+      off?.();
+      unsub?.();
+    };
   }, [router]);
   // Native: re-plan the weekly notes once per launch so they follow the baby's month and what was confirmed.
   const { baby } = useBaby();

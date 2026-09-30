@@ -5,7 +5,7 @@ import { useLanguage } from "@/hooks/use-language";
 import { SUPPORT_EMAIL } from "@/lib/constants";
 import { formatDate } from "@/i18n";
 
-const UPDATED = "2026-09-13";
+const UPDATED = "2026-09-30";
 
 export function LegalScreen({ kind }: { kind: "privacy" | "terms" | "support" }) {
   const { lang, t } = useLanguage();
@@ -60,7 +60,8 @@ const PRIVACY: Record<"en" | "ko", Sec[]> = {
     {
       h: "Reminders",
       p: [
-        "In the iOS app, monthly reminders are scheduled on your phone. Nothing leaves the device.",
+        "In the iOS app, monthly and weekly reminders are scheduled on your phone; their content never leaves the device.",
+        "The iOS app can also receive occasional notes from Sprout (Settings › Notes from Sprout, on by default and delivered quietly until you allow alerts). For that, Apple gives the app a push token, which Sprout stores on its server with your language, time zone and, if you are signed in, your account. Nothing about your baby is sent. It is deleted when you turn Notes from Sprout off, when Apple reports the token is no longer valid, or when you delete your account.",
         "In the web app, if you turn on notifications, your browser issues a push subscription (an endpoint URL and encryption keys). Sprout stores it on its server together with your language, time zone and your baby’s name and birthday, so that the Sunday-morning note fits your baby’s month. It is deleted when you turn notifications off, when the subscription expires, or when you delete your account.",
       ],
     },
@@ -96,7 +97,8 @@ const PRIVACY: Record<"en" | "ko", Sec[]> = {
     {
       h: "알림",
       p: [
-        "iOS 앱의 월별 알림은 휴대폰 안에서 예약돼요. 어떤 정보도 기기 밖으로 나가지 않아요.",
+        "iOS 앱의 월별 알림과 주간 알림은 휴대폰 안에서 예약돼요. 알림 내용은 기기 밖으로 나가지 않아요.",
+        "iOS 앱은 새싹이 가끔 보내는 소식도 받을 수 있어요(설정 › 새싹 소식, 기본으로 켜져 있고 알림을 허용하기 전까지는 조용히 전달돼요). 이를 위해 Apple이 앱에 푸시 토큰을 발급하고, 새싹은 이 토큰을 언어, 시간대, 로그인했다면 계정과 함께 서버에 보관해요. 아기에 관한 정보는 보내지 않아요. 새싹 소식을 끄거나, Apple이 토큰이 더 이상 유효하지 않다고 알리거나, 계정을 삭제하면 지워져요.",
         "웹에서 알림을 켜면 브라우저가 푸시 구독 정보(엔드포인트 주소와 암호화 키)를 만들어요. 새싹은 일요일 아침 알림을 아기 월령에 맞추기 위해 이 정보를 언어, 시간대, 아기 이름과 생일과 함께 서버에 보관해요. 알림을 끄거나, 구독이 만료되거나, 계정을 삭제하면 지워져요.",
       ],
     },
